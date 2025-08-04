@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import "../globals.css";
 import {NextIntlClientProvider} from "next-intl";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/Header/Header";
 import localFont from "next/font/local";
 
 //TODO: Completar los datos de metainformación
@@ -41,6 +41,7 @@ const helveticaNue = localFont({
             style: 'normal',
         }
     ],
+    variable: '--font-helvetica-nue',
     display: 'swap',
     fallback: ['arial', 'sans-serif']
 })
@@ -49,10 +50,12 @@ export function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'es'}];
 }
 
-export default async function RootLayout({children, params: {locale}}: {
+export default async function RootLayout({children, params}: {
     children: React.ReactNode;
-    params: { locale: string }
+    params: Promise<{ locale: string }>;
 }) {
+    const {locale} = await params;
+
     return (
         <html lang={locale}>
         <body
