@@ -1,21 +1,21 @@
-'use client'
+'use server'
 import * as React from 'react';
-import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
+import {decrypt, getSession} from "@/lib/session";
+import BtnGoogle from "@/components/pages/Gms/BtnGoogle";
 
 // type Props = {
 //
 // };
 
-export const LoginPage = () => {
-    const googleSuccess = (response: unknown) => {
-        console.log("Google login success", response);
-    }
-    // const googleError = (error: Error) => {
-    //     console.log("Google login error", error);
-    // }
+export const LoginPage = async () => {
+
+    const user =await getSession();
+    console.log("session:");
+    console.log(user);
+
     return (
         <div>
-            <GoogleSignInButton onSuccess={googleSuccess}/>
+            <BtnGoogle/>
         </div>
     );
 };

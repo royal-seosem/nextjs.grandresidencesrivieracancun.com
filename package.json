@@ -11,6 +11,8 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "google-auth-library": "^10.2.1",
+    "jose": "^6.0.12",
     "lucide-react": "^0.536.0",
     "next": "15.4.5",
     "next-intl": "^4.3.4",

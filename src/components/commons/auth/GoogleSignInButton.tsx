@@ -9,7 +9,7 @@ declare global {
 }
 
 interface GoogleSignInButtonProps {
-    onSuccess?: (response: unknown) => void;
+    onSuccess?: (response: { credential: string }) => void;
     // onError?: (error: Error) => void;
 }
 
@@ -22,6 +22,7 @@ const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
     }
 
     const buttonGenerate = () => {
+        console.log('Btn generate')
         window.google.accounts.id.initialize({
             client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
             callback: handleCredientials,
