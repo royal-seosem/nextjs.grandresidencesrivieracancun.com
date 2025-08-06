@@ -49,7 +49,7 @@ export default function Header() {
         </nav>
 
         <nav role="navigation" className="flex flex-col justify-center items-center ">
-            <Link href="/public">
+            <Link href="/">
                 <Image src={'/logos/grand-residences.png'} alt="Logo Grand Residences" width={255} height={44}/>
             </Link>
             <div className="flex items-center justify-between w-full px-5">

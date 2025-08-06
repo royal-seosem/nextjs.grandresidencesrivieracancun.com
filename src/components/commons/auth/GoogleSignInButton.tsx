@@ -21,22 +21,22 @@ const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
         onSuccess?.(response);
     }
 
+
     const buttonGenerate = () => {
         console.log('Btn generate')
         window.google.accounts.id.initialize({
             client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
             callback: handleCredientials,
+            context: 'signin',
         });
 
         if (buttonRef.current) {
             window.google.accounts.id.renderButton(buttonRef.current, {
-                theme: 'dark',
                 type: 'standard',
-                shape: 'pill',
+                theme: 'outline',
+                shape: 'rectangular',
                 size: 'medium',
-                label: 'Sign in with Google',
-                width: 240,
-                height: 50,
+                text: "signin"
             });
 
         }
