@@ -138,6 +138,6 @@
 
 @layer components {
     .my-container {
-        @apply px-5;
+        @apply px-5 max-w-[1440px] mx-auto;
     }
 }

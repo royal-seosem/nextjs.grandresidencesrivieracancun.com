@@ -1,7 +1,12 @@
 {
   "header": {
     "owners area": "Owners Area",
-    "manage reservations": "Manage your reservation"
+    "manage reservations": "Manage your reservation",
+    "specials": "Specials",
+    "wedding": "Weddings and Groups",
+    "idioma": "Language",
+    "english": "English",
+    "spanish": "Spanish"
   },
   "menu": {
     "suites": "Suites",

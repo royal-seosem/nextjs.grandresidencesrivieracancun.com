@@ -16,7 +16,6 @@ export const LoginPage = async () => {
     const {page_login: {benefits}} = await getMessages();
 
     const user = await getSession();
-
     return (
         <div className="md:grid md:grid-cols-2">
             <div className="md:order-2">
