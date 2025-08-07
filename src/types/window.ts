@@ -35,6 +35,17 @@ interface GoogleAccountsId {
     ) => void;
 }
 
+interface Facebook {
+    init: (config: {
+        appId: string | undefined;
+        autoLogAppEvents: boolean;
+        xfbml: boolean;
+        version: string | undefined;
+    }) => void;
+    login: (callback: (response: { authResponse: { accessToken: string } }) => void) => void;
+}
+
+
 interface Google {
     accounts: {
         id: GoogleAccountsId;

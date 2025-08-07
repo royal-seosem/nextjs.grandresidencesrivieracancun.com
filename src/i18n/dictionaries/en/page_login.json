@@ -8,6 +8,32 @@
     "log-in": "Log in",
     "sign-up": "Sign up",
     "e-mail": "E-mail",
-    "password": "Password"
+    "password": "Password",
+    "Forgot your password?": "Forgot your password?",
+    "click here": "Click here",
+    "description_subtitle": "Loyalty Means Rewards:",
+    "benefits-footer": "Take advantage of these exclusive benefits! Log in or sign up for My Royal today, start saving, and let the fun begin.",
+    "benefits": [
+      {
+        "icon": "/img/my-royal/porcentaje-white.svg",
+        "title": "Additional discounts:",
+        "description": "Save more with My Royal; get up to 15% in extra discounts on our hotel-only deals."
+      },
+      {
+        "icon": "/img/my-royal/clock-white.svg",
+        "title": "Always First for Exclusive Deals:",
+        "description": "Access private deals, advance purchase discounts, pre-sales with bigger discounts to stay during the best seasons, and more."
+      },
+      {
+        "icon": "/img/my-royal/person-white.svg",
+        "title": "My Royal Newsletter:",
+        "description": "Stay informed with the latest updates and exclusive information regarding Grand Residences and all our resorts. Discover new features, exciting events, and much more."
+      },
+      {
+        "icon": "/img/my-royal/plus-white.svg",
+        "title": "Pre-check-in:",
+        "description": "Save time; we´ll take care of the rest"
+      }
+    ]
   }
 }

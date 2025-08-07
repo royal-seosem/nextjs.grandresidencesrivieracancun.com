@@ -36,9 +36,9 @@ const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
                 theme: 'outline',
                 shape: 'rectangular',
                 size: 'medium',
-                text: "signin"
+                text: "signin_with",
+                locale: "en"
             });
-
         }
 
         window.google.accounts.id.prompt();
@@ -46,7 +46,7 @@ const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
     return (
         <div>
             <Script
-                src="https://accounts.google.com/gsi/client"
+                src="https://accounts.google.com/gsi/client?hl=en"
                 onReady={() => buttonGenerate()}
             />
             <div ref={buttonRef}></div>

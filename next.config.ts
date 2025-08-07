@@ -4,7 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig: NextConfig = {
     /* config options here */
     images: {
-        qualities: [100]
+        remotePatterns: [new URL('https://grandresidencesrivieracancun.com/**')],
     },
 };
 const withNextIntl = createNextIntlPlugin();
