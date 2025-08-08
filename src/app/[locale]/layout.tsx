@@ -3,6 +3,7 @@ import "../globals.css";
 import {NextIntlClientProvider} from "next-intl";
 import Header from "@/components/layout/Header/Header";
 import localFont from "next/font/local";
+import Footer from "@/components/layout/Footer";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default async function RootLayout({children, params}: {
         <NextIntlClientProvider>
             <Header/>
             {children}
+            <Footer/>
         </NextIntlClientProvider>
         </body>
         </html>

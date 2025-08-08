@@ -4,7 +4,8 @@ import {Link} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 import Image from "next/image";
 import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/drawer";
-import ArrowDown from "@/components/commons/icons/ArrowDown";
+import  IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
+
 
 export default function Header() {
     const t = useTranslations('header');
@@ -92,15 +93,15 @@ export default function Header() {
                     <div className='flex'>
                         <button className="flex items-center gap-1">
                             <Image src={"/icons/phone.svg"} alt={"icon phone"} width={24} height={24}/>
-                            <ArrowDown className=""/>
+                            <IconArrowDown/>
                         </button>
                     </div>
                     <div>
                         <Drawer direction="right">
-                            <DrawerTrigger>
-                                <button className="flex items-center gap-1">
+                            <DrawerTrigger className="flex items-center gap-1" asChild>
+                                <button >
                                     {t('english')}
-                                    <ArrowDown className=""/>
+                                    <IconArrowDown/>
                                 </button>
                             </DrawerTrigger>
                             <DrawerContent>
