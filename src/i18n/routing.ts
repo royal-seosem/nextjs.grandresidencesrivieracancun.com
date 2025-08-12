@@ -6,5 +6,16 @@ export const routing = defineRouting({
     // Used when no locale matches
     defaultLocale: 'en',
     localePrefix: 'as-needed',
-    localeDetection: false
+    localeDetection: false,
+    pathnames: {
+        "/": "/",
+        "/home": {
+            en: "/",
+            es: "/es"
+        },
+        "/gms/login": {
+            en: "/gms/login",
+            es: "/gms/iniciar-session"
+        },
+    }
 });

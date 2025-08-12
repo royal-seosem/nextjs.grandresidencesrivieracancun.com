@@ -1,6 +1,5 @@
 'use server'
 import * as React from 'react';
-import {getSession} from "@/lib/session";
 import BtnGoogle from "@/components/pages/Gms/BtnGoogle";
 import Image from "next/image";
 import {getMessages, getTranslations} from "next-intl/server";
@@ -9,13 +8,13 @@ import {Label} from "@/components/commons/ui/label";
 import {Input} from "@/components/commons/ui/input";
 import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import IconInfo from "@/components/commons/icons/iconInfo";
+import IconInfo from "@/components/commons/icons/info.svg";
+
 
 export const LoginPage = async () => {
     const t = await getTranslations('page_login');
     const {page_login: {benefits}} = await getMessages();
 
-    const user = await getSession();
     return (
         <div className="md:grid md:grid-cols-2">
             <div className="md:order-2">
@@ -31,7 +30,8 @@ export const LoginPage = async () => {
 
                 <section className="my-container max-w-[420px] m-auto pt-5">
                     <p className="md:hidden text-base text-center mb-4">{t('description')}</p>
-                    <button className="md:hidden flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
+                    <button
+                        className="md:hidden flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
                         <Image src={"/icons/info.svg"} alt={"Icon information"} width={24} height={24}/>
                         <span className="text-accent">{t('title-gms-program')}</span>
                     </button>
@@ -89,7 +89,7 @@ export const LoginPage = async () => {
                 <CdnImage
                     className="md:hidden w-full object-cover"
                     src={"/img/my-royal/grand-residences.jpg"}
-                          alt={"Image Grand Residences"} width={685} height={381}/>
+                    alt={"Image Grand Residences"} width={685} height={381}/>
                 <div className="text-white max-w-[413px] m-auto p-2">
                     <Image className="block m-auto mb-4" src={"/icons/my-royal-vertical.svg"} alt={"Icon My royal"}
                            width={150}

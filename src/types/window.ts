@@ -15,12 +15,6 @@ interface GsiButtonConfiguration {
     state?: string
 }
 
-interface IdConfiguration {
-    client_id?: string;
-    callback: (response: CredentialResponse) => void;
-
-}
-
 interface GoogleAccountsId {
     initialize: (config: {
         client_id: string | undefined;

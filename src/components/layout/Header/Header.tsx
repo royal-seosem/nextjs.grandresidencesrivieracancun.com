@@ -4,7 +4,9 @@ import {Link} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 import Image from "next/image";
 import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/drawer";
-import  IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
+import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
+import MyRoyal from "@/components/layout/Header/MyRoyal";
+import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
 
 
 export default function Header() {
@@ -82,12 +84,7 @@ export default function Header() {
 
                 <div className="relative flex  gap-3 justify-center items-center text-white text-base">
                     <div>
-                        <Link href="/gms/login"
-                              className="md:flex md:gap-2 md:items-center md:justify-center"
-                              aria-label={"Login to My Royal"}>
-                            <Image src={'/icons/my-royal.svg'} alt={"Icon my royal"} width={24} height={24}/>
-                            <span className="hidden md:flex text-white text-base">My Royal</span>
-                        </Link>
+                        <MyRoyal/>
                     </div>
 
                     <div className='flex'>
@@ -99,24 +96,13 @@ export default function Header() {
                     <div>
                         <Drawer direction="right">
                             <DrawerTrigger className="flex items-center gap-1" asChild>
-                                <button >
+                                <button>
                                     {t('english')}
                                     <IconArrowDown/>
                                 </button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <nav className="flex flex-col p-5 gap-2 text-base">
-                                    <span
-                                        className="text-primary text-2xl font-bold pb-1.5 border-b-1 border-accent border-primary0">
-                                        {t('idioma')}
-                                    </span>
-                                    <Link href={"/"}>
-                                        {t('spanish')}
-                                    </Link>
-                                    <Link href={"/"}>
-                                        {t('english')}
-                                    </Link>
-                                </nav>
+                                <LanguageSwitcher/>
                             </DrawerContent>
                         </Drawer>
                     </div>

@@ -1,0 +1,39 @@
+{
+  "page_login": {
+    "title": "Log in",
+    "description": "Inicie sesión y comience a ahorrar. Si aun no es miembro de mi Royal, regístrese y obtenga un descuento instantáneo, además de disfrutar de nuestros beneficios exclusivos.",
+    "title-gms-program": "Important information about My Royal Program",
+    "text2": "Inicie sesión con su red social preferida",
+    "text3": "O correo electrónico y contraseña",
+    "log-in": "Log in",
+    "sign-up": "Sign up",
+    "e-mail": "E-mail",
+    "password": "Password",
+    "Forgot your password?": "Forgot your password?",
+    "click here": "Click here",
+    "description_subtitle": "Loyalty Means Rewards:",
+    "benefits-footer": "Take advantage of these exclusive benefits! Log in or sign up for My Royal today, start saving, and let the fun begin.",
+    "benefits": [
+      {
+        "icon": "/img/my-royal/porcentaje-white.svg",
+        "title": "Descuentos adicionales:",
+        "description": "ahorre más con My Royal; Obtenga hasta un 15% de descuento adicional en nuestras ofertas de solo hotel."
+      },
+      {
+        "icon": "/img/my-royal/clock-white.svg",
+        "title": "Sé el primero en recibir nuestras promociones:",
+        "description": "obtenga acceso a ofertas privadas, descuentos de compra anticipada, preventa con mayores descuentos para las mejores temporadas y más."
+      },
+      {
+        "icon": "/img/my-royal/person-white.svg",
+        "title": "Boletín My Royal:",
+        "description": "Manténgase informado con información exclusiva sobre Grand Residences y todos nuestros resorts. Descubra lo nuevo, eventos especiales, y mucho más."
+      },
+      {
+        "icon": "/img/my-royal/plus-white.svg",
+        "title": "Pre-check-in:",
+        "description": "ahorre tiempo; nosotros nos encargaremos del resto"
+      }
+    ]
+  }
+}

@@ -4,6 +4,8 @@ import {NextIntlClientProvider} from "next-intl";
 import Header from "@/components/layout/Header/Header";
 import localFont from "next/font/local";
 import Footer from "@/components/layout/Footer";
+import WebSiteProvider from "@/context/WebSiteProvider";
+import {getSession} from "@/lib/session";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -56,6 +58,7 @@ export default async function RootLayout({children, params}: {
     params: Promise<{ locale: string }>;
 }) {
     const {locale} = await params;
+    const user = await getSession();
 
     return (
         <html lang={locale}>
@@ -63,9 +66,11 @@ export default async function RootLayout({children, params}: {
             className={`${helveticaNue.className} antialiased`}
         >
         <NextIntlClientProvider>
-            <Header/>
-            {children}
-            <Footer/>
+            <WebSiteProvider initialUser={user}>
+                <Header/>
+                {children}
+                <Footer/>
+            </WebSiteProvider>
         </NextIntlClientProvider>
         </body>
         </html>

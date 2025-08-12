@@ -3,7 +3,7 @@ import {jwtVerify, SignJWT} from 'jose';
 import {cookies} from "next/headers";
 
 interface SessionPayload {
-    userId: string,
+    userId: number,
     name: string,
 
     [key: string]: unknown;
@@ -21,6 +21,7 @@ export async function encrypt(payload: SessionPayload) {
 }
 
 export async function decrypt(session: string | undefined = '') {
+    if (!session) return;
     try {
         const {payload} = await jwtVerify(session, encodedKey, {
             algorithms: ['HS256'],
@@ -31,7 +32,7 @@ export async function decrypt(session: string | undefined = '') {
     }
 }
 
-export async function createSession(userId: string, name: string) {
+export async function createSession(userId: number, name: string) {
     const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
     const session = await encrypt({userId, name, expiresAt})
     const cookieStore = await cookies()
@@ -48,6 +49,13 @@ export async function createSession(userId: string, name: string) {
 export async function getSession() {
     const cookieStore = await cookies();
     const session = cookieStore.get('session')?.value;
-    return await decrypt(session) as SessionPayload | undefined;
+    const data = await decrypt(session) as SessionPayload | undefined;
+
+    if (!data) return;
+
+    return {
+        id: data.userId,
+        name: data.name,
+    }
 }
 

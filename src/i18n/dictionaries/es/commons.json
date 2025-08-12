@@ -1,0 +1,40 @@
+{
+  "header": {
+    "owners area": "Area de dueños",
+    "manage reservations": "Gestionar Reserva",
+    "specials": "Promociones",
+    "wedding": "Bodas y Grupos",
+    "idioma": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "menu": {
+    "suites": "Suites",
+    "dining": "Restaurantes",
+    "activities": "Amenidades y Actividades",
+    "gallery": "Galería",
+    "all inclusive": "Todo Incluido",
+    "specials": "Promociones",
+    "wedding": "Bodas y Grupos",
+    "destination": "El Destino",
+    "owners area": "Area de dueños",
+    "manage reservations": "Gestionar Reserva",
+    "blog": "Blog",
+    "faqs": "FAQ's",
+    "english": "Inglés",
+    "spanish": "Español",
+    "media": "Cuarto de Prensa",
+    "privacy policy": "Privacy Policy",
+    "about us": "About Us",
+    "resort policy": "Resort Policy",
+    "we are part of": "We are part of",
+    "title-company": "Important Company Announcement",
+    "contact": "Contact",
+    "home": "Home",
+    "Special Offers": "Special Offers",
+    "Personal Information": "Personal Information",
+    "Change my password": "Change my password",
+    "Pre Check-In form": "Pre Check-In form",
+    "Log Out": "Log Out"
+  }
+}
