@@ -1,5 +1,6 @@
 'use client'
-import React, {useState, useContext} from 'react';
+import React, {useContext, useState} from 'react';
+import {getPhones, Phones} from "@/use_case/get_phones";
 
 type User = {
     id: number,
@@ -9,17 +10,25 @@ type User = {
 interface WebSiteContextType {
     user: User | undefined,
     setUser: (user: User | undefined) => void;
+    country: string,
+    phones: Phones
 }
 
 export const WebSiteContext = React.createContext<WebSiteContextType | undefined>(undefined);
 
-const WebSiteProvider = ({children, initialUser}: { initialUser: User | undefined, children: React.ReactNode }) => {
-    const [user, setUser] = useState<User>(initialUser);
+const WebSiteProvider = ({children, initialUser, country}: {
+    initialUser: User | undefined,
+    country: string,
+    children: React.ReactNode
+}) => {
+    const [user, setUser] = useState<User | undefined>(initialUser);
 
     return (
         <WebSiteContext.Provider value={{
             user,
-            setUser
+            setUser,
+            country: country,
+            phones: getPhones(country)
         }}>
             {children}
         </WebSiteContext.Provider>

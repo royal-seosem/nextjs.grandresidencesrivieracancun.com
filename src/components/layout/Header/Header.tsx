@@ -7,6 +7,7 @@ import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/draw
 import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
 import MyRoyal from "@/components/layout/Header/MyRoyal";
 import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
+import Contact from "@/components/layout/Header/Contact";
 
 
 export default function Header() {
@@ -88,10 +89,7 @@ export default function Header() {
                     </div>
 
                     <div className='flex'>
-                        <button className="flex items-center gap-1">
-                            <Image src={"/icons/phone.svg"} alt={"icon phone"} width={24} height={24}/>
-                            <IconArrowDown/>
-                        </button>
+                        <Contact/>
                     </div>
                     <div>
                         <Drawer direction="right">

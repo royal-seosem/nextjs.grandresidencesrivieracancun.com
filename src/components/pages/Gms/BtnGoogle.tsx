@@ -5,8 +5,6 @@ import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
 import {logInGoogle} from "@/actions/auth";
 import {useWebsite} from "@/context/WebSiteProvider";
 
-// import {signInGoogle} from "@/actions/auth";
-
 function BtnGoogle() {
     const router = useRouter();
     const {setUser} = useWebsite();

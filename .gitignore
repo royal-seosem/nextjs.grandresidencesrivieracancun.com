@@ -19,6 +19,7 @@
 
 # production
 /build
+geo_db
 
 # misc
 .DS_Store

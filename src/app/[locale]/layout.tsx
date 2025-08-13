@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import Footer from "@/components/layout/Footer";
 import WebSiteProvider from "@/context/WebSiteProvider";
 import {getSession} from "@/lib/session";
+import {getCountry} from "@/lib/geo";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default async function RootLayout({children, params}: {
 }) {
     const {locale} = await params;
     const user = await getSession();
+    const country = await getCountry();
 
     return (
         <html lang={locale}>
@@ -66,7 +68,7 @@ export default async function RootLayout({children, params}: {
             className={`${helveticaNue.className} antialiased`}
         >
         <NextIntlClientProvider>
-            <WebSiteProvider initialUser={user}>
+            <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <Header/>
                 {children}
                 <Footer/>
