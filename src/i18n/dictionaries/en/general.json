@@ -1,0 +1,9 @@
+{
+  "general": {
+    "management": "Resort",
+    "reservations": "Reservations",
+    "transportacion": "Transportation",
+    "btn-contact": "Contact Us",
+    "weddings_groups": "Groups & Weddings"
+  }
+}
