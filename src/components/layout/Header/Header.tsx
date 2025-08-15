@@ -7,7 +7,7 @@ import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/draw
 import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
 import MyRoyal from "@/components/layout/Header/MyRoyal";
 import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
-import Contact from "@/components/layout/Header/Contact";
+import ContactOptions from "@/components/layout/Header/ContactOptions";
 
 
 export default function Header() {
@@ -23,7 +23,6 @@ export default function Header() {
                 setShowResortMenu(false);
             }
         };
-
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
@@ -89,7 +88,7 @@ export default function Header() {
                     </div>
 
                     <div className='flex'>
-                        <Contact/>
+                        <ContactOptions/>
                     </div>
                     <div>
                         <Drawer direction="right">

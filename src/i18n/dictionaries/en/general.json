@@ -4,6 +4,10 @@
     "reservations": "Reservations",
     "transportacion": "Transportation",
     "btn-contact": "Contact Us",
-    "weddings_groups": "Groups & Weddings"
+    "weddings_groups": "Groups & Weddings",
+    "title-transportation": "Transportation",
+    "description-transportation": "We offer complimentary roundtrip* airport transportation for our guests. In order to schedule this private service, please provide the following information at least 72 hours before your arrival day.",
+    "restriction-transportation": "*Restrictions may apply for owner loan, certificates and Discovery.",
+    "condition-transportation": "Please be advised that our airport transportation service operates exclusively from Cancun International Airport. Upon confirmation of your reservation, our dedicated team will promptly send you an email with a voucher attached. This voucher must be printed and presented at the time of pickup to validate the service."
   }
 }

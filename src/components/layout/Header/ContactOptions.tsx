@@ -2,13 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import {useTranslations} from "next-intl";
-import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/drawer";
+import {Drawer, DrawerContent, DrawerTitle, DrawerTrigger} from "@/components/commons/ui/drawer";
 import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
 import PhoneCallIcon from "@/components/commons/icons/phone-call.svg";
 import MailIcon from "@/components/commons/icons/mail.svg";
 import {useWebsite} from "@/context/WebSiteProvider";
+import ContactTransportation from "@/components/layout/Header/ContactTransportation";
 
-const Contact = () => {
+const ContactOptions = () => {
     const {phones} = useWebsite();
     const t = useTranslations('menu');
     const tg = useTranslations('general');
@@ -21,7 +22,9 @@ const Contact = () => {
                 <IconArrowDown width={20} height={20}/>
             </DrawerTrigger>
             <DrawerContent className="p-5">
-                <span className="text-primary text-2xl font-bold pb-2 border-b border-accent mb-2">{t('contact')}</span>
+                <DrawerTitle className="text-primary text-2xl font-bold pb-2 border-b border-accent mb-2">
+                    {t('contact')}
+                </DrawerTitle>
                 <ul className="flex flex-col gap-4 text-primary text-base">
                     <li>
                         <span className="text-primary text-base font-bold mb-2 block">{tg('management')}</span>
@@ -61,9 +64,7 @@ const Contact = () => {
                                 </Link>
                             </li>
                             <li>
-                                <button className="bg-menu2 text-white text-base py-1 px-10 rounded-xs uppercase font-medium">
-                                    {tg('btn-contact')}
-                                </button>
+                                <ContactTransportation/>
                             </li>
                         </ul>
                     </li>
@@ -77,7 +78,8 @@ const Contact = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="flex items-center gap-3" href={`mailto:${phones.wedding_groups.email}`}>
+                                <Link className="flex items-center gap-3"
+                                      href={`mailto:${phones.wedding_groups.email}`}>
                                     <MailIcon width={20} height={20}/>
                                     {phones.wedding_groups.email}
                                 </Link>
@@ -90,4 +92,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactOptions;

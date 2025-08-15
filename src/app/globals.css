@@ -9,7 +9,8 @@
     --menu-color: #f1ebe5;
     --menu2-color: #be8b5e;
     --accent: #763300;
-
+    --boder-input: #BA9980;
+    --label-input: #949494;
 }
 
 @theme inline {
@@ -51,7 +52,8 @@
 
     --color-menu: var(--menu-color);
     --color-menu2: var(--menu2-color);
-
+    --color-boder-input: var(--boder-input);
+    --color-label: var(--label-input);
 
 }
 
@@ -140,4 +142,24 @@
     .my-container {
         @apply px-5 max-w-[1440px] mx-auto;
     }
+}
+
+/* styles.css */
+.DialogOverlay {
+    background: rgba(0 0 0 / 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    overflow-y: auto;
+}
+
+.DialogContent {
+    min-width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
 }
