@@ -2,6 +2,6 @@
 import {useCallback} from "react";
 import {GTMEvent, pushToDataLayer} from "@/lib/gtm";
 
-export function useGTMEvent<>() {
+export function useGTMEvent() {
     return useCallback((event: GTMEvent) => pushToDataLayer(event), []);
 }

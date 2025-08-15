@@ -20,6 +20,7 @@ import Script from "next/script";
 import {grecaptcha} from "@/types/grecaptcha";
 import {sendTransportation} from "@/use_case/supscription/send_transportation";
 import {formTransportationSchema} from "@/use_case/supscription/transportations.schema";
+import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 
 
 declare global {
@@ -47,20 +48,30 @@ const ContactTransportation = () => {
     });
     const siteKey = process.env.NEXT_PUBLIC_GOOGLE_CAPTCHA_KEY || "";
     // const dataLayer = useGTMEvent();
+    const dataLayer = useGTMEvent();
 
     const onSubmit = async (values: z.infer<typeof formTransportationSchema>) => {
         const token = await window.grecaptcha.enterprise.execute(siteKey, {action: 'TRANSPORTATION_FORM'});
-        const resp = await sendTransportation(values, token );
-        // if (resp.success) {
-        //     dataLayer({
-        //         event: 'contact_form',
-        //         bookThrogh: "Booking",
-        //         status: "KO",
-        //         date: values.dateCheckIn,
-        //     })
-        // }
-        //Todo crear evento de datalayer "contact_form"
-        console.log(values, token);
+        const resp = await sendTransportation(values, token);
+
+        if (resp.success) {
+            dataLayer({
+                event: 'contact_form',
+                bookThrogh: "Booking",
+                status: "OK",
+                date: values.dateCheckIn,
+            })
+        } else {
+            dataLayer({
+                event: 'contact_form',
+                bookThrogh: "Booking",
+                status: "KO",
+                errorType: resp.error?.message,
+                errorCode: resp.error?.code,
+            })
+        }
+        // //Todo crear evento de datalayer "contact_form"
+        console.log(resp, token);
     }
     return (
         <>

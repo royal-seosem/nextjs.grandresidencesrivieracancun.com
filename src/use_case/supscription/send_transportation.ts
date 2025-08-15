@@ -1,20 +1,34 @@
 'use server'
-import {formTransportationSchema} from "@/use_case/supscription/transportations.schema";
-import {ZodError} from "zod";
+import {formTransportationSchemaTest} from "@/use_case/supscription/transportations.schema";
+import {recaptchaValidate} from "@/lib/recaptcha";
 
 export const sendTransportation = async (req: unknown, token: string): Promise<{
     success: boolean,
-    error?: ZodError
+    error?: {
+        code: string,
+        message: string
+    }
 }> => {
-    const {success, data, error} = formTransportationSchema.safeParse(req);
-
+    const {success, data, error} = formTransportationSchemaTest.safeParse(req);
+    const passCaptcha = await recaptchaValidate(token, 'TRANSPORTATION_FORM');
+    if (!passCaptcha) {
+        return {
+            success: false,
+            error: {
+                code: 'RECAPTCHA_ERROR',
+                message: 'Error al validar el captcha'
+            }
+        };
+    }
     if (!success) {
         return {
             success: false,
-            error: error
+            error: {
+                code: error?.issues[0].code,
+                message: `${error?.issues[0].path}:  ${error?.issues[0].message}`
+            }
         };
     }
-
     //TODO: API - Send Email transportation
 
     return {
