@@ -21,6 +21,9 @@ import {grecaptcha} from "@/types/grecaptcha";
 import {sendTransportation} from "@/use_case/supscription/send_transportation";
 import {formTransportationSchema} from "@/use_case/supscription/transportations.schema";
 import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
+import {useState} from "react";
+import {cn} from "@/lib/utils";
+import Image from "next/image";
 
 
 declare global {
@@ -31,6 +34,9 @@ declare global {
 
 
 const ContactTransportation = () => {
+    const [showForm, setShowForm] = useState(true);
+    const [isSend, setIsSend] = useState(false);
+
     const t = useTranslations('general');
     const form = useForm<z.infer<typeof formTransportationSchema>>({
         resolver: zodResolver(formTransportationSchema),
@@ -47,13 +53,15 @@ const ContactTransportation = () => {
         }
     });
     const siteKey = process.env.NEXT_PUBLIC_GOOGLE_CAPTCHA_KEY || "";
+
     // const dataLayer = useGTMEvent();
     const dataLayer = useGTMEvent();
 
     const onSubmit = async (values: z.infer<typeof formTransportationSchema>) => {
+        setShowForm(false);
         const token = await window.grecaptcha.enterprise.execute(siteKey, {action: 'TRANSPORTATION_FORM'});
         const resp = await sendTransportation(values, token);
-
+        setIsSend(true);
         if (resp.success) {
             dataLayer({
                 event: 'contact_form',
@@ -70,8 +78,6 @@ const ContactTransportation = () => {
                 errorCode: resp.error?.code,
             })
         }
-        // //Todo crear evento de datalayer "contact_form"
-        console.log(resp, token);
     }
     return (
         <>
@@ -88,14 +94,19 @@ const ContactTransportation = () => {
                         <h3 className="text-center"> {t('title-transportation')} </h3>
                     </DialogHeader>
                     <ScrollArea className="max-h-[80vh]">
-                        <p className="text-xs mb-4">
-                            {t('description-transportation')}
-                        </p>
-                        <small
-                            className="text-xs italic text-right block mb-2">{t('restriction-transportation')}</small>
+                        {!isSend && (
+                            <>
+                                <p className="text-xs mb-4">
+                                    {t('description-transportation')}
+                                </p>
+                                <small
+                                    className="text-xs italic text-right block mb-2">{t('restriction-transportation')}</small>
+                            </>
+                        )}
 
                         <Form {...form}>
-                            <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-2 gap-3">
+                            <form onSubmit={form.handleSubmit(onSubmit)}
+                                  className={cn("grid grid-cols-2 gap-3", showForm ? '' : 'hidden')}>
                                 <FormField
                                     control={form.control}
                                     name="rsvNumber"
@@ -214,6 +225,15 @@ const ContactTransportation = () => {
                                 </div>
                             </form>
                         </Form>
+
+                        {!showForm && !isSend && (
+                            <Image className="m-auto" src={"/icons/loading-form.gif"} alt={"Loading"} width={50}
+                                   height={50}/>
+                        )}
+
+                        {isSend && (
+                            <p className="text-center">{t("messages-email.transportation")}</p>
+                        )}
                     </ScrollArea>
 
                 </DialogContent>

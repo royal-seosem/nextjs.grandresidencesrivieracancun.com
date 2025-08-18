@@ -1,5 +1,5 @@
 'use server'
-import {formTransportationSchemaTest} from "@/use_case/supscription/transportations.schema";
+import {formTransportationSchema} from "@/use_case/supscription/transportations.schema";
 import {recaptchaValidate} from "@/lib/recaptcha";
 
 export const sendTransportation = async (req: unknown, token: string): Promise<{
@@ -9,7 +9,7 @@ export const sendTransportation = async (req: unknown, token: string): Promise<{
         message: string
     }
 }> => {
-    const {success, data, error} = formTransportationSchemaTest.safeParse(req);
+    const {success, data, error} = formTransportationSchema.safeParse(req);
     const passCaptcha = await recaptchaValidate(token, 'TRANSPORTATION_FORM');
     if (!passCaptcha) {
         return {
@@ -29,7 +29,8 @@ export const sendTransportation = async (req: unknown, token: string): Promise<{
             }
         };
     }
-    //TODO: API - Send Email transportation
+
+    //TODO: API - Send Email transportation SubscriptionController::sendTransportation
 
     return {
         success: true
