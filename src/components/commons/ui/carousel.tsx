@@ -1,10 +1,9 @@
 "use client"
 
 import * as React from "react"
-import useEmblaCarousel, {
-    type UseEmblaCarouselType,
-} from "embla-carousel-react"
-import {ArrowLeft, ArrowRight} from "lucide-react"
+import useEmblaCarousel, {type UseEmblaCarouselType,} from "embla-carousel-react"
+import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
+import ArrowLeftIcon from "@/components/commons/icons/arrow-left.svg";
 
 import {cn} from "@/lib/utils"
 import {Button} from "./button"
@@ -162,12 +161,27 @@ function CarouselItem({className, ...props}: React.ComponentProps<"div">) {
             aria-roledescription="slide"
             data-slot="carousel-item"
             className={cn(
-                "min-w-0 shrink-0 grow-0 basis-full",
+                "min-w-0 shrink-0 grow-0 basis-full ",
                 orientation === "horizontal" ? "pl-4" : "pt-4",
                 className
             )}
             {...props}
         />
+    )
+}
+
+function CarouselNavigation() {
+    return (
+        <div className="flex justify-between items-center py-2">
+            <div>
+
+            </div>
+            <div className=" flex gap-2">
+                <CarouselPrevious/>
+                <CarouselNext/>
+            </div>
+
+        </div>
     )
 }
 
@@ -185,9 +199,9 @@ function CarouselPrevious({
             variant={variant}
             size={size}
             className={cn(
-                "absolute size-8 rounded-full",
+                "size-8 bg-transparent border-0 shadow-none hover:bg-transparent",
                 orientation === "horizontal"
-                    ? "top-1/2 -left-12 -translate-y-1/2"
+                    ? "top-1/2 -left-12 "
                     : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
                 className
             )}
@@ -195,11 +209,13 @@ function CarouselPrevious({
             onClick={scrollPrev}
             {...props}
         >
-            <ArrowLeft/>
+            <ArrowLeftIcon/>
             <span className="sr-only">Previous slide</span>
         </Button>
     )
 }
+
+
 
 function CarouselNext({
                           className,
@@ -215,9 +231,10 @@ function CarouselNext({
             variant={variant}
             size={size}
             className={cn(
-                "absolute size-8 rounded-full",
+                "size-8 bg-transparent border-0 shadow-none hover:bg-transparent" +
+                "flex items-center justify-center",
                 orientation === "horizontal"
-                    ? "top-1/2 -right-12 -translate-y-1/2"
+                    ? "top-1/2 -right-12 "
                     : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
                 className
             )}
@@ -225,7 +242,7 @@ function CarouselNext({
             onClick={scrollNext}
             {...props}
         >
-            <ArrowRight/>
+            <ArrowRightIcon with={32} height={32} className="block"/>
             <span className="sr-only">Next slide</span>
         </Button>
     )
@@ -238,4 +255,5 @@ export {
     CarouselItem,
     CarouselPrevious,
     CarouselNext,
+    CarouselNavigation
 }
