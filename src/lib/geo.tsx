@@ -38,8 +38,8 @@ const getClientIpFromHeaders = (h: Headers): string => {
 export const getCountry = async (): Promise<Country | null> => {
     await openReader();
     const h = await headers();
-    // const ip = getClientIpFromHeaders(h);
-    const ip = "192.222.161.169"
+    const ip = getClientIpFromHeaders(h);
+    // const ip = "192.222.161.169"
 
     if (!reader) return null;
     try {

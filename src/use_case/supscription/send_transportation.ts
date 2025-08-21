@@ -9,7 +9,7 @@ export const sendTransportation = async (req: unknown, token: string): Promise<{
         message: string
     }
 }> => {
-    const {success, data, error} = formTransportationSchema.safeParse(req);
+    const {success, error} = formTransportationSchema.safeParse(req);
     const passCaptcha = await recaptchaValidate(token, 'TRANSPORTATION_FORM');
     if (!passCaptcha) {
         return {

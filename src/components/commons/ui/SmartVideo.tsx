@@ -4,7 +4,8 @@ import {useEffect, useRef, useState} from "react";
 type Props = {
     srcDesktop: string;   // Vídeo para ≥ 768 px
     srcMobile: string;    // Vídeo para < 768 px
-    poster?: string;
+    posterDesktop?: string;
+    posterMobile?: string;
     className?: string;
     loop?: boolean;
 };
@@ -12,7 +13,6 @@ type Props = {
 export default function SmartVideo({
                                        srcDesktop,
                                        srcMobile,
-                                       poster,
                                        className = "",
                                        loop = true,
                                    }: Props) {
@@ -55,7 +55,7 @@ export default function SmartVideo({
         <video
             ref={videoRef}
             className={className}
-            poster={poster}
+            poster={""}
             src={src}
             muted
             playsInline

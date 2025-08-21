@@ -1,0 +1,73 @@
+'use client'
+import React from 'react';
+import BookingType from "@/components/commons/shared/booking/BookingType";
+import BookingCalendar from "@/components/commons/shared/booking/BookingCalendar";
+import BookingGuest from "@/components/commons/shared/booking/BookingGuest";
+import BookingPromo from "@/components/commons/shared/booking/BookingPromo";
+import BookingBook from "@/components/commons/shared/booking/BookingBook";
+import BookingAirport from "@/components/commons/shared/booking/BookingAirport";
+
+type BookingContextProps = {
+    type: "hotel+flight" | "hotel",
+    setType: (type: "hotel+flight" | "hotel") => void,
+    checkIn: Date | undefined,
+    setCheckIn: (checkIn: Date | undefined) => void,
+    checkOut: Date | undefined,
+    setCheckOut: (checkOut: Date | undefined) => void,
+    rooms: number,
+    setRooms: (rooms: number) => void,
+    adults: number,
+    setAdults: (adults: number) => void,
+    children: number,
+    setChildren: (children: number) => void,
+    childrenAge: number[],
+    setChildrenAge: (childrenAge: number[]) => void,
+}
+
+const BookingContext = React.createContext<BookingContextProps | null>(null);
+
+export const useBooking = () => {
+    const context = React.useContext(BookingContext);
+    if (!context) throw new Error('useBooking debe usarse dentro de BookingProvider');
+    return context;
+};
+
+const Booking = () => {
+    const [type, setType] = React.useState<"hotel+flight" | "hotel">('hotel');
+    const [checkIn, setCheckIn] = React.useState<Date | undefined>(undefined);
+    const [checkOut, setCheckOut] = React.useState<Date | undefined>(undefined);
+    const [rooms, setRooms] = React.useState<number>(1);
+    const [adults, setAdults] = React.useState<number>(2);
+    const [children, setChildren] = React.useState<number>(0);
+    const [childrenAge, setChildrenAge] = React.useState<number[]>([]);
+
+    return (
+        <BookingContext.Provider value={{
+            type: type,
+            setType: setType,
+            checkIn: checkIn,
+            checkOut: checkOut,
+            setCheckIn: setCheckIn,
+            setCheckOut: setCheckOut,
+            rooms: rooms,
+            setRooms: setRooms,
+            adults,
+            setAdults,
+            children,
+            setChildren,
+            childrenAge,
+            setChildrenAge,
+        }}>
+            <div className="flex shadow-lg justify-center items-stretch gap-5 p-3 relative">
+                <BookingType/>
+                {type === 'hotel+flight' && (<BookingAirport/>)}
+                <BookingCalendar/>
+                <BookingGuest/>
+                <BookingPromo/>
+                <BookingBook/>
+            </div>
+        </BookingContext.Provider>
+    );
+};
+
+export default Booking;
