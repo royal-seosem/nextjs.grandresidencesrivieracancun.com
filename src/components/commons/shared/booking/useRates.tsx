@@ -1,10 +1,10 @@
 'use client'
-import {useQueries} from "@tanstack/react-query";
+import {useQueries, useQuery} from "@tanstack/react-query";
 import {addMonths, format, startOfMonth} from 'date-fns';
 import {util} from "protobufjs";
 import float = util.float;
 
-export type rateRquest = {
+export type RateRequest = {
     adults: number,
     children: number,
     childAge: number[],
@@ -41,8 +41,8 @@ async function ensureCsrfCookie() {
 }
 
 
-async function fetchRate(rateRquest: rateRquest, key: string) {
-    await ensureCsrfCookie();
+async function fetchRate(rateRquest: RateRequest, key: string) {
+    // await ensureCsrfCookie();
     let startDate = new Date(rateRquest.month.getTime());
     startDate.setDate(1);
 
@@ -59,7 +59,7 @@ async function fetchRate(rateRquest: rateRquest, key: string) {
         dateIn: format(startDate, 'yyyy-MM-dd'),
         dateOut: format(endDate, 'yyyy-MM-dd')
     };
-    return await fetch(`https://dev.v2-royalreservations.com/shop/v1/hotel/basicavail/${key}`, {
+    return fetch(`https://dev.v2-royalreservations.com/shop/v1/hotel/basicavail/${key}`, {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -67,8 +67,7 @@ async function fetchRate(rateRquest: rateRquest, key: string) {
         },
         body: JSON.stringify(rq),
     }).then(res => res.json())
-        .then(data => data.dates)
-        .then(data => calculateRate(data));
+        .then(data => data.dates);
 }
 
 export type Rate = {
@@ -90,33 +89,20 @@ const calculateRate = (rates: Rate[]) => {
             discount: r.rate.discount,
         }
     }));
-
     return map;
 }
 
-const useRates = (rq: rateRquest) => {
-    const months = getVisibleMonths(rq.month);
-    return  useQueries({
-        queries: months.map((month) => {
-            const data = {
-                ...rq,
-                month: month,
-            }
-            const key = `${data.month.getFullYear()}-${data.month.getMonth()}${data.adults}-${data.children}-${data.childAge.slice(0, data.children).join(',')}-${data.ratePlanCode}-${data.roomTypeCode}-${format(month, 'yyyy-MM')}`;
+export const useRate = (rq: RateRequest) => {
+    const key = `${rq.month.getFullYear()}-${rq.month.getMonth()}${rq.adults}-${rq.children}-${rq.childAge.slice(0, rq.children).join(',')}-${rq.ratePlanCode}-${rq.roomTypeCode}-${format(rq.month, 'yyyy-MM')}`;
 
-            return {
-                queryKey: ['rates', key],
-                queryFn: () => fetchRate(data, key),
-                staleTime: Infinity,
-            }
-        })
-    });
+    const {data} = useQuery({
+        queryKey: ['rates', key],
+        queryFn: () => fetchRate(rq, key)
+            .then(data => calculateRate(data)),
+        staleTime: Infinity,
+    })
 
-    // return queries.reduce((map, q) => {
-    //     q.data?.forEach(r => map.set(r.date, r.price));
-    //     return map;
-    // }, new Map<string, number>());
-
-};
-
-export default useRates;
+    return {
+        data,
+    }
+}

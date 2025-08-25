@@ -1,5 +1,5 @@
 'use client'
-import React, {useCallback, useEffect, useMemo} from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {DateRange} from "react-day-picker";
 import {Calendar} from "@/components/commons/ui/calendar";
 import {useBooking} from "@/components/commons/shared/booking/Booking";
@@ -7,7 +7,6 @@ import {format} from "date-fns";
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {DropdownMenu, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
 import {DropdownMenuContent} from "@radix-ui/react-dropdown-menu";
-import useRates from "@/components/commons/shared/booking/useRates";
 
 
 const BookingCalendar = () => {
@@ -25,7 +24,20 @@ const BookingCalendar = () => {
     const label = useMemo(() => `${checkIn ? format(checkIn, 'MMM dd, yy') : ''} - ${checkOut ? format(checkOut, 'MMM dd, yy') : ''}`, [checkIn, checkOut])
 
 
-    const {data, isPending} = useRates({
+    // const {data} = useRates({
+    //     adults,
+    //     children,
+    //     childAge: childrenAge,
+    //     currency: 'USD',
+    //     month: month,
+    //     discountCode: '',
+    //     hotelCode: '95939',
+    //     ratePlanCode: '',
+    //     roomTypeCode: '',
+    //     rooms: rooms,
+    // })
+
+    const request = {
         adults,
         children,
         childAge: childrenAge,
@@ -36,9 +48,7 @@ const BookingCalendar = () => {
         ratePlanCode: '',
         roomTypeCode: '',
         rooms: rooms,
-    })
-
-
+    }
 
     useEffect(() => {
         setDate({
@@ -46,25 +56,6 @@ const BookingCalendar = () => {
             to: checkOut,
         });
     }, [checkIn, checkOut])
-
-
-    const renderDay = useCallback(({day}) => {
-        const date = day.date;
-        const key = format(date, 'yyyy-MM-dd')
-        console.log(data);
-        const price = data?.get(key) || undefined;
-        return (
-            <div className="flex flex-col items-center">
-                <span>{date.getDate()}</span>
-                {price && (
-                    <span className="text-[10px] text-green-600 font-medium">
-                      ${(price.rate.minRate - price.rate.discount).toFixed(0)}
-                    </span>
-                )}
-            </div>
-        );
-
-    },[data])
 
     return (
         <DropdownMenu>
@@ -84,9 +75,7 @@ const BookingCalendar = () => {
                     selected={date}
                     onSelect={selectDate}
                     onMonthChange={(month) => setMonth(month)}
-                    // components={{
-                    //     Day: renderDay
-                    // }}
+                    rateRequest={request}
                     className="rounded-lg border shadow-sm"/>
             </DropdownMenuContent>
         </DropdownMenu>

@@ -7,6 +7,7 @@ import {format} from "date-fns"
 
 import {cn} from "@/lib/utils"
 import {Button, buttonVariants} from "@/components/commons/ui/button"
+import {RateRequest, useRate} from "@/components/commons/shared/booking/useRates";
 
 function Calendar({
                       className,
@@ -16,12 +17,13 @@ function Calendar({
                       buttonVariant = "ghost",
                       formatters,
                       components,
+                      rateRequest,
                       ...props
                   }: React.ComponentProps<typeof DayPicker> & {
-    buttonVariant?: React.ComponentProps<typeof Button>["variant"]
+    buttonVariant?: React.ComponentProps<typeof Button>["variant"],
+    rateRequest?: RateRequest
 }) {
     const defaultClassNames = getDefaultClassNames()
-
     return (
         <DayPicker
             showOutsideDays={showOutsideDays}
@@ -156,7 +158,7 @@ function Calendar({
                         <ChevronDownIcon className={cn("size-4", className)} {...props} />
                     )
                 },
-                DayButton: CalendarDayButton,
+                DayButton: (props) => CalendarDayButton({...props, rateRequest}),
                 WeekNumber: ({children, ...props}) => {
                     return (
                         <td {...props}>
@@ -177,6 +179,8 @@ function CalendarDayButton({
                                className,
                                day,
                                modifiers,
+                               rateRequest,
+                               children,
                                ...props
                            }: React.ComponentProps<typeof DayButton>) {
     const defaultClassNames = getDefaultClassNames()
@@ -185,6 +189,22 @@ function CalendarDayButton({
     React.useEffect(() => {
         if (modifiers.focused) ref.current?.focus()
     }, [modifiers.focused])
+
+
+    let dayRequest = day.date;
+    if (day.date < new Date()) {
+        dayRequest = new Date();
+    }
+
+    const {data} = useRate({
+        ...rateRequest,
+        month: dayRequest
+    });
+
+    const key = format(day.date, "yyyy-MM-dd");
+    const price = data?.get(key) || null;
+
+    console.log(key, price)
 
     return (
         <Button
@@ -204,6 +224,7 @@ function CalendarDayButton({
             className={cn(
                 // "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70",
                 defaultClassNames.day,
+                'flex flex-col gap-0',
                 'border border-transparent',
                 'text-base font-normal aspect-square w-[52px] h-[52px]',
                 'data-[selected-single=true]:bg-booking-bg data-[selected-single=true]:border-accent data-[selected-single=true]:rounded-xs',
@@ -212,7 +233,12 @@ function CalendarDayButton({
                 className
             )}
             {...props}
-        />
+        >
+            <span>{children}</span>
+            {price && (
+                <span className="text-[11px]"> ${(price.rate.minRate - price.rate.discount).toFixed(0)} </span>
+            )}
+        </Button>
     )
 }
 
