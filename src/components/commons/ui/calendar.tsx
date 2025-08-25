@@ -206,6 +206,7 @@ function CalendarDayButton({
                 defaultClassNames.day,
                 'border border-transparent',
                 'text-base font-normal aspect-square w-[52px] h-[52px]',
+                'data-[selected-single=true]:bg-booking-bg data-[selected-single=true]:border-accent data-[selected-single=true]:rounded-xs',
                 'data-[range-start=true]:bg-booking-bg data-[range-start=true]:border-accent data-[range-start=true]:rounded-xs',
                 'data-[range-end=true]:bg-booking-bg data-[range-end=true]:border-accent data-[range-end=true]:rounded-xs',
                 className

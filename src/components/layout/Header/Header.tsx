@@ -123,17 +123,17 @@ export default function Header() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <Link href="/restaurants">
+                                                <Link href="/">
                                                     {tmenu('dining')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/amenities">
+                                                <Link href="/">
                                                     {tmenu('activities')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/gallery">
+                                                <Link href="/">
                                                     {tmenu('gallery')}
                                                 </Link>
                                             </li>
@@ -141,22 +141,22 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li className="bg-menu px-5 py-1 relative before:content-[''] before:absolute before:pointer-events-none before:bg-[#be8b5e] before:h-full before:w-2 before:top-0 before:left-0">
-                                        <Link href="/all-inclusive" className="text-lg">
+                                        <Link href="/" className="text-lg">
                                             {tmenu('all inclusive')}
                                         </Link>
                                     </li>
                                     <li className="px-5 py-1">
-                                        <Link href="/offers">
+                                        <Link href="/">
                                             {tmenu('specials')}
                                         </Link>
                                     </li>
                                     <li className="px-5 py-1">
-                                        <Link href="/weddings">
+                                        <Link href="/">
                                             {tmenu('wedding')}
                                         </Link>
                                     </li>
                                     <li className="px-5 py-1">
-                                        <Link href="/destination">
+                                        <Link href="/">
                                             {tmenu('destination')}
                                         </Link>
                                     </li>
@@ -183,7 +183,7 @@ export default function Header() {
                                     </li>
 
                                     <li className="px-5 py-1 bg-menu">
-                                        <Link href="/media-room">
+                                        <Link href="/">
                                             {tmenu('media')}
                                         </Link>
                                     </li>
@@ -192,10 +192,9 @@ export default function Header() {
                                         <Link href="/">
                                             {tmenu('english')}
                                         </Link>
-                                        <Link href="es">
-                                            {tmenu('spanish')}
-                                        </Link>
-
+                                        {/*<Link href="/es">*/}
+                                        {/*    {tmenu('spanish')}*/}
+                                        {/*</Link>*/}
                                     </li>
                                 </ul>
                             </DrawerContent>
@@ -213,12 +212,12 @@ export default function Header() {
                             ${showResortMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'} 
                         `}>
                 <li className="hover:bg-gray-100">
-                    <Link href="/resort-a" className="block px-4 py-2">
+                    <Link href="/" className="block px-4 py-2">
                         {tmenu('suites')}
                     </Link>
                 </li>
                 <li className="hover:bg-gray-100">
-                    <Link href="/resort-b" className="block px-4 py-2">
+                    <Link href="/" className="block px-4 py-2">
                         {tmenu('dining')}
                     </Link>
                 </li>

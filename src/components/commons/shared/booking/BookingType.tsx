@@ -8,6 +8,7 @@ const BookingType = () => {
     const {type, setType} = useBooking();
     return (
         <Button
+            type="button"
             onClick={() => setType(type === 'hotel' ? 'hotel+flight' : 'hotel')}
             className="h-auto text-booking-text text-base font-extrabold rounded-xs  border border-booking-border bg-booking-bg hover:bg-booking-bg px-4 w-[150px]">
             {type === 'hotel' && (<OffIcon/>)}

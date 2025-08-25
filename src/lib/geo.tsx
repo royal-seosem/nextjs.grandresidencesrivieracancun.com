@@ -39,7 +39,8 @@ export const getCountry = async (): Promise<Country | null> => {
     await openReader();
     const h = await headers();
     const ip = getClientIpFromHeaders(h);
-    // const ip = "192.222.161.169"
+
+    if (!ip || ip === '::1' || ip.startsWith('127.')) return null;
 
     if (!reader) return null;
     try {

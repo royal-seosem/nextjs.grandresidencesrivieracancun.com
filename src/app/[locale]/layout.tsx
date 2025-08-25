@@ -7,6 +7,8 @@ import Footer from "@/components/layout/Footer";
 import WebSiteProvider from "@/context/WebSiteProvider";
 import {getSession} from "@/lib/session";
 import {getCountry} from "@/lib/geo";
+import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
+import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -62,6 +64,7 @@ export default async function RootLayout({children, params}: {
     const user = await getSession();
     const country = await getCountry();
 
+
     return (
         <html lang={locale}>
         <body
@@ -69,9 +72,12 @@ export default async function RootLayout({children, params}: {
         >
         <NextIntlClientProvider>
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
-                <Header/>
-                {children}
-                <Footer/>
+                <ReactQueryProvider>
+                    <Header/>
+                    {children}
+                    <Footer/>
+                    <ReactQueryDevtools initialIsOpen={false} />
+                </ReactQueryProvider>
             </WebSiteProvider>
         </NextIntlClientProvider>
         </body>

@@ -42,27 +42,27 @@ const Footer = () => {
             </nav>
             <nav className="my-container  text-secondary text-base hidden lg:flex justify-between items-center mb-12">
                 <div className="flex flex-col gap-2 grow">
-                    <Link href="all-inclusive">{t('all inclusive')}</Link>
-                    <Link href="suites">{t('suites')}</Link>
-                    <Link href="restaurants">{t('dining')}</Link>
-                    <Link href="amenities">{t('activities')}</Link>
-                    <Link href="gallery">{t('gallery')}</Link>
-                    <Link href="weddings">{t('wedding')}</Link>
+                    <Link href="/">{t('all inclusive')}</Link>
+                    <Link href="/">{t('suites')}</Link>
+                    <Link href="/">{t('dining')}</Link>
+                    <Link href="/">{t('activities')}</Link>
+                    <Link href="/">{t('gallery')}</Link>
+                    <Link href="/">{t('wedding')}</Link>
                 </div>
                 <div className="flex flex-col gap-2 grow">
-                    <Link href="destination">{t('destination')}</Link>
-                    <Link href="offers">{t('specials')}</Link>
-                    <Link href=".blogLink" target="_blanck">Blog</Link>
-                    <Link href="faqs">{t('faqs')}</Link>
-                    <Link href="#" target="_blanck">{t('owners area')}</Link>
-                    <Link href="about-us">{t('about us')}</Link>
+                    <Link href="/">{t('destination')}</Link>
+                    <Link href="/">{t('specials')}</Link>
+                    <Link href="/" target="_blanck">Blog</Link>
+                    <Link href="/">{t('faqs')}</Link>
+                    <Link href="/" target="_blanck">{t('owners area')}</Link>
+                    <Link href="/">{t('about us')}</Link>
                 </div>
 
                 <div className="flex flex-col gap-2 grow">
-                    <Link href="resort-policies">{t('resort policy')}</Link>
-                    <Link href="privacy-policy" target="_blank">{t('privacy policy')}</Link>
-                    <Link href="media-room">{t('media')}</Link>
-                    <Link href="contact-us">{t('contact')}</Link>
+                    <Link href="/">{t('resort policy')}</Link>
+                    <Link href="/" target="_blank">{t('privacy policy')}</Link>
+                    <Link href="/">{t('media')}</Link>
+                    <Link href="/">{t('contact')}</Link>
                 </div>
             </nav>
 
@@ -133,7 +133,7 @@ const Footer = () => {
                     <span className="text-white text-xs ">
                         &copy;  Copyright  - Royal Resorts
                     </span>
-                    <Link href="/annoucement" className="text-secondary text-xs underline">
+                    <Link href="/" className="text-secondary text-xs underline">
                         {t("title-company")}
                     </Link>
                 </div>

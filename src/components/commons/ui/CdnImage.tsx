@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image, {ImageProps} from "next/image";
 
@@ -12,7 +13,6 @@ const imageConfig = {
 
 const CdnImage = ({src, alt, ...props}: CdnImageProps) => {
     const srcImage = `${imageConfig.cdnUrl}/${src.startsWith('/') ? src.slice(1) : src}`
-    console.log(srcImage);
     return (
         <Image
             src={srcImage}

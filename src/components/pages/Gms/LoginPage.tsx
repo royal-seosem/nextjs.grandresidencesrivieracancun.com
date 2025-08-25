@@ -36,11 +36,11 @@ export const LoginPage = async () => {
                         <span className="text-accent">{t('title-gms-program')}</span>
                     </button>
                     <div className="flex gap-5 mb-6">
-                        <Link href={"/login"}
+                        <Link href={"/"}
                               className="uppercase bg-primary border-2 text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
                             {t('log-in')}
                         </Link>
-                        <Link href={"/sign-up"}
+                        <Link href={"/"}
                               className="uppercase border-1 border-primary text-primary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
                             {t('sign-up')}
                         </Link>
