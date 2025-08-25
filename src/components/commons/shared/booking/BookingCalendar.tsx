@@ -12,7 +12,7 @@ import {DropdownMenuContent} from "@radix-ui/react-dropdown-menu";
 const BookingCalendar = () => {
     const {adults, children, childrenAge, rooms, checkIn, setCheckIn, checkOut, setCheckOut} = useBooking();
     const [date, setDate] = React.useState<DateRange | undefined>(undefined)
-    const [month, setMonth] = React.useState<Date | undefined>(checkIn);
+
 
     const selectDate = (date: DateRange | undefined) => {
         if (date?.from) setCheckIn(date.from);
@@ -24,25 +24,12 @@ const BookingCalendar = () => {
     const label = useMemo(() => `${checkIn ? format(checkIn, 'MMM dd, yy') : ''} - ${checkOut ? format(checkOut, 'MMM dd, yy') : ''}`, [checkIn, checkOut])
 
 
-    // const {data} = useRates({
-    //     adults,
-    //     children,
-    //     childAge: childrenAge,
-    //     currency: 'USD',
-    //     month: month,
-    //     discountCode: '',
-    //     hotelCode: '95939',
-    //     ratePlanCode: '',
-    //     roomTypeCode: '',
-    //     rooms: rooms,
-    // })
-
     const request = {
-        adults,
-        children,
+        adults: adults || 0,
+        children: children || 0,
         childAge: childrenAge,
         currency: 'USD',
-        month: month,
+        month: new Date(),
         discountCode: '',
         hotelCode: '95939',
         ratePlanCode: '',
@@ -74,7 +61,6 @@ const BookingCalendar = () => {
                     numberOfMonths={2}
                     selected={date}
                     onSelect={selectDate}
-                    onMonthChange={(month) => setMonth(month)}
                     rateRequest={request}
                     className="rounded-lg border shadow-sm"/>
             </DropdownMenuContent>

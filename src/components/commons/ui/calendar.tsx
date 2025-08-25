@@ -182,7 +182,9 @@ function CalendarDayButton({
                                rateRequest,
                                children,
                                ...props
-                           }: React.ComponentProps<typeof DayButton>) {
+                           }: React.ComponentProps<typeof DayButton> & {
+    rateRequest?: RateRequest,
+}) {
     const defaultClassNames = getDefaultClassNames()
 
     const ref = React.useRef<HTMLButtonElement>(null)
@@ -192,19 +194,33 @@ function CalendarDayButton({
 
 
     let dayRequest = day.date;
+
     if (day.date < new Date()) {
         dayRequest = new Date();
     }
 
+    const completeRateRequest: RateRequest = {
+        adults:        rateRequest?.adults        ?? 0,
+        children:      rateRequest?.children      ?? 0,
+        childAge:      rateRequest?.childAge      ?? [],
+        currency:      rateRequest?.currency      ?? "USD",
+        month:         dayRequest,                        // siempre el mes del día visible
+        discountCode:  rateRequest?.discountCode  ?? "",
+        hotelCode:     rateRequest?.hotelCode     ?? "",
+        ratePlanCode:  rateRequest?.ratePlanCode  ?? "",
+        roomTypeCode:  rateRequest?.roomTypeCode  ?? "",
+        rooms:         rateRequest?.rooms         ?? 1,
+    };
+
+
     const {data} = useRate({
-        ...rateRequest,
+        ...completeRateRequest,
         month: dayRequest
     });
 
     const key = format(day.date, "yyyy-MM-dd");
     const price = data?.get(key) || null;
 
-    console.log(key, price)
 
     return (
         <Button
@@ -235,7 +251,7 @@ function CalendarDayButton({
             {...props}
         >
             <span>{children}</span>
-            {price && (
+            {rateRequest && price && (
                 <span className="text-[11px]"> ${(price.rate.minRate - price.rate.discount).toFixed(0)} </span>
             )}
         </Button>

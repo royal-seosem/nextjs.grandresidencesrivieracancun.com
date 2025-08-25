@@ -1,5 +1,5 @@
 'use client'
-import React, {useEffect} from 'react';
+import React from 'react';
 import BookingType from "@/components/commons/shared/booking/BookingType";
 import BookingCalendar from "@/components/commons/shared/booking/BookingCalendar";
 import BookingGuest from "@/components/commons/shared/booking/BookingGuest";
@@ -8,7 +8,6 @@ import BookingBook from "@/components/commons/shared/booking/BookingBook";
 import BookingAirport from "@/components/commons/shared/booking/BookingAirport";
 import {useLocale} from "use-intl";
 import {format} from "date-fns";
-import useRates from "@/components/commons/shared/booking/useRates";
 
 type BookingContextProps = {
     type: "hotel+flight" | "hotel",
@@ -51,24 +50,6 @@ const Booking = () => {
     const [children, setChildren] = React.useState<number>(0);
     const [childrenAge, setChildrenAge] = React.useState<number[]>([]);
 
-    // const rates = useRates({
-    //     adults,
-    //     children,
-    //     childAge: childrenAge,
-    //     currency: 'USD',
-    //     month: checkIn ? checkIn : new Date(),
-    //     discountCode: '',
-    //     hotelCode: '95939',
-    //     ratePlanCode: '',
-    //     roomTypeCode: '',
-    //     rooms: rooms,
-    // })
-    //
-    //
-    // useEffect(() => {
-    //     console.log('Rates:')
-    //     console.log(rates);
-    // }, [rates]);
     return (
         <BookingContext.Provider value={{
             type: type,
