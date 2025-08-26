@@ -200,16 +200,16 @@ function CalendarDayButton({
     }
 
     const completeRateRequest: RateRequest = {
-        adults:        rateRequest?.adults        ?? 0,
-        children:      rateRequest?.children      ?? 0,
-        childAge:      rateRequest?.childAge      ?? [],
-        currency:      rateRequest?.currency      ?? "USD",
-        month:         dayRequest,                        // siempre el mes del día visible
-        discountCode:  rateRequest?.discountCode  ?? "",
-        hotelCode:     rateRequest?.hotelCode     ?? "",
-        ratePlanCode:  rateRequest?.ratePlanCode  ?? "",
-        roomTypeCode:  rateRequest?.roomTypeCode  ?? "",
-        rooms:         rateRequest?.rooms         ?? 1,
+        adults: rateRequest?.adults ?? 0,
+        children: rateRequest?.children ?? 0,
+        childAge: rateRequest?.childAge ?? [],
+        currency: rateRequest?.currency ?? "USD",
+        month: dayRequest,                        // siempre el mes del día visible
+        discountCode: rateRequest?.discountCode ?? "",
+        hotelCode: rateRequest?.hotelCode ?? "",
+        ratePlanCode: rateRequest?.ratePlanCode ?? "",
+        roomTypeCode: rateRequest?.roomTypeCode ?? "",
+        rooms: rateRequest?.rooms ?? 1,
     };
 
 
@@ -221,6 +221,8 @@ function CalendarDayButton({
     const key = format(day.date, "yyyy-MM-dd");
     const price = data?.get(key) || null;
 
+    const disable = price?.isAvailable === false || false;
+    const classLowestRate = 'border-[#c3f1c4] before:content-[\'\'] before:absolute before:top-0 before:right-0 before:h-0 before:w-0 before:border-[7px] before:border-solid before:border-[#4CAF50] before:border-b-transparent before:border-l-transparent';
 
     return (
         <Button
@@ -240,19 +242,24 @@ function CalendarDayButton({
             className={cn(
                 // "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70",
                 defaultClassNames.day,
-                'flex flex-col gap-0',
-                'border border-transparent',
+                'flex flex-col gap-0 relative',
+                'border border-transparent rounded-xs',
                 'text-base font-normal aspect-square w-[52px] h-[52px]',
-                'data-[selected-single=true]:bg-booking-bg data-[selected-single=true]:border-accent data-[selected-single=true]:rounded-xs',
-                'data-[range-start=true]:bg-booking-bg data-[range-start=true]:border-accent data-[range-start=true]:rounded-xs',
-                'data-[range-end=true]:bg-booking-bg data-[range-end=true]:border-accent data-[range-end=true]:rounded-xs',
+                'data-[selected-single=true]:bg-booking-bg data-[selected-single=true]:border-accent data-[selected-single=true]:rounded-xs data-[selected-single=true]:hover:bg-accent',
+                'data-[range-start=true]:bg-booking-bg data-[range-start=true]:border-accent data-[range-start=true]:rounded-xs data-[range-start=true]:hover:bg-accent',
+                'data-[range-end=true]:bg-booking-bg data-[range-end=true]:border-accent data-[range-end=true]:rounded-xs data-[range-end=true]:hover:bg-accent',
+                disable ? 'text-[#ddd]' : '',
+                price?.isMinRate && !disable ? classLowestRate: '',
+                'hover:text-white',
                 className
             )}
             {...props}
         >
             <span>{children}</span>
-            {rateRequest && price && (
-                <span className="text-[11px]"> ${(price.rate.minRate - price.rate.discount).toFixed(0)} </span>
+            {rateRequest && price && !disable && (
+                <span className="text-[11px]">
+                    ${(price.rate.minRate - price.rate.discount).toFixed(0)}
+                </span>
             )}
         </Button>
     )

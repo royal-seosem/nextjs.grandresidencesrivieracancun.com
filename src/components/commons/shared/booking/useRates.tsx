@@ -15,36 +15,11 @@ export type RateRequest = {
     rooms: number,
 }
 
-// function getVisibleMonths(base: Date): Date[] {
-//     const first = startOfMonth(base);
-//     const second = startOfMonth(addMonths(first, 1));
-//     return [first, second];          // <- array de Date con los dos meses
-// }
 
-// function getCookie(name: string) {
-//     const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
-//     return match ? decodeURIComponent(match[2]) : null;
-// }
-
-
-// async function ensureCsrfCookie() {
-//     if (!getCookie('XSRF-TOKEN')) {
-//         await fetch(`https://dev.v2-royalreservations.com/sanctum/csrf-cookie`, {
-//             headers: {
-//                 'Content-Type': 'application/json',
-//             },
-//             credentials: 'include',
-//         });
-//     }
-// }
-
-
-async function fetchRate(rateRequest: RateRequest, key: string) {
-    // await ensureCsrfCookie();
-
+async function fetchRate(rateRequest: RateRequest, key: string): Promise<Map<string, Rate>> {
 
     if (!rateRequest.month) {
-        return [];
+        return new Map<string, Rate>();
     }
 
     let startDate = new Date(rateRequest.month.getTime());
@@ -72,28 +47,45 @@ async function fetchRate(rateRequest: RateRequest, key: string) {
         },
         body: JSON.stringify(rq),
     }).then(res => res.json())
-        .then(data => data.dates);
+        .then(data => data.dates)
+        .then(data => calculateRate(data));
 }
 
 export type Rate = {
     date: string,
     isAvailable: boolean,
+    isMinRate: boolean,
     rate: {
         minRate: number,
         discount: number,
     }
 }
 const calculateRate = (rates: Rate[]) => {
+
+    const minRate = Math.min(...rates.map(r => r.rate.minRate - r.rate.discount)).toFixed(0);
+    const maxRate = Math.max(...rates.map(r => r.rate.minRate - r.rate.discount)).toFixed(0);
+
+    console.log(`Min: ${minRate} - Max: ${maxRate}`);
+
     const map = new Map<string, Rate>();
 
-    rates.forEach(r => map.set(r.date, {
-        date: r.date,
-        isAvailable: r.isAvailable,
-        rate: {
-            minRate: r.rate.minRate,
-            discount: r.rate.discount,
+    rates.forEach((r) => {
+        const rate = {
+            date: r.date,
+            isAvailable: r.isAvailable,
+            isMinRate: false,
+            rate: {
+                minRate: r.rate.minRate,
+                discount: r.rate.discount,
+            }
         }
-    }));
+
+        if (minRate !== maxRate && (r.rate.minRate - r.rate.discount).toFixed(0) === minRate) {
+            rate.isMinRate = true;
+        }
+
+        map.set(r.date, rate)
+    });
     return map;
 }
 
@@ -103,8 +95,7 @@ export const useRate = (rq: RateRequest) => {
 
     const {data} = useQuery({
         queryKey: ['rates', key],
-        queryFn: () => fetchRate(rq, key)
-            .then(data => calculateRate(data)),
+        queryFn: () => fetchRate(rq, key),
         staleTime: Infinity,
     })
 
