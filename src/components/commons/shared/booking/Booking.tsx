@@ -9,6 +9,7 @@ import BookingAirport from "@/components/commons/shared/booking/BookingAirport";
 import {useLocale} from "use-intl";
 import {format} from "date-fns";
 import {Airport} from "@/components/commons/shared/booking/hooks/useAirport";
+import {cn} from "@/lib/utils";
 
 type BookingContextProps = {
     type: "hotel+flight" | "hotel",
@@ -42,7 +43,11 @@ startDate.setDate(startDate.getDate() + 5);
 const endDate = new Date();
 endDate.setDate(endDate.getDate() + 10);
 
-const Booking = () => {
+export interface BookingProps {
+    variant?: 'DESK' | 'MODAL' | 'MOBILE'
+}
+
+const Booking = ({variant = 'DESK'}: BookingProps) => {
 
     const locale = useLocale();
     const [type, setType] = React.useState<"hotel+flight" | "hotel">('hotel');
@@ -75,7 +80,9 @@ const Booking = () => {
         }}>
             <form action="https://reservations.grandresidencesrivieracancun.com/95939"
                   target="_blank"
-                  className="flex shadow-lg justify-center items-stretch gap-5 p-3 relative">
+                  className={cn(
+                      variant === 'DESK' && 'hidden lg:flex shadow-lg justify-center items-stretch gap-5 p-3 relative'
+                  )}>
                 <input type="hidden" name="hotel_id" value="95939"/>
                 <input type="hidden" name="subchan" value="grandresidencesrivieracancun.com"/>
                 <input type="hidden" name="theme_code" value="102578"/>

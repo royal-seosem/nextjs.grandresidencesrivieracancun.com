@@ -17,6 +17,7 @@
 /*}*/
 
 :root {
+    --font-jost: "";
     --primary: #180b01;
     --secondary: #ecba58;
     --accent: #763300;
@@ -64,6 +65,7 @@
 }
 
 @theme inline {
+
     /*--radius-sm: calc(var(--radius) - 4px);*/
     /*--radius-md: calc(var(--radius) - 2px);*/
     /*--radius-lg: var(--radius);*/
@@ -78,6 +80,8 @@
     --color-booking-label: var(--booking-label);
     --color-book-bg: var(--book-bg);
     --color-book-text: var(--book-text);
+
+    --font-secondary: var(--font-jost);
 
 
     --color-background: var(--background);

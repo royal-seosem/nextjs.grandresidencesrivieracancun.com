@@ -51,6 +51,17 @@ const helveticaNue = localFont({
     display: 'swap',
     fallback: ['arial', 'sans-serif']
 })
+const jost = localFont({
+    src: [
+        {
+            path: '../../../public/fonts/jost-variablefont_wght.ttf',
+            style: 'normal',
+        }
+    ],
+    display: 'swap',
+    variable: '--font-jost',
+    fallback: ['arial', 'sans-serif']
+})
 
 export function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'es'}];
@@ -68,7 +79,7 @@ export default async function RootLayout({children, params}: {
     return (
         <html lang={locale}>
         <body
-            className={`${helveticaNue.className} antialiased`}
+            className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable} antialiased`}
         >
         <NextIntlClientProvider>
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
@@ -76,7 +87,7 @@ export default async function RootLayout({children, params}: {
                     <Header/>
                     {children}
                     <Footer/>
-                    <ReactQueryDevtools initialIsOpen={false} />
+                    <ReactQueryDevtools initialIsOpen={false}/>
                 </ReactQueryProvider>
             </WebSiteProvider>
         </NextIntlClientProvider>

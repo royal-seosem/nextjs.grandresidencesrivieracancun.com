@@ -1,13 +1,16 @@
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
-import {getMessages} from "next-intl/server";
+import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import Booking  from "@/components/commons/shared/booking/Booking";
+import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
+import Title from "@/components/commons/ui/title";
+import Paragraph from "@/components/commons/ui/paragraph";
 
 
 export default async function Home() {
-    const {home: {slider}} = await getMessages();
+    const {home: {slider, descripcion_inicial}} = await getMessages();
+    const t = await getTranslations('general');
     return (
         <>
             <section className="relative">
@@ -55,6 +58,17 @@ export default async function Home() {
             </section>
             <div className="my-container p-5">
                 <Booking/>
+                <section>
+                    <Title>{t('title_resort')}</Title>
+                    <CdnImage
+                        className={"m-auto"}
+                        src="/img/logo/trip-advisor-traveler-choice-awards-2025.png"
+                        alt="we are winner of tripadvisor award for our hotels puerto morelos mexico"
+                        width="230"
+                        height="270"/>
+
+                    {descripcion_inicial.map((item:string, index:number )=> (<Paragraph key={index}>{item}</Paragraph>))}
+                </section>
             </div>
         </>
     );
