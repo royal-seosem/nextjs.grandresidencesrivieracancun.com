@@ -1,13 +1,11 @@
 "use client"
-
 import * as React from "react"
+import {cn} from "@/lib/utils"
 import {ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon,} from "lucide-react"
 import {DayButton, DayPicker, getDefaultClassNames} from "react-day-picker"
 import {format} from "date-fns"
-
-import {cn} from "@/lib/utils"
 import {Button, buttonVariants} from "@/components/commons/ui/button"
-import {RateRequest, useRate} from "@/components/commons/shared/booking/useRates";
+import {useRate, RateRequest} from "@/components/commons/shared/booking/hooks/useRates";
 
 function Calendar({
                       className,

@@ -8,6 +8,7 @@ import BookingBook from "@/components/commons/shared/booking/BookingBook";
 import BookingAirport from "@/components/commons/shared/booking/BookingAirport";
 import {useLocale} from "use-intl";
 import {format} from "date-fns";
+import {Airport} from "@/components/commons/shared/booking/hooks/useAirport";
 
 type BookingContextProps = {
     type: "hotel+flight" | "hotel",
@@ -24,6 +25,8 @@ type BookingContextProps = {
     setChildren: (children: number) => void,
     childrenAge: number[],
     setChildrenAge: (childrenAge: number[]) => void,
+    airport: Airport | undefined,
+    setAirport: (airport: Airport | undefined) => void,
 }
 
 const BookingContext = React.createContext<BookingContextProps | null>(null);
@@ -49,6 +52,7 @@ const Booking = () => {
     const [adults, setAdults] = React.useState<number>(2);
     const [children, setChildren] = React.useState<number>(0);
     const [childrenAge, setChildrenAge] = React.useState<number[]>([]);
+    const [airport, setAirport] = React.useState<Airport | undefined>(undefined);
 
     return (
         <BookingContext.Provider value={{
@@ -66,6 +70,8 @@ const Booking = () => {
             setChildren,
             childrenAge,
             setChildrenAge,
+            airport,
+            setAirport,
         }}>
             <form action="https://reservations.grandresidencesrivieracancun.com/95939"
                   target="_blank"
