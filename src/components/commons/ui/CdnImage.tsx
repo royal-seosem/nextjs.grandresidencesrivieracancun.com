@@ -17,6 +17,7 @@ const CdnImage = ({src, alt, ...props}: CdnImageProps) => {
         <Image
             src={srcImage}
             alt={alt}
+            unoptimized
             {...props}
         />
     );

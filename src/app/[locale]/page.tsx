@@ -6,13 +6,15 @@ import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
+import SectionSuites from "@/components/pages/home/SectionSuites";
 
 
 export default async function Home() {
     const {home: {slider, descripcion_inicial}} = await getMessages();
     const t = await getTranslations('general');
+
     return (
-        <>
+        <main>
             <section className="relative">
                 <div className="aspect-[5/4] md:aspect-[1921/500]">
                     <SmartVideo
@@ -67,9 +69,14 @@ export default async function Home() {
                         width="230"
                         height="270"/>
 
-                    {descripcion_inicial.map((item:string, index:number )=> (<Paragraph key={index}>{item}</Paragraph>))}
+                    {descripcion_inicial.map((item: string, index: number) => (
+                        <Paragraph key={index}>{item}</Paragraph>)
+                    )}
+
+                    <SectionSuites/>
+
                 </section>
             </div>
-        </>
+        </main>
     );
 }

@@ -26,7 +26,8 @@ type CarouselContextProps = {
     scrollPrev: () => void
     scrollNext: () => void
     canScrollPrev: boolean
-    canScrollNext: boolean
+    canScrollNext: boolean,
+    selectedIndex: number
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -59,11 +60,14 @@ function Carousel({
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [selectedIndex, setSelectedIndex] = React.useState(0)
 
     const onSelect = React.useCallback((api: CarouselApi) => {
         if (!api) return
         setCanScrollPrev(api.canScrollPrev())
         setCanScrollNext(api.canScrollNext())
+        setSelectedIndex(api.selectedScrollSnap())
+
     }, [])
 
     const scrollPrev = React.useCallback(() => {
@@ -115,6 +119,7 @@ function Carousel({
                 scrollNext,
                 canScrollPrev,
                 canScrollNext,
+                selectedIndex
             }}
         >
             <div
@@ -216,7 +221,6 @@ function CarouselPrevious({
 }
 
 
-
 function CarouselNext({
                           className,
                           variant = "outline",
@@ -248,6 +252,32 @@ function CarouselNext({
     )
 }
 
+function CarouselGoto({className, classNameActive, index, ...props}: React.ComponentProps<"button"> & {
+    index: number,
+    className?: string,
+    classNameActive?: string,
+}) {
+    const {api, selectedIndex} = useCarousel()
+
+    return (
+        <button
+            data-slot="carousel-goto"
+            className={cn(
+                "size-4 bg-transparent border-0 shadow-none flex items-center justify-center",
+            )}
+            {...props}
+            onClick={() => api?.scrollTo(index)}
+        >
+            <span className={cn(
+                "size-2 rounded-full bg-primary",
+                className,
+                selectedIndex === index && (classNameActive || "bg-white")
+            )}></span>
+            <span className="sr-only">Goto slide</span>
+        </button>
+    )
+}
+
 export {
     type CarouselApi,
     Carousel,
@@ -255,5 +285,6 @@ export {
     CarouselItem,
     CarouselPrevious,
     CarouselNext,
-    CarouselNavigation
+    CarouselNavigation,
+    CarouselGoto
 }
