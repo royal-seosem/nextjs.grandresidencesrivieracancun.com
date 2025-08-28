@@ -11,11 +11,16 @@ export const routing = defineRouting({
         "/": "/",
         "/home": {
             en: "/",
-            es: "/es"
+            es: "/"
+        },
+        "/suites": {
+            en: "/suites-and-villas",
+            es: "/suites-y-villas",
         },
         "/gms/login": {
             en: "/gms/login",
             es: "/gms/iniciar-session"
         },
+
     }
 });

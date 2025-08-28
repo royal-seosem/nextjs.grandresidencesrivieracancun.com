@@ -10,11 +10,16 @@ import {cn} from "@/lib/utils";
 
 interface GalleryProps {
     children: React.ReactNode;
-    variant?: 'secondary',
-    position?: 'on'
+    variant?: 'secondary' | 'primary',
+    position?: 'on' | 'bottom',
 }
 
 const galleryStyles = {
+    primary: {
+        text_color: 'text-primary hover:text-secondary',
+        className: 'bg-primary',
+        classNameActive: 'bg-secondary',
+    },
     secondary: {
         text_color: 'text-white',
         className: 'bg-white',
@@ -25,6 +30,9 @@ const galleryStyles = {
 const positionStyles = {
     on: {
         className: 'absolute bottom-0 left-0 w-full px-1',
+    },
+    bottom: {
+        className: '',
     }
 }
 
@@ -33,7 +41,10 @@ const Gallery = ({children, variant = 'secondary', position = 'on'}: GalleryProp
     const style = galleryStyles[variant];
     const {className} = positionStyles[position];
     return (
-        <Carousel>
+        <Carousel
+            opts={{
+                loop: true
+            }}>
             <div className="">
                 <CarouselContent className="items-stretch">
                     {children}
@@ -54,8 +65,8 @@ const Gallery = ({children, variant = 'secondary', position = 'on'}: GalleryProp
                     'flex gap-2',
                     style.text_color,
                 )}>
-                    <CarouselPrevious/>
-                    <CarouselNext/>
+                    <CarouselPrevious className={cn(style.text_color)}/>
+                    <CarouselNext className={cn(style.text_color)}/>
                 </div>
             </div>
         </Carousel>

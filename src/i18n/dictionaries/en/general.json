@@ -12,6 +12,7 @@
     "condition-transportation": "Please be advised that our airport transportation service operates exclusively from Cancun International Airport. Upon confirmation of your reservation, our dedicated team will promptly send you an email with a voucher attached. This voucher must be printed and presented at the time of pickup to validate the service.",
     "messages-email": {
       "transportation": "Your transportation request has been sent successfully"
-    }
+    },
+    "go to suites" : "More about our suites"
   }
 }

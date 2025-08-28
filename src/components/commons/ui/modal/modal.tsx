@@ -7,18 +7,19 @@ import useIsDesktop from "@/components/commons/ui/modal/useIsDesktop";
 interface ModalProps {
     open: boolean;
     setOpen: (open: boolean) => void;
+    header: string;
     children?: React.ReactNode;
 }
 
-const mobileModal = ({open, setOpen, children}: ModalProps) => {
+const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
     return (
         <Drawer direction="top" open={open} onOpenChange={setOpen}>
             <DrawerContent className="h-screen
                 data-[vaul-drawer-direction=top]:mb-0 data-[vaul-drawer-direction=top]:max-h-full
             ">
-                <DrawerHeader  className='read-only hidden' >
+                <DrawerHeader className='read-only hidden'>
                     <DrawerTitle>
-                        Modal Test
+                        {header}
                     </DrawerTitle>
                 </DrawerHeader>
                 {children}
@@ -35,19 +36,16 @@ const mobileModal = ({open, setOpen, children}: ModalProps) => {
     );
 }
 
-const deskModal = ({open, setOpen}: ModalProps) => {
+const deskModal = ({open, setOpen, children, header}: ModalProps) => {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogContent showCloseButton={false}>
-                <DialogHeader>
+                <DialogHeader className='read-only hidden'>
                     <DialogTitle>
-                        Modal Test
+                        {header}
                     </DialogTitle>
                 </DialogHeader>
-                <div>
-                    Contenido del modal
-                </div>
-
+                {children}
             </DialogContent>
         </Dialog>
     );

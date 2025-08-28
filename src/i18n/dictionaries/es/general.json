@@ -1,0 +1,18 @@
+{
+  "general": {
+    "title_resort": "Grand Residences Riviera Cancun",
+    "management": "Resort",
+    "reservations": "Reservations",
+    "transportacion": "Transportación",
+    "btn-contact": "Escríbenos",
+    "weddings_groups": "Bodas y Grupos",
+    "title-transportation": "Transportación",
+    "description-transportation": "Ofrecemos transportación redonda* en cortesía a todos nuestros huéspedes. Para agendar este servicio privado usted tiene que brindarnos los siguientes datos al menos 72 horas antes de su llegada para poderlo reservar.",
+    "restriction-transportation": "Aplican restricciones para Owner loans, Certificados y Discovery.",
+    "condition-transportation": "Tenga en cuenta que nuestro servicio de transportación hacia el resort, opera exclusivamente desde el Aeropuerto Internacional de Cancún. Tras la confirmación de su reserva, nuestro equipo le enviará de inmediato un correo electrónico con un cupón. Este cupón debe imprimirse y presentarse al momento de usar el servicio.",
+    "messages-email": {
+      "transportation": "¡Gracias por enviar tu información! Nos pondremos en contacto contigo en breve."
+    },
+    "go to suites" : "Más sobre nuestras habitaciones"
+  }
+}

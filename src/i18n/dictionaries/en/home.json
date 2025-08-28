@@ -22,6 +22,35 @@
       "Grand Residences Riviera Cancun is a spectacular resort renowned for its hallmark excellence and unforgettable luxury vacation experiences. It is located on a picture-perfect beach to the south of the charming fishing village of Puerto Morelos, gateway to the Riviera Maya and only 20 minutes from Cancun International Airport.",
       "The hacienda-style architecture pays tribute to Mexican culture and the warm hospitality of the hosts give the resort its welcoming personality. We offer magnificent amenities and world-class service to fulfill the desires of the most discerning travelers.",
       "From our gourmet restaurants, spa and gym to an oceanfront infinity pool, excellence is in every detail to ensure that the resort is a memorable place to enjoy a holiday in the Caribbean, a sanctuary from the stress of daily life."
-    ]
+    ],
+    "habitaciones": [
+      "Junior Suite with Jacuzzi",
+      "Junior Suite King",
+      "Master Suite",
+      "Master Suite with Private Pool",
+      "Master Suite Penthouse",
+      "Presidential Suite"
+    ],
+    "habitaciones titulo": "Our Suites: An oasis of luxury and relaxation",
+    "habitaciones descripcion": "Luxurious, spacious and comfortable, all the suites at Grand Residences have stunning views of the Caribbean. Unwind with signature bedding, a spa bathroom and state of the art appliances for perfect relaxation.",
+    "amenities_alt": [
+      "Couple drinking wine at a restaurant in All Inclusive Resorts Puerto Morelos",
+      "All Inclusive Resort Riviera Maya includes Private transportation",
+      "Suites with ocean view in our All Inclusive Resort Riviera Maya"
+    ],
+    "plan ai": "Enjoy our plan with gourmet food and drinks included",
+    "plan ai descripcion": "Enjoy unlimited top-notch food and drinks in all our restaurants, round-trip transportation to the Cancun airport, 24-hour room service and high-speed Wi-Fi connection throughout the resort.",
+    "plan ai btn": "More about All In Grand Experience",
+    "plan bb": "Complimentary Airport Round trip transportation",
+    "plan bb descripcion": "At Grand Residences, our award-winning hospitality begins before you arrive with complimentary round trip Cancun airport transportation.",
+    "plan ep": "Three great reasons to book directly",
+    "plan_ep_descripcion": [
+      "Easy booking process and instant confirmation",
+      "Exclusive benefits",
+      "Best Deal Guaranteed"
+    ],
+    "eventos titulo": "Special Events",
+    "eventos descripcion": "Our experts will plan your wedding, romantic dinner or special event to perfection. The mission of our staff is to understand your needs and take care of every little detail, making your ceremony or event memorable.",
+    "eventos boton": "More about Special Events"
   }
 }

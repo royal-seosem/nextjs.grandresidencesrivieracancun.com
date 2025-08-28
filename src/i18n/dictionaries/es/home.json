@@ -1,0 +1,52 @@
+{
+  "home": {
+    "slider": [
+      {
+        "title": "Grand Residences Riviera Cancun",
+        "description": "Reconocido como uno de los mejores resorts de México"
+      },
+      {
+        "title": "Excelente estadía",
+        "description": "El ambiente del hotel es tranquilo. La limpieza excelente¡¡¡"
+      },
+      {
+        "title": "Tranquilidad, mar y confort",
+        "description": "Tranquilidad y confort especial para relajarte y disfrutar sin ninguna preocupación."
+      }
+    ],
+    "descripcion_inicial": [
+      "Grand Residences Riviera Cancun está ubicado en la encantadora villa de pescadores, Puerto Morelos; en el corazón de la Riviera Maya, a sólo 20 minutos del Aeropuerto Internacional de Cancún.",
+      "Su moderno diseño con estructura de hacienda, da al resort una personalidad acogedora y elegante. Ofrece notables amenidades y servicio de calidad mundial para satisfacer los deseos de los viajeros más exigentes.",
+      "Desde restaurantes gourmet, gimnasio y nuestra increíble piscina infinita frente al mar hasta nuestro excelente servicio personalizado, cada elemento es cuidado a detalle para asegurarnos de ofrecer a nuestros huéspedes el lugar perfecto para disfrutar de un inolvidable tiempo de descanso en el mar Caribe."
+    ],
+    "habitaciones": [
+      "Suite Junior con Jacuzzi",
+      "Suite Junior con cama king",
+      "Suite Master",
+      "Suite Master con alberca privada",
+      "Suite Master Penthouse",
+      "Suite Presidencial"
+    ],
+    "habitaciones titulo": "Nuestras habitaciones: Un oasis de comodidad y relajación",
+    "habitaciones descripcion": "Las modernas y cómodas suites de Grand Residences Riviera Cancun ofrecen una magnífica vista del Caribe. Disfruta del equipamiento de lujo que te brinda el lugar perfecto para descansar y soñar.",
+    "amenities_alt": [
+      "Disfruta nuestros restaurantes Gourmet Todo Incluido",
+      "All inclusive resort incluye transportación privada",
+      "Suite con vista al mar en nuestro resort en Riviera Maya All Inclusive"
+    ],
+    "plan ai": "Todo Incluido Gourmet",
+    "plan ai descripcion": "Disfruta al máximo tu estancia sin preocupaciones con nuestro exclusivo plan todo Incluido All In Grand Experience. Deléitate con deliciosos platillos gourmet y bebidas ilimitadas en todos nuestros restaurantes, servicio a la habitación las 24 horas, así como traslado del y hacia el aeropuerto de Cancún, internet en todo el resort, uso ilimitado del gimnasio, actividades de cortesía todos los días y mucho más.",
+    "plan ai btn": "Más de All In Grand Experience",
+    "plan bb": "Traslado Aeropuerto hotel en cortesía",
+    "plan bb descripcion": "Disfruta las mejores vacaciones en la Riviera Maya a tu propio ritmo, disfruta de una estancia rodeada de lujo y comodidad acompañada de un servicio de primera y por si esto fuera poco, aprovecha las amenidades exclusivas al hospedarte en Grand Residences como traslado del y hacia el aeropuerto de Cancún, acceso al gimnasio, internet en todo el resort, actividades de cortesía todos los días y mucho más.",
+    "plan ep": "3 Grandes razones para reservar directo",
+    "plan_ep_descripcion": [
+      "Reserva fácil y segura",
+      "Beneficios exclusivos",
+      "La mejor oferta garantizada"
+    ],
+    "eventos titulo": "Bodas y eventos especiales",
+    "eventos descripcion": "Nuestros expertos se encargarán de la planeación de tu boda, cena romántica o evento especial. La misión de nuestro personal es comprender tus necesidades para atender hasta el mínimo detalle y así crear una ceremonia o evento memorable.",
+    "eventos boton": "Más sobre bodas y eventos especiales"
+  }
+}

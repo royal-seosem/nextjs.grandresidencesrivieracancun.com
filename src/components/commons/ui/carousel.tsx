@@ -262,6 +262,7 @@ function CarouselGoto({className, classNameActive, index, ...props}: React.Compo
     return (
         <button
             data-slot="carousel-goto"
+            aria-label={`Goto slide ${index + 1}`}
             className={cn(
                 "size-4 bg-transparent border-0 shadow-none flex items-center justify-center",
             )}

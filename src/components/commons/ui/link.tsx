@@ -1,0 +1,34 @@
+import React from 'react';
+import {cva, type VariantProps} from "class-variance-authority";
+import {Link} from "@/i18n/navigation";
+import {LinkInstance} from "next/dist/client/components/links";
+import {cn} from "@/lib/utils";
+
+const linkVariants = cva(
+    'flex items-center justify-center gap-2 py-2 px-1.5 text-sm font-bold rounded-xs uppercase  transition-all duration-200 ease-in-out',
+    {
+        variants: {
+            variant: {
+                outline: 'border border-primary text-primary hover:border-secondary hover:bg-secondary hover:shadow-xl'
+            }
+        },
+        defaultVariants: {
+            variant: 'outline'
+        }
+    }
+)
+
+interface LinkProps extends React.ComponentProps<LinkInstance>, VariantProps<typeof LinkVariants> {
+
+}
+
+const LinkButton = ({className, variant, ...props}: LinkProps) => {
+
+    return (
+        <Link
+            className={cn(linkVariants({variant, className}))}
+            {...props} />
+    );
+};
+
+export default LinkButton;
