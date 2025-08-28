@@ -51,7 +51,7 @@ const deskModal = ({open, setOpen, children, header}: ModalProps) => {
     );
 }
 
-const Modal = (props) => {
+const Modal = (props: ModalProps) => {
     const {isDesktop} = useIsDesktop();
 
     if (isDesktop) return deskModal({...props});

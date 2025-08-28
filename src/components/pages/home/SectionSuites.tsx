@@ -18,7 +18,7 @@ const SectionSuites = () => {
     const {
         weddings: {group_event_alt},
         home: {habitaciones, amenities_alt, plan_ep_descripcion}
-    } = useMessages('weddings');
+    } = useMessages();
 
     const [suites, setSuites] = useState(false);
     const [allInclusive, setAllInclusive] = useState(false);
@@ -163,7 +163,7 @@ const SectionSuites = () => {
                                 <Title level="h3" size="md">{thome('plan ep')}</Title>
                                 <ul>
                                     {
-                                        plan_ep_descripcion.map((item, index) => (
+                                        plan_ep_descripcion.map((item: string, index: number) => (
                                             <li key={index}>{item}</li>
                                         ))
                                     }
@@ -176,23 +176,27 @@ const SectionSuites = () => {
                 <Modal open={wedding} setOpen={setWedding} header={tmenu('wedding')}>
                     <Gallery>
                         <CarouselItem>
-                            <CdnImage src="/img/weddings/wedding-f.jpg" alt={group_event_alt[0]} width={700} height={400}/>
+                            <CdnImage src="/img/weddings/wedding-f.jpg" alt={group_event_alt[0]} width={700}
+                                      height={400}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <CdnImage src="/img/weddings/wedding-g.jpg" alt={group_event_alt[1]} width={700} height={400}/>
+                            <CdnImage src="/img/weddings/wedding-g.jpg" alt={group_event_alt[1]} width={700}
+                                      height={400}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <CdnImage src="/img/weddings/wedding-h.jpg" alt={group_event_alt[2]} width={700} height={400}/>
+                            <CdnImage src="/img/weddings/wedding-h.jpg" alt={group_event_alt[2]} width={700}
+                                      height={400}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <CdnImage src="/img/weddings/wedding-i.jpg" alt={group_event_alt[3]} width={700} height={400}/>
+                            <CdnImage src="/img/weddings/wedding-i.jpg" alt={group_event_alt[3]} width={700}
+                                      height={400}/>
                         </CarouselItem>
                     </Gallery>
                     <div className="p-5">
                         <Title level="h3" size="lg">{thome('eventos titulo')}</Title>
                         <Paragraph>{thome('eventos descripcion')}</Paragraph>
                         <div className="flex justify-center">
-                            <LinkButton href="/weddings" >
+                            <LinkButton href="/weddings">
                                 {thome('eventos boton')}
                                 <ArrowRightIcon className="shrink-0" width={16} height={16}/>
                             </LinkButton>
