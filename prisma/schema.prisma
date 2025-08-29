@@ -1,5 +1,6 @@
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["typedSql"]
   output   = "../src/generated/prisma"
 }
 
@@ -678,31 +679,33 @@ model gms_users {
 }
 
 model gr_offer {
-  id                Int               @id @default(autoincrement())
-  name              String            @db.VarChar(45)
-  end_date          DateTime?         @db.DateTime(0)
-  start_date        DateTime?         @db.DateTime(0)
-  url_es            String?           @db.VarChar(50)
-  url_en            String?           @db.VarChar(50)
-  visibility        Boolean?          @default(false)
-  apply_all         Boolean?          @default(false)
-  apply_ep          Boolean?          @default(false)
-  apply_bb          Boolean?          @default(false)
-  meta_index        Boolean?          @default(false)
-  booking_type      Boolean?          @default(true)
-  show_en           Boolean?          @default(true)
-  show_es           Boolean?          @default(true)
-  global_offer_uuid String?           @db.Char(36)
-  rateplan_all      String?           @db.Char(10)
-  rateplan_all_lead String?           @db.Char(10)
-  rateplan_all_rep  String?           @db.Char(10)
-  rateplan_ep       String?           @db.Char(10)
-  rateplan_ep_lead  String?           @db.Char(10)
-  rateplan_ep_rep   String?           @db.Char(10)
-  rateplan_bb       String?           @db.Char(10)
-  rateplan_bb_lead  String?           @db.Char(10)
-  rateplan_bb_rep   String?           @db.Char(10)
+  id                Int                @id @default(autoincrement())
+  name              String             @db.VarChar(45)
+  end_date          DateTime?          @db.DateTime(0)
+  start_date        DateTime?          @db.DateTime(0)
+  url_es            String?            @db.VarChar(50)
+  url_en            String?            @db.VarChar(50)
+  visibility        Boolean?           @default(false)
+  apply_all         Boolean?           @default(false)
+  apply_ep          Boolean?           @default(false)
+  apply_bb          Boolean?           @default(false)
+  meta_index        Boolean?           @default(false)
+  booking_type      Boolean?           @default(true)
+  show_en           Boolean?           @default(true)
+  show_es           Boolean?           @default(true)
+  global_offer_uuid String?            @db.Char(36)
+  rateplan_all      String?            @db.Char(10)
+  rateplan_all_lead String?            @db.Char(10)
+  rateplan_all_rep  String?            @db.Char(10)
+  rateplan_ep       String?            @db.Char(10)
+  rateplan_ep_lead  String?            @db.Char(10)
+  rateplan_ep_rep   String?            @db.Char(10)
+  rateplan_bb       String?            @db.Char(10)
+  rateplan_bb_lead  String?            @db.Char(10)
+  rateplan_bb_rep   String?            @db.Char(10)
   gr_offer_travel   gr_offer_travel[]
+  gr_offer_section  gr_offer_section[]
+  gr_offer_content  gr_offer_content[]
 }
 
 model gr_offer_content {
@@ -712,6 +715,8 @@ model gr_offer_content {
   content_all String? @db.LongText
   content_ep  String? @db.LongText
   content_bb  String? @db.LongText
+
+  gr_offer  gr_offer @relation(fields: [gr_offer_id], references: [id])
 }
 
 model gr_offer_rate {
@@ -730,8 +735,10 @@ model gr_offer_rate {
 model gr_offer_section {
   gr_offer_id   Int
   gr_section_id Int
-  rateplan      String @default("") @db.Char(15)
-  order         Int?   @default(0) @db.TinyInt
+  rateplan      String   @default("") @db.Char(15)
+  order         Int?     @default(0) @db.TinyInt
+
+  gr_offer      gr_offer @relation(fields: [gr_offer_id], references: [id])
 
   @@id([gr_offer_id, gr_section_id, rateplan])
 }

@@ -1,17 +1,23 @@
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
-import {getMessages, getTranslations} from "next-intl/server";
+import {getLocale, getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
 import SectionSuites from "@/components/pages/home/SectionSuites";
+import {getHomeOffer} from "@/use_case/offers/get_home_offer";
+import SectionOffer from "@/components/pages/home/SectionOffer";
 
 
 export default async function Home() {
     const {home: {slider, descripcion_inicial}} = await getMessages();
     const t = await getTranslations('general');
+    const locale = await getLocale();
+    const offers = await getHomeOffer(locale);
+    console.log(offers)
+
 
     return (
         <main>
@@ -72,11 +78,10 @@ export default async function Home() {
                     {descripcion_inicial.map((item: string, index: number) => (
                         <Paragraph key={index}>{item}</Paragraph>)
                     )}
-
-                    <SectionSuites/>
-
                 </section>
             </div>
+            <SectionSuites/>
+            <SectionOffer/>
         </main>
     );
 }
