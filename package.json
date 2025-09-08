@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prisma": "prisma generate"
+    "prisma": "prisma generate --sql --watch"
   },
   "dependencies": {
     "@google-cloud/recaptcha-enterprise": "^6.3.0",

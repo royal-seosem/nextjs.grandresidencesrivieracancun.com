@@ -16,8 +16,6 @@ export default async function Home() {
     const t = await getTranslations('general');
     const locale = await getLocale();
     const offers = await getHomeOffer(locale);
-    console.log(offers)
-
 
     return (
         <main>
@@ -81,7 +79,7 @@ export default async function Home() {
                 </section>
             </div>
             <SectionSuites/>
-            <SectionOffer/>
+            <SectionOffer offers={offers} />
         </main>
     );
 }

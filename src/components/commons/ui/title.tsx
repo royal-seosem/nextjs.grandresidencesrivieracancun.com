@@ -8,10 +8,10 @@ const titleVariants = cva(
     {
         variants: {
             variant: {
-                primary: ' text-primary',
+                primary: 'text-primary',
             },
             size: {
-                sm: '',
+                sm: 'text-2xl font-medium',
                 md: 'text-3xl',
                 lg: 'text-4xl'
             },

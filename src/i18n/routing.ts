@@ -17,6 +17,14 @@ export const routing = defineRouting({
             en: "/suites-and-villas",
             es: "/suites-y-villas",
         },
+        "/all-inclusive": {
+            en: "/all-inclusive",
+            es: "/todo-incluido"
+        },
+        "/weddings": {
+            en: "/wedding-and-groups",
+            es: "bodas-y-grupos"
+        },
         "/gms/login": {
             en: "/gms/login",
             es: "/gms/iniciar-session"

@@ -137,7 +137,7 @@ const SectionSuites = () => {
                             <Title level="h3" size="md">{thome('plan ai')}</Title>
                             <Paragraph>{thome('plan ai descripcion')}</Paragraph>
                             <div>
-                                <LinkButton href="all-inclusive">
+                                <LinkButton href="/all-inclusive">
                                     {thome('plan ai btn')}
                                 </LinkButton>
                             </div>

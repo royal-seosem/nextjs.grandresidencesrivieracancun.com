@@ -1,7 +1,6 @@
 import React from 'react';
 import {cva, type VariantProps} from "class-variance-authority";
 import {Link} from "@/i18n/navigation";
-import {LinkInstance} from "next/dist/client/components/links";
 import {cn} from "@/lib/utils";
 
 const linkVariants = cva(
@@ -18,8 +17,7 @@ const linkVariants = cva(
     }
 )
 
-interface LinkProps extends React.ComponentProps<LinkInstance>, VariantProps<typeof LinkVariants> {
-
+interface LinkProps extends React.ComponentProps<typeof  Link>, VariantProps<typeof linkVariants> {
 }
 
 const LinkButton = ({className, variant, ...props}: LinkProps) => {
