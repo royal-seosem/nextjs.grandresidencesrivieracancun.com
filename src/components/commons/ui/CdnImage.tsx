@@ -12,7 +12,12 @@ const imageConfig = {
 
 
 const CdnImage = ({src, alt, ...props}: CdnImageProps) => {
-    const srcImage = `${imageConfig.cdnUrl}/${src.startsWith('/') ? src.slice(1) : src}`
+    let srcImage = src;
+
+    if (src.indexOf('http') == -1) {
+        srcImage = `${imageConfig.cdnUrl}/${src.startsWith('/') ? src.slice(1) : src}`
+    }
+
     return (
         <Image
             src={srcImage}

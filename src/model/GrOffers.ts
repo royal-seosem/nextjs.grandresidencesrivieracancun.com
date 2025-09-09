@@ -1,11 +1,11 @@
 import {OfferRate} from "@/use_case/offers/get_home_offer";
 
 type Offer = {
-    rateplan: string;          // p. ej. “ALL”, “EP”, “BB”
-    content_all: string | null;       // JSON serializado
-    content_ep: string | null;        // JSON serializado
-    content_bb: string | null;        // JSON serializado
+    content: OfferContentKey;
+    gallery: OfferGallery;
+
 };
+
 
 interface OfferContentKey {
     inclusions?: string[];
@@ -18,6 +18,7 @@ interface OfferGallery {
     big: string;
     small: string;
 }
+
 
 export class GrOffers {
 

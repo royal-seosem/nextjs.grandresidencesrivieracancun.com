@@ -18,9 +18,11 @@
 
 :root {
     --font-jost: "";
+    --font-helvetica-nue: "";
     --primary: #180b01;
     --secondary: #ecba58;
     --accent: #763300;
+    --accent2: #d86904;
     --accent-foreground: #FFF;
     --menu: #f1ebe5;
     --menu2: #be8b5e;
@@ -30,7 +32,7 @@
     --booking-text: #180b01;
     --booking-bg: #faf7f1;
     --booking-border: #be8b5e;
-    --book-bg: #d86904;
+    --book-bg: var(--accent2);
     --book-text: #fff;
 
     --radius: 0.625rem;
@@ -81,6 +83,7 @@
     --color-book-bg: var(--book-bg);
     --color-book-text: var(--book-text);
 
+    --font-primary: var(--font-helvetica-nue);
     --font-secondary: var(--font-jost);
 
 
@@ -98,6 +101,7 @@
     --color-muted-foreground: var(--muted-foreground);
     --color-accent: var(--accent);
     --color-accent-foreground: var(--accent-foreground);
+    --color-accent2: var(--accent2);
     --color-destructive: var(--destructive);
     --color-border: var(--border);
     --color-input: var(--input);

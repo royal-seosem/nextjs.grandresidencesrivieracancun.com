@@ -8,6 +8,7 @@ type User = {
     name: string;
     uid: string;
     type: string;
+    token: string;
 }
 
 export const getUserByGoogle = async (credential: string) => {

@@ -10,7 +10,7 @@ export async function logInGoogle(credentials: string) {
         throw new Error('Usuario no encontrado');
     }
 
-    await createSession(user.id, user.name);
-    
+    await createSession(user.id, user.name, user.token);
+
     return user;
 }
