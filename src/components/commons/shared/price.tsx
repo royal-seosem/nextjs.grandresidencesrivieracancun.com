@@ -1,13 +1,13 @@
 'use client'
 import React from 'react';
 import {useTranslations} from "next-intl";
-import type {gr_offer_rate} from "@/generated/prisma";
+// import type {gr_offer_rate} from "@/generated/prisma";
 
-interface PriceProps {
-    rate: gr_offer_rate
-}
+// interface PriceProps {
+//     // rate: gr_offer_rate
+// }
 
-const Price = ({rate}: PriceProps) => {
+const Price = ({rate}: { rate: unknown }) => {
     const t = useTranslations('new-offers');
     const tOfferTempalte = useTranslations('offers-template2');
 

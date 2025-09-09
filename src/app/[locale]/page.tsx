@@ -15,7 +15,7 @@ export default async function Home() {
     const {home: {slider, descripcion_inicial}} = await getMessages();
     const t = await getTranslations('general');
     const locale = await getLocale();
-    const offers = await getHomeOffer(locale);
+    // const offers = await getHomeOffer(locale);
 
     return (
         <main>
@@ -79,7 +79,7 @@ export default async function Home() {
                 </section>
             </div>
             <SectionSuites/>
-            <SectionOffer offers={offers} />
+            {/*<SectionOffer offers={offers} />*/}
         </main>
     );
 }

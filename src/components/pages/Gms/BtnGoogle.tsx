@@ -2,7 +2,7 @@
 import React from 'react';
 import {useRouter} from "next/navigation";
 import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
-import {logInGoogle} from "@/actions/auth";
+import {logInGoogle} from "@/server_actions/auth";
 import {useWebsite} from "@/context/WebSiteProvider";
 
 function BtnGoogle() {
@@ -12,11 +12,11 @@ function BtnGoogle() {
     const googleSuccess = async (response: { credential: string }) => {
         try {
             const payload = await logInGoogle(response.credential);
-            console.log(payload);
+
             if (payload) {
                 setUser({
                     id: payload.id,
-                    name: payload.user_name
+                    name: payload.name
                 })
                 router.push('/gms/my-account');
             }

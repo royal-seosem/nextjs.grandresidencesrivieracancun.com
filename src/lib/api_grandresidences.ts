@@ -1,0 +1,33 @@
+import * as https from "node:https";
+
+const apiUrl = process.env.API_URL;
+
+export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise<T> {
+
+    const url = new URL(enpoint, apiUrl);
+    console.log(url.toString());
+
+    const httpsAgent = new https.Agent({
+        rejectUnauthorized: false,
+    })
+
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+    type RequestInitWithAgent = RequestInit & { agent?: https.Agent };
+
+    const options: RequestInitWithAgent = {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.API_TOKEN}`
+        },
+        agent: httpsAgent,
+        ...init
+    };
+
+    const resp = await fetch(url, options);
+
+    if (!resp.ok) {
+        throw new Error(`HTTP error! status: ${resp.status}`);
+    }
+    return await resp.json() as T;
+}

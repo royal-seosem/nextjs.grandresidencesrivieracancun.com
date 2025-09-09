@@ -1,24 +1,19 @@
 "use server";
-import {prisma} from "@/lib/prisma";
 
-export const getUserByGoogle = async (email: string, gid: string): Promise<{
+
+import {GrFetcher} from "@/lib/api_grandresidences";
+
+type User = {
     id: number;
-    user_name: string;
-    lastname: string | null;
+    name: string;
     uid: string;
-} | null> => {
-    return prisma.supscription_users.findFirst({
-        select: {
-            id: true,
-            user_name: true,
-            lastname: true,
-            uid: true
-        },
-        where: {
-            OR: [
-                {uid: email},
-                {gid: gid}
-            ]
-        }
-    });
+    type: string;
+}
+
+export const getUserByGoogle = async (credential: string) => {
+    const data = await GrFetcher<User>(`subscription_google`, {
+        method: "POST",
+        body: JSON.stringify({credential})
+    })
+    return data;
 }
