@@ -1,0 +1,142 @@
+{
+  "new-offers": {
+    "banner": "/img/offers-general/banner-a-en.jpg",
+    "description": "Spend the best family vacation experience in this luxury award winning beachfront resort, delight your palate with our exclusive gourmet All Inclusive plan, relax in a pure atmosphere of tranquility and fall in love with the mesmerizing views. ",
+    "ALL PROMOTIONS INLCUDE:": "ALL PROMOTIONS INCLUDE:",
+    "includes": [
+      {
+        "icon": "/img/offers-general/icons/car.svg",
+        "label": "Private roundtrip airport transportation"
+      },
+      {
+        "icon": "/img/offers-general/icons/room-service.svg",
+        "label": "Room service all day long"
+      },
+      {
+        "icon": "/img/offers-general/icons/tequila.svg",
+        "label": "Complimentary bottle of tequila"
+      },
+      {
+        "icon": "/img/offers-general/icons/drink.svg",
+        "label": "Unlimited premium meals and drinks"
+      },
+      {
+        "icon": "/img/offers-general/icons/restauran.svg",
+        "label": "Daily dry and season fruits"
+      },
+      {
+        "icon": "/img/offers-general/icons/wifi.svg",
+        "label": "Wifi in room and common areas"
+      }
+    ],
+    "Aceptamos": "We accept",
+    "starting_at": "Starting at",
+    "per room": "Per room / per night",
+    "book now": "BOOK NOW",
+    "See terms & Conditions": "See terms & Conditions",
+    "Read More": "Read More",
+    "TERMS & CONDITIONS": "TERMS & CONDITIONS",
+    "Lowest rate available from: ": "Lowest rate available from: :DATE_START to :DATE_END",
+    "Travel from": "Travel from :DATE_START and :DATE_END",
+    "valid_until": "This offer is only valid until: {BW_E} / Travel between: {TW_S} to {TW_E}",
+    "View more benefits": "View more benefits",
+    "offers": [
+      {
+        "banner": "/img/offers-general/offer-a.jpg",
+        "title": "Stay Longer and Save! 51% OFF",
+        "subtitle": "Because more time bring more memories",
+        "rate_plan": "2147053",
+        "inclusions": [
+          {
+            "label": "Special discount for longer stays, starting at 7 nights"
+          },
+          {
+            "label": "Enjoy the very best of the Mexican Caribbean"
+          }
+        ],
+        "terms": "TERMS & CONDITIONS: Airport Transportation: One roundtrip service (airport-hotel-airport) is included. Guests must contact the property at least 48 hours prior check in to arrange the transfer from the airport. * Restrictions: The minimum length of stay is 7 nights, however, this may vary depending on the season."
+      },
+      {
+        "banner": "/img/offers-general/offer-b.jpg",
+        "title": "Sun, Beach & Relax with 48% OFF",
+        "subtitle": "Any time is a good time for relaxing a perfect taning",
+        "rate_plan": "7617429",
+        "inclusions": [
+          {
+            "label": "Special discount for stays August 18 and December 22, 2023"
+          },
+          {
+            "label": "The minimum lenght of stay may vary dependineg on the selected dates"
+          }
+        ],
+        "terms": "TERMS & CONDITIONS: Airport Transportation: One roundtrip service (airport-hotel-airport) is included. Guests must contact the property at least 48 hours prior check in to arrange the transfer from the airport. * Restrictions: The minimum length of stay is 1 nights, however, this may vary depending on the season."
+      },
+      {
+        "banner": "/img/offers-general/offer-c.jpg",
+        "title": "2024 Vacation | Early Booking Bonus 48% OFF",
+        "subtitle": "The earlier you book the more you save",
+        "rate_plan": "4338332",
+        "inclusions": [
+          {
+            "label": "Special discount Including Resort Credirts"
+          },
+          {
+            "label": "Including 150 USD in Resort Credits"
+          }
+        ],
+        "terms": "TERMS & CONDITIONS:* Resort Credit:* Resort Credit is per stay and it can be used to pay for services at the Gourmet Food Market and Spa among others Airport Transportation: One roundtrip service (airport-hotel-airport) is included. Guests must contact the property at least 48 hours prior check in to arrange the transfer from the airport. * Restrictions: The minimum length of stay is 3 nights, however, this may vary depending on the season."
+      },
+      {
+        "banner": "/img/offers-general/offer-d.jpg",
+        "title": "Unwind in Style, All-Inclusive with 41% OFF",
+        "subtitle": "Enjoy an extraordinary family vacation",
+        "rate_plan": "7645434",
+        "inclusions": [
+          {
+            "label": "Resort Special Deal!"
+          },
+          {
+            "label": "Including 100 USD in Resort Credits"
+          }
+        ],
+        "terms": "TERMS & CONDITIONS:* Resort Credit:* Resort Credit is per stay and it can be used to pay for services at the Gourmet Food Market and Spa among others Airport Transportation: One roundtrip service (airport-hotel-airport) is included. Guests must contact the property at least 48 hours prior check in to arrange the transfer from the airport. * Restrictions: The minimum length of stay is 3 nights, however, this may vary depending on the season."
+      }
+    ],
+    "benefits_title": "Get exclusive benefits when you book at Grand Residences",
+    "benefits": [
+      {
+        "icon": "/img/icons/orange/van.svg",
+        "label": "Private airport transportation"
+      },
+      {
+        "icon": "/img/icons/orange/concierge-bell.svg",
+        "label": "Personal concierge"
+      },
+      {
+        "icon": "/img/icons/orange/flex-reservation.svg",
+        "label": "Flexibility reservation"
+      }
+    ],
+    "travel_choice_text": "#1 of 46 hotels in Puerto Morelos",
+    "travel_choice_text2": "5.0 Excelente de 1,797 opiniones",
+    "ubicacion": "Location",
+    "limpieza": "Cleanliness",
+    "servicio": "Service",
+    "Calidad/precio": "Values",
+    "commnet_pubulicado en": "Published on",
+    "comments": [
+      {
+        "user": "Katherine",
+        "date": "August 2022",
+        "from": "Tripadvisor",
+        "comment": "My fiancée and I had a relaxing and pampered vacation experience at the Grand Residences. Beautiful and well maintained grounds, very clean and well decorated room with 2x day cleaning service. Food at the restaurants was high quality and there were plenty of gluten-free options available. We especially loved the BBQ and tacos themed dinner nights on the beach. Our concierge Iliana was wonderful- she was very helpful and available whenever you needed her. Everyone we met on staff was friendly, from food servers to pool assistants. We loved Sebastian at the swim up bar! Alex was fun and kept us entertained with water aerobics and poolside games every day. The resort does a great job of balancing the couples vs. families experiences so that everyone can have fun in their own way. It truly was a five-star experience. We will definitely return here again!"
+      },
+      {
+        "user": "Brian D",
+        "date": "August 2022",
+        "from": "Tripadvisor",
+        "comment": "I was reluctant to post this because I really don’t want more people to know about this place. This was our fourth time visiting and it is our go-to spot in Mexico. The staff is outstanding; everyone is so friendly, proactive and great with kids. The resort is sparkling clean and the cuisine is so good that I can’t help overeating the whole time. What made this time particularly special was how much our kids loved the kids club - Teresa, Mary and Ivonne - all went above and beyond and made it such a memorable experience for our kids."
+      }
+    ]
+  }
+}

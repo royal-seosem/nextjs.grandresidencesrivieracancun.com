@@ -1,0 +1,141 @@
+{
+  "new-offers": {
+    "banner": "/img/offers-general/banner-a-es.jpg",
+    "description": "Disfruta la mejor experiencia vacacional en este galardonado resort de lujo frente a la playa, deleita tu paladar con nuestro exclusivo plan gourmet Todo Incluido, relájate en un ambiente de pura tranquilidad y enamórate de las fascinantes vistas.",
+    "ALL PROMOTIONS INLCUDE:": "TODAS NUESTRAS PROMOCIONES INCLUYEN:",
+    "includes": [
+      {
+        "icon": "/img/offers-general/icons/car.svg",
+        "label": "Transporte de aeropuerto privado en servicio redondo"
+      },
+      {
+        "icon": "/img/offers-general/icons/room-service.svg",
+        "label": "Servicio de habitación todo el día"
+      },
+      {
+        "icon": "/img/offers-general/icons/tequila.svg",
+        "label": "Botella de tequila en cortesía"
+      },
+      {
+        "icon": "/img/offers-general/icons/drink.svg",
+        "label": "Alimentos y bebidas premium ilimitadas"
+      },
+      {
+        "icon": "/img/offers-general/icons/restauran.svg",
+        "label": "Frutas diarias secas y de temporada"
+      },
+      {
+        "icon": "/img/offers-general/icons/wifi.svg",
+        "label": "Wifi en habitación y áreas comunes"
+      }
+    ],
+    "Aceptamos": "Aceptamos",
+    "starting_at": "Desde",
+    "per room": "por habitación / por noche",
+    "book now": "RESERVA AHORA",
+    "See terms & Conditions": "Términos y Condiciones",
+    "Read More": "Leer más",
+    "Lowest rate available from: ": "Tarifa más baja de: :DATE_START a :DATE_END",
+    "Travel from": "Viaja entre Agosto 21, 2023 y Marzo 15, 2024",
+    "valid_until": "Esta oferta solo es válida hasta: :BW_E / Viaja entre: :TW_S to :TW_E",
+    "View more benefits": "Ver más beneficios",
+    "offers": [
+      {
+        "banner": "/img/offers-general/offer-a.jpg",
+        "title": "¡Quédate más tiempo y ahorra! 51% DTO",
+        "subtitle": "Porque más tiempo deja más recuerdos",
+        "rate_plan": "2147053",
+        "inclusions": [
+          {
+            "label": "Descuento especial para estancias más largas, disponible a partir de 7 noches"
+          },
+          {
+            "label": "Disfruta lo mejor del Caribe Mexicano"
+          }
+        ],
+        "terms": "TÉRMINOS Y CONDICIONES: Transportación al Aeropuerto: Esta promoción incluye un servicio de transportación de aeropuerto en viaje redondo (aeropuerto - hotel - aeropuerto). El cliente debe contactar al hotel por lo menos 48 horas previo a su llegada para coordinar su servico de transportación. * Restricciones: La estancia mínima es de 7 noches, sin embargo, esto podría variar dependiendo de la temporada."
+      },
+      {
+        "banner": "/img/offers-general/offer-b.jpg",
+        "title": "Relájate con Sol, Playa con 48% DTO",
+        "subtitle": "Cualquier momento es bueno para relajarse",
+        "rate_plan": "7617429",
+        "inclusions": [
+          {
+            "label": "Descuento especial para estancias entre el 18 de Agosto y el 22 de Diciembre de 2023"
+          },
+          {
+            "label": "La estancia mínima puede variar dependiendo de las fechas seleccionadas"
+          }
+        ],
+        "terms": "TÉRMINOS Y CONDICIONES: Transportación al Aeropuerto: Esta promoción incluye un servicio de transportación de aeropuerto en viaje redondo (aeropuerto - hotel - aeropuerto). El cliente debe contactar al hotel por lo menos 48 horas previo a su llegada para coordinar su servico de transportación. * Restricciones: La estancia mínima es de 1 noche, sin embargo, esto podría variar dependiendo de la temporada."
+      },
+      {
+        "banner": "/img/offers-general/offer-c.jpg",
+        "title": "Descuento por reserva 2024 anticipada 48% DTO",
+        "subtitle": "Cuanto antes reserve, más ahorrará",
+        "rate_plan": "4338332",
+        "inclusions": [
+          {
+            "label": "Descuento especial Incluyendo Resort Credits"
+          },
+          {
+            "label": "Incluyendo 150 USD en Resort Credits"
+          }
+        ],
+        "terms": "TÉRMINOS Y CONDICIONES: * Resort Credit: * El resort credit es por estancia y podrá ser utilizado para pagar servicios en la Tienda Gourmet y Spa entre otros. Transportación al Aeropuerto: Esta promoción incluye un servicio de transportación de aeropuerto en viaje redondo (aeropuerto - hotel - aeropuerto). El cliente debe contactar al hotel por lo menos 48 horas previo a su llegada para coordinar su servicio de transportación. * Restricciones: La estancia mínima es de 3 noches, sin embargo, esto podría variar dependiendo de la temporada."
+      },
+      {
+        "banner": "/img/offers-general/offer-d.jpg",
+        "title": "Relájate con estilo, Todo Incluido con 41% DTO",
+        "subtitle": "Disfrute unas maravillosas vacaciones en familia en el Caribe Mexicano",
+        "rate_plan": "7645434",
+        "inclusions": [
+          {
+            "label": "Promoción especial del Resort"
+          },
+          {
+            "label": "Incluyendo 100 USD en Resort Credits"
+          }
+        ],
+        "terms": "TÉRMINOS Y CONDICIONES: * Resort Credit: * El resort credit es por estancia y podrá ser utilizado para pagar servicios en la Tienda Gourmet y Spa entre otros. Transportación al Aeropuerto: Esta promoción incluye un servicio de transportación de aeropuerto en viaje redondo (aeropuerto - hotel - aeropuerto). El cliente debe contactar al hotel por lo menos 48 horas previo a su llegada para coordinar su servicio de transportación. * Restricciones: La estancia mínima es de 3 noches, sin embargo, esto podría variar dependiendo de la temporada."
+      }
+    ],
+    "benefits_title": "Obtenga beneficios exclusivos cuando reserve en Grand Residences",
+    "benefits": [
+      {
+        "icon": "/img/icons/orange/van.svg",
+        "label": "Transportación de aeropuerto privada premium en viaje redondo"
+      },
+      {
+        "icon": "/img/icons/orange/concierge-bell.svg",
+        "label": "Regalos de bienvenida"
+      },
+      {
+        "icon": "/img/icons/orange/flex-reservation.svg",
+        "label": "Flexibilidad de reservación"
+      }
+    ],
+    "travel_choice_text": "N.º 1 de 46 resorts en Puerto Morelos",
+    "travel_choice_text2": "5.0 Excelente de 1,797 opiniones",
+    "ubicacion": "Ubicación",
+    "limpieza": "Limpieza",
+    "servicio": "Servicio",
+    "Calidad/precio": "Calidad/precio",
+    "commnet_pubulicado en": "Publicado en",
+    "comments": [
+      {
+        "user": "PATY C",
+        "date": "Agosto 2022",
+        "from": "Tripadvisor",
+        "comment": "Para poder expresar lo que nos llevamos cada uno de nosotros en este Gran lugar, necesitamos mas espacio, admiramos y respetamos la forma en la que TODOS se esmeran por hacer que las vacaciones sean inolvidables, Gustavo Jimenez Concierge siempre al pendiente de que nuestra llegada sea sin ningún contratiempo y así dando seguimiento de lo que se necesita hasta nuestra salida. En recepción son eficientes y amables pero sobre todo tolerantes y pacientes. Estar en la playa es un regalo, desde que Efrain y Eliseo hacen su trabajo con mucho entusiasmo y entrega así como todos los chicos de su equipo preparan y están atentos en los camastros, Chezz cuenta con mucha paciencia que nos hace sentir como en casa. La atención del Sr Javier (supervisor) hace posible que el nivel Residences ,en alimentos y bebidas sea excelente! Margarito, Miguel, Jose Palomera ,Javier Eduardo Mendoza todos brindan un excelente servicio y atención, y no podemos dejar de nombrar a nuestros salvavidas Miguel y Jose que están cuidando la seguridad de todos los huéspedes. Los chef : Marco,Fernando, Guido muchas gracias por consentirnos con esos platillos deliciosos,,, pero estos platillos tienen un gran toque con el nuevo Sommelier Juan Carlos Espadas presentando las mejores botellas de vino y explicando con sus conocimientos cada uno para seleccionar el mejor y hacer un manjar de cada platillo que embellece la noche con la familia. Las Supervisoras en el area de Camaristas : Josefina , Angélica , Victoria excelente asi como Paty, Erick . Nuestros hermosos camaristas siempre al pendiente Difícil poner todos los nombre pero vale la pena siempre RECONOCERLOS Aplauso a la Gerencia por tener un gran equipo de trabajo Somos Socios, vamos cada año y ninguno de los miembros de la familia hemos querido cambiar estas vacaciones ya que hacen posible que compartamos unas semanas en presencia, amor y armonía"
+      },
+      {
+        "user": "Ma. Luisa R",
+        "date": "Agosto 2022",
+        "from": "Tripadvisor",
+        "comment": "Es el 5to. año que venimos toda la familia (12 personas) a la suite 522 por dos semanas en verano. Es espectacular. Los miércoles está incluida la super clase de cocina con el chef Guido. Hicimos un pescado a la sal riquísimo y luego nos envió el mejor ceviche. Tienes que venir a probqrlo. Gracias a Gustavo nuestro concierge que nos da las mejores recomendaciones y nos ayuda en todo lo que necesitamos desde silla eléctrica, renta de auto, paseos, etc. La experiencia es muy grata y seguramente volveremos el próximo año. Fam. Ruiz"
+      }
+    ]
+  }
+}

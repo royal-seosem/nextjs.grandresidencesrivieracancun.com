@@ -1,0 +1,24 @@
+{
+  "offers-template2": {
+    "title": "Las vacaciones de tus sueños comienzan aquí",
+    "subtitle": "Ve nuestras ofertas",
+    "description": "Decidir cuándo y cómo disfrutar de las vacaciones de sus sueños se simplifica con nuestras ofertas especiales. Elija entre una selección de promociones especiales adaptadas especialmente para usted, y, como parte de mi real, aproveche sus descuentos adicionales.",
+    "includes-title": "TODAS NUESTRAS PROMOCIONES INCLUYEN:",
+    "includes-list": [
+      { "label": "Transportación privada de aeropuerto en viaje redondo", "img": "/img/icons/car.svg" },
+      { "label": "Botella de Mezcal de cortesía", "img": "/img/icons/room-service.svg" },
+      { "label": "Frutas diarias, secas y de temporada", "img": "/img/icons/bottle.svg" },
+      { "label": "Servicio de habitación todo el día", "img": "/img/icons/drink.svg" },
+      { "label": "Alimentos y bebidas premium ilimitados", "img": "/img/icons/restaurant.svg" },
+      { "label": "Wi-Fi en habitaciones y áreas comunes", "img": "/img/icons/wifi.svg" }
+    ],
+    "my-royal-price": "Precio My Royal <span>$:PRICE</span> USD más impuestos",
+    "plus_taxes": "más impuestos",
+    "Log in and save even more": "Inicie sesión y ahorre más",
+    "cintillo_text": "Regístrese en <b>My Royal</b> y obtenga hasta un <b>10%</b> de descuento adicional",
+    "cintillo_btn": "Iniciar sesión o registrarse",
+    "my-royal-no-apply": "Los descuentos adicionales de My Royal no aplican en paquetes de hotel + vuelo",
+    "See all available offers": "Ver todas las ofertas disponibles",
+    "See Less": "Ver menos"
+  }
+}

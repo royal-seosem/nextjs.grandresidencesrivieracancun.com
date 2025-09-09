@@ -17,7 +17,9 @@ export default getRequestConfig(async ({requestLocale}) => {
             ...(await import(`./dictionaries/${locale}/page_login.json`)).default,
             ...(await import(`./dictionaries/${locale}/home.json`)).default,
             ...(await import(`./dictionaries/${locale}/weddings.json`)).default,
-            ...(await import(`./dictionaries/${locale}/offers.json`)).default
+            ...(await import(`./dictionaries/${locale}/offers.json`)).default,
+            ...(await import(`./dictionaries/${locale}/new-offers.json`)).default,
+            ...(await import(`./dictionaries/${locale}/offers-template2.json`)).default
         }
         // (await import(`./dictionaries/${locale}.json`)).default
     };

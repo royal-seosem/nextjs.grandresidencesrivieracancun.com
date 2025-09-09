@@ -1,0 +1,42 @@
+{
+  "offers-template2": {
+    "title": "Your dream vacation begins here",
+    "subtitle": "See our offers",
+    "description": "Deciding when and how to enjoy your dream vacation is made simple with our special offers. Choose from a selection of special promotions tailored especially for you, and, as part of My Royal, take advantage of your additional discounts.",
+    "includes-title": "ALL PROMOTIONS INCLUDE:",
+    "includes-list": [
+      {
+        "label": "Private roundtrip airport transportation",
+        "img": "/img/icons/car.svg"
+      },
+      {
+        "label": "Complimentary bottle of tequila",
+        "img": "/img/icons/room-service.svg"
+      },
+      {
+        "label": "Daily dry and season fruits",
+        "img": "/img/icons/bottle.svg"
+      },
+      {
+        "label": "Room service all day long",
+        "img": "/img/icons/drink.svg"
+      },
+      {
+        "label": "Unlimited premium meals and drinks",
+        "img": "/img/icons/restaurant.svg"
+      },
+      {
+        "label": "Wi-Fi in room and common areas",
+        "img": "/img/icons/wifi.svg"
+      }
+    ],
+    "my-royal-price": "My Royal price <span>$:PRICE</span> USD Plus taxes",
+    "plus_taxes": "Plus taxes",
+    "Log in and save even more": "Log in and save even more",
+    "cintillo_text": "Sign up to <b>My Royal</b> and get up to <b>15%</b> additional discount",
+    "cintillo_btn": "Log in or Sign up",
+    "my-royal-no-apply": "My Royal additional discounts do not apply in Hotel + Flight package deals",
+    "See all available offers": "See all available offers",
+    "See Less": "See Less"
+  }
+}

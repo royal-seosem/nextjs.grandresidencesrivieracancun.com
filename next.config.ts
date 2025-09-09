@@ -53,7 +53,10 @@ const nextConfig: NextConfig = {
         return config
     },
     images: {
-        remotePatterns: [new URL('https://grandresidencesrivieracancun.com/**')],
+        remotePatterns: [
+            new URL('https://grandresidencesrivieracancun.com/**'),
+            new URL('https://www.royalresorts.com/**')
+        ],
     },
     experimental: {
         viewTransition: true,
