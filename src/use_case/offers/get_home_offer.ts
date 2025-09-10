@@ -6,13 +6,21 @@ export type Offer = {
     content: OfferContentKey;
     gallery: OfferGallery;
     rate: OfferRate | null;
+    bookingWindow: OfferRangeDates;
+    travelWindow: OfferRangeDates;
 };
+
+export type OfferRangeDates = {
+    start_date: Date;
+    end_date: Date;
+}
 
 export type OfferContentKey = {
     inclusions?: string[];
     title?: string;
     description?: string;
     discount?: string;
+    terms?: string[];
 }
 
 export type OfferGallery = {

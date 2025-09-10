@@ -10,33 +10,44 @@ const nextConfig: NextConfig = {
         )
 
         config.module.rules.push(
-            // Reapply the existing rule, but only for svg imports ending in ?url
-            {
-                ...fileLoaderRule,
-                test: /\.svg$/i,
-                resourceQuery: /url/, // *.svg?url
-            },
-            // Convert all other *.svg imports to React components
+            // ➊  SVG como React Component SIN optimizar ── *.svg?svgo=false
             {
                 test: /\.svg$/i,
                 issuer: fileLoaderRule.issuer,
-                resourceQuery: {not: [...fileLoaderRule.resourceQuery.not, /url/]}, // exclude if *.svg?url
+                resourceQuery: /svgo=false/,          // <-- detecta la query
                 use: [
                     {
                         loader: '@svgr/webpack',
                         options: {
-                            // No añadir width/height automáticos
                             dimensions: false,
-                            // Mantener el viewBox y eliminar dimensiones vía SVGO
+                            svgo: false,              // <-- desactiva SVGO solo aquí
+                        },
+                    },
+                ],
+            },
+            // ➋  SVG cargado como URL ── *.svg?url           (ya lo tenías)
+            {
+                ...fileLoaderRule,
+                test: /\.svg$/i,
+                resourceQuery: /url/,
+            },
+            // ➌  Resto de SVG como React Component CON SVGO  (por defecto)
+            {
+                test: /\.svg$/i,
+                issuer: fileLoaderRule.issuer,
+                resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/, /svgo=false/] },
+                use: [
+                    {
+                        loader: '@svgr/webpack',
+                        options: {
+                            dimensions: false,
                             svgo: true,
                             svgoConfig: {
                                 plugins: [
                                     {
                                         name: 'preset-default',
                                         params: {
-                                            overrides: {
-                                                removeViewBox: false,   // conserva viewBox
-                                            },
+                                            overrides: { removeViewBox: false },
                                         },
                                     },
                                 ],

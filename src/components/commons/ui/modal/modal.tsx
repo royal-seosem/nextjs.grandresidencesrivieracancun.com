@@ -3,6 +3,7 @@ import {Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle} from "@/
 import CloseIcon from "@/components/commons/icons/close.svg";
 import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
 import useIsDesktop from "@/components/commons/ui/modal/useIsDesktop";
+import {ScrollArea} from "@/components/commons/ui/scroll-area";
 
 interface ModalProps {
     open: boolean;
@@ -22,7 +23,10 @@ const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
                         {header}
                     </DrawerTitle>
                 </DrawerHeader>
-                {children}
+                <ScrollArea className="h-[calc(100dvh-50px)]">
+                    {children}
+                </ScrollArea>
+
                 <DrawerFooter className=" bg-[#ecba5880]">
                     <button
                         className="flex text-sm font-bold items-center justify-center gap-2"
@@ -45,7 +49,9 @@ const deskModal = ({open, setOpen, children, header}: ModalProps) => {
                         {header}
                     </DialogTitle>
                 </DialogHeader>
-                {children}
+                <ScrollArea className="h-[90dvh]">
+                    {children}
+                </ScrollArea>
             </DialogContent>
         </Dialog>
     );

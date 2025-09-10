@@ -38,7 +38,7 @@ const ContactOptions = () => {
                         </ul>
                     </li>
                     <li>
-                        <span className="text-primary text-base font-bold mb-2 block">{tg('reservations')} </span>
+                        <span className="text-primary text-base font-bold mb-2 block">{tg('menu.reservations')} </span>
                         <ul>
                             <li className="mb-2">
                                 <Link className="flex items-center gap-3" href={`tel:${phones.reservations.phone}`}>
@@ -69,7 +69,7 @@ const ContactOptions = () => {
                         </ul>
                     </li>
                     <li>
-                        <span className="text-primary text-base font-bold mb-2 block">{tg('weddings_groups')}</span>
+                        <span className="text-primary text-base font-bold mb-2 block">{tg('menu.weddings_groups')}</span>
                         <ul>
                             <li className="mb-2">
                                 <Link className="flex items-center gap-3" href={`tel:${phones.wedding_groups.phone}`}>

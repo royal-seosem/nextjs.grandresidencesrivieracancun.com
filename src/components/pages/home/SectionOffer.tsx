@@ -11,19 +11,23 @@ import Book from "@/components/commons/shared/book";
 import Modal from "@/components/commons/ui/modal/modal";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {Button} from "@/components/commons/ui/button";
+import ValidUntil from "@/components/commons/shared/ValidUntil";
+import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
 
 
 const SectionOffer = ({offers}: { offers: Offer[] }) => {
     const tmenu = useTranslations('menu');
     const tNewOffers = useTranslations('new-offers');
     const tOffers = useTranslations('offers');
+    const tGeneral = useTranslations('general');
     const offer = offers[0];
-    console.log(offer);
     const [open, setOpen] = useState(true);
-
+    const [showTerms, setShowTerms] = useState(false);
+    console.log(offer);
     return (
         <>
             <CardImg
+                onClick={() => setOpen(true)}
                 width={1360}
                 height={400}
                 text={tmenu('specials')}
@@ -47,6 +51,7 @@ const SectionOffer = ({offers}: { offers: Offer[] }) => {
                     </ul>
 
                     <Button
+                        onClick={() => setShowTerms(!showTerms)}
                         className="text-base font-medium underline pl-0 mb-6"
                         variant="link">{tOffers('label2')}</Button>
 
@@ -77,9 +82,24 @@ const SectionOffer = ({offers}: { offers: Offer[] }) => {
                         <Book/>
                     </div>
 
-                    {/*<ValidUntil offer={offer}/>*/}
-
+                    <ValidUntil offer={offer}/>
                 </div>
+                <LogInModalOffer/>
+                {showTerms &&
+                    <div className="p-5 bg-[#f0e9e2]">
+                        <Paragraph>
+                            {
+                                offer.content.terms?.map((item: string, index: number) => (
+                                    <span key={index}>{item}</span>
+                                ))
+                            }
+                        </Paragraph>
+                        <button className="text-sm font-bold uppercase"
+                            onClick={() => setShowTerms(false)}>
+                            {tGeneral('read less')}
+                        </button>
+                    </div>
+                }
             </Modal>
         </>
     );

@@ -1,18 +1,176 @@
 {
   "general": {
     "title_resort": "Grand Residences Riviera Cancun",
-    "management": "Resort",
-    "reservations": "Reservations",
-    "transportacion": "Transportation",
-    "btn-contact": "Contact Us",
-    "weddings_groups": "Groups & Weddings",
-    "title-transportation": "Transportation",
-    "description-transportation": "We offer complimentary roundtrip* airport transportation for our guests. In order to schedule this private service, please provide the following information at least 72 hours before your arrival day.",
-    "restriction-transportation": "*Restrictions may apply for owner loan, certificates and Discovery.",
-    "condition-transportation": "Please be advised that our airport transportation service operates exclusively from Cancun International Airport. Upon confirmation of your reservation, our dedicated team will promptly send you an email with a voucher attached. This voucher must be printed and presented at the time of pickup to validate the service.",
-    "messages-email": {
-      "transportation": "Your transportation request has been sent successfully"
+    "menu": {
+      "Travel Information Update": "Travel Information Update",
+      "suites": "Suites",
+      "dining": "Dining",
+      "activities": "Amenities & Activities",
+      "gallery": "Gallery",
+      "all inclusive": "All Inclusive",
+      "specials": "Specials",
+      "wedding": "Weddings and Groups",
+      "destination": "Destination",
+      "manage reservations": "Manage your reservation",
+      "owners area": "Owners Area",
+      "chat": "Chat",
+      "blog": "Blog",
+      "faqs": "FAQ's",
+      "events": "Weddings and Groups",
+      "weddings_groups": "Groups & Weddings",
+      "contact us": "Contact",
+      "reservations": "Reservations",
+      "weddings": "Weddings",
+      "groups": "Groups",
+      "call us": "Call Us",
+      "write us": "Write Us",
+      "contact": "Contact",
+      "privacy policy": "Privacy Policy",
+      "about us": "About Us",
+      "resort policy": "Resort Policy",
+      "we are part of": "We are part of",
+      "idioma-default": "English",
+      "idioma": "Language",
+      "english": "English",
+      "spanish": "Spanish",
+      "Cookie policy": "Cookie Policy",
+      "Sitemap": "Sitemap"
     },
-    "go to suites" : "More about our suites"
+    "booking": {
+      "add fly": "FLIGHT",
+      "only room": "FLIGHT",
+      "country": "Departure Country",
+      "airport": "Departure City",
+      "dates": "Check in date / Check out date",
+      "guests": "Guests",
+      "rooms": "Rooms",
+      "promo-code": "Promo Code",
+      "book": "Book now",
+      "departure": "Coutry of Origin / City",
+      "departure country": "Departure Country",
+      "departure city": "Airport",
+      "adults": "Adults (+13)",
+      "children": "Children (0-12)",
+      "check-in": "Check-In",
+      "check-out": "check-Out",
+      "close": "Close",
+      "room": "Room",
+      "Select Age": "Select Age children ",
+      "check-out-only": "Check-out only",
+      "tooltipAvail": "Your stay cannot include unavailable dates",
+      "lowestRate": "Lowest rate available"
+    },
+    "see specials": "see specials",
+    "book now": "book now",
+    "back": "Close",
+    "go to suites": "More about our suites",
+    "manage your reservation": "Manage your reservation",
+    "owners area": "Owners Area",
+    "read more": "read more",
+    "read less": "read less",
+    "more info": "I want to know more",
+    "toll": "Toll Free",
+    "internacional": "International",
+    "about-us": "About Us",
+    "policies": "Resort Policies",
+    "privacy": "Privacy Policy",
+    "contact-us": "Contact Us",
+    "terms": "Terms & condinitions*",
+    "legacy": {
+      "about-us": {
+        "title": "About Us | Grand Residences Riviera Cancun",
+        "description": "A guarantee of excellence with luxurious accommodation and delightful amenities. Enter and Book Now!"
+      },
+      "policies": {
+        "title": "Know our Resort Policies | Grand Residences Riviera Cancun",
+        "description": "Please review our resort policies. This is an Important information for a pleasant stay. Learn more."
+      },
+      "privacy": {
+        "title": "Privacy Statement and Policies | Grand Residences Riviera Cancun",
+        "description": "Your privacy is important to us. We are committed to protecting your personal information. Read more."
+      },
+      "contact-us": {
+        "title": "Contact Us | Grand Residences Riviera Cancun",
+        "description": "In Grand Residences Riviera Cancun we will glad to assist you with any question or requirement you may have"
+      },
+      "manage-cookie": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "media": "Media Room",
+    "about": "About",
+    "fact-sheet": "Fact Sheet",
+    "flor-plans": "Flor Plans",
+    "360-tour": "360 Tour",
+    "media-room": {
+      "title": "Grand Residences Riviera Cancun | Media Room",
+      "description": "Ideally situated between Cancun and Playa del Carmen, within a half hour from the Cancun International Airport, Grand Residences is a tranquil enclave protected by a coral reef and National Marine Park in the front yard and a nature reserve in the backyard. "
+    },
+    "chat": {
+      "label1": "Do you need help?",
+      "label2": "Start a chat with an agent",
+      "label3": "Subscribe now!",
+      "label4": "Become part of our mailing list and receive an exclusive coupon code <span class=\"subscribe--plus5--label__strong\">to get an additional 5% discount </span> on all our current offers!\n                                         "
+    },
+    "transportacion": "Transportation",
+    "management": "Resort",
+    "consent": {
+      "title": "OUR USE OF COOKIES",
+      "overlay": "The personal and/or sensitive information requested is utilized to provide the user with the required service. The privacy of your information is protected under the guidelines of the Privacy Policy of the Company and as mandated by law. The use of this site is subject to unconditional acceptance by the user of the terms and conditions specified in our <a href=\"/privacy-policy\" target=\"_blank\" style=\"text-transform:initial\">Privacy Policy</a>.",
+      "button": "ACCEPT ALL COOKIES"
+    },
+    "blogLink": "https://blog.grandresidencesbyroyalresorts.com/l/",
+    "promo-label": "Special: ",
+    "restrict-room": "2 bedroom rooms available only with our vacation experts: <a href=\"tel:<<NUMBER>>\">CALL NOW (<<PHONNE>>)</a>",
+    "restrict-room-large": "Two and Three bedroom suites or Reservations for 6 or more people available only with our vacation experts: <a class=\"btn btn-outline-secondary\" href=\"tel:<<NUMBER>>\">CALL NOW (<<PHONNE>>)</a>",
+    "manager_url": "https://www.wyndhamhotels.com/registry-collection/find-reservation",
+    "select-area": "Select a category to start a chat",
+    "customer-service": "Customer Support",
+    "mx-destination": "Cancun / Riviera Maya",
+    "chat-reservation": "Make a reservation",
+    "wedding-and-events": "Weddings & Events",
+    "download-mapa": "Download site plan",
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7458.224141290968!2d-86.9030906777858!3d20.827180469531076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e8830e73f641d%3A0xbe901ca016af4973!2sGrand+Residences+Riviera+Cancun!5e0!3m2!1sen!2smx!4v1530030589771",
+    "manage_reservations": "Manage your Reservation",
+    "manage_detail": "To view your reservation details, modify or cancel your reservation, please select your resort and enter your confirmation number",
+    "input_confirmation": "Confirmation Number",
+    "btn_continue": "Continue",
+    "hotel-no-apply": "My Royal additional discounts do not apply in Hotel + Flight package deals ",
+    "messages": {
+      "session_expired": "Session Expired",
+      "password_updated": "Your password was updated correctly",
+      "error_password_updated": "Error updating your password",
+      "updated_account": "Account updated",
+      "confirm_your_email": "We have sent you an email to confirm your email address",
+      "error_login": "Incorrect username or password"
+    },
+    "minlos": "The minimum number of nights selected does not apply: <span class='js-minlos'>2</span> nigth-stay minimum required",
+    "description-transportation": "We offer complimentary roundtrip* airport transportation for our guests. In order to schedule this private service, please provide the following information at least 72 hours before your arrival day.",
+    "condition-transportation": "Please be advised that our airport transportation service operates exclusively from Cancun International Airport. Upon confirmation of your reservation, our dedicated team will promptly send you an email with a voucher attached. This voucher must be printed and presented at the time of pickup to validate the service.",
+    "restriction-transportation": "*Restrictions may apply for owner loan, certificates and Discovery.",
+    "form": {
+      "rsvNumber": "Reservation Number",
+      "name": "Full Name",
+      "date_check_in": "Arrival date",
+      "email": "Email",
+      "phone": "Phone",
+      "comment": "Comments",
+      "book": "Book Through",
+      "airline": "Airline",
+      "numberFlight": "Flight",
+      "send": "Send",
+      "default": "Select",
+      "website": "Direct Website",
+      "call-center": "Call Center",
+      "other": "Other"
+    },
+    "btn-contact": "Contact Us",
+    "title-transportation": "Transportation",
+    "messages-email": {
+      "transportation": "Your transportation request has been sent successfully",
+      "error": "An error occurred, please try again later"
+    },
+    "message_gms_login": "<p style=\"text-align: center\"><b>Maintenance Notice:</b></p><p>The login and registration service for the My Royal program is unavailable today, Saturday, September 28th, due to maintenance work. It will be available again tomorrow, Sunday, September 29th.</p><p>We apologize for the inconvenience and invite you to return from that date onward.</p>"
   }
 }
