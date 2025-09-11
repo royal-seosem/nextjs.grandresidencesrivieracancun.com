@@ -5,19 +5,21 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import Title from "@/components/commons/ui/title";
-import Paragraph from "@/components/commons/ui/paragraph";
 import SectionSuites from "@/components/pages/home/SectionSuites";
 import {getHomeOffer} from "@/use_case/offers/get_home_offer";
 import SectionOffer from "@/components/pages/home/SectionOffer";
+import SectionAmenities from "@/components/pages/home/SectionAmenities";
+import RichText from "@/components/commons/shared/RitchText";
+import SectionMap from "@/components/pages/home/SectionMap";
+import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
 
 
 export default async function Home() {
-    const {home: {slider, descripcion_inicial}} = await getMessages();
+    const {home: {slider}} = await getMessages();
     const t = await getTranslations('general');
     const locale = await getLocale();
 
     const offers = await getHomeOffer(locale);
-    // console.log(offers)
 
     return (
         <main>
@@ -75,13 +77,14 @@ export default async function Home() {
                         width="230"
                         height="270"/>
 
-                    {descripcion_inicial.map((item: string, index: number) => (
-                        <Paragraph key={index}>{item}</Paragraph>)
-                    )}
+                    <RichText id={"descripcion_inicial"} ns={"home"}/>
                 </section>
             </div>
             <SectionSuites/>
-            <SectionOffer offers={offers} />
+            <SectionOffer offers={offers} className={"mb-10"}/>
+            <SectionAmenities/>
+            <SectionMap/>
+            <SectionTripadvisor/>
         </main>
     );
 }

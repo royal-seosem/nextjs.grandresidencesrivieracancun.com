@@ -42,11 +42,12 @@ const Gallery = ({children, variant = 'secondary', position = 'on'}: GalleryProp
     const {className} = positionStyles[position];
     return (
         <Carousel
+            className="w-full"
             opts={{
                 loop: true
             }}>
             <div className="">
-                <CarouselContent className="items-stretch">
+                <CarouselContent className="items-stretch table-[border-collapse:collapse] table-[border-spacing:0]">
                     {children}
                 </CarouselContent>
             </div>

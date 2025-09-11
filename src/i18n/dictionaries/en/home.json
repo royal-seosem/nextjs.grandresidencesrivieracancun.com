@@ -1,5 +1,17 @@
 {
   "home": {
+    "title": "Grand Residences Riviera Cancun | Riviera Maya Resort",
+    "metadescription": "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "tripadvisor title": "TripAdvisor",
+    "tripadvisor excellent": "Excellent",
+    "tripadvisor msg": "Resort # 1 in Puerto Morelos",
+    "tripadvisor facts": [
+      "Location",
+      "Cleanliness",
+      "Service",
+      "Values"
+    ],
     "slider": [
       {
         "title": "Grand Residences Riviera Cancun",
@@ -18,11 +30,9 @@
         "description": "By far the best resort we’ve been to. Property, food, staff, and rooms are all 5-Star."
       }
     ],
-    "descripcion_inicial": [
-      "Grand Residences Riviera Cancun is a spectacular resort renowned for its hallmark excellence and unforgettable luxury vacation experiences. It is located on a picture-perfect beach to the south of the charming fishing village of Puerto Morelos, gateway to the Riviera Maya and only 20 minutes from Cancun International Airport.",
-      "The hacienda-style architecture pays tribute to Mexican culture and the warm hospitality of the hosts give the resort its welcoming personality. We offer magnificent amenities and world-class service to fulfill the desires of the most discerning travelers.",
-      "From our gourmet restaurants, spa and gym to an oceanfront infinity pool, excellence is in every detail to ensure that the resort is a memorable place to enjoy a holiday in the Caribbean, a sanctuary from the stress of daily life."
-    ],
+    "descripcion_inicial": "<p>Grand Residences Riviera Cancun is a spectacular resort renowned for its hallmark excellence and unforgettable luxury vacation experiences. It is located on a picture-perfect beach to the south of the charming fishing village of Puerto Morelos, gateway to the Riviera Maya and only 20 minutes from Cancun International Airport.</p><p>The hacienda-style architecture pays tribute to Mexican culture and the warm hospitality of the hosts give the resort its welcoming personality. We offer magnificent amenities and world-class service to fulfill the desires of the most discerning travelers.</p><p>From our gourmet restaurants, spa and gym to an oceanfront infinity pool, excellence is in every detail to ensure that the resort is a memorable place to enjoy a holiday in the Caribbean, a sanctuary from the stress of daily life.</p>",
+    "habitaciones titulo": "Our Suites: An oasis of luxury and relaxation",
+    "habitaciones descripcion": "Luxurious, spacious and comfortable, all the suites at Grand Residences have stunning views of the Caribbean. Unwind with signature bedding, a spa bathroom and state of the art appliances for perfect relaxation.",
     "habitaciones": [
       "Junior Suite with Jacuzzi",
       "Junior Suite King",
@@ -31,26 +41,77 @@
       "Master Suite Penthouse",
       "Presidential Suite"
     ],
-    "habitaciones titulo": "Our Suites: An oasis of luxury and relaxation",
-    "habitaciones descripcion": "Luxurious, spacious and comfortable, all the suites at Grand Residences have stunning views of the Caribbean. Unwind with signature bedding, a spa bathroom and state of the art appliances for perfect relaxation.",
+    "suites_alt": [
+      "Junior Suite King, luxury room with a king size bed and ocean view balcony",
+      "Luxury room with 2 double beds",
+      "Suite with living and Dining Room with terrace",
+      "Accommodation with Ocean View terrace and Private Pool and Jacuzzi",
+      "Suite with private terrace with pool",
+      "Luxury accommodation with terrace ocean view"
+    ],
     "amenities_alt": [
       "Couple drinking wine at a restaurant in All Inclusive Resorts Puerto Morelos",
       "All Inclusive Resort Riviera Maya includes Private transportation",
       "Suites with ocean view in our All Inclusive Resort Riviera Maya"
     ],
+    "events_alt": [
+      "We help you to create a memorable meetings",
+      "Weddings specialists are ready to help you",
+      "We take care of every detail of any social events"
+    ],
+    "planes titulo general": "Discover the Grand Residences Riviera Cancun",
+    "planes subtitulo": "Enjoy a luxury stay at Grand Residences and all-inclusive dining, the perfect combination for unforgettable vacation moments",
     "plan ai": "Enjoy our plan with gourmet food and drinks included",
+    "plan ai alt": "-",
     "plan ai descripcion": "Enjoy unlimited top-notch food and drinks in all our restaurants, round-trip transportation to the Cancun airport, 24-hour room service and high-speed Wi-Fi connection throughout the resort.",
     "plan ai btn": "More about All In Grand Experience",
+    "plan ep": "Three great reasons to book directly",
+    "plan ep descripcion": "<ol><li>Easy booking process and instant confirmation</li><li>Exclusive benefits</li><li>Best Deal Guaranteed</li></ol>",
     "plan bb": "Complimentary Airport Round trip transportation",
     "plan bb descripcion": "At Grand Residences, our award-winning hospitality begins before you arrive with complimentary round trip Cancun airport transportation.",
-    "plan ep": "Three great reasons to book directly",
-    "plan_ep_descripcion": [
-      "Easy booking process and instant confirmation",
-      "Exclusive benefits",
-      "Best Deal Guaranteed"
-    ],
     "eventos titulo": "Special Events",
     "eventos descripcion": "Our experts will plan your wedding, romantic dinner or special event to perfection. The mission of our staff is to understand your needs and take care of every little detail, making your ceremony or event memorable.",
-    "eventos boton": "More about Special Events"
+    "eventos boton": "More about Special Events",
+    "promocion": "Featured promotion",
+    "promocion boton": "I want to see all the offers!",
+    "otras secciones": "Endless activities and amenities to enjoy",
+    "secciones": [
+      {
+        "title": "Try our wide variety of gourmet dishes",
+        "descripcion": "At Grand Residences Riviera Cancun, we believe that the perfect vacation includes delicious dishes and fine drinks for memorable dining moments. We offer a variety of exquisite flavors to tempt your palate.",
+        "boton": "I want to see more",
+        "alt": "Try our way variety: Enjoy an exquisite gourmet menu at Riviera Maya Cancun Resort"
+      },
+      {
+        "title": "Special Amenities",
+        "descripcion": "Find the surprise factor in every corner and dish; in every courtesy act of our staff. Get ready to freely splurge on everything our resort offers for our guests.",
+        "boton": "I want to see more",
+        "alt": "Special amenities:  Pampered with our amenities and activities"
+      },
+      {
+        "title": "Our facilities",
+        "descripcion": "The photo gallery is just a small glimpse of our magnificent resort in the heart of the Riviera Maya. Our photos describe the facilities, amenities and services that you can enjoy.",
+        "boton": "I want to see more",
+        "alt": "Our facilities: Riviera Maya Cancun Resort is the perfect setting for social media. Check out our photos."
+      }
+    ],
+    "ubicacion titulo": "Find us",
+    "ubicacion descripcion": "Our resort is located 20 minutes away from Cancun International Airport.",
+    "tripadvisor": "Excellent",
+    "tripadvisor rating": "Tripadvisor",
+    "tripadvisor_rating": "4.8/5 ",
+    "tripadvisor_reviews": "2,097 Reviews",
+    "tripadvisor_home": " Travellers' Choice 2025",
+    "tripadvisor_choice": "<p>#4 of 8 hotels in Puerto Morelos 2025 <br></br> Travelers' Choice Awards</p>",
+    "slider2": [
+      {
+        "title": "Simply the Best Vacation My Family Has Ever Had",
+        "description": "In mid September",
+        "usuario": "David E",
+        "fecha": "September 2020",
+        "avatar": "man-2"
+      }
+    ],
+    "instagram": "Fall in love with Grand Residences viewing our photo selection and see the resort from a visitor’s perspective with the vacation pictures our guests share."
   }
 }

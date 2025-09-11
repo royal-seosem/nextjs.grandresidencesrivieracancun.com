@@ -15,17 +15,17 @@ import ValidUntil from "@/components/commons/shared/ValidUntil";
 import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
 
 
-const SectionOffer = ({offers}: { offers: Offer[] }) => {
+const SectionOffer = ({offers, className}: { offers: Offer[], className?: string }) => {
     const tmenu = useTranslations('menu');
     const tNewOffers = useTranslations('new-offers');
     const tOffers = useTranslations('offers');
     const tGeneral = useTranslations('general');
     const offer = offers[0];
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const [showTerms, setShowTerms] = useState(false);
-    console.log(offer);
+
     return (
-        <>
+        <section className={className}>
             <CardImg
                 onClick={() => setOpen(true)}
                 width={1360}
@@ -101,7 +101,7 @@ const SectionOffer = ({offers}: { offers: Offer[] }) => {
                     </div>
                 }
             </Modal>
-        </>
+        </section>
     );
 };
 

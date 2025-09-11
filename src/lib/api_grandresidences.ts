@@ -5,7 +5,6 @@ const apiUrl = process.env.API_URL;
 export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise<T> {
 
     const url = new URL(enpoint, apiUrl);
-    console.log(url.toString());
 
     const httpsAgent = new https.Agent({
         rejectUnauthorized: false,

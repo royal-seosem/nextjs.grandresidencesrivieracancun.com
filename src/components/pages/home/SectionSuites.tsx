@@ -10,6 +10,7 @@ import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import LinkButton from "@/components/commons/ui/link";
+import RichText from "@/components/commons/shared/RitchText";
 
 const SectionSuites = () => {
     const t = useTranslations('general');
@@ -129,46 +130,53 @@ const SectionSuites = () => {
             <Modal open={allInclusive} setOpen={setAllInclusive} header={tmenu('all inclusive')}>
                 <Gallery variant="primary" position="bottom">
                     <CarouselItem>
-                        <CdnImage
-                            width={850} height={500}
-                            alt={amenities_alt[0]}
-                            src="/img/rateplans/all-inclusive.jpg"/>
-                        <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan ai')}</Title>
-                            <Paragraph>{thome('plan ai descripcion')}</Paragraph>
-                            <div>
-                                <LinkButton href="/all-inclusive">
-                                    {thome('plan ai btn')}
-                                </LinkButton>
+                        <div>
+                            <CdnImage
+                                width={850} height={350}
+                                alt={amenities_alt[0]}
+                                src="/img/rateplans/all-inclusive.jpg"/>
+                            <div className="py-7 px-5">
+                                <Title level="h3" size="md">{thome('plan ai')}</Title>
+                                <Paragraph>{thome('plan ai descripcion')}</Paragraph>
+                                <div>
+                                    <LinkButton href="/all-inclusive">
+                                        {thome('plan ai btn')}
+                                    </LinkButton>
+                                </div>
                             </div>
                         </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <CdnImage
-                            width="850" height="500"
-                            alt={amenities_alt[1]}
-                            src="/img/rateplans/transportations.jpg"/>
+                        <div>
+                            <CdnImage
+                                width={850} height={350}
+                                alt={amenities_alt[1]}
+                                src="/img/rateplans/transportations.jpg"/>
 
-                        <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan bb')}</Title>
-                            <Paragraph>{thome('plan bb descripcion')}</Paragraph>
+                            <div className="py-7 px-5">
+                                <Title level="h3" size="md">{thome('plan bb')}</Title>
+                                <Paragraph>{thome('plan bb descripcion')}</Paragraph>
+                            </div>
                         </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <CdnImage
-                            width="850" height="500"
-                            alt={amenities_alt[2]}
-                            src="/img/rateplans/onlyroom.jpg"/>
+                        <div>
+                            <CdnImage
+                                width={850} height={350}
+                                alt={amenities_alt[2]}
+                                src="/img/rateplans/onlyroom.jpg"/>
 
-                        <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan ep')}</Title>
-                            <ul>
-                                {
-                                    plan_ep_descripcion.map((item: string, index: number) => (
-                                        <li key={index}>{item}</li>
-                                    ))
-                                }
-                            </ul>
+                            <div className="py-7 px-5">
+                                <Title level="h3" size="md">{thome('plan ep')}</Title>
+                                <RichText id={'plan ep descripcion'} ns={'home'}/>
+                                {/*<ul>*/}
+                                {/*    {*/}
+                                {/*        plan_ep_descripcion.map((item: string, index: number) => (*/}
+                                {/*            <li key={index}>{item}</li>*/}
+                                {/*        ))*/}
+                                {/*    }*/}
+                                {/*</ul>*/}
+                            </div>
                         </div>
                     </CarouselItem>
 
