@@ -34,12 +34,11 @@ export type OfferRate = {
     discount: number;
 }
 
-export const getHomeOffer = async (language: string) => {
+export const getHomeOffer = async () => {
     return GrFetcher<Offer[]>('offers-by-section', {
         method: 'POST',
         body: JSON.stringify({
-            section: 1,
-            language: language
+            section: 1
         })
     })
 }

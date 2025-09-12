@@ -7,7 +7,6 @@ type BaseResolvers = Record<string, (chunks: ReactNode) => ReactNode>;
 const baseResolvers: BaseResolvers = {
     strong: chunks => <strong className="font-bold">{chunks}</strong>,
     br: () => <br/>,
-    'br/': () => <br/>,
     p: chunks => <Paragraph>{chunks}</Paragraph>,
     ol: chunks => <ol className="list-decimal list-inside">{chunks}</ol>,
     li: chunks => <li>{chunks}</li>

@@ -95,7 +95,7 @@ const SectionOffer = ({offers, className}: { offers: Offer[], className?: string
                             }
                         </Paragraph>
                         <button className="text-sm font-bold uppercase"
-                            onClick={() => setShowTerms(false)}>
+                                onClick={() => setShowTerms(false)}>
                             {tGeneral('read less')}
                         </button>
                     </div>

@@ -1,10 +1,11 @@
 import * as https from "node:https";
+import {getLocale} from "next-intl/server";
 
 const apiUrl = process.env.API_URL;
 
 export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise<T> {
-
     const url = new URL(enpoint, apiUrl);
+    const locale = await getLocale();
 
     const httpsAgent = new https.Agent({
         rejectUnauthorized: false,
@@ -17,7 +18,8 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
     const options: RequestInitWithAgent = {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.API_TOKEN}`
+            'Authorization': `Bearer ${process.env.API_TOKEN}`,
+            'Accept-Language': locale,
         },
         agent: httpsAgent,
         ...init
@@ -28,5 +30,6 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
     if (!resp.ok) {
         throw new Error(`HTTP error! status: ${resp.status}`);
     }
+
     return await resp.json() as T;
 }

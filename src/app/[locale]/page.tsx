@@ -12,6 +12,8 @@ import SectionAmenities from "@/components/pages/home/SectionAmenities";
 import RichText from "@/components/commons/shared/RitchText";
 import SectionMap from "@/components/pages/home/SectionMap";
 import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
+import {getReviews} from "@/use_case/reviews/get_reviews";
+import SectionInstagram from "@/components/pages/home/SectionInstagram";
 
 
 export default async function Home() {
@@ -19,7 +21,12 @@ export default async function Home() {
     const t = await getTranslations('general');
     const locale = await getLocale();
 
-    const offers = await getHomeOffer(locale);
+    const [offers, reviews] = await Promise.all([
+        getHomeOffer(),
+        getReviews()
+    ])
+    // const offers = await getHomeOffer();
+    // const reviews = await getReviews();
 
     return (
         <main>
@@ -67,24 +74,33 @@ export default async function Home() {
                 </div>
             </section>
             <div className="my-container p-5">
-                <Booking/>
-                <section>
-                    <Title>{t('title_resort')}</Title>
-                    <CdnImage
-                        className={"m-auto"}
-                        src="/img/logo/trip-advisor-traveler-choice-awards-2025.png"
-                        alt="we are winner of tripadvisor award for our hotels puerto morelos mexico"
-                        width="230"
-                        height="270"/>
+                <div className="translate-y-[-50%] z-10 relative">
+                    <Booking/>
+                </div>
+                <section className="lg:mb-14">
+                    <Title className="lg:text-center lg:text-6xl ">
+                        {t('title_resort')}
+                    </Title>
+                    <div className="lg:flex lg:justify-between lg:items-center lg:gap-10">
+                        <CdnImage
+                            className={"m-auto"}
+                            src="/img/logo/trip-advisor-traveler-choice-awards-2025.png"
+                            alt="we are winner of tripadvisor award for our hotels puerto morelos mexico"
+                            width="230"
+                            height="270"/>
 
-                    <RichText id={"descripcion_inicial"} ns={"home"}/>
+                        <div>
+                            <RichText id={"descripcion_inicial"} ns={"home"}/>
+                        </div>
+                    </div>
                 </section>
             </div>
             <SectionSuites/>
             <SectionOffer offers={offers} className={"mb-10"}/>
             <SectionAmenities/>
             <SectionMap/>
-            <SectionTripadvisor/>
+            <SectionTripadvisor reviews={reviews}/>
+            <SectionInstagram/>
         </main>
     );
 }

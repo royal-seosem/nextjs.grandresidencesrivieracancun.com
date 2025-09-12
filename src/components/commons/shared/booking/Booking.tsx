@@ -81,7 +81,7 @@ const Booking = ({variant = 'DESK'}: BookingProps) => {
             <form action="https://reservations.grandresidencesrivieracancun.com/95939"
                   target="_blank"
                   className={cn(
-                      variant === 'DESK' && 'hidden lg:flex shadow-lg justify-center items-stretch gap-5 p-3 relative'
+                      variant === 'DESK' && 'hidden lg:flex shadow-lg justify-center items-stretch gap-5 p-3 relative bg-white'
                   )}>
                 <input type="hidden" name="hotel_id" value="95939"/>
                 <input type="hidden" name="subchan" value="grandresidencesrivieracancun.com"/>
