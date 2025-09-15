@@ -4,7 +4,6 @@ import CardImg from "@/components/pages/home/Cardimg";
 import {useTranslations} from "next-intl";
 import Title from "@/components/commons/ui/title";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import Image from "next/image";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import Price from "@/components/commons/shared/price";
 import Book from "@/components/commons/shared/book";
@@ -13,6 +12,7 @@ import Paragraph from "@/components/commons/ui/paragraph";
 import {Button} from "@/components/commons/ui/button";
 import ValidUntil from "@/components/commons/shared/ValidUntil";
 import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
+import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 
 
 const SectionOffer = ({offers, className}: { offers: Offer[], className?: string }) => {
@@ -60,22 +60,8 @@ const SectionOffer = ({offers, className}: { offers: Offer[], className?: string
                         alt="Offer"
                         src={offer.gallery.small}
                         width={713} height={338}/>
-                    <div className="flex items-center justify-end gap-2 text-xs font-medium">
-                        <span>{tNewOffers('Aceptamos')}</span>
-                        <div className="flex items-center gap-1">
-                            <Image loading="lazy"
-                                   src="https://www.royalresorts.com/img/logo/amex.png"
-                                   width="25"
-                                   height="18" alt="American Express Logo"/>
-                            <Image loading="lazy" src="https://www.royalresorts.com/img/logo/mastercard.png"
-                                   width="24"
-                                   height="18" alt="Mastercard Logo"/>
-                            <Image loading="lazy"
-                                   width="25"
-                                   src="https://www.royalresorts.com/img/logo/visa.png"
-                                   height="18" alt="Visa Logo"/>
-                        </div>
-                    </div>
+
+                    <PaymentMethods/>
 
                     <div className="flex items-center justify-between gap-2">
                         {offer.rate !== null && <Price rate={offer.rate}/>}

@@ -3,9 +3,11 @@
 import {GrFetcher} from "@/lib/api_grandresidences";
 
 export type Offer = {
+    ratePlan: string;
     content: OfferContentKey;
     gallery: OfferGallery;
     rate: OfferRate | null;
+    rateLead: OfferRate | null;
     bookingWindow: OfferRangeDates;
     travelWindow: OfferRangeDates;
 };
@@ -30,7 +32,7 @@ export type OfferGallery = {
 
 export type OfferRate = {
     price: number;
-    ratePlan: string;
+    ratePlan?: string;
     discount: number;
 }
 

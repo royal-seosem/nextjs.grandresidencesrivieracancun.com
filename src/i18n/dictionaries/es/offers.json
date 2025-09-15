@@ -1,8 +1,73 @@
 {
   "offers": {
-    "label": "THIS PROMOTION INCLUDES",
-    "offer_until": "This offer is only valid until:",
-    "offer_travel": "Travel between: ",
-    "label2": "TERMS & CONDITIONS"
+    "title": "Ofertas Especiales | Grand Residences Riviera Cancun",
+    "metadescription": "Tenemos para ti las mejores ofertas de hospedaje, de relajación y comodidad en nuestro exclusivo resort de lujo Grand Residences Riviera Cancún. ¡Aprovéchalas!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "Las mejores promociones para tus vacaciones en la Riviera Maya",
+    "h1b": "Promociones especiales en Grand Residences Riviera Cancun",
+    "descripcion": "Beneficios exclusivos al hospedarte en Grand Residences Riviera Cancun",
+    "descripcion-inicial": "Aprovecha al máximo nuestras ofertas especiales y disfruta de unas merecidas vacaciones en familia en la Riviera Maya solo en Grand Residences Riviera Cancun. Y al reservar desde la página oficial podrás elegir entre una variedad de opciones que además de incluir descuentos especiales también te ofrecerán regalos exclusivos como Resort Credits, masajes y mucho más, elige entre especiales del mes, ventas flash y promociones de último minuto que convertirán tu estancia en una experiencia vacacional única.",
+    "beneficios": [
+      "Transportación de aeropuerto privada premium en viaje redondo",
+      "Regalos de bienvenida",
+      "Flexibilidad de reservación"
+    ],
+    "special-offers": "Promociones Especiales",
+    "best-rate-guaranteed": "Las mejores vacaciones Todo Incluido te esperan en Grand Residences Riviera Cancun",
+    "offer": "Oferta",
+    "up-to": "Hasta",
+    "all_inclusive": "Todo Incluido",
+    "room_only": "Solo Habitacion",
+    "bed_breakfast": "Habitación y Desayuno",
+    "offer_until": "Esta oferta solo es válida hasta: ",
+    "offer_travel": "Viaja entre: ",
+    "label": "INCLUSIONES DE LA PROMOCIÓN",
+    "label2": "TÉRMINOS Y CONDICIONES",
+    "label3": "Aceptamos",
+    "invalid": "LA VIGENCIA DE ESTA OFERTA HA TERMINADO!",
+    "ofertas": [
+      {
+        "slug": "travel-fest",
+        "nombre": "Travel Fest Riviera Maya",
+        "descripcion": "Aprovecha nuestra primera gran venta del año. obtén un descuento junto con un regalo especial y disfrute de las mejores vacaciones en la Riviera Maya solo en Grand Residences Riviera Cancun",
+        "descuento": "44% DTO.",
+        "rateplans": [
+          {
+            "slug": "all-inclusive",
+            "name": "Promoción Todo Incluido",
+            "inclusiones": [
+              "Descuento Especial en tu reservación",
+              "Regalo especial",
+              "Alimentos y bocadillos gourmet ilimitados Bebidas Premium de la casa",
+              "Servicio a la Habitación ilimitado las 24 horas",
+              "Viaje redondo en Transportación Premium",
+              "Niños de hasta 12 años de edad se hospedan y comen GRATIS (usando camas existentes)",
+              "Acceso a Internet de alta velocidad en la habitación y áreas comunes"
+            ]
+          },
+          {
+            "slug": "room-only",
+            "name": "Promoción de sólo Habitación",
+            "inclusiones": [
+              "Descuento Especial en tu reservación",
+              "Regalo especial",
+              "Viaje redondo en Transportación Premium",
+              "Niños de hasta 12 años de edad se hospedan GRATIS (usando camas existentes)",
+              "Acceso a Internet de alta velocidad en la habitación y áreas comunes"
+            ]
+          }
+        ],
+        "booking": "Usted puede viajar a partir de: Enero 04, 2020 - Enero 06, 2023",
+        "travel": "Esta oferta es válida hasta: Febrero 01, 2021",
+        "terminos": [
+          "Esta promoción incluye una tabla selecta de vino y quesos",
+          "Esta promoción incluye un servicio de transportación privada de ida y vuelta al aeropuerto."
+        ],
+        "vuelo": "0"
+      }
+    ],
+    "our-site": "Nuestras habitaciones",
+    "offer-sec-title": "Un oasis de comodidad y relajación",
+    "offer-sec-description": "Las modernas y cómodas suites de Grand Residences Riviera Cancun ofrecen una magnífica vista del Caribe. Disfruta del equipamiento de lujo que te brinda el lugar perfecto para descansar y soñar."
   }
 }

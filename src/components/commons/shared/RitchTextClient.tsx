@@ -1,6 +1,6 @@
 'use client';
 import {ReactNode} from 'react';
-import {useTranslations} from 'next-intl';
+import {RichTagsFunction, useTranslations} from 'next-intl';
 import Paragraph from '@/components/commons/ui/paragraph';
 
 type BaseResolvers = Record<string, (chunks: ReactNode) => ReactNode>;
@@ -11,16 +11,18 @@ const baseResolvers: BaseResolvers = {
     p: chunks => <Paragraph>{chunks}</Paragraph>,
     ol: chunks => <ol className="list-decimal list-inside">{chunks}</ol>,
     li: chunks => <li>{chunks}</li>,
+    span: chunks => <span>{chunks}</span>
 };
 
 interface Props {
     id: string;
     ns: string;
     components?: BaseResolvers;
+    values?: Record<string, string | number | RichTagsFunction | Date>
 }
 
-export default function RitchTextClient({id, ns, components}: Props) {
+export default function RichTextClient({id, ns, components, values}: Props) {
     const t = useTranslations(ns);
     const resolvers = {...baseResolvers, ...components};
-    return <>{t.rich(id, resolvers)}</>;
+    return <>{t.rich(id, {...resolvers, ...values})}</>;
 }

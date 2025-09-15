@@ -43,7 +43,7 @@ const SectionAmenities = () => {
             <Gallery variant="primary" position="bottom">
                 {
                     amenities.map((item, index) => (
-                        <CarouselItem key={index} className="w-[360px] basis-[360px] py-5">
+                        <CarouselItem key={index} className="w-[360px] basis-[360px] py-5 lg:grow px-1">
                             <CardAmenity
                                 className={"h-full"}
                                 {...item}/>

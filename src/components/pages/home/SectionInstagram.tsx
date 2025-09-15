@@ -14,7 +14,9 @@ const SectionInstagram = () => {
 
     return (
         <div ref={ref} className="my-container">
-            <span className="text-5xl text-center text-primary font">#GRMexico</span>
+            <span className="text-5xl text-center text-primary font lg:text-center block">
+                #GRMexico
+            </span>
             <Paragraph className="text-center text-xl font-bold mb-2">
                 {t('instagram')}
             </Paragraph>

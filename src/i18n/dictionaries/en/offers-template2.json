@@ -30,7 +30,7 @@
         "img": "/img/icons/wifi.svg"
       }
     ],
-    "my-royal-price": "My Royal price <span>$:PRICE</span> USD Plus taxes",
+    "my-royal-price": "My Royal price <span>{PRICE}</span> USD Plus taxes",
     "plus_taxes": "Plus taxes",
     "Log in and save even more": "Log in and save even more",
     "cintillo_text": "Sign up to <b>My Royal</b> and get up to <b>15%</b> additional discount",

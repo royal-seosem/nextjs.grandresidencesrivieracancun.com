@@ -1,8 +1,81 @@
 {
   "offers": {
-    "label": "INCLUSIONES DE LA PROMOCIÓN",
-    "offer_until": "Esta oferta solo es válida hasta: ",
-    "label2": "TÉRMINOS Y CONDICIONES",
-    "offer_travel": "Viaja entre: "
+    "title": "Resort Special Offers | Grand Residences Riviera Cancun",
+    "metadescription": "We have for you the best special offers for accommodation, relaxation and comfort in our exclusive luxury resort Grand Residences Riviera Cancun. Book now!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+
+    "h1a": "Get all the latest offers and promotions at",
+    "h1b": "Grand Residences Riviera Cancun",
+    "descripcion": "Get exclusive benefits when you book at Grand Residences",
+
+    "descripcion-inicial": "Don’t miss out on our amazing offers and specials, book your next luxury vacation now.",
+    "beneficios": [
+      "Private airport transportation",
+      "Personal concierge",
+      "Flexibility Reservation"
+    ],
+
+    "special-offers": "Special Promotions",
+    "best-rate-guaranteed": "",
+    "offer": "Offer",
+    "up-to": "Up to",
+
+    "all_inclusive": "All Inclusive Promotion",
+    "room_only": "Room Only Promotion",
+    "bed_breakfast": "Bed and Breakfast",
+    "offer_until": "This offer is only valid until:",
+    "offer_travel": "Travel between: ",
+
+    "label": "THIS PROMOTION INCLUDES",
+    "label2": "TERMS & CONDITIONS",
+    "label3": "We accept",
+
+    "invalid": "SORRY, THIS OFFER HAS EXPIRED!",
+
+    "ofertas": [
+      {
+        "slug": "travel-fest",
+        "nombre": "Travel Fest Riviera Maya",
+        "descripcion": "Take advantage of our first great sale of the year. get substantial savings along with a special gift, and enjoy the best vacation in the Riviera Maya only at Grand Residences Riviera Cancun.",
+        "descuento": "44% OFF",
+        "rateplans": [
+          {
+            "slug": "all-inclusive",
+            "name": "All Inclusive Promotion",
+            "inclusiones": [
+              "​​​​​​Special Discount on your Reservation",
+              "Special gift",
+              "All Gourmet meals and snacks Premium House Brand Beverages Limitless",
+              "24 hours Room Full Service",
+              "Premium Roundtrip Airport transportation",
+              "Children up to 12 years old stay and eat free (using existing beds)",
+              "High-Speed Internet Access in rooms & common areas"
+            ]
+          },
+          {
+            "slug": "room-only",
+            "name": "Room Only Promotion",
+            "inclusiones": [
+              "Special Discount on your Reservation",
+              "Special gift",
+              "Premium Roundtrip Airport transportation",
+              "Children up to 12 years old stay free (using existing beds)",
+              "High-Speed Internet Access in rooms & common areas"
+            ]
+          }
+        ],
+        "booking": "This offer is only valid until: February 01, 2021",
+        "travel": "When you can travel: January 04, 2020 - June 06, 2023",
+        "terminos": [
+          "This promotion includes a special Selected Gift Cheese and wine table",
+          "This promotion includes a complimentary Private Premium roundtrip airport transportation (airport - hotel - airport)"
+        ],
+        "vuelo": "0"
+      }
+    ],
+
+    "our-site": "Our Suites",
+    "offer-sec-title": "An oasis of luxury and relaxation",
+    "offer-sec-description": "Luxurious, spacious and comfortable, all the suites at Grand Residences Riviera Cancun have stunning views of the Caribbean. Unwind with signature bedding, a spa bathroom and state of the art appliances for perfect relaxation."
   }
 }

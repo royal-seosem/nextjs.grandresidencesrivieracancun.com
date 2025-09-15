@@ -11,7 +11,7 @@ import {cn} from "@/lib/utils";
 
 
 const SectionMap = (
-    {className}: { className?: string}
+    {className}: { className?: string }
 ) => {
     const t = useTranslations('home');
     const tg = useTranslations('general');
@@ -19,14 +19,20 @@ const SectionMap = (
     const [ref, inView] = useInViewport<HTMLDivElement>({rootMargin: '150px'});
 
     return (
-        <article ref={ref} className={cn('my-container',className)}>
-            <Title level={"h2"} size={"md"}> {t('ubicacion titulo')} </Title>
-            <Paragraph>{t('ubicacion descripcion')}</Paragraph>
-            <LinkButton variant={"outline"} href={"/map-resort"} className={"mb-2"}>
-                {tg('download-mapa')}
-                <ArrowRightIcon width={16} height={16}/>
-            </LinkButton>
-            {inView && <GoogleMap/>}
+        <article ref={ref} className={cn(
+            'my-container lg:flex lg:items-center lg:justify-between lg:gap-5 lg:mb-14',
+            className)}>
+            <div className="lg:order-2">
+                <Title level={"h2"} size={"md"}> {t('ubicacion titulo')} </Title>
+                <Paragraph>{t('ubicacion descripcion')}</Paragraph>
+                <LinkButton variant={"outline"} href={"/map-resort"} className={"mb-2"}>
+                    {tg('download-mapa')}
+                    <ArrowRightIcon width={16} height={16}/>
+                </LinkButton>
+            </div>
+            <div className="lg:order-1 grow min-h-[300px]">
+                {inView && <GoogleMap/>}
+            </div>
         </article>
     );
 };

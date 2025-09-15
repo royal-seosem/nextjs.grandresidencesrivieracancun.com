@@ -14,6 +14,7 @@ import SectionMap from "@/components/pages/home/SectionMap";
 import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
 import {getReviews} from "@/use_case/reviews/get_reviews";
 import SectionInstagram from "@/components/pages/home/SectionInstagram";
+import SectionOffers from "@/components/pages/home/SectionOffers";
 
 
 export default async function Home() {
@@ -96,7 +97,8 @@ export default async function Home() {
                 </section>
             </div>
             <SectionSuites/>
-            <SectionOffer offers={offers} className={"mb-10"}/>
+            <SectionOffer offers={offers} className={"mb-10 lg:hidden"}/>
+            <SectionOffers offers={offers}/>
             <SectionAmenities/>
             <SectionMap/>
             <SectionTripadvisor reviews={reviews}/>
