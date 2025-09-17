@@ -9,7 +9,9 @@ const baseResolvers: BaseResolvers = {
     br: () => <br/>,
     p: chunks => <Paragraph>{chunks}</Paragraph>,
     ol: chunks => <ol className="list-decimal list-inside">{chunks}</ol>,
-    li: chunks => <li>{chunks}</li>
+    li: chunks => <li>{chunks}</li>,
+    b: chunks => <b>{chunks}</b>,
+    em: chunks => <em>{chunks}</em>
 };
 
 interface Props {

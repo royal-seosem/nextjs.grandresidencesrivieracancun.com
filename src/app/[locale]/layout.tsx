@@ -62,6 +62,17 @@ const jost = localFont({
     variable: '--font-jost',
     fallback: ['arial', 'sans-serif']
 })
+const lato = localFont({
+    src: [
+        {
+            path: '../../../public/fonts/Lato-Regular.ttf',
+            style: 'normal',
+        }
+    ],
+    display: 'swap',
+    variable: '--font-lato',
+    fallback: ['sans-serif']
+})
 
 export function generateStaticParams() {
     return [{locale: 'en'}, {locale: 'es'}];
@@ -79,7 +90,7 @@ export default async function RootLayout({children, params}: {
     return (
         <html lang={locale}>
         <body
-            className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable} antialiased`}
+            className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable}  ${lato.variable} antialiased`}
         >
         <NextIntlClientProvider>
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>

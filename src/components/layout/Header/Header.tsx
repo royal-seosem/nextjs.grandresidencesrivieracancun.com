@@ -118,9 +118,9 @@ export default function Header() {
                                         </span>
                                         <ul className="px-5 space-y-2">
                                             <li>
-                                                <a href="suites">
+                                                <Link href="/suites">
                                                     {tmenu('suites')}
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
                                                 <Link href="/">
@@ -206,13 +206,13 @@ export default function Header() {
         </nav>
         <nav>
             <ul className={`
-                            w-full
+                            w-full z-10
                             absolute flex bg-white text-primary justify-center items-center 
                             transform transition-all duration-300 ease-in-out whitespace-nowrap
                             ${showResortMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'} 
                         `}>
                 <li className="hover:bg-gray-100">
-                    <Link href="/" className="block px-4 py-2">
+                    <Link href="/suites" className="block px-4 py-2">
                         {tmenu('suites')}
                     </Link>
                 </li>

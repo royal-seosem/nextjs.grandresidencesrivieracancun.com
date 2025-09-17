@@ -13,7 +13,7 @@ const titleVariants = cva(
             size: {
                 sm: 'text-2xl font-medium font-primary ', //24px
                 md: 'text-3xl font-medium font-primary', //30px
-                lg: 'text-4xl' // 36
+                lg: 'text-4xl lg:text-[64px]' // 36
             },
         },
         defaultVariants: {
