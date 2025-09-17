@@ -1,16 +1,20 @@
 import React from 'react';
 import CdnImage from "@/components/commons/ui/CdnImage";
-import {useTranslations} from "next-intl";
 import RichText from "@/components/commons/shared/RitchText";
 import Title from "@/components/commons/ui/title";
 import Tour360 from "@/components/pages/suites/tour360";
 import WebCam from "@/components/pages/suites/WebCam";
 import SitePlan from "@/components/pages/suites/SitePlan";
 import CardRoom from "@/components/pages/suites/CardRoom";
+import {getRooms} from "@/use_case/rooms/get_rooms";
+import {getTranslations} from "next-intl/server";
 
 //TODO: Page Suites
-const Page = () => {
-    const t = useTranslations('suites');
+const Page = async () => {
+    const t = await getTranslations('suites');
+
+    const suites = await getRooms();
+
     return (
         <main>
             <div className="mb-14">
@@ -53,7 +57,10 @@ const Page = () => {
                 </Title>
             </div>
 
-            <CardRoom/>
+            {suites.map((room, key: number) => (
+                <CardRoom key={key} room={room}/>
+            ))}
+
         </main>
     );
 };

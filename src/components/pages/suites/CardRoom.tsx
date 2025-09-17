@@ -7,43 +7,39 @@ import {CarouselItem} from "@/components/commons/ui/carousel";
 import AreaIcon from "@/components/commons/icons/area.svg";
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import ListIcon from "@/components/commons/icons/list.svg";
-import Booking from "@/components/commons/shared/booking/Booking";
 import BookingBook from "@/components/commons/shared/booking/BookingBook";
+import {Room} from "@/use_case/rooms/types";
 
-const CardRoom = () => {
+const CardRoom = (
+    {room}: { room: Room }
+) => {
     const t = useTranslations('suites');
     return (
         <article>
             <Gallery>
-                <CarouselItem>
-                    <CdnImage
-                        width={360}
-                        height={309}
-                        alt={"Image"}
-                        className={"object-cover w-full"}
-                        src={"/img/rooms/junior-suite-5.jpg"}/>
-                </CarouselItem>
-                <CarouselItem>
-                    <CdnImage
-                        width={360}
-                        height={309}
-                        alt={"Image"}
-                        className={"object-cover w-full"}
-                        src={"/img/rooms/junior-suite-5.jpg"}/>
-                </CarouselItem>
+                {
+                    room.gallery.map((image, index) => (
+                        <CarouselItem key={index}>
+                            <CdnImage
+                                width={360}
+                                height={309}
+                                alt={image.alt}
+                                className={"object-cover w-full"}
+                                src={image.url}/>
+                        </CarouselItem>
+                    ))
+                }
             </Gallery>
 
             <div className="p-5">
-                <h3 className="text-2xl font-bold text-primary mb-5">Junior Suite King, Up to 3 people</h3>
-                <h4 className="text-base font-bold mb-4">Resort View or Beachfront units available</h4>
+                <h3 className="text-2xl font-bold text-primary mb-5">{room.name}</h3>
+                <h4 className="text-base font-bold mb-4">{room.vista}</h4>
                 <ul className="list-disc ml-5 space-y-1 mb-4">
-                    <li>King-size bed: 1</li>
-                    <li>Murphy bed: 1</li>
-                    <li>Kitchenette</li>
-                    <li>Balcony</li>
-                    <li>Area: 603 sq.ft.</li>
-                    <li>Kitchenette with microwave, coffee maker, minibar</li>
-                    <li>Private bathroom with vanity mirror and hairdryer. Shower with tub</li>
+                    {
+                        room.amenidades.map((amenidad, index) => (
+                            <li key={index}>{amenidad}</li>
+                        ))
+                    }
                 </ul>
                 <div className="flex justify-between items-center mb-4">
                     <button className="flex items-center gap-2 text-sm">
@@ -60,16 +56,15 @@ const CardRoom = () => {
                     </button>
                 </div>
                 <div className="flex justify-between items-center">
+
                     <div className="text-xs font-medium text-center font-tertiary w-1/2">
                         <p>
-                            {t('starting')} <span className="line-through">300 USD</span>
+                            {t('starting')} <span className="line-through">${room.roomPrice} USD</span>
                         </p>
                         <p className="text-sm font-bold">
-                            $<span className="text-base ">200</span> USD
+                            $<span className="text-base ">{room.roomPriceOferta}</span> USD
                         </p>
-                        <p>
-                            Per night, based on double occupancy, tax included
-                        </p>
+                        <p>{room.leyenda}</p>
                     </div>
 
                     <BookingBook/>
