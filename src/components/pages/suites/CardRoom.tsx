@@ -15,49 +15,54 @@ const CardRoom = (
 ) => {
     const t = useTranslations('suites');
     return (
-        <article>
-            <Gallery>
-                {
-                    room.gallery.map((image, index) => (
-                        <CarouselItem key={index}>
-                            <CdnImage
-                                width={360}
-                                height={309}
-                                alt={image.alt}
-                                className={"object-cover w-full"}
-                                src={image.url}/>
-                        </CarouselItem>
-                    ))
-                }
-            </Gallery>
-
-            <div className="p-5">
-                <h3 className="text-2xl font-bold text-primary mb-5">{room.name}</h3>
-                <h4 className="text-base font-bold mb-4">{room.vista}</h4>
-                <ul className="list-disc ml-5 space-y-1 mb-4">
+        <article className="lg:flex lg:p-5 lg:gap-5 lg:shadow-[0_2px_18px_#be8b5e33] lg:items-stretch">
+            <div className="lg:w-[286px] h-auto lg:grow-0 lg:shrink-0">
+                <Gallery>
                     {
-                        room.amenidades.map((amenidad, index) => (
-                            <li key={index}>{amenidad}</li>
+                        room.gallery.map((image, index) => (
+                            <CarouselItem key={index}>
+                                <CdnImage
+                                    width={360}
+                                    height={309}
+                                    alt={image.alt}
+                                    className={"object-cover w-full h-full"}
+                                    src={image.url}/>
+                            </CarouselItem>
                         ))
                     }
-                </ul>
-                <div className="flex justify-between items-center mb-4">
-                    <button className="flex items-center gap-2 text-sm">
-                        <AreaIcon className="shrink-0" width={24} height={24}/>
-                        {t('floor plan')}
-                    </button>
-                    <button className="flex items-center gap-2 text-sm">
-                        <Ico360 className="shrink-0" width={24} height={24}/>
-                        {t('360 Tour')}
-                    </button>
-                    <button className="flex items-center gap-2 text-sm">
-                        <ListIcon className="shrink-0" width={24} height={24}/>
-                        {t('boton amenities')}
-                    </button>
-                </div>
-                <div className="flex justify-between items-center">
+                </Gallery>
+            </div>
 
-                    <div className="text-xs font-medium text-center font-tertiary w-1/2">
+            <div className="p-5 lg:flex lg:p-0 lg:w-full  lg:gap-5">
+                <div className="lg:grow-1">
+                    <h3 className="text-2xl font-bold text-primary mb-5 lg:mb-0">{room.name}</h3>
+                    <h4 className="text-base font-bold mb-4">{room.vista}</h4>
+                    <ul className="list-disc ml-5 space-y-1 mb-4 lg:columns-2">
+                        {
+                            room.amenidades.map((amenidad, index) => (
+                                <li className="text-base" key={index}>{amenidad}</li>
+                            ))
+                        }
+                    </ul>
+
+                    <div className="flex justify-between items-center mb-4">
+                        <button className="flex items-center gap-2 text-sm">
+                            <AreaIcon className="shrink-0" width={24} height={24}/>
+                            {t('floor plan')}
+                        </button>
+                        <button className="flex items-center gap-2 text-sm">
+                            <Ico360 className="shrink-0" width={24} height={24}/>
+                            {t('360 Tour')}
+                        </button>
+                        <button className="flex items-center gap-2 text-sm">
+                            <ListIcon className="shrink-0" width={24} height={24}/>
+                            {t('boton amenities')}
+                        </button>
+                    </div>
+                </div>
+                <div className="flex justify-between items-center
+                    lg:flex-col lg:w-[125px] lg:gap-2 lg:grow-0 lg:shrink-0 lg:items-center lg:justify-center">
+                    <div className="text-xs font-medium text-center font-tertiary w-1/2 lg:w-full">
                         <p>
                             {t('starting')} <span className="line-through">${room.roomPrice} USD</span>
                         </p>

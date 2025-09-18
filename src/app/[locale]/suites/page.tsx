@@ -8,6 +8,7 @@ import SitePlan from "@/components/pages/suites/SitePlan";
 import CardRoom from "@/components/pages/suites/CardRoom";
 import {getRooms} from "@/use_case/rooms/get_rooms";
 import {getTranslations} from "next-intl/server";
+import SectionRooms from "@/components/pages/suites/SectionRooms";
 
 //TODO: Page Suites
 const Page = async () => {
@@ -38,13 +39,13 @@ const Page = async () => {
                     {t('titulo h1a')}
                 </Title>
 
-                <Title level="h2" size={"lg"} className="text-center font-bold mb-5"> {t('titulo h1b')} </Title>
+                <Title level="h2" size={"lg"} className="text-center font-bold mb-5 lg:mb-10"> {t('titulo h1b')} </Title>
 
                 <div className="mb-14">
                     <RichText id={"descripcion general"} ns={"suites"}/>
                 </div>
 
-                <div className="flex justify-between items-stretch gap-2 py-5">
+                <div className="flex justify-between items-stretch gap-2 py-5 lg:justify-start">
                     <Tour360/>
                     <span aria-hidden className="block h-auto w-[2px] bg-primary"></span>
                     <WebCam/>
@@ -57,9 +58,7 @@ const Page = async () => {
                 </Title>
             </div>
 
-            {suites.map((room, key: number) => (
-                <CardRoom key={key} room={room}/>
-            ))}
+            <SectionRooms suites={suites}/>
 
         </main>
     );

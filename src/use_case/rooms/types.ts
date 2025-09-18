@@ -28,4 +28,6 @@ export interface Room {
 
     roomPrice: number;
     roomPriceOferta: number;
+
+    roomType: string;
 }
