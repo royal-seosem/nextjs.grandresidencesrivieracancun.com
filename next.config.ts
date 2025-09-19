@@ -65,8 +65,17 @@ const nextConfig: NextConfig = {
     },
     images: {
         remotePatterns: [
-            new URL('https://grandresidencesrivieracancun.com/**'),
-            new URL('https://www.royalresorts.com/**')
+            {
+                protocol: 'https',
+                hostname: 'grandresidencesrivieracancun.com',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.royalresorts.com',
+                pathname: '/**',
+            },
+
         ],
     },
     experimental: {

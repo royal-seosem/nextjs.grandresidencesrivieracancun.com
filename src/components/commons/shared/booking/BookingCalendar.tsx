@@ -10,7 +10,7 @@ import {DropdownMenuContent} from "@radix-ui/react-dropdown-menu";
 
 
 const BookingCalendar = () => {
-    const {adults, children, childrenAge, rooms, checkIn, setCheckIn, checkOut, setCheckOut} = useBooking();
+    const {adults, childrenGuests, childrenAge, rooms, checkIn, setCheckIn, checkOut, setCheckOut} = useBooking();
     const [date, setDate] = React.useState<DateRange | undefined>(undefined)
 
 
@@ -26,7 +26,7 @@ const BookingCalendar = () => {
 
     const request = {
         adults: adults || 0,
-        children: children || 0,
+        children: childrenGuests || 0,
         childAge: childrenAge,
         currency: 'USD',
         month: new Date(),

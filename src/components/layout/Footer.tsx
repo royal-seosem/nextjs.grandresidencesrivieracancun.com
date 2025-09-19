@@ -12,9 +12,17 @@ import {Link} from "@/i18n/navigation";
 import {Carousel, CarouselContent, CarouselItem} from "@/components/commons/ui/carousel";
 import Image from "next/image";
 import {useTranslations} from "next-intl";
+import BookingBook from "@/components/commons/shared/booking/BookingBook";
+import BookingDrawer from "@/components/commons/shared/booking/BookingDrawer";
+import {useWebsite} from "@/context/WebSiteProvider";
+import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+import BookingModal from "@/components/commons/shared/booking/BookingModal";
 
 const Footer = () => {
     const t = useTranslations('menu');
+    const {
+        setOpenBookingDrawer
+    } = useWebsite();
 
     return (
         <footer className="bg-primary">
@@ -65,7 +73,6 @@ const Footer = () => {
                     <Link href="/">{t('contact')}</Link>
                 </div>
             </nav>
-
             <article className="my-container pb-5">
                 <div className="py-3 relative
                     before:absolute before:w-full before:h-[1px] before:bg-secondary before:opacity-[.3] before:left-0 before:top-0
@@ -139,6 +146,21 @@ const Footer = () => {
                 </div>
             </article>
 
+            <div className="z-10 lg:hidden
+                fixed flex items-stretch bottom-0 w-full bg-white text-primary
+                text-center">
+                <Link
+                    className="w-1/2 text-sm font-bold p-4"
+                    href={"/offers"}>
+                    SEE SPECIALS
+                </Link>
+
+                <BookingBtnDrawer
+                    className="w-1/2 rounded-none"/>
+            </div>
+
+            <BookingDrawer/>
+            <BookingModal/>
         </footer>
     );
 };

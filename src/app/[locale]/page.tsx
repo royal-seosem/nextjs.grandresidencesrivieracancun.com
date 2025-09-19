@@ -75,7 +75,7 @@ export default async function Home() {
                 </div>
             </section>
             <div className="my-container p-5">
-                <div className="translate-y-[-50%] z-10 relative">
+                <div className="translate-y-[-50%] z-10 relative hidden lg:block">
                     <Booking/>
                 </div>
                 <section className="lg:mb-14">

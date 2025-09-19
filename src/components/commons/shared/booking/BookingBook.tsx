@@ -1,9 +1,17 @@
 import React from 'react';
 import {Button} from "@/components/commons/ui/button";
+import {cn} from "@/lib/utils";
 
-const BookingBook = () => {
+interface BookingBookProps {
+    className?: string;
+}
+
+const BookingBook = ({className}: BookingBookProps) => {
     return (
-        <Button className="h-auto rounded-sm bg-book-bg text-book-text  text-sm font-bold">
+        <Button className={cn(
+            'h-auto rounded-sm bg-book-bg text-book-text  text-sm font-bold',
+            className
+        )}>
             BOOK NOW
         </Button>
     );
