@@ -1,11 +1,11 @@
 import React from 'react';
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
 import BookingRooms from "@/components/commons/shared/booking/BookingRooms";
 import BookingAdults from "@/components/commons/shared/booking/BookingAdults";
 import BookingChildren from "@/components/commons/shared/booking/BookingChildren";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 const BookingGuest = () => {
     const {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 interface BookingChildrenAgeProps {
     className?: string;

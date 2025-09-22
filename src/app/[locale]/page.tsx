@@ -15,6 +15,7 @@ import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
 import {getReviews} from "@/use_case/reviews/get_reviews";
 import SectionInstagram from "@/components/pages/home/SectionInstagram";
 import SectionOffers from "@/components/pages/home/SectionOffers";
+import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
 
 
 export default async function Home() {
@@ -26,6 +27,7 @@ export default async function Home() {
         getHomeOffer(),
         getReviews()
     ])
+    console.log(offers)
     // const offers = await getHomeOffer();
     // const reviews = await getReviews();
 
@@ -76,7 +78,9 @@ export default async function Home() {
             </section>
             <div className="my-container p-5">
                 <div className="translate-y-[-50%] z-10 relative hidden lg:block">
-                    <Booking/>
+                    <BookingProvider>
+                        <Booking/>
+                    </BookingProvider>
                 </div>
                 <section className="lg:mb-14">
                     <Title className="lg:text-center lg:text-6xl ">

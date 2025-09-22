@@ -3,11 +3,11 @@ import React from 'react';
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {Dialog, DialogContent, DialogTitle} from "@/components/commons/ui/dialog";
 import {Calendar} from "@/components/commons/ui/calendar";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {format} from "date-fns";
 import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
-interface BookingCheckInProps{
+interface BookingCheckInProps {
     className?: string;
 }
 
@@ -42,12 +42,13 @@ const BookingCheckIn = (
             <span className="text-xs text-booking-label font-medium">Check-in</span>
             <div className="flex justify-between gap-1">
                 <button
-                    className="text-base text-booking-text font-medium"
+                    className="text-base text-booking-text font-medium w-full
+                        flex justify-between gap-1"
                     type={"button"}
                     onClick={() => setOpen(true)}>
                     {checkIn ? format(checkIn, 'MMM dd, yy') : ''}
+                    <ArrowDownIcon width={24} height={24}/>
                 </button>
-                <ArrowDownIcon width={24} height={24}/>
             </div>
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent

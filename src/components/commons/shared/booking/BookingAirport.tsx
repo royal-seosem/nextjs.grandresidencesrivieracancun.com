@@ -3,8 +3,8 @@ import {Command, CommandEmpty, CommandInput, CommandItem, CommandList} from "@/c
 import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
 import {useDebounce} from "use-debounce";
 import useAirport, {Airport} from "@/components/commons/shared/booking/hooks/useAirport";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 interface BookingAirportProps {
     className?: string;
@@ -40,6 +40,7 @@ const BookingAirport = ({className}: BookingAirportProps) => {
 
                 <DropdownMenuTrigger asChild>
                     <input type="text" value={airport?.label || ""} id={id}
+                           readOnly={true}
                            className="w-full border-0 bg-transparent text-base text-booking-text"/>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>

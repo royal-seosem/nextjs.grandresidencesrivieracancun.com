@@ -12,17 +12,11 @@ import {Link} from "@/i18n/navigation";
 import {Carousel, CarouselContent, CarouselItem} from "@/components/commons/ui/carousel";
 import Image from "next/image";
 import {useTranslations} from "next-intl";
-import BookingBook from "@/components/commons/shared/booking/BookingBook";
 import BookingDrawer from "@/components/commons/shared/booking/BookingDrawer";
-import {useWebsite} from "@/context/WebSiteProvider";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
-import BookingModal from "@/components/commons/shared/booking/BookingModal";
 
 const Footer = () => {
     const t = useTranslations('menu');
-    const {
-        setOpenBookingDrawer
-    } = useWebsite();
 
     return (
         <footer className="bg-primary">
@@ -160,7 +154,6 @@ const Footer = () => {
             </div>
 
             <BookingDrawer/>
-            <BookingModal/>
         </footer>
     );
 };

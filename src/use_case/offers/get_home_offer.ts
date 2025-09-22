@@ -4,6 +4,7 @@ import {GrFetcher} from "@/lib/api_grandresidences";
 
 export type Offer = {
     ratePlan: string;
+    ratePlanId: string;
     content: OfferContentKey;
     gallery: OfferGallery;
     rate: OfferRate | null;

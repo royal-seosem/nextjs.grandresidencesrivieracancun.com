@@ -9,6 +9,7 @@ import {getSession} from "@/lib/session";
 import {getCountry} from "@/lib/geo";
 import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
+import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -95,10 +96,12 @@ export default async function RootLayout({children, params}: {
         <NextIntlClientProvider>
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <ReactQueryProvider>
-                    <Header/>
-                    {children}
-                    <Footer/>
-                    <ReactQueryDevtools initialIsOpen={false}/>
+                    <BookingProvider>
+                        <Header/>
+                        {children}
+                        <Footer/>
+                        <ReactQueryDevtools initialIsOpen={false}/>
+                    </BookingProvider>
                 </ReactQueryProvider>
             </WebSiteProvider>
         </NextIntlClientProvider>

@@ -2,8 +2,8 @@ import React from 'react';
 import {Button} from "@/components/commons/ui/button";
 import OffIcon from "@/components/commons/icons/off.svg";
 import OnIcon from "@/components/commons/icons/on.svg";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 interface BookingTypeProps {
     className?: string;

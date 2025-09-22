@@ -1,11 +1,11 @@
 'use client'
 import React from 'react';
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {format} from "date-fns";
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {Dialog, DialogContent, DialogTitle} from "@/components/commons/ui/dialog";
 import {Calendar} from "@/components/commons/ui/calendar";
 import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 interface BookingCheckoutProps {
     className?: string;
@@ -43,12 +43,13 @@ const BookingCheckout = (
             <span className="text-xs text-booking-label font-medium">Check-out</span>
             <div className="flex justify-between gap-1">
                 <button
-                    className="text-base text-booking-text font-medium"
+                    className="text-base text-booking-text font-medium w-full
+                    flex justify-between gap-1"
                     type={"button"}
                     onClick={() => setOpen(true)}>
                     {checkOut ? format(checkOut, 'MMM dd, yy') : ''}
+                    <ArrowDownIcon width={24} height={24}/>
                 </button>
-                <ArrowDownIcon width={24} height={24}/>
             </div>
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogContent

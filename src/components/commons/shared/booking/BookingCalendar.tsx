@@ -2,11 +2,11 @@
 import React, {useEffect, useMemo} from 'react';
 import {DateRange} from "react-day-picker";
 import {Calendar} from "@/components/commons/ui/calendar";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
 import {format} from "date-fns";
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {DropdownMenu, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
 import {DropdownMenuContent} from "@radix-ui/react-dropdown-menu";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 
 const BookingCalendar = () => {

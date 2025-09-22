@@ -7,11 +7,11 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {useTranslations} from "next-intl";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
-import Book from "@/components/commons/shared/book";
 import {useWebsite} from "@/context/WebSiteProvider";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
+import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 
 const SectionOffers = (
     {offers}: { offers: Offer[] }
@@ -23,7 +23,7 @@ const SectionOffers = (
     const tGeneral = useTranslations('general');
 
     return (
-        <div className="my-container">
+        <div className="my-container hidden lg:block">
             <Gallery variant={"primary"} position={"bottom"}>
                 {offers.map((offer, index) => (
                     <CarouselItem key={index}>
@@ -44,7 +44,8 @@ const SectionOffers = (
                                 <div className="bg-white">
                                     <div className="py-5 px-4">
                                         <h3 className="text-4xl text-primary font-medium font-secondary mb-4">{offer.content.title}</h3>
-                                        <span className="text-accent2 text-2xl font-bold">{offer.content.discount}</span>
+                                        <span
+                                            className="text-accent2 text-2xl font-bold">{offer.content.discount}</span>
                                         <Paragraph>{offer.content.description}</Paragraph>
 
                                         <div className={"flex justify-between items-center gap-5 mb-2"}>
@@ -58,7 +59,8 @@ const SectionOffers = (
 
                                             {offer.rate !== null &&
                                                 <div className="flex flex-col">
-                                                    <span className="text-base text-primary font-bold">{t('per room')}</span>
+                                                    <span
+                                                        className="text-base text-primary font-bold">{t('per room')}</span>
                                                     <span className="text-lg font-secondary">{t('starting_at')}</span>
                                                     <span className="text-accent2 font-bold text-2xl">
                                         ${(offer.rate.price - offer.rate.discount).toFixed(0)} USD
@@ -77,22 +79,26 @@ const SectionOffers = (
                                         </div>
                                         <PaymentMethods/>
                                         <div>
-                                            <div>
+                                            <div className="flex items-center  gap-2">
                                                 <button>
                                                     {tGeneral('more info')}
                                                 </button>
-                                                <Book/>
+                                                <BookingBtnDrawer offer={{
+                                                    title: offer.content.title || "",
+                                                    type: "hotel",
+                                                    ratePlanId: offer.ratePlanId
+                                                }}/>
                                             </div>
                                         </div>
                                     </div>
 
                                     {!user && offer.rateLead &&
                                         <div className="flex items-center justify-center gap-4 bg-primary py-2">
-                            <span className="text-secondary">
-                                <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
-                                    PRICE: offer.rateLead?.price || ""
-                                }}/>
-                            </span>
+                                            <span className="text-secondary">
+                                                <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
+                                                    PRICE: offer.rateLead?.price || ""
+                                                }}/>
+                                            </span>
                                             <button className="flex items-center gap-2 text-white">
                                                 <MyRoyalIcon width={24} height={24}/>
                                                 {tOfferTemplate('Log in and save even more')}

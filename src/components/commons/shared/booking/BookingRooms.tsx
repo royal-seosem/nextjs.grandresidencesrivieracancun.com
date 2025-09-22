@@ -1,6 +1,6 @@
 import React from 'react';
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
-import {useBooking} from "@/components/commons/shared/booking/Booking";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 const BookingRooms = () => {
 
