@@ -7,8 +7,8 @@ import {CarouselItem} from "@/components/commons/ui/carousel";
 import AreaIcon from "@/components/commons/icons/area.svg";
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import ListIcon from "@/components/commons/icons/list.svg";
-import BookingBook from "@/components/commons/shared/booking/BookingBook";
 import {Room} from "@/use_case/rooms/types";
+import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 
 const CardRoom = (
     {room}: { room: Room }
@@ -72,7 +72,12 @@ const CardRoom = (
                         <p>{room.leyenda}</p>
                     </div>
 
-                    <BookingBook/>
+                    <BookingBtnDrawer offer={{
+                        title: room.name,
+                        subtitle: "Room:",
+                        roomTypeId: room.room_id,
+                        type: "hotel"
+                    }}/>
                 </div>
             </div>
         </article>

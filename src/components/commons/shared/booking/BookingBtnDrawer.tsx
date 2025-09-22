@@ -8,6 +8,7 @@ interface BookingBtnDrawerProps {
     className?: string;
     offer?: {
         title: string,
+        subtitle: string,
         type: "hotel+flight" | "hotel",
         ratePlanId?: string,
         roomTypeId?: string,
@@ -24,7 +25,8 @@ const BookingBtnDrawer = ({className, offer}: BookingBtnDrawerProps) => {
         setRatePlanId,
         setRoomTypeId,
         setShowType,
-        setTitle
+        setTitle,
+        setSubtitle,
     } = useBooking()
 
 
@@ -36,6 +38,7 @@ const BookingBtnDrawer = ({className, offer}: BookingBtnDrawerProps) => {
             setRoomTypeId(offer.roomTypeId || "");
             setShowType(false);
             setTitle(offer.title);
+            setSubtitle(offer.subtitle);
         } else {
             setType("hotel")
             setRatePlanId("");

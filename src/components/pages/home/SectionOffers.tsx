@@ -85,6 +85,7 @@ const SectionOffers = (
                                                 </button>
                                                 <BookingBtnDrawer offer={{
                                                     title: offer.content.title || "",
+                                                    subtitle: "Special:",
                                                     type: "hotel",
                                                     ratePlanId: offer.ratePlanId
                                                 }}/>

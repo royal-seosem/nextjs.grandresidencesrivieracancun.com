@@ -70,6 +70,7 @@ const BookingDesktop = () => {
     } = useWebsite();
     const {
         title,
+        subtitle,
         showType,
     } = useBooking()
 
@@ -83,7 +84,7 @@ const BookingDesktop = () => {
                     title == "" ? "hidden" : ""
                 )}>
                     <DialogTitle className="text-center">
-                        <span className="block text-base font-bold text-[#763300]">Special:</span>
+                        <span className="block text-base font-bold text-[#763300]">{subtitle}</span>
                         <span className="block text-base font-normal text-[#322f2f]">{title}</span>
                     </DialogTitle>
                 </DialogHeader>
