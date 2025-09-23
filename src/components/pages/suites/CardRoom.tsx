@@ -4,11 +4,11 @@ import {useTranslations} from "next-intl";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import AreaIcon from "@/components/commons/icons/area.svg";
-import Ico360 from "@/components/commons/icons/ico-360.svg";
-import ListIcon from "@/components/commons/icons/list.svg";
 import {Room} from "@/use_case/rooms/types";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+import CardFloorPlan from "@/components/pages/suites/CardFloorPlan";
+import Card360Tour from "@/components/pages/suites/Card360Tour";
+import CardAmenities from "@/components/pages/suites/CardAmenities";
 
 const CardRoom = (
     {room}: { room: Room }
@@ -46,18 +46,13 @@ const CardRoom = (
                     </ul>
 
                     <div className="flex justify-between items-center mb-4">
-                        <button className="flex items-center gap-2 text-sm">
-                            <AreaIcon className="shrink-0" width={24} height={24}/>
-                            {t('floor plan')}
-                        </button>
-                        <button className="flex items-center gap-2 text-sm">
-                            <Ico360 className="shrink-0" width={24} height={24}/>
-                            {t('360 Tour')}
-                        </button>
-                        <button className="flex items-center gap-2 text-sm">
-                            <ListIcon className="shrink-0" width={24} height={24}/>
-                            {t('boton amenities')}
-                        </button>
+                        <CardFloorPlan title={room.name} src={room.floorPlan}/>
+                        {
+                            room.tour360 &&
+                            <Card360Tour title={room.name} src={room.tour360}/>
+                        }
+
+                        <CardAmenities room={room}/>
                     </div>
                 </div>
                 <div className="flex justify-between items-center

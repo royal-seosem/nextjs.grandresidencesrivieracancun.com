@@ -9,7 +9,9 @@ export interface Room {
     vista: string;
 
     amenidades: string[];
+    caracteristicasTitle: string;
     caracteristicas: string[];
+    serviciosTitle:string;
     servicios: string[];
 
     precio: string;
@@ -30,4 +32,5 @@ export interface Room {
     roomPriceOferta: number;
 
     roomType: string;
+    floorPlan: string;
 }

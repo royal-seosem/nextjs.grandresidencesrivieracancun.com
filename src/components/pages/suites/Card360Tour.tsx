@@ -1,48 +1,48 @@
-'use client'
 import React from 'react';
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import {useTranslations} from "next-intl";
 import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
-import Paragraph from "@/components/commons/ui/paragraph";
 
-const Tour360 = () => {
+
+interface Card360TourProps {
+    title: string;
+    src: string;
+}
+
+const Card360Tour = ({title, src}: Card360TourProps) => {
     const [open, setOpen] = React.useState(false);
     const t = useTranslations('suites');
+
     return (
         <div>
-            <button
-                className="flex items-center gap-1 text-base font-bold px-2"
+            <button className="flex items-center gap-2 text-sm"
                 onClick={() => setOpen(true)}>
-                <Ico360 width={24} height={24}/>
-                <span className="hidden lg:block">{t('btn_360')}</span>
-                <span className="leading-4 text-center lg:hidden">360° Tour</span>
+                <Ico360 className="shrink-0" width={24} height={24}/>
+                {t('360 Tour')}
             </button>
+
             <Dialog open={open} onOpenChange={() => setOpen(false)}>
                 <DialogContent
                     showCloseButton={false}
                     className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
                     <DialogHeader>
                         <DialogTitle className="text-2xl font-bold">
-                            <span>{t('btn_360')}</span>
+                            {title}
                         </DialogTitle>
                     </DialogHeader>
                     <div>
-                        <Paragraph>{t('tour_360_description')}</Paragraph>
                         <iframe
-                            src={"https://tour-gr.royalreservations.com/#39128456p&105.53h&83.74t"}
+                            src={src}
                             width="100%"
                             height="450"
                             allowFullScreen
                             allow="autoplay; fullscreen; xr-spatial-tracking"
-                            className="rounded-md"
                         />
                     </div>
                 </DialogContent>
             </Dialog>
         </div>
-
-
     );
 };
 
-export default Tour360;
+export default Card360Tour;
