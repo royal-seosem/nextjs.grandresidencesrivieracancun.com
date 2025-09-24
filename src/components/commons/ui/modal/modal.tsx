@@ -23,6 +23,7 @@ const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
                         {header}
                     </DrawerTitle>
                 </DrawerHeader>
+
                 <ScrollArea className="h-[calc(100dvh-50px)]">
                     {children}
                 </ScrollArea>
@@ -43,15 +44,17 @@ const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
 const deskModal = ({open, setOpen, children, header}: ModalProps) => {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent showCloseButton={false}>
-                <DialogHeader className='read-only hidden'>
-                    <DialogTitle>
+            <DialogContent
+                showCloseButton={false}
+                className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
+                <DialogHeader>
+                    <DialogTitle className="hidden" aria-readonly>
                         {header}
                     </DialogTitle>
                 </DialogHeader>
-                <ScrollArea className="h-[90dvh]">
-                    {children}
-                </ScrollArea>
+                {/*<ScrollArea className="h-[90dvh]">*/}
+                {children}
+                {/*</ScrollArea>*/}
             </DialogContent>
         </Dialog>
     );

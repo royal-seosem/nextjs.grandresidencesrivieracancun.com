@@ -1,0 +1,115 @@
+{
+  "restaurants": {
+    "title": "Disfruta de un banquete de sabores en nuestros restaurantes | Grand Residences Riviera Cancun",
+    "metadescription": "Abre tus sentidos con los platillos gourmet de Grand Residences Riviera Cancún. Disfruta de comidas y bebidas ilimitadas en nuestros restaurantes todo incluido. ¡Visítanos!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "Más que solo restaurantes",
+    "h1b": "Una  experiencia gastronómica única para tu paladar",
+    "menu": "Un nuevo mundo de sabores le espera a tu paladar en Grand Residences Riviera Cancun. En nuestros restaurantes disfrutarás de una vista espectacular al mar de Puerto Morelos y de exquisitas especialidades gourmet hechas sólo con los mejores y más frescos ingredientes, donde cada platillo será hecho con maestría y dedicación para así complacer hasta los gustos más exigentes. En nuestro menú encontrarás una amplia variedad de platillos, desde cortes finos, especialidades del mar, ensaladas, pastas, hasta opciones vegetarianas y veganas así como una selecta lista de vinos y licores que convertirán uno de los placeres más sencillos e íntimos en una experiencia gastronómica inolvidable. Y por si esto fuera poco, lleva toda esta experiencia a la comodidad de tu suite con nuestro servicios a la habitación.",
+    "carrousel_alt": [
+      "Flor de Canela es uno de nuestros restaurantes de especialidad",
+      "El Faro Grill ofrece una carta de comida gourmet internacional",
+      "Disfruta de la vista que ofrece Heaven Beach Bar & Grill desde nuestro resort frente a la playa"
+    ],
+    "every_night_alt": [
+      "Noche Tema Barbecue una de las mejores opciones para comer en familia",
+      "Deleitate con una cena gourmet en nuestra Noche tema de comida Francesa",
+      "Nuestro resort de lujo te ofrece los sabores de Italia en la Noche tema de comida italiana",
+      "Noche tema de mariscos con la pesca del dia en Cancun Riviera Maya"
+    ],
+    "room_restautant_alt": [
+      "Los mejores platillos de nuestros restaurantes directo a tu habitación",
+      "Servicio a la habitación 24 horas desde nuestro resort frente a la playa"
+    ],
+    "conceptos": [
+      {
+        "titulo": "Flor de Canela",
+        "subtitulo": "Cocina Mexicana",
+        "descripcion": "Vive una experiencia gourmet totalmente mexicana en la Riviera Maya. En cada bocado, deleita a tu paladar con una exquisita mezcla de cocina de primera con el arte contemporáneo mexicano mientras disfrutas de las  impresionantes vistas al Mar Caribe.",
+        "foto": "/img/restaurants/flor-de-canela.jpg",
+        "alt": "Flor de Canela located in Cancun Riviera Maya offers a mexican menu"
+      },
+      {
+        "titulo": "El Faro Grill",
+        "subtitulo": "Cocina Internacional",
+        "descripcion": "El Faro Grill, es un elegante restaurante gourmet que ofrece platillos de cocina internacional tales como especialidades mexicanas, italianas, deliciosos cortes finos de carne así como mariscos frescos y otras opciones a la parrilla. En cada platillo verás a nuestros chefs mezclar con pasión cada ingrediente selecto que hará que vivas la mejor experiencia culinaria.",
+        "foto": "/img/restaurants/el-faro-grill.jpg",
+        "alt": "El Faro Grill es una de las mejores opciones para comer en Grand Residences"
+      },
+      {
+        "titulo": "Heaven Beach Bar and Grill",
+        "subtitulo": "Snacks y Cócteles",
+        "descripcion": "Como una puerta al paraíso, el bar es un espacio de serenidad frente al mar. Disfruta una bebida fría o tu snack preferido en un cómodo sofá o en un camastro en la terraza dentro de una atmósfera tropical bajo el sol caribeño.",
+        "foto": "/img/restaurants/heaven-grill.jpg",
+        "alt": "Heaven Beach Bar & Grill es una visita obligada en nuestro resort de lujo"
+      },
+      {
+        "titulo": "Servicio a la habitación",
+        "subtitulo": "De nuestros restaurantes a tu suite",
+        "descripcion": "El servicio a la habitación es un espléndido lujo que no te puedes perder. Ya sea que ordenes de nuestro exclusivo menú o de las cocinas de nuestros restaurantes, a cualquier hora del día o la noche tendrás opciones y nuestro personal se encargará de que cada platillo y detalle sea colocado con total perfección en la comodidad de tu suite.",
+        "foto": "/img/restaurants/room-service.jpg",
+        "alt": "El servicio a la habitación es un espléndido lujo que no te puedes perder"
+      }
+    ],
+    "bebidas izq": "Bebidas extraordinarias",
+    "bebidas der": "con calidad de lujo",
+    "boton bebidas": "Ver lista de bebidas",
+    "boton vinos": "Ver ista de vinos",
+    "premium title": "Bebidas seleccionadas de alta calidad",
+    "premium description": "Prueba nuestra selección de vinos y licores premium así como nuestras bebidas sin alcohol incluidas en nuestro plan All In Grand Experience.",
+    "titulo noches": "Cada noche, un sabor distinto",
+    "descripcion noches": "Cada noche será un viaje de sabores a una región distinta donde no encontrarás dos experiencias iguales. Disfruta nuestras noches temáticas y deléitate con nuestra gran variedad de sabores que te llevarán alrededor del mundo, haz de cada platillo una nueva oportunidad de explorar y disfrutar nuevas culturas sin moverte de tu mesa.",
+    "room service": {
+      "title": "Nuestros restaurantes en tu suite",
+      "descripcion": "El servicio a la habitación es un espléndido lujo que no te puedes perder. Ya sea que ordenes de nuestro exclusivo menú en la suite o de las cocinas de nuestros restaurantes, a cualquier hora del día o la noche tendrás múltiples opciones para deleitar tu paladar. Disfruta de nuestros platillos y especialidades ya sea al aire libre o dentro de la comodidad de tu suite y deja que nuestro staff se encargue de que cada platillo y detalle sea colocado con total perfección. Y si lo que quieres es disfrutar de una experiencia única e íntima con tu familia o amigos, ponemos a tu disposición nuestro servicio de Chef en la habitación.",
+      "alts": [
+        "Disfruta tus alimentos en tu terraza o balcón",
+        "Disfruta de nuestros mejores platillos en la comodidad de tu habitación"
+      ]
+    },
+    "experiencias title": "Más opciones para ampliar tu experiencia culinaria",
+    "experiencias": [
+      {
+        "title": "Pool bar",
+        "descripcion": "La alberca es el lugar favorito para que nuestros huéspedes se congreguen, además de la increíble vista panorámica de nuestras playas de arena blanca y el mar Caribe, podrás disfrutar de un bar en la piscina que sirve cócteles frescos y deliciosos.",
+        "foto": "pool-bar",
+        "alt": "Pool Bar: El lugar favorito para una bebida refrescante en Puerto Morelos"
+      },
+      {
+        "title": "Servicio de Chef en la habitación",
+        "descripcion": "Disfruta momentos íntimos en tu habitación junto a tu familia mientras todos observan a nuestro chef preparar deliciosos platillos exclusivamente para ti y tus invitados. ¿Qué se les antoja? Deja que nuestro chef se inspire para brindarles a ti y los tuyos una exquisita experiencia culinaria.",
+        "foto": "chef-in-suite",
+        "alt": "Servicio de chef en la habitación: Consientete con una de las mejores opciones para comer con el servicio de chef en la habitación"
+      },
+      {
+        "title": "Tardes de Té",
+        "descripcion": "Disfruta de una relajante tarde de té y deléitate con una agradable combinación de sabores y aromas que te dejarán encantado; además, acompañala con pastelitos, macarrones y bocadillos que te brindarán una experiencia única al más puro estilo inglés.",
+        "foto": "te",
+        "alt": "Tardes de té: Experimenta una clásica tarde de Té en un resort de lujo"
+      },
+      {
+        "title": "Lobby Bar & Café",
+        "descripcion": "Disfruta junto a tu familia o amigos del ambiente relajado y chic del Lobby Bar & Café, mientras nosotros tenemos el placer de servirte café gourmet así como una amplia variedad de cócteles, cervezas, vinos y licores.",
+        "foto": "lobby-bar",
+        "alt": "Lobby Bar y Café: Satisface tu paladar con un café gourmet"
+      },
+      {
+        "title": "Tienda Gourmet",
+        "descripcion": "Encuentra todo lo que necesitas dentro de la tienda del hotel. Desde abarrotes, lácteos, frutas y vegetales, bebidas, cerveza, vino, licores, helados, bocadillos, pan dulce, cigarros, galletas, salsas, chocolates, productos orgánicos y naturales hasta souvenirs y prendas, lo mejor en productos gourmet.",
+        "foto": "tienda",
+        "alt": "Tienda Gourmet: Todo lo que necesites para tu estancia en nuestro resort frente a la playa lo encontrarás en la tienda"
+      }
+    ],
+    "boton cotiza": "¡Reserva ya!",
+    "bbq": "Noche tema barbecue",
+    "francesa": "Noche tema comida francesa",
+    "italiana": "Noche tema comida italiana",
+    "mariscos": "Noche tema de mariscos",
+    "btn_360": "Recorridos 360˚ de nuestros restaurantes",
+    "tour_360_description": "Da un paseo virtual por nuestros restaurantes, admira las vistas y el ambiente. Pronto estarás aquí disfrutando de la selección de espectaculares platillos gourmet que sirven.",
+    "list-res": {
+      "flor_canela": "Flor de Canela",
+      "faro_grill": "El Faro Grill"
+    }
+  }
+}

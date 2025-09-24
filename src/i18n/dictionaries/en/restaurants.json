@@ -1,0 +1,116 @@
+{
+  "restaurants": {
+    "title": "We delight all palates with gourmet dining options | Grand Residences Riviera Cancun",
+    "metadescription": "Open your senses with the variety of gourmet dishes at Grand Residences Riviera Cancun. Enjoy delicious food and unlimited drinks at all of our restaurants!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "More than just a restaurant",
+    "h1b": "A gourmet experience in food, drinks and service",
+    "menu": "Magical dining moments are a big part of your luxury vacation experience at Grand Residences Riviera Cancun. Savor gourmet cuisine at three different restaurants and from 24-hour Room Service, enjoy theme nights during the week and order wines from an award-winning wine list for the perfect pairing. Sublime flavors and dishes that are a work of art. Experience culinary excellence in Puerto Morelos: sublime flavors, artful dishes, and romantic settings await. Our menus have something for everyone, including delicious vegetarian and vegan dishes. If you have special dietary needs, ask for options upon arrival.",
+    "carrousel_alt": [
+      "Flor de Canela is one of our restaurants in Grand Residences",
+      "El Faro Grill offers an international menu the best option for dining",
+      "Heaven Beach Bar & Grill is the perfect place to enjoy a cocktail in our luxury resort"
+    ],
+    "every_night_alt": [
+      "Barbecue Theme Night is a great option for a family dining experience",
+      "Our luxury resort offers a delicious and unforgettable French Theme Night",
+      "Savor the flavors of italian gourmet cuisine in our Italian Theme Night",
+      "Seafood Theme Night offers the best savory buffet in Cancun Riviera Maya"
+    ],
+    "room_restautant_alt": [
+      "Our restaurants menus in the comfort of your room",
+      "24-hour room service in our beachfront resort"
+    ],
+    "conceptos": [
+      {
+        "titulo": "Flor de Canela",
+        "subtitulo": "Mexican food",
+        "descripcion": "Live a totally Mexican gourmet experience in the Riviera Maya. Featuring dishes from all over the country, the menu is a celebration of Mexico’s World Heritage cuisine. Enjoy an exquisite blend of traditional recipes and chef’s creations, contemporary Mexican art and breathtaking views of the Caribbean.",
+        "foto": "/img/restaurants/flor-de-canela.jpg",
+        "alt": "Flor de Canela offers a mexican menu in Cancun Riviera Maya"
+      },
+      {
+        "titulo": "El Faro Grill",
+        "subtitulo": "World cuisine",
+        "descripcion": "Our elegant gourmet restaurant offers a selection of world cuisine: Mexican, International and Italian favorites, fresh seafood, tender prime steaks and other grilled dishes. Gifted chefs passionately select only the finest ingredients and cook them to perfection, so that every meal is a delicious experience. ",
+        "foto": "/img/restaurants/el-faro-grill.jpg",
+        "alt": "Delight in El Faro Grill with a gourmet menu"
+      },
+      {
+        "titulo": "Heaven Beach Bar and Grill",
+        "subtitulo": "Snacks",
+        "descripcion": "Where paradise begins, the beach bar is a haven of serenity with incredible views and tropical ambiance. Enjoy a cold drink or your favorite snack on a comfortable sofa or on a lounge chair on the terrace under the Caribbean sun.",
+        "foto": "/img/restaurants/heaven-grill.jpg",
+        "alt": "Heaven Beach Bar & Grill is a must to visit in our beachfront resort"
+      },
+      {
+        "titulo": "Room Service",
+        "subtitulo": "World Cuisine",
+        "descripcion": "Room service is a splendid luxury worth enjoying. Your personal waiter sets the table, serving each delicious dish and making sure that everything is perfect  as you dine in the comfort of your suite. Enjoy the outdoors on the oceanfront terrace or the cooler air in your suite.",
+        "foto": "/img/restaurants/room-service.jpg",
+        "alt": "Room service is a splendid luxury worth enjoying"
+      }
+    ],
+    "bebidas izq": "Extraordinary drinks",
+    "bebidas der": "with luxury quality",
+    "boton bebidas": "List of drinks",
+    "boton vinos": "List of wines",
+    "premium title": "See list of premium drinks",
+    "premium description": "Try our selection of premium wines and spirits as well as the non-alcoholic drinks included in our All In Grand Experience plan.",
+    "titulo noches": "Every night, different flavors",
+    "descripcion noches": "Don’t miss the daily theme nights for a variety of tempting flavors from all over the world.",
+    "room service": {
+      "title": "Your room like a restaurant",
+      "descripcion": "Enjoy our 24-hour room service. Your personal waiter  will take care of every detail with an eye for perfection. Sit down to a gourmet meal in the comfort of your air-conditioned suite or dine by candlelight outdoors on the ocean-view terrace or balcony.",
+      "alts": [
+        "Enjoy our best dishes in the comfort of your room",
+        "Enjoy your food on your terrace or balcony",
+        "Enjoy luxury service with our room service"
+      ]
+    },
+    "experiencias title": "Endless dining experiences",
+    "experiencias": [
+      {
+        "title": "Pool Bar",
+        "descripcion": "The pool is the favorite gathering place for guests as they enjoy the selection of signature cocktails and the incredible panoramic views of our white sand beach and the Caribbean. Cool off at the swim-up bar as you sip your favorite drink.",
+        "foto": "pool-bar",
+        "alt": "Pool Bar: The pool is the favorite place for a cool drink in Cancun Riviera Maya"
+      },
+      {
+        "title": "Chef in Suite",
+        "descripcion": "Enjoy intimate moments in your room with your family while you watch our Chef preparing delicious dishes just for you. What would you like to eat? The chef’s inspiration and the finest ingredients are all you need for an exceptional dining experience.",
+        "foto": "chef-in-suite",
+        "alt": "Chef in Suite: Enjoy a private experience dining with a Chef in your Suite"
+      },
+      {
+        "title": "Afternoon Tea",
+        "descripcion": "Enjoy classic English afternoon tea on the terrace with a delectable spread of freshly made sandwiches, scones and cakes and the fragrance of the finest teas.",
+        "foto": "te-new",
+        "alt": "Afternoon Tea: Experience a classic english afternoon tea in a luxury resort"
+      },
+      {
+        "title": "Lobby Bar & Café",
+        "descripcion": "Enjoy the relaxed and chic atmosphere of the Lobby Bar and Café with your friends and family. It’s our pleasure to serve you gourmet coffee, cocktails, beers, spirits, wines, premium tequila and mezcal and even more.",
+        "foto": "lobby-bar",
+        "alt": "Lobby Bar & Café: Satisfy your palate with a gourmet espresso and innovative cocktails"
+      },
+      {
+        "title": "The Gourmet Food Market",
+        "descripcion": "Find everything you need within the hotel shop, top quality products including grocery, dairy, fruits and vegetables, drinks, beer, wine, liquor, ice cream, sandwiches, pastries, cigars, biscuits, sauces, chocolates, organic and natural products and souvenirs and clothing.",
+        "foto": "tienda",
+        "alt": "The Gourmet Food Market: Anything you need in a beachfront resort you can find it in our Hotel Shop"
+      }
+    ],
+    "boton cotiza": "Quote your stay!",
+    "bbq": "Barbecue theme night",
+    "francesa": "French theme night",
+    "italiana": "Italian theme night",
+    "mariscos": "Sea food theme night",
+    "btn_360": "360˚ Tours of our restaurants",
+    "tour_360_description": "Take a virtual tour of our restaurants, see the view and the ambiance. You’ll soon be here enjoying the selection of show stopper gourmet dishes they serve.",
+    "list-res": {
+      "flor_canela": "Flor de Canela",
+      "faro_grill": "El Faro Grill"
+    }
+  }
+}
