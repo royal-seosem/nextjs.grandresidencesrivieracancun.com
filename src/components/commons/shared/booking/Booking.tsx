@@ -12,7 +12,12 @@ import {cn} from "@/lib/utils";
 import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 
-const Booking = () => {
+interface BookingProps {
+    className?: string;
+}
+const Booking = (
+    {className}: BookingProps,
+) => {
     const locale = useLocale();
     const {
         adults,
@@ -26,7 +31,7 @@ const Booking = () => {
     return (
         <form action="https://reservations.grandresidencesrivieracancun.com/95939"
               target="_blank"
-              className={cn('flex shadow-lg justify-center items-stretch gap-5 p-3 relative bg-white')}>
+              className={cn('flex shadow-lg justify-center items-stretch gap-5 p-3 relative bg-white', className)}>
             <input type="hidden" name="hotel_id" value="95939"/>
             <input type="hidden" name="subchan" value="grandresidencesrivieracancun.com"/>
             <input type="hidden" name="theme_code" value="102578"/>

@@ -50,5 +50,11 @@ export const routing = defineRouting({
             es: "/gms/iniciar-session"
         },
 
+        //Downloads
+        "/menu-spa":{
+            en:"/menu-spa",
+            es:"/menu-spa",
+        }
+
     }
 });

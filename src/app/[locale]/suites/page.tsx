@@ -9,6 +9,9 @@ import CardRoom from "@/components/pages/suites/CardRoom";
 import {getRooms} from "@/use_case/rooms/get_rooms";
 import {getTranslations} from "next-intl/server";
 import SectionRooms from "@/components/pages/suites/SectionRooms";
+import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
+import Booking from "@/components/commons/shared/booking/Booking";
+import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 
 //TODO: Page Suites
 const Page = async () => {
@@ -18,6 +21,7 @@ const Page = async () => {
 
     return (
         <main>
+            <BookingHeader/>
             <div className="mb-14">
                 <CdnImage
                     className="md:hidden w-full object-cover"

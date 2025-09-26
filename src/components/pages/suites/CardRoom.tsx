@@ -7,7 +7,7 @@ import {CarouselItem} from "@/components/commons/ui/carousel";
 import {Room} from "@/use_case/rooms/types";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import CardFloorPlan from "@/components/pages/suites/CardFloorPlan";
-import Card360Tour from "@/components/pages/suites/Card360Tour";
+import Card360Tour from "@/components/commons/shared/Card360Tour";
 import CardAmenities from "@/components/pages/suites/CardAmenities";
 
 const CardRoom = (

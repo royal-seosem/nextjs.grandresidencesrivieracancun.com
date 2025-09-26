@@ -1,0 +1,116 @@
+{
+  "amenities": {
+    "title": "Activities and Amenities | Grand Residence Riviera Cancun",
+    "metadescription": "Grand Residences Riviera Cancun, offers you Premium Transportation, 24-hour room service, gym, spa, kids club, welcome gifts and much more. Reserve today!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "Fun for all with",
+    "h1b": "Grand Residences experiences",
+    "descripcion": "From a day of total relaxation at the spa to bike rides, at Grand Residences Riviera Cancun there are fun activities for everyone in the family and luxury amenities for special touches of pampering.",
+    "kids": {
+      "titulo": "Fun for the little ones at the Kids Club",
+      "descripcion": "<p>Children are always unstoppable bundles of energy, and our Kids Club team has a non-stop program of activities to keep them busy. They’ll have fun with treasure hunts, pirate’s face painting, craft classes, hockey, movies and video games, a Lego competition and more.</p>\n        <p>If you are traveling with toddlers, cribs, high chairs, bed rails and more are available. Request them upon arrival. </p>",
+      "alts": [
+        "The little ones have fun while you relax",
+        "You can keep an eye on them with our closed circuit cameras",
+        "The little ones have fun while you relax",
+        "The little ones have fun while you relax",
+        "The little ones have fun while you relax",
+        "Request a high chair",
+        "Request a bottle warmer",
+        "Request bed rails",
+        "You can request a baby bath at no extra cost",
+        "We offer everything you need for the comfort of your little ones"
+      ]
+    },
+    "actividades titulo": "See our line up of activities",
+    "actividades": [
+      {
+        "titulo": "Cooking class",
+        "descripcion": "Enjoy a cooking class with the chef and learn how to prepare Mexican dishes, perfect pasta, divine desserts and much more.",
+        "slug": "650x400-cookingclass"
+      },
+      {
+        "titulo": "Mixology class",
+        "descripcion": "Not sure how to prepare your favorite cocktails? Take our mixology class.",
+        "slug": "650x400-mixologia"
+      },
+      {
+        "titulo": "Tea time",
+        "descripcion": "Indulge with Afternoon Tea on the terrace. The finest teas from China and India, tasty sandwiches, warm scones and heavenly cakes, it’s a delicious Grand Residences Riviera Cancun tradition.",
+        "slug": "650x400-te"
+      },
+      {
+        "titulo": "Yoga class",
+        "descripcion": "Start the day with a relaxing and rejuvenating yoga class on the deck. Take a deep breath, find your balance and be at one with nature. Kick off your shoes and enjoy the calming presence of paradise washing over you.",
+        "slug": "650x400-yoga"
+      },
+      {
+        "titulo": "Sports and outdoor fun",
+        "descripcion": "From beach volleyball and water polo to pottery painting and movie nights, there’s always something fun to do and enjoy in paradise. And whenever you want to go exploring, the Concierges will help you arrange snorkeling, scuba, fishing charters, catamaran cruises and day trips for incredible vacation adventures.",
+        "slug": "650x400-tenis"
+      },
+      {
+        "titulo": "Gym",
+        "descripcion": "Keep up with your daily exercise routine at the gym, it offers the latest fitness and weights equipment for you to use during your stay.",
+        "slug": "650x400-gym"
+      }
+    ],
+    "spa": {
+      "titulo": "Moments of bliss in a haven of healing and harmony ",
+      "descripcion": "You deserve to be pampered on vacation and that includes blissful moments at the Spa. Our sanctuary of peace and calm will soothe body and soul with massages, facials and wraps to restore harmony and wellbeing. Discover a collection of the latest luxury treatments from leading spa skincare companies. Deliciously fragrant herbal and floral formulas nourish and soften your skin and for a special touch of luxury try the spa bath experience in your suite.",
+      "slug": "650x400-spa",
+      "explore": "Download a brochure"
+    },
+    "amenidades": {
+      "titulo": "Special amenities at Grand Residences Riviera Cancun",
+      "descripcion": "<p>We strive for excellence, always going above and beyond to make your stay truly relaxing and unforgettable. Our pampering includes luxury amenities, touches of refinement and exclusive perks to create magical moments and make you feel special. Experience the wow factor everywhere you look, in every meal, in the courtesy of our staff as they look after you. We just want you to be happy.</p>",
+      "subtitulo": "This is what we have for you",
+      "lista": [
+        {
+          "title": "On arrival",
+          "list": [
+            "Roundtrip airport transportation",
+            "Welcome drinks (Margaritas for the adults and juices for the children)",
+            "Bottled water"
+          ]
+        },
+        {
+          "title": "At the resort during your stay",
+          "list": [
+            "Complimentary all day coffee at lobby bar",
+            "Personal concierge",
+            "Business Center",
+            "High speed Wi-Fi service",
+            "Complimentary activities"
+          ]
+        },
+        {
+          "title": "At the pool during your stay",
+          "list": [
+            "Beach and pool concierge",
+            "Ice lollipops",
+            "Fresh fruit skewers",
+            "Water"
+          ]
+        },
+        {
+          "title": "At the room",
+          "list": [
+            "Bottle of Liquor",
+            "Fresh and dried fruit in room on the arrival",
+            "Nespresso coffee machine",
+            "Molton Brown® bath amenities",
+            "Turndown service",
+            "Artisanal handbag",
+            "Gifts for children",
+            "Personalized cookies for kids",
+            "One Mexican alebrije hand-carved figurine",
+            "Cribs, high chairs and other baby gear available on request"
+          ]
+        }
+      ]
+    },
+    "boton cotiza": "Book your stay now!",
+    "btn_360": "360˚ Tours of our"
+  }
+}

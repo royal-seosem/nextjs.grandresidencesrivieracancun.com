@@ -1,0 +1,116 @@
+{
+  "amenities": {
+    "title": "Amenidades y Actividades | Grand Residences Riviera Cancun",
+    "metadescription": "Grand Residences Riviera Cancún, te ofrece Transportación Premium, Servicio de habitación 24 hrs, gimnasio, spa, club para niños y mucho más. ¡Reserva hoy!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "Entretenimiento para todos",
+    "h1b": "Experiencias en Grand Residences",
+    "descripcion": "Desde un día de completa relajación en el Spa hasta un emocionante recorrido en bicicleta, en Grand Residences Riviera Cancun siempre habrá actividades para todos los integrantes de la familia así como amenidades de lujo para consentirte durante tu estancia.",
+    "kids": {
+      "titulo": "Entretenimiento para los más pequeños en nuestro Kids Club",
+      "descripcion": "<p>Los niños son imparables y siempre estarán rebosantes de energía, y nuestro equipo en el Kids Club cuenta con un programa continuo de actividades ideal para mantenerlos siempre ocupados. Disfrutarán de divertidas actividades como búsquedas del tesoro, pintura facial de piratas, clases de manualidades, hockey, películas y videojuegos, una competencia de Lego y más.</p>\n\n            <p>Si viajas con niños pequeños, tendremos cunas, sillas altas, barandales de cama y muchas cosas más disponibles. Solicitalos a tu llegada.\n            </p>",
+      "alts": [
+        "Los pequeños se divierten mientras descansas",
+        "Puedes vigilarlos a través de nuestro sistema de circuito cerrado",
+        "Siempre habrá actividades diferentes para divertirse",
+        "Espacios amplios y limpios con todo lo necesario para una tarde divertida",
+        "Los pequeños disfrutarán nuestras tardes de película",
+        "Sillas altas disponibles",
+        "Solicita un calentador de biberones",
+        "Solicita barandales para las camas",
+        "Solicita una tina de baño para tu bebé sin costo adicional",
+        "Contamos con todo lo necesario para que tus pequeños se sientan cómodos"
+      ]
+    },
+    "actividades titulo": "Conoce nuestras diferentes actividades",
+    "actividades": [
+      {
+        "titulo": "Clases de cocina",
+        "descripcion": "Disfruta de una entretenida clase de cocina donde el chef te enseñará a preparar nuestros platillos más especiales.",
+        "slug": "650x400-cookingclass"
+      },
+      {
+        "titulo": "Clases de mixología",
+        "descripcion": "¿Quieres aprender a preparar tus cócteles favoritos? Asiste a nuestra clase de mixología donde nuestros bartenders profesionales te enseñarán sus secretos.",
+        "slug": "650x400-mixologia"
+      },
+      {
+        "titulo": "Tarde de té",
+        "descripcion": "Vive las tardes de té al más puro estilo inglés en Grand Residences Riviera Cancun y prueba nuestros bocadillos mientras disfrutas tu deliciosa bebida.",
+        "slug": "650x400-te"
+      },
+      {
+        "titulo": "Clases de yoga",
+        "descripcion": "Comienza el día con una relajante y rejuvenecedora clase de yoga en la terraza. Respira hondo, encuentra el equilibrio y sé uno con la naturaleza. Quítate los zapatos y disfruta de la relajante presencia del paraíso a tu alrededor.",
+        "slug": "650x400-yoga"
+      },
+      {
+        "titulo": "Deportes y diversión al aire libre",
+        "descripcion": "Siempre tendrás algo divertido que hacer y disfrutar en el paraíso con tus seres queridos, visita nuestro centro de actividades para descubrir más acerca de nuestras diferentes actividades diarias.",
+        "slug": "650x400-tenis"
+      },
+      {
+        "titulo": "Gimnasio",
+        "descripcion": "Mantente siempre en forma, incluso durante tus vacaciones en nuestro gimnasio. Disponible las 24 horas del día y cuenta con lo más moderno en equipo de acondicionamiento físico.",
+        "slug": "650x400-gym"
+      }
+    ],
+    "spa": {
+      "titulo": "Nuestro santuario de paz y relajación",
+      "descripcion": "Mereces ser consentido durante tus vacaciones y eso incluye un tiempo en el Spa. Nuestro santuario de paz y tranquilidad calmará tu cuerpo y alma con masajes, tratamientos faciales y envolturas para restaurar la armonía y el bienestar. Descubre una colección de los últimos tratamientos de lujo de las principales compañías de spa para el cuidado de la piel. Disfruta fórmulas florales y herbales deliciosamente fragantes que nutrirán y suavizarán tu piel y, para darle un toque especial de lujo, prueba la experiencia del baño de spa en tu suite.",
+      "slug": "650x400-spa",
+      "explore": "Descarga un folleto"
+    },
+    "amenidades": {
+      "titulo": "Amenidades especiales en Grand Residences Riviera Cancun",
+      "descripcion": "<p>Nos esforzamos por alcanzar la excelencia, siempre vamos más allá para que tu estadía sea verdaderamente relajante e inolvidable. Déjate mimar con nuestras amenidades de lujo, impecables instalaciones y servicio de primera clase que te harán crear momentos mágicos y te harán sentir más que especial. </p>\n\n        <p>Experimenta el factor sorpresa por donde quiera que mires, en cada suite, en cada rincón y pasillo que recorras, en cada platillo que disfrutes, y en cada muestra de cortesía que recibas de parte de nuestro personal. Que tu única preocupación sea disfrutar y ser feliz, nosotros nos encargamos del resto.</p>",
+      "subtitulo": "Esto es lo que tenemos para ti",
+      "lista": [
+        {
+          "title": "A tu llegada",
+          "list": [
+            "Servicio de transportación premium aeropuerto - resort - aeropuerto",
+            "Bebidas de bienvenida (margarita para los adultos y jugos para los niños)",
+            "Agua embotellada"
+          ]
+        },
+        {
+          "title": "Durante tu estancia en el resort",
+          "list": [
+            "Café incluido durante todo el día en el lobby bar",
+            "Concierge personal",
+            "Centro de negocios",
+            "Internet de alta velocidad en todo el resort",
+            "Actividades complementarias"
+          ]
+        },
+        {
+          "title": "Durante tu estancia en el área de alberca",
+          "list": [
+            "Concierge de alberca y playa",
+            "Paletas heladas",
+            "Brochetas de fruta fresca",
+            "Agua"
+          ]
+        },
+        {
+          "title": "En tu habitación",
+          "list": [
+            "Botella de licor",
+            "Fruta fresca y frutos secos a tu llegada",
+            "Maquina de café Nespresso",
+            "Amenidades de baño marca  Molton Brown®",
+            "Servicio de preparación de cama",
+            "Bolsa de mano artesanal",
+            "Regalos especiales para niños",
+            "Galletas personalizadas para niños",
+            "Una figura de Alebrije en tu estancia",
+            "Cunas, sillas y otros artículos para bebé disponibles a solicitud"
+          ]
+        }
+      ]
+    },
+    "boton cotiza": "¡Reserva tu estadía ahora!",
+    "btn_360": "Recorridos 360˚"
+  }
+}

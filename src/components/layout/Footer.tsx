@@ -45,9 +45,9 @@ const Footer = () => {
             <nav className="my-container  text-secondary text-base hidden lg:flex justify-between items-center mb-12">
                 <div className="flex flex-col gap-2 grow">
                     <Link href="/">{t('all inclusive')}</Link>
-                    <Link href="/">{t('suites')}</Link>
+                    <Link href="/suites">{t('suites')}</Link>
                     <Link href="/restaurants">{t('dining')}</Link>
-                    <Link href="/">{t('activities')}</Link>
+                    <Link href="/amenities">{t('activities')}</Link>
                     <Link href="/">{t('gallery')}</Link>
                     <Link href="/">{t('wedding')}</Link>
                 </div>

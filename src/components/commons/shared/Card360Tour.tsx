@@ -1,24 +1,28 @@
+'use client'
 import React from 'react';
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import {useTranslations} from "next-intl";
 import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
+import {cn} from "@/lib/utils";
 
 
 interface Card360TourProps {
     title: string;
+    btnTitle?: string;
     src: string;
+    className?: string;
 }
 
-const Card360Tour = ({title, src}: Card360TourProps) => {
+const Card360Tour = ({title, btnTitle,src, className}: Card360TourProps) => {
     const [open, setOpen] = React.useState(false);
     const t = useTranslations('suites');
-
+    const btnTitleDefault = btnTitle ?? t('360 Tour');
     return (
         <div>
-            <button className="flex items-center gap-2 text-sm"
+            <button className={cn("flex items-center gap-2 text-sm", className)}
                 onClick={() => setOpen(true)}>
                 <Ico360 className="shrink-0" width={24} height={24}/>
-                {t('360 Tour')}
+                {btnTitleDefault}
             </button>
 
             <Dialog open={open} onOpenChange={() => setOpen(false)}>
