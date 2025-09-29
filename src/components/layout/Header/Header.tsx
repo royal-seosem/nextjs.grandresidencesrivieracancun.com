@@ -133,7 +133,7 @@ export default function Header() {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/">
+                                                <Link href="/gallery">
                                                     {tmenu('gallery')}
                                                 </Link>
                                             </li>
@@ -227,7 +227,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/"} className="block px-4 py-2">
+                    <Link href={"/gallery"} className="block px-4 py-2">
                         {tmenu('gallery')}
                     </Link>
                 </li>

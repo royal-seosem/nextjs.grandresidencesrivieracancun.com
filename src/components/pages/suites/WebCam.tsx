@@ -3,12 +3,17 @@ import React from 'react';
 import WebcamIcon from "@/components/commons/icons/web-cam.svg";
 import {Dialog, DialogContent, DialogHeader} from "@/components/commons/ui/dialog";
 import {DialogTitle} from "@radix-ui/react-dialog";
+import {cn} from "@/lib/utils";
 
-const WebCam = () => {
+interface WebCamProps {
+    className?: string;
+}
+
+const WebCam = ({className}: WebCamProps) => {
     const [open, setOpen] = React.useState(false);
     return (
         <>
-            <button className="flex items-center gap-1 text-base font-bold px-2"
+            <button className={cn('flex items-center gap-1 text-base font-bold px-2', className)}
                     onClick={() => setOpen(true)}>
                 <WebcamIcon width={24} height={24}/>
                 <span className="leading-4 text-center">WEB CAM</span>

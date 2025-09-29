@@ -1,6 +1,8 @@
-import React from 'react';
+'use client'
+import React, {useEffect} from 'react';
 import {
     Carousel,
+    CarouselApi,
     CarouselContent,
     CarouselGoto,
     CarouselNext,
@@ -11,7 +13,9 @@ import {cn} from "@/lib/utils";
 interface GalleryProps {
     children: React.ReactNode;
     variant?: 'secondary' | 'primary',
-    position?: 'on' | 'bottom',
+    position?: 'on' | 'bottom' | 'middle',
+    showDots?: boolean,
+    setApi?: (api: CarouselApi) => void
 }
 
 const galleryStyles = {
@@ -33,21 +37,29 @@ const positionStyles = {
     },
     bottom: {
         className: '',
+    },
+    middle: {
+        className: 'absolute top-1/2 w-full -translate-y-1/2',
     }
 }
 
-const Gallery = ({children, variant = 'secondary', position = 'on'}: GalleryProps) => {
+
+const Gallery = ({children, variant = 'secondary', position = 'on', showDots = true, setApi}: GalleryProps) => {
     const totalItems = React.Children.count(children);
     const style = galleryStyles[variant];
     const {className} = positionStyles[position];
+
     return (
         <Carousel
             className="w-full h-full"
+            setApi={setApi}
             opts={{
-                loop: true
+                loop: true,
+                containScroll: 'trimSnaps'
             }}>
             <div className="h-full">
-                <CarouselContent className="items-stretch table-[border-collapse:collapse] table-[border-spacing:0] h-full">
+                <CarouselContent
+                    className="items-stretch table-[border-collapse:collapse] table-[border-spacing:0] h-full">
                     {children}
                 </CarouselContent>
             </div>
@@ -55,16 +67,20 @@ const Gallery = ({children, variant = 'secondary', position = 'on'}: GalleryProp
                 'flex justify-between items-center py-2',
                 className
             )}>
-                <ul className="flex gap-1">
-                    {Array.from({length: totalItems}).map((_, index) => (
-                        <li key={index}>
-                            <CarouselGoto index={index} {...style}/>
-                        </li>
-                    ))}
-                </ul>
+                {showDots &&
+                    <ul className="flex gap-1">
+                        {Array.from({length: totalItems}).map((_, index) => (
+                            <li key={index}>
+                                <CarouselGoto index={index} {...style}/>
+                            </li>
+                        ))}
+                    </ul>
+                }
+
                 <div className={cn(
                     'flex gap-2',
                     style.text_color,
+                    position == "middle" ? 'w-full justify-between ' : ""
                 )}>
                     <CarouselPrevious className={cn(style.text_color)}/>
                     <CarouselNext className={cn(style.text_color)}/>
