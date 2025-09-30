@@ -6,6 +6,8 @@ import {cn} from "@/lib/utils";
 type CdnImageProps = Omit<ImageProps, 'src'> & {
     src: string;
     label?: boolean
+    className?: string;
+    classNameImg?: string;
 }
 
 const imageConfig = {
@@ -13,7 +15,7 @@ const imageConfig = {
 } as const
 
 
-const CdnImage = ({src, alt, label = false, className, ...props}: CdnImageProps) => {
+const CdnImage = ({src, alt, label = false, className, classNameImg, ...props}: CdnImageProps) => {
     let srcImage = src;
 
     if (src.indexOf('http') == -1) {
@@ -24,7 +26,7 @@ const CdnImage = ({src, alt, label = false, className, ...props}: CdnImageProps)
         return (
             <figure className={cn('relative', className)}>
                 <Image
-                    className={"w-full object-cover"}
+                    className={cn("w-full object-cover", classNameImg)}
                     src={srcImage}
                     alt={alt}
                     {...props}

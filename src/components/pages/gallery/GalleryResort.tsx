@@ -123,9 +123,11 @@ const GalleryResort = () => {
 
     return (
         <>
-            <div className="grid  grid-cols-2 gap-x-5 gap-y-4 w-full mb-10">
+            <div className="grid grid-cols-2 lg:grid-cols-6 gap-x-2 gap-y-2 w-full mb-10">
+
                 <CdnImage
-                    className={"col-span-2 w-full object-cover"}
+                    className={"col-span-2 w-full object-cover lg:col-span-2 lg:row-span-2"}
+                    classNameImg={"lg:h-full"}
                     src={"/img/gallery/resort-1.jpg"}
                     alt={"Resort"}
                     label={true}
@@ -134,6 +136,7 @@ const GalleryResort = () => {
                     onClick={() => openModal(0)}/>
 
                 <CdnImage
+                    className={"lg:col-span-2"}
                     alt={t('habitaciones')}
                     src={"/img/gallery/Rooms-1.jpg"}
                     label={true}
@@ -142,6 +145,7 @@ const GalleryResort = () => {
                     onClick={() => openModal(17)}/>
 
                 <CdnImage
+                    className={"lg:col-span-2"}
                     alt={t('restaurantes')}
                     src={"/img/gallery/Gallery-2.jpg"}
                     label={true}
@@ -151,6 +155,7 @@ const GalleryResort = () => {
 
                 <CdnImage
                     alt={t('eventos')}
+                    className={"lg:col-span-2"}
                     src={'/img/gallery/weddings-1.jpg'}
                     label={true}
                     width={1400}
@@ -159,6 +164,7 @@ const GalleryResort = () => {
 
                 <CdnImage
                     alt={t('destino')}
+                    className={"lg:col-span-2"}
                     src={"/img/gallery/destino-1.jpg"}
                     label={true}
                     width={1400}
@@ -166,6 +172,7 @@ const GalleryResort = () => {
                     onClick={() => openModal(56)}/>
 
                 <CdnImage
+                    className={"lg:col-span-3"}
                     alt={t('amenidades')}
                     src={"/img/gallery/amenities-1.jpg"}
                     label={true}
@@ -175,6 +182,7 @@ const GalleryResort = () => {
 
 
                 <CdnImage
+                    className={"lg:col-span-3"}
                     alt={t('actividades')}
                     src={"/img/gallery/activities-1.jpg"}
                     label={true}
