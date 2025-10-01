@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {Button} from "@/components/commons/ui/button";
 import {cn} from "@/lib/utils";
@@ -5,6 +6,7 @@ import {useWebsite} from "@/context/WebSiteProvider";
 import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 interface BookingBtnDrawerProps {
+    btnText?: string;
     className?: string;
     offer?: {
         title: string,
@@ -15,7 +17,7 @@ interface BookingBtnDrawerProps {
     }
 }
 
-const BookingBtnDrawer = ({className, offer}: BookingBtnDrawerProps) => {
+const BookingBtnDrawer = ({className, offer, btnText}: BookingBtnDrawerProps) => {
     const {
         setOpenBookingDrawer
     } = useWebsite();
@@ -55,7 +57,7 @@ const BookingBtnDrawer = ({className, offer}: BookingBtnDrawerProps) => {
                 className
             )}
             onClick={() => handleClick()}>
-            BOOK NOW
+            {btnText || "BOOK NOW"}
         </Button>
     );
 };

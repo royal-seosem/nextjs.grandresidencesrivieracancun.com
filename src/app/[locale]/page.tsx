@@ -27,9 +27,6 @@ export default async function Home() {
         getHomeOffer(),
         getReviews()
     ])
-    console.log(offers)
-    // const offers = await getHomeOffer();
-    // const reviews = await getReviews();
 
     return (
         <main>

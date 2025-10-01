@@ -8,13 +8,16 @@ import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
 import MyRoyal from "@/components/layout/Header/MyRoyal";
 import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
 import ContactOptions from "@/components/layout/Header/ContactOptions";
+import MenuMobile from "@/components/layout/Header/MenuMobile";
 
 
 export default function Header() {
     const t = useTranslations('header');
+    const tGeneral = useTranslations('general');
     const tmenu = useTranslations('menu');
 
     const [showResortMenu, setShowResortMenu] = React.useState(false);
+
     const menuRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -73,6 +76,11 @@ export default function Header() {
                             Resort
                         </button>
                     </div>
+
+                    <Link className={"hidden lg:block"} href="/all-inclusive">
+                        {tGeneral('menu.all inclusive')}
+                    </Link>
+
                     <Link href="/">
                         {t('specials')}
                     </Link>
@@ -90,7 +98,7 @@ export default function Header() {
                     <div className='flex'>
                         <ContactOptions/>
                     </div>
-                    <div>
+                    <div className={"hidden lg:block"}>
                         <Drawer direction="right">
                             <DrawerTrigger className="flex items-center gap-1" asChild>
                                 <button>
@@ -104,101 +112,7 @@ export default function Header() {
                         </Drawer>
                     </div>
                     <div className="flex">
-                        <Drawer direction="right">
-                            <DrawerTrigger asChild>
-                                <button>
-                                    <Image src={"/icons/hamburger.svg"} alt={"icon menu"} width={24} height={24}/>
-                                </button>
-                            </DrawerTrigger>
-                            <DrawerContent>
-                                <ul className="text-base">
-                                    <li className="px-5 py-2.5">
-                                        <span className="text-lg">
-                                            Resort
-                                        </span>
-                                        <ul className="px-5 space-y-2">
-                                            <li>
-                                                <Link href="/suites">
-                                                    {tmenu('suites')}
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/restaurants">
-                                                    {tmenu('dining')}
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/amenities">
-                                                    {tmenu('activities')}
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/gallery">
-                                                    {tmenu('gallery')}
-                                                </Link>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li className="bg-menu px-5 py-1 relative before:content-[''] before:absolute before:pointer-events-none before:bg-[#be8b5e] before:h-full before:w-2 before:top-0 before:left-0">
-                                        <Link href="/" className="text-lg">
-                                            {tmenu('all inclusive')}
-                                        </Link>
-                                    </li>
-                                    <li className="px-5 py-1">
-                                        <Link href="/">
-                                            {tmenu('specials')}
-                                        </Link>
-                                    </li>
-                                    <li className="px-5 py-1">
-                                        <Link href="/">
-                                            {tmenu('wedding')}
-                                        </Link>
-                                    </li>
-                                    <li className="px-5 py-1">
-                                        <Link href="/">
-                                            {tmenu('destination')}
-                                        </Link>
-                                    </li>
-
-                                    <li className="px-5 py-1 bg-menu">
-                                        <a href="#" target="_blanck">
-                                            {tmenu('owners area')}
-                                        </a>
-                                    </li>
-                                    <li className="px-5 py-1 bg-menu">
-                                        <button>
-                                            {tmenu('manage reservations')}
-                                        </button>
-                                    </li>
-                                    <li className="px-5 py-1 bg-menu">
-                                        <a href="blogLink" target="_blanck">
-                                            {tmenu('blog')}
-                                        </a>
-                                    </li>
-                                    <li className="px-5 py-1 bg-menu">
-                                        <a href="faqs">
-                                            {tmenu('faqs')}
-                                        </a>
-                                    </li>
-
-                                    <li className="px-5 py-1 bg-menu">
-                                        <Link href="/">
-                                            {tmenu('media')}
-                                        </Link>
-                                    </li>
-
-                                    <li className="px-5 py-1 bg-menu">
-                                        <Link href="/">
-                                            {tmenu('english')}
-                                        </Link>
-                                        {/*<Link href="/es">*/}
-                                        {/*    {tmenu('spanish')}*/}
-                                        {/*</Link>*/}
-                                    </li>
-                                </ul>
-                            </DrawerContent>
-                        </Drawer>
+                      <MenuMobile/>
                     </div>
                 </div>
             </div>
