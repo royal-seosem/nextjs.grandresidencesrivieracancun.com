@@ -44,7 +44,7 @@ const Footer = () => {
             </nav>
             <nav className="my-container  text-secondary text-base hidden lg:flex justify-between items-center mb-12">
                 <div className="flex flex-col gap-2 grow">
-                    <Link href="/">{t('all inclusive')}</Link>
+                    <Link href="/all-inclusive">{t('all inclusive')}</Link>
                     <Link href="/suites">{t('suites')}</Link>
                     <Link href="/restaurants">{t('dining')}</Link>
                     <Link href="/amenities">{t('activities')}</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-2 grow">
                     <Link href="/">{t('destination')}</Link>
-                    <Link href="/">{t('specials')}</Link>
+                    <Link href="/offers">{t('specials')}</Link>
                     <Link href="/" target="_blanck">Blog</Link>
                     <Link href="/">{t('faqs')}</Link>
                     <Link href="/" target="_blanck">{t('owners area')}</Link>

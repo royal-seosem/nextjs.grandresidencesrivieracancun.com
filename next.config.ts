@@ -20,7 +20,8 @@ const nextConfig: NextConfig = {
                         loader: '@svgr/webpack',
                         options: {
                             dimensions: false,
-                            svgo: false,              // <-- desactiva SVGO solo aquí
+                            svgo: false,
+                            removeScriptElement: false,
                         },
                     },
                 ],
@@ -47,7 +48,9 @@ const nextConfig: NextConfig = {
                                     {
                                         name: 'preset-default',
                                         params: {
-                                            overrides: { removeViewBox: false },
+                                            overrides: {
+                                                removeViewBox: false
+                                            },
                                         },
                                     },
                                 ],

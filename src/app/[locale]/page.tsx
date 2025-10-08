@@ -1,6 +1,6 @@
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
-import {getLocale, getMessages, getTranslations} from "next-intl/server";
+import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
@@ -21,7 +21,6 @@ import BookingProvider from "@/components/commons/shared/booking/Context/Booking
 export default async function Home() {
     const {home: {slider}} = await getMessages();
     const t = await getTranslations('general');
-    const locale = await getLocale();
 
     const [offers, reviews] = await Promise.all([
         getHomeOffer(),

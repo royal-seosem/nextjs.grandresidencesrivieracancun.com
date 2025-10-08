@@ -5,12 +5,9 @@ import Title from "@/components/commons/ui/title";
 import Tour360 from "@/components/pages/suites/tour360";
 import WebCam from "@/components/pages/suites/WebCam";
 import SitePlan from "@/components/pages/suites/SitePlan";
-import CardRoom from "@/components/pages/suites/CardRoom";
 import {getRooms} from "@/use_case/rooms/get_rooms";
 import {getTranslations} from "next-intl/server";
 import SectionRooms from "@/components/pages/suites/SectionRooms";
-import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-import Booking from "@/components/commons/shared/booking/Booking";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 
 //TODO: Page Suites
@@ -43,7 +40,8 @@ const Page = async () => {
                     {t('titulo h1a')}
                 </Title>
 
-                <Title level="h2" size={"lg"} className="text-center font-bold mb-5 lg:mb-10"> {t('titulo h1b')} </Title>
+                <Title level="h2" size={"lg"}
+                       className="text-center font-bold mb-5 lg:mb-10"> {t('titulo h1b')} </Title>
 
                 <div className="mb-14">
                     <RichText id={"descripcion general"} ns={"suites"}/>

@@ -81,7 +81,7 @@ export default function Header() {
                         {tGeneral('menu.all inclusive')}
                     </Link>
 
-                    <Link href="/">
+                    <Link href="/offers">
                         {t('specials')}
                     </Link>
 

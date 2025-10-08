@@ -14,8 +14,8 @@ export const routing = defineRouting({
             es: "/"
         },
         "/offers":{
-            en:"offers",
-            es:"ofertas"
+            en:"/offers",
+            es:"/ofertas"
         },
         "/suites": {
             en: "/suites-and-villas",

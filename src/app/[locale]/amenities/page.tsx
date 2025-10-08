@@ -8,7 +8,6 @@ import SectionKids from "@/components/pages/amenities/SectionKids";
 import SectionActivities from "@/components/pages/amenities/SectionActivities";
 import {Link} from "@/i18n/navigation";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
-import Paragraph from "@/components/commons/ui/paragraph";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 

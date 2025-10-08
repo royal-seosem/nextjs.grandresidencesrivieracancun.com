@@ -9,12 +9,7 @@ import {useBooking} from "@/components/commons/shared/booking/Context/BookingCon
 
 const BookingGuest = () => {
     const {
-        rooms,
-        setRooms,
-        adults,
-        setAdults,
         childrenGuests,
-        setChildrenGuests,
         childrenAge,
         setChildrenAge
     } = useBooking();
