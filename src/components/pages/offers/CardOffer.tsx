@@ -23,7 +23,7 @@ const CardOffer = () => {
                 </ul>
                 <div className={"flex flex-col justify-start items-start gap-2 mb-4"}>
                     <button className={"text-base font-semibold underline"}>read more</button>
-                    {/*<BookingBtnDrawer/>*/}
+                    <BookingBtnDrawer/>
                 </div>
 
                 <PaymentMethods/>
