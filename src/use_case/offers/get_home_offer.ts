@@ -24,6 +24,7 @@ export type OfferContentKey = {
     description?: string;
     discount?: string;
     terms?: string[];
+    label: string
 }
 
 export type OfferGallery = {

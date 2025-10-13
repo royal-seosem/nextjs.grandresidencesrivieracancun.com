@@ -76,7 +76,6 @@ const SectionTripadvisor = (
                                             <p className="font-bold">{review.traveler_name}</p>
                                             <p>{format(review.review_date, 'MMMM d, yyyy')}</p>
                                         </div>
-
                                     </div>
                                 </div>
                             </CarouselItem>

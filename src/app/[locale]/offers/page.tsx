@@ -1,14 +1,29 @@
 import React from 'react';
 import Banner from "@/components/pages/offers/banner";
-import {useMessages, useTranslations} from "next-intl";
+import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import CardOffer from "@/components/pages/offers/CardOffer";
+import {getMessages, getTranslations} from "next-intl/server";
+import {getOffers} from "@/use_case/offers/get_offes";
+import CarouselOffers from "@/components/pages/offers/CarouselOffers";
+import {Button} from "@/components/commons/ui/button";
+import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
+import RichText from "@/components/commons/shared/RitchText";
+import CarouselReviews from "@/components/pages/offers/CarouselReviews";
+import {getReviews} from "@/use_case/reviews/get_reviews";
 
-const Page = () => {
-    const t = useTranslations('offers-template2');
-    const messages = useMessages();
+const Page = async () => {
+    const t = await getTranslations('offers-template2');
+    const tHome = await getTranslations('home');
+    const messages = await getMessages();
     const includeList = messages['offers-template2']['includes-list'];
+    const facts = messages['home']['tripadvisor facts'];
+
+    const [offers, reviews] = await Promise.all([
+        getOffers(),
+        getReviews()
+    ])
+
     return (
         <main>
             <Banner/>
@@ -33,7 +48,50 @@ const Page = () => {
                     ))}
                 </ul>
 
-                <CardOffer/>
+                <CarouselOffers offers={offers}/>
+
+                <div className={"text-center mb-10"}>
+                    <Button variant={"outline"} className={"uppercase"}>
+                        {t('See all available offers')}
+                    </Button>
+                </div>
+
+                <div className="mb-10">
+                    <LogInModalOffer/>
+                </div>
+
+                <div className={"flex justify-center items-center gap-5 mb-10"}>
+                    <span className="block h-[2px] bg-primary w-full"></span>
+                    <CdnImage
+                        src={"/img/logo/trip-advisor-traveler-choice-awards-2025.png"}
+                        alt={"Trip Advisor Traveler Choice Awards 2025"}
+                        width={140}
+                        height={140}/>
+                    <span className="block h-[2px] bg-primary w-full"></span>
+                </div>
+
+                <div className="mb-10">
+                    <div className="mb-6">
+                        <RichText id={"tripadvisor_choice"} ns={"home"}
+                                  components={{
+                                      p: (chunks) => <p className={"text-2xl font-bold text-center"}>{chunks}</p>
+                                  }}/>
+                    </div>
+
+                    <p className="text-base font-bold text-center mb-6">
+                        {tHome('tripadvisor excellent')} {tHome('tripadvisor_reviews')}
+                    </p>
+
+                    <ul className="columns-2">
+                        {facts.map((item: string, index: number) => (
+                            <li key={index} className="flex items-center gap-5 mb-2">
+                                <CheckGreenIcon width={16} height={16}/> {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <CarouselReviews reviews={reviews}/>
             </div>
         </main>
     );

@@ -36,7 +36,7 @@ const nextConfig: NextConfig = {
             {
                 test: /\.svg$/i,
                 issuer: fileLoaderRule.issuer,
-                resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/, /svgo=false/] },
+                resourceQuery: {not: [...fileLoaderRule.resourceQuery.not, /url/, /svgo=false/]},
                 use: [
                     {
                         loader: '@svgr/webpack',
@@ -78,6 +78,11 @@ const nextConfig: NextConfig = {
                 hostname: 'www.royalresorts.com',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'storage.googleapis.com',
+                pathname: '/**'
+            }
 
         ],
     },
