@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from "@/components/pages/offers/banner";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
+import ArrowLargeDownIcon from "@/components/commons/icons/arrow-large-down.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {getMessages, getTranslations} from "next-intl/server";
@@ -30,9 +31,11 @@ const Page = async () => {
             <div className="my-container pb-5">
                 <Paragraph className={"text-center"}>{t('description')}</Paragraph>
 
-                <p className={"text-2xl font-bold text-center mb-6"}>{t('includes-title')}</p>
+                <p className={"text-2xl font-bold text-center mb-6 md:text-left"}>
+                    {t('includes-title')}
+                </p>
 
-                <ul className="">
+                <ul className="md:columns-2 mb-10">
                     {includeList.map((item: {
                         label: string,
                         img: string,
@@ -48,13 +51,10 @@ const Page = async () => {
                     ))}
                 </ul>
 
-                <CarouselOffers offers={offers}/>
-
-                <div className={"text-center mb-10"}>
-                    <Button variant={"outline"} className={"uppercase"}>
-                        {t('See all available offers')}
-                    </Button>
+                <div className="mb-10">
+                    <CarouselOffers offers={offers}/>
                 </div>
+
 
                 <div className="mb-10">
                     <LogInModalOffer/>

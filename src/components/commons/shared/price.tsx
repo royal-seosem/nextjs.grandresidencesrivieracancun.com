@@ -18,13 +18,13 @@ const Price = ({rate}: { rate: OfferRate }) => {
 
     return (
         <div className="flex flex-col">
-            <span className="font-semibold text-sm"> {t('per room')} </span>
             <span className="text-lg"> {t('starting_at')} </span>
             <span className="text-accent2 font-bold text-lg">
                 ${(rate.price - rate.discount).toFixed(0)}
                 <span className="text-sm"> USD</span>
                 <span> {tOfferTempalte('plus_taxes')}</span>
             </span>
+            <span className="font-semibold text-sm"> {t('per room')} </span>
         </div>
     );
 };

@@ -35,7 +35,7 @@
     "book now": "RESERVA AHORA",
     "See terms & Conditions": "Términos y Condiciones",
     "Read More": "Leer más",
-    "Lowest rate available from: ": "Tarifa más baja de: :DATE_START a :DATE_END",
+    "Lowest_rate_available_from": "Tarifa más baja de: {DATE_START} a {DATE_END}",
     "Travel from": "Viaja entre Agosto 21, 2023 y Marzo 15, 2024",
     "valid_until": "Esta oferta solo es válida hasta: :BW_E / Viaja entre: :TW_S to :TW_E",
     "View more benefits": "Ver más beneficios",

@@ -36,7 +36,7 @@
     "See terms & Conditions": "See terms & Conditions",
     "Read More": "Read More",
     "TERMS & CONDITIONS": "TERMS & CONDITIONS",
-    "Lowest rate available from: ": "Lowest rate available from: :DATE_START to :DATE_END",
+    "Lowest_rate_available_from": "Lowest rate available from: {DATE_START} to {DATE_END}",
     "Travel from": "Travel from :DATE_START and :DATE_END",
     "valid_until": "This offer is only valid until: {BW_E} / Travel between: {TW_S} to {TW_E}",
     "View more benefits": "View more benefits",

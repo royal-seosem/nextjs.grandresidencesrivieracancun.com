@@ -5,10 +5,19 @@ import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDraw
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import ModalOffer from "@/components/pages/offers/ModalOffer";
+import Price from "@/components/commons/shared/price";
+import {useTranslations} from "next-intl";
+import {format} from "date-fns";
+import RichTextClient from "@/components/commons/shared/RitchTextClient";
+import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
+import {useWebsite} from "@/context/WebSiteProvider";
 
 const CardOffer = (
     {offer}: { offer: Offer }
 ) => {
+    const t = useTranslations('new-offers');
+    const tOfferTemplate = useTranslations('offers-template2')
+    const {user} = useWebsite();
     const [open, setOpen] = React.useState(false);
 
     return (
@@ -46,6 +55,11 @@ const CardOffer = (
                     <button className={"text-base font-semibold underline"}
                             onClick={() => setOpen(true)}>read more
                     </button>
+                </div>
+
+                <div className="flex items-center justify-between gap-2 mb-4">
+                    {offer.rate !== null && <Price rate={offer.rate}/>}
+
                     <BookingBtnDrawer offer={{
                         title: offer.content.title || "",
                         subtitle: "Special:",
@@ -55,7 +69,29 @@ const CardOffer = (
                 </div>
 
                 <PaymentMethods/>
+
+                <p className="text-center">
+                    {t('Lowest_rate_available_from', {
+                        DATE_START: format(offer.bookingWindow.start_date, 'MMMM d, yyyy'),
+                        DATE_END: format(offer.bookingWindow.end_date, 'MMMM d, yyyy'),
+                    })}
+                </p>
+
             </div>
+
+            {!user && offer.rateLead &&
+                <div className="flex flex-col items-center justify-center gap-2 bg-primary py-2">
+                    <div className="text-secondary">
+                        <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
+                            PRICE: offer.rateLead?.price || ""
+                        }}/>
+                    </div>
+                    <button className="flex items-center gap-2 text-white underline">
+                        <MyRoyalIcon width={24} height={24}/>
+                        {tOfferTemplate('Log in and save even more')}
+                    </button>
+                </div>
+            }
             <ModalOffer offer={offer} open={open} setOpen={setOpen}/>
         </article>
     );
