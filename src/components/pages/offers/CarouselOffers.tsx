@@ -19,8 +19,8 @@ const CarouselOffers = (
             <div className={`mb-10 ${showAll ? 'hidden' : 'block'}`}>
                 <Gallery variant={"primary"} position={"bottom"}>
                     {offers.map((item, index) => (
-                        <CarouselItem key={index}>
-                            <div className={"p-2"}>
+                        <CarouselItem key={index} className={"md:basis-1/2"}>
+                            <div className={"p-2 h-full"}>
                                 <CardOffer offer={item}/>
                             </div>
                         </CarouselItem>
@@ -35,13 +35,13 @@ const CarouselOffers = (
             </div>
 
 
-            <div className={`
+            <div className={` md:hidden
                 flex justify-center mb-10
                 ${showAll ? 'rotate-180' : ''}`}>
                 <ArrowLargeDownIcon width={48} height={49}/>
             </div>
 
-            <div className={"text-center mb-10"}>
+            <div className={"text-center mb-10 md:hidden"}>
                 <Button variant={"outline"} className={"uppercase"}
                     onClick={() => setShowAll(!showAll)}>
                     {t('See all available offers')}

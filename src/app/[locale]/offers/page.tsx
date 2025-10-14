@@ -12,6 +12,7 @@ import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffe
 import RichText from "@/components/commons/shared/RitchText";
 import CarouselReviews from "@/components/pages/offers/CarouselReviews";
 import {getReviews} from "@/use_case/reviews/get_reviews";
+import CardOfferLandscape from "@/components/pages/offers/CardOfferLandscape";
 
 const Page = async () => {
     const t = await getTranslations('offers-template2');
@@ -35,7 +36,7 @@ const Page = async () => {
                     {t('includes-title')}
                 </p>
 
-                <ul className="md:columns-2 mb-10">
+                <ul className="md:columns-2 lg:columns-3 mb-10">
                     {includeList.map((item: {
                         label: string,
                         img: string,
@@ -51,12 +52,20 @@ const Page = async () => {
                     ))}
                 </ul>
 
+                <div className="mb-10 hidden md:block">
+                    <CardOfferLandscape offer={offers[0]}/>
+                </div>
+
+                <div className="mb-10 hidden md:block">
+                    <LogInModalOffer/>
+                </div>
+
                 <div className="mb-10">
                     <CarouselOffers offers={offers}/>
                 </div>
 
 
-                <div className="mb-10">
+                <div className="mb-10 md:hidden">
                     <LogInModalOffer/>
                 </div>
 
@@ -82,7 +91,7 @@ const Page = async () => {
                         {tHome('tripadvisor excellent')} {tHome('tripadvisor_reviews')}
                     </p>
 
-                    <ul className="columns-2">
+                    <ul className="columns-2 md:columns-4">
                         {facts.map((item: string, index: number) => (
                             <li key={index} className="flex items-center gap-5 mb-2">
                                 <CheckGreenIcon width={16} height={16}/> {item}

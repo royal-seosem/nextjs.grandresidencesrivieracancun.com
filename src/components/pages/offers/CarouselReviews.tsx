@@ -16,7 +16,7 @@ const CarouselReviews = (
         <Gallery variant={"primary"} position={"bottom"}>
             {
                 reviews.map((item, index) => (
-                    <CarouselItem key={index}>
+                    <CarouselItem key={index} className={"lg:basis-1/2"}>
                         <CardReview review={item}/>
                     </CarouselItem>
                 ))

@@ -21,7 +21,7 @@ const CardOffer = (
     const [open, setOpen] = React.useState(false);
 
     return (
-        <article className={"shadow-md"}>
+        <article className={"shadow-md h-full flex flex-col"}>
             <div className={"relative"}>
                 <CdnImage
                     className={"w-full object-cover border-b-2 border-secondary "}
@@ -42,7 +42,7 @@ const CardOffer = (
 
             </div>
 
-            <div className={"p-4"}>
+            <div className={"p-4 grow"}>
                 <p className="text-2xl font-medium mb-2"> {offer.content.title} </p>
 
                 <ul className="list-disc ml-5 space-y-1 mb-4">
@@ -79,13 +79,16 @@ const CardOffer = (
 
             </div>
 
-            {!user && offer.rateLead &&
-                <div className="flex flex-col items-center justify-center gap-2 bg-primary py-2">
-                    <div className="text-secondary">
-                        <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
-                            PRICE: offer.rateLead?.price || ""
-                        }}/>
-                    </div>
+            {!user &&
+                <div className="flex flex-col items-center justify-center gap-2 bg-primary py-2 px-3
+                    lg:flex-row lg:justify-between">
+                    {offer.rateLead &&
+                        <div className="text-secondary">
+                            <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
+                                PRICE: offer.rateLead?.price || ""
+                            }}/>
+                        </div>
+                    }
                     <button className="flex items-center gap-2 text-white underline">
                         <MyRoyalIcon width={24} height={24}/>
                         {tOfferTemplate('Log in and save even more')}
