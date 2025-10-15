@@ -215,16 +215,19 @@
       "titulo": "Otros eventos que puedes realizar en Grand Residences",
       "lista": [
         {
+          "img": "/img/weddings/lovers-honeymoon.jpg",
           "titulo": "Luna de miel",
           "descripcion": "Después de la boda, la luna de miel será una experiencia inolvidable que compartirás junto a tu alma gemela y cuando la disfruten en el exclusivo resort en Riviera Maya Cancún Grand Residences  quedará por siempre en sus corazones. Nosotros les ayudaremos a hacerlo super especial.",
           "alt": "Vive una luna de miel inolvidable en el Caribe"
         },
         {
+          "img": "/img/weddings/vow-renewal.jpg",
           "titulo": "Renovación de votos nupciales",
           "descripcion": "El amor nunca deja de celebrarse y mientras tu boda destino es solo el inicio de la travesía junto a tu ser amado, la renovación de votos es más, será el juramento de amor eterno. Celebra este evento especial como nunca antes en Grand Residences Riviera Cancun. Nuestras coordinadoras certificadas estarán más que complacidas de planear esta ocasión especial para que sea lo que tu esperas y más.",
           "alt": "Renueva tus votos en un lugar de ensueño"
         },
         {
+          "img": "/img/weddings/romatic-dinner.jpg",
           "titulo": "Cena romántica",
           "descripcion": "Planea esa cena romántica teniendo de fondo un resort en Riviera Maya Cancún con nuestro concierge para sorprender a tu alma gemela. Cuéntanos tu plan y nosotros lo hacemos realidad.",
           "alt": "Sorprende a tu pareja con una cena romántica"

@@ -4,11 +4,16 @@ import {cdn} from "@/lib/cdn";
 import Title from "@/components/commons/ui/title";
 import {getMessages, getTranslations} from "next-intl/server";
 import CarouselPackages from "@/components/pages/weddings/CarouselPackages";
+import CdnImage from "@/components/commons/ui/CdnImage";
+import CardCelebration from "@/components/pages/weddings/CardCelebration";
+import CarouselCelebrations from "@/components/pages/weddings/CarouselCelebrations";
 
 const Page = async () => {
-    const t =  await getTranslations('weddings');
-    const {weddings} = await  getMessages();
+    const t = await getTranslations('weddings');
+    const {weddings} = await getMessages();
     const packages = weddings.paquetes.lista
+    const celebrations = weddings.celebraciones.lista
+
     return (
         <main>
             <SmartVideo
@@ -30,6 +35,58 @@ const Page = async () => {
 
                 <div className={"mb-10"}>
                     <CarouselPackages packages={packages}/>
+                </div>
+
+                <h3 className="text-3xl mb-10 text-center">{t('diferenciadores.titulo')}</h3>
+                <div className="grid grid-cols-2 gap-4 mb-10">
+                    <div className="flex flex-col items-center justify-center">
+                        <CdnImage
+                            className="block mb-8 rounded-full"
+                            width={117} height={117}
+                            src="/img/weddings/beneficios/wedding-cordinator.jpg"
+                            alt={t('diferenciadores.lista.0.alt')}/>
+                        <span className="text-center">{t('diferenciadores.lista.0.titulo')}</span>
+                    </div>
+
+                    <div className=" flex flex-col items-center justify-center">
+                        <CdnImage
+                            className="block mb-8 rounded-full"
+                            width={117} height={117}
+                            src="/img/weddings/beneficios/surprise-amenities.jpg"
+                            alt={t('diferenciadores.lista.1.alt')}/>
+                        <span className="text-center">{t('diferenciadores.lista.1.titulo')}</span>
+                    </div>
+                    <div className="flex flex-col items-center justify-center">
+                        <CdnImage
+                            className="block mb-8 rounded-full"
+                            width={117} height={117}
+                            src="/img/weddings/beneficios/private-transportation.jpg"
+                            alt={t('diferenciadores.lista.2.alt')}/>
+                        <span className="text-center">{t('diferenciadores.lista.2.titulo')}</span>
+                    </div>
+                    <div className="flex flex-col items-center justify-center">
+                        <CdnImage
+                            className="block mb-8 rounded-full"
+                            width={117} height={117}
+                            src="/img/weddings/beneficios/guarantee-event.jpg"
+                            alt={t('diferenciadores.lista.3.alt')}/>
+                        <span className="text-center">{t('diferenciadores.lista.3.titulo')}</span>
+                    </div>
+                </div>
+
+                <div className="flex items-center justify-center gap-4 mb-10">
+                    <div className="h-[1px] bg-input grow"></div>
+                    <CdnImage
+                        width={52} height={52}
+                        alt={"Grand Residences Riviera Cancún"}
+                        src={"/img/icons/gr-separador.jpg"}/>
+                    <div className="h-[1px] bg-input grow"></div>
+                </div>
+
+                <h3 className="text-3xl mb-10 text-center">{t('celebraciones.titulo')}</h3>
+
+                <div className="mb-10">
+                    <CarouselCelebrations items={celebrations}/>
                 </div>
             </div>
         </main>

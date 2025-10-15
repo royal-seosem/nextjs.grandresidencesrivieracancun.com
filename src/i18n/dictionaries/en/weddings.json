@@ -214,16 +214,19 @@
       "titulo": "Celebrate all your special occasions at Grand Residences",
       "lista": [
         {
+          "img": "/img/weddings/lovers-honeymoon.jpg",
           "titulo": "Honeymoon",
           "descripcion": "Your honeymoon will be an experience that you will both treasure in your hearts forever. From the romantic setting in Grand Residences Riviera Cancun Resort to the gourmet cuisine, we help make it truly special.",
           "alt": "Luna de miel: Reserva tu luna de miel en el paraíso"
         },
         {
+          "img": "/img/weddings/vow-renewal.jpg",
           "titulo": "Vow Renewal",
           "descripcion": "Renew your marriage vows on the beach surrounded by family and friends. Enjoy impeccable service and every luxury during an unforgettable day in paradise.",
           "alt": "Renovación de votos nupciales: Reafirma tu amor con un romántico evento en nuestro resort todo incluido en la riviera maya"
         },
         {
+          "img": "/img/weddings/romatic-dinner.jpg",
           "titulo": "Romantic Dinner",
           "descripcion": "Plan a romantic dinner to surprise your soul mate or to celebrate an anniversary or birthday. Tell us your plan and we will make it come true.",
           "alt": "Cena romántica: Sorprende a tu pareja con una propuesta de matri"
