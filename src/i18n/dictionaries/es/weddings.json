@@ -24,11 +24,38 @@
       "alpha": "Letras y espacios"
     },
     "group_event_alt": [
-      "Los eventos sociales en Grand Residences son un espectáculo para la vista",
-      "Las impresionantes vistas crean momentos inolvidables",
-      "Nuestro resort todo incluido en la Riviera Maya es el lugar perfecto para una gala",
-      "Social events create memories you'll treasure always",
-      "Atesora por siempre los recuerdos de tu propuesta de matrimonio"
+      {
+        "alt":"Los eventos sociales en Grand Residences son un espectáculo para la vista",
+        "img": "/img/weddings/wedding-c.jpg"
+      },
+      {
+        "alt":"Las impresionantes vistas crean momentos inolvidables",
+        "img": "/img/weddings/wedding-d.jpg"
+      },
+      {
+        "alt":"Nuestro resort todo incluido en la Riviera Maya es el lugar perfecto para una gala",
+        "img": "/img/weddings/wedding-e.jpg"
+      },
+      {
+        "alt":"Social events create memories you'll treasure always",
+        "img": "/img/weddings/wedding-a.jpg"
+      },
+      {
+        "alt":"Atesora por siempre los recuerdos de tu propuesta de matrimonio",
+        "img": "/img/weddings/wedding-f.jpg"
+      },
+      {
+        "alt":"Atesora por siempre los recuerdos de tu propuesta de matrimonio",
+        "img": "/img/weddings/wedding-g.jpg"
+      },
+      {
+        "alt":"Atesora por siempre los recuerdos de tu propuesta de matrimonio",
+        "img": "/img/weddings/wedding-h.jpg"
+      },
+      {
+        "alt":"Atesora por siempre los recuerdos de tu propuesta de matrimonio",
+        "img": "/img/weddings/wedding-i.jpg"
+      }
     ],
     "includes": "Incluye",
     "paquetes": {

@@ -24,10 +24,38 @@
       "alpha": "Letters and spaces"
     },
     "group_event_alt": [
-      "Social events at Grand Residences are always a sight to behold",
-      "Memorable meetings surrounded by breathtaking views",
-      "Grand Residences served as the perfect venue for a elegant gala",
-      "Social events create memories you'll treasure always"
+      {
+        "alt": "Social events at Grand Residences are always a sight to behold",
+        "img": "/img/weddings/wedding-c.jpg"
+      },
+      {
+        "alt": "Memorable meetings surrounded by breathtaking views",
+        "img" : "/img/weddings/wedding-d.jpg"
+      },
+      {
+        "alt": "Grand Residences served as the perfect venue for a elegant gala",
+        "img" : "/img/weddings/wedding-e.jpg"
+      },
+      {
+        "alt": "Social events create memories you'll treasure always",
+        "img" : "/img/weddings/wedding-a.jpg"
+      },
+      {
+        "alt": "Social events create memories you'll treasure always",
+        "img" : "/img/weddings/wedding-f.jpg"
+      },
+      {
+        "alt": "Social events create memories you'll treasure always",
+        "img" : "/img/weddings/wedding-g.jpg"
+      },
+      {
+        "alt": "Social events create memories you'll treasure always",
+        "img" : "/img/weddings/wedding-h.jpg"
+      },
+      {
+        "alt": "Social events create memories you'll treasure always",
+        "img" : "/img/weddings/wedding-i.jpg"
+      }
     ],
     "includes": "Includes",
     "paquetes": {

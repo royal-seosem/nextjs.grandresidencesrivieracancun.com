@@ -5,8 +5,10 @@ import Title from "@/components/commons/ui/title";
 import {getMessages, getTranslations} from "next-intl/server";
 import CarouselPackages from "@/components/pages/weddings/CarouselPackages";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import CardCelebration from "@/components/pages/weddings/CardCelebration";
 import CarouselCelebrations from "@/components/pages/weddings/CarouselCelebrations";
+import CardImg from "@/components/pages/home/Cardimg";
+import ModalGroups from "@/components/pages/weddings/ModalGroups";
+import CarouselReviews from "@/components/pages/weddings/CarouselReviews";
 
 const Page = async () => {
     const t = await getTranslations('weddings');
@@ -74,6 +76,7 @@ const Page = async () => {
                     </div>
                 </div>
 
+                {/*Divider*/}
                 <div className="flex items-center justify-center gap-4 mb-10">
                     <div className="h-[1px] bg-input grow"></div>
                     <CdnImage
@@ -83,11 +86,30 @@ const Page = async () => {
                     <div className="h-[1px] bg-input grow"></div>
                 </div>
 
+                {/*Celebraciones*/}
                 <h3 className="text-3xl mb-10 text-center">{t('celebraciones.titulo')}</h3>
-
                 <div className="mb-10">
                     <CarouselCelebrations items={celebrations}/>
                 </div>
+
+                {/*Group*/}
+                <div className="mb-10">
+                    <ModalGroups/>
+                </div>
+
+                {/*Divider*/}
+                <div className="flex items-center justify-center gap-4 mb-10">
+                    <div className="h-[1px] bg-input grow"></div>
+                    <CdnImage
+                        width={52} height={52}
+                        alt={"Grand Residences Riviera Cancún"}
+                        src={"/img/icons/gr-separador.jpg"}/>
+                    <div className="h-[1px] bg-input grow"></div>
+                </div>
+
+                {/*Comentarios*/}
+                <h3 className="text-3xl mb-10 text-center">{t('comentarios.titulo')}</h3>
+                <CarouselReviews/>
             </div>
         </main>
     );
