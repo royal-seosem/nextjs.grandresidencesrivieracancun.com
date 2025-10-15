@@ -16,6 +16,7 @@ interface GalleryProps {
     position?: 'on' | 'bottom' | 'middle',
     showDots?: boolean,
     setApi?: (api: CarouselApi) => void
+    button?: React.ReactNode
 }
 
 const galleryStyles = {
@@ -44,7 +45,9 @@ const positionStyles = {
 }
 
 
-const Gallery = ({children, variant = 'secondary', position = 'on', showDots = true, setApi}: GalleryProps) => {
+const Gallery = (
+    {children, variant = 'secondary', position = 'on', showDots = true, setApi, button}: GalleryProps
+) => {
     const totalItems = React.Children.count(children);
     const style = galleryStyles[variant];
     const {className} = positionStyles[position];
@@ -65,8 +68,10 @@ const Gallery = ({children, variant = 'secondary', position = 'on', showDots = t
             </div>
             <div className={cn(
                 'flex justify-between items-center py-2',
+                button ? 'flex-wrap md:flex-nowrap' : '',
                 className
             )}>
+                {button && <div className="w-full text-center md:w-auto">{button}</div>}
                 {showDots &&
                     <ul className="flex gap-1">
                         {Array.from({length: totalItems}).map((_, index) => (

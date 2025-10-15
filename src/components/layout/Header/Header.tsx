@@ -85,7 +85,7 @@ export default function Header() {
                         {t('specials')}
                     </Link>
 
-                    <Link href="/" className="hidden lg:block">
+                    <Link href="/weddings" className="hidden lg:block">
                         {t('wedding')}
                     </Link>
                 </div>

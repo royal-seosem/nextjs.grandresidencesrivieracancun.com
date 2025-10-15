@@ -1,10 +1,270 @@
 {
   "weddings": {
+    "title": "Bodas en la playa: Todo Incluido para tu día soñado | Grand Residences Riviera Cancun",
+    "metadescription": "Celebra bodas en la playa de la Riviera Maya - Puerto Morelos. Contacta a nuestro equipo de expertos para hacer de tu gran día un evento de ensueño. ¡Clic aquí!",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "alt-banner": "Bodas en la playa en Grand Residences",
+    "success-msg": "Gracias, pronto te contactaremos.",
+    "event": [
+      "Boda",
+      "Luna de miel",
+      "Renovación de votos",
+      "Cena romántica",
+      "Otro"
+    ],
+    "h1a": "Dí \"Sí acepto\" frente a la playa",
+    "h1b": "Bodas en Grand Residences Riviera Cancun",
+    "descripcion": "\n\t\t<p>No importa si te imaginas celebrando en un elegante salón bellamente decorado o al aire libre en la playa, de un resort en Riviera Maya Cancún, con un camino de rosas hacia el altar, el lugar perfecto lo tenemos en Grand Residences Riviera Cancun, deja que nuestro equipo de coordinadoras de <em><b>bodas en la playa</b></em> certificadas se encarguen de todo, desde la decoración, las flores, la música, el banquete, hasta el transporte de tus invitados, ellas cuidarán hasta el más mínimo detalle a fin de que cada uno de tus deseos sea cumplido a la perfección para que este día se convierta en un evento memorable de principio a fin.</p>\n    ",
+    "error-messages": {
+      "required": "Dato requerido",
+      "maxlength": "Limite de ",
+      "digit": "Solo digitos",
+      "date_format": "Formato",
+      "active": "Es necesario aceptar",
+      "alpha": "Letras y espacios"
+    },
     "group_event_alt": [
       "Los eventos sociales en Grand Residences son un espectáculo para la vista",
       "Las impresionantes vistas crean momentos inolvidables",
       "Nuestro resort todo incluido en la Riviera Maya es el lugar perfecto para una gala",
-      "Social events create memories you'll treasure always"
-    ]
+      "Social events create memories you'll treasure always",
+      "Atesora por siempre los recuerdos de tu propuesta de matrimonio"
+    ],
+    "includes": "Incluye",
+    "paquetes": {
+      "titulo": "Nuestros paquetes de boda",
+      "lista": [
+        {
+          "img": "/img/weddings/wedding-pack-intimate-wedding.jpg",
+          "title": "Beloved Wedding Package",
+          "guests": "2 - 20 PERSONAS",
+          "includes": [
+            "Ceremonia realizada por un ministro (realiza ceremonias simbólicas o de renovación de votos)",
+            "Certificado de matrimonio conmemorativo",
+            "Hermoso gazebo decorado con telas blancas y vista al mar",
+            "Mesa para ceremonia con mantel blanco",
+            "Sillas blancas avant garde",
+            "Sistema de sonido con micrófono para la ceremonia con conexión a USB",
+            "Locación para ceremonia",
+            "Servicio de cortesía nocturna especial la noche de la boda",
+            "Descuento del 15% en todos los tratamientos de spa para los novios",
+            "Servicio profesional de coordinación de bodas"
+          ],
+          "terms": "\n                    Precio del paquete hasta 20 personas $17,290 MXN. Impuestos incluidos.<br>\n                    Precios sujetos a cambios sin previo aviso<br>\n                    Todos los lugares para ceremonias y eventos privados son al aire libre<br>\n                    En caso de mal tiempo, ubicaciones alternativas están sujetas a disponibilidad<br>\n                    Servicio e impuestos incluidos ",
+          "price-label": "Precio del paquete hasta 20 personas $17,290 MXN. Impuestos incluidos."
+        },
+        {
+          "img": "/img/weddings/wedding-pack-embrace.jpg",
+          "title": "Romance Wedding Package",
+          "guests": "2 - 20 PERSONAS",
+          "includes": [
+            "Ceremonia realizada por un ministro (realiza ceremonias simbólicas o de renovación de votos)",
+            "Certificado de matrimonio conmemorativo",
+            "Hermoso gazebo decorado con telas blancas y flores frescas con vista al mar",
+            "Mesa para ceremonia con mantel blanco",
+            "Ramo de lujo para la novia",
+            "Azahar de lujo para el novio",
+            "Pétalos de rosa para el pasillo",
+            "Sillas blancas avant garde",
+            "Sistema de sonido con micrófono para la ceremonia con conexión a USB",
+            "Locación para ceremonia",
+            "Planchado a vapor del vestido de la novia y el traje del novio",
+            "Pastel de bodas de un nivel (sin fondant) hasta 20 invitados",
+            "Brindis con vino espumoso al final de la ceremonia para hasta 20 invitados",
+            "Servicio de cortesía nocturna especial la noche de la boda",
+            "Descuento del 15% en todos los tratamientos de spa para los novios (Productos a la venta no incluidos)",
+            "Cena romántica para los novios celebrada en un lugar predeterminado",
+            "Servicio profesional de coordinación de bodas"
+          ],
+          "terms": "\n                    Precio del paquete hasta 20 personas en Todo Incluido $32,760 MXN. Impuestos incluidos.<br>\n                    Precio del paquete hasta 20 personas en Plan Europeo $38,220 MXN. Impuestos incluidos.<br>\n                    Precios sujetos a cambios sin previo aviso<br>\n                    Todos los lugares para ceremonias y eventos privados son al aire libre<br>\n                    En caso de mal tiempo, ubicaciones alternativas están sujetas a disponibilidad<br>\n                    Servicio e impuestos incluidos\n                ",
+          "price-label": "Precio del paquete hasta 20 personas en Todo Incluido $32,760 MXN. Impuestos incluidos.<br>\nPrecio del paquete hasta 20 personas en Plan Europeo $38,220 MXN. Impuestos incluidos."
+        },
+        {
+          "img": "/img/weddings/wedding-pack-everlasting-love.jpg",
+          "title": "Fairy Tale Wedding Package",
+          "guests": "HASTA 30 PERSONAS",
+          "includes": [
+            "Ceremonia realizada por un ministro (realiza ceremonias simbólicas o de renovación de votos)",
+            "Certificado de matrimonio conmemorativo",
+            "Hermoso gazebo decorado con telas blancas y flores frescas con vista al mar",
+            "Mesa para ceremonia con mantel blanco",
+            "Arreglo de flores para la mesa de ceremonia",
+            "Ramo premium para la novia",
+            "Azahar premium para el novio",
+            "Pétalos de rosa para el pasillo",
+            "Sillas para la ceremonia (con dos opciones a escoger, hasta 30 sillas)",
+            "Sistema de sonido con micrófono para la ceremonia con conexión a USB",
+            "Locación para ceremonia",
+            "Planchado a vapor del vestido de la novia y el traje del novio",
+            "Bocadillos, incluyendo mimosas, mientras se alistan para hasta 6 personas",
+            "Servicio de cortesía nocturna especial la noche de la boda",
+            "Descuento del 15% en todos los tratamientos de spa para los novios (Productos a la venta no incluidos)",
+            "Servicio profesional de coordinación de bodas"
+          ],
+          "after": {
+            "title": "Y después de la ceremonia...",
+            "subtitle": "UNA HORA DE CÓCTELES",
+            "includes": [
+              "Barra libre nacional (cócteles, cervezas, agua, refrescos, jugos y vino de la casa por copeo)",
+              "Canapés durante el cóctel (6 piezas por persona)",
+              "Tres mesas cocteleras con mantel blanco",
+              "Tres centros de mesa para las mesas cocteleras",
+              "Servicio de meseros",
+              "Locación privada"
+            ]
+          },
+          "terms": "\n                    Precio del paquete hasta 30 personas en Todo Incluido $45,500 MXN. Impuestos incluidos.<br>\nPrecio del paquete hasta 30 personas en Plan Europeo $65,520 MXN. Impuestos incluidos.<br>\n                    Precios sujetos a cambios sin previo aviso<br>\n                    Todos los lugares para ceremonias y eventos privados son al aire libre<br>\n                    En caso de mal tiempo, ubicaciones alternativas están sujetas a disponibilidad<br>\n                    Servicio e impuestos incluidos\n                ",
+          "price-label": "Precio del paquete hasta 30 personas en Todo Incluido 45,500 MXN. Impuestos incluidos.<br>\nPrecio del paquete hasta 30 personas en Plan Europeo $65,520 MXN. Impuestos incluidos."
+        },
+        {
+          "img": "/img/weddings/wedding-pack-cherish.jpg",
+          "title": "Our Dream Wedding Package",
+          "guests": "HASTA 50 PERSONAS",
+          "includes": [
+            "Ceremonia realizada por un ministro (realiza ceremonias simbólicas o de renovación de votos)",
+            "Certificado de matrimonio conmemorativo",
+            "Hermoso gazebo decorado con telas blancas y flores frescas con vista al mar",
+            "Mesa para ceremonia con mantel blanco",
+            "Arreglo de flores para la mesa de ceremonia",
+            "Ramo premium para la novia",
+            "Azahar premium para el novio",
+            "Pétalos de rosa para el pasillo",
+            "Paquete especial para la novia: prueba de maquillaje, maquillaje y peinado del día de la boda",
+            "Planchado a vapor del vestido de la novia y el traje del novio",
+            "Bocadillos, incluyendo mimosas, mientras se alistan para hasta 8 personas",
+            "Sillas para la ceremonia (con dos opciones a escoger, hasta 50 sillas)",
+            "Sistema de sonido con micrófono para la ceremonia con conexión a USB",
+            "Locación para ceremonia",
+            "Servicio de cortesía nocturna especial la noche de la boda",
+            "Descuento del 15% en todos los tratamientos de spa para los novios (Productos a la venta no incluidos)",
+            "Paquete de una hora de fotografía profesional (hasta 70 fotografías digitales incluidas)",
+            "Servicio profesional de coordinación de bodas"
+          ],
+          "after": {
+            "title": "Y después de la ceremonia...",
+            "subtitle": "UNA HORA DE CÓCTEL",
+            "includes": [
+              "Barra libre nacional (cócteles, cervezas, agua, refrescos, jugos y vino de la casa por copeo)",
+              "Canapés durante el cóctel (6 piezas por persona)",
+              "Cinco mesas cocteleras con mantel blanco",
+              "Cinco centros de mesa para las mesas cocteleras",
+              "Servicio de meseros",
+              "Locación privada"
+            ]
+          },
+          "reception": {
+            "title": "RECEPCIÓN",
+            "includes": [
+              "Menú de tres tiempos a escoger (ensalada o sopa, plato fuerte y postre)",
+              "Cuatro horas de barra libre nacional (cócteles, cervezas, agua, refrescos, jugos y vino de la casa por copeo)",
+              "Botellas de vino espumoso para el brindis durante la cena",
+              "Seis mesas redondas con mantel blanco",
+              "Seis centros de mesa para la cena recepción",
+              "Sillas para la ceremonia (con dos opciones a escoger, hasta 50 sillas)",
+              "Iluminación romántica",
+              "Servicio de meseros",
+              "Locación privada"
+            ]
+          },
+          "terms": "\n                    Precio del paquete hasta 50 personas en Todo Incluido $158,340 MXN. Impuestos incluidos.<br>\nPrecio del paquete hasta 50 personas en Plan Europeo $263,900 MXN. Impuestos incluidos.<br>\n                    Precios sujetos a cambios sin previo aviso<br>\n                    Todos los lugares para ceremonias y eventos privados son al aire libre<br>\n                    En caso de mal tiempo, ubicaciones alternativas están sujetas a disponibilidad<br>\n                    Servicio e impuestos incluidos\n                    ",
+          "price-label": "Precio del paquete hasta 50 personas en Todo Incluido $158,340 MXN. Impuestos incluidos.<br>\nPrecio del paquete hasta 50 personas en Plan Europeo $263,900 MXN. Impuestos incluidos."
+        }
+      ],
+      "btn": " Descarga nuestros paquetes de Boda ",
+      "pdf": "/pdf/paquetes-bodas-gr-2024-2025-01.pdf"
+    },
+    "formulario": {
+      "titulo": "Contáctanos",
+      "descripcion": "<p>Para más información sobre nuestros paquetes de bodas, ¡contáctanos!</p>\n\t\t\t<p>Nos encantará tener el honor de acompañarlos hasta el altar.</p>",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "correo": "Correo electrónico",
+      "telefono": "Teléfono",
+      "evento": "Tipo de Evento",
+      "fecha": "Fecha del evento",
+      "invitados": "Número de invitados",
+      "pais": "País de procedencia",
+      "comentarios": "Comentarios",
+      "boton": "Enviar",
+      "casilla1": "La información personal y/o sensible aquí solicitada es con el propósito de brindar el servicio requerido por el usuario. Su privacidad está asegurada bajo los lineamientos del Aviso de Privacidad de la Empresa y conforme a lo ordenado por la Ley. El uso de este sitio se encuentra sujeto a la aceptación incondicional por parte del usuario de los términos y condiciones precisados en nuestro <a  target=\"_blank\" href=\":policy\">Aviso de Privacidad<a>",
+      "titulo-grupos": "Contáctanos para más información en tema de Grupos",
+      "descripcion-grupos": "<p>Para más información sobre grupos ¡contáctanos!</p>\n      <p>Nos encantará ofrecerte más información.</p>"
+    },
+    "diferenciadores": {
+      "titulo": "Beneficios al celebrar tu boda con nosotros",
+      "lista": [
+        {
+          "titulo": "Coordinadora de boda certificada",
+          "alt": "-"
+        },
+        {
+          "titulo": "Amenidades sorpresa para los novios.",
+          "alt": "-"
+        },
+        {
+          "titulo": "Transportación privada desde y hacia el aeropuerto en auto de lujo para los novios",
+          "alt": "-"
+        },
+        {
+          "titulo": "Garantía de un solo evento por día en el Resort",
+          "alt": "-"
+        }
+      ]
+    },
+    "celebraciones": {
+      "titulo": "Otros eventos que puedes realizar en Grand Residences",
+      "lista": [
+        {
+          "titulo": "Luna de miel",
+          "descripcion": "Después de la boda, la luna de miel será una experiencia inolvidable que compartirás junto a tu alma gemela y cuando la disfruten en el exclusivo resort en Riviera Maya Cancún Grand Residences  quedará por siempre en sus corazones. Nosotros les ayudaremos a hacerlo super especial.",
+          "alt": "Vive una luna de miel inolvidable en el Caribe"
+        },
+        {
+          "titulo": "Renovación de votos nupciales",
+          "descripcion": "El amor nunca deja de celebrarse y mientras tu boda destino es solo el inicio de la travesía junto a tu ser amado, la renovación de votos es más, será el juramento de amor eterno. Celebra este evento especial como nunca antes en Grand Residences Riviera Cancun. Nuestras coordinadoras certificadas estarán más que complacidas de planear esta ocasión especial para que sea lo que tu esperas y más.",
+          "alt": "Renueva tus votos en un lugar de ensueño"
+        },
+        {
+          "titulo": "Cena romántica",
+          "descripcion": "Planea esa cena romántica teniendo de fondo un resort en Riviera Maya Cancún con nuestro concierge para sorprender a tu alma gemela. Cuéntanos tu plan y nosotros lo hacemos realidad.",
+          "alt": "Sorprende a tu pareja con una cena romántica"
+        }
+      ]
+    },
+    "grupos": {
+      "titulo": "Atención a grupos",
+      "descripcion": "Ya sea una reunión de negocios, una conferencia o una ceremonia de premiación, en Grand Residences Riviera Cancun, nuestros coordinadores de eventos se dedicarán a organizar todos los aspectos de tu evento, dentro del escenario ideal nuestro <b>resort en Riviera Maya Cancún</b>, nuestros expertos cuidarán hasta el más mínimo detalle con el fin de sorprenderte a ti y a tus invitados.",
+      "lista": [
+        "",
+        "",
+        ""
+      ],
+      "contacto": "Contacto para grupos",
+      "llamanos": "¡Llámanos!"
+    },
+    "comentarios": {
+      "titulo": "Comentarios de nuestros visitantes",
+      "subtitulo": "",
+      "lista": [
+        {
+          "titulo": "Hicieron realidad mi boda soñada!",
+          "descripcion": "El dia 26 de Mayo, nos casamos en este hermoso hotel en compañia de casi 120 amigos y familia que viajaron desde EEUU y Chile! Como comprenderán antes de decidirnos por este hotel, buscamos mucho, investigamos, leímos, viajamos a la Riviera maya para ver los hoteles antes de decidirnos e hicimos una lista de prioridades sobre que cosas tenía que tener el hotel que eligiéramos para nuestra boda (tamaño pequeño, excelente nivel de servicio, no resort convencional, all inclusive pero con calidad superior y cocina gourmet, que no tuviera paquetes de boda preestablecidos, queríamos todo personalizado, etc...). Solo les puedo decir que este hotel tiene todo lo que teníamos en la lista y mas aún. El hotel tiene hermosas instalaciones, decoración, todo se ve como si fuera nuevo y muy bien cuidado. Nuestros invitados todavía nos comentan lo bien que lo pasaron, lo maravilloso que fue nuestra boda y que sin duda quieren volver. Nosotros también!!!",
+          "nombre": "Paulina R",
+          "fecha": "Tipo de viaje: Familia",
+          "avatar": "woman-1"
+        }
+      ]
+    },
+    "news title": "Suscríbete a nuestro boletín de información sobre eventos",
+    "news thanks": "¡Gracias por suscribirse!",
+    "news events_body": "Te estás registrando para recibir la información más reciente sobre bodas, noticias y ofertas especiales en The Grand Residences Riviera Cancun Resort.",
+    "news boton": "Enviar",
+    "news casilla1": "He leído y estoy de acuerdo con el <a href=\"/es/politica-de-privacidad\" target=\"_blank\">Aviso de Privacidad </a> y acepto suscribirme a la lista de envío de Grand Residences para recibir noticias y promociones sobre este resort.",
+    "news casilla2": "",
+    "instagram": "Descubre lo que sucede en Grand Residences",
+    "email_error": "Correo no valido intente con otro",
+    "we_have_date": "Tenemos una fecha en mente.",
+    "we_not_sure": "No estamos seguros",
+    "budget": "Presupuesto estimado"
   }
 }

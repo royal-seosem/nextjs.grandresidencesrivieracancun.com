@@ -34,8 +34,8 @@ export const routing = defineRouting({
             es: "/galeria"
         },
         "/map-resort": {
-            en: "map-resort",
-            es: "mapa-resort"
+            en: "/map-resort",
+            es: "/mapa-resort"
         },
         "/all-inclusive": {
             en: "/all-inclusive",
@@ -43,7 +43,7 @@ export const routing = defineRouting({
         },
         "/weddings": {
             en: "/wedding-and-groups",
-            es: "bodas-y-grupos"
+            es: "/bodas-y-grupos"
         },
         "/gms/login": {
             en: "/gms/login",

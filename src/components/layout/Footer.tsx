@@ -49,7 +49,7 @@ const Footer = () => {
                     <Link href="/restaurants">{t('dining')}</Link>
                     <Link href="/amenities">{t('activities')}</Link>
                     <Link href="/gallery">{t('gallery')}</Link>
-                    <Link href="/">{t('wedding')}</Link>
+                    <Link href="/weddings">{t('wedding')}</Link>
                 </div>
                 <div className="flex flex-col gap-2 grow">
                     <Link href="/">{t('destination')}</Link>

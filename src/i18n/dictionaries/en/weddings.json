@@ -1,10 +1,290 @@
 {
   "weddings": {
+    "title": "The finest location for a memorable day | Grand Residences Riviera Cancun",
+    "metadescription": "Plan your beach wedding in Riviera Maya Cancun Resort, we have an expert team to make those days memorable, having the best destination wedding as a backdrop.",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "alt-banner": "Bodas en la playa en Grand Residences",
+    "success-msg": "Thank you. We will contact you soon.",
+    "event": [
+      "Wedding",
+      "Honeymoon",
+      "Vow Renewal",
+      "Romantic Dinner",
+      "Other"
+    ],
+    "h1a": "Celebrate your love with a dream wedding on the beach",
+    "h1b": "at Grand Residences Riviera Cancun",
+    "descripcion": "<p>Have you ever dreamed of marrying the person you love in a beautiful ceremony on the beach at sunset?</p>\n    <p>Grand Residences Riviera Cancun, one of the most elegant and luxurious resorts in the Riviera Maya, offers the perfect combination of personalized service, professional experience and a beautiful and romantic tropical setting for the most important day in your lives. Our wedding specialists take care of every detail to make your dreams come true and your day memorable. Begin a new chapter of your lives together at Grand Residences.</p>",
+    "error-messages": {
+      "required": "Field is required",
+      "maxlength": "Limit character ",
+      "digit": "Only digit",
+      "date_format": "Format",
+      "active": "It's necesary accept",
+      "alpha": "Letters and spaces"
+    },
     "group_event_alt": [
       "Social events at Grand Residences are always a sight to behold",
       "Memorable meetings surrounded by breathtaking views",
       "Grand Residences served as the perfect venue for a elegant gala",
       "Social events create memories you'll treasure always"
-    ]
+    ],
+    "includes": "Includes",
+    "paquetes": {
+      "titulo": "Our weddings packages",
+      "lista": [
+        {
+          "img": "/img/weddings/wedding-pack-intimate-wedding.jpg",
+          "title": "Beloved Wedding Package",
+          "guests": "2 - 20 GUESTS",
+          "includes": [
+            "Ceremony performed by a non-denominational Minister (Symbolic ceremonies or vow renewals)",
+            "Commemorative marriage certificate",
+            "Beautiful gazebo decorated with white fabric and overlooking the ocean",
+            "Table with white tablecloth for the ceremony",
+            "White Avant garde chairs",
+            "Sound system and microphone with USB connection for the ceremony",
+            "Wedding venue",
+            "Special romantic turndown on your Wedding night",
+            "15% discount when booking Spa services for the Bride and Groom (Product purchases not included)",
+            "Professional Wedding coordinator"
+          ],
+          "terms": "<p>Package price for up to 20 people $950 USD. Taxes included.<br></br>Rates are subject to change without prior notice<br></br>All locations for ceremonies and private events are outdoors<br></br>In the event of bad weather, alternative locations are subject to availability<br>Service and taxes are included</p>",
+          "priceLabel": "<p>Package price for up to 20 people $950 USD. Taxes included.</p>"
+        },
+        {
+          "img": "/img/weddings/wedding-pack-embrace.jpg",
+          "title": "Romance Wedding Package",
+          "guests": "2 - 20 GUESTS",
+          "includes": [
+            "Ceremony performed by a non-denominational Minister (Symbolic ceremonies or vow renewals)",
+            "Commemorative marriage certificate",
+            "Beautiful gazebo decorated with white fabric and fresh flowers overlooking the ocean",
+            "Table with white tablecloth for the ceremony",
+            "Deluxe bridal bouquet",
+            "Deluxe boutonniere for groom",
+            "Rose petals for the aisle",
+            "White Avant garde chairs",
+            "Sound system and microphone with USB connection for the ceremony",
+            "Wedding venue",
+            "Preparation and ironing of bride's and groom's attire",
+            "One tier wedding cake (no fondant icing) for up to 20 guests",
+            "Toast with bottles of sparkling wine at the end of the ceremony for up to 20 guests",
+            "Special romantic turndown on your Wedding night",
+            "15% discount when booking Spa services for the Bride and Groom (Product purchases not included)",
+            "Romantic dinner for Bride & Groom held at a predetermined location",
+            "Professional Wedding coordinator"
+          ],
+          "terms": "<p>Package price for up to 20 people with All Inclusive US$1,800. Taxes included.<br></br>Package price for up to 20 people with European Plan US$2,100. Taxes included.<br></br>Rates are subject to change without prior notice<br></br>All locations for ceremonies and private events are outdoors<br></br>In the event of bad weather, alternative locations are subject to availability<br></br>Service and taxes are included</p>",
+          "priceLabel": "<p>Package price for up to 20 people with All Inclusive $1,800 USD. Taxes included.<br>Package price for up to 20 people with European Plan $2,100 USD. Taxes included.</p>"
+        },
+        {
+          "img": "/img/weddings/wedding-pack-everlasting-love.jpg",
+          "title": "Fairy Tale Wedding Package",
+          "guests": "UP TO 30 GUESTS",
+          "includes": [
+            "Ceremony performed by a non-denominational Minister (Symbolic ceremonies or vow renewals)",
+            "Commemorative marriage certificate",
+            "Beautiful gazebo decorated with white fabric and fresh flowers overlooking the ocean",
+            "Table with white tablecloth for the ceremony",
+            "Flower arrangement for the ceremony table",
+            "Premium bridal bouquet",
+            "Premium boutonniere for the Groom",
+            "Rose petals for the aisle",
+            "Chairs for ceremony (Choice between two options, up to 30 chairs)",
+            "Sound system and microphone with USB connection for the ceremony",
+            "Wedding venue",
+            "Preparation and ironing of bride's and groom's attire",
+            "Refreshments including mimosas while getting ready for up to 6 guests",
+            "Special romantic turndown on your Wedding night",
+            "15% discount when booking Spa services for the Bride and Groom (Product purchases not included)",
+            "Professional Wedding coordinator"
+          ],
+          "after": {
+            "title": "After the Ceremony",
+            "subtitle": "COCKTAIL HOUR",
+            "includes": [
+              "Domestic open bar service with selected liquors, cocktails, beer, water, soft drinks and house wine by the glass",
+              "Appetizers during the cocktail hour (6 per person)",
+              "Three highball cocktail tables with white tablecloths",
+              "Three flower centerpieces for cocktail tables",
+              "Waiter service",
+              "Private event venue"
+            ]
+          },
+          "terms": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.<br></br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.<br></br>Rates are subject to change without notice<br></br>                All locations for ceremonies and private events are outdoors<br></br>                In the event of bad weather, alternative locations are subject to availability<br></br>                Service and taxes are included            </p>",
+          "priceLabel": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.<br></br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.                </p>"
+        },
+        {
+          "img": "/img/weddings/wedding-pack-cherish.jpg",
+          "title": "Our Dream Wedding Package",
+          "guests": "UP TO 50 GUESTS",
+          "includes": [
+            "Ceremony performed by a non-denominational Minister (Symbolic ceremonies or vow renewals)",
+            "Commemorative marriage certificate",
+            "Beautiful gazebo decorated with white fabric and fresh flowers overlooking the ocean",
+            "Table with white tablecloth for the ceremony",
+            "Flower arrangement for ceremony table",
+            "Premium bridal bouquet",
+            "Premium boutonniere for the Groom",
+            "Rose petals on the aisle",
+            "Beautiful Bride package: Trial run and hairstyle and makeup on the Wedding day",
+            "Preparation and ironing of bride's and groom's attire",
+            "Refreshments including mimosas while getting ready for up to 8 guests",
+            "Chairs for the ceremony (Choice between two options, up to 50 chairs)",
+            "Sound system and microphone with USB connection for the ceremony",
+            "Wedding venue",
+            "Special romantic turndown on your Wedding night",
+            "15% discount when booking Spa services for the Bride and Groom (Product purchases not included)",
+            "One-hour professional photo package (up to 70 digital pictures included)",
+            "Professional Wedding coordinator"
+          ],
+          "after": {
+            "title": "After the Ceremony",
+            "subtitle": "COCKTAIL HOUR",
+            "includes": [
+              "Domestic open bar service with selected liquors, cocktails, beer, water, soft drinks and house wine by the glass.",
+              "Appetizers during the cocktail hour (6 per person)",
+              "Five highball cocktail tables with white tablecloths",
+              "Five centerpieces for the tables",
+              "Waiter service",
+              "Private event venue"
+            ]
+          },
+          "reception": {
+            "title": "PRIVATE RECEPTION",
+            "includes": [
+              "Choice of three-course menu (salad or soup, main course and dessert)",
+              "Four hours of domestic open bar service with selected liquors, cocktails, beer, water, soft drinks and house wine by the glass.",
+              "Bottles of sparkling wine for the toast at the dinner",
+              "Six round tables with white tablecloths",
+              "Six centerpieces for the reception dinner",
+              "Chairs for the reception (Choice between two options, up to 50 chairs)",
+              "Romantic lighting",
+              "Waiter service",
+              "Private event venue"
+            ]
+          },
+          "terms": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included.<br></br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included.<br></br>                Rates are subject to change without notice<br></br>                All locations for ceremonies and private events are outdoors<br></br>                In the event of bad weather, alternative locations are subject to availability<br></br>                Service and taxes are included            ",
+          "priceLabel": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included. <br></br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included."
+        }
+      ],
+      "btn": "Download  Our Wedding Packages",
+      "pdf": "/pdf/wedding-packages-gr-2024-2025-01.pdf"
+    },
+    "formulario": {
+      "titulo": "Contact us",
+      "descripcion": "<p>For more information about our wedding packages, contact us!</p>      <p>      We would love to have the honor of walking you down the aisle.</p>",
+      "nombre": "Name",
+      "apellido": "Last name",
+      "correo": "Email",
+      "telefono": "Phone",
+      "evento": "Type of event",
+      "fecha": "Date of event",
+      "invitados": "Number of guests",
+      "pais": "Coutry of origin",
+      "comentarios": "Comments",
+      "boton": "Send",
+      "casilla1": "The personal and/or sensitive information requested is utilized to provide the user with the required service. The privacy of your information is protected under the guidelines of the Privacy Policy of the Company and as mandated by law. The use of this site is subject to unconditional acceptance by the user of the terms and conditions specified in our <a  target=\"_blank\" href=\":policy\">Privacy Policy.</a>",
+      "titulo-grupos": "Contact us for groups",
+      "descripcion-grupos": "<p>For more information about groups, contact us!</p> "
+    },
+    "diferenciadores": {
+      "titulo": "What do you get when you choose Grand Residences for your event?",
+      "lista": [
+        {
+          "titulo": "Certified wedding coordinators",
+          "alt": "-"
+        },
+        {
+          "titulo": "Surprise amenities for the bride and groom",
+          "alt": "-"
+        },
+        {
+          "titulo": "Private transportation to and from the airport for the couple",
+          "alt": "-"
+        },
+        {
+          "titulo": "Guarantee of one event per day at the Resort",
+          "alt": "-"
+        }
+      ]
+    },
+    "celebraciones": {
+      "titulo": "Celebrate all your special occasions at Grand Residences",
+      "lista": [
+        {
+          "titulo": "Honeymoon",
+          "descripcion": "Your honeymoon will be an experience that you will both treasure in your hearts forever. From the romantic setting in Grand Residences Riviera Cancun Resort to the gourmet cuisine, we help make it truly special.",
+          "alt": "Luna de miel: Reserva tu luna de miel en el paraíso"
+        },
+        {
+          "titulo": "Vow Renewal",
+          "descripcion": "Renew your marriage vows on the beach surrounded by family and friends. Enjoy impeccable service and every luxury during an unforgettable day in paradise.",
+          "alt": "Renovación de votos nupciales: Reafirma tu amor con un romántico evento en nuestro resort todo incluido en la riviera maya"
+        },
+        {
+          "titulo": "Romantic Dinner",
+          "descripcion": "Plan a romantic dinner to surprise your soul mate or to celebrate an anniversary or birthday. Tell us your plan and we will make it come true.",
+          "alt": "Cena romántica: Sorprende a tu pareja con una propuesta de matri"
+        }
+      ]
+    },
+    "grupos": {
+      "titulo": "Group events",
+      "descripcion": "Whether you are planning an award ceremony, a business meeting or a conference, we will surprise your guests with a delicious menu and fabulous decor in an incredible setting at Grand Residences, Riviera Maya Cancun Resort with the sea center stage.",
+      "lista": [
+        "",
+        "",
+        ""
+      ],
+      "contacto": "Contact for groups",
+      "llamanos": "Call us"
+    },
+    "comentarios": {
+      "titulo": "Comments from our visitors",
+      "subtitulo": "",
+      "lista": [
+        {
+          "titulo": "Exclusive and Relaxing",
+          "descripcion": "My (new) husband and I recently had our wedding at Grand Residences Riviera Cancun in July 2021. We chose this resort among the many others we have visited simply because of it's exclusive high end experience. Their customer service is out of this world. So much as many employees learn your first name and greet you around the resort. All of our guests loved the hospitality and our wedding was magical.",
+          "nombre": "Gabriella R ",
+          "fecha": "Trip type: Wedding",
+          "avatar": "woman-1"
+        },
+        {
+          "titulo": "Great weekend getaway!",
+          "descripcion": "A friend and I recently stayed at the Grand Residences for a destination wedding. The staff was wonderful and the wedding was beautiful! The staff are highly attentive and really get to know you even if you are just staying for a few days. Felix and Jorge know how to make some of the best drinks! The banana monkey and chocolate cake shots are my new favorites! The food was also amazing, I have never had lobster so many days in a row before!",
+          "nombre": "Amanda K",
+          "fecha": "Trip type: Traveled with friends",
+          "avatar": "woman-1"
+        },
+        {
+          "titulo": "Dream Wedding",
+          "descripcion": "Just returned from Puerto Morelos for my son's wedding. The stay at the Grand Residences couldn't have been nicer. The service was amazing, the rooms were amazing and the food was fantastic. This is the perfect place for a destination wedding and Margarita is a wonderful wedding planner. We got the tail end of a tropical storm and had to move everything indoors and they still made it a beautiful day for all. It is a smaller resort and they take very good care of you. Calling you by your first name any where you go in the resort. I would highly recommend it for any occasion. We will be going back!!",
+          "nombre": "Rose L",
+          "fecha": "Trip type: Family",
+          "avatar": "woman-2"
+        },
+        {
+          "titulo": "50th anniversary",
+          "descripcion": "Our daughter had an amazing wedding here in December 2016 and we brought our family back for our 50th. Kids and grandkids threw an amazing surprise party in our lovely master suite with the help of Carla and Cesar. Our always helpful bartenders.                Antonio and Ramon were great fun at water aerobics. Erik always wonderful at Heavenly Bar and the pool. Others too numerous to mention. Grand Residence staff are outstanding. Hope to visit again.",
+          "nombre": "Carmel N",
+          "fecha": "Trip type: Family",
+          "avatar": "woman-1"
+        }
+      ]
+    },
+    "news title": "Subscribe to our newsletter about events",
+    "news thanks": "Thank you for subscribing!",
+    "news events_body": "You are signing up to receive the latest information about weddings, news and special offers at The Grand Residences Riviera Cancun Resort.",
+    "news boton": "Send",
+    "news casilla1": "I have read and agree with the <a href=\"/privacy-policy\" target=\"_blank\">Privacy Policy </a> and I give my consent to be subscribed to the Grand Residences mailing list to receive news and offers about this resort.",
+    "news casilla2": "",
+    "instagram": "Find out what happens at Grand Residences",
+    "email_error": "Invalid email, please try another one.",
+    "we_have_date": "We have a date",
+    "we_not_sure": "We are not sure",
+    "budget": "Estimated budget"
   }
 }
