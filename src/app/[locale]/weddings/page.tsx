@@ -9,6 +9,7 @@ import CarouselCelebrations from "@/components/pages/weddings/CarouselCelebratio
 import CardImg from "@/components/pages/home/Cardimg";
 import ModalGroups from "@/components/pages/weddings/ModalGroups";
 import CarouselReviews from "@/components/pages/weddings/CarouselReviews";
+import WeddingSubscribe from "@/components/pages/weddings/WeddingSubscribe";
 
 const Page = async () => {
     const t = await getTranslations('weddings');
@@ -110,6 +111,9 @@ const Page = async () => {
                 {/*Comentarios*/}
                 <h3 className="text-3xl mb-10 text-center">{t('comentarios.titulo')}</h3>
                 <CarouselReviews/>
+
+                {/* Subscription form   */}
+                <WeddingSubscribe/>
             </div>
         </main>
     );
