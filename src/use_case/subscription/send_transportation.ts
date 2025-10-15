@@ -1,5 +1,5 @@
 'use server'
-import {formTransportationSchema} from "@/use_case/supscription/transportations.schema";
+import {formTransportationSchema} from "@/use_case/subscription/transportations.schema";
 import {recaptchaValidate} from "@/lib/recaptcha";
 
 export const sendTransportation = async (req: unknown, token: string): Promise<{
