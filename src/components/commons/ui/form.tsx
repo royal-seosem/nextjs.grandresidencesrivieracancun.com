@@ -113,7 +113,7 @@ function FormLabel({
 
 function FormInput({className, ...props}: React.ComponentProps<"input">) {
     return (
-        <Input className={cn("border-0 text-xs h-auto", className)} {...props}/>
+        <Input className={cn("border-0 text-base h-6", className)} {...props}/>
     )
 }
 

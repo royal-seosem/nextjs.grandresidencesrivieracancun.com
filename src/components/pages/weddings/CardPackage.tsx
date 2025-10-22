@@ -6,9 +6,9 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
 import {Button} from "@/components/commons/ui/button";
 import Modal from "@/components/commons/ui/modal/modal";
-import Paragraph from "@/components/commons/ui/paragraph";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
+import FormWedding from "@/components/pages/weddings/FormWedding";
 
 
 export interface PackageInfo {
@@ -28,6 +28,8 @@ const CardPackage = (
     {infoPackage}: CardPackageProps,
 ) => {
     const [open, setOpen] = React.useState(false);
+    const [showForm, setShowForm] = React.useState<boolean>(false)
+
     const t = useTranslations('weddings');
     const tGeneral = useTranslations('general');
     return (
@@ -69,7 +71,10 @@ const CardPackage = (
                             onClick={() => setOpen(true)}>
                             {tGeneral('read more')}
                         </Button>
-                        <Button className={"uppercase"} variant={"secondary"}>
+                        <Button
+                            className={"uppercase"}
+                            variant={"secondary"}
+                            onClick={() => setShowForm(true)}>
                             {t('formulario.titulo')}
                             <ArrowRightIcon width={16} height={16}/>
                         </Button>
@@ -83,7 +88,7 @@ const CardPackage = (
                         <People2Icon width={24} height={24}/>
                         {infoPackage.guests}
                     </p>
-                        <p className="text-2xl text-accent font-bold mb-4">{t('includes')}</p>
+                    <p className="text-2xl text-accent font-bold mb-4">{t('includes')}</p>
                     <ul className="list-disc ml-5 space-y-1 mb-4">
                         {
                             infoPackage.includes.map((item, index) => (
@@ -93,6 +98,14 @@ const CardPackage = (
                     </ul>
                     <div dangerouslySetInnerHTML={{__html: infoPackage.terms}}></div>
                     <PaymentMethods/>
+                </div>
+            </Modal>
+            <Modal open={showForm} setOpen={setShowForm} header={t('formulario.titulo')}>
+                <div className="p-5">
+                    <h3 className={"text-lg font-bold"}>{t('formulario.titulo')}</h3>
+                    <RichTextClient id={'formulario.descripcion'} ns={'weddings'}/>
+
+                    <FormWedding/>
                 </div>
             </Modal>
         </>

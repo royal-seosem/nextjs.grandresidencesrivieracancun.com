@@ -46,7 +46,7 @@ function SelectTrigger({
             )}
             {...props}
         >
-            <span className="grow text-base font-medium">
+            <span className="grow text-base text-left">
                 {children}
             </span>
             <SelectPrimitive.Icon asChild>

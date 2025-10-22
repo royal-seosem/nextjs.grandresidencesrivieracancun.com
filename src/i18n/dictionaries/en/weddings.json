@@ -213,7 +213,7 @@
       "pais": "Coutry of origin",
       "comentarios": "Comments",
       "boton": "Send",
-      "casilla1": "The personal and/or sensitive information requested is utilized to provide the user with the required service. The privacy of your information is protected under the guidelines of the Privacy Policy of the Company and as mandated by law. The use of this site is subject to unconditional acceptance by the user of the terms and conditions specified in our <a  target=\"_blank\" href=\":policy\">Privacy Policy.</a>",
+      "casilla1": "The personal and/or sensitive information requested is utilized to provide the user with the required service. The privacy of your information is protected under the guidelines of the Privacy Policy of the Company and as mandated by law. The use of this site is subject to unconditional acceptance by the user of the terms and conditions specified in our <PrivacyPolicy></PrivacyPolicy>",
       "titulo-grupos": "Contact us for groups",
       "descripcion-grupos": "<p>For more information about groups, contact us!</p> "
     },
