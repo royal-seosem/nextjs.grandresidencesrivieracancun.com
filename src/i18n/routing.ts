@@ -13,9 +13,9 @@ export const routing = defineRouting({
             en: "/",
             es: "/"
         },
-        "/offers":{
-            en:"/offers",
-            es:"/ofertas"
+        "/offers": {
+            en: "/offers",
+            es: "/ofertas"
         },
         "/suites": {
             en: "/suites-and-villas",
@@ -50,10 +50,14 @@ export const routing = defineRouting({
             es: "/gms/iniciar-session"
         },
 
+        "/privacy": {
+            en: "/privacy-policy",
+            es: "politica-de-privacidad"
+        },
         //Downloads
-        "/menu-spa":{
-            en:"/menu-spa",
-            es:"/menu-spa",
+        "/menu-spa": {
+            en: "/menu-spa",
+            es: "/menu-spa",
         }
 
     }

@@ -30,31 +30,31 @@
       },
       {
         "alt": "Memorable meetings surrounded by breathtaking views",
-        "img" : "/img/weddings/wedding-d.jpg"
+        "img": "/img/weddings/wedding-d.jpg"
       },
       {
         "alt": "Grand Residences served as the perfect venue for a elegant gala",
-        "img" : "/img/weddings/wedding-e.jpg"
+        "img": "/img/weddings/wedding-e.jpg"
       },
       {
         "alt": "Social events create memories you'll treasure always",
-        "img" : "/img/weddings/wedding-a.jpg"
+        "img": "/img/weddings/wedding-a.jpg"
       },
       {
         "alt": "Social events create memories you'll treasure always",
-        "img" : "/img/weddings/wedding-f.jpg"
+        "img": "/img/weddings/wedding-f.jpg"
       },
       {
         "alt": "Social events create memories you'll treasure always",
-        "img" : "/img/weddings/wedding-g.jpg"
+        "img": "/img/weddings/wedding-g.jpg"
       },
       {
         "alt": "Social events create memories you'll treasure always",
-        "img" : "/img/weddings/wedding-h.jpg"
+        "img": "/img/weddings/wedding-h.jpg"
       },
       {
         "alt": "Social events create memories you'll treasure always",
-        "img" : "/img/weddings/wedding-i.jpg"
+        "img": "/img/weddings/wedding-i.jpg"
       }
     ],
     "includes": "Includes",
@@ -77,7 +77,7 @@
             "15% discount when booking Spa services for the Bride and Groom (Product purchases not included)",
             "Professional Wedding coordinator"
           ],
-          "terms": "<p>Package price for up to 20 people $950 USD. Taxes included.<br></br>Rates are subject to change without prior notice<br></br>All locations for ceremonies and private events are outdoors<br></br>In the event of bad weather, alternative locations are subject to availability<br>Service and taxes are included</p>",
+          "terms": "<p>Package price for up to 20 people $950 USD. Taxes included.</br>Rates are subject to change without prior notice</br>All locations for ceremonies and private events are outdoors</br>In the event of bad weather, alternative locations are subject to availability<br>Service and taxes are included</p>",
           "priceLabel": "<p>Package price for up to 20 people $950 USD. Taxes included.</p>"
         },
         {
@@ -103,7 +103,7 @@
             "Romantic dinner for Bride & Groom held at a predetermined location",
             "Professional Wedding coordinator"
           ],
-          "terms": "<p>Package price for up to 20 people with All Inclusive US$1,800. Taxes included.<br></br>Package price for up to 20 people with European Plan US$2,100. Taxes included.<br></br>Rates are subject to change without prior notice<br></br>All locations for ceremonies and private events are outdoors<br></br>In the event of bad weather, alternative locations are subject to availability<br></br>Service and taxes are included</p>",
+          "terms": "<p>Package price for up to 20 people with All Inclusive US$1,800. Taxes included.</br>Package price for up to 20 people with European Plan US$2,100. Taxes included.</br>Rates are subject to change without prior notice</br>All locations for ceremonies and private events are outdoors</br>In the event of bad weather, alternative locations are subject to availability</br>Service and taxes are included</p>",
           "priceLabel": "<p>Package price for up to 20 people with All Inclusive $1,800 USD. Taxes included.<br>Package price for up to 20 people with European Plan $2,100 USD. Taxes included.</p>"
         },
         {
@@ -140,8 +140,8 @@
               "Private event venue"
             ]
           },
-          "terms": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.<br></br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.<br></br>Rates are subject to change without notice<br></br>                All locations for ceremonies and private events are outdoors<br></br>                In the event of bad weather, alternative locations are subject to availability<br></br>                Service and taxes are included            </p>",
-          "priceLabel": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.<br></br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.                </p>"
+          "terms": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.</br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.</br>Rates are subject to change without notice</br>                All locations for ceremonies and private events are outdoors</br>                In the event of bad weather, alternative locations are subject to availability</br>                Service and taxes are included            </p>",
+          "priceLabel": "<p>Package price for up to 30 people with All Inclusive $2,500 USD. Taxes included.</br>Package price for up to 30 people with European Plan $3,600 USD. Taxes included.                </p>"
         },
         {
           "img": "/img/weddings/wedding-pack-cherish.jpg",
@@ -193,8 +193,8 @@
               "Private event venue"
             ]
           },
-          "terms": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included.<br></br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included.<br></br>                Rates are subject to change without notice<br></br>                All locations for ceremonies and private events are outdoors<br></br>                In the event of bad weather, alternative locations are subject to availability<br></br>                Service and taxes are included            ",
-          "priceLabel": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included. <br></br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included."
+          "terms": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included.</br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included.</br>                Rates are subject to change without notice</br>                All locations for ceremonies and private events are outdoors</br>                In the event of bad weather, alternative locations are subject to availability</br>                Service and taxes are included            ",
+          "priceLabel": "                Package price for up to 50 people with All Inclusive $8,700 USD. Taxes included. </br>                Package price for up to 50 people with European Plan $14,500 USD. Taxes included."
         }
       ],
       "btn": "Download  Our Wedding Packages",
@@ -310,7 +310,7 @@
     "news thanks": "Thank you for subscribing!",
     "news events_body": "You are signing up to receive the latest information about weddings, news and special offers at The Grand Residences Riviera Cancun Resort.",
     "news boton": "Send",
-    "news casilla1": "I have read and agree with the <a href=\"/privacy-policy\" target=\"_blank\">Privacy Policy </a> and I give my consent to be subscribed to the Grand Residences mailing list to receive news and offers about this resort.",
+    "news casilla1": "<p>I have read and agree with the <PrivacyPolicy></PrivacyPolicy> and I give my consent to be subscribed to the Grand Residences mailing list to receive news and offers about this resort.</p>",
     "news casilla2": "",
     "instagram": "Find out what happens at Grand Residences",
     "email_error": "Invalid email, please try another one.",

@@ -289,7 +289,7 @@
     "news thanks": "¡Gracias por suscribirse!",
     "news events_body": "Te estás registrando para recibir la información más reciente sobre bodas, noticias y ofertas especiales en The Grand Residences Riviera Cancun Resort.",
     "news boton": "Enviar",
-    "news casilla1": "He leído y estoy de acuerdo con el <a href=\"/es/politica-de-privacidad\" target=\"_blank\">Aviso de Privacidad </a> y acepto suscribirme a la lista de envío de Grand Residences para recibir noticias y promociones sobre este resort.",
+    "news casilla1": "He leído y estoy de acuerdo con el <PrivacyPolicy></PrivacyPolicy> y acepto suscribirme a la lista de envío de Grand Residences para recibir noticias y promociones sobre este resort.",
     "news casilla2": "",
     "instagram": "Descubre lo que sucede en Grand Residences",
     "email_error": "Correo no valido intente con otro",

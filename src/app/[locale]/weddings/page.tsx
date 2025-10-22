@@ -10,6 +10,8 @@ import CardImg from "@/components/pages/home/Cardimg";
 import ModalGroups from "@/components/pages/weddings/ModalGroups";
 import CarouselReviews from "@/components/pages/weddings/CarouselReviews";
 import WeddingSubscribe from "@/components/pages/weddings/WeddingSubscribe";
+import InstagramFeed from "@/components/commons/shared/InstagramFeed";
+import SectionInstagram from "@/components/pages/home/SectionInstagram";
 
 const Page = async () => {
     const t = await getTranslations('weddings');
@@ -115,6 +117,9 @@ const Page = async () => {
                 {/* Subscription form   */}
                 <WeddingSubscribe/>
             </div>
+
+            {/* Instagram Feed */}
+            <SectionInstagram/>
         </main>
     );
 };
