@@ -7,6 +7,8 @@ import {useMessages, useTranslations} from "next-intl";
 import RichText from "@/components/commons/shared/RitchText";
 import CardDestination from "@/components/pages/destination/CardDestination";
 import CdnImage from "@/components/commons/ui/CdnImage";
+import CardExperience from "@/components/pages/destination/CardExperience";
+
 
 const Page = () => {
     const t = useTranslations('destination');
@@ -25,7 +27,7 @@ const Page = () => {
             </div>
 
             <div className={"my-container"}>
-                <Title level="h1" size="lg" className="text-center font-bold mb-5 lg:mb-10">
+                <Title level="h1" size="lg" className="text-center font-bold mb-5 lg:mb-10 lg:font-normal">
                     {t('h1a')}
                 </Title>
 
@@ -33,7 +35,7 @@ const Page = () => {
                     <RichText id={"descripcion"} ns={"destination"}/>
                 </div>
 
-                <div className={"grid grid-cols-2 gap-2 mb-10 w-full"}>
+                <div className={"grid grid-cols-2 gap-2 mb-10 w-full lg:hidden"}>
                     <CardDestination
                         className={"col-span-2"}
                         image={"/img/destination/680x400/gr-puertomorelos.jpg"}
@@ -81,19 +83,52 @@ const Page = () => {
                             description: {id: 'parrafo6.descripcion', ns: 'destination'},
                             image: m['destination']['parrafo6']['gallery']
                         }}/>
+                </div>
 
+                <div className={"hidden lg:flex flex-col gap-[100px] mb-10"}>
+                    <CardExperience
+                        title={t('parrafo1.titulo')}
+                        description={{id: 'parrafo1.descripcion', ns: 'destination'}}
+                        image={m['destination']['parrafo1']['gallery']}/>
 
+                    <CardExperience
+                        className={"flex-row-reverse"}
+                        title={t('parrafo2.titulo')}
+                        description={{id: 'parrafo2.descripcion', ns: 'destination'}}
+                        image={m['destination']['parrafo2']['gallery']}/>
+
+                    <CardExperience
+                        title={t('parrafo3.titulo')}
+                        description={{id: 'parrafo3.descripcion', ns: 'destination'}}
+                        image={m['destination']['parrafo3']['gallery']}/>
+
+                    <CardExperience
+                        className={"flex-row-reverse"}
+                        title={t('parrafo4.titulo')}
+                        description={{id: 'parrafo4.descripcion', ns: 'destination'}}
+                        image={m['destination']['parrafo4']['gallery']}/>
+
+                    <CardExperience
+                        title={t('parrafo6.titulo')}
+                        description={{id: 'parrafo6.descripcion', ns: 'destination'}}
+                        image={m['destination']['parrafo6']['gallery']}/>
                 </div>
             </div>
             <div>
                 <div className={"my-container"}>
-                    <h3 className={"font-secondary text-4xl mb-10 text-center"}>{t('parrafo5.titulo')}</h3>
+                    <h3 className={"font-secondary lg:font-primary text-4xl lg:text-[52px] mb-10 text-center"}>{t('parrafo5.titulo')}</h3>
                 </div>
                 <CdnImage
                     width={425} height={254}
-                    className={"w-full object-cover"}
+                    className={"w-full object-cover md:hidden"}
                     alt={t('parrafo5.titulo')}
                     src={"/img/destination/gr-cenotes-azul2.jpg"}/>
+
+                <CdnImage
+                    width={1687} height={620}
+                    className={"w-full object-cover hidden md:block"}
+                    alt={t('parrafo5.titulo')}
+                    src={"/img/destination/1360x400/gr-cenotes-azul2.jpg"}/>
             </div>
 
         </main>
