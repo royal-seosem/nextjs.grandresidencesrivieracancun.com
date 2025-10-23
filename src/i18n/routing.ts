@@ -54,6 +54,11 @@ export const routing = defineRouting({
             en: "/privacy-policy",
             es: "politica-de-privacidad"
         },
+
+        "/destination": {
+            en: "/destination",
+            es: "/destino"
+        },
         //Downloads
         "/menu-spa": {
             en: "/menu-spa",
