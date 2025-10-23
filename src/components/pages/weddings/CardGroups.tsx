@@ -15,17 +15,19 @@ const CardGroups = () => {
     const gallery = message['weddings']['group_event_alt'];
     const {phones} = useWebsite();
     return (
-        <article>
-            <Gallery variant={"secondary"} position={"on"}>
-                {
-                    gallery.map((item: { alt: string, img: string }, index: number) => (
-                        <CarouselItem key={index}>
-                            <CdnImage alt={item.alt} src={item.img} width={700} height={412}/>
-                        </CarouselItem>
-                    ))
-                }
-            </Gallery>
-            <div className={"p-5"}>
+        <article className={"md:flex gap-2 "}>
+            <div className={"md:w-1/2 md:order-1"}>
+                <Gallery variant={"secondary"} position={"on"}>
+                    {
+                        gallery.map((item: { alt: string, img: string }, index: number) => (
+                            <CarouselItem key={index}>
+                                <CdnImage className={"h-full object-cover"} alt={item.alt} src={item.img} width={700} height={412}/>
+                            </CarouselItem>
+                        ))
+                    }
+                </Gallery>
+            </div>
+            <div className={"p-5 md:w-1/2"}>
                 <h3 className="text-5xl mb-4">{t('grupos.titulo')}</h3>
 
                 <Paragraph>{t('grupos.descripcion')}</Paragraph>

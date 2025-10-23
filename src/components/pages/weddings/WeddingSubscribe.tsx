@@ -6,7 +6,7 @@ import {zodResolver} from "@hookform/resolvers/zod";
 import {useForm} from "react-hook-form";
 
 import {weddingSubscriptionSchema} from "@/use_case/subscription/weddingSubscription.schema";
-import {Form, FormControl, FormField, FormInput, FormItem} from "@/components/commons/ui/form";
+import {Form, FormControl, FormField, FormInput, FormItem, FormLabel} from "@/components/commons/ui/form";
 import {Checkbox} from "@/components/commons/ui/checkbox";
 import {cdn} from "@/lib/cdn";
 import airports from "@/use_case/airports.json";
@@ -52,70 +52,77 @@ const WeddingSubscribe = () => {
                     </h3>
                     <Form {...formSubscribe}>
                         <form onSubmit={formSubscribe.handleSubmit(onSubmit)}>
-                            <FormField
-                                control={formSubscribe.control}
-                                name={"first_name"}
-                                render={({field}) => (
-                                    <FormItem className={"bg-white"}>
-                                        <FormControl>
-                                            <FormInput
-                                                {...field}
-                                                value={field.value || ""}
-                                                placeholder={t('formulario.nombre')}
-                                                className={"p-2 text-base text-menu2"}/>
-                                        </FormControl>
-                                    </FormItem>
-                                )}/>
+                            <div className={"md:flex gap-5 "}>
+                                <div className={"md:w-1/2"}>
+                                    <FormField
+                                        control={formSubscribe.control}
+                                        name={"first_name"}
+                                        render={({field}) => (
+                                            <FormItem className={"bg-white"}>
+                                                <FormLabel>{t('formulario.nombre')}</FormLabel>
+                                                <FormControl>
+                                                    <FormInput
+                                                        {...field}
+                                                        value={field.value || ""}
+                                                        className={"p-2 text-base text-menu2"}/>
+                                                </FormControl>
+                                            </FormItem>
+                                        )}/>
 
-                            <FormField
-                                control={formSubscribe.control}
-                                name={"email"}
-                                render={({field}) => (
-                                    <FormItem className={"bg-white"}>
-                                        <FormControl>
-                                            <FormInput
-                                                {...field}
-                                                value={field.value || ""}
-                                                placeholder={t('formulario.correo')}
-                                                className={"p-2 text-base text-menu2"}/>
-                                        </FormControl>
-                                    </FormItem>
-                                )}/>
+                                    <FormField
+                                        control={formSubscribe.control}
+                                        name={"email"}
+                                        render={({field}) => (
+                                            <FormItem className={"bg-white"}>
+                                                <FormLabel>{t('formulario.correo')}</FormLabel>
+                                                <FormControl>
+                                                    <FormInput
+                                                        {...field}
+                                                        value={field.value || ""}
+                                                        className={"p-2 text-base text-menu2"}/>
+                                                </FormControl>
+                                            </FormItem>
+                                        )}/>
+                                </div>
+                                <div className={"md:w-1/2"}>
+                                    <FormField
+                                        control={formSubscribe.control}
+                                        name={"country"}
+                                        render={({field}) => (
+                                            <FormItem className={"bg-white"}>
+                                                <FormLabel>{t('formulario.pais')}</FormLabel>
+                                                <FormControl>
 
-                            <FormField
-                                control={formSubscribe.control}
-                                name={"country"}
-                                render={({field}) => (
-                                    <FormItem className={"bg-white"}>
-                                        <FormControl>
-                                            <Select
-                                                name={field.name}
-                                                value={field.value || ""}
-                                                onValueChange={field.onChange}>
-                                                <SelectTrigger
-                                                    className={"p-2 text-base text-left placeholder:text-gray-400 placeholder:opacity-70"}>
-                                                    <SelectValue placeholder={t('formulario.pais')}/>
-                                                </SelectTrigger>
-                                                <SelectContent>
-                                                    {airports.map((airport: {
-                                                        id: string,
-                                                        label: string
-                                                    }, index: number) => (
-                                                        <SelectItem key={index} value={airport.id}>
-                                                            {airport.label}
-                                                        </SelectItem>
-                                                    ))}
-                                                </SelectContent>
+                                                    <Select
+                                                        name={field.name}
+                                                        value={field.value || ""}
+                                                        onValueChange={field.onChange}>
+                                                        <SelectTrigger
+                                                            className={"p-2 text-base text-left placeholder:text-gray-400 placeholder:opacity-70"}>
+                                                            <SelectValue/>
+                                                        </SelectTrigger>
+                                                        <SelectContent>
+                                                            {airports.map((airport: {
+                                                                id: string,
+                                                                label: string
+                                                            }, index: number) => (
+                                                                <SelectItem key={index} value={airport.id}>
+                                                                    {airport.label}
+                                                                </SelectItem>
+                                                            ))}
+                                                        </SelectContent>
 
-                                            </Select>
-                                        </FormControl>
-                                    </FormItem>
-                                )}/>
+                                                    </Select>
+                                                </FormControl>
+                                            </FormItem>
+                                        )}/>
 
-                            <Button variant={"primary"} className={"uppercase w-full"}>
-                                {t('news boton')}
-                                <ArrowRightIcon width={16} height={16}/>
-                            </Button>
+                                    <Button variant={"primary"} className={"uppercase w-full"}>
+                                        {t('news boton')}
+                                        <ArrowRightIcon width={16} height={16}/>
+                                    </Button>
+                                </div>
+                            </div>
 
                             <FormField
                                 control={formSubscribe.control}

@@ -28,7 +28,7 @@ const CarouselPackages = (
             button={ButtonDowload()}>
             {
                 packages.map((item: PackageInfo, index: number) => (
-                    <CarouselItem key={index} className={"md:basis-1/2"}>
+                    <CarouselItem key={index} className={"md:basis-1/2 lg:basis-1/3"}>
                         <div className={"p-2 h-full"}>
                             <CardPackage infoPackage={item}/>
                         </div>

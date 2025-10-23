@@ -36,6 +36,7 @@ const CardPackage = (
         <>
             <article className="shadow-md">
                 <CdnImage
+                    className={"w-full object-cover h-full"}
                     alt={infoPackage.title}
                     src={infoPackage.img}
                     width={500}

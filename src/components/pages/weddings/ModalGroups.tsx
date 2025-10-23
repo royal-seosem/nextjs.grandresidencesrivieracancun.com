@@ -10,10 +10,15 @@ const ModalGroups = () => {
     const [open, setOpen] = React.useState(false);
     return (
         <div>
-            <CardImg
-                text={t('grupos.titulo')}
-                src={"img/weddings/wedding-e.jpg"}
-                onClick={() => setOpen(true)}/>
+            <div className={"md:hidden"}>
+                <CardImg
+                    text={t('grupos.titulo')}
+                    src={"img/weddings/wedding-e.jpg"}
+                    onClick={() => setOpen(true)}/>
+            </div>
+            <div className={"hidden md:block"}>
+                <CardGroups/>
+            </div>
 
             <Modal open={open} setOpen={setOpen} header={t('grupos.titulo')}>
                 <CardGroups/>

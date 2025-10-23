@@ -12,6 +12,7 @@ import CarouselReviews from "@/components/pages/weddings/CarouselReviews";
 import WeddingSubscribe from "@/components/pages/weddings/WeddingSubscribe";
 import InstagramFeed from "@/components/commons/shared/InstagramFeed";
 import SectionInstagram from "@/components/pages/home/SectionInstagram";
+import RichText from "@/components/commons/shared/RitchText";
 
 const Page = async () => {
     const t = await getTranslations('weddings');
@@ -36,6 +37,10 @@ const Page = async () => {
                 <Title level="h2" size={"lg"}
                        className="text-center font-bold mb-5 lg:mb-10"> {t('h1b')} </Title>
 
+                <div className="hidden md:block mb-10">
+                    <RichText id={"descripcion"} ns={"weddings"}/>
+                </div>
+
                 <Title className={"text-center mb-6 font-bold"} size={"sm"} level={"h3"}>{t('paquetes.titulo')}</Title>
 
                 <div className={"mb-10"}>
@@ -43,7 +48,7 @@ const Page = async () => {
                 </div>
 
                 <h3 className="text-3xl mb-10 text-center">{t('diferenciadores.titulo')}</h3>
-                <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
                     <div className="flex flex-col items-center justify-center">
                         <CdnImage
                             className="block mb-8 rounded-full"
@@ -91,6 +96,7 @@ const Page = async () => {
 
                 {/*Celebraciones*/}
                 <h3 className="text-3xl mb-10 text-center">{t('celebraciones.titulo')}</h3>
+
                 <div className="mb-10">
                     <CarouselCelebrations items={celebrations}/>
                 </div>
@@ -112,7 +118,9 @@ const Page = async () => {
 
                 {/*Comentarios*/}
                 <h3 className="text-3xl mb-10 text-center">{t('comentarios.titulo')}</h3>
-                <CarouselReviews/>
+                <div className={"mb-10"}>
+                    <CarouselReviews/>
+                </div>
 
                 {/* Subscription form   */}
                 <WeddingSubscribe/>

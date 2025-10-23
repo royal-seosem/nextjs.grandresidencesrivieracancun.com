@@ -13,7 +13,7 @@ const CarouselCelebrations = (
     return (
         <Gallery variant={"primary"} position={"bottom"}>
             {items.map((item, index) => (
-                <CarouselItem key={index} className={"basis-[350px]"}>
+                <CarouselItem key={index} className={"basis-[350px] lg:basis-1/3"}>
                     <CardCelebration {...item}/>
                 </CarouselItem>
             ))}
