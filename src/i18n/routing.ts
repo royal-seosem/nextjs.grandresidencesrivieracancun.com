@@ -59,6 +59,11 @@ export const routing = defineRouting({
             en: "/destination",
             es: "/destino"
         },
+
+        "/faqs":{
+            en: "/faqs",
+            es: "/preguntas-frecuentes"
+        },
         //Downloads
         "/menu-spa": {
             en: "/menu-spa",

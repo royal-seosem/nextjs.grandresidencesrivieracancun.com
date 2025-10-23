@@ -88,9 +88,9 @@ const MenuMobile = () => {
                             </a>
                         </li>
                         <li className="px-5 py-1 bg-menu">
-                            <a href="faqs">
+                            <Link onClick={()=>setOpen(false)} href="/faqs">
                                 {tmenu('faqs')}
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="px-5 py-1 bg-menu">

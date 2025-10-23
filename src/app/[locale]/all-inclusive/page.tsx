@@ -12,6 +12,7 @@ import {cdn} from "@/lib/cdn";
 import AllInclusiveInformation from "@/components/pages/all-inclusive/AllInclusiveInformation";
 import CardThemeNights from "@/components/pages/all-inclusive/CardThemeNights";
 import CardExperience from "@/components/pages/all-inclusive/CardExperience";
+import {Link} from "@/i18n/navigation";
 
 const Page = () => {
     const t = useTranslations('all-inclusive');
@@ -43,7 +44,7 @@ const Page = () => {
                     <li className="md:w-1/5 md:shrink-0 flex items-center justify-center text-center
                         relative md:after:content-[''] md:after:absolute md:after:right-0 md:after:top-1/2 md:after:-translate-y-1/2 md:after:h-[70%] md:after:w-px md:after:bg-accent
                         lg:w-auto lg:px-4">
-                        <a>{t('acc-faqs')}</a>
+                        <Link href="/faqs">{t('acc-faqs')}</Link>
                     </li>
                     <li className="md:w-1/5 md:shrink-0 flex items-center justify-center text-center
                     lg:w-auto lg:px-4">

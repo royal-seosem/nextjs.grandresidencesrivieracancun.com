@@ -55,7 +55,7 @@ const Footer = () => {
                     <Link href="/destination">{t('destination')}</Link>
                     <Link href="/offers">{t('specials')}</Link>
                     <a href="https://blog.grandresidencesbyroyalresorts.com" target="_blanck">Blog</a>
-                    <Link href="/">{t('faqs')}</Link>
+                    <Link href="/faqs">{t('faqs')}</Link>
                     <Link href="/" target="_blanck">{t('owners area')}</Link>
                     <Link href="/">{t('about us')}</Link>
                 </div>
