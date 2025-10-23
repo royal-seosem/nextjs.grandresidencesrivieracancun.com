@@ -83,7 +83,7 @@ const MenuMobile = () => {
                             </button>
                         </li>
                         <li className="px-5 py-1 bg-menu">
-                            <a href="blogLink" target="_blanck">
+                            <a href="https://blog.grandresidencesbyroyalresorts.com" target="_blanck">
                                 {tmenu('blog')}
                             </a>
                         </li>

@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-2 grow">
                     <Link href="/destination">{t('destination')}</Link>
                     <Link href="/offers">{t('specials')}</Link>
-                    <Link href="/" target="_blanck">Blog</Link>
+                    <a href="https://blog.grandresidencesbyroyalresorts.com" target="_blanck">Blog</a>
                     <Link href="/">{t('faqs')}</Link>
                     <Link href="/" target="_blanck">{t('owners area')}</Link>
                     <Link href="/">{t('about us')}</Link>
