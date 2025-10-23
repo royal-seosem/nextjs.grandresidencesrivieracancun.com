@@ -1,0 +1,69 @@
+{
+  "destination": {
+    "title": "About Destination | Grand Residences Riviera Cancun",
+    "metadescription": "The Riviera Maya is recognized for its vast wealth of natural wonders and its archaeological remains. The ideal destination for a well-deserved vacation.",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "Our destination is much more than beautiful white sand beaches",
+    "descripcion": "When you stay at Grand Residences Riviera Cancun, there's a whole new world awaiting discovery on your doorstep. Unforgettable travel adventures include visiting the Yucatan's world-famous archaeological sites and exploring the Cenote Route, mysterious sinkholes filled with crystal-clear water in the jungle that were sacred places for the ancient Maya. They form part of a labyrinth of caves and underground rivers. Venture out to explore the Mesoamerican Reef on a snorkeling tour, enjoy a shopping day, or feast on local cuisine.",
+    "parrafo1": {
+      "titulo": "Discover Puerto Morelos and its hidden charms",
+      "descripcion": "<p>This small town preserves the traditions of a Caribbean fishing village. It is a wonderful place that blends incredible natural riches, adventure and a bohemian and relaxed ambiance.</p><p>There are peaceful white sand beaches for your morning stroll. You can try your hand at a variety of water sports, diving or snorkeling, go hiking and be sure to try different restaurants in the village serving fresh seafood, Mexican food and world cuisine.</p><p>Puerto Morelos is a charming place that, although it may seem small, has everything to captivate you.</p>",
+      "gallery": [
+        {"src": "/img/destination/gr-puertomorelos-1.jpg", "alt": "Enjoy the beautiful beaches in Puerto Morelos"},
+        {"src": "/img/destination/gr-puertomorelos-2.jpg", "alt": "Leaning lighthouse in Puerto Morelos, Mexico"},
+        {"src": "/img/destination/gr-puertomorelos-3.jpg", "alt": "Fishermen unload their catch on the dock, Puerto Morelos"},
+        {"src": "/img/destination/gr-puertomorelos-4.jpg", "alt": "Fishermen unload their catch on the dock, Puerto Morelos"}
+      ]
+    },
+    "parrafo2": {
+      "titulo": "Discover the secrets of Maya culture",
+      "descripcion": "<p>Ancient temples and pyramids lie scattered across the Yucatan Peninsula, they are the legacy of the Maya, a people that forged a mighty civilization in southeast Mexico and Central America more than 1,500 years ago. The area's famous archaeological sites are all within easy traveling distance of Grand Residences.</p><p>Visit Tulum, the cliff top city on the shores of the Caribbean or Coba deep in the jungle.</p><p>The ancient cities of Chichen Itza and Uxmal in the neighboring state of Yucatan are both UNESCO World Heritage Sites.</p>",
+      "gallery": [
+        {"src": "/img/destination/secret-of-maya-1.jpg", "alt":  "The archaeological site of Tulum has amazing views of the Caribbean"},
+        {"src": "/img/destination/secret-of-maya-2.jpg", "alt":  "In ancient times Tulum was called Zama or dawn"},
+        {"src": "/img/destination/secret-of-maya-3.jpg", "alt":  "Enjoy the landscapes of the Mayan Riviera"},
+        {"src": "/img/destination/secret-of-maya-4.jpg", "alt":  "Enjoy the landscapes of the Mayan Riviera"},
+        {"src": "/img/destination/secret-of-maya-5.jpg", "alt":  "Enjoy the landscapes of the Mayan Riviera"}
+      ],
+      "title-short": "Maya Culture"
+    },
+    "parrafo3": {
+      "titulo": "The magical world of the Mesoamerican Reef",
+      "descripcion": "Coral reefs are home to a diverse variety of marine flora and fauna, as rich in life as the tropical rain forest. Stretching south along the Mexican Caribbean coast, the Mesoamerican Reef is the world's second largest coral reef system, a place of incredible beauty. Start your underwater adventures in the Puerto Morelos National Marine Park with unforgettable snorkeling and dive trips. Exploring this marine treasure is an experience that you cannot miss! Experienced divers can also take specialized cave diving courses and explore the Riviera Maya's cenotes and underground rivers, the longest discovered to date in the world. Admire the beauty of ancient stalactites and stalagmites and see endemic fish species.",
+      "gallery": [
+        {"src": "/img/destination/gr-diving-1.jpg", "alt": "Dive or snorkel the Mesoamerican Reef"},
+        {"src": "/img/destination/gr-diving-2.jpg", "alt": "Enjoy the beauty of the cenotes in the Riviera Maya"},
+        {"src": "/img/destination/gr-diving-3.jpg", "alt": "The perfect place to enjoy a shopping day"},
+        {"src": "/img/destination/gr-diving-4.jpg", "alt": "The perfect place to enjoy a shopping day"}
+      ],
+      "title-short": "Dive / Snorkel"
+    },
+    "parrafo4": {
+      "titulo": "The perfect place to enjoy a shopping day",
+      "descripcion": "<p>If you have shopping plans, the Riviera Maya is a perfect spot. Browse the stores and markets in Puerto Morelos before visiting Playa del Carmen and Cancun. You'll find a wide variety of souvenirs and handicrafts, as well as clothing stores and boutiques with the latest in fashion and accessories from leading designer brands.</p><p>After enjoying an afternoon of shopping, there are plenty of bars, cafes and restaurants to choose from.</p>",
+      "gallery": [
+        {"src": "/img/destination/shopping-1.jpg", "alt": "Buy the most beautiful local crafts"},
+        {"src": "/img/destination/shopping-2.jpg", "alt": "From ceramics to textiles, Mexican folk art make great souvenirs"},
+        {"src": "/img/destination/shopping-3.jpg", "alt": "From malls to boutiques, galleries and markets, the Riviera Maya has it all"},
+        {"src": "/img/destination/shopping-4.jpg", "alt": "From malls to boutiques, galleries and markets, the Riviera Maya has it all"},
+        {"src": "/img/destination/shopping-5.jpg", "alt": "From malls to boutiques, galleries and markets, the Riviera Maya has it all"}
+      ]
+    },
+    "parrafo5": {
+      "titulo": "Enjoy the natural wonders that our destination has for you",
+      "descripcion": "<p>During your Grand Residences vacation reconnect with nature by exploring some of the Yucatan's incredible wild places, the biosphere reserves of Sian Ka'an, Contoy and Ria Lagartos. Explore the Cenote Route and be sure to visit the Riviera Maya's many eco and adventure parks for a day of jungle fun.</p><p>The Riviera Maya has everything to turn your vacation into an unforgettable trip.</p>"
+    },
+    "parrafo6": {
+      "titulo": "Discover the surroundings of Puerto Morelos.",
+      "descripcion": "Let yourself be cultivated by Cancun and Playa del Carmen. Cancun offers a perfect combination of breathtaking beaches, exciting activities, and lively nightlife. Dive into its crystal clear waters and enjoy the sun on its white sandy beaches. The Hotel Zone is full of bars, nightclubs, and restaurants that offer various options. On the other hand, Playa del Carmen will surprise you with its bohemian charm and vibrant Quinta Avenida, full of restaurants, stores, and nightlife.",
+      "gallery": [
+        {"src": "/img/destination/gr-destiny-1.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-2.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-3.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-4.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-5.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"}
+      ]
+    },
+    "boton": "Quote your stay now"
+  }
+}

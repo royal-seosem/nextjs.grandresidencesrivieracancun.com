@@ -5,7 +5,7 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import {cn} from "@/lib/utils";
 
-interface CardExperienceProps {
+export interface CardExperienceProps {
     className?: string;
     title: string;
     description: {

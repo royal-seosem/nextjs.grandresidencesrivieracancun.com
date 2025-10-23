@@ -1,0 +1,58 @@
+{
+  "destination": {
+    "title": "Conoce el Destino | Grand Residence Riviera Cancun",
+    "metadescription": "La Riviera Maya es reconocida por su vasta riqueza de maravillas naturales y vestigios arqueológicos que alberga. El destino ideal para unas vacaciones.",
+    "og_image": "https://grandresidencesrivieracancun.com/img/banners/home.jpg",
+    "h1a": "La Riviera Maya es más que hermosas playas con arena blanca",
+    "descripcion": "Al hospedarte en Grand Residences Riviera Cancun, tendrás al alcance de tu mano una gran variedad de lugares sorprendentes para explorar y actividades divertidas que harán de tu estancia una experiencia aún más entretenida. Visita las zonas arqueológicas o recorre la ruta de los cenotes, donde podrás disfrutar de una gran variedad de ríos subterráneos conectados entre sí, aventúrate a explorar el Gran Arrecife Maya en un tour de buceo, deléitate con la cocina local o escápate a Cancún o Playa del Carmen para un día de compras en donde puedes terminar disfrutando de la vida nocturna.",
+    "parrafo1": {
+      "titulo": "Descubre Puerto Morelos y su encanto escondido",
+      "descripcion": "<p>Este pequeño poblado conserva las características de un pueblo de pescadores en el Caribe. Es un lugar maravilloso donde se combina el mundo secreto de su entorno natural, la aventura y un ambiente bohemio y relajado.</p><p>Una de sus particularidades es la tranquilidad de sus playas. Puedes practicar deportes acuáticos, buceo o snorkel, hacer senderismo o probar los distintos restaurantes con alimentos variados de cocina mundial.</p><p>Puerto Morelos es un lugar encantador que, aunque pudiera parecer pequeño, tiene todo para cautivarte.</p>",
+      "gallery": [
+        {"src": "/img/destination/gr-puertomorelos-1.jpg", "alt": "Disfruta de las hermosas playas en Puerto Morelos"},
+        {"src": "/img/destination/gr-puertomorelos-2.jpg", "alt": "Faro inclinado de Puerto Morelos, México."},
+        {"src": "/img/destination/gr-puertomorelos-3.jpg", "alt": "La playa en Puerto Morelos"},
+        {"src": "/img/destination/gr-puertomorelos-4.jpg", "alt": "La playa en Puerto Morelos"}
+      ]
+    },
+    "parrafo2": {
+      "titulo": "Descubre los secretos de la cultura Maya",
+      "descripcion": "<p>Puerto Morelos es el lugar ideal para vivir unas relajantes vacaciones en familia en la Riviera Maya, y tus vacaciones no estarán completas hasta que entres en contacto con la cultura maya, descubre los secretos mejor guardados de esta antigua civilización que nos ha dejado mucha historia y riquezas culturales y naturales por explorar. Durante tu estancia en Grand Residences Riviera Cancun, tendrás la oportunidad de disfrutar un poco de todo, pero algo que por supuesto no te puedes perder son los sitios arqueológicos, donde podrás aprender más sobre su cultura y tradiciones, desde el antiguo puerto de Tulum, hasta la enigmática y mundialmente conocida ciudad prehispánica de Chichén Itzá hogar de la imponente pirámide de Kukulkán. Descubre la historia y los secretos de estos legendarios asentamientos y se parte de este increíble legado.</p>",
+      "gallery": [
+        {"src": "/img/destination/secret-of-maya-1.jpg", "alt":  "Visita los sitios arqueológicos de la zona"},
+        {"src": "/img/destination/secret-of-maya-2.jpg", "alt":  "Castillo de Tulúm, zona arqueológica de la cultura Maya"},
+        {"src": "/img/destination/secret-of-maya-3.jpg", "alt":  "Disfruta los paisajes de la Riviera maya"},
+        {"src": "/img/destination/secret-of-maya-4.jpg", "alt":  "Disfruta los paisajes de la Riviera maya"},
+        {"src": "/img/destination/secret-of-maya-5.jpg", "alt":  "Disfruta los paisajes de la Riviera maya"}
+      ],
+      "title-short": "Cultura Maya"
+    },
+    "parrafo3": {
+      "titulo": "Bucea o haz esnórquel en el Gran Arrecife Maya",
+      "descripcion": "El lugar perfecto para un día de compras si tienes planes de compras, la Riviera Maya es un lugar perfecto para esto. Puedes encontrar una gran variedad de souvenirs y artesanías, además de tiendas de ropa y boutiques con lo más novedoso de la moda y artículos de marcas de prestigio. Después de disfrutar una tarde de compras, podrás disfrutar de un rato divertido en los bares, cafés y restaurantes de la zona.",
+      "gallery": [
+        {"src": "/img/destination/gr-diving-1.jpg", "alt": "Bucea o esnorquelea en el Gran Arrecife Maya"},
+        {"src": "/img/destination/gr-diving-2.jpg", "alt": "Disfruta de la belleza de los cenotes mayas"},
+        {"src": "/img/destination/gr-diving-3.jpg", "alt": "Disfruta una tarde de compras en la Riviera Maya"},
+        {"src": "/img/destination/gr-diving-4.jpg", "alt": "Disfruta una tarde de compras en la Riviera Maya"}
+      ],
+      "title-short": "Buceo / Esnórquel"
+    },
+    "parrafo4": {
+      "titulo": "El lugar perfecto para una tarde de compras",
+      "descripcion": "<p>No hay vacaciones completas sin llevarte un recuerdo del lugar que visitaste y la Riviera Maya es el destino perfecto para encontrar eso y  más. Aquí descubrirás una gran variedad de tiendas de souvenirs y artesanías de la región, además, algo que todo visitante debe de hacer es un recorrido por las tiendas de ropa y boutiques en la quinta avenida de Playa del carmen, donde encontrarás lo más novedoso en moda así como artículos de marcas de prestigio; y después de disfrutar una tarde de compras, podrás pasar un rato agradable y divertido en los bares, cafés y restaurantes de la zona.</p>",
+      "gallery": [
+        {"src": "/img/destination/shopping-1.jpg", "alt": "Compra las más hermosas artesanías locales"},
+        {"src": "/img/destination/shopping-2.jpg", "alt": "Disfruta de la gran variedad de comercios en Puerto Morelos y la Riviera Maya"},
+        {"src": "/img/destination/shopping-3.jpg", "alt": "Disfruta de la gran variedad de comercios en Puerto Morelos y la Riviera Maya"},
+        {"src": "/img/destination/shopping-4.jpg", "alt": "Disfruta de la gran variedad de comercios en Puerto Morelos y la Riviera Maya"},
+        {"src": "/img/destination/shopping-5.jpg", "alt": "Disfruta de la gran variedad de comercios en Puerto Morelos y la Riviera Maya"}
+      ]
+    },
+    "parrafo5": {
+      "titulo": "Deléitate con las maravillas naturales y actividades que la Riviera Maya tiene y convierte tus vacaciones en un viaje inolvidable",
+      "descripcion": "<p>Al hospedarte en Grand Residences Riviera Cancun, tendrás al alcance de tu mano una gran variedad de lugares sorprendentes para explorar y actividades divertidas que harán de tu estancia una experiencia aún más entretenida. Visita las zonas arqueológicas o recorre la ruta de los cenotes, donde podrás disfrutar de una gran variedad de ríos subterráneos conectados entre sí, aventúrate a explorar el Gran Arrecife Maya en un tour de buceo, deléitate con la cocina local o disfruta de un día de compras para después terminar disfrutando de la vida nocturna del sitio.</p>"
+    },
+    "boton": "¡Reserva ya!"
+  }
+}
