@@ -94,7 +94,7 @@ const MenuMobile = () => {
                         </li>
 
                         <li className="px-5 py-1 bg-menu">
-                            <Link onClick={()=> setOpen(false)} href="/">
+                            <Link onClick={()=> setOpen(false)} href="/media-room">
                                 {tmenu('media')}
                             </Link>
                         </li>

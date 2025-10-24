@@ -64,6 +64,11 @@ export const routing = defineRouting({
             en: "/faqs",
             es: "/preguntas-frecuentes"
         },
+
+        "/media-room": {
+            en: "/media-room",
+            es: "/cuarto-de-prensa"
+        },
         //Downloads
         "/menu-spa": {
             en: "/menu-spa",

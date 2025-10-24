@@ -17,8 +17,8 @@ const ContactOptions = () => {
     return (
         <Drawer direction="right">
             <DrawerTrigger className="flex items-center gap-1">
-                <Image className="lg:hidden" src={"/icons/phone.svg"} alt={"icon phone"} width={24} height={24}/>
-                <span className="hidden lg:block">{t('contact')}</span>
+                <Image className="md:hidden lg:block" src={"/icons/phone.svg"} alt={"icon phone"} width={24} height={24}/>
+                <span className="hidden md:block lg:hidden">{t('contact')}</span>
                 <IconArrowDown width={20} height={20}/>
             </DrawerTrigger>
             <DrawerContent className="p-5">

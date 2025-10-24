@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             <nav className="my-container  flex justify-center pb-4 lg:hidden">
                 <ul className="text-base text-secondary flex flex-col gap-2">
-                    <li><Link href="/">{t("privacy policy")}</Link></li>
+                    <li><Link href="/privacy">{t("privacy policy")}</Link></li>
                     <li><Link href="/">{t("about us")}</Link></li>
                     <li><Link href="/">{t("resort policy")}</Link></li>
                 </ul>
@@ -62,8 +62,8 @@ const Footer = () => {
 
                 <div className="flex flex-col gap-2 grow">
                     <Link href="/">{t('resort policy')}</Link>
-                    <Link href="/" target="_blank">{t('privacy policy')}</Link>
-                    <Link href="/">{t('media')}</Link>
+                    <Link href="/privacy" target="_blank">{t('privacy policy')}</Link>
+                    <Link href="/media-room">{t('media')}</Link>
                     <Link href="/">{t('contact')}</Link>
                 </div>
             </nav>
