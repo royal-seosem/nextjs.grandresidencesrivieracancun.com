@@ -55,7 +55,7 @@ export default function Header() {
             </a>
         </nav>
 
-        <nav role="navigation" className=" my-container
+        <nav role="navigation" className=" my-container whitespace-nowrap
             flex flex-col justify-center items-center
             sm:flex-row sm:pb-4
             ">
