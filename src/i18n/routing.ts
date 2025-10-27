@@ -60,7 +60,7 @@ export const routing = defineRouting({
             es: "/destino"
         },
 
-        "/faqs":{
+        "/faqs": {
             en: "/faqs",
             es: "/preguntas-frecuentes"
         },
@@ -68,6 +68,20 @@ export const routing = defineRouting({
         "/media-room": {
             en: "/media-room",
             es: "/cuarto-de-prensa"
+        },
+        "/about-us": {
+            en: "/about-us",
+            es: "/acerca-de-nosotros"
+        },
+
+        "/resort-policies": {
+            en: "/resort-policies",
+            es: "/politicas-del-desarrollo"
+        },
+        //Todo: Make
+        "/contact": {
+            en: "/contact",
+            es: "/contacto"
         },
         //Downloads
         "/menu-spa": {
