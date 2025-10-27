@@ -1,0 +1,23 @@
+{
+  "media-room": {
+    "media-news": {
+      "title": "News"
+    },
+    "media-about": {
+      "title": "Videos",
+      "title-video": "PERFECTLY NESTLED IN THE RIVIERA MAYA'S FINEST BEACHFRONT ENCLAVE,",
+      "landing": "<p>Without a doubt, the Riviera Maya and the Yucatan offer more natural, cultural and ecological wonders than any other Caribbean destination. Discover the grandeur and excitement of this incredible area from your extraordinarily spacious and beautifully designed beachfront suite or residence, where a gracious English-speaking staff will deliver five-star luxury for an unforgettable vacation.</p><p>Ideally situated between Cancun and Playa del Carmen, within a half hour from the Cancun International Airport, Grand Residences is a tranquil enclave protected by a coral reef and National Marine Park in the front yard and a nature reserve in the backyard. A beach stroll takes you to Puerto Morelos, the Riviera Maya's last quaint fishing village and the inspiration for Jimmy Buffet's song about laid-back Margaritaville.</p><p>Welcome to a new standard in luxury and beachfront living.</p>",
+      "fact-sheet": "<h2>A REASON TO BE INSPIRED</h2><p>Every moment of your stay at Grand Residences Riviera Cancun, will be better than the last. Our facilities and program activities are planned for the entertainment and relaxation of each and </p>"
+    },
+    "flor-plans": {
+      "title": "Flor Plans",
+      "title2": "A PLACE FOR YOUR DREAMS",
+      "description": "<p>More than a place to sleep, book a personal space to dream. The main hallmark of Grand Residences is the spacious and luxurious suites with breathtaking views of the Caribbean Sea, elegant furniture and the latest technology.</p>"
+    },
+    "tour-360": {
+      "title": "360° Tour",
+      "title2": "TAKE A 360° TOUR OF OUR ROOMS AND RESTAURANTS",
+      "description": "<p>Explore our rooms, suites and restaurants before you arrive, see all the touches of elegance and comfort that await you. You'll fall in love with them.</p>"
+    }
+  }
+}

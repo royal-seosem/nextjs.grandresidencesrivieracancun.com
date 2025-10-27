@@ -1,0 +1,23 @@
+{
+  "media-room": {
+    "media-news": {
+      "title": "News"
+    },
+    "media-about": {
+      "title": "Videos",
+      "title-video": "IDEALMENTE UBICADO EN EL MEJOR ENCLAVE FRENTE A LA PLAYA DE LA RIVIERA MAYA",
+      "landing": "<p>Sin duda, la Riviera Maya y la península de Yucatán cuentan con más maravillas naturales, culturales y ecológicas que cualquier otro destino caribeño. Descubra la grandeza de esta increíble y emocionante zona desde su elegante y excepcionalmente amplia suite frente a la playa donde el personal atento lo consentirá con lujos de cinco estrellas para unas vacaciones inolvidables.</p><p>Grand Residences está entre los mejores hoteles del mundo, con la mejor hospitalidad y servicio.</p><p>Idealmente situado entre Cancún y Playa del Carmen, a solo media hora del Aeropuerto Internacional de Cancún, Grand Residences es un enclave tranquilo protegido por un arrecife de coral y con el Parque Nacional de la Marina y una reserva natural a un solo paso. Un paseo por la playa lo lleva a Puerto Morelos, el último pueblito de pescadores encantador de la Riviera Maya.</p><p>Bienvenido a un nuevo estándar de vida frente al mar y lujo al natural.</p>",
+      "fact-sheet": "<h2>PARA INSPIRARSE</h2><p>Cada momento de su estancia en Grand Residences Riviera Cancun será mejor que el anterior. Nuestras instalaciones y programa de actividades se programan para el entretenimiento y relajación de cada uno de nuestros huéspedes.</p>"
+    },
+    "flor-plans": {
+      "title": "Habitaciones",
+      "title2": "UN LUGAR DE ENSUEÑO",
+      "description": "<p>Más que un lugar para dormir, reserve un espacio personal para soñar. La atracción principal de Grand Residences son las amplias suites de lujo con vistas impresionantes del mar Caribe, muebles elegantes y la última tecnología. Viaje culinario al Caribe mexicano.</p>"
+    },
+    "tour-360": {
+      "title": "Recorrido 360°",
+      "title2": "HAGA UN RECORRIDO DE 360° POR NUESTRAS HABITACIONES Y RESTAURANTES",
+      "description": "<p>Da un paseo virtual por nuestros restaurantes y habitaciones, admira las vistas y el ambiente. Pronto estarás aquí disfrutando de la selección de espectaculares platillos gourmet que sirven.</p>"
+    }
+  }
+}
