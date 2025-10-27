@@ -1,15 +1,15 @@
 import React from 'react';
 import Menu from "@/components/pages/about-us/menu";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import RichText from "@/components/commons/shared/RitchText";
 import {useTranslations} from "next-intl";
+import RichText from "@/components/commons/shared/RitchText";
 
 const Page = () => {
     const t = useTranslations('about');
     return (
         <main>
             <CdnImage
-                className={"md: block w-full object-cover mb-10"}
+                className={"md:hidden w-full object-cover mb-10"}
                 alt={"Granresidences"}
                 width={750} height={400}
                 src={"/img/about/granresidences-destino-about.jpg"}

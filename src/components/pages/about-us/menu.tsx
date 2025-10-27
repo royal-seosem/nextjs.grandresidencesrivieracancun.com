@@ -44,7 +44,7 @@ const Menu = (
                         {
                             nav.map((item, index) => (
                                 <CarouselItem key={index}
-                                              className={"basis-2/5 mb:basis-2/8 text-center h-[47px] px-2"}>
+                                              className={"basis-2/5 md:basis-2/8 text-center h-[47px] px-2"}>
                                     <Link href={item.slug} className={cn(
                                         "bg-[#fcf6eb] border-b-2 border-[#fcf6eb] flex items-center justify-center h-full",
                                         nav[navActive].slug === item.slug && " border-menu2"

@@ -8,6 +8,7 @@ const baseResolvers: BaseResolvers = {
     strong: chunks => <strong className="font-bold">{chunks}</strong>,
     br: () => <br/>,
     p: chunks => <Paragraph>{chunks}</Paragraph>,
+    ul: chunks => <ul className="list-disc pl-5">{chunks}</ul>,
     ol: chunks => <ol className="list-decimal list-inside">{chunks}</ol>,
     li: chunks => <li>{chunks}</li>,
     b: chunks => <b>{chunks}</b>,
