@@ -2,7 +2,6 @@ import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
 import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import Booking from "@/components/commons/shared/booking/Booking";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import Title from "@/components/commons/ui/title";
 import SectionSuites from "@/components/pages/home/SectionSuites";
@@ -15,7 +14,7 @@ import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
 import {getReviews} from "@/use_case/reviews/get_reviews";
 import SectionInstagram from "@/components/pages/home/SectionInstagram";
 import SectionOffers from "@/components/pages/home/SectionOffers";
-import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
+import BookingHome from "@/components/pages/home/BookingHome";
 
 
 export default async function Home() {
@@ -29,7 +28,7 @@ export default async function Home() {
 
     return (
         <main>
-            <section className="relative">
+            <section className="relative lg:-mb-10">
                 <div className="aspect-[5/4] md:aspect-[1921/500]">
                     <SmartVideo
                         className="w-full h-auto"
@@ -72,12 +71,8 @@ export default async function Home() {
                     </Carousel>
                 </div>
             </section>
+            <BookingHome/>
             <div className="my-container p-5">
-                <div className="translate-y-[-50%] z-10 relative hidden lg:block">
-                    <BookingProvider>
-                        <Booking/>
-                    </BookingProvider>
-                </div>
                 <section className="lg:mb-14">
                     <Title className="lg:text-center lg:text-6xl ">
                         {t('title_resort')}
