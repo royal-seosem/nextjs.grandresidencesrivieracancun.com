@@ -9,6 +9,7 @@ import MyRoyal from "@/components/layout/Header/MyRoyal";
 import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
 import ContactOptions from "@/components/layout/Header/ContactOptions";
 import MenuMobile from "@/components/layout/Header/MenuMobile";
+import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 
 
 export default function Header() {
@@ -42,10 +43,12 @@ export default function Header() {
                 <span>52 99 81 00 06 92</span>
             </a>
 
-            <button className="hidden lg:flex items-center gap-1 text-sm text-white">
-                <Image src="/icons/pencil.svg" alt="Icon pencil" width={12} height={12}/>
-                <span>{t('manage reservations')}</span>
-            </button>
+            <ManageYourReservation/>
+
+            {/*<button className="hidden lg:flex items-center gap-1 text-sm text-white">*/}
+            {/*    <Image src="/icons/pencil.svg" alt="Icon pencil" width={12} height={12}/>*/}
+            {/*    <span>{t('manage reservations')}</span>*/}
+            {/*</button>*/}
 
             <a href="#" target="_blank" className="hidden sm:flex items-center gap-1 text-sm text-secondary"
                aria-label={t('owners area')}
