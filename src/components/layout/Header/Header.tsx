@@ -46,13 +46,6 @@ export default function Header() {
 
             <ManageYourReservation/>
             <OwnersArea/>
-
-            {/*<a href="#" target="_blank" className="hidden sm:flex items-center gap-1 text-sm text-secondary"*/}
-            {/*   aria-label={t('owners area')}*/}
-            {/*   rel="noopener noreferrer">*/}
-            {/*    <Image src="/icons/key.svg" alt="Icon key" width={12} height={12}/>*/}
-            {/*    <span>{t('owners area')}</span>*/}
-            {/*</a>*/}
         </nav>
 
         <nav role="navigation" className=" my-container whitespace-nowrap
