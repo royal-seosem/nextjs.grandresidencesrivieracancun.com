@@ -6,11 +6,9 @@ import {getMessages, getTranslations} from "next-intl/server";
 import CarouselPackages from "@/components/pages/weddings/CarouselPackages";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import CarouselCelebrations from "@/components/pages/weddings/CarouselCelebrations";
-import CardImg from "@/components/pages/home/Cardimg";
 import ModalGroups from "@/components/pages/weddings/ModalGroups";
 import CarouselReviews from "@/components/pages/weddings/CarouselReviews";
 import WeddingSubscribe from "@/components/pages/weddings/WeddingSubscribe";
-import InstagramFeed from "@/components/commons/shared/InstagramFeed";
 import SectionInstagram from "@/components/pages/home/SectionInstagram";
 import RichText from "@/components/commons/shared/RitchText";
 

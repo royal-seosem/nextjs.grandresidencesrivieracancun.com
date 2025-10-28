@@ -1,4 +1,3 @@
-import React from 'react';
 import {weddingFormSchema, WeddingFormType} from "@/use_case/subscription/weddingForm.schema";
 
 const sendWeddingForm = async (req: WeddingFormType): Promise<{
@@ -7,7 +6,7 @@ const sendWeddingForm = async (req: WeddingFormType): Promise<{
 }> => {
     const {success, error} = weddingFormSchema.safeParse(req);
     //Todo: API - Send wedding form
-    if (!success){
+    if (!success) {
         return {
             success: false,
             error: {

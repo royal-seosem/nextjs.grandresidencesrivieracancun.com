@@ -1,13 +1,11 @@
 import React from 'react';
 import Banner from "@/components/pages/offers/banner";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
-import ArrowLargeDownIcon from "@/components/commons/icons/arrow-large-down.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {getMessages, getTranslations} from "next-intl/server";
 import {getOffers} from "@/use_case/offers/get_offes";
 import CarouselOffers from "@/components/pages/offers/CarouselOffers";
-import {Button} from "@/components/commons/ui/button";
 import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
 import RichText from "@/components/commons/shared/RitchText";
 import CarouselReviews from "@/components/pages/offers/CarouselReviews";

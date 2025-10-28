@@ -110,7 +110,7 @@ const PrivacyEs = () => {
             <Paragraph>De igual manera puede solicitar la cancelación de la recepción de correos electrónicos informativos o de
                 promociones ingresando al enlace “Cancelar suscripción” ubicado en la parte inferior de los correos
                 electrónicos que reciba por parte de Royal Resorts® ® o si recibe comunicaciones por SMS respondiendo o
-                enviando un mensaje de texto con la palabra "STOP". Usted también puede desactivar las notificaciones
+                enviando un mensaje de texto con la palabra &#34;STOP&#34;. Usted también puede desactivar las notificaciones
                 “push” en las aplicaciones que funcionan bajo la marca Royal Resorts® de su dispositivo o cancelar su
                 suscripción poniéndose en contacto con nosotros a través de la cuenta de correo electrónico <a
                     href="mailto:datospersonales@royalresorts.com">datospersonales@royalresorts.com</a>.</Paragraph>
@@ -381,7 +381,7 @@ const PrivacyEs = () => {
                 tiempo y en diferentes sitios web u otros servicios en línea, mediante la colecta de datos de
                 dispositivos y de uso a través de medios automatizados, lo que incluye el uso de cookies. Estas
                 tecnologías le pueden reconocer a través de los diferentes dispositivos que utiliza, como una
-                computadora fija o portátil, un &#34;smartphone&#34; o una "tablet". Los terceros usan esta información para
+                computadora fija o portátil, un &#34;smartphone&#34; o una &#34;tablet&#34;. Los terceros usan esta información para
                 mostrar anuncios sobre productos y servicios que se ajusten a sus intereses. Puede ver dichos anuncios
                 en otros sitios web o aplicaciones móviles en cualquiera de sus dispositivos. Este proceso también nos
                 ayuda a administrar y realizar un seguimiento de la efectividad de nuestros esfuerzos de
@@ -427,8 +427,8 @@ const PrivacyEs = () => {
                     href="https://www.salesforce.com/products/marketing-cloud/sfmc/salesforce-dmp-consumer-choice">https://www.salesforce.com/products/marketing-cloud/sfmc/salesforce-dmp-consumer-choice/</a> No
                 obstante, tenga en cuenta que al bloquear o eliminar las cookies y tecnologías similares que se utilizan
                 en nuestros sitios web, es posible que no pueda aprovechar al máximo dichos sitios web.</Paragraph>
-            <Paragraph>Si bien algunos navegadores de Internet ofrecen la opción “Do Not Track” o “DNT” ("No realizar
-                seguimiento"), la cual permite que usted indique a los sitios web que no desea que se realice un
+            <Paragraph>Si bien algunos navegadores de Internet ofrecen la opción “Do Not Track” o “DNT” (&#34;No realizar
+                seguimiento&#34;), la cual permite que usted indique a los sitios web que no desea que se realice un
                 seguimiento de sus actividades en línea, estas funciones aún no son uniformes, debido a que en el ámbito
                 tecnológico, así como los organismos reguladores no han adoptado un estándar común al respecto. En
                 virtud de lo anterior, en la actualidad no podemos comprometemos a responder a las señales DNT de los

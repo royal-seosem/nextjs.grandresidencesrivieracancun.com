@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Gallery from "@/components/commons/ui/gallery/gallery";
-import CardPackage, {CardPackageProps, PackageInfo} from "@/components/pages/weddings/CardPackage";
+import CardPackage, {PackageInfo} from "@/components/pages/weddings/CardPackage";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import {Button} from "@/components/commons/ui/button";
 import {useTranslations} from "next-intl";
@@ -11,10 +11,10 @@ interface CarouselPackagesProps {
 }
 
 
-const ButtonDowload = ()=> {
+const ButtonDowload = () => {
     const t = useTranslations('weddings');
     return (
-        <Button  variant={"outline"}>
+        <Button variant={"outline"}>
             {t('paquetes.btn')}
         </Button>
     )
@@ -25,7 +25,7 @@ const CarouselPackages = (
 ) => {
     return (
         <Gallery variant={"primary"} position={"bottom"}
-            button={ButtonDowload()}>
+                 button={ButtonDowload()}>
             {
                 packages.map((item: PackageInfo, index: number) => (
                     <CarouselItem key={index} className={"md:basis-1/2 lg:basis-1/3"}>

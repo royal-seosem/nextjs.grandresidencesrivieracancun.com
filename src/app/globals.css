@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+    --header-height-mobile: 112px;
+    --header-height-desktop: 85px;
+
     --font-jost: "";
     --font-helvetica-nue: "";
     --font-lato: "";
@@ -140,7 +143,6 @@
     padding: 30px;
     border-radius: 4px;
 }
-
 
 
 .navigation-wrapper {

@@ -1,7 +1,6 @@
 import React from 'react';
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
-import Gallery from "@/components/commons/ui/gallery/gallery";
 import MediaRoom from "@/components/pages/media-room/MediaRoom";
 
 const Page = () => {

@@ -33,7 +33,7 @@ export default function Header() {
     }, []);
 
 
-    return <header className="bg-primary">
+    return <header className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
         <nav className="flex justify-end items-center gap-5 h-8 px-8" role="navigation">
             <a href="https://wa.me/529981000692" target="_blank"
                className="text-white hidden md:flex items-center gap-1 text-sm"
