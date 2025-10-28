@@ -1,11 +1,12 @@
 import React from 'react';
-import Menu from "@/components/pages/about-us/menu";
+import {getLocale} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import {useTranslations} from "next-intl";
-import RichText from "@/components/commons/shared/RitchText";
+import PrivacyEn from "@/components/pages/about-us/privacy_en";
+import PrivacyEs from "@/components/pages/about-us/PrivacyEs";
 
-const Page = () => {
-    const t = useTranslations('about');
+const Page = async () => {
+    const locale = await getLocale();
+
     return (
         <main>
             <CdnImage
@@ -22,13 +23,11 @@ const Page = () => {
                 src={"/img/about/1360x400/granresidences-destino-about.jpg"}
             />
 
-            <h1 className={"text-3xl my-5 md:text-6xl md:my-10  md:text-center font-medium"}>{t('h1b')}</h1>
+            {
+                locale === 'en' && <PrivacyEn/>
+            }
 
-            <Menu navActive={0}/>
-
-            <div className={"my-container"}>
-                <RichText id={"descripcion"} ns={"about"}/>
-            </div>
+            {locale === 'es' && <PrivacyEs/>}
 
         </main>
     );

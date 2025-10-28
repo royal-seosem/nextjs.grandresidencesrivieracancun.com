@@ -25,7 +25,7 @@ const Page = () => {
                 src={"/img/about/1360x400/granresidences-destino-about.jpg"}
             />
 
-            <h1 className={"text-3xl font-medium"}>{tG('policies')}</h1>
+            <h1 className={"text-3xl my-5 md:text-6xl md:my-10  md:text-center font-medium"}>{tG('policies')}</h1>
 
             <Menu navActive={1}/>
 

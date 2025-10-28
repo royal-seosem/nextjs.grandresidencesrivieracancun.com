@@ -52,7 +52,7 @@ export const routing = defineRouting({
 
         "/privacy": {
             en: "/privacy-policy",
-            es: "politica-de-privacidad"
+            es: "/politica-de-privacidad"
         },
 
         "/destination": {
