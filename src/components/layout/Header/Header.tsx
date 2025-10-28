@@ -10,6 +10,7 @@ import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
 import ContactOptions from "@/components/layout/Header/ContactOptions";
 import MenuMobile from "@/components/layout/Header/MenuMobile";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
+import OwnersArea from "@/components/layout/OwnersArea";
 
 
 export default function Header() {
@@ -44,18 +45,14 @@ export default function Header() {
             </a>
 
             <ManageYourReservation/>
+            <OwnersArea/>
 
-            {/*<button className="hidden lg:flex items-center gap-1 text-sm text-white">*/}
-            {/*    <Image src="/icons/pencil.svg" alt="Icon pencil" width={12} height={12}/>*/}
-            {/*    <span>{t('manage reservations')}</span>*/}
-            {/*</button>*/}
-
-            <a href="#" target="_blank" className="hidden sm:flex items-center gap-1 text-sm text-secondary"
-               aria-label={t('owners area')}
-               rel="noopener noreferrer">
-                <Image src="/icons/key.svg" alt="Icon key" width={12} height={12}/>
-                <span>{t('owners area')}</span>
-            </a>
+            {/*<a href="#" target="_blank" className="hidden sm:flex items-center gap-1 text-sm text-secondary"*/}
+            {/*   aria-label={t('owners area')}*/}
+            {/*   rel="noopener noreferrer">*/}
+            {/*    <Image src="/icons/key.svg" alt="Icon key" width={12} height={12}/>*/}
+            {/*    <span>{t('owners area')}</span>*/}
+            {/*</a>*/}
         </nav>
 
         <nav role="navigation" className=" my-container whitespace-nowrap

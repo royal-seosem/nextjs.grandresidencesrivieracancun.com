@@ -10,7 +10,7 @@ import {getCountry} from "@/lib/geo";
 import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-import ChatWeb from "@/components/pages/home/ChatWeb";
+import ChatWeb from "@/components/layout/ChatWeb";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
