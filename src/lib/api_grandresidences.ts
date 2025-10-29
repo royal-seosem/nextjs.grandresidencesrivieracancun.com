@@ -3,6 +3,17 @@ import {getLocale} from "next-intl/server";
 
 const apiUrl = process.env.API_URL;
 
+export type ErrorResponse = {
+    code: string,
+    message: string,
+}
+
+export type BasicResponse = {
+    success: boolean,
+    message?: string,
+    error?: ErrorResponse
+}
+
 export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise<T> {
     const url = new URL(enpoint, apiUrl);
     const locale = await getLocale();
