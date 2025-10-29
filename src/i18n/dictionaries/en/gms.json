@@ -1,0 +1,174 @@
+{
+  "gms": {
+    "home": "Home",
+    "Special Offers": "Special Offers",
+    "My reservations": "My reservations",
+    "Manage account": "Manage account",
+    "Change password": "Change password",
+    "Pre Check-In form": "Pre Check-In form",
+    "pre-check-in-link": "https://www.royalresorts.com/pre-checkin/index.php",
+    "Log Out": "Log Out",
+    "Log in": "Log in",
+    "Sign me up": "Sign me up!",
+    "Sign up": "Sign up",
+    "Forgot your password?": "Forgot your password?",
+    "Click here": "Click here",
+    "Current password": "Current password",
+    "New password": "New password",
+    "Confirm password": "Confirm password",
+    "save": "SAVE",
+    "name": "Name *",
+    "Last Name": "Last name *",
+    "Email": "E-mail *",
+    "country": "Select your country of Residence *",
+    "Date of birth": "Date of birth",
+    "state or province": "State or province",
+    "phone number": "Phone number",
+    "postal code": "Postal code",
+    "Password": "Password *",
+    "Personal Information": "Personal Information",
+    "PREVIOUS RESERVATIONS": "PREVIOUS RESERVATIONS",
+    "CURRENT RESERVATIONS": "CURRENT RESERVATIONS",
+    "Confirmation number": "Confirmation number",
+    "Check-in": "Check-in",
+    "Check-out": "Check-out",
+    "Number of rooms": "Number of rooms",
+    "adults": "Adults (+13):",
+    "children": "Children (0-12)",
+    "Total Price": "Total Price",
+    "Do you want to modify your reservation?": "Do you want to modify your reservation?",
+    "Congratulations! Your form has been successfully submitted": "Congratulations! Your form has been successfully submitted",
+    "nav": {
+      "Home": "Home",
+      "Special Offers": "Special Offers",
+      "My reservations": "My reservations",
+      "Personal Information": "Personal Information",
+      "Change my password": "Change my password",
+      "Log Out": "Log Out",
+      "Pre Check-In form": "Pre Check-In form"
+    },
+    "modal": {
+      "Join My Royal": "Join My Royal",
+      "description": "Sign up and get instant discounts.",
+      "text2": "You can sign up to \"My Royal\" with your preferred social network",
+      "text3": "Or email address.",
+      "terms": "I have read, and I agree with the <a href=\"/privacy-policy\" target=\"_blank\">Privacy Policy</a>.",
+      "btn": "SIGN ME UP!",
+      "I already have an account": "I already have an account.",
+      "Log in": "Log in",
+      "Forgot your password": "Forgot your password?",
+      "benefits-desc": "Sign up and get subscriber-exclusive discounts and secret deals.",
+      "benefits1": "Get up to 10% extra discount on our hotel deals.",
+      "benefits2": "Access subscriber-exclusive private deals, advance purchase discounts, and many more promotions."
+    },
+    "form-errors": {
+      "Please enter your name": "Please enter your name.",
+      "Please enter your last name": "Please enter your last name.",
+      "Please enter a valid e-mail address": "Please enter a valid e-mail address.",
+      "Please include a password": "Please include a password. It must be at least 8 characters long.",
+      "The passwords you entered do not match": "The passwords you entered do not match"
+    },
+    "register": {
+      "description": "You can sign up with your preferred social network",
+      "or_email": "or with an email address"
+    },
+    "login": {
+      "description": "Log in and start saving. If you are not part of My Royal, sign up and get an instant discount, plus enjoy our subscriber-exclusive benefits.",
+      "description_subtitle": "Loyalty Means Rewards:",
+      "benefits-footer": "Take advantage of these exclusive benefits! Log in or sign up for My Royal today, start saving, and let the fun begin.",
+      "text2": "Log in with your preferred social network",
+      "text3": "Or email address and password",
+      "benefits": [
+        {
+          "title": "Additional discounts:",
+          "description": "Save more with My Royal; get up to 10% in extra discounts on our hotel deals."
+        },
+        {
+          "title": "Always First for Exclusive Deals:",
+          "description": "Access private deals, advance purchase discounts, pre-sales with bigger discounts to stay during the best seasons, and more."
+        },
+        {
+          "title": "My Royal Newsletter:",
+          "description": "Stay informed with the latest updates and exclusive information regarding Grand Residences and all our resorts. Discover new features, exciting events, and much more."
+        },
+        {
+          "title": "Pre-check-in:",
+          "description": "Save time; we´ll take care of the rest"
+        }
+      ]
+    },
+    "blog-posts": [
+      {
+        "title": "COOL JAZZ VIBES AND COCKTAILS",
+        "description": "Tuesday night is Jazz & Martini Night at Grand Residences. Join us for great live music and classic martinis, shaken not stirred of course",
+        "link": "https://blog.grandresidencesbyroyalresorts.com/2023/08/08/cool-jazz-vibes-and-cocktails?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms ",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/08/martini-coctail-495x400.jpg"
+      },
+      {
+        "title": "COOL DRINKS, SEAFOOD AND AN UNBEATABLE VIEW, HEAVEN",
+        "description": "It's a summer afternoon in paradise and the only place to be is by the beach.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com/2023/08/08/cool-drinks-seafood-and-an-unbeatable-view-heaven/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2020/06/heaven-495x400.jpg"
+      },
+      {
+        "title": "MELLOW RIVIERA MAYA MASSAGES",
+        "description": "A relaxing massage is the way to slip into your Riviera Maya summer vacation and there are plenty of options awaiting you at the Spa.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com/2023/07/18/mellow-riviera-maya-massages/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/07/relaxing-massage-495x400.jpg"
+      },
+      {
+        "title": "COOL COCKTAILS",
+        "description": "The exotic flavors of mango, fresh ginger and coconut combine with vodka to create a tropical frappé that is perfect for poolside lounging.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com/2023/08/08/cool-cocktails-29/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/08/cocktail-paradise-frapp-495x400.jpg"
+      },
+      {
+        "title": "COOKING CLASS WITH CHEF GUIDO",
+        "description": "Sign up for a fun cooking class with Chef Guido de la Mora, collect new recipes to try at home and fine-tune your kitchen skills.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com/2023/06/15/cooking-class-with-chef-guido/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/06/cheff-guido-cooking-classe-495x400.jpg"
+      }
+    ],
+    "title-gms-program": "Important information about My Royal Program",
+    "gms-program": "\n        <p>New and current subscribers looking to book and stay with us for the first time will be entitled to an extra 8%\n            discount, which is applicable on top of our current offers (Please note that certain restrictions may apply).</p>\n        <p>For returning travelers subscribed to My Royal and have had previous stays with us with reservations made through\n            our official websites such as royalreservations.com, grandresidences.com, royalresorts.com, or our contact center,\n            we will extend a special repetitive customer benefit of a 10% additional discount.</p>\n        <p>These exclusive \"My Royal\" discounts can be accessed and redeemed by logging into the My Royal portal with your\n            registered account while making your reservation.</p>\n        <p>Please be aware that My Royal additional discounts cannot be combined with each other or with any ongoing promotions\n            or discounts. Moreover, they do not apply to Hotel + Flight packages.</p>\n        <p>Previous stays made through other online travel agencies other than our official websites or contact center will not\n            be eligible for returning customer discounts.</p>\n    ",
+    "reset-email-message": "We've sent you an email with a link to finish resetting your password",
+    "errors": {
+      "user_not_found": {
+        "code": "user-not-found",
+        "message": "The user does not exist"
+      },
+      "user_already_exists": {
+        "code": "user-already-exists",
+        "message": "The user already exists"
+      },
+      "confirm_email": {
+        "code": "confirm-email",
+        "message": "We have sent you an email to confirm your email address."
+      },
+      "mail_success_verified": {
+        "Email Verified": "Email Verified",
+        "code": "mail-success-verified",
+        "message": "Your email has been verified. You can now log in."
+      },
+      "authorization_failure": {
+        "code": "authorization-failure",
+        "message": "Authorization Failure"
+      },
+      "reset_success_password": {
+        "event": "Reset Password",
+        "code": "reset-success-password",
+        "message": "Your password was updated correctly"
+      },
+      "email-required": {
+        "event": "Email Required",
+        "code": "email-required",
+        "message": "You need to grant permissions to access your email."
+      }
+    },
+    "Register with us and enjoy": "SIGN UP AND RECEIVE SPECIAL OFFERS",
+    "resert password": "Reset password",
+    "new password": "new password",
+    "new password (again)": "new password (again)",
+    "Resert your password": "Reset your password"
+  }
+}

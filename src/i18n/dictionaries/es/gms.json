@@ -1,0 +1,137 @@
+{
+  "gms": {
+    "home": "Inicio",
+    "Special Offers": "Ofertas Especiales",
+    "My reservations": "Reservaciones",
+    "Manage account": "Información personal",
+    "Change password": "Manejo de cuenta",
+    "Pre Check-In form": "Formulario Pre Check-In",
+    "pre-check-in-link": "https://www.royalresorts.com/pre-checkin/index-es.php",
+    "Log Out": "Salida",
+    "Log in": "Inicie sesión",
+    "Sign up": "Inscribirse",
+    "Sign me up": "¡INSCRÍBEME!",
+    "Forgot your password?": "¿Olvidó su contraseña?",
+    "Click here": "Haz clic aquí",
+    "Current password": "Actual contraseña",
+    "New password": "Nueva contraseña",
+    "Confirm password": "Confirmar contraseña",
+    "save": "GUARDAR",
+    "name": "Nombre *",
+    "Last Name": "Apellido *",
+    "country": "Seleccione su país de residencia *",
+    "Date of birth": "Fecha de nacimiento",
+    "state or province": "Estado o provincia",
+    "phone number": "Teléfono",
+    "postal code": "Código postal",
+    "Email": "Correo electrónico *",
+    "Password": "Contraseña *",
+    "Personal Information": "Información del personal",
+    "PREVIOUS RESERVATIONS": "RESERVAS ANTERIORES",
+    "CURRENT RESERVATIONS": "RESERVAS ACTUALES",
+    "Confirmation number": "Número de Confirmación",
+    "Check-in": "Fecha de entrada",
+    "Check-out": "Fecha de Salida",
+    "Number of rooms": "Number of rooms",
+    "adults": "Adultos (+13)",
+    "children": "Niños (0-12)",
+    "Total Price": "Precio Total",
+    "Do you want to modify your reservation?": "¿Quieres modificar la reservación?",
+    "Congratulations! Your form has been successfully submitted": "¡Gracias! Su formulario ha sido enviado exitosamente",
+    "nav": {
+      "Home": "Inicio",
+      "Special Offers": "Ofertas especiales",
+      "My reservations": "Mis reservaciones",
+      "Personal Information": "Información personal",
+      "Change my password": "Cambiar mi contraseña",
+      "Log Out": "Cerrar sesión",
+      "Pre Check-In form": "Formulario Pre Check-In"
+    },
+    "modal": {
+      "Join My Royal": "Únete a My Royal",
+      "description": "Regístrese y obtenga descuentos instantáneos.",
+      "text2": "Puede registrarse en \"My Royal\" con su red social preferida",
+      "text3": "O correo electrónico.",
+      "terms": "He leído y estoy de acuerdo con la <a href=\"/es/politica-de-privacidad\" target=\"_blank\">Política de privacidad</a>.",
+      "btn": "¡INSCRÍBEME!",
+      "I already have an account": "Ya tengo una cuenta.",
+      "Log in": "Inicie sesión",
+      "Forgot your password": "¿Olvidó su contraseña?",
+      "benefits-desc": "Regístrese y obtenga descuentos exclusivos de suscriptores y ofertas secretas.",
+      "benefits1": "Obtenga hasta un 10% de descuento adicional sobre nuestras promociones de solo hotel.",
+      "benefits2": "Acceso a ofertas privadas exclusivas de suscriptores, descuentos de compras anticipadas y muchas más promociones."
+    },
+    "form-errors": {
+      "Please enter your name": "Por favor, escriba su nombre.",
+      "Please enter your last name": "Por favor, escriba su apellido.",
+      "Please enter a valid e-mail address": "Por favor, ingrese una dirección de correo electrónico válida.",
+      "Please include a password": "Incluya una contraseña. Debe tener al menos 8 caracteres de largo.",
+      "The passwords you entered do not match": "Las contraseñas no coinciden."
+    },
+    "register": {
+      "description": "Puede registrarse con su red social preferida",
+      "or_email": "o con un correo electrónico"
+    },
+    "login": {
+      "description": "Inicie sesión y comience a ahorrar. Si aun no es miembro de mi Royal, regístrese y obtenga un descuento instantáneo, además de disfrutar de nuestros beneficios exclusivos.",
+      "description_subtitle": "La lealtad siempre se recompensa:",
+      "benefits-footer": "¡Aproveche estos beneficios exclusivos! Inicie sesión o regístrese en mi Royal hoy, ahorre más y deje que comience la diversión.",
+      "login-description": "\"Inicie sesión con su método preferido: Red social Correo electrónico y contraseña.\"",
+      "text2": "Inicie sesión con su red social preferida",
+      "text3": "O correo electrónico y contraseña",
+      "benefits": [
+        {
+          "title": "Descuentos adicionales:",
+          "description": "ahorre más con My Royal; Obtenga hasta un 10% de descuento adicional en nuestras ofertas de solo hotel."
+        },
+        {
+          "title": "Sé el primero en recibir nuestras promociones:",
+          "description": "obtenga acceso a ofertas privadas, descuentos de compra anticipada, preventa con mayores descuentos para las mejores temporadas y más."
+        },
+        {
+          "title": "Boletín My Royal:",
+          "description": "Manténgase informado con información exclusiva sobre Grand Residences y todos nuestros resorts. Descubra lo nuevo, eventos especiales, y mucho más."
+        },
+        {
+          "title": "Pre-check-in:",
+          "description": "ahorre tiempo; nosotros nos encargaremos del resto"
+        }
+      ]
+    },
+    "blog-posts": [
+      {
+        "title": "BUENAS VIBRAS DE JAZZ Y CÓCTELES",
+        "description": "La noche de martes en Grand Residences es la Noche de Jazz y Martini. Acompáñenos a disfrutar de excelente música en vivo y los clásicos martinis, agitados no revueltos, por supuesto.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com.mx/2023/08/15/buenas-vibras-de-jazz-y-cocteles/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/08/martini-coctail-495x400.jpg"
+      },
+      {
+        "title": " BEBIDAS REFRESCANTES, MARISCOS Y UNA INIGUALABLE VISTA, HEAVEN",
+        "description": "Es una tarde de verano en el paraíso y el único lugar para estar es la playa.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com.mx/2023/08/15/bebidas-refrescantes-mariscos-y-una-inigualable-vista-heaven/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2020/06/heaven-495x400.jpg"
+      },
+      {
+        "title": "MASAJES DELICADOS EN LA RIVIERA MAYA",
+        "description": "Un masaje relajante es la mejor manera de adentrarse en sus vacaciones de verano en la Riviera Maya.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com.mx/2023/07/19/masajes-delicados-en-la-riviera-maya/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/07/relaxing-massage-495x400.jpg"
+      },
+      {
+        "title": "CÓCTELES FRESCOS",
+        "description": "Si le gustaría ordenar un mojito en sus vacaciones, pida a los cantineros de Grand Residences que le preparen la receta clásica o pruebe uno con jugo de fruta.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com.mx/2023/07/19/cocteles-frescos-24/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms ",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/08/cocktail-paradise-frapp-495x400.jpg"
+      },
+      {
+        "title": "CLASE DE COCINA CON EL CHEF GUIDO",
+        "description": "Apúntese a una divertida clase de cocina con el Chef Guido de la Mora, obtenga nuevas recetas para probar en casa y afine sus habilidades en la cocina.",
+        "link": "https://blog.grandresidencesbyroyalresorts.com.mx/2023/06/19/clase-de-cocina-con-el-chef-guido/?utm_source=grandresidencesrivieracancun.com&utm_medium=referral&utm_campaign=gr-gms",
+        "img": "https://blog.grandresidencesbyroyalresorts.com/wp-content/uploads/2023/06/cheff-guido-cooking-classe-495x400.jpg "
+      }
+    ],
+    "title-gms-program": "Información importante sobre el Programa My Royal",
+    "gms-program": "\n        <p>Suscriptores nuevos y actuales que deseen reservar y quedarse con nosotros por primera recibirán un descuento\n            adicional del 8%, aplicable a cualquier de nuestras ofertas vigentes (tenga en cuenta que pueden aplicarse ciertas\n            restricciones).</p>\n        <p>Para los viajeros recurrentes que estén suscritos a \"My Royal\" y con estancias previas realizadas a través de\n            nuestros sitios web oficiales como royalreservations.com, grandresidences.com, royalresorts.com o nuestro centro de\n            contacto, brindaremos un beneficio especial para clientes repetitivos de un 10% de descuento adicional.</p>\n        <p>Todos los descuentos exclusivos de \"My Royal\" estarán disponibles iniciando sesión en el portal con su cuenta\n            registrada mientras realiza su reserva.</p>\n        <p>Tenga en cuenta que los descuentos adicionales de \"My Royal\" no se pueden combinar entre sí ni con otras promociones\n            y/o descuentos, tampoco aplican para paquetes de Hotel + Vuelo.</p>\n        <p>Estancias previas reservadas a través de otras agencias de viajes en línea que no sean nuestros sitios web oficiales\n            o nuestro centro de contacto no serán elegibles para descuentos para clientes recurrentes.</p>\n    ",
+    "reset-email-message": "Enviamos un correo con un enlace para finalizar el reinicio de tu contraseña."
+  }
+}

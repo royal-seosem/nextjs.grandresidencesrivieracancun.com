@@ -49,6 +49,10 @@ export const routing = defineRouting({
             en: "/gms/login",
             es: "/gms/iniciar-session"
         },
+        "/gms/forgot-password": {
+            en: "/gms/forgot-password",
+            es: "/gms/forgot-password"
+        },
 
         "/privacy": {
             en: "/privacy-policy",
