@@ -1,0 +1,50 @@
+{
+  "gms_home": {
+    "cintillo": "<b>Bienvenido {NAME} a My Royal;</b> Un 8% de descuento adicional está disponible para su primera reserva",
+    "hello": "Hola {NAME}, ¡Bienvenido a My Royal!",
+    "description": "<p>Tiene un 8% de descuento adicional disponible para su primera reserva. En <b>Royal Resorts</b>, creemos que nuestros clientes son valiosos y merecen solo lo mejor; a partir de ahora puede disfrutar de beneficios exclusivos, desde ofertas especiales hasta acceso anticipado a nuevas promociones y descuentos privados. Esté atento a su bandeja de entrada, reciba información valiosa sobre el resort y el destino, próximas promociones, eventos exclusivos e información relevante que lo mantendrá bien informado.</p>",
+    "points-title": "Con My Royal, también podrá:",
+    "points-list": [
+      "Revisar y modificar su reserva",
+      "Ver su historial de reservas",
+      "Administar su perfil e información personal",
+      "Acceder a nuestras ofertas con descuentos adicionales",
+      "Estamos aquí para que su experiencia con nosotros sea aún más gratificante y agradable"
+    ],
+    "destination-title": "Grand Residences es más que relajación y hermosas playas de blanca arena",
+    "destination-description": "Durante su estancia en Grand Residences, tendrá una amplia variedad de lugares sorprendentes para explorar, actividades divertidas y otros destinos cercanos para visitar, que harán que sus vacaciones sean una experiencia aún más entretenida.",
+    "destination-list": [
+      {
+        "title": "Puerto Morelos: Un Tranquilo Escape",
+        "title_short": "Puerto Morelos",
+        "description": "Encuentra serenidad en Puerto Morelos gracias a su relajada atmosfera. Haga snorkel en el arrecife del parque nacional, relájese en sus playas vírgenes y saboree la captura del día en los restaurantes locales del pueblo o frente al mar.",
+        "img": "/img/my-royal/destinations/puerto-morelos.jpg",
+        "img_modal": "puerto-morelos.jpg"
+      },
+      {
+        "title": "Cancún: Felicidad en la Playa",
+        "title_short": "Cancún",
+        "description": "Disfrute de las hermosas aguas de color turquesas, una vida nocturna vibrante y tesoros mayas. Descubra ruinas antiguas como El Rey, sumérjase en sus maravillas submarinas y saboree la escena culinaria de Cancún. Cancún le da la bienvenida para relajarte y divertirse.",
+        "img": "/img/my-royal/destinations/cancun.jpg",
+        "img_modal": "cancun.jpg"
+      },
+      {
+        "title": "Playa del Carmen: Ritmos Bohemios",
+        "title_short": "Playa del Carmen",
+        "description": "Abraza el ambiente boho-chic de Playa del Carmen. Pasee por la Quinta Avenida y compre en sus eclecticos mercaditos, explore los diferentes parques eco-turísticos, y baile bajo las estrellas en uno de los diversos clubes de playa. ¡Playa del Carmen es donde la diversión y la libertad se vuelven uno!",
+        "img": "/img/my-royal/destinations/playa-del-carmen.jpg",
+        "img_modal": "playa-del-carmen.jpg"
+      },
+      {
+        "title": "Riviera Maya: El Encanto de la Naturaleza",
+        "title_short": "Riviera Maya",
+        "description": "Sumerjase en las maravillas naturales de la Riviera Maya. Las ruinas antiguas de Tulum, exuberantes selvas, parques ecológicos y cenotes ocultos sagrados le esperan. Explore lo místico, deleitese con los sabores locales y experimente la energía vibrante de la Quinta Avenida en Playa del Carmen.",
+        "img": "/img/my-royal/destinations/riviera-maya.jpg",
+        "img_modal": "riviera-maya.jpg"
+      }
+    ],
+    "offers-title": "Nuestras promociones con descuento adicional exclusivo de suscriptores",
+    "offers-btn": "Ver nuestras ofertas",
+    "blog-title": "Inspírese: Entérese sobre todo lo que sucede en Grand Residences"
+  }
+}
