@@ -12,6 +12,7 @@ import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton
 import BtnGoogle from "@/components/pages/Gms/BtnGoogle";
 
 import IconInfo from "@/components/commons/icons/info.svg";
+import EmailForm from "@/components/pages/Gms/Login/EmailForm";
 
 
 export const LoginPage = async () => {
@@ -63,20 +64,7 @@ export const LoginPage = async () => {
                         {t('text3')}
                     </p>
 
-                    <form className="mb-4">
-                        <div className="flex flex-col gap-2 mb-6">
-                            <Label htmlFor="email">{t('e-mail')}</Label>
-                            <Input type="email" id="email" name="email" placeholder={t('e-mail')} required/>
-                        </div>
-                        <div className="flex flex-col gap-2 mb-6">
-                            <Label htmlFor="email">{t('password')}</Label>
-                            <Input type="password" id="password" name="password" required/>
-                        </div>
-                        <button type="submit"
-                                className="uppercase bg-primary border-2 text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs w-[200px] m-auto">
-                            {t('log-in')}
-                        </button>
-                    </form>
+                    <EmailForm/>
 
                     <p className="text-base flex gap-1 justify-center mb-6">
                         {t('Forgot your password?')}

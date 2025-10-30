@@ -14,6 +14,12 @@ export type BasicResponse = {
     error?: ErrorResponse
 }
 
+export type GrFetcherResponse<T> = {
+    data?: T,
+    success: boolean,
+    error?: ErrorResponse,
+}
+
 export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise<T> {
     const url = new URL(enpoint, apiUrl);
     const locale = await getLocale();
