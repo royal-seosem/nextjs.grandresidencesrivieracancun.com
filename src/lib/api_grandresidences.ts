@@ -1,5 +1,6 @@
 import * as https from "node:https";
 import {getLocale} from "next-intl/server";
+import {getSession} from "@/lib/session";
 
 const apiUrl = process.env.API_URL;
 
@@ -30,14 +31,21 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
 
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
+
     type RequestInitWithAgent = RequestInit & { agent?: https.Agent };
 
+    const gmsUser = await getSession();
+    const token = gmsUser?.token || "";
+
+    const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.API_TOKEN}`,
+        'Accept-Language': locale,
+        'Authorization-GMS': token
+    }
+
     const options: RequestInitWithAgent = {
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.API_TOKEN}`,
-            'Accept-Language': locale,
-        },
+        headers: headers,
         agent: httpsAgent,
         ...init
     };

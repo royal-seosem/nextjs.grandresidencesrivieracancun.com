@@ -7,13 +7,18 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
 import PreCheckInIcon from "@/components/commons/icons/pre-check-in.svg";
 import DestinationGallery from "@/components/pages/Gms/my-account/DestinationGallery";
+import MyAccountOffers from "@/components/pages/Gms/my-account/MyAccountOffers";
+import {getMyAccountOffers} from "@/use_case/offers/get_my_account_offers";
 
 const Page = async () => {
     const t = await getTranslations('gms_home');
     const m = await getMessages();
+    const user = await getSession();
     const pointsList = m['gms_home']['points-list'];
 
-    const user = await getSession();
+    const offers = await getMyAccountOffers();
+
+    console.log(offers);
 
     return (
         <main>
@@ -52,8 +57,12 @@ const Page = async () => {
                 </Paragraph>
 
                 <DestinationGallery/>
-
             </div>
+            {
+                offers.success && offers.data &&
+                <MyAccountOffers offers={offers.data}/>
+            }
+
         </main>
     );
 };

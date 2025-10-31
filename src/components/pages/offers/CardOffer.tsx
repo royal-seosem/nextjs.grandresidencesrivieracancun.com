@@ -11,9 +11,16 @@ import {format} from "date-fns";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
 import {useWebsite} from "@/context/WebSiteProvider";
+import {cn} from "@/lib/utils";
+
+
+interface CardOfferProps {
+    offer: Offer;
+    className?: string;
+}
 
 const CardOffer = (
-    {offer}: { offer: Offer }
+    {offer, className}: CardOfferProps
 ) => {
     const t = useTranslations('new-offers');
     const tOfferTemplate = useTranslations('offers-template2')
@@ -21,7 +28,10 @@ const CardOffer = (
     const [open, setOpen] = React.useState(false);
 
     return (
-        <article className={"shadow-md h-full flex flex-col"}>
+        <article className={cn(
+            "shadow-md h-full flex flex-col",
+            className
+        )}>
             <div className={"relative"}>
                 <CdnImage
                     className={"w-full object-cover border-b-2 border-secondary "}

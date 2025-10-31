@@ -5,6 +5,7 @@ import {cookies} from "next/headers";
 interface SessionPayload {
     userId: number,
     name: string,
+    token: string,
 
     [key: string]: unknown;
 }
@@ -46,7 +47,7 @@ export async function createSession(userId: number, name: string, token: string)
     })
 }
 
-export async function getSession() {
+export async function getSession(): Promise<SessionPayload | undefined> {
     const cookieStore = await cookies();
     const session = cookieStore.get('session')?.value;
     const data = await decrypt(session) as SessionPayload | undefined;
@@ -54,7 +55,7 @@ export async function getSession() {
     if (!data) return;
 
     return {
-        id: data.userId,
+        userId: data.userId,
         name: data.name,
         token: data.token,
     }
