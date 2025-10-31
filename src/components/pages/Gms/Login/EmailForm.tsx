@@ -26,8 +26,9 @@ const EmailForm = () => {
         }
         if (resp.success && resp.data?.id && resp.data?.name) {
             setUser({
-                id: resp.data?.id,
-                name: resp.data?.name
+                userId: resp.data?.id,
+                name: resp.data?.name,
+                token: resp.data?.token
             })
 
             router.push('/gms/my-account');

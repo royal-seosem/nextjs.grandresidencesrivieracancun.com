@@ -1,15 +1,11 @@
 'use client'
 import React, {useContext, useState} from 'react';
 import {getPhones, Phones} from "@/use_case/get_phones";
-
-type User = {
-    id: number,
-    name: string
-}
+import {SessionPayload} from "@/lib/session";
 
 interface WebSiteContextType {
-    user: User | undefined,
-    setUser: (user: User | undefined) => void;
+    user: SessionPayload | undefined,
+    setUser: (user: SessionPayload | undefined) => void;
     country: string,
     phones: Phones,
     openBookingDrawer: boolean,
@@ -19,11 +15,11 @@ interface WebSiteContextType {
 export const WebSiteContext = React.createContext<WebSiteContextType | undefined>(undefined);
 
 const WebSiteProvider = ({children, initialUser, country}: {
-    initialUser: User | undefined,
+    initialUser: SessionPayload | undefined,
     country: string,
     children: React.ReactNode
 }) => {
-    const [user, setUser] = useState<User | undefined>(initialUser);
+    const [user, setUser] = useState<SessionPayload | undefined>(initialUser);
     const [openBookingDrawer, setOpenBookingDrawer] = useState<boolean>(false);
 
     return (

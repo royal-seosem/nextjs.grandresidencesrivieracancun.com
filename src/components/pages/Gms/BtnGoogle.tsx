@@ -15,8 +15,9 @@ function BtnGoogle() {
 
             if (payload) {
                 setUser({
-                    id: payload.id,
-                    name: payload.name
+                    userId: payload.id,
+                    name: payload.name,
+                    token: payload.token
                 })
                 router.push('/gms/my-account');
             }

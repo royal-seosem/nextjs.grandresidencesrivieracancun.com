@@ -2,7 +2,7 @@ import 'server-only'
 import {jwtVerify, SignJWT} from 'jose';
 import {cookies} from "next/headers";
 
-interface SessionPayload {
+export interface SessionPayload {
     userId: number,
     name: string,
     token: string,

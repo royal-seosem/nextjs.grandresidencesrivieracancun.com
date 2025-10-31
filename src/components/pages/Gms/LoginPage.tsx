@@ -3,9 +3,6 @@ import * as React from 'react';
 import {Link} from "@/i18n/navigation";
 import Image from "next/image";
 import {getMessages, getTranslations} from "next-intl/server";
-
-import {Input} from "@/components/commons/ui/input";
-import {Label} from "@/components/commons/ui/label";
 import CdnImage from "@/components/commons/ui/CdnImage";
 
 import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
