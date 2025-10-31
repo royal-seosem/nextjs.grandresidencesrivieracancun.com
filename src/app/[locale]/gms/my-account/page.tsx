@@ -9,6 +9,7 @@ import PreCheckInIcon from "@/components/commons/icons/pre-check-in.svg";
 import DestinationGallery from "@/components/pages/Gms/my-account/DestinationGallery";
 import MyAccountOffers from "@/components/pages/Gms/my-account/MyAccountOffers";
 import {getMyAccountOffers} from "@/use_case/offers/get_my_account_offers";
+import {withGmsAuth} from "@/lib/withGmsAuth";
 
 const Page = async () => {
     const t = await getTranslations('gms_home');
@@ -67,4 +68,4 @@ const Page = async () => {
     );
 };
 
-export default Page;
+export default withGmsAuth(Page);
