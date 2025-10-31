@@ -40,8 +40,14 @@ const CardOffer = (
                     width={713}
                     height={338}/>
                 <span
-                    className={"absolute top-2 right-2 bg-secondary rounded-md py-[5px] px-[10px] font-bold"}>
-                    {offer.content.discount}
+                    className={"absolute top-2 right-2 bg-secondary rounded-md  font-bold flex items-stretch gap-1"}>
+                    {
+                        offer.applyGms &&
+                        <span className={"bg-[#0c2d63] h-auto px-2 flex items-center justify-center rounded-l-md"}>
+                            <MyRoyalIcon width={24} height={24}/>
+                        </span>
+                    }
+                    <span className={"block py-[5px] px-2"}> {offer.content.discount} </span>
                 </span>
                 {offer.content.label &&
                     <span

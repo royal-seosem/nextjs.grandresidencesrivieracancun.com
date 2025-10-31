@@ -10,6 +10,7 @@ import DestinationGallery from "@/components/pages/Gms/my-account/DestinationGal
 import MyAccountOffers from "@/components/pages/Gms/my-account/MyAccountOffers";
 import {getMyAccountOffers} from "@/use_case/offers/get_my_account_offers";
 import {withGmsAuth} from "@/lib/withGmsAuth";
+import BlogList from "@/components/pages/Gms/my-account/BlogList";
 
 const Page = async () => {
     const t = await getTranslations('gms_home');
@@ -18,8 +19,6 @@ const Page = async () => {
     const pointsList = m['gms_home']['points-list'];
 
     const offers = await getMyAccountOffers();
-
-    console.log(offers);
 
     return (
         <main>
@@ -59,10 +58,21 @@ const Page = async () => {
 
                 <DestinationGallery/>
             </div>
+
             {
                 offers.success && offers.data &&
-                <MyAccountOffers offers={offers.data}/>
+                <div className={"mb-5"}>
+                    <MyAccountOffers offers={offers.data}/>
+                </div>
             }
+
+            <div className={"my-container"}>
+                <h2 className="text-3xl text-center mb-5">
+                    {t('blog-title')}
+                </h2>
+            </div>
+
+            <BlogList/>
 
         </main>
     );

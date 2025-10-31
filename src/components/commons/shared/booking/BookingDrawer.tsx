@@ -25,14 +25,33 @@ const BookingMobile = () => {
         setOpenBookingDrawer
     } = useWebsite();
 
+    const {
+        title,
+        subtitle,
+        showType,
+    } = useBooking()
+
     return (
         <Drawer open={openBookingDrawer} onClose={() => setOpenBookingDrawer(false)}>
             <DrawerContent>
                 <DrawerTitle className="hidden" aria-hidden>Booking</DrawerTitle>
+
+                {
+                    title !== "" && subtitle !== "" &&
+                    <div className={"text-center p-5"}>
+                        <span className="block text-base font-bold text-[#763300]">{subtitle}</span>
+                        <span className="block text-base font-normal text-[#322f2f]">{title}</span>
+                    </div>
+                }
+
                 <div className="p-5">
                     <BookingForm>
-                        <BookingType
-                            className="w-full mb-5"/>
+                        {
+                            showType &&
+                            <BookingType
+                                className="w-full mb-5"/>
+                        }
+
 
                         <div className="w-full">
                             <BookingAirport className="w-full mb-5"/>

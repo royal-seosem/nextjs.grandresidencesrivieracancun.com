@@ -12,6 +12,8 @@ import Price from "@/components/commons/shared/price";
 import Book from "@/components/commons/shared/book";
 import ValidUntil from "@/components/commons/shared/ValidUntil";
 import {Offer} from "@/use_case/offers/get_home_offer";
+import {useWebsite} from "@/context/WebSiteProvider";
+import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 
 interface ModalOfferProps {
     offer: Offer;
@@ -22,7 +24,7 @@ interface ModalOfferProps {
 const ModalOffer = (
     {offer, open, setOpen}: ModalOfferProps,
 ) => {
-
+    const {user} = useWebsite();
     const [showTerms, setShowTerms] = useState(false);
     const t = useTranslations('offers')
     const tGeneral = useTranslations('general');
@@ -68,12 +70,21 @@ const ModalOffer = (
 
                     <div className="flex items-center justify-between gap-2">
                         {offer.rate !== null && <Price rate={offer.rate}/>}
-                        <Book/>
+                        <BookingBtnDrawer offer={{
+                            title: offer.content.title || "",
+                            subtitle: "Special:",
+                            type: "hotel",
+                            ratePlanId: offer.ratePlanId
+                        }}/>
                     </div>
 
                     <ValidUntil offer={offer}/>
                 </div>
-                <LogInModalOffer/>
+                {
+                    !user &&
+                    <LogInModalOffer/>
+                }
+
                 {showTerms &&
                     <div className="p-5 bg-[#f0e9e2]">
                         <Paragraph>

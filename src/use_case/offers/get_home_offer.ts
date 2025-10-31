@@ -4,6 +4,7 @@ import {GrFetcher} from "@/lib/api_grandresidences";
 
 export type Offer = {
     isLead: boolean;
+    applyGms: boolean;
     ratePlan: string;
     ratePlanId: string;
     content: OfferContentKey;

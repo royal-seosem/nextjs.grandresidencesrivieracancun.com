@@ -47,6 +47,7 @@ const BookingBtnDrawer = ({className, offer, btnText}: BookingBtnDrawerProps) =>
             setRoomTypeId("");
             setShowType(true);
             setTitle("");
+            setSubtitle("")
         }
     }
 
