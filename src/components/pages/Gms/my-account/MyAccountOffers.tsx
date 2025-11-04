@@ -40,7 +40,7 @@ const MyAccountOffers = (
                     </div>
                 </div>
 
-                <div className={"mb-2 basis-1/2 w-1/2 lg:basis-2/3 lg:w-2/3 grow-0"}>
+                <div className={"mb-2 basis-1/2 md:w-1/2 lg:basis-2/3 lg:w-2/3 grow-0"}>
                     <Gallery variant={"secondary"} position={"bottom"} options={{
                         align: "start",
                     }}>
