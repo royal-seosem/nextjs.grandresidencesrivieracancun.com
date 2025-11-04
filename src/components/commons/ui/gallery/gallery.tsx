@@ -5,7 +5,7 @@ import {
     CarouselApi,
     CarouselContent,
     CarouselGoto,
-    CarouselNext,
+    CarouselNext, CarouselOptions,
     CarouselPrevious
 } from "@/components/commons/ui/carousel";
 import {cn} from "@/lib/utils";
@@ -16,7 +16,8 @@ interface GalleryProps {
     position?: 'on' | 'bottom' | 'middle',
     showDots?: boolean,
     setApi?: (api: CarouselApi) => void
-    button?: React.ReactNode
+    button?: React.ReactNode,
+    options?: CarouselOptions,
 }
 
 const galleryStyles = {
@@ -46,20 +47,22 @@ const positionStyles = {
 
 
 const Gallery = (
-    {children, variant = 'secondary', position = 'on', showDots = true, setApi, button}: GalleryProps
+    {children, variant = 'secondary', position = 'on', showDots = true, setApi, button, options}: GalleryProps
 ) => {
     const totalItems = React.Children.count(children);
     const style = galleryStyles[variant];
     const {className} = positionStyles[position];
+    const optionsDefault: CarouselOptions = {
+        loop: true,
+        containScroll: 'trimSnaps',
+        ...options,
+    }
 
     return (
         <Carousel
             className="w-full h-full"
             setApi={setApi}
-            opts={{
-                loop: true,
-                containScroll: 'trimSnaps'
-            }}>
+            opts={optionsDefault}>
             <div className="h-full">
                 <CarouselContent
                     className="items-stretch table-[border-collapse:collapse] table-[border-spacing:0] h-full">

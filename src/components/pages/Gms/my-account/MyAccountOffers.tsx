@@ -19,17 +19,33 @@ const MyAccountOffers = (
 ) => {
     const t = useTranslations('gms_home');
     return (
-        <div className={"bg-primary text-white p-5"}>
-            <div className={"my-container"}>
-                <MyRoyalIcon className={"m-auto mb-4"} width={45} height={45}/>
-                <Paragraph className={"text-center text-3xl"}>
-                    {t('offers-title')}
-                </Paragraph>
+        <div className="bg-primary text-white p-5 md:bg-white">
+            <div className="my-container md:flex gap-5">
+                <div className={"basis-1/2 lg:basis-1/3 md:bg-primary justify-center items-center md:flex md:flex-col"}>
+                    <div>
+                        <MyRoyalIcon className={"m-auto mb-4"} width={45} height={45}/>
+                        <Paragraph className={"text-center text-3xl"}>
+                            {t('offers-title')}
+                        </Paragraph>
+                        <div className="hidden md:flex justify-center">
+                            <Link href={"/offers"}
+                                  className=" uppercase text-white m-auto
+                            flex items-center gap-2 rounded-md h-9 px-4 py-2 has-[>svg]:px-3
+                            border border-white bg-primary
+                            md:border-secondary md:text-secondary">
+                                {t('offers-btn')}
+                                <ArrowRightIcon className={"shrink-0"} width={16} height={16}/>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
 
-                <div className={"mb-2"}>
-                    <Gallery variant={"secondary"} position={"bottom"}>
+                <div className={"mb-2 basis-1/2 w-1/2 lg:basis-2/3 lg:w-2/3 grow-0"}>
+                    <Gallery variant={"secondary"} position={"bottom"} options={{
+                        align: "start",
+                    }}>
                         {offers.map((item, index) => (
-                            <CarouselItem key={index}>
+                            <CarouselItem key={index} className={"lg:basis-1/2"}>
                                 <div className={"p-2 h-full"}>
                                     <CardOffer className={"bg-white text-primary"} offer={item}/>
                                 </div>
@@ -38,8 +54,7 @@ const MyAccountOffers = (
                     </Gallery>
                 </div>
 
-
-                <div className={"flex justify-center"}>
+                <div className={"flex justify-center md:hidden"}>
                     <Link href={"/offers"}
                           className="
                             uppercase text-white m-auto

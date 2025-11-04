@@ -31,7 +31,7 @@ const CardBlog = (
                         <ArrowBlackIcon width={34} height={34}/>
                     </a>
                 </div>
-k
+
                 <p className={"text-base"}>
                     {description}
                 </p>

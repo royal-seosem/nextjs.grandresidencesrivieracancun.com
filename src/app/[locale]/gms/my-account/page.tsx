@@ -24,39 +24,49 @@ const Page = async () => {
         <main>
             <Main/>
             <div className={"my-container"}>
-                <h1 className="my-6 font-secondary text-4xl text-center">{t('hello', {NAME: user?.name || ""})} </h1>
+                <h1 className="my-6 font-secondary text-4xl text-center
+                    md:text-6xl">
+                    {t('hello', {NAME: user?.name || ""})}
+                </h1>
                 <div className={"mb-2"}>
                     <RichText id={"description"} ns={"gms_home"}/>
                 </div>
 
-                <div className={"mb-2"}>
-                    <CdnImage
-                        className={"w-full object-cover"}
-                        width={320} height={296}
-                        alt={"My Royal"}
-                        src={"/img/my-royal/background-my-royal-mobile.jpg"}/>
+                <div className={"md:flex md:mb-10 flex-row-reverse gap-8"}>
+                    <div className={"mb-2 basis-1/2 md:min-h-[500px]"}>
+                        <CdnImage
+                            className={"w-full h-full object-cover"}
+                            width={320} height={296}
+                            alt={"My Royal"}
+                            src={"/img/my-royal/background-my-royal-mobile.jpg"}/>
+                    </div>
+                    <div className={"basis-1/2"}>
+                        <Paragraph className={"text-center font-bold text-base"}>{t('points-title')}</Paragraph>
+                        <ul className="mb-5">
+                            {
+                                pointsList.map((item: string, index: number) => (
+                                    <li key={index} className={"flex items-center mb-2 gap-2"}>
+                                        <PreCheckInIcon width={24} height={24} className={"mr-2"}/>
+                                        {item}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                 </div>
 
-                <Paragraph className={"text-center font-bold text-base"}>{t('points-title')}</Paragraph>
 
-                <ul className="mb-5">
-                    {
-                        pointsList.map((item: string, index: number) => (
-                            <li key={index} className={"flex items-center mb-2 gap-2"}>
-                                <PreCheckInIcon width={24} height={24} className={"mr-2"}/>
-                                {item}
-                            </li>
-                        ))
-                    }
-                </ul>
-
-
-                <h2 className="text-3xl text-center mb-6">{t('destination-title')}</h2>
+                <h2 className="text-3xl md:text-5xl text-center mb-6">
+                    {t('destination-title')}
+                </h2>
                 <Paragraph className="text-center">
                     {t('destination-description')}
                 </Paragraph>
 
-                <DestinationGallery/>
+                <div className={"mb-10"}>
+                    <DestinationGallery/>
+                </div>
+
             </div>
 
             {
@@ -67,7 +77,7 @@ const Page = async () => {
             }
 
             <div className={"my-container"}>
-                <h2 className="text-3xl text-center mb-5">
+                <h2 className="text-3xl md:text-5xl text-center mb-5">
                     {t('blog-title')}
                 </h2>
             </div>

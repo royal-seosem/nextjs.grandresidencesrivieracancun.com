@@ -18,7 +18,7 @@ const BlogList = () => {
                         img: string;
                         link: string;
                     }, index: number) => (
-                        <CarouselItem key={index}>
+                        <CarouselItem key={index} className={"md:basis-1/2"}>
                             <CardBlog {...item}/>
                         </CarouselItem>
                     ))
