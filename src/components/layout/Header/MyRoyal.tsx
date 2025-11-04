@@ -59,7 +59,7 @@ const MyRoyal = () => {
                         </Link>
                     </li>
                     <li className={"mb-4 text-base"}>
-                        <Link href={"/"} className={"flex items-center gap-1"}
+                        <Link href={"/gms/my-information"} className={"flex items-center gap-1"}
                               onClick={() => setOpen(false)}>
                             <PersonalInformationIcon width={24} height={24}/>
                             {t("Personal Information")}

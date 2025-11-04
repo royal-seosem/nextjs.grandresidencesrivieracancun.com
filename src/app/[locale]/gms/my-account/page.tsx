@@ -11,13 +11,6 @@ import MyAccountOffers from "@/components/pages/Gms/my-account/MyAccountOffers";
 import {getMyAccountOffers} from "@/use_case/offers/get_my_account_offers";
 import {withGmsAuth} from "@/lib/withGmsAuth";
 import BlogList from "@/components/pages/Gms/my-account/BlogList";
-import {Link} from "@/i18n/navigation";
-import HomeIcon from "@/components/commons/icons/home.svg";
-import SpecialIcon from "@/components/commons/icons/special.svg";
-import PersonalInformationIcon from "@/components/commons/icons/personal-information.svg";
-import PasswordIcon from "@/components/commons/icons/password.svg";
-import LogOutIcon from "@/components/commons/icons/log-out.svg";
-import {useTranslations} from "next-intl";
 import MyRoyal from "@/components/pages/Gms/my-account/MyRoyal";
 
 const Page = async () => {
@@ -58,7 +51,8 @@ const Page = async () => {
 
                             <div className={"basis-1/2 md:flex md:items-center "}>
                                 <div>
-                                    <Paragraph className={"text-center font-bold text-base"}>{t('points-title')}</Paragraph>
+                                    <Paragraph
+                                        className={"text-center font-bold text-base"}>{t('points-title')}</Paragraph>
                                     <ul className="mb-5">
                                         {
                                             pointsList.map((item: string, index: number) => (
@@ -75,7 +69,6 @@ const Page = async () => {
                     </div>
 
                 </div>
-
 
 
                 <h2 className="text-3xl md:text-5xl text-center mb-6">
