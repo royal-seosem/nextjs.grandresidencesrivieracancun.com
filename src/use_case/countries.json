@@ -1,0 +1,8404 @@
+[
+  {
+    "text": "AFGHANISTAN",
+    "value": "AF",
+    "states": [
+      {
+        "text": "Balkh",
+        "value": "BK"
+      },
+      {
+        "text": "Herat",
+        "value": "HR"
+      },
+      {
+        "text": "Kabol",
+        "value": "KB"
+      }
+    ]
+  },
+  {
+    "text": "ALAND ISLANDS",
+    "value": "AX",
+    "states": null
+  },
+  {
+    "text": "ALBANIA",
+    "value": "AL",
+    "states": [
+      {
+        "text": "Korce",
+        "value": "KO"
+      },
+      {
+        "text": "Tirane",
+        "value": "TR"
+      }
+    ]
+  },
+  {
+    "text": "ALGERIA",
+    "value": "DZ",
+    "states": [
+      {
+        "text": "Alger",
+        "value": "AL"
+      },
+      {
+        "text": "Biskra",
+        "value": "BS"
+      },
+      {
+        "text": "Constantine",
+        "value": "CO"
+      },
+      {
+        "text": "Mascara",
+        "value": "MC"
+      },
+      {
+        "text": "Oran",
+        "value": "OR"
+      },
+      {
+        "text": "Skikda",
+        "value": "SK"
+      }
+    ]
+  },
+  {
+    "text": "AMERICAN SAMOA",
+    "value": "AS",
+    "states": [
+      {
+        "text": "Eastern Tutuila",
+        "value": "ET"
+      }
+    ]
+  },
+  {
+    "text": "ANDORRA",
+    "value": "AD",
+    "states": [
+      {
+        "text": "Andorra la Vella",
+        "value": "AN"
+      },
+      {
+        "text": "Escaldes-Engordany",
+        "value": "EE"
+      }
+    ]
+  },
+  {
+    "text": "ANGOLA",
+    "value": "AO",
+    "states": [
+      {
+        "text": "Benguela",
+        "value": "BG"
+      },
+      {
+        "text": "Cuanza Sul",
+        "value": "CS"
+      },
+      {
+        "text": "Huila",
+        "value": "HL"
+      },
+      {
+        "text": "Luanda",
+        "value": "LU"
+      },
+      {
+        "text": "Uige",
+        "value": "UI"
+      }
+    ]
+  },
+  {
+    "text": "ANGUILLA",
+    "value": "AI",
+    "states": [
+      {
+        "text": "Anguilla",
+        "value": "AI"
+      }
+    ]
+  },
+  {
+    "text": "ANTARCTICA",
+    "value": "AQ",
+    "states": [
+      {
+        "text": "Enderby Land",
+        "value": "EL"
+      },
+      {
+        "text": "Ross Island",
+        "value": "RI"
+      }
+    ]
+  },
+  {
+    "text": "ANTIGUA AND BARBUDA",
+    "value": "AG",
+    "states": [
+      {
+        "text": "Saint John",
+        "value": "JO"
+      },
+      {
+        "text": "Saint Paul",
+        "value": "PA"
+      }
+    ]
+  },
+  {
+    "text": "ARGENTINA",
+    "value": "AR",
+    "states": [
+      {
+        "text": "Buenos Aires",
+        "value": "BA"
+      },
+      {
+        "text": "Catamarca",
+        "value": "CT"
+      },
+      {
+        "text": "Chaco",
+        "value": "CC"
+      },
+      {
+        "text": "Chubut",
+        "value": "CH"
+      },
+      {
+        "text": "Cordoba",
+        "value": "CB"
+      },
+      {
+        "text": "Corrientes",
+        "value": "CN"
+      },
+      {
+        "text": "Distrito Federal",
+        "value": "DF"
+      },
+      {
+        "text": "Entre Rios",
+        "value": "ER"
+      },
+      {
+        "text": "Formosa",
+        "value": "FM"
+      },
+      {
+        "text": "Jujuy",
+        "value": "JY"
+      },
+      {
+        "text": "La Pampa",
+        "value": "LP"
+      },
+      {
+        "text": "La Rioja",
+        "value": "LR"
+      },
+      {
+        "text": "Mendoza",
+        "value": "MZ"
+      },
+      {
+        "text": "Misiones",
+        "value": "MN"
+      },
+      {
+        "text": "Neuquen",
+        "value": "NQ"
+      },
+      {
+        "text": "Rio Negro",
+        "value": "RN"
+      },
+      {
+        "text": "Salta",
+        "value": "SA"
+      },
+      {
+        "text": "San Juan",
+        "value": "SJ"
+      },
+      {
+        "text": "San Luis",
+        "value": "SL"
+      },
+      {
+        "text": "Santa Cruz",
+        "value": "SC"
+      },
+      {
+        "text": "Santa Fe",
+        "value": "SF"
+      },
+      {
+        "text": "Santiago del Estero",
+        "value": "SE"
+      },
+      {
+        "text": "Tierra del Fuego",
+        "value": "TF"
+      },
+      {
+        "text": "Tucuman",
+        "value": "TM"
+      }
+    ]
+  },
+  {
+    "text": "ARMENIA",
+    "value": "AM",
+    "states": [
+      {
+        "text": "Lorri",
+        "value": "LO"
+      },
+      {
+        "text": "Shirak",
+        "value": "SH"
+      },
+      {
+        "text": "Yerevan",
+        "value": "ER"
+      }
+    ]
+  },
+  {
+    "text": "ARUBA",
+    "value": "AW",
+    "states": null
+  },
+  {
+    "text": "AUSTRALIA",
+    "value": "AU",
+    "states": [
+      {
+        "text": "Australian Capital Territory",
+        "value": "CT"
+      },
+      {
+        "text": "New South Wales",
+        "value": "NS"
+      },
+      {
+        "text": "Northern Territory",
+        "value": "NT"
+      },
+      {
+        "text": "Queensland",
+        "value": "QL"
+      },
+      {
+        "text": "South Australia",
+        "value": "SA"
+      },
+      {
+        "text": "Tasmania",
+        "value": "TS"
+      },
+      {
+        "text": "Victoria",
+        "value": "VI"
+      },
+      {
+        "text": "Western Australia",
+        "value": "WA"
+      }
+    ]
+  },
+  {
+    "text": "AUSTRIA",
+    "value": "AT",
+    "states": [
+      {
+        "text": "Burgenland",
+        "value": "BU"
+      },
+      {
+        "text": "Karnten",
+        "value": "KA"
+      },
+      {
+        "text": "Niederosterreich",
+        "value": "NO"
+      },
+      {
+        "text": "Oberosterreich",
+        "value": "OO"
+      },
+      {
+        "text": "Salzburg",
+        "value": "SZ"
+      },
+      {
+        "text": "Steiermark",
+        "value": "ST"
+      },
+      {
+        "text": "Tirol",
+        "value": "TR"
+      },
+      {
+        "text": "Vorarlberg",
+        "value": "VO"
+      },
+      {
+        "text": "Wien",
+        "value": "WI"
+      }
+    ]
+  },
+  {
+    "text": "AZERBAIJAN",
+    "value": "AZ",
+    "states": [
+      {
+        "text": "Abseron",
+        "value": "AR"
+      }
+    ]
+  },
+  {
+    "text": "BAHAMAS",
+    "value": "BS",
+    "states": [
+      {
+        "text": "Acklins and Crooked Islands",
+        "value": "AC"
+      },
+      {
+        "text": "Cat Island",
+        "value": "CI"
+      },
+      {
+        "text": "Exuma",
+        "value": "EX"
+      },
+      {
+        "text": "Freeport",
+        "value": "FP"
+      },
+      {
+        "text": "Green Turtle Cay",
+        "value": "GT"
+      },
+      {
+        "text": "Inagua",
+        "value": "IN"
+      },
+      {
+        "text": "Kemps Bay",
+        "value": "KB"
+      },
+      {
+        "text": "Marsh Harbour",
+        "value": "MH"
+      },
+      {
+        "text": "Mayaguana",
+        "value": "MG"
+      },
+      {
+        "text": "New Providence",
+        "value": "NP"
+      },
+      {
+        "text": "Nichollstown and Berry Islands",
+        "value": "NB"
+      },
+      {
+        "text": "Rock Sound",
+        "value": "RS"
+      },
+      {
+        "text": "San Salvador and Rum Cay",
+        "value": "SR"
+      }
+    ]
+  },
+  {
+    "text": "BAHRAIN",
+    "value": "BH",
+    "states": [
+      {
+        "text": "Al Manamah",
+        "value": "MN"
+      },
+      {
+        "text": "Al Mintaqah al Gharbiyah",
+        "value": "MG"
+      },
+      {
+        "text": "Al Muharraq",
+        "value": "MQ"
+      },
+      {
+        "text": "Madinat Isa",
+        "value": "MI"
+      }
+    ]
+  },
+  {
+    "text": "BANGLADESH",
+    "value": "BD",
+    "states": [
+      {
+        "text": "Chittagong",
+        "value": "CG"
+      },
+      {
+        "text": "Dhaka",
+        "value": "DA"
+      },
+      {
+        "text": "Khulna",
+        "value": "KH"
+      },
+      {
+        "text": "Rajshahi",
+        "value": "RJ"
+      }
+    ]
+  },
+  {
+    "text": "BARBADOS",
+    "value": "BB",
+    "states": [
+      {
+        "text": "Christ Church",
+        "value": "CC"
+      },
+      {
+        "text": "Saint Michael",
+        "value": "MI"
+      },
+      {
+        "text": "Saint Peter",
+        "value": "PE"
+      }
+    ]
+  },
+  {
+    "text": "BELARUS",
+    "value": "BY",
+    "states": [
+      {
+        "text": "Brestskaya Voblasts'",
+        "value": "BR"
+      },
+      {
+        "text": "Mahilyowskaya Voblasts'",
+        "value": "MA"
+      },
+      {
+        "text": "Minsk",
+        "value": "HM"
+      },
+      {
+        "text": "Minskaya Voblasts'",
+        "value": "MI"
+      }
+    ]
+  },
+  {
+    "text": "BELGIUM",
+    "value": "BE",
+    "states": [
+      {
+        "text": "Antwerpen",
+        "value": "AN"
+      },
+      {
+        "text": "Brabant Wallon",
+        "value": "BW"
+      },
+      {
+        "text": "Brussels",
+        "value": "BU"
+      },
+      {
+        "text": "Hainaut",
+        "value": "HT"
+      },
+      {
+        "text": "Liege",
+        "value": "LG"
+      },
+      {
+        "text": "Limburg",
+        "value": "LI"
+      },
+      {
+        "text": "Luxembourg",
+        "value": "LX"
+      },
+      {
+        "text": "Namur",
+        "value": "NA"
+      },
+      {
+        "text": "Oost-Vlaanderen",
+        "value": "OV"
+      },
+      {
+        "text": "Vlaams-Brabant",
+        "value": "VB"
+      },
+      {
+        "text": "West-Vlaanderen",
+        "value": "WV"
+      }
+    ]
+  },
+  {
+    "text": "BELIZE",
+    "value": "BZ",
+    "states": [
+      {
+        "text": "Belize",
+        "value": "BZ"
+      },
+      {
+        "text": "Cayo",
+        "value": "CY"
+      },
+      {
+        "text": "Orange Walk",
+        "value": "OW"
+      },
+      {
+        "text": "Toledo",
+        "value": "TO"
+      }
+    ]
+  },
+  {
+    "text": "BENIN",
+    "value": "BJ",
+    "states": [
+      {
+        "text": "Atakora",
+        "value": "AK"
+      },
+      {
+        "text": "Atlantique",
+        "value": "AQ"
+      },
+      {
+        "text": "Oueme",
+        "value": "OU"
+      }
+    ]
+  },
+  {
+    "text": "BERMUDA",
+    "value": "BM",
+    "states": [
+      {
+        "text": "Hamilton Municipality",
+        "value": "HC"
+      },
+      {
+        "text": "Saint George's",
+        "value": "SC"
+      },
+      {
+        "text": "Sandys",
+        "value": "SA"
+      }
+    ]
+  },
+  {
+    "text": "BHUTAN",
+    "value": "BT",
+    "states": null
+  },
+  {
+    "text": "BOLIVIA",
+    "value": "BO",
+    "states": [
+      {
+        "text": "Chuquisaca",
+        "value": "CQ"
+      },
+      {
+        "text": "Cochabamba",
+        "value": "CB"
+      },
+      {
+        "text": "El Beni",
+        "value": "EB"
+      },
+      {
+        "text": "La Paz",
+        "value": "LP"
+      },
+      {
+        "text": "Oruro",
+        "value": "OR"
+      },
+      {
+        "text": "Pando",
+        "value": "PA"
+      },
+      {
+        "text": "Potosi",
+        "value": "PO"
+      },
+      {
+        "text": "Santa Cruz",
+        "value": "SC"
+      },
+      {
+        "text": "Tarija",
+        "value": "TR"
+      }
+    ]
+  },
+  {
+    "text": "BOSNIA AND HERZEGOVI",
+    "value": "BA",
+    "states": [
+      {
+        "text": "Federation of Bosnia and Herzegovina",
+        "value": "BF"
+      },
+      {
+        "text": "Republika Srpska",
+        "value": "SR"
+      }
+    ]
+  },
+  {
+    "text": "BOTSWANA",
+    "value": "BW",
+    "states": [
+      {
+        "text": "SouthEast",
+        "value": "SE"
+      }
+    ]
+  },
+  {
+    "text": "BOUVET ISLAND",
+    "value": "BV",
+    "states": null
+  },
+  {
+    "text": "BRAZIL",
+    "value": "BR",
+    "states": [
+      {
+        "text": "Acre",
+        "value": "AC"
+      },
+      {
+        "text": "Alagoas",
+        "value": "AL"
+      },
+      {
+        "text": "Amapá",
+        "value": "AP"
+      },
+      {
+        "text": "Amazonas",
+        "value": "AM"
+      },
+      {
+        "text": "Bahia",
+        "value": "BA"
+      },
+      {
+        "text": "Ceará",
+        "value": "CE"
+      },
+      {
+        "text": "Distrito Federal",
+        "value": "DF"
+      },
+      {
+        "text": "Espírito Santo",
+        "value": "ES"
+      },
+      {
+        "text": "Goiás",
+        "value": "GO"
+      },
+      {
+        "text": "Maranhão",
+        "value": "MA"
+      },
+      {
+        "text": "Mato Grosso",
+        "value": "MT"
+      },
+      {
+        "text": "Mato Grosso do Sul",
+        "value": "MS"
+      },
+      {
+        "text": "Minas Gerais",
+        "value": "MG"
+      },
+      {
+        "text": "Para",
+        "value": "PA"
+      },
+      {
+        "text": "Paraná",
+        "value": "PR"
+      },
+      {
+        "text": "Paraíba",
+        "value": "PB"
+      },
+      {
+        "text": "Pernambuco",
+        "value": "PE"
+      },
+      {
+        "text": "Piauí",
+        "value": "PI"
+      },
+      {
+        "text": "Rio de Janeiro",
+        "value": "RJ"
+      },
+      {
+        "text": "Rio Grande do Norte",
+        "value": "RN"
+      },
+      {
+        "text": "Rio Grande do Sul",
+        "value": "RS"
+      },
+      {
+        "text": "Rondônia",
+        "value": "RO"
+      },
+      {
+        "text": "Roraima",
+        "value": "RR"
+      },
+      {
+        "text": "Santa Catarina",
+        "value": "SC"
+      },
+      {
+        "text": "Sergipe",
+        "value": "SE"
+      },
+      {
+        "text": "São Paulo",
+        "value": "SP"
+      },
+      {
+        "text": "Tocantins",
+        "value": "TO"
+      }
+    ]
+  },
+  {
+    "text": "BRITISH INDIAN OCEAN",
+    "value": "IO",
+    "states": null
+  },
+  {
+    "text": "BRUNEI DARUSSALAM",
+    "value": "BN",
+    "states": [
+      {
+        "text": "Belait",
+        "value": "BE"
+      },
+      {
+        "text": "Brunei and Muara",
+        "value": "BM"
+      },
+      {
+        "text": "Tutong",
+        "value": "TU"
+      }
+    ]
+  },
+  {
+    "text": "BULGARIA",
+    "value": "BG",
+    "states": [
+      {
+        "text": "Burgas",
+        "value": "BR"
+      },
+      {
+        "text": "Lovech",
+        "value": "LV"
+      },
+      {
+        "text": "Plovdiv",
+        "value": "PD"
+      },
+      {
+        "text": "Razgrad",
+        "value": "RG"
+      },
+      {
+        "text": "Sofiya",
+        "value": "SF"
+      },
+      {
+        "text": "Sofiya-Grad",
+        "value": "SG"
+      },
+      {
+        "text": "Stara Zagora",
+        "value": "SZ"
+      },
+      {
+        "text": "Varna",
+        "value": "VN"
+      }
+    ]
+  },
+  {
+    "text": "BURKINA FASO",
+    "value": "BF",
+    "states": [
+      {
+        "text": "Kadiogo",
+        "value": "KA"
+      },
+      {
+        "text": "Kourwéogo",
+        "value": "KW"
+      },
+      {
+        "text": "Passore",
+        "value": "PA"
+      },
+      {
+        "text": "Yatenga",
+        "value": "YT"
+      }
+    ]
+  },
+  {
+    "text": "BURUNDI",
+    "value": "BI",
+    "states": [
+      {
+        "text": "Bujumbura",
+        "value": "BU"
+      }
+    ]
+  },
+  {
+    "text": "CAMBODIA",
+    "value": "KH",
+    "states": [
+      {
+        "text": "Batdambang",
+        "value": "BA"
+      },
+      {
+        "text": "Kampong Cham",
+        "value": "KM"
+      },
+      {
+        "text": "Kampong Spoe",
+        "value": "KS"
+      },
+      {
+        "text": "Kampong Thum",
+        "value": "KT"
+      },
+      {
+        "text": "Krachen",
+        "value": "KR"
+      },
+      {
+        "text": "Phnum Penh",
+        "value": "PP"
+      },
+      {
+        "text": "Pouthisat",
+        "value": "PO"
+      },
+      {
+        "text": "Prey Veng",
+        "value": "PY"
+      },
+      {
+        "text": "Siem Reab",
+        "value": "SI"
+      },
+      {
+        "text": "Stoeng Treng",
+        "value": "ST"
+      },
+      {
+        "text": "Svay Rieng",
+        "value": "SR"
+      },
+      {
+        "text": "Takev",
+        "value": "TA"
+      }
+    ]
+  },
+  {
+    "text": "CAMEROON",
+    "value": "CM",
+    "states": [
+      {
+        "text": "Centre",
+        "value": "CE"
+      },
+      {
+        "text": "Littoral",
+        "value": "LT"
+      },
+      {
+        "text": "NordOuest",
+        "value": "NW"
+      },
+      {
+        "text": "SudOuest",
+        "value": "SW"
+      }
+    ]
+  },
+  {
+    "text": "CANADA",
+    "value": "CA",
+    "states": [
+      {
+        "text": "Alberta",
+        "value": "AB"
+      },
+      {
+        "text": "British Columbia",
+        "value": "BC"
+      },
+      {
+        "text": "Manitoba",
+        "value": "MB"
+      },
+      {
+        "text": "New Brunswick",
+        "value": "NB"
+      },
+      {
+        "text": "Newfoundland and Labrador",
+        "value": "NF"
+      },
+      {
+        "text": "Northwest Territories",
+        "value": "NT"
+      },
+      {
+        "text": "Nova Scotia",
+        "value": "NS"
+      },
+      {
+        "text": "Nunavut",
+        "value": "NU"
+      },
+      {
+        "text": "Ontario",
+        "value": "ON"
+      },
+      {
+        "text": "Prince Edward Island",
+        "value": "PE"
+      },
+      {
+        "text": "Quebec",
+        "value": "QC"
+      },
+      {
+        "text": "Saskatchewan",
+        "value": "SK"
+      },
+      {
+        "text": "Yukon Territory",
+        "value": "YT"
+      }
+    ]
+  },
+  {
+    "text": "CAPE VERDE",
+    "value": "CV",
+    "states": [
+      {
+        "text": "Praia",
+        "value": "PI"
+      },
+      {
+        "text": "Sao Vicente",
+        "value": "SV"
+      }
+    ]
+  },
+  {
+    "text": "CAYMAN ISLANDS",
+    "value": "KY",
+    "states": [
+      {
+        "text": "South Town",
+        "value": "SO"
+      }
+    ]
+  },
+  {
+    "text": "CENTRAL AFRICAN REPU",
+    "value": "CF",
+    "states": [
+      {
+        "text": "Lobaye",
+        "value": "LB"
+      }
+    ]
+  },
+  {
+    "text": "CHAD",
+    "value": "TD",
+    "states": null
+  },
+  {
+    "text": "CHILE",
+    "value": "CL",
+    "states": [
+      {
+        "text": "Antofagasta",
+        "value": "AN"
+      },
+      {
+        "text": "Araucania",
+        "value": "AR"
+      },
+      {
+        "text": "Atacama",
+        "value": "AT"
+      },
+      {
+        "text": "Bio-Bio",
+        "value": "BI"
+      },
+      {
+        "text": "Coquimbo",
+        "value": "CO"
+      },
+      {
+        "text": "Libertador General Bernardo O'Higgins",
+        "value": "LI"
+      },
+      {
+        "text": "Los Lagos",
+        "value": "LL"
+      },
+      {
+        "text": "Magallanes y de la Antartica Chilena",
+        "value": "MA"
+      },
+      {
+        "text": "Maule",
+        "value": "ML"
+      },
+      {
+        "text": "Region Metropolitana",
+        "value": "RM"
+      },
+      {
+        "text": "Tarapaca",
+        "value": "TA"
+      },
+      {
+        "text": "Valparaiso",
+        "value": "VS"
+      }
+    ]
+  },
+  {
+    "text": "CHINA",
+    "value": "CN",
+    "states": [
+      {
+        "text": "Anhui",
+        "value": "AH"
+      },
+      {
+        "text": "Beijing",
+        "value": "BJ"
+      },
+      {
+        "text": "China",
+        "value": "CN"
+      },
+      {
+        "text": "Chongqing",
+        "value": "CQ"
+      },
+      {
+        "text": "Fujian",
+        "value": "FJ"
+      },
+      {
+        "text": "Gansu",
+        "value": "GS"
+      },
+      {
+        "text": "Guangdong",
+        "value": "GD"
+      },
+      {
+        "text": "Guangxi",
+        "value": "GX"
+      },
+      {
+        "text": "Guizhou",
+        "value": "GZ"
+      },
+      {
+        "text": "Hainan",
+        "value": "HA"
+      },
+      {
+        "text": "Hebei",
+        "value": "HB"
+      },
+      {
+        "text": "Heilongjiang",
+        "value": "HL"
+      },
+      {
+        "text": "Henan",
+        "value": "HE"
+      },
+      {
+        "text": "Hubei",
+        "value": "HU"
+      },
+      {
+        "text": "Hunan",
+        "value": "HN"
+      },
+      {
+        "text": "Jiangsu",
+        "value": "JS"
+      },
+      {
+        "text": "Jiangxi",
+        "value": "JX"
+      },
+      {
+        "text": "Jilin",
+        "value": "JL"
+      },
+      {
+        "text": "Liaoning",
+        "value": "LN"
+      },
+      {
+        "text": "Nei Mongol",
+        "value": "NM"
+      },
+      {
+        "text": "Ningxia",
+        "value": "NX"
+      },
+      {
+        "text": "Qinghai",
+        "value": "QH"
+      },
+      {
+        "text": "Shaanxi",
+        "value": "SA"
+      },
+      {
+        "text": "Shandong",
+        "value": "SD"
+      },
+      {
+        "text": "Shanghai",
+        "value": "SH"
+      },
+      {
+        "text": "Shanxi",
+        "value": "SX"
+      },
+      {
+        "text": "Sichuan",
+        "value": "SC"
+      },
+      {
+        "text": "Tianjin",
+        "value": "TJ"
+      },
+      {
+        "text": "Xinjiang",
+        "value": "XJ"
+      },
+      {
+        "text": "Xizang",
+        "value": "XZ"
+      },
+      {
+        "text": "Yunnan",
+        "value": "YN"
+      },
+      {
+        "text": "Zhejiang",
+        "value": "ZJ"
+      }
+    ]
+  },
+  {
+    "text": "CHRISTMAS ISLAND",
+    "value": "CX",
+    "states": [
+      {
+        "text": "Christmas Island",
+        "value": "CX"
+      }
+    ]
+  },
+  {
+    "text": "COCOS (KEELING) ISLA",
+    "value": "CC",
+    "states": null
+  },
+  {
+    "text": "COLOMBIA",
+    "value": "CO",
+    "states": [
+      {
+        "text": "Amazonas",
+        "value": "AM"
+      },
+      {
+        "text": "Antioquia",
+        "value": "AN"
+      },
+      {
+        "text": "Arauca",
+        "value": "AR"
+      },
+      {
+        "text": "Atlantico",
+        "value": "AT"
+      },
+      {
+        "text": "Boyaca",
+        "value": "BY"
+      },
+      {
+        "text": "Caldas",
+        "value": "CL"
+      },
+      {
+        "text": "Cauca",
+        "value": "CA"
+      },
+      {
+        "text": "Cesar",
+        "value": "CE"
+      },
+      {
+        "text": "Choco",
+        "value": "CH"
+      },
+      {
+        "text": "Cordoba",
+        "value": "CR"
+      },
+      {
+        "text": "Cundinamarca",
+        "value": "CU"
+      },
+      {
+        "text": "Distrito Capital",
+        "value": "DC"
+      },
+      {
+        "text": "Huila",
+        "value": "HU"
+      },
+      {
+        "text": "La Guajira",
+        "value": "LG"
+      },
+      {
+        "text": "Magdalena",
+        "value": "MA"
+      },
+      {
+        "text": "Meta",
+        "value": "ME"
+      },
+      {
+        "text": "Narino",
+        "value": "NA"
+      },
+      {
+        "text": "Norte de Santander",
+        "value": "NS"
+      },
+      {
+        "text": "Putumayo",
+        "value": "PU"
+      },
+      {
+        "text": "Risaralda",
+        "value": "RI"
+      },
+      {
+        "text": "San Andres y Providencia",
+        "value": "SA"
+      },
+      {
+        "text": "Santander",
+        "value": "ST"
+      },
+      {
+        "text": "Tolima",
+        "value": "TO"
+      },
+      {
+        "text": "Valle del Cauca",
+        "value": "VC"
+      }
+    ]
+  },
+  {
+    "text": "COMOROS",
+    "value": "KM",
+    "states": null
+  },
+  {
+    "text": "CONGO",
+    "value": "CG",
+    "states": [
+      {
+        "text": "Brazzaville",
+        "value": "BR"
+      },
+      {
+        "text": "Kouilou",
+        "value": "KO"
+      },
+      {
+        "text": "Pool",
+        "value": "PO"
+      }
+    ]
+  },
+  {
+    "text": "CONGO, THE DEMOCRATI",
+    "value": "CD",
+    "states": [
+      {
+        "text": "Katanga",
+        "value": "KT"
+      },
+      {
+        "text": "Nord-Kivu",
+        "value": "NK"
+      },
+      {
+        "text": "Orientale",
+        "value": "HC"
+      }
+    ]
+  },
+  {
+    "text": "COOK ISLANDS",
+    "value": "CK",
+    "states": [
+      {
+        "text": "Cook Islands",
+        "value": "CK"
+      }
+    ]
+  },
+  {
+    "text": "COSTA RICA",
+    "value": "CR",
+    "states": [
+      {
+        "text": "Alajuela",
+        "value": "AL"
+      },
+      {
+        "text": "Cartago",
+        "value": "CA"
+      },
+      {
+        "text": "Guanacaste",
+        "value": "GU"
+      },
+      {
+        "text": "Heredia",
+        "value": "HE"
+      },
+      {
+        "text": "Limon",
+        "value": "LI"
+      },
+      {
+        "text": "Puntarenas",
+        "value": "PU"
+      },
+      {
+        "text": "San Jose",
+        "value": "SJ"
+      }
+    ]
+  },
+  {
+    "text": "COTE D'IVOIRE",
+    "value": "CI",
+    "states": [
+      {
+        "text": "Abidjan",
+        "value": "AB"
+      },
+      {
+        "text": "Yamoussoukro",
+        "value": "YA"
+      }
+    ]
+  },
+  {
+    "text": "CROATIA",
+    "value": "HR",
+    "states": [
+      {
+        "text": "Brodsko-Posavka",
+        "value": "SP"
+      },
+      {
+        "text": "Dubrovacko-Neretvanska",
+        "value": "DN"
+      },
+      {
+        "text": "Grad Zagreb",
+        "value": "GZ"
+      },
+      {
+        "text": "Istarska",
+        "value": "IS"
+      },
+      {
+        "text": "Koprivnicko-Krizevacka",
+        "value": "KK"
+      },
+      {
+        "text": "Krapinsko-Zagorska",
+        "value": "KZ"
+      },
+      {
+        "text": "Licko-Senjska",
+        "value": "LS"
+      },
+      {
+        "text": "Osjecko-Baranjska",
+        "value": "OB"
+      },
+      {
+        "text": "Pozesko-Slavonska",
+        "value": "PS"
+      },
+      {
+        "text": "Primorsko-Goranska",
+        "value": "PG"
+      },
+      {
+        "text": "Sisacko-Moslavacka",
+        "value": "SM"
+      },
+      {
+        "text": "Splitsko-Dalmatinska",
+        "value": "SD"
+      },
+      {
+        "text": "Varazdinska",
+        "value": "VA"
+      },
+      {
+        "text": "Vukovarsko-Srijemska",
+        "value": "VS"
+      },
+      {
+        "text": "Zadarska",
+        "value": "ZD"
+      },
+      {
+        "text": "Zagrebacka",
+        "value": "ZG"
+      }
+    ]
+  },
+  {
+    "text": "CUBA",
+    "value": "CU",
+    "states": [
+      {
+        "text": "Ciudad de La Habana",
+        "value": "CH"
+      },
+      {
+        "text": "Holguin",
+        "value": "HO"
+      },
+      {
+        "text": "Las Tunas",
+        "value": "LT"
+      }
+    ]
+  },
+  {
+    "text": "CURACAO",
+    "value": "CW",
+    "states": null
+  },
+  {
+    "text": "CYPRUS",
+    "value": "CY",
+    "states": [
+      {
+        "text": "Famagusta",
+        "value": "FA"
+      },
+      {
+        "text": "Kyrenia",
+        "value": "KY"
+      },
+      {
+        "text": "Larnaca",
+        "value": "LA"
+      },
+      {
+        "text": "Limassol",
+        "value": "LI"
+      },
+      {
+        "text": "Nicosia",
+        "value": "NI"
+      },
+      {
+        "text": "Paphos",
+        "value": "PA"
+      }
+    ]
+  },
+  {
+    "text": "CZECH REPUBLIC",
+    "value": "CZ",
+    "states": [
+      {
+        "text": "Czech Republic",
+        "value": "CZ"
+      },
+      {
+        "text": "Hlavni Mesto Praha",
+        "value": "PR"
+      },
+      {
+        "text": "Jihocesky Kraj",
+        "value": "JC"
+      },
+      {
+        "text": "Jihomoravsky Kraj",
+        "value": "JM"
+      },
+      {
+        "text": "Karlovarsky Kraj",
+        "value": "KA"
+      },
+      {
+        "text": "Kralovehradecky Kraj",
+        "value": "KR"
+      },
+      {
+        "text": "Liberecky Kraj",
+        "value": "LI"
+      },
+      {
+        "text": "Moravskoslezsky Kraj",
+        "value": "MO"
+      },
+      {
+        "text": "Olomoucky Kraj",
+        "value": "OL"
+      },
+      {
+        "text": "Pardubicky Kraj",
+        "value": "PA"
+      },
+      {
+        "text": "Plzensky Kraj",
+        "value": "PL"
+      },
+      {
+        "text": "Stredocesky Kraj",
+        "value": "ST"
+      },
+      {
+        "text": "Ustecky Kraj",
+        "value": "US"
+      },
+      {
+        "text": "Vysocina",
+        "value": "VY"
+      },
+      {
+        "text": "Zlinsky Kraj",
+        "value": "ZL"
+      }
+    ]
+  },
+  {
+    "text": "DENMARK",
+    "value": "DK",
+    "states": [
+      {
+        "text": "Arhus",
+        "value": "AR"
+      },
+      {
+        "text": "Bornholm",
+        "value": "BO"
+      },
+      {
+        "text": "Fredericksberg",
+        "value": "SF"
+      },
+      {
+        "text": "Frederiksborg",
+        "value": "FR"
+      },
+      {
+        "text": "Fyn",
+        "value": "FY"
+      },
+      {
+        "text": "Kobenhavn",
+        "value": "SK"
+      },
+      {
+        "text": "Nordjylland",
+        "value": "NJ"
+      },
+      {
+        "text": "Ribe",
+        "value": "RB"
+      },
+      {
+        "text": "Ringkobing",
+        "value": "RK"
+      },
+      {
+        "text": "Roskilde",
+        "value": "RS"
+      },
+      {
+        "text": "Sonderjylland",
+        "value": "SJ"
+      },
+      {
+        "text": "Storstrom",
+        "value": "ST"
+      },
+      {
+        "text": "Vejle",
+        "value": "VJ"
+      },
+      {
+        "text": "Vestsjalland",
+        "value": "VS"
+      },
+      {
+        "text": "Viborg",
+        "value": "VB"
+      }
+    ]
+  },
+  {
+    "text": "DJIBOUTI",
+    "value": "DJ",
+    "states": null
+  },
+  {
+    "text": "DOMINICA",
+    "value": "DM",
+    "states": [
+      {
+        "text": "Saint Andrew",
+        "value": "AN"
+      },
+      {
+        "text": "Saint George",
+        "value": "GO"
+      }
+    ]
+  },
+  {
+    "text": "DOMINICAN REPUBLIC",
+    "value": "DO",
+    "states": [
+      {
+        "text": "Azua",
+        "value": "AZ"
+      },
+      {
+        "text": "Baoruco",
+        "value": "BR"
+      },
+      {
+        "text": "Barahona",
+        "value": "BH"
+      },
+      {
+        "text": "Dajabon",
+        "value": "DA"
+      },
+      {
+        "text": "Distrito Nacional",
+        "value": "DN"
+      },
+      {
+        "text": "Duarte",
+        "value": "DU"
+      },
+      {
+        "text": "El Seibo",
+        "value": "SE"
+      },
+      {
+        "text": "Elias Pina",
+        "value": "EP"
+      },
+      {
+        "text": "Espaillat",
+        "value": "ES"
+      },
+      {
+        "text": "Hato Mayor",
+        "value": "HM"
+      },
+      {
+        "text": "Independencia",
+        "value": "IN"
+      },
+      {
+        "text": "La Altagracia",
+        "value": "AL"
+      },
+      {
+        "text": "La Romana",
+        "value": "RO"
+      },
+      {
+        "text": "Maria Trinidad Sanchez",
+        "value": "MT"
+      },
+      {
+        "text": "Monsenor Nouel",
+        "value": "MN"
+      },
+      {
+        "text": "Monte Cristi",
+        "value": "MC"
+      },
+      {
+        "text": "Monte Plata",
+        "value": "MP"
+      },
+      {
+        "text": "Pedernales",
+        "value": "PN"
+      },
+      {
+        "text": "Peravia",
+        "value": "PR"
+      },
+      {
+        "text": "Puerto Plata",
+        "value": "PP"
+      },
+      {
+        "text": "Salcedo",
+        "value": "SC"
+      },
+      {
+        "text": "Samana",
+        "value": "SM"
+      },
+      {
+        "text": "San Cristobal",
+        "value": "CR"
+      },
+      {
+        "text": "San Juan",
+        "value": "JU"
+      },
+      {
+        "text": "San Pedro de Macoris",
+        "value": "PM"
+      },
+      {
+        "text": "Sanchez Ramirez",
+        "value": "SZ"
+      },
+      {
+        "text": "Santiago",
+        "value": "ST"
+      },
+      {
+        "text": "Santiago Rodriguez",
+        "value": "SR"
+      },
+      {
+        "text": "Valverde",
+        "value": "VA"
+      }
+    ]
+  },
+  {
+    "text": "EAST TIMOR",
+    "value": "TP",
+    "states": null
+  },
+  {
+    "text": "ECUADOR",
+    "value": "EC",
+    "states": [
+      {
+        "text": "Azuay",
+        "value": "AZ"
+      },
+      {
+        "text": "Bolivar",
+        "value": "BO"
+      },
+      {
+        "text": "Carchi",
+        "value": "CR"
+      },
+      {
+        "text": "Chimborazo",
+        "value": "CB"
+      },
+      {
+        "text": "Cotopaxi",
+        "value": "CT"
+      },
+      {
+        "text": "El Oro",
+        "value": "EO"
+      },
+      {
+        "text": "Galapagos",
+        "value": "GA"
+      },
+      {
+        "text": "Guayas",
+        "value": "GU"
+      },
+      {
+        "text": "Imbabura",
+        "value": "IM"
+      },
+      {
+        "text": "Loja",
+        "value": "LJ"
+      },
+      {
+        "text": "Manabi",
+        "value": "MN"
+      },
+      {
+        "text": "Pichincha",
+        "value": "PI"
+      },
+      {
+        "text": "Tungurahua",
+        "value": "TU"
+      }
+    ]
+  },
+  {
+    "text": "EGYPT",
+    "value": "EG",
+    "states": [
+      {
+        "text": "Ad Daqahliyah",
+        "value": "DQ"
+      },
+      {
+        "text": "Al Bahr al Ahmar",
+        "value": "BA"
+      },
+      {
+        "text": "Al Jizah",
+        "value": "JZ"
+      },
+      {
+        "text": "Al Qahirah",
+        "value": "QH"
+      },
+      {
+        "text": "Bur Sa'id",
+        "value": "BS"
+      },
+      {
+        "text": "Egypt",
+        "value": "EG"
+      },
+      {
+        "text": "Janub Sina'",
+        "value": "JS"
+      },
+      {
+        "text": "Qina",
+        "value": "QN"
+      },
+      {
+        "text": "Suhaj",
+        "value": "SJ"
+      }
+    ]
+  },
+  {
+    "text": "EL SALVADOR",
+    "value": "SV",
+    "states": [
+      {
+        "text": "Ahuachapan",
+        "value": "AH"
+      },
+      {
+        "text": "Chalatenango",
+        "value": "CH"
+      },
+      {
+        "text": "Cuscatlan",
+        "value": "CU"
+      },
+      {
+        "text": "La Libertad",
+        "value": "LI"
+      },
+      {
+        "text": "San Salvador",
+        "value": "SS"
+      },
+      {
+        "text": "San Vicente",
+        "value": "SI"
+      },
+      {
+        "text": "Santa Ana",
+        "value": "SA"
+      }
+    ]
+  },
+  {
+    "text": "EQUATORIAL GUINEA",
+    "value": "GQ",
+    "states": null
+  },
+  {
+    "text": "ERITREA",
+    "value": "ER",
+    "states": [
+      {
+        "text": "Eritrea",
+        "value": "ER"
+      },
+      {
+        "text": "Maekel",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "ESTONIA",
+    "value": "EE",
+    "states": [
+      {
+        "text": "Harjumaa",
+        "value": "HA"
+      },
+      {
+        "text": "Jogevamaa",
+        "value": "JN"
+      },
+      {
+        "text": "Laane-Virumaa",
+        "value": "LV"
+      },
+      {
+        "text": "Parnumaa",
+        "value": "PR"
+      },
+      {
+        "text": "Saaremaa",
+        "value": "SA"
+      },
+      {
+        "text": "Tartumaa",
+        "value": "TA"
+      },
+      {
+        "text": "Viljandimaa",
+        "value": "VD"
+      }
+    ]
+  },
+  {
+    "text": "ETHIOPIA",
+    "value": "ET",
+    "states": [
+      {
+        "text": "Addis Ababa",
+        "value": "AA"
+      },
+      {
+        "text": "Tigray",
+        "value": "TI"
+      }
+    ]
+  },
+  {
+    "text": "FALKLAND ISLANDS (MA",
+    "value": "FK",
+    "states": null
+  },
+  {
+    "text": "FAROE ISLANDS",
+    "value": "FO",
+    "states": [
+      {
+        "text": "Faroe Islands",
+        "value": "FO"
+      }
+    ]
+  },
+  {
+    "text": "FIJI",
+    "value": "FJ",
+    "states": [
+      {
+        "text": "Central",
+        "value": "CE"
+      }
+    ]
+  },
+  {
+    "text": "FINLAND",
+    "value": "FI",
+    "states": [
+      {
+        "text": "Ahvenanmaa",
+        "value": "AV"
+      },
+      {
+        "text": "Etela-Suomen Laani",
+        "value": "ES"
+      },
+      {
+        "text": "Ita-Suomen Laani",
+        "value": "IS"
+      },
+      {
+        "text": "Lansi-Suomen Laani",
+        "value": "LS"
+      },
+      {
+        "text": "Lappi",
+        "value": "LP"
+      },
+      {
+        "text": "Oulu Laani",
+        "value": "OU"
+      }
+    ]
+  },
+  {
+    "text": "FRANCE",
+    "value": "FR",
+    "states": [
+      {
+        "text": "Alsace",
+        "value": "AL"
+      },
+      {
+        "text": "Aquitaine",
+        "value": "AQ"
+      },
+      {
+        "text": "Auvergne",
+        "value": "AU"
+      },
+      {
+        "text": "Basse-Normandie",
+        "value": "BA"
+      },
+      {
+        "text": "Bourgogne",
+        "value": "BO"
+      },
+      {
+        "text": "Bretagne",
+        "value": "BR"
+      },
+      {
+        "text": "Centre",
+        "value": "CE"
+      },
+      {
+        "text": "Champagne-Ardenne",
+        "value": "CH"
+      },
+      {
+        "text": "Franche-Comte",
+        "value": "FC"
+      },
+      {
+        "text": "Haute-Normandie",
+        "value": "HA"
+      },
+      {
+        "text": "Ile-De-France",
+        "value": "IL"
+      },
+      {
+        "text": "Languedoc-Roussillon",
+        "value": "LA"
+      },
+      {
+        "text": "Limousin",
+        "value": "LI"
+      },
+      {
+        "text": "Lorraine",
+        "value": "LO"
+      },
+      {
+        "text": "Midi-Pyrenees",
+        "value": "MI"
+      },
+      {
+        "text": "Nord-Pas-de-Calais",
+        "value": "NO"
+      },
+      {
+        "text": "Pays de la Loire",
+        "value": "PA"
+      },
+      {
+        "text": "Picardie",
+        "value": "PI"
+      },
+      {
+        "text": "Poitou-Charentes",
+        "value": "PO"
+      },
+      {
+        "text": "Provence-Alpes-Cote d'Azur",
+        "value": "PR"
+      },
+      {
+        "text": "Rhone-Alpes",
+        "value": "RH"
+      }
+    ]
+  },
+  {
+    "text": "FRENCH GUIANA",
+    "value": "GF",
+    "states": [
+      {
+        "text": "Cayenne",
+        "value": "CY"
+      }
+    ]
+  },
+  {
+    "text": "FRENCH POLYNESIA",
+    "value": "PF",
+    "states": [
+      {
+        "text": "French Polynesia",
+        "value": "PF"
+      }
+    ]
+  },
+  {
+    "text": "FRENCH SOUTHERN TERR",
+    "value": "TF",
+    "states": null
+  },
+  {
+    "text": "GABON",
+    "value": "GA",
+    "states": [
+      {
+        "text": "Estuaire",
+        "value": "ES"
+      }
+    ]
+  },
+  {
+    "text": "GAMBIA",
+    "value": "GM",
+    "states": [
+      {
+        "text": "Banjul",
+        "value": "BJ"
+      },
+      {
+        "text": "Western",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "GEORGIA",
+    "value": "GE",
+    "states": [
+      {
+        "text": "Ajaria",
+        "value": "AJ"
+      },
+      {
+        "text": "Kakheti",
+        "value": "KA"
+      },
+      {
+        "text": "Mtskheta-Mtianeti",
+        "value": "MM"
+      },
+      {
+        "text": "Samegrelo-Zemo Svateni",
+        "value": "SZ"
+      },
+      {
+        "text": "T'bilisi",
+        "value": "TB"
+      }
+    ]
+  },
+  {
+    "text": "GERMANY",
+    "value": "DE",
+    "states": [
+      {
+        "text": "Baden-Wurttemberg",
+        "value": "BW"
+      },
+      {
+        "text": "Bayern",
+        "value": "BY"
+      },
+      {
+        "text": "Berlin",
+        "value": "BE"
+      },
+      {
+        "text": "Brandenburg",
+        "value": "BB"
+      },
+      {
+        "text": "Bremen",
+        "value": "HB"
+      },
+      {
+        "text": "Hamburg",
+        "value": "HH"
+      },
+      {
+        "text": "Hessen",
+        "value": "HE"
+      },
+      {
+        "text": "Mecklenburg-Vorpommern",
+        "value": "MY"
+      },
+      {
+        "text": "Niedersachsen",
+        "value": "NI"
+      },
+      {
+        "text": "Nordrhein-Westfalen",
+        "value": "NW"
+      },
+      {
+        "text": "Rheinland-Pfalz",
+        "value": "RP"
+      },
+      {
+        "text": "Saarland",
+        "value": "SL"
+      },
+      {
+        "text": "Sachsen",
+        "value": "SN"
+      },
+      {
+        "text": "Sachsen-Anhalt",
+        "value": "ST"
+      },
+      {
+        "text": "Schleswig-Holstein",
+        "value": "SH"
+      },
+      {
+        "text": "Thuringen",
+        "value": "TH"
+      }
+    ]
+  },
+  {
+    "text": "GHANA",
+    "value": "GH",
+    "states": [
+      {
+        "text": "Ashanti",
+        "value": "AH"
+      },
+      {
+        "text": "Central",
+        "value": "CP"
+      },
+      {
+        "text": "Eastern",
+        "value": "EP"
+      },
+      {
+        "text": "Greater Accra",
+        "value": "AA"
+      },
+      {
+        "text": "Northern",
+        "value": "NP"
+      },
+      {
+        "text": "Upper East",
+        "value": "UE"
+      },
+      {
+        "text": "Western",
+        "value": "WP"
+      }
+    ]
+  },
+  {
+    "text": "GIBRALTAR",
+    "value": "GI",
+    "states": [
+      {
+        "text": "Gibraltar",
+        "value": "GI"
+      }
+    ]
+  },
+  {
+    "text": "GREECE",
+    "value": "GR",
+    "states": [
+      {
+        "text": "Akhaia",
+        "value": "AK"
+      },
+      {
+        "text": "Argolis",
+        "value": "AG"
+      },
+      {
+        "text": "Attiki",
+        "value": "AT"
+      },
+      {
+        "text": "Dhodhekanisos",
+        "value": "DO"
+      },
+      {
+        "text": "Evritania",
+        "value": "ET"
+      },
+      {
+        "text": "Evvoia",
+        "value": "EV"
+      },
+      {
+        "text": "Greece",
+        "value": "GR"
+      },
+      {
+        "text": "Ioannina",
+        "value": "IO"
+      },
+      {
+        "text": "Iraklion (Crete)",
+        "value": "IR"
+      },
+      {
+        "text": "Kavala",
+        "value": "KV"
+      },
+      {
+        "text": "Kefallinia",
+        "value": "KF"
+      },
+      {
+        "text": "Kerkira",
+        "value": "KE"
+      },
+      {
+        "text": "Khania",
+        "value": "KN"
+      },
+      {
+        "text": "Kikladhes",
+        "value": "KY"
+      },
+      {
+        "text": "Kilkis",
+        "value": "KK"
+      },
+      {
+        "text": "Korinthia",
+        "value": "KO"
+      },
+      {
+        "text": "Kozani",
+        "value": "KZ"
+      },
+      {
+        "text": "Larisa",
+        "value": "LR"
+      },
+      {
+        "text": "Lasithi",
+        "value": "LT"
+      },
+      {
+        "text": "Lesvos",
+        "value": "LS"
+      },
+      {
+        "text": "Magnisia",
+        "value": "MG"
+      },
+      {
+        "text": "Messinia",
+        "value": "MS"
+      },
+      {
+        "text": "Pieria",
+        "value": "PI"
+      },
+      {
+        "text": "Samos",
+        "value": "SM"
+      },
+      {
+        "text": "Serrai",
+        "value": "SR"
+      },
+      {
+        "text": "Thessaloniki",
+        "value": "TN"
+      },
+      {
+        "text": "Trikala",
+        "value": "TR"
+      },
+      {
+        "text": "Voiotia",
+        "value": "VT"
+      },
+      {
+        "text": "Zakinthos",
+        "value": "ZK"
+      }
+    ]
+  },
+  {
+    "text": "GREENLAND",
+    "value": "GL",
+    "states": [
+      {
+        "text": "Vestgronland",
+        "value": "VG"
+      }
+    ]
+  },
+  {
+    "text": "GRENADA",
+    "value": "GD",
+    "states": [
+      {
+        "text": "Carriacou",
+        "value": "CA"
+      },
+      {
+        "text": "Saint George",
+        "value": "GE"
+      }
+    ]
+  },
+  {
+    "text": "GUADELOUPE",
+    "value": "GP",
+    "states": [
+      {
+        "text": "Guadeloupe",
+        "value": "GP"
+      }
+    ]
+  },
+  {
+    "text": "GUAM",
+    "value": "GU",
+    "states": [
+      {
+        "text": "Guam",
+        "value": "GU"
+      }
+    ]
+  },
+  {
+    "text": "GUATEMALA",
+    "value": "GT",
+    "states": [
+      {
+        "text": "Alta Verapaz",
+        "value": "AV"
+      },
+      {
+        "text": "Baja Verapaz",
+        "value": "BV"
+      },
+      {
+        "text": "Chimaltenango",
+        "value": "CO"
+      },
+      {
+        "text": "Chiquimula",
+        "value": "CA"
+      },
+      {
+        "text": "El Progreso",
+        "value": "EP"
+      },
+      {
+        "text": "Escuintla",
+        "value": "ES"
+      },
+      {
+        "text": "Guatemala",
+        "value": "GU"
+      },
+      {
+        "text": "Huehuetenango",
+        "value": "HU"
+      },
+      {
+        "text": "Izabal",
+        "value": "IZ"
+      },
+      {
+        "text": "Jalapa",
+        "value": "JA"
+      },
+      {
+        "text": "Jutiapa",
+        "value": "JU"
+      },
+      {
+        "text": "Peten",
+        "value": "PN"
+      },
+      {
+        "text": "Quetzaltenango",
+        "value": "QZ"
+      },
+      {
+        "text": "Quiche",
+        "value": "QC"
+      },
+      {
+        "text": "Retalhuleu",
+        "value": "RU"
+      },
+      {
+        "text": "Sacatepequez",
+        "value": "SZ"
+      },
+      {
+        "text": "San Marcos",
+        "value": "SS"
+      },
+      {
+        "text": "Santa Rosa",
+        "value": "SR"
+      },
+      {
+        "text": "Solola",
+        "value": "SO"
+      },
+      {
+        "text": "Suchitepequez",
+        "value": "SU"
+      },
+      {
+        "text": "Totonicapan",
+        "value": "TN"
+      },
+      {
+        "text": "Zacapa",
+        "value": "ZA"
+      }
+    ]
+  },
+  {
+    "text": "GUERNSEY",
+    "value": "GG",
+    "states": [
+      {
+        "text": "Guernsey",
+        "value": "GG"
+      }
+    ]
+  },
+  {
+    "text": "GUINEA",
+    "value": "GN",
+    "states": [
+      {
+        "text": "Conakry",
+        "value": "CK"
+      }
+    ]
+  },
+  {
+    "text": "GUINEA-BISSAU",
+    "value": "GW",
+    "states": null
+  },
+  {
+    "text": "GUYANA",
+    "value": "GY",
+    "states": [
+      {
+        "text": "Barima-Waini",
+        "value": "BA"
+      },
+      {
+        "text": "Demerara-Mahaica",
+        "value": "DE"
+      },
+      {
+        "text": "East Berbice-Corentyne",
+        "value": "EB"
+      },
+      {
+        "text": "Essequibo Islands-West Demerara",
+        "value": "ES"
+      },
+      {
+        "text": "Mahaica-Berbice",
+        "value": "MA"
+      },
+      {
+        "text": "Pomeroon-Supenaam",
+        "value": "PM"
+      },
+      {
+        "text": "Upper Demerara-Berbice",
+        "value": "UD"
+      }
+    ]
+  },
+  {
+    "text": "HAITI",
+    "value": "HT",
+    "states": [
+      {
+        "text": "Centre",
+        "value": "CE"
+      },
+      {
+        "text": "Nord",
+        "value": "ND"
+      },
+      {
+        "text": "Ouest",
+        "value": "OU"
+      },
+      {
+        "text": "Sud-Est",
+        "value": "SE"
+      }
+    ]
+  },
+  {
+    "text": "HEARD ISLAND AND MCD",
+    "value": "HM",
+    "states": null
+  },
+  {
+    "text": "HOLY SEE (VATICAN CI",
+    "value": "VA",
+    "states": [
+      {
+        "text": "Holy See (Vatican City)",
+        "value": "VA"
+      }
+    ]
+  },
+  {
+    "text": "HONDURAS",
+    "value": "HN",
+    "states": [
+      {
+        "text": "Atlantida",
+        "value": "AT"
+      },
+      {
+        "text": "Choluteca",
+        "value": "CH"
+      },
+      {
+        "text": "Comayagua",
+        "value": "CM"
+      },
+      {
+        "text": "Copan",
+        "value": "CP"
+      },
+      {
+        "text": "Cortes",
+        "value": "CR"
+      },
+      {
+        "text": "El Paraiso",
+        "value": "EP"
+      },
+      {
+        "text": "Francisco Morazan",
+        "value": "FM"
+      },
+      {
+        "text": "Islas de la Bahia",
+        "value": "IB"
+      },
+      {
+        "text": "Olancho",
+        "value": "OL"
+      },
+      {
+        "text": "Santa Barbara",
+        "value": "SB"
+      },
+      {
+        "text": "Yoro",
+        "value": "YO"
+      }
+    ]
+  },
+  {
+    "text": "HONG KONG",
+    "value": "HK",
+    "states": [
+      {
+        "text": "Hong Kong (SAR)",
+        "value": "HK"
+      }
+    ]
+  },
+  {
+    "text": "HUNGARY",
+    "value": "HU",
+    "states": [
+      {
+        "text": "Bacs-Kiskun",
+        "value": "BK"
+      },
+      {
+        "text": "Baranya",
+        "value": "BA"
+      },
+      {
+        "text": "Borsod-Abauj-Zemplen",
+        "value": "BZ"
+      },
+      {
+        "text": "Budapest",
+        "value": "BU"
+      },
+      {
+        "text": "Csongrad",
+        "value": "CS"
+      },
+      {
+        "text": "Dunaujvaros",
+        "value": "DU"
+      },
+      {
+        "text": "Fejer",
+        "value": "FE"
+      },
+      {
+        "text": "Gyor",
+        "value": "GY"
+      },
+      {
+        "text": "Gyor-Moson-Sopron",
+        "value": "GS"
+      },
+      {
+        "text": "Hajdu-Bihar",
+        "value": "HB"
+      },
+      {
+        "text": "Heves",
+        "value": "HE"
+      },
+      {
+        "text": "Jasz-Nagykun-Szolnok",
+        "value": "JN"
+      },
+      {
+        "text": "Komarom-Esztergom",
+        "value": "KE"
+      },
+      {
+        "text": "Nograd",
+        "value": "NO"
+      },
+      {
+        "text": "Pest",
+        "value": "PE"
+      },
+      {
+        "text": "Somogy",
+        "value": "SO"
+      },
+      {
+        "text": "Szabolcs-Szatmar-Bereg",
+        "value": "SZ"
+      },
+      {
+        "text": "Szombathely",
+        "value": "SH"
+      },
+      {
+        "text": "Tolna",
+        "value": "TO"
+      },
+      {
+        "text": "Zala",
+        "value": "ZA"
+      }
+    ]
+  },
+  {
+    "text": "ICELAND",
+    "value": "IS",
+    "states": [
+      {
+        "text": "Akureyri",
+        "value": "AU"
+      },
+      {
+        "text": "Arnessysla",
+        "value": "AR"
+      },
+      {
+        "text": "Austur-Skaftafellssysla",
+        "value": "AS"
+      },
+      {
+        "text": "Gullbringusysla",
+        "value": "GU"
+      },
+      {
+        "text": "Isafjordur",
+        "value": "IA"
+      },
+      {
+        "text": "Keflavik",
+        "value": "KE"
+      },
+      {
+        "text": "Nordur-Mulasysla",
+        "value": "NM"
+      },
+      {
+        "text": "Nordur-Tingeyjarsysla",
+        "value": "NT"
+      },
+      {
+        "text": "Rang·rvallasysla",
+        "value": "RA"
+      },
+      {
+        "text": "Reykjavik",
+        "value": "RE"
+      },
+      {
+        "text": "Vestur-Bardastrandarsysla",
+        "value": "VB"
+      },
+      {
+        "text": "Vestur-Skaftafellssysla",
+        "value": "VS"
+      }
+    ]
+  },
+  {
+    "text": "INDIA",
+    "value": "IN",
+    "states": [
+      {
+        "text": "Andaman and Nicobar Islands",
+        "value": "AN"
+      },
+      {
+        "text": "Andhra Pradesh",
+        "value": "AP"
+      },
+      {
+        "text": "Arunachal Pradesh",
+        "value": "AR"
+      },
+      {
+        "text": "Assam",
+        "value": "AS"
+      },
+      {
+        "text": "Bihar",
+        "value": "BR"
+      },
+      {
+        "text": "Chandigarh",
+        "value": "CH"
+      },
+      {
+        "text": "Chhattisgarh",
+        "value": "CT"
+      },
+      {
+        "text": "Dadra and Nagar Haveli",
+        "value": "DN"
+      },
+      {
+        "text": "Daman and Diu",
+        "value": "DD"
+      },
+      {
+        "text": "Delhi",
+        "value": "DL"
+      },
+      {
+        "text": "Goa",
+        "value": "GA"
+      },
+      {
+        "text": "Gujarat",
+        "value": "GJ"
+      },
+      {
+        "text": "Haryana",
+        "value": "HR"
+      },
+      {
+        "text": "Himachal Pradesh",
+        "value": "HP"
+      },
+      {
+        "text": "Jammu and Kashmir",
+        "value": "JK"
+      },
+      {
+        "text": "Jharkhand",
+        "value": "JH"
+      },
+      {
+        "text": "Karnataka",
+        "value": "KA"
+      },
+      {
+        "text": "Kerala",
+        "value": "KL"
+      },
+      {
+        "text": "Madhya Pradesh",
+        "value": "MP"
+      },
+      {
+        "text": "Maharashtra",
+        "value": "MH"
+      },
+      {
+        "text": "Manipur",
+        "value": "MM"
+      },
+      {
+        "text": "Meghalaya",
+        "value": "ML"
+      },
+      {
+        "text": "Mizoram",
+        "value": "MZ"
+      },
+      {
+        "text": "Orissa",
+        "value": "OR"
+      },
+      {
+        "text": "Pondicherry",
+        "value": "PY"
+      },
+      {
+        "text": "Punjab",
+        "value": "PB"
+      },
+      {
+        "text": "Rajasthan",
+        "value": "RJ"
+      },
+      {
+        "text": "Sikkim",
+        "value": "SK"
+      },
+      {
+        "text": "Tamil Nadu",
+        "value": "TN"
+      },
+      {
+        "text": "Tripura",
+        "value": "TR"
+      },
+      {
+        "text": "Uttar Pradesh",
+        "value": "UP"
+      },
+      {
+        "text": "Uttaranchal",
+        "value": "UL"
+      },
+      {
+        "text": "West Bengal",
+        "value": "WB"
+      }
+    ]
+  },
+  {
+    "text": "INDONESIA",
+    "value": "value",
+    "states": [
+      {
+        "text": "Aceh (Atjeh)",
+        "value": "AC"
+      },
+      {
+        "text": "Bali",
+        "value": "BA"
+      },
+      {
+        "text": "Banten",
+        "value": "BT"
+      },
+      {
+        "text": "Jakarta Raya (Djakarta Raya)",
+        "value": "JK"
+      },
+      {
+        "text": "Jawa Barat (Djawa Barat)",
+        "value": "JR"
+      },
+      {
+        "text": "Jawa Tengah (Djawa Tengah)",
+        "value": "JT"
+      },
+      {
+        "text": "Jawa Timur (Djawa Timur)",
+        "value": "JI"
+      },
+      {
+        "text": "Kalimantan Barat",
+        "value": "KB"
+      },
+      {
+        "text": "Kalimantan Selatan",
+        "value": "KS"
+      },
+      {
+        "text": "Kalimantan Tengah",
+        "value": "KT"
+      },
+      {
+        "text": "Kalimantan Timur",
+        "value": "KI"
+      },
+      {
+        "text": "Lampung",
+        "value": "LA"
+      },
+      {
+        "text": "Nusa Tenggara Barat",
+        "value": "NB"
+      },
+      {
+        "text": "Papua",
+        "value": "IJ"
+      },
+      {
+        "text": "Riau",
+        "value": "RI"
+      },
+      {
+        "text": "Sulawesi Selatan",
+        "value": "SN"
+      },
+      {
+        "text": "Sulawesi Utara",
+        "value": "SW"
+      },
+      {
+        "text": "Sumatera Selatan",
+        "value": "SL"
+      },
+      {
+        "text": "Sumatera Utara",
+        "value": "SU"
+      },
+      {
+        "text": "Yogyakarta (Jogjakarta)",
+        "value": "YO"
+      }
+    ]
+  },
+  {
+    "text": "IRAN, ISLAMIC REPUBL",
+    "value": "IR",
+    "states": [
+      {
+        "text": "Azarbayjan-e Gharbi",
+        "value": "WA"
+      },
+      {
+        "text": "Azarbayjan-e Sharqi",
+        "value": "EA"
+      },
+      {
+        "text": "Esfahan",
+        "value": "ES"
+      },
+      {
+        "text": "Fars",
+        "value": "FA"
+      },
+      {
+        "text": "Hormozgan",
+        "value": "HG"
+      },
+      {
+        "text": "Kerman",
+        "value": "KE"
+      },
+      {
+        "text": "Kermanshah",
+        "value": "BK"
+      },
+      {
+        "text": "Khorasan",
+        "value": "KR"
+      },
+      {
+        "text": "Khuzestan",
+        "value": "KZ"
+      },
+      {
+        "text": "Markazi",
+        "value": "MK"
+      },
+      {
+        "text": "Mazandaran",
+        "value": "MN"
+      },
+      {
+        "text": "Semnan",
+        "value": "SM"
+      },
+      {
+        "text": "Sistan va Baluchestan",
+        "value": "SB"
+      },
+      {
+        "text": "Tehran",
+        "value": "TH"
+      }
+    ]
+  },
+  {
+    "text": "IRAQ",
+    "value": "IQ",
+    "states": [
+      {
+        "text": "Al Anbar",
+        "value": "AN"
+      },
+      {
+        "text": "Al Basrah",
+        "value": "BA"
+      },
+      {
+        "text": "An Najaf",
+        "value": "NA"
+      },
+      {
+        "text": "As Sulaymaniyah",
+        "value": "SU"
+      },
+      {
+        "text": "Baghdad",
+        "value": "BG"
+      },
+      {
+        "text": "Ninawa",
+        "value": "NI"
+      }
+    ]
+  },
+  {
+    "text": "IRELAND",
+    "value": "IE",
+    "states": [
+      {
+        "text": "Carlow",
+        "value": "CW"
+      },
+      {
+        "text": "Cavan",
+        "value": "CN"
+      },
+      {
+        "text": "Clare",
+        "value": "CE"
+      },
+      {
+        "text": "Cork",
+        "value": "CK"
+      },
+      {
+        "text": "Donegal",
+        "value": "DL"
+      },
+      {
+        "text": "Dublin",
+        "value": "DN"
+      },
+      {
+        "text": "Galway",
+        "value": "GY"
+      },
+      {
+        "text": "Kerry",
+        "value": "KY"
+      },
+      {
+        "text": "Kildare",
+        "value": "KE"
+      },
+      {
+        "text": "Kilkenny",
+        "value": "KK"
+      },
+      {
+        "text": "Laois",
+        "value": "LS"
+      },
+      {
+        "text": "Leitrim",
+        "value": "LM"
+      },
+      {
+        "text": "Limerick",
+        "value": "LK"
+      },
+      {
+        "text": "Longford",
+        "value": "LD"
+      },
+      {
+        "text": "Louth",
+        "value": "LH"
+      },
+      {
+        "text": "Mayo",
+        "value": "MO"
+      },
+      {
+        "text": "Meath",
+        "value": "MH"
+      },
+      {
+        "text": "Monaghan",
+        "value": "MN"
+      },
+      {
+        "text": "Offaly",
+        "value": "OY"
+      },
+      {
+        "text": "Roscommon",
+        "value": "RN"
+      },
+      {
+        "text": "Sligo",
+        "value": "SO"
+      },
+      {
+        "text": "Tipperary",
+        "value": "TY"
+      },
+      {
+        "text": "Waterford",
+        "value": "WD"
+      },
+      {
+        "text": "Westmeath",
+        "value": "WH"
+      },
+      {
+        "text": "Wexford",
+        "value": "WX"
+      },
+      {
+        "text": "Wicklow",
+        "value": "WW"
+      }
+    ]
+  },
+  {
+    "text": "ISLE OF MAN",
+    "value": "IM",
+    "states": [
+      {
+        "text": "Isle of Man",
+        "value": "IM"
+      }
+    ]
+  },
+  {
+    "text": "ISRAEL",
+    "value": "IL",
+    "states": [
+      {
+        "text": "HaDarom (Southern)",
+        "value": "HD"
+      },
+      {
+        "text": "HaMerkaz (Central)",
+        "value": "HM"
+      },
+      {
+        "text": "Haûafon  (Northern)",
+        "value": "HZ"
+      },
+      {
+        "text": "Híefa  (Haifa)",
+        "value": "HA"
+      },
+      {
+        "text": "Tel Aviv",
+        "value": "TA"
+      },
+      {
+        "text": "Yerushalayim  (Jerusalem)",
+        "value": "JM"
+      }
+    ]
+  },
+  {
+    "text": "ITALY",
+    "value": "IT",
+    "states": [
+      {
+        "text": "Abruzzi",
+        "value": "AB"
+      },
+      {
+        "text": "Basilicata",
+        "value": "BA"
+      },
+      {
+        "text": "Calabria",
+        "value": "CA"
+      },
+      {
+        "text": "Campania",
+        "value": "CM"
+      },
+      {
+        "text": "Emilia-Romagna",
+        "value": "EM"
+      },
+      {
+        "text": "Friuli-Venezia Giulia",
+        "value": "FR"
+      },
+      {
+        "text": "Lazio",
+        "value": "LA"
+      },
+      {
+        "text": "Liguria",
+        "value": "LI"
+      },
+      {
+        "text": "Lombardia",
+        "value": "LO"
+      },
+      {
+        "text": "Marche",
+        "value": "MA"
+      },
+      {
+        "text": "Molise",
+        "value": "MO"
+      },
+      {
+        "text": "Piemonte",
+        "value": "PI"
+      },
+      {
+        "text": "Puglia",
+        "value": "PU"
+      },
+      {
+        "text": "Sardegna",
+        "value": "SA"
+      },
+      {
+        "text": "Sicilia",
+        "value": "SI"
+      },
+      {
+        "text": "Toscana",
+        "value": "TO"
+      },
+      {
+        "text": "Trentino-Alto Adige",
+        "value": "TR"
+      },
+      {
+        "text": "Umbria",
+        "value": "UM"
+      },
+      {
+        "text": "Valle d'Aosta",
+        "value": "VA"
+      },
+      {
+        "text": "Veneto",
+        "value": "VE"
+      }
+    ]
+  },
+  {
+    "text": "JAMAICA",
+    "value": "JM",
+    "states": [
+      {
+        "text": "Clarendon",
+        "value": "CL"
+      },
+      {
+        "text": "Hanover",
+        "value": "HA"
+      },
+      {
+        "text": "Kingston",
+        "value": "KI"
+      },
+      {
+        "text": "Manchester",
+        "value": "MA"
+      },
+      {
+        "text": "Portland",
+        "value": "PD"
+      },
+      {
+        "text": "Saint Andrew",
+        "value": "SD"
+      },
+      {
+        "text": "Saint Ann",
+        "value": "SN"
+      },
+      {
+        "text": "Saint Catherine",
+        "value": "SC"
+      },
+      {
+        "text": "Saint Elizabeth",
+        "value": "SE"
+      },
+      {
+        "text": "Saint James",
+        "value": "SJ"
+      },
+      {
+        "text": "Saint Mary",
+        "value": "SM"
+      },
+      {
+        "text": "Saint Thomas",
+        "value": "ST"
+      },
+      {
+        "text": "Trelawny",
+        "value": "TR"
+      },
+      {
+        "text": "Westmoreland",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "JAPAN",
+    "value": "JP",
+    "states": [
+      {
+        "text": "Aichi",
+        "value": "AI"
+      },
+      {
+        "text": "Akita",
+        "value": "AK"
+      },
+      {
+        "text": "Aomori",
+        "value": "AM"
+      },
+      {
+        "text": "Chiba",
+        "value": "CH"
+      },
+      {
+        "text": "Ehime",
+        "value": "EH"
+      },
+      {
+        "text": "Fukui",
+        "value": "FU"
+      },
+      {
+        "text": "Fukuoka",
+        "value": "FK"
+      },
+      {
+        "text": "Fukushima",
+        "value": "FS"
+      },
+      {
+        "text": "Gifu",
+        "value": "GI"
+      },
+      {
+        "text": "Gumma",
+        "value": "GU"
+      },
+      {
+        "text": "Hiroshima",
+        "value": "HI"
+      },
+      {
+        "text": "Hokkaido",
+        "value": "HO"
+      },
+      {
+        "text": "Hyogo",
+        "value": "HY"
+      },
+      {
+        "text": "Ibaraki",
+        "value": "IB"
+      },
+      {
+        "text": "Ishikawa",
+        "value": "IS"
+      },
+      {
+        "text": "Iwate",
+        "value": "IW"
+      },
+      {
+        "text": "Japan",
+        "value": "JP"
+      },
+      {
+        "text": "Kagawa",
+        "value": "KA"
+      },
+      {
+        "text": "Kagoshima",
+        "value": "KG"
+      },
+      {
+        "text": "Kanagawa",
+        "value": "KN"
+      },
+      {
+        "text": "Kochi",
+        "value": "KO"
+      },
+      {
+        "text": "Kumamoto",
+        "value": "KU"
+      },
+      {
+        "text": "Kyoto",
+        "value": "KY"
+      },
+      {
+        "text": "Mie",
+        "value": "MI"
+      },
+      {
+        "text": "Miyagi",
+        "value": "MY"
+      },
+      {
+        "text": "Miyazaki",
+        "value": "MZ"
+      },
+      {
+        "text": "Nagano",
+        "value": "NA"
+      },
+      {
+        "text": "Nagasaki",
+        "value": "NG"
+      },
+      {
+        "text": "Nara",
+        "value": "NR"
+      },
+      {
+        "text": "Niigata",
+        "value": "NI"
+      },
+      {
+        "text": "Oita",
+        "value": "OI"
+      },
+      {
+        "text": "Okayama",
+        "value": "OK"
+      },
+      {
+        "text": "Okinawa",
+        "value": "ON"
+      },
+      {
+        "text": "Osaka",
+        "value": "OS"
+      },
+      {
+        "text": "Saga",
+        "value": "SA"
+      },
+      {
+        "text": "Saitama",
+        "value": "SI"
+      },
+      {
+        "text": "Shiga",
+        "value": "SH"
+      },
+      {
+        "text": "Shimane",
+        "value": "SM"
+      },
+      {
+        "text": "Shizuoka",
+        "value": "SZ"
+      },
+      {
+        "text": "Tochigi",
+        "value": "TO"
+      },
+      {
+        "text": "Tokushima",
+        "value": "TK"
+      },
+      {
+        "text": "Tokyo",
+        "value": "TY"
+      },
+      {
+        "text": "Tottori",
+        "value": "TT"
+      },
+      {
+        "text": "Toyama",
+        "value": "TA"
+      },
+      {
+        "text": "Wakayama",
+        "value": "WA"
+      },
+      {
+        "text": "Yamagata",
+        "value": "YA"
+      },
+      {
+        "text": "Yamaguchi",
+        "value": "YM"
+      },
+      {
+        "text": "Yamanashi",
+        "value": "YN"
+      }
+    ]
+  },
+  {
+    "text": "JERSEY",
+    "value": "JE",
+    "states": [
+      {
+        "text": "Jersey",
+        "value": "JE"
+      }
+    ]
+  },
+  {
+    "text": "JORDAN",
+    "value": "JO",
+    "states": [
+      {
+        "text": "'Amman",
+        "value": "AM"
+      },
+      {
+        "text": "Al Balqa'",
+        "value": "BA"
+      },
+      {
+        "text": "Al Karak",
+        "value": "KA"
+      },
+      {
+        "text": "Az Zaraq",
+        "value": "AZ"
+      },
+      {
+        "text": "Irbid",
+        "value": "IR"
+      },
+      {
+        "text": "Ma'an",
+        "value": "MN"
+      }
+    ]
+  },
+  {
+    "text": "KAZAKHSTAN",
+    "value": "KZ",
+    "states": [
+      {
+        "text": "Almaty",
+        "value": "AC"
+      },
+      {
+        "text": "Aqtobe",
+        "value": "AT"
+      },
+      {
+        "text": "Astana",
+        "value": "AS"
+      },
+      {
+        "text": "Batys Qazaqstan",
+        "value": "BQ"
+      },
+      {
+        "text": "Pavlodar",
+        "value": "PA"
+      },
+      {
+        "text": "Qaraghandy",
+        "value": "QG"
+      },
+      {
+        "text": "Qostanay",
+        "value": "QS"
+      },
+      {
+        "text": "Shyghys Qazaqstan",
+        "value": "SQ"
+      },
+      {
+        "text": "Soltustik Qazaqstan",
+        "value": "SA"
+      },
+      {
+        "text": "Zhambyl",
+        "value": "ZM"
+      }
+    ]
+  },
+  {
+    "text": "KENYA",
+    "value": "KE",
+    "states": [
+      {
+        "text": "Central",
+        "value": "CE"
+      },
+      {
+        "text": "Coast",
+        "value": "CO"
+      },
+      {
+        "text": "Eastern",
+        "value": "EA"
+      },
+      {
+        "text": "Nairobi Area",
+        "value": "NA"
+      },
+      {
+        "text": "Nyanza",
+        "value": "NY"
+      },
+      {
+        "text": "Rift Valley",
+        "value": "RV"
+      },
+      {
+        "text": "Western",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "KIRIBATI",
+    "value": "KI",
+    "states": null
+  },
+  {
+    "text": "KOREA, DEMOCRATIC PE",
+    "value": "KP",
+    "states": [
+      {
+        "text": "P'yongyang-si",
+        "value": "PY"
+      }
+    ]
+  },
+  {
+    "text": "KOREA, REPUBLIC OF",
+    "value": "KR",
+    "states": [
+      {
+        "text": "Ch'ungch'ong-bukto",
+        "value": "GB"
+      },
+      {
+        "text": "Ch'ungch'ong-namdo",
+        "value": "GN"
+      },
+      {
+        "text": "Cheju-do",
+        "value": "CJ"
+      },
+      {
+        "text": "Cholla-bukto",
+        "value": "CB"
+      },
+      {
+        "text": "Cholla-namdo",
+        "value": "CN"
+      },
+      {
+        "text": "Kangwon-do",
+        "value": "KW"
+      },
+      {
+        "text": "Kyonggi-do",
+        "value": "KG"
+      },
+      {
+        "text": "Kyongsang-bukto",
+        "value": "KB"
+      },
+      {
+        "text": "Kyongsang-namdo",
+        "value": "KN"
+      },
+      {
+        "text": "Pusan-gwangyoksi",
+        "value": "PU"
+      },
+      {
+        "text": "Soul-t'ukpyolsi",
+        "value": "SO"
+      },
+      {
+        "text": "South Korea",
+        "value": "KR"
+      }
+    ]
+  },
+  {
+    "text": "KOSOVO",
+    "value": "XK",
+    "states": null
+  },
+  {
+    "text": "KUWAIT",
+    "value": "KW",
+    "states": [
+      {
+        "text": "Al Ahmadi",
+        "value": "AH"
+      },
+      {
+        "text": "Al Farwaniyah",
+        "value": "FA"
+      },
+      {
+        "text": "Al Jahra'",
+        "value": "JA"
+      },
+      {
+        "text": "Al Kuwayt",
+        "value": "KU"
+      },
+      {
+        "text": "Hawalli",
+        "value": "HA"
+      }
+    ]
+  },
+  {
+    "text": "KYRGYZSTAN",
+    "value": "KG",
+    "states": [
+      {
+        "text": "Bishkek",
+        "value": "BI"
+      },
+      {
+        "text": "Ysyk-Kol",
+        "value": "YK"
+      }
+    ]
+  },
+  {
+    "text": "LAO PEOPLE'S DEMOCRA",
+    "value": "LA",
+    "states": [
+      {
+        "text": "Viangchan",
+        "value": "VI"
+      }
+    ]
+  },
+  {
+    "text": "LATVIA",
+    "value": "LV",
+    "states": [
+      {
+        "text": "Cesu Rajons",
+        "value": "CE"
+      },
+      {
+        "text": "Liepaja",
+        "value": "LI"
+      },
+      {
+        "text": "Riga",
+        "value": "RI"
+      },
+      {
+        "text": "Rigas Rajons",
+        "value": "RG"
+      },
+      {
+        "text": "Ventspils Rajons",
+        "value": "VN"
+      }
+    ]
+  },
+  {
+    "text": "LEBANON",
+    "value": "LB",
+    "states": [
+      {
+        "text": "Beyrouth",
+        "value": "BA"
+      },
+      {
+        "text": "Liban-Nord",
+        "value": "AS"
+      },
+      {
+        "text": "Mont-Liban",
+        "value": "JL"
+      }
+    ]
+  },
+  {
+    "text": "LESOTHO",
+    "value": "LS",
+    "states": [
+      {
+        "text": "Maseru",
+        "value": "MS"
+      }
+    ]
+  },
+  {
+    "text": "LIBERIA",
+    "value": "LR",
+    "states": [
+      {
+        "text": "Bong",
+        "value": "BG"
+      },
+      {
+        "text": "Liberia",
+        "value": "LR"
+      },
+      {
+        "text": "Montserrado",
+        "value": "MO"
+      }
+    ]
+  },
+  {
+    "text": "LIBYAN ARAB JAMAHIRI",
+    "value": "LY",
+    "states": [
+      {
+        "text": "Tarabulus",
+        "value": "TB"
+      }
+    ]
+  },
+  {
+    "text": "LIECHTENSTEIN",
+    "value": "LI",
+    "states": [
+      {
+        "text": "Vaduz",
+        "value": "VA"
+      }
+    ]
+  },
+  {
+    "text": "LITHUANIA",
+    "value": "LT",
+    "states": [
+      {
+        "text": "Alytaus Apskritis",
+        "value": "AL"
+      },
+      {
+        "text": "Kauno Apskritis",
+        "value": "KU"
+      },
+      {
+        "text": "Klaipedos Apskritis",
+        "value": "KL"
+      },
+      {
+        "text": "Marijampoles Apskritis",
+        "value": "MR"
+      },
+      {
+        "text": "Panevezio Apskritis",
+        "value": "PN"
+      },
+      {
+        "text": "Siauliu Apskritis",
+        "value": "SA"
+      },
+      {
+        "text": "Taurages Apskritis",
+        "value": "TA"
+      },
+      {
+        "text": "Telsiu Apskritis",
+        "value": "TE"
+      },
+      {
+        "text": "Utenos Apskritis",
+        "value": "UT"
+      },
+      {
+        "text": "Vilniaus Apskritis",
+        "value": "VL"
+      }
+    ]
+  },
+  {
+    "text": "LUXEMBOURG",
+    "value": "LU",
+    "states": [
+      {
+        "text": "Diekirch",
+        "value": "DI"
+      },
+      {
+        "text": "Grevenmacher",
+        "value": "GR"
+      },
+      {
+        "text": "Luxembourg",
+        "value": "LU"
+      }
+    ]
+  },
+  {
+    "text": "MACAO",
+    "value": "MO",
+    "states": [
+      {
+        "text": "Macau",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "MACEDONIA, THE FORME",
+    "value": "MK",
+    "states": [
+      {
+        "text": "Aracinovo",
+        "value": "AR"
+      },
+      {
+        "text": "Ohrid",
+        "value": "OX"
+      },
+      {
+        "text": "Tetovo",
+        "value": "TT"
+      },
+      {
+        "text": "Veles",
+        "value": "VE"
+      }
+    ]
+  },
+  {
+    "text": "MADAGASCAR",
+    "value": "MG",
+    "states": [
+      {
+        "text": "Antananarivo",
+        "value": "AV"
+      },
+      {
+        "text": "Antsiranana",
+        "value": "AS"
+      },
+      {
+        "text": "Toliara",
+        "value": "TL"
+      }
+    ]
+  },
+  {
+    "text": "MALAWI",
+    "value": "MW",
+    "states": [
+      {
+        "text": "Blantyre",
+        "value": "BL"
+      },
+      {
+        "text": "Lilongwe",
+        "value": "LI"
+      }
+    ]
+  },
+  {
+    "text": "MALAYSIA",
+    "value": "MY",
+    "states": [
+      {
+        "text": "Johor",
+        "value": "JH"
+      },
+      {
+        "text": "Kedah",
+        "value": "KH"
+      },
+      {
+        "text": "Kelantan",
+        "value": "KN"
+      },
+      {
+        "text": "Melaka",
+        "value": "ME"
+      },
+      {
+        "text": "Negeri Sembilan",
+        "value": "NS"
+      },
+      {
+        "text": "Pahang",
+        "value": "PH"
+      },
+      {
+        "text": "Perak",
+        "value": "PK"
+      },
+      {
+        "text": "Perlis",
+        "value": "PL"
+      },
+      {
+        "text": "Pulau Pinang",
+        "value": "PG"
+      },
+      {
+        "text": "Sabah",
+        "value": "SA"
+      },
+      {
+        "text": "Sarawak",
+        "value": "SK"
+      },
+      {
+        "text": "Selangor",
+        "value": "SL"
+      },
+      {
+        "text": "Terengganu",
+        "value": "TE"
+      },
+      {
+        "text": "Wilayah Persekutuan",
+        "value": "KL"
+      }
+    ]
+  },
+  {
+    "text": "MALDIVES",
+    "value": "MV",
+    "states": [
+      {
+        "text": "Maale",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "MALI",
+    "value": "ML",
+    "states": [
+      {
+        "text": "Bamako",
+        "value": "BA"
+      },
+      {
+        "text": "Mopti",
+        "value": "MO"
+      }
+    ]
+  },
+  {
+    "text": "MALTA",
+    "value": "MT",
+    "states": [
+      {
+        "text": "Malta",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "MARSHALL ISLANDS",
+    "value": "MH",
+    "states": [
+      {
+        "text": "Marshall Islands",
+        "value": "MH"
+      }
+    ]
+  },
+  {
+    "text": "MARTINIQUE",
+    "value": "MQ",
+    "states": [
+      {
+        "text": "Fort-de-France",
+        "value": "FF"
+      }
+    ]
+  },
+  {
+    "text": "MAURITANIA",
+    "value": "MR",
+    "states": [
+      {
+        "text": "Nouakchott",
+        "value": "NO"
+      }
+    ]
+  },
+  {
+    "text": "MAURITIUS",
+    "value": "MU",
+    "states": [
+      {
+        "text": "Plaines Wilhems",
+        "value": "PW"
+      },
+      {
+        "text": "Port Louis",
+        "value": "PL"
+      }
+    ]
+  },
+  {
+    "text": "MAYOTTE",
+    "value": "YT",
+    "states": null
+  },
+  {
+    "text": "MEXICO",
+    "value": "MX",
+    "states": [
+      {
+        "text": "Aguascalientes",
+        "value": "AG"
+      },
+      {
+        "text": "Baja California",
+        "value": "BN"
+      },
+      {
+        "text": "Baja California Sur",
+        "value": "BS"
+      },
+      {
+        "text": "Campeche",
+        "value": "CM"
+      },
+      {
+        "text": "Chiapas",
+        "value": "CP"
+      },
+      {
+        "text": "Chihuahua",
+        "value": "CH"
+      },
+      {
+        "text": "Coahuila de Zaragoza",
+        "value": "CA"
+      },
+      {
+        "text": "Colima",
+        "value": "CL"
+      },
+      {
+        "text": "Distrito Federal",
+        "value": "DF"
+      },
+      {
+        "text": "Durango",
+        "value": "DU"
+      },
+      {
+        "text": "Guanajuato",
+        "value": "GJ"
+      },
+      {
+        "text": "Guerrero",
+        "value": "GR"
+      },
+      {
+        "text": "Hidalgo",
+        "value": "HI"
+      },
+      {
+        "text": "Jalisco",
+        "value": "JA"
+      },
+      {
+        "text": "Mexico",
+        "value": "MX"
+      },
+      {
+        "text": "Michoacan de Ocampo",
+        "value": "MC"
+      },
+      {
+        "text": "Morelos",
+        "value": "MR"
+      },
+      {
+        "text": "Nayarit",
+        "value": "NA"
+      },
+      {
+        "text": "Nuevo Leon",
+        "value": "NL"
+      },
+      {
+        "text": "Oaxaca",
+        "value": "OA"
+      },
+      {
+        "text": "Puebla",
+        "value": "PU"
+      },
+      {
+        "text": "Queretaro de Arteaga",
+        "value": "QE"
+      },
+      {
+        "text": "Quintana Roo",
+        "value": "QR"
+      },
+      {
+        "text": "San Luis Potosi",
+        "value": "SL"
+      },
+      {
+        "text": "Sinaloa",
+        "value": "SI"
+      },
+      {
+        "text": "Sonora",
+        "value": "SO"
+      },
+      {
+        "text": "Tabasco",
+        "value": "TB"
+      },
+      {
+        "text": "Tamaulipas",
+        "value": "TM"
+      },
+      {
+        "text": "Tlaxcala",
+        "value": "TL"
+      },
+      {
+        "text": "Veracruz-Llave",
+        "value": "VE"
+      },
+      {
+        "text": "Yucatan",
+        "value": "YU"
+      },
+      {
+        "text": "Zacatecas",
+        "value": "ZA"
+      }
+    ]
+  },
+  {
+    "text": "MICRONESIA, FEDERATE",
+    "value": "FM",
+    "states": [
+      {
+        "text": "Yap",
+        "value": "YA"
+      }
+    ]
+  },
+  {
+    "text": "MOLDOVA, REPUBLIC OF",
+    "value": "MD",
+    "states": [
+      {
+        "text": "Chisinau",
+        "value": "CE"
+      },
+      {
+        "text": "Stinga Nistrului",
+        "value": "DU"
+      }
+    ]
+  },
+  {
+    "text": "MONACO",
+    "value": "MC",
+    "states": [
+      {
+        "text": "Monaco",
+        "value": "MC"
+      }
+    ]
+  },
+  {
+    "text": "MONGOLIA",
+    "value": "MN",
+    "states": [
+      {
+        "text": "Arhangay",
+        "value": "AR"
+      },
+      {
+        "text": "Bayan-Olgiy",
+        "value": "BO"
+      },
+      {
+        "text": "Bulgan",
+        "value": "BU"
+      },
+      {
+        "text": "Dornod",
+        "value": "DD"
+      },
+      {
+        "text": "Govi-Altay",
+        "value": "GA"
+      },
+      {
+        "text": "Hentiy",
+        "value": "HN"
+      },
+      {
+        "text": "Hovd",
+        "value": "HD"
+      },
+      {
+        "text": "Hovsgol",
+        "value": "HG"
+      },
+      {
+        "text": "Orhon",
+        "value": "ER"
+      },
+      {
+        "text": "Selenge",
+        "value": "SL"
+      },
+      {
+        "text": "Ulaanbaatar",
+        "value": "UB"
+      },
+      {
+        "text": "Uvs",
+        "value": "UV"
+      }
+    ]
+  },
+  {
+    "text": "MONTENEGRO",
+    "value": "ME",
+    "states": null
+  },
+  {
+    "text": "MONTSERRAT",
+    "value": "MS",
+    "states": null
+  },
+  {
+    "text": "MOROCCO",
+    "value": "MA",
+    "states": [
+      {
+        "text": "Casablanca",
+        "value": "CA"
+      },
+      {
+        "text": "Fes",
+        "value": "FE"
+      },
+      {
+        "text": "Laayoune",
+        "value": "LA"
+      },
+      {
+        "text": "Marrakech",
+        "value": "MR"
+      },
+      {
+        "text": "Meknes",
+        "value": "ME"
+      },
+      {
+        "text": "Oujda",
+        "value": "OJ"
+      },
+      {
+        "text": "Rabat-Sale",
+        "value": "RA"
+      },
+      {
+        "text": "Tanger",
+        "value": "TG"
+      },
+      {
+        "text": "Tetouan",
+        "value": "TE"
+      },
+      {
+        "text": "Tiznit",
+        "value": "TI"
+      }
+    ]
+  },
+  {
+    "text": "MOZAMBIQUE",
+    "value": "MZ",
+    "states": [
+      {
+        "text": "Maputo",
+        "value": "MP"
+      },
+      {
+        "text": "Nampula",
+        "value": "NM"
+      }
+    ]
+  },
+  {
+    "text": "MYANMAR",
+    "value": "MM",
+    "states": [
+      {
+        "text": "Mon State",
+        "value": "MO"
+      },
+      {
+        "text": "Shan State",
+        "value": "SH"
+      },
+      {
+        "text": "Yangon",
+        "value": "YA"
+      }
+    ]
+  },
+  {
+    "text": "NAMIBIA",
+    "value": "NA",
+    "states": [
+      {
+        "text": "Erongo",
+        "value": "ER"
+      },
+      {
+        "text": "Khomas",
+        "value": "KH"
+      },
+      {
+        "text": "Okavango",
+        "value": "OK"
+      },
+      {
+        "text": "Oshana",
+        "value": "ON"
+      },
+      {
+        "text": "Oshikoto",
+        "value": "OT"
+      },
+      {
+        "text": "Otjozondjupa",
+        "value": "OD"
+      }
+    ]
+  },
+  {
+    "text": "NAURU",
+    "value": "NR",
+    "states": null
+  },
+  {
+    "text": "NEPAL",
+    "value": "NP",
+    "states": [
+      {
+        "text": "Bagmati",
+        "value": "BA"
+      },
+      {
+        "text": "Kosi",
+        "value": "KO"
+      }
+    ]
+  },
+  {
+    "text": "NETHERLANDS",
+    "value": "NL",
+    "states": [
+      {
+        "text": "Bonaire",
+        "value": "BO"
+      },
+      {
+        "text": "Drenthe",
+        "value": "DR"
+      },
+      {
+        "text": "Flevoland",
+        "value": "FL"
+      },
+      {
+        "text": "Friesland",
+        "value": "FR"
+      },
+      {
+        "text": "Gelderland",
+        "value": "GE"
+      },
+      {
+        "text": "Groningen",
+        "value": "GR"
+      },
+      {
+        "text": "Limburg",
+        "value": "LI"
+      },
+      {
+        "text": "Noord-Brabant",
+        "value": "NB"
+      },
+      {
+        "text": "Noord-Holland",
+        "value": "NH"
+      },
+      {
+        "text": "Overijssel",
+        "value": "OV"
+      },
+      {
+        "text": "Utrecht",
+        "value": "UT"
+      },
+      {
+        "text": "Zeeland",
+        "value": "ZE"
+      },
+      {
+        "text": "Zuid-Holland",
+        "value": "ZH"
+      }
+    ]
+  },
+  {
+    "text": "NETHERLANDS ANTILLES",
+    "value": "AN",
+    "states": null
+  },
+  {
+    "text": "NEW CALEDONIA",
+    "value": "NC",
+    "states": [
+      {
+        "text": "New Caledonia",
+        "value": "NC"
+      }
+    ]
+  },
+  {
+    "text": "NEW ZEALAND",
+    "value": "NZ",
+    "states": [
+      {
+        "text": "Auckland",
+        "value": "AU"
+      },
+      {
+        "text": "Bay of Plenty",
+        "value": "BP"
+      },
+      {
+        "text": "Canterbury",
+        "value": "CA"
+      },
+      {
+        "text": "Chatham Islands Territory",
+        "value": "CI"
+      },
+      {
+        "text": "Gisborne",
+        "value": "GB"
+      },
+      {
+        "text": "Hawke's Bay",
+        "value": "HB"
+      },
+      {
+        "text": "Marlborough",
+        "value": "MA"
+      },
+      {
+        "text": "Nelson",
+        "value": "NE"
+      },
+      {
+        "text": "Northland",
+        "value": "NO"
+      },
+      {
+        "text": "Otago",
+        "value": "OT"
+      },
+      {
+        "text": "Southland",
+        "value": "SO"
+      },
+      {
+        "text": "Taranaki",
+        "value": "TK"
+      },
+      {
+        "text": "Tasman",
+        "value": "TA"
+      },
+      {
+        "text": "Waikato",
+        "value": "WK"
+      },
+      {
+        "text": "Wanganui-Manawatu",
+        "value": "MW"
+      },
+      {
+        "text": "Wellington",
+        "value": "WG"
+      },
+      {
+        "text": "West Coast",
+        "value": "WC"
+      }
+    ]
+  },
+  {
+    "text": "NICARAGUA",
+    "value": "NI",
+    "states": [
+      {
+        "text": "Atlantico Norte",
+        "value": "AN"
+      },
+      {
+        "text": "Atlantico Sur",
+        "value": "AS"
+      },
+      {
+        "text": "Carazo",
+        "value": "CA"
+      },
+      {
+        "text": "Chinandega",
+        "value": "CI"
+      },
+      {
+        "text": "Chontales",
+        "value": "CO"
+      },
+      {
+        "text": "Esteli",
+        "value": "ES"
+      },
+      {
+        "text": "Granada",
+        "value": "GR"
+      },
+      {
+        "text": "Jinotega",
+        "value": "JI"
+      },
+      {
+        "text": "Leon",
+        "value": "LE"
+      },
+      {
+        "text": "Madriz",
+        "value": "MD"
+      },
+      {
+        "text": "Managua",
+        "value": "MN"
+      },
+      {
+        "text": "Masaya",
+        "value": "MS"
+      },
+      {
+        "text": "Nueva Segovia",
+        "value": "NS"
+      },
+      {
+        "text": "Rivas",
+        "value": "RI"
+      }
+    ]
+  },
+  {
+    "text": "NIGER",
+    "value": "NE",
+    "states": [
+      {
+        "text": "Niamey",
+        "value": "NI"
+      }
+    ]
+  },
+  {
+    "text": "NIGERIA",
+    "value": "NG",
+    "states": [
+      {
+        "text": "Abuja Capital Territory",
+        "value": "FC"
+      },
+      {
+        "text": "Delta",
+        "value": "DE"
+      },
+      {
+        "text": "Edo",
+        "value": "ED"
+      },
+      {
+        "text": "Kaduna",
+        "value": "KD"
+      },
+      {
+        "text": "Lagos",
+        "value": "LA"
+      },
+      {
+        "text": "Nigeria",
+        "value": "NG"
+      },
+      {
+        "text": "Osun",
+        "value": "OS"
+      },
+      {
+        "text": "Oyo",
+        "value": "OY"
+      },
+      {
+        "text": "Rivers",
+        "value": "RI"
+      }
+    ]
+  },
+  {
+    "text": "NIUE",
+    "value": "NU",
+    "states": null
+  },
+  {
+    "text": "NORFOLK ISLAND",
+    "value": "NF",
+    "states": [
+      {
+        "text": "Norfolk Island",
+        "value": "NF"
+      }
+    ]
+  },
+  {
+    "text": "NORTHERN MARIANA ISL",
+    "value": "MP",
+    "states": [
+      {
+        "text": "Saipan",
+        "value": "SA"
+      }
+    ]
+  },
+  {
+    "text": "NORWAY",
+    "value": "NO",
+    "states": [
+      {
+        "text": "Akershus",
+        "value": "AK"
+      },
+      {
+        "text": "Aust-Agder",
+        "value": "AA"
+      },
+      {
+        "text": "Buskerud",
+        "value": "BU"
+      },
+      {
+        "text": "Finnmark",
+        "value": "FI"
+      },
+      {
+        "text": "Hedmark",
+        "value": "HE"
+      },
+      {
+        "text": "Hordaland",
+        "value": "HO"
+      },
+      {
+        "text": "More og Romsdal",
+        "value": "MR"
+      },
+      {
+        "text": "Nord-Trondelag",
+        "value": "NR"
+      },
+      {
+        "text": "Nordland",
+        "value": "NL"
+      },
+      {
+        "text": "Oppland",
+        "value": "OP"
+      },
+      {
+        "text": "Oslo",
+        "value": "OS"
+      },
+      {
+        "text": "Rogaland",
+        "value": "RO"
+      },
+      {
+        "text": "Sogn og Fjordane",
+        "value": "SF"
+      },
+      {
+        "text": "Sor-Trondelag",
+        "value": "ST"
+      },
+      {
+        "text": "Telemark",
+        "value": "TE"
+      },
+      {
+        "text": "Troms",
+        "value": "TR"
+      },
+      {
+        "text": "Vest-Agder",
+        "value": "VA"
+      },
+      {
+        "text": "Vestfold",
+        "value": "VF"
+      },
+      {
+        "text": "ÿstfold",
+        "value": "OF"
+      }
+    ]
+  },
+  {
+    "text": "OMAN",
+    "value": "OM",
+    "states": [
+      {
+        "text": "Ash Sharqiyah",
+        "value": "SH"
+      },
+      {
+        "text": "Masqat",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "PAKISTAN",
+    "value": "PK",
+    "states": [
+      {
+        "text": "Azad Kashmir",
+        "value": "JK"
+      },
+      {
+        "text": "Balochistan",
+        "value": "BA"
+      },
+      {
+        "text": "Islamabad",
+        "value": "IS"
+      },
+      {
+        "text": "North-West Frontier",
+        "value": "NW"
+      },
+      {
+        "text": "Northern Areas",
+        "value": "NA"
+      },
+      {
+        "text": "Punjab",
+        "value": "PB"
+      },
+      {
+        "text": "Sindh",
+        "value": "SD"
+      }
+    ]
+  },
+  {
+    "text": "PALAU",
+    "value": "PW",
+    "states": [
+      {
+        "text": "Palau",
+        "value": "PW"
+      }
+    ]
+  },
+  {
+    "text": "PALESTINIAN TERRITOR",
+    "value": "PS",
+    "states": [
+      {
+        "text": "Gaza",
+        "value": "GZ"
+      },
+      {
+        "text": "West Bank",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "PANAMA",
+    "value": "PA",
+    "states": [
+      {
+        "text": "Bocas del Toro",
+        "value": "BC"
+      },
+      {
+        "text": "Chiriqui",
+        "value": "CH"
+      },
+      {
+        "text": "Cocle",
+        "value": "CC"
+      },
+      {
+        "text": "Colon",
+        "value": "CL"
+      },
+      {
+        "text": "Darién",
+        "value": "DA"
+      },
+      {
+        "text": "Herrera",
+        "value": "HE"
+      },
+      {
+        "text": "Los Santos",
+        "value": "LS"
+      },
+      {
+        "text": "Panama",
+        "value": "PN"
+      },
+      {
+        "text": "San Blas",
+        "value": "SB"
+      },
+      {
+        "text": "Veraguas",
+        "value": "VR"
+      }
+    ]
+  },
+  {
+    "text": "PAPUA NEW GUINEA",
+    "value": "PG",
+    "states": [
+      {
+        "text": "Eastern Highlands",
+        "value": "EH"
+      },
+      {
+        "text": "Madang",
+        "value": "MD"
+      },
+      {
+        "text": "Morobe",
+        "value": "MR"
+      },
+      {
+        "text": "National Capital",
+        "value": "NC"
+      },
+      {
+        "text": "West New Britain",
+        "value": "WN"
+      },
+      {
+        "text": "Western Highlands",
+        "value": "WH"
+      }
+    ]
+  },
+  {
+    "text": "PARAGUAY",
+    "value": "PY",
+    "states": [
+      {
+        "text": "Alto Parana",
+        "value": "AA"
+      },
+      {
+        "text": "Asuncion",
+        "value": "AS"
+      },
+      {
+        "text": "Central",
+        "value": "CE"
+      },
+      {
+        "text": "Presidente Hayes",
+        "value": "PH"
+      }
+    ]
+  },
+  {
+    "text": "PERU",
+    "value": "PE",
+    "states": [
+      {
+        "text": "Ancash",
+        "value": "AN"
+      },
+      {
+        "text": "Apurimac",
+        "value": "AP"
+      },
+      {
+        "text": "Arequipa",
+        "value": "AR"
+      },
+      {
+        "text": "Cajamarca",
+        "value": "CJ"
+      },
+      {
+        "text": "Callao",
+        "value": "CL"
+      },
+      {
+        "text": "Cusco",
+        "value": "CS"
+      },
+      {
+        "text": "La Libertad",
+        "value": "LL"
+      },
+      {
+        "text": "Lima",
+        "value": "LI"
+      },
+      {
+        "text": "Loreto",
+        "value": "LO"
+      },
+      {
+        "text": "Piura",
+        "value": "PI"
+      }
+    ]
+  },
+  {
+    "text": "PHILIPPINES",
+    "value": "PH",
+    "states": [
+      {
+        "text": "Agusan del Norte",
+        "value": "AN"
+      },
+      {
+        "text": "Albay",
+        "value": "AL"
+      },
+      {
+        "text": "Baguio",
+        "value": "BI"
+      },
+      {
+        "text": "Batangas",
+        "value": "BT"
+      },
+      {
+        "text": "Cagayan",
+        "value": "CG"
+      },
+      {
+        "text": "Camarines Sur",
+        "value": "CS"
+      },
+      {
+        "text": "Capiz",
+        "value": "CP"
+      },
+      {
+        "text": "Cavite",
+        "value": "CV"
+      },
+      {
+        "text": "Cebu",
+        "value": "CB"
+      },
+      {
+        "text": "Cebu City",
+        "value": "CU"
+      },
+      {
+        "text": "Davao City",
+        "value": "DC"
+      },
+      {
+        "text": "Dipolog",
+        "value": "DI"
+      },
+      {
+        "text": "Ilocos Norte",
+        "value": "IN"
+      },
+      {
+        "text": "Iloilo City",
+        "value": "IC"
+      },
+      {
+        "text": "La Union",
+        "value": "LB"
+      },
+      {
+        "text": "Laguna",
+        "value": "LG"
+      },
+      {
+        "text": "Leyte",
+        "value": "LY"
+      },
+      {
+        "text": "Lipa",
+        "value": "LI"
+      },
+      {
+        "text": "Manila",
+        "value": "MM"
+      },
+      {
+        "text": "Mindoro Oriental",
+        "value": "MR"
+      },
+      {
+        "text": "Misamis Oriental",
+        "value": "MN"
+      },
+      {
+        "text": "Negros Occidental",
+        "value": "ND"
+      },
+      {
+        "text": "Negros Oriental",
+        "value": "NR"
+      },
+      {
+        "text": "Olongapo",
+        "value": "OL"
+      },
+      {
+        "text": "Palawan",
+        "value": "PL"
+      },
+      {
+        "text": "Pampanga",
+        "value": "PM"
+      },
+      {
+        "text": "Pangasinan",
+        "value": "PN"
+      },
+      {
+        "text": "Quezon City",
+        "value": "QC"
+      },
+      {
+        "text": "Rizal",
+        "value": "RI"
+      },
+      {
+        "text": "Sorsogon",
+        "value": "SR"
+      },
+      {
+        "text": "South Cotabato",
+        "value": "SC"
+      },
+      {
+        "text": "Tarlac",
+        "value": "TR"
+      },
+      {
+        "text": "Tawi-Tawi",
+        "value": "TT"
+      },
+      {
+        "text": "Zambales",
+        "value": "ZM"
+      },
+      {
+        "text": "Zamboanga",
+        "value": "ZA"
+      },
+      {
+        "text": "Zamboanga del Sur",
+        "value": "ZS"
+      }
+    ]
+  },
+  {
+    "text": "PITCAIRN",
+    "value": "PN",
+    "states": null
+  },
+  {
+    "text": "POLAND",
+    "value": "PL",
+    "states": [
+      {
+        "text": "Dolnoslaskie",
+        "value": "DS"
+      },
+      {
+        "text": "Kujawsko-Pomorskie",
+        "value": "KP"
+      },
+      {
+        "text": "Lodzkie",
+        "value": "LD"
+      },
+      {
+        "text": "Lubelskie",
+        "value": "LU"
+      },
+      {
+        "text": "Lubuskie",
+        "value": "LB"
+      },
+      {
+        "text": "Malopolskie",
+        "value": "MA"
+      },
+      {
+        "text": "Mazowieckie",
+        "value": "MZ"
+      },
+      {
+        "text": "Opolskie",
+        "value": "OP"
+      },
+      {
+        "text": "Podkarpackie",
+        "value": "PK"
+      },
+      {
+        "text": "Podlaskie",
+        "value": "PD"
+      },
+      {
+        "text": "Pomorskie",
+        "value": "PM"
+      },
+      {
+        "text": "Slaskie",
+        "value": "SL"
+      },
+      {
+        "text": "Swietokrzyskie",
+        "value": "SK"
+      },
+      {
+        "text": "Warminsko-Mazurskie",
+        "value": "WN"
+      },
+      {
+        "text": "Wielkopolskie",
+        "value": "WP"
+      },
+      {
+        "text": "Zachodniopomorskie",
+        "value": "ZP"
+      }
+    ]
+  },
+  {
+    "text": "PORTUGAL",
+    "value": "PT",
+    "states": [
+      {
+        "text": "Aveiro",
+        "value": "AV"
+      },
+      {
+        "text": "Azores",
+        "value": "AC"
+      },
+      {
+        "text": "Beja",
+        "value": "BE"
+      },
+      {
+        "text": "Braga",
+        "value": "BR"
+      },
+      {
+        "text": "Bragance",
+        "value": "BA"
+      },
+      {
+        "text": "Castelo Branco",
+        "value": "CB"
+      },
+      {
+        "text": "Coimbra",
+        "value": "CO"
+      },
+      {
+        "text": "Evora",
+        "value": "EV"
+      },
+      {
+        "text": "Faro",
+        "value": "FA"
+      },
+      {
+        "text": "Guarda",
+        "value": "GU"
+      },
+      {
+        "text": "Leiria",
+        "value": "LE"
+      },
+      {
+        "text": "Lisboa",
+        "value": "LI"
+      },
+      {
+        "text": "Madeira",
+        "value": "MA"
+      },
+      {
+        "text": "Portalegre",
+        "value": "PA"
+      },
+      {
+        "text": "Porto",
+        "value": "PO"
+      },
+      {
+        "text": "Santarem",
+        "value": "SA"
+      },
+      {
+        "text": "Setubal",
+        "value": "SE"
+      },
+      {
+        "text": "Viana do Castelo",
+        "value": "VC"
+      },
+      {
+        "text": "Vila Real",
+        "value": "VR"
+      },
+      {
+        "text": "Viseu",
+        "value": "VI"
+      }
+    ]
+  },
+  {
+    "text": "PUERTO RICO",
+    "value": "PR",
+    "states": [
+      {
+        "text": "Puerto Rico",
+        "value": "PR"
+      }
+    ]
+  },
+  {
+    "text": "QATAR",
+    "value": "QA",
+    "states": [
+      {
+        "text": "Ad Dawhah",
+        "value": "DA"
+      },
+      {
+        "text": "Al Wakrah",
+        "value": "WA"
+      },
+      {
+        "text": "Ar Rayyan",
+        "value": "RA"
+      }
+    ]
+  },
+  {
+    "text": "REUNION",
+    "value": "RE",
+    "states": [
+      {
+        "text": "Réunion",
+        "value": "RE"
+      }
+    ]
+  },
+  {
+    "text": "ROMANIA",
+    "value": "RO",
+    "states": [
+      {
+        "text": "Alba",
+        "value": "ALB"
+      },
+      {
+        "text": "Arad",
+        "value": "AR"
+      },
+      {
+        "text": "Arges",
+        "value": "AG"
+      },
+      {
+        "text": "Bacau",
+        "value": "BC"
+      },
+      {
+        "text": "Bihor",
+        "value": "BH"
+      },
+      {
+        "text": "Bistrita-Nasaud",
+        "value": "BNS"
+      },
+      {
+        "text": "Botosani",
+        "value": "BOT"
+      },
+      {
+        "text": "Botosani",
+        "value": "BTO"
+      },
+      {
+        "text": "Braila",
+        "value": "BRA"
+      },
+      {
+        "text": "Brasov",
+        "value": "BV"
+      },
+      {
+        "text": "Bucuresti",
+        "value": "BU"
+      },
+      {
+        "text": "Buzau",
+        "value": "BZ"
+      },
+      {
+        "text": "Calarasi",
+        "value": "CAL"
+      },
+      {
+        "text": "Caras-Severin",
+        "value": "CS"
+      },
+      {
+        "text": "Cluj",
+        "value": "CJ"
+      },
+      {
+        "text": "Constanta",
+        "value": "CT"
+      },
+      {
+        "text": "Covasna",
+        "value": "COV"
+      },
+      {
+        "text": "Dambovita",
+        "value": "DAM"
+      },
+      {
+        "text": "Dolj",
+        "value": "DJ"
+      },
+      {
+        "text": "Galati",
+        "value": "GL"
+      },
+      {
+        "text": "Giurgiu",
+        "value": "GIU"
+      },
+      {
+        "text": "Gorj",
+        "value": "GOR"
+      },
+      {
+        "text": "Harghita",
+        "value": "HR"
+      },
+      {
+        "text": "Hunedoara",
+        "value": "HD"
+      },
+      {
+        "text": "Iasi",
+        "value": "IS"
+      },
+      {
+        "text": "Ilfov",
+        "value": "ILF"
+      },
+      {
+        "text": "Maramures",
+        "value": "MM"
+      },
+      {
+        "text": "Mehedinti",
+        "value": "MEH"
+      },
+      {
+        "text": "Mures",
+        "value": "MS"
+      },
+      {
+        "text": "Neamt",
+        "value": "NEA"
+      },
+      {
+        "text": "Olt",
+        "value": "OLT"
+      },
+      {
+        "text": "Prahova",
+        "value": "PH"
+      },
+      {
+        "text": "Salaj",
+        "value": "SLA"
+      },
+      {
+        "text": "Satu Mare",
+        "value": "SM"
+      },
+      {
+        "text": "Sibiu",
+        "value": "SB"
+      },
+      {
+        "text": "Suceava",
+        "value": "SUC"
+      },
+      {
+        "text": "Teleorman",
+        "value": "TEL"
+      },
+      {
+        "text": "Timis",
+        "value": "TM"
+      },
+      {
+        "text": "Tulcea",
+        "value": "TL"
+      },
+      {
+        "text": "Valcea",
+        "value": "VAL"
+      },
+      {
+        "text": "Vaslui",
+        "value": "VS"
+      },
+      {
+        "text": "Vrancea",
+        "value": "VRA"
+      }
+    ]
+  },
+  {
+    "text": "RUSSIAN FEDERATION",
+    "value": "RU",
+    "states": [
+      {
+        "text": "Altayskiy Kray",
+        "value": "AL"
+      },
+      {
+        "text": "Amurskaya Oblast'",
+        "value": "AM"
+      },
+      {
+        "text": "Arkhangel'skaya Oblast'",
+        "value": "AR"
+      },
+      {
+        "text": "Astrakhanskaya Oblast'",
+        "value": "AS"
+      },
+      {
+        "text": "Bashkortostan",
+        "value": "BK"
+      },
+      {
+        "text": "Buryatiya",
+        "value": "BU"
+      },
+      {
+        "text": "Chelyabinskaya Oblast'",
+        "value": "CL"
+      },
+      {
+        "text": "Chitinskaya Oblast'",
+        "value": "CT"
+      },
+      {
+        "text": "Chukotskiy Avtonomnyy Okrug",
+        "value": "CK"
+      },
+      {
+        "text": "Chuvashiya",
+        "value": "CV"
+      },
+      {
+        "text": "Dagestan",
+        "value": "DA"
+      },
+      {
+        "text": "Irkutskaya Oblast'",
+        "value": "IR"
+      },
+      {
+        "text": "Ivanovskaya Oblast'",
+        "value": "IV"
+      },
+      {
+        "text": "Kabardino-Balkariya",
+        "value": "KB"
+      },
+      {
+        "text": "Kaliningradskaya Oblast'",
+        "value": "KN"
+      },
+      {
+        "text": "Kaluzhskaya Oblast'",
+        "value": "KG"
+      },
+      {
+        "text": "Kamchatskaya Oblast'",
+        "value": "KA"
+      },
+      {
+        "text": "Kareliya",
+        "value": "KI"
+      },
+      {
+        "text": "Kemerovskaya Oblast'",
+        "value": "KE"
+      },
+      {
+        "text": "Khabarovskiy Kray",
+        "value": "KH"
+      },
+      {
+        "text": "Khanty-Mansiyskiy Avtonomnyy Okrug",
+        "value": "KM"
+      },
+      {
+        "text": "Komi",
+        "value": "KO"
+      },
+      {
+        "text": "Krasnodarskiy Kray",
+        "value": "KD"
+      },
+      {
+        "text": "Krasnoyarskiy Kray",
+        "value": "KY"
+      },
+      {
+        "text": "Kurganskaya Oblast'",
+        "value": "KU"
+      },
+      {
+        "text": "Kurskaya Oblast'",
+        "value": "KS"
+      },
+      {
+        "text": "Leningradskaya Oblast'",
+        "value": "LN"
+      },
+      {
+        "text": "Magadanskaya Oblast'",
+        "value": "MG"
+      },
+      {
+        "text": "Mariy-El",
+        "value": "ME"
+      },
+      {
+        "text": "Mordoviya",
+        "value": "MR"
+      },
+      {
+        "text": "Moskovskaya Oblast'",
+        "value": "MS"
+      },
+      {
+        "text": "Moskva",
+        "value": "MC"
+      },
+      {
+        "text": "Murmanskaya Oblast'",
+        "value": "MM"
+      },
+      {
+        "text": "Nizhegorodskaya Oblast'",
+        "value": "NZ"
+      },
+      {
+        "text": "Novgorodskaya Oblast'",
+        "value": "NG"
+      },
+      {
+        "text": "Novosibirskaya Oblast'",
+        "value": "NS"
+      },
+      {
+        "text": "Omskaya Oblast'",
+        "value": "OM"
+      },
+      {
+        "text": "Orenburgskaya Oblast'",
+        "value": "OB"
+      },
+      {
+        "text": "Penzenskaya Oblast'",
+        "value": "PZ"
+      },
+      {
+        "text": "Permskaya Oblast'",
+        "value": "PM"
+      },
+      {
+        "text": "Primorskiy Kray",
+        "value": "PR"
+      },
+      {
+        "text": "Rostovskaya Oblast'",
+        "value": "RO"
+      },
+      {
+        "text": "Sakha (Yakutiya)",
+        "value": "SK"
+      },
+      {
+        "text": "Sakhalinskaya Oblast'",
+        "value": "SL"
+      },
+      {
+        "text": "Samarskaya Oblast'",
+        "value": "SA"
+      },
+      {
+        "text": "Sankt-Peterburg",
+        "value": "SP"
+      },
+      {
+        "text": "Saratovskaya Oblast'",
+        "value": "SR"
+      },
+      {
+        "text": "Smolenskaya Oblast'",
+        "value": "SM"
+      },
+      {
+        "text": "Stavropol'skiy Kray",
+        "value": "ST"
+      },
+      {
+        "text": "Sverdlovskaya Oblast'",
+        "value": "SV"
+      },
+      {
+        "text": "Tambovskaya Oblast'",
+        "value": "TB"
+      },
+      {
+        "text": "Tatarstan",
+        "value": "TT"
+      },
+      {
+        "text": "Taymyrskiy Dolgano-Nenetskiy Avtonomnyy Okrug",
+        "value": "TM"
+      },
+      {
+        "text": "Tomskaya Oblast'",
+        "value": "TO"
+      },
+      {
+        "text": "Tverskaya Oblast'",
+        "value": "TV"
+      },
+      {
+        "text": "Udmurtiya",
+        "value": "UD"
+      },
+      {
+        "text": "Volgogradskaya Oblast'",
+        "value": "VG"
+      },
+      {
+        "text": "Yaroslavskaya Oblast'",
+        "value": "YS"
+      },
+      {
+        "text": "Yevreyskaya Avtonomnyy Oblast'",
+        "value": "YV"
+      }
+    ]
+  },
+  {
+    "text": "RWANDA",
+    "value": "RW",
+    "states": [
+      {
+        "text": "Kigali-Rural",
+        "value": "KR"
+      }
+    ]
+  },
+  {
+    "text": "SAINT BARTHELEMY",
+    "value": "BL",
+    "states": null
+  },
+  {
+    "text": "SAINT HELENA",
+    "value": "SH",
+    "states": null
+  },
+  {
+    "text": "SAINT KITTS AND NEVI",
+    "value": "KN",
+    "states": [
+      {
+        "text": "Saint George Basseterre",
+        "value": "GB"
+      }
+    ]
+  },
+  {
+    "text": "SAINT LUCIA",
+    "value": "LC",
+    "states": [
+      {
+        "text": "Castries",
+        "value": "CS"
+      }
+    ]
+  },
+  {
+    "text": "SAINT MARTIN",
+    "value": "MF",
+    "states": null
+  },
+  {
+    "text": "SAINT PIERRE AND MIQ",
+    "value": "PM",
+    "states": null
+  },
+  {
+    "text": "SAINT VINCENT AND TH",
+    "value": "VC",
+    "states": [
+      {
+        "text": "Saint George",
+        "value": "GE"
+      }
+    ]
+  },
+  {
+    "text": "SAMOA",
+    "value": "WS",
+    "states": [
+      {
+        "text": "Samoa",
+        "value": "WS"
+      }
+    ]
+  },
+  {
+    "text": "SAN MARINO",
+    "value": "SM",
+    "states": [
+      {
+        "text": "San Marino",
+        "value": "SM"
+      }
+    ]
+  },
+  {
+    "text": "SAO TOME AND PRINCIP",
+    "value": "ST",
+    "states": [
+      {
+        "text": "Sao Tome",
+        "value": "ST"
+      }
+    ]
+  },
+  {
+    "text": "SAUDI ARABIA",
+    "value": "SA",
+    "states": [
+      {
+        "text": "'Asir",
+        "value": "AS"
+      },
+      {
+        "text": "Al Jawf",
+        "value": "JF"
+      },
+      {
+        "text": "Al Qasim",
+        "value": "QS"
+      },
+      {
+        "text": "Ar Riyad",
+        "value": "RI"
+      },
+      {
+        "text": "Ash Sharqiyah",
+        "value": "SH"
+      },
+      {
+        "text": "Ha'il",
+        "value": "HA"
+      },
+      {
+        "text": "Makkah",
+        "value": "MK"
+      }
+    ]
+  },
+  {
+    "text": "SENEGAL",
+    "value": "SN",
+    "states": [
+      {
+        "text": "Kaolack",
+        "value": "KL"
+      },
+      {
+        "text": "Louga",
+        "value": "LG"
+      },
+      {
+        "text": "Saint-Louis",
+        "value": "SL"
+      },
+      {
+        "text": "Ziguinchor",
+        "value": "ZG"
+      }
+    ]
+  },
+  {
+    "text": "SERBIA",
+    "value": "RS",
+    "states": null
+  },
+  {
+    "text": "SEYCHELLES",
+    "value": "SC",
+    "states": [
+      {
+        "text": "Anse aux Pins",
+        "value": "PI"
+      },
+      {
+        "text": "Seychelles",
+        "value": "SC"
+      }
+    ]
+  },
+  {
+    "text": "SIERRA LEONE",
+    "value": "SL",
+    "states": [
+      {
+        "text": "Southern",
+        "value": "SO"
+      },
+      {
+        "text": "Western Area",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "SINGAPORE",
+    "value": "SG",
+    "states": [
+      {
+        "text": "Singapore",
+        "value": "SG"
+      }
+    ]
+  },
+  {
+    "text": "SINT MAARTEN",
+    "value": "SX",
+    "states": null
+  },
+  {
+    "text": "SLOVAKIA",
+    "value": "SK",
+    "states": [
+      {
+        "text": "Banskobystricky",
+        "value": "BC"
+      },
+      {
+        "text": "Bratislavsky",
+        "value": "BL"
+      },
+      {
+        "text": "Kosicky",
+        "value": "KI"
+      },
+      {
+        "text": "Nitrinsky",
+        "value": "NI"
+      },
+      {
+        "text": "Presovsky",
+        "value": "PV"
+      },
+      {
+        "text": "Treciansky",
+        "value": "TC"
+      },
+      {
+        "text": "Trnavsky",
+        "value": "TA"
+      },
+      {
+        "text": "Zilinsky",
+        "value": "ZI"
+      }
+    ]
+  },
+  {
+    "text": "SLOVENIA",
+    "value": "SI",
+    "states": [
+      {
+        "text": "Celje",
+        "value": "CL"
+      },
+      {
+        "text": "Dobrova-Horjul-Polhov Gradec",
+        "value": "DG"
+      },
+      {
+        "text": "Gornja Radgona",
+        "value": "GR"
+      },
+      {
+        "text": "Hrastnik",
+        "value": "HR"
+      },
+      {
+        "text": "Imo",
+        "value": "IM"
+      },
+      {
+        "text": "Koper",
+        "value": "KP"
+      },
+      {
+        "text": "Kranj",
+        "value": "KR"
+      },
+      {
+        "text": "Ljubljana",
+        "value": "LB"
+      },
+      {
+        "text": "Maribor",
+        "value": "MA"
+      },
+      {
+        "text": "Murska Sobota",
+        "value": "MS"
+      },
+      {
+        "text": "Nova Gorica",
+        "value": "NG"
+      },
+      {
+        "text": "Novo Mesto",
+        "value": "NM"
+      },
+      {
+        "text": "Postojna",
+        "value": "PO"
+      },
+      {
+        "text": "Trzic",
+        "value": "TR"
+      },
+      {
+        "text": "Vrhnika",
+        "value": "VR"
+      },
+      {
+        "text": "Zagorje ob Savi",
+        "value": "ZO"
+      }
+    ]
+  },
+  {
+    "text": "SOLOMON ISLANDS",
+    "value": "SB",
+    "states": [
+      {
+        "text": "Guadalcanal",
+        "value": "GC"
+      }
+    ]
+  },
+  {
+    "text": "SOMALIA",
+    "value": "SO",
+    "states": [
+      {
+        "text": "Banaadir",
+        "value": "BN"
+      },
+      {
+        "text": "Bari",
+        "value": "BR"
+      },
+      {
+        "text": "Gedo",
+        "value": "GE"
+      },
+      {
+        "text": "Mudug",
+        "value": "MU"
+      }
+    ]
+  },
+  {
+    "text": "SOUTH AFRICA",
+    "value": "ZA",
+    "states": [
+      {
+        "text": "Eastern Cape",
+        "value": "EC"
+      },
+      {
+        "text": "Free State",
+        "value": "FS"
+      },
+      {
+        "text": "Gauteng",
+        "value": "GT"
+      },
+      {
+        "text": "KwaZulu-Natal",
+        "value": "NL"
+      },
+      {
+        "text": "Mpumalanga",
+        "value": "MP"
+      },
+      {
+        "text": "North-West",
+        "value": "NW"
+      },
+      {
+        "text": "Northern Cape",
+        "value": "NC"
+      },
+      {
+        "text": "Northern Province",
+        "value": "NP"
+      },
+      {
+        "text": "Western Cape",
+        "value": "WC"
+      }
+    ]
+  },
+  {
+    "text": "SOUTH GEORGIA AND TH",
+    "value": "GS",
+    "states": null
+  },
+  {
+    "text": "SPAIN",
+    "value": "ES",
+    "states": [
+      {
+        "text": "Andalucia",
+        "value": "AN"
+      },
+      {
+        "text": "Aragon",
+        "value": "AR"
+      },
+      {
+        "text": "Asturias",
+        "value": "AS"
+      },
+      {
+        "text": "Canarias",
+        "value": "CN"
+      },
+      {
+        "text": "Cantabria",
+        "value": "CB"
+      },
+      {
+        "text": "Castilla y Leon",
+        "value": "CL"
+      },
+      {
+        "text": "Castilla-La Mancha",
+        "value": "CM"
+      },
+      {
+        "text": "Cataluña",
+        "value": "CT"
+      },
+      {
+        "text": "Extremadura",
+        "value": "EX"
+      },
+      {
+        "text": "Galicia",
+        "value": "GA"
+      },
+      {
+        "text": "Islas Baleares",
+        "value": "PM"
+      },
+      {
+        "text": "La Rioja",
+        "value": "LO"
+      },
+      {
+        "text": "Madrid",
+        "value": "MD"
+      },
+      {
+        "text": "Murcia",
+        "value": "MU"
+      },
+      {
+        "text": "Navarra",
+        "value": "NA"
+      },
+      {
+        "text": "Pais Vasco",
+        "value": "PV"
+      },
+      {
+        "text": "Valenciana",
+        "value": "VC"
+      }
+    ]
+  },
+  {
+    "text": "SRI LANKA",
+    "value": "LK",
+    "states": [
+      {
+        "text": "Central",
+        "value": "CE"
+      },
+      {
+        "text": "North Eastern",
+        "value": "NE"
+      },
+      {
+        "text": "Western",
+        "value": "WE"
+      }
+    ]
+  },
+  {
+    "text": "SUDAN",
+    "value": "SD",
+    "states": [
+      {
+        "text": "Al Babr al Ahmar",
+        "value": "RS"
+      },
+      {
+        "text": "Al Khartum",
+        "value": "KH"
+      }
+    ]
+  },
+  {
+    "text": "SURINAME",
+    "value": "SR",
+    "states": [
+      {
+        "text": "Paramaribo",
+        "value": "PM"
+      }
+    ]
+  },
+  {
+    "text": "SVALBARD AND JAN MAY",
+    "value": "SJ",
+    "states": null
+  },
+  {
+    "text": "SWAZILAND",
+    "value": "SZ",
+    "states": [
+      {
+        "text": "Hhohho",
+        "value": "HH"
+      },
+      {
+        "text": "Manzini",
+        "value": "MA"
+      }
+    ]
+  },
+  {
+    "text": "SWEDEN",
+    "value": "SE",
+    "states": [
+      {
+        "text": "Blekinge Lan",
+        "value": "BL"
+      },
+      {
+        "text": "Dalarnas Lan",
+        "value": "KO"
+      },
+      {
+        "text": "Gavleborgs Lan",
+        "value": "GV"
+      },
+      {
+        "text": "Gotlands Lan",
+        "value": "GT"
+      },
+      {
+        "text": "Hallands Lan",
+        "value": "HA"
+      },
+      {
+        "text": "Jamtlands Lan",
+        "value": "JA"
+      },
+      {
+        "text": "Jonkopings Lan",
+        "value": "JO"
+      },
+      {
+        "text": "Kalmar Lan",
+        "value": "KA"
+      },
+      {
+        "text": "Kronobergs Lan",
+        "value": "KR"
+      },
+      {
+        "text": "Norrbottens Lan",
+        "value": "NB"
+      },
+      {
+        "text": "Orebro Lan",
+        "value": "OR"
+      },
+      {
+        "text": "Ostergotlands Lan",
+        "value": "OG"
+      },
+      {
+        "text": "Skane Lan",
+        "value": "SN"
+      },
+      {
+        "text": "Sodermanlands Lan",
+        "value": "SD"
+      },
+      {
+        "text": "Stockholms Lan",
+        "value": "ST"
+      },
+      {
+        "text": "Uppsala Lan",
+        "value": "UP"
+      },
+      {
+        "text": "Varmlands Lan",
+        "value": "VR"
+      },
+      {
+        "text": "Vasterbottens Lan",
+        "value": "VB"
+      },
+      {
+        "text": "Vasternorrlands Lan",
+        "value": "VN"
+      },
+      {
+        "text": "Vastmanlands Lan",
+        "value": "VM"
+      },
+      {
+        "text": "Vastra Gotaland",
+        "value": "VG"
+      }
+    ]
+  },
+  {
+    "text": "SWITZERLAND",
+    "value": "CH",
+    "states": [
+      {
+        "text": "Aargau",
+        "value": "AG"
+      },
+      {
+        "text": "Appenzell Innerrhoden",
+        "value": "AI"
+      },
+      {
+        "text": "Ausser-Rhoden",
+        "value": "AR"
+      },
+      {
+        "text": "Basel-Landschaft",
+        "value": "BL"
+      },
+      {
+        "text": "Basel-Stadt",
+        "value": "BS"
+      },
+      {
+        "text": "Bern",
+        "value": "BE"
+      },
+      {
+        "text": "Fribourg",
+        "value": "FR"
+      },
+      {
+        "text": "Geneve",
+        "value": "GE"
+      },
+      {
+        "text": "Glarus",
+        "value": "GL"
+      },
+      {
+        "text": "Graubunden",
+        "value": "GR"
+      },
+      {
+        "text": "Jura",
+        "value": "JU"
+      },
+      {
+        "text": "Luzern",
+        "value": "LU"
+      },
+      {
+        "text": "Neuchatel",
+        "value": "NE"
+      },
+      {
+        "text": "Nidwalden",
+        "value": "NW"
+      },
+      {
+        "text": "Obwalden",
+        "value": "OW"
+      },
+      {
+        "text": "Sankt Gallen",
+        "value": "SG"
+      },
+      {
+        "text": "Schaffhausen",
+        "value": "SH"
+      },
+      {
+        "text": "Schwyz",
+        "value": "SZ"
+      },
+      {
+        "text": "Solothurn",
+        "value": "SO"
+      },
+      {
+        "text": "Thurgau",
+        "value": "TG"
+      },
+      {
+        "text": "Ticino",
+        "value": "TI"
+      },
+      {
+        "text": "Uri",
+        "value": "UR"
+      },
+      {
+        "text": "Valais",
+        "value": "VS"
+      },
+      {
+        "text": "Vaud",
+        "value": "VD"
+      },
+      {
+        "text": "Zug",
+        "value": "ZG"
+      },
+      {
+        "text": "Zurich",
+        "value": "ZH"
+      }
+    ]
+  },
+  {
+    "text": "SYRIAN ARAB REPUBLIC",
+    "value": "SY",
+    "states": [
+      {
+        "text": "Al Hasakah",
+        "value": "HA"
+      },
+      {
+        "text": "Al Ladhiqiyah",
+        "value": "LA"
+      },
+      {
+        "text": "Dimashq",
+        "value": "DI"
+      },
+      {
+        "text": "Halab",
+        "value": "HL"
+      },
+      {
+        "text": "Hims",
+        "value": "HI"
+      }
+    ]
+  },
+  {
+    "text": "TAIWAN",
+    "value": "TW",
+    "states": [
+      {
+        "text": "Kao-hsiung",
+        "value": "KH"
+      },
+      {
+        "text": "T'ai-pei",
+        "value": "TP"
+      },
+      {
+        "text": "T'ai-wan",
+        "value": "TA"
+      },
+      {
+        "text": "Taiwan",
+        "value": "TW"
+      }
+    ]
+  },
+  {
+    "text": "TAJIKISTAN",
+    "value": "TJ",
+    "states": [
+      {
+        "text": "Kuhistoni Badakhshon",
+        "value": "BK"
+      },
+      {
+        "text": "Leninobod",
+        "value": "LE"
+      }
+    ]
+  },
+  {
+    "text": "TANZANIA, UNITED REP",
+    "value": "TZ",
+    "states": [
+      {
+        "text": "Arusha",
+        "value": "AR"
+      },
+      {
+        "text": "Dar es Salaam",
+        "value": "DS"
+      },
+      {
+        "text": "Dodoma",
+        "value": "DO"
+      },
+      {
+        "text": "Mwanza",
+        "value": "MW"
+      },
+      {
+        "text": "Pemba North",
+        "value": "PN"
+      },
+      {
+        "text": "Shinyanga",
+        "value": "SH"
+      },
+      {
+        "text": "Tanga",
+        "value": "TN"
+      },
+      {
+        "text": "Zanzibar Urban//West",
+        "value": "ZW"
+      }
+    ]
+  },
+  {
+    "text": "THAILAND",
+    "value": "TH",
+    "states": [
+      {
+        "text": "Bangkok",
+        "value": "BM"
+      },
+      {
+        "text": "Buriram",
+        "value": "BR"
+      },
+      {
+        "text": "Chachoengsao",
+        "value": "CC"
+      },
+      {
+        "text": "Chiang Mai",
+        "value": "CM"
+      },
+      {
+        "text": "Chon Buri",
+        "value": "CB"
+      },
+      {
+        "text": "Nakhon Pathom",
+        "value": "NP"
+      },
+      {
+        "text": "Nakhon Ratchasima",
+        "value": "NR"
+      },
+      {
+        "text": "Nonthaburi",
+        "value": "NO"
+      },
+      {
+        "text": "Phetchabun",
+        "value": "PH"
+      },
+      {
+        "text": "Phetchaburi",
+        "value": "PE"
+      },
+      {
+        "text": "Phitsanulok",
+        "value": "PS"
+      },
+      {
+        "text": "Phuket",
+        "value": "PU"
+      },
+      {
+        "text": "Rayong",
+        "value": "RY"
+      },
+      {
+        "text": "Samut Prakan",
+        "value": "SP"
+      },
+      {
+        "text": "Surat Thani",
+        "value": "ST"
+      },
+      {
+        "text": "Thailand",
+        "value": "TH"
+      },
+      {
+        "text": "Trat",
+        "value": "TT"
+      },
+      {
+        "text": "Udon Thani",
+        "value": "UN"
+      }
+    ]
+  },
+  {
+    "text": "TIMOR-LESTE",
+    "value": "TL",
+    "states": null
+  },
+  {
+    "text": "TOGO",
+    "value": "TG",
+    "states": [
+      {
+        "text": "Kara",
+        "value": "KA"
+      },
+      {
+        "text": "Maritime",
+        "value": "MA"
+      },
+      {
+        "text": "Plateaux",
+        "value": "PL"
+      }
+    ]
+  },
+  {
+    "text": "TOKELAU",
+    "value": "TK",
+    "states": null
+  },
+  {
+    "text": "TONGA",
+    "value": "TO",
+    "states": [
+      {
+        "text": "Tongatapu",
+        "value": "TT"
+      }
+    ]
+  },
+  {
+    "text": "TRINIDAD AND TOBAGO",
+    "value": "TT",
+    "states": [
+      {
+        "text": "Arima",
+        "value": "AR"
+      },
+      {
+        "text": "Caroni",
+        "value": "CA"
+      },
+      {
+        "text": "Mayaro",
+        "value": "MA"
+      },
+      {
+        "text": "Nariva",
+        "value": "NA"
+      },
+      {
+        "text": "Port-of-Spain",
+        "value": "PO"
+      },
+      {
+        "text": "Saint Andrew",
+        "value": "SA"
+      },
+      {
+        "text": "Saint David",
+        "value": "SD"
+      },
+      {
+        "text": "Saint George",
+        "value": "SG"
+      },
+      {
+        "text": "Saint Patrick",
+        "value": "SP"
+      },
+      {
+        "text": "San Fernando",
+        "value": "SF"
+      },
+      {
+        "text": "Tobago",
+        "value": "TO"
+      },
+      {
+        "text": "Victoria",
+        "value": "VI"
+      }
+    ]
+  },
+  {
+    "text": "TUNISIA",
+    "value": "TN",
+    "states": [
+      {
+        "text": "Al Munastir",
+        "value": "MS"
+      },
+      {
+        "text": "Madanin",
+        "value": "ME"
+      },
+      {
+        "text": "Qafsah",
+        "value": "QA"
+      },
+      {
+        "text": "Susah",
+        "value": "SS"
+      },
+      {
+        "text": "Tunis",
+        "value": "TU"
+      }
+    ]
+  },
+  {
+    "text": "TURKEY",
+    "value": "TR",
+    "states": [
+      {
+        "text": "Adana",
+        "value": "AA"
+      },
+      {
+        "text": "Adiyaman",
+        "value": "AD"
+      },
+      {
+        "text": "Afyonkarahisar",
+        "value": "AF"
+      },
+      {
+        "text": "Agri",
+        "value": "AG"
+      },
+      {
+        "text": "Aksaray",
+        "value": "AK"
+      },
+      {
+        "text": "Amasya",
+        "value": "AM"
+      },
+      {
+        "text": "Ankara",
+        "value": "AN"
+      },
+      {
+        "text": "Antalya",
+        "value": "AL"
+      },
+      {
+        "text": "Ardahan",
+        "value": "AR"
+      },
+      {
+        "text": "Artvin",
+        "value": "AT"
+      },
+      {
+        "text": "Aydin",
+        "value": "AY"
+      },
+      {
+        "text": "Balikesir",
+        "value": "BK"
+      },
+      {
+        "text": "Bartın",
+        "value": "BA"
+      },
+      {
+        "text": "Batman",
+        "value": "BT"
+      },
+      {
+        "text": "Bayburt",
+        "value": "BY"
+      },
+      {
+        "text": "Bilecik",
+        "value": "BL"
+      },
+      {
+        "text": "Bingol",
+        "value": "BN"
+      },
+      {
+        "text": "Bitlis",
+        "value": "BS"
+      },
+      {
+        "text": "Bolu",
+        "value": "BO"
+      },
+      {
+        "text": "Burdur",
+        "value": "BR"
+      },
+      {
+        "text": "Bursa",
+        "value": "BU"
+      },
+      {
+        "text": "Canakkale",
+        "value": "CA"
+      },
+      {
+        "text": "Cankiri",
+        "value": "CN"
+      },
+      {
+        "text": "Corum",
+        "value": "CO"
+      },
+      {
+        "text": "Denizli",
+        "value": "DE"
+      },
+      {
+        "text": "Diyarbakir",
+        "value": "DY"
+      },
+      {
+        "text": "Duzce",
+        "value": "DU"
+      },
+      {
+        "text": "Edirne",
+        "value": "ED"
+      },
+      {
+        "text": "Elazig",
+        "value": "EL"
+      },
+      {
+        "text": "Erzincan",
+        "value": "ER"
+      },
+      {
+        "text": "Erzurum",
+        "value": "EM"
+      },
+      {
+        "text": "Eskisehir",
+        "value": "ES"
+      },
+      {
+        "text": "Gaziantep",
+        "value": "GA"
+      },
+      {
+        "text": "Giresun",
+        "value": "GI"
+      },
+      {
+        "text": "Gumushane",
+        "value": "GU"
+      },
+      {
+        "text": "Hakkari",
+        "value": "HK"
+      },
+      {
+        "text": "Hatay",
+        "value": "HT"
+      },
+      {
+        "text": "Icel",
+        "value": "IC"
+      },
+      {
+        "text": "Igdir",
+        "value": "IG"
+      },
+      {
+        "text": "Isparta",
+        "value": "IP"
+      },
+      {
+        "text": "Istanbul",
+        "value": "IB"
+      },
+      {
+        "text": "Izmir",
+        "value": "IZ"
+      },
+      {
+        "text": "Kahramanmaras",
+        "value": "KH"
+      },
+      {
+        "text": "Karabuk",
+        "value": "KK"
+      },
+      {
+        "text": "Karaman",
+        "value": "KN"
+      },
+      {
+        "text": "Kars",
+        "value": "KA"
+      },
+      {
+        "text": "Kastamonu",
+        "value": "KS"
+      },
+      {
+        "text": "Kayseri",
+        "value": "KY"
+      },
+      {
+        "text": "Kilis",
+        "value": "KI"
+      },
+      {
+        "text": "Kirikkale",
+        "value": "KE"
+      },
+      {
+        "text": "Kirklareli",
+        "value": "KL"
+      },
+      {
+        "text": "Kirsehir",
+        "value": "KR"
+      },
+      {
+        "text": "Kocaeli",
+        "value": "KC"
+      },
+      {
+        "text": "Konya",
+        "value": "KO"
+      },
+      {
+        "text": "Kutahya",
+        "value": "KU"
+      },
+      {
+        "text": "Malatya",
+        "value": "MA"
+      },
+      {
+        "text": "Manisa",
+        "value": "MN"
+      },
+      {
+        "text": "Mardin",
+        "value": "MR"
+      },
+      {
+        "text": "Mersin",
+        "value": "MS"
+      },
+      {
+        "text": "Mugla",
+        "value": "MG"
+      },
+      {
+        "text": "Mus",
+        "value": "MU"
+      },
+      {
+        "text": "Nevsehir",
+        "value": "NE"
+      },
+      {
+        "text": "Nigde",
+        "value": "NG"
+      },
+      {
+        "text": "Ordu",
+        "value": "OR"
+      },
+      {
+        "text": "Osmaniye",
+        "value": "OS"
+      },
+      {
+        "text": "Rize",
+        "value": "RI"
+      },
+      {
+        "text": "Sakarya",
+        "value": "SA"
+      },
+      {
+        "text": "Samsun",
+        "value": "SS"
+      },
+      {
+        "text": "Sanliurfa",
+        "value": "SN"
+      },
+      {
+        "text": "Siirt",
+        "value": "ST"
+      },
+      {
+        "text": "Sinop",
+        "value": "SP"
+      },
+      {
+        "text": "Sirnak",
+        "value": "SK"
+      },
+      {
+        "text": "Sivas",
+        "value": "SV"
+      },
+      {
+        "text": "Tekirdag",
+        "value": "TG"
+      },
+      {
+        "text": "Tokat",
+        "value": "TT"
+      },
+      {
+        "text": "Trabzon",
+        "value": "TR"
+      },
+      {
+        "text": "Tunceli",
+        "value": "TU"
+      },
+      {
+        "text": "Usak",
+        "value": "US"
+      },
+      {
+        "text": "Van",
+        "value": "VA"
+      },
+      {
+        "text": "Yalova",
+        "value": "YA"
+      },
+      {
+        "text": "Yozgat",
+        "value": "YO"
+      },
+      {
+        "text": "Zonguldak",
+        "value": "ZO"
+      }
+    ]
+  },
+  {
+    "text": "TURKMENISTAN",
+    "value": "TM",
+    "states": [
+      {
+        "text": "Ahal",
+        "value": "AL"
+      }
+    ]
+  },
+  {
+    "text": "TURKS AND CAICOS ISL",
+    "value": "TC",
+    "states": [
+      {
+        "text": "Turks and Caicos Islands",
+        "value": "TC"
+      }
+    ]
+  },
+  {
+    "text": "TUVALU",
+    "value": "TV",
+    "states": null
+  },
+  {
+    "text": "UGANDA",
+    "value": "UG",
+    "states": [
+      {
+        "text": "Jinja",
+        "value": "JI"
+      },
+      {
+        "text": "Kampala",
+        "value": "KM"
+      }
+    ]
+  },
+  {
+    "text": "UKRAINE",
+    "value": "UA",
+    "states": [
+      {
+        "text": "Avtonomna Respublika Krym",
+        "value": "KR"
+      },
+      {
+        "text": "Cherkas'ka Oblast'",
+        "value": "CK"
+      },
+      {
+        "text": "Dnipropetrovs'ka Oblast'",
+        "value": "DP"
+      },
+      {
+        "text": "Donets'ka Oblast'",
+        "value": "DT"
+      },
+      {
+        "text": "Kharkivs'ka Oblast'",
+        "value": "KK"
+      },
+      {
+        "text": "Kyyivs'ka Oblast'",
+        "value": "KV"
+      },
+      {
+        "text": "L'vivs'ka Oblast'",
+        "value": "LV"
+      },
+      {
+        "text": "Luhans'ka Oblast'",
+        "value": "LH"
+      },
+      {
+        "text": "Misto Kyyiv",
+        "value": "KC"
+      },
+      {
+        "text": "Misto Sevastopol",
+        "value": "SC"
+      },
+      {
+        "text": "Mykolayivs'ka Oblast'",
+        "value": "MY"
+      },
+      {
+        "text": "Odes'ka Oblast",
+        "value": "OD"
+      },
+      {
+        "text": "Poltavs'ka Oblast'",
+        "value": "PL"
+      },
+      {
+        "text": "Rivnens'ka Oblast'",
+        "value": "RV"
+      },
+      {
+        "text": "Ternopil's'ka Oblast'",
+        "value": "TP"
+      },
+      {
+        "text": "Vinnyts'ka Oblast'",
+        "value": "VI"
+      },
+      {
+        "text": "Zakarpats'ka Oblast'",
+        "value": "ZK"
+      },
+      {
+        "text": "Zaporiz'ka Oblast'",
+        "value": "ZP"
+      },
+      {
+        "text": "Zhytomyrs'ka Oblast'",
+        "value": "ZT"
+      }
+    ]
+  },
+  {
+    "text": "UNITED ARAB EMIRATES",
+    "value": "AE",
+    "states": [
+      {
+        "text": "Abu Dhabi",
+        "value": "AZ"
+      },
+      {
+        "text": "Ajman",
+        "value": "AJ"
+      },
+      {
+        "text": "Al Ain",
+        "value": "AZ"
+      },
+      {
+        "text": "Ash Sharqiyah",
+        "value": "RQ"
+      },
+      {
+        "text": "Dubai",
+        "value": "DU"
+      },
+      {
+        "text": "Fujairah",
+        "value": "FU"
+      },
+      {
+        "text": "Ras Al Khaimah",
+        "value": "RK"
+      },
+      {
+        "text": "Sharjah",
+        "value": "SH"
+      },
+      {
+        "text": "Umm al-Quwain",
+        "value": "UQ"
+      }
+    ]
+  },
+  {
+    "text": "UNITED KINGDOM",
+    "value": "GB",
+    "states": [
+      {
+        "text": "England",
+        "value": "EN"
+      },
+      {
+        "text": "Northern Ireland",
+        "value": "NI"
+      },
+      {
+        "text": "Scotland",
+        "value": "SC"
+      },
+      {
+        "text": "Wales",
+        "value": "WA"
+      }
+    ]
+  },
+  {
+    "text": "UNITED STATES",
+    "value": "US",
+    "states": [
+      {
+        "text": "Alabama",
+        "value": "AL"
+      },
+      {
+        "text": "Alaska",
+        "value": "AK"
+      },
+      {
+        "text": "Arizona",
+        "value": "AZ"
+      },
+      {
+        "text": "Arkansas",
+        "value": "AR"
+      },
+      {
+        "text": "California",
+        "value": "CA"
+      },
+      {
+        "text": "Colorado",
+        "value": "CO"
+      },
+      {
+        "text": "Connecticut",
+        "value": "CT"
+      },
+      {
+        "text": "Delaware",
+        "value": "DE"
+      },
+      {
+        "text": "District of Columbia",
+        "value": "DC"
+      },
+      {
+        "text": "Florida",
+        "value": "FL"
+      },
+      {
+        "text": "Georgia",
+        "value": "GA"
+      },
+      {
+        "text": "Hawaii",
+        "value": "HI"
+      },
+      {
+        "text": "Idaho",
+        "value": "value"
+      },
+      {
+        "text": "Illinois",
+        "value": "IL"
+      },
+      {
+        "text": "Indiana",
+        "value": "IN"
+      },
+      {
+        "text": "Iowa",
+        "value": "IA"
+      },
+      {
+        "text": "Kansas",
+        "value": "KS"
+      },
+      {
+        "text": "Kentucky",
+        "value": "KY"
+      },
+      {
+        "text": "Louisiana",
+        "value": "LA"
+      },
+      {
+        "text": "Maine",
+        "value": "ME"
+      },
+      {
+        "text": "Maryland",
+        "value": "MD"
+      },
+      {
+        "text": "Massachusetts",
+        "value": "MA"
+      },
+      {
+        "text": "Michigan",
+        "value": "MI"
+      },
+      {
+        "text": "Minnesota",
+        "value": "MN"
+      },
+      {
+        "text": "Mississippi",
+        "value": "MS"
+      },
+      {
+        "text": "Missouri",
+        "value": "MO"
+      },
+      {
+        "text": "Montana",
+        "value": "MT"
+      },
+      {
+        "text": "Nebraska",
+        "value": "NE"
+      },
+      {
+        "text": "Nevada",
+        "value": "NV"
+      },
+      {
+        "text": "New Hampshire",
+        "value": "NH"
+      },
+      {
+        "text": "New Jersey",
+        "value": "NJ"
+      },
+      {
+        "text": "New Mexico",
+        "value": "NM"
+      },
+      {
+        "text": "New York",
+        "value": "NY"
+      },
+      {
+        "text": "North Carolina",
+        "value": "NC"
+      },
+      {
+        "text": "North Dakota",
+        "value": "ND"
+      },
+      {
+        "text": "Ohio",
+        "value": "OH"
+      },
+      {
+        "text": "Oklahoma",
+        "value": "OK"
+      },
+      {
+        "text": "Oregon",
+        "value": "OR"
+      },
+      {
+        "text": "Pennsylvania",
+        "value": "PA"
+      },
+      {
+        "text": "Rhode Island",
+        "value": "RI"
+      },
+      {
+        "text": "South Carolina",
+        "value": "SC"
+      },
+      {
+        "text": "South Dakota",
+        "value": "SD"
+      },
+      {
+        "text": "Tennessee",
+        "value": "TN"
+      },
+      {
+        "text": "Texas",
+        "value": "TX"
+      },
+      {
+        "text": "Utah",
+        "value": "UT"
+      },
+      {
+        "text": "Vermont",
+        "value": "VT"
+      },
+      {
+        "text": "Virginia",
+        "value": "VA"
+      },
+      {
+        "text": "Washington",
+        "value": "WA"
+      },
+      {
+        "text": "West Virginia",
+        "value": "WV"
+      },
+      {
+        "text": "Wisconsin",
+        "value": "WI"
+      },
+      {
+        "text": "Wyoming",
+        "value": "WY"
+      }
+    ]
+  },
+  {
+    "text": "UNITED STATES MINOR ",
+    "value": "UM",
+    "states": null
+  },
+  {
+    "text": "URUGUAY",
+    "value": "UY",
+    "states": [
+      {
+        "text": "Cerro Largo",
+        "value": "CL"
+      },
+      {
+        "text": "Colonia",
+        "value": "CO"
+      },
+      {
+        "text": "Durazno",
+        "value": "DU"
+      },
+      {
+        "text": "Maldonado",
+        "value": "MA"
+      },
+      {
+        "text": "Montevideo",
+        "value": "MO"
+      },
+      {
+        "text": "Paysandu",
+        "value": "PA"
+      },
+      {
+        "text": "Rivera",
+        "value": "RV"
+      },
+      {
+        "text": "Rocha",
+        "value": "RO"
+      },
+      {
+        "text": "Salto",
+        "value": "SA"
+      },
+      {
+        "text": "San Jose",
+        "value": "SJ"
+      },
+      {
+        "text": "Tacuarembo",
+        "value": "TA"
+      }
+    ]
+  },
+  {
+    "text": "UZBEKISTAN",
+    "value": "UZ",
+    "states": [
+      {
+        "text": "Bukhoro",
+        "value": "BU"
+      },
+      {
+        "text": "Khorazm",
+        "value": "KH"
+      },
+      {
+        "text": "Samarqand",
+        "value": "SA"
+      },
+      {
+        "text": "Toshkent",
+        "value": "TO"
+      }
+    ]
+  },
+  {
+    "text": "VANUATU",
+    "value": "VU",
+    "states": [
+      {
+        "text": "Shefa",
+        "value": "SE"
+      }
+    ]
+  },
+  {
+    "text": "VENEZUELA",
+    "value": "VE",
+    "states": [
+      {
+        "text": "Amazonas",
+        "value": "AM"
+      },
+      {
+        "text": "Anzoategui",
+        "value": "AN"
+      },
+      {
+        "text": "Apure",
+        "value": "AP"
+      },
+      {
+        "text": "Aragua",
+        "value": "AR"
+      },
+      {
+        "text": "Barinas",
+        "value": "BA"
+      },
+      {
+        "text": "Bolivar",
+        "value": "BO"
+      },
+      {
+        "text": "Carabobo",
+        "value": "CA"
+      },
+      {
+        "text": "Cojedes",
+        "value": "CO"
+      },
+      {
+        "text": "Delta Amacuro",
+        "value": "DA"
+      },
+      {
+        "text": "Distrito Federal",
+        "value": "DF"
+      },
+      {
+        "text": "Falcon",
+        "value": "FA"
+      },
+      {
+        "text": "Guarico",
+        "value": "GU"
+      },
+      {
+        "text": "Lara",
+        "value": "LA"
+      },
+      {
+        "text": "Merida",
+        "value": "ME"
+      },
+      {
+        "text": "Miranda",
+        "value": "MI"
+      },
+      {
+        "text": "Monagas",
+        "value": "MO"
+      },
+      {
+        "text": "Nueva Esparta",
+        "value": "NE"
+      },
+      {
+        "text": "Portuguesa",
+        "value": "PO"
+      },
+      {
+        "text": "Sucre",
+        "value": "SU"
+      },
+      {
+        "text": "Tachira",
+        "value": "TA"
+      },
+      {
+        "text": "Trujillo",
+        "value": "TR"
+      },
+      {
+        "text": "Vargas",
+        "value": "VA"
+      },
+      {
+        "text": "Yaracuy",
+        "value": "YA"
+      },
+      {
+        "text": "Zulia",
+        "value": "ZU"
+      }
+    ]
+  },
+  {
+    "text": "VIETNAM",
+    "value": "VN",
+    "states": [
+      {
+        "text": "An Giang",
+        "value": "AG"
+      },
+      {
+        "text": "Bà Rịa-Vũng Tàu",
+        "value": "BV"
+      },
+      {
+        "text": "Bình Dương",
+        "value": "BI"
+      },
+      {
+        "text": "Bình Phước",
+        "value": "BP"
+      },
+      {
+        "text": "Bình Thuận",
+        "value": "BU"
+      },
+      {
+        "text": "Bình định",
+        "value": "BD"
+      },
+      {
+        "text": "Bạc Liêu",
+        "value": "BL"
+      },
+      {
+        "text": "Bắc Giang",
+        "value": "BG"
+      },
+      {
+        "text": "Bắc Kạn",
+        "value": "BK"
+      },
+      {
+        "text": "Bắc Ninh",
+        "value": "BN"
+      },
+      {
+        "text": "Bến Tre",
+        "value": "BR"
+      },
+      {
+        "text": "Cao Bằng",
+        "value": "CB"
+      },
+      {
+        "text": "Cà Mau",
+        "value": "CM"
+      },
+      {
+        "text": "Cần Thơ",
+        "value": "CN"
+      },
+      {
+        "text": "Dăk Nông",
+        "value": "DO"
+      },
+      {
+        "text": "Gia Lai",
+        "value": "GL"
+      },
+      {
+        "text": "Hoà Bình",
+        "value": "HO"
+      },
+      {
+        "text": "Hà Giang",
+        "value": "HG"
+      },
+      {
+        "text": "Hà Nam",
+        "value": "HM"
+      },
+      {
+        "text": "Hà Nội",
+        "value": "HI"
+      },
+      {
+        "text": "Hà Tĩnh",
+        "value": "HT"
+      },
+      {
+        "text": "Hưng Yên",
+        "value": "HY"
+      },
+      {
+        "text": "Hải Dương",
+        "value": "HD"
+      },
+      {
+        "text": "Hải Phòng",
+        "value": "HP"
+      },
+      {
+        "text": "Hậu Giang",
+        "value": "HU"
+      },
+      {
+        "text": "Hồ Chí Minh",
+        "value": "HC"
+      },
+      {
+        "text": "Khánh Hoà",
+        "value": "KH"
+      },
+      {
+        "text": "Kiên Giang",
+        "value": "KG"
+      },
+      {
+        "text": "Kontum",
+        "value": "KT"
+      },
+      {
+        "text": "Lai Châu",
+        "value": "LI"
+      },
+      {
+        "text": "Long An",
+        "value": "LA"
+      },
+      {
+        "text": "Lào Cai",
+        "value": "LO"
+      },
+      {
+        "text": "Lâm đồng",
+        "value": "LD"
+      },
+      {
+        "text": "Lạng Sơn",
+        "value": "LS"
+      },
+      {
+        "text": "Nam định",
+        "value": "ND"
+      },
+      {
+        "text": "Nghệ An",
+        "value": "NA"
+      },
+      {
+        "text": "Ninh Bình",
+        "value": "NB"
+      },
+      {
+        "text": "Ninh Thuận",
+        "value": "NT"
+      },
+      {
+        "text": "Phú Thọ",
+        "value": "PT"
+      },
+      {
+        "text": "Phú Yên",
+        "value": "PY"
+      },
+      {
+        "text": "Quảng Bình",
+        "value": "QB"
+      },
+      {
+        "text": "Quảng Nam",
+        "value": "QM"
+      },
+      {
+        "text": "Quảng Ngãi",
+        "value": "QG"
+      },
+      {
+        "text": "Quảng Ninh",
+        "value": "QN"
+      },
+      {
+        "text": "Quảng Trị",
+        "value": "QT"
+      },
+      {
+        "text": "Sóc Trăng",
+        "value": "ST"
+      },
+      {
+        "text": "Sơn La",
+        "value": "SL"
+      },
+      {
+        "text": "Thanh Hoá",
+        "value": "TH"
+      },
+      {
+        "text": "Thái Bình",
+        "value": "TB"
+      },
+      {
+        "text": "Thái Nguyên",
+        "value": "TY"
+      },
+      {
+        "text": "Thừa Thiên Huế",
+        "value": "TT"
+      },
+      {
+        "text": "Tiền Giang",
+        "value": "TG"
+      },
+      {
+        "text": "Trà Vinh",
+        "value": "TV"
+      },
+      {
+        "text": "Tuyên Quang",
+        "value": "TQ"
+      },
+      {
+        "text": "Tây Ninh",
+        "value": "TN"
+      },
+      {
+        "text": "Vĩnh Long",
+        "value": "VL"
+      },
+      {
+        "text": "Vĩnh Phúc",
+        "value": "VC"
+      },
+      {
+        "text": "Yên Bái",
+        "value": "YB"
+      },
+      {
+        "text": "Điện Biên",
+        "value": "DB"
+      },
+      {
+        "text": "Đà Nẵng",
+        "value": "DA"
+      },
+      {
+        "text": "Đăk Lăk",
+        "value": "DC"
+      },
+      {
+        "text": "Đồng Nai",
+        "value": "DN"
+      },
+      {
+        "text": "Đồng Tháp",
+        "value": "DT"
+      }
+    ]
+  },
+  {
+    "text": "VIRGIN ISLANDS, BRIT",
+    "value": "VG",
+    "states": [
+      {
+        "text": "British Virgin Islands",
+        "value": "VG"
+      }
+    ]
+  },
+  {
+    "text": "VIRGIN ISLANDS, U.S.",
+    "value": "VI",
+    "states": [
+      {
+        "text": "Saint Croix",
+        "value": "SC"
+      },
+      {
+        "text": "Saint John",
+        "value": "SJ"
+      },
+      {
+        "text": "Saint Thomas",
+        "value": "ST"
+      }
+    ]
+  },
+  {
+    "text": "WALLIS AND FUTUNA",
+    "value": "WF",
+    "states": [
+      {
+        "text": "Wallis and Futuna",
+        "value": "WF"
+      }
+    ]
+  },
+  {
+    "text": "WESTERN SAHARA",
+    "value": "EH",
+    "states": null
+  },
+  {
+    "text": "YEMEN",
+    "value": "YE",
+    "states": [
+      {
+        "text": "Hadramawt",
+        "value": "HD"
+      },
+      {
+        "text": "Ibb",
+        "value": "IB"
+      },
+      {
+        "text": "San'a'",
+        "value": "SN"
+      }
+    ]
+  },
+  {
+    "text": "ZAMBIA",
+    "value": "ZM",
+    "states": [
+      {
+        "text": "Copperbelt",
+        "value": "CE"
+      },
+      {
+        "text": "Lusaka",
+        "value": "LS"
+      }
+    ]
+  },
+  {
+    "text": "ZIMBABWE",
+    "value": "ZW",
+    "states": [
+      {
+        "text": "Harare",
+        "value": "HA"
+      },
+      {
+        "text": "Manicaland",
+        "value": "MA"
+      },
+      {
+        "text": "Mashonaland Central",
+        "value": "MC"
+      },
+      {
+        "text": "Mashonaland East",
+        "value": "ME"
+      },
+      {
+        "text": "Mashonaland West",
+        "value": "MW"
+      },
+      {
+        "text": "Matabeleland North",
+        "value": "MN"
+      },
+      {
+        "text": "Matabeleland South",
+        "value": "MS"
+      },
+      {
+        "text": "Midlands",
+        "value": "MI"
+      }
+    ]
+  }
+]

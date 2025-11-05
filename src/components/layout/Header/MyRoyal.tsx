@@ -15,10 +15,12 @@ import PersonalInformationIcon from "@/components/commons/icons/personal-informa
 import PasswordIcon from "@/components/commons/icons/password.svg";
 import PreCheckInIcon from "@/components/commons/icons/pre-check-in.svg";
 import LogOutIcon from "@/components/commons/icons/log-out.svg";
+import {deleteSession} from "@/lib/session";
+import {redirect} from "next/navigation";
 
 const MyRoyal = () => {
     const t = useTranslations('menu');
-    const {user} = useWebsite();
+    const {user, setUser} = useWebsite();
     const [open, setOpen] = React.useState(false);
 
     if (!user) return (
@@ -29,6 +31,13 @@ const MyRoyal = () => {
             <span className="hidden md:flex text-white text-base">My Royal</span>
         </Link>
     )
+
+    const logout = async () => {
+        setUser(undefined)
+        await deleteSession();
+        redirect('/gms/login');
+        setOpen(false);
+    }
 
     return (
         <Drawer direction={"right"} open={open} onOpenChange={setOpen}>
@@ -80,11 +89,11 @@ const MyRoyal = () => {
                         </Link>
                     </li>
                     <li className={"mb-4 text-base"}>
-                        <Link href={"/"} className={"flex items-center gap-1"}
-                              onClick={() => setOpen(false)}>
+                        <button  className={"flex items-center gap-1"}
+                              onClick={() => logout()}>
                             <LogOutIcon width={24} height={24}/>
                             {t("Log Out")}
-                        </Link>
+                        </button>
                     </li>
                 </ul>
             </DrawerContent>

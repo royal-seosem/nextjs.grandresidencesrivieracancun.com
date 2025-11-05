@@ -10,11 +10,18 @@ import PreCheckInIcon from "@/components/commons/icons/pre-check-in.svg";
 import LogOutIcon from "@/components/commons/icons/log-out.svg";
 import {useTranslations} from "next-intl";
 import {useWebsite} from "@/context/WebSiteProvider";
+import {deleteSession} from "@/lib/session";
+import {redirect} from "next/navigation";
 
 const MyRoyal = () => {
     const t = useTranslations('menu')
-    const {user} = useWebsite();
+    const {user, setUser} = useWebsite();
 
+    const logout = async () => {
+        setUser(undefined)
+        await deleteSession();
+        redirect('/gms/login');
+    }
     return (
         <div className={"bg-primary text-white p-10 h-full"}>
             <div className={"text-center"}>
@@ -53,10 +60,11 @@ const MyRoyal = () => {
                     </Link>
                 </li>
                 <li className={"mb-4 text-base"}>
-                    <Link href={"/"} className={"flex items-center gap-1"}>
+                    <button className={"flex items-center gap-1"}
+                            onClick={() => logout()}>
                         <LogOutIcon width={24} height={24}/>
                         {t("Log Out")}
-                    </Link>
+                    </button>
                 </li>
             </ul>
         </div>

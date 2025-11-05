@@ -20,7 +20,8 @@ export const loginByEmail = async (req: LoginSchemaType): Promise<GrFetcherRespo
 
     const resp = await GrFetcher<GrFetcherResponse<UserType>>('gms/login-by-email', {
         method: 'POST',
-        body: JSON.stringify(req)
+        body: JSON.stringify(req),
+        cache: 'no-store',
     })
     console.log(resp);
 
