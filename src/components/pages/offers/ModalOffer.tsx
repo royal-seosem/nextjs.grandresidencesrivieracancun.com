@@ -9,7 +9,6 @@ import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffe
 import Title from "@/components/commons/ui/title";
 import {Button} from "@/components/commons/ui/button";
 import Price from "@/components/commons/shared/price";
-import Book from "@/components/commons/shared/book";
 import ValidUntil from "@/components/commons/shared/ValidUntil";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import {useWebsite} from "@/context/WebSiteProvider";

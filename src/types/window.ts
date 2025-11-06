@@ -50,7 +50,7 @@ export interface Facebook {
 }
 
 
-interface Google {
+export interface Google {
     accounts: {
         id: GoogleAccountsId;
     };

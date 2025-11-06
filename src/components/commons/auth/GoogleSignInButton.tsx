@@ -1,6 +1,7 @@
 'use client'
 import React, {useRef} from 'react';
 import Script from "next/script";
+import {Google} from "@/types/window";
 
 declare global {
     interface Window {
