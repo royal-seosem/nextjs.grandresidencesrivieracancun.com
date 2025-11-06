@@ -10,20 +10,17 @@ declare global {
 
 interface GoogleSignInButtonProps {
     onSuccess?: (response: { credential: string }) => void;
-    // onError?: (error: Error) => void;
 }
 
 const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
     const buttonRef = useRef<HTMLDivElement>(null)
 
     const handleCredientials = (response: { credential: string; }) => {
-        console.log("Encoded JWT ID token: " + response.credential);
         onSuccess?.(response);
     }
 
 
     const buttonGenerate = () => {
-        console.log('Btn generate')
         window.google.accounts.id.initialize({
             client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
             callback: handleCredientials,

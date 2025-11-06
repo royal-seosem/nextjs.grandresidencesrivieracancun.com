@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:https": "next dev --experimental-https --experimental-https-key /Applications/XAMPP/xamppfiles/etc/ssl.crt/server.key --experimental-https-cert /Applications/XAMPP/xamppfiles/etc/ssl.crt/server.crt",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
