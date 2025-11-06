@@ -20,6 +20,8 @@ import {redirect} from "next/navigation";
 
 const MyRoyal = () => {
     const t = useTranslations('menu');
+    const tGms = useTranslations('gms')
+
     const {user, setUser} = useWebsite();
     const [open, setOpen] = React.useState(false);
 
@@ -82,11 +84,11 @@ const MyRoyal = () => {
                         </Link>
                     </li>
                     <li className={"mb-4 text-base"}>
-                        <Link href={"/"} className={"flex items-center gap-1"}
+                        <a href={tGms('pre-check-in-link')} className={"flex items-center gap-1"}
                               onClick={() => setOpen(false)}>
                             <PreCheckInIcon width={24} height={24}/>
                             {t("Pre Check-In form")}
-                        </Link>
+                        </a>
                     </li>
                     <li className={"mb-4 text-base"}>
                         <button  className={"flex items-center gap-1"}
