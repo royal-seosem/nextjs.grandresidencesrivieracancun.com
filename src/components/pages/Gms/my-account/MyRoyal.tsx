@@ -48,7 +48,7 @@ const MyRoyal = () => {
                     </Link>
                 </li>
                 <li className={"mb-4 text-base"}>
-                    <Link href={"/"} className={"flex items-center gap-1"}>
+                    <Link href={"/gms/password-update"} className={"flex items-center gap-1"}>
                         <PasswordIcon width={24} height={24}/>
                         {t("Change my password")}
                     </Link>

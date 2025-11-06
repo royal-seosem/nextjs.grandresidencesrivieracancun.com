@@ -34,7 +34,8 @@ export default getRequestConfig(async ({requestLocale}) => {
             ...(await import(`./dictionaries/${locale}/gms_forgot_password.json`)).default,
             ...(await import(`./dictionaries/${locale}/gms.json`)).default,
             ...(await import(`./dictionaries/${locale}/gms_home.json`)).default,
-            ...(await import(`./dictionaries/${locale}/gms_information.json`)).default
+            ...(await import(`./dictionaries/${locale}/gms_information.json`)).default,
+            ...(await import(`./dictionaries/${locale}/gms_password.json`)).default
         }
         // (await import(`./dictionaries/${locale}.json`)).default
     };
