@@ -50,7 +50,7 @@ export default function Header() {
 
         <nav role="navigation" className=" my-container whitespace-nowrap
             flex flex-col justify-center items-center
-            sm:flex-row sm:pb-4
+            sm:flex-row sm:pb-4 bg-primary
             ">
             <Link href="/" className="sm:block sm:w-[300px]">
                 <Image className="w-full h-full object-contain"
@@ -80,6 +80,10 @@ export default function Header() {
 
                     <Link href="/weddings" className="hidden lg:block">
                         {t('wedding')}
+                    </Link>
+
+                    <Link href="/destination" className="hidden lg:block">
+                        {tmenu('destination')}
                     </Link>
                 </div>
 
