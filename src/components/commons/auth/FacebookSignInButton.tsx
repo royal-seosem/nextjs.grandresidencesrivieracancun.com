@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from "next/image";
 import Script from "next/script";
-import {loginByFacebook} from "@/use_case/gms/login/login_by_facebook";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {useRouter} from "next/navigation";
 import {Facebook, FacebookLoginResponse} from "@/types/window";
@@ -13,25 +12,36 @@ declare global {
     }
 }
 
-const FacebookSignInButton = () => {
+
+interface FacebookSignInButtonProps {
+    onSuccess?: (response: string) => void;
+    textContent?: string;
+}
+
+const FacebookSignInButton = (
+    {onSuccess, textContent = "signup_with"}: FacebookSignInButtonProps
+) => {
     const {setUser} = useWebsite();
     const router = useRouter();
 
     const handleCredientials = async (response: FacebookLoginResponse) => {
-        const resp = await loginByFacebook(response.authResponse.accessToken);
-        console.log(resp);
-        if (!resp.success) {
-            alert(resp.error?.message)
-        }
-        if (resp.success && resp.data) {
-            setUser({
-                userId: resp.data?.id,
-                name: resp.data?.name,
-                token: resp.data?.token
-            })
+        onSuccess?.(response.authResponse.accessToken);
 
-            router.push('/gms/my-account');
-        }
+        // const resp = await loginByFacebook(response.authResponse.accessToken);
+        //
+        // if (!resp.success) {
+        //     alert(resp.error?.message)
+        // }
+        //
+        // if (resp.success && resp.data) {
+        //     setUser({
+        //         userId: resp.data?.id,
+        //         name: resp.data?.name,
+        //         token: resp.data?.token
+        //     })
+        //
+        //     router.push('/gms/my-account');
+        // }
     }
 
     const submit = () => {
@@ -60,7 +70,7 @@ const FacebookSignInButton = () => {
                     className="bg-[#0c2d63] text-white flex items-center justify-center gap-1 px-1.5 py-1.5 whitespace-nowrap text-sm rounded-xs"
                     onClick={() => submit()}>
                     <Image src={"/icons/facebook.svg"} alt={"Icon facebook"} width={14} height={14}/>
-                    <span>Log in with Facebook</span>
+                    <span>{textContent}</span>
                 </button>
             </form>
         </>

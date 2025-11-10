@@ -1,0 +1,35 @@
+'use client'
+import React from 'react';
+import {useRouter} from "next/navigation";
+import {useWebsite} from "@/context/WebSiteProvider";
+import {registerByGoogle} from "@/use_case/gms/login/loging_by_google";
+import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
+
+const BtnGoogle = () => {
+    const router = useRouter();
+    const {setUser} = useWebsite();
+
+    const googleSuccess = async (response: { credential: string }) => {
+        const resp = await registerByGoogle(response.credential);
+
+        if (!resp.success) {
+            alert(resp.error?.message || "");
+        }
+
+        if (resp.success && resp.data?.id && resp.data?.name) {
+            setUser({
+                userId: resp.data?.id,
+                name: resp.data?.name,
+                token: resp.data?.token
+            })
+
+            router.push('/gms/my-account');
+        }
+
+    }
+    return (
+        <GoogleSignInButton onSuccess={googleSuccess} textContent={"signup_with"}/>
+    );
+};
+
+export default BtnGoogle;

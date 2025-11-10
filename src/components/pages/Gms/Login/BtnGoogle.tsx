@@ -5,6 +5,7 @@ import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {loginByGoogle} from "@/use_case/gms/login/loging_by_google";
 
+
 function BtnGoogle() {
     const router = useRouter();
     const {setUser} = useWebsite();
@@ -28,7 +29,7 @@ function BtnGoogle() {
 
     }
     return (
-        <GoogleSignInButton onSuccess={googleSuccess}/>
+        <GoogleSignInButton onSuccess={googleSuccess} textContent={"signin_with"}/>
     );
 }
 

@@ -65,6 +65,11 @@ export const routing = defineRouting({
             en: "/gms/my-account-management",
             es: "/gms/my-account-management"
         },
+        "/gms/sign-up":{
+            en: "/gms/sign-up",
+            es: "/gms/sign-up"
+
+        },
         "/privacy": {
             en: "/privacy-policy",
             es: "/politica-de-privacidad"

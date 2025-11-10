@@ -6,10 +6,11 @@ import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 
 import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
-import BtnGoogle from "@/components/pages/Gms/BtnGoogle";
+import BtnGoogle from "@/components/pages/Gms/Login/BtnGoogle";
 
 import IconInfo from "@/components/commons/icons/info.svg";
 import EmailForm from "@/components/pages/Gms/Login/EmailForm";
+import BtnFacebook from "@/components/pages/Gms/Login/BtnFacebook";
 
 
 export const LoginPage = async () => {
@@ -37,11 +38,11 @@ export const LoginPage = async () => {
                         <span className="text-accent">{t('title-gms-program')}</span>
                     </button>
                     <div className="flex gap-5 mb-6">
-                        <Link href={"/"}
+                        <Link href={"/gms/login"}
                               className="uppercase bg-primary border-2 text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
                             {t('log-in')}
                         </Link>
-                        <Link href={"/"}
+                        <Link href={"/gms/sign-up"}
                               className="uppercase border-1 border-primary text-primary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
                             {t('sign-up')}
                         </Link>
@@ -52,7 +53,7 @@ export const LoginPage = async () => {
 
                     <div className="flex items-center gap-5 mb-6">
                         <BtnGoogle/>
-                        <FacebookSignInButton/>
+                        <BtnFacebook/>
                     </div>
 
                     <p className="text-sm text-center flex justify-center items-center gap-3 mb-5
@@ -82,7 +83,7 @@ export const LoginPage = async () => {
                            height={80}/>
                     <p className="text-base text-pretty mb-4">{t('description')}</p>
 
-                    <Link href="/" className="flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
+                    <Link href="/home" className="flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
                         <IconInfo className="text-secondary" width={24} height={24}/>
                         <span className="text-secondary">{t('title-gms-program')}</span>
                     </Link>

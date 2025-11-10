@@ -25,9 +25,20 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
     const url = new URL(enpoint, apiUrl);
     const locale = await getLocale();
 
-    const httpsAgent = new https.Agent({
+    // const httpsAgent = new https.Agent({
+    //     rejectUnauthorized: false,
+    // })
+
+    const isDevelopment = process.env.NODE_ENV === 'development';
+
+    const httpsAgent = isDevelopment ? new https.Agent({
         rejectUnauthorized: false,
-    })
+    }) : undefined;
+
+    if (isDevelopment) {
+        process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    }
+
 
     // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 

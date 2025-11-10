@@ -17,6 +17,22 @@ export const loginByFacebook = async (credential: string): Promise<GrFetcherResp
         await createSession(resp.data.id, resp.data.name, resp.data.token);
     }
 
-    console.log(resp);
+    return resp;
+}
+
+
+export const registerByFacebook = async (credential: string): Promise<GrFetcherResponse<UserType>> => {
+    const resp = await GrFetcher<GrFetcherResponse<UserType>>('gms/signup-by-facebook', {
+        method: 'POST',
+        body: JSON.stringify({
+            credential: credential
+        }),
+        cache: 'no-store',
+    })
+
+    if (resp.success && resp.data) {
+        await createSession(resp.data.id, resp.data.name, resp.data.token);
+    }
+
     return resp;
 }

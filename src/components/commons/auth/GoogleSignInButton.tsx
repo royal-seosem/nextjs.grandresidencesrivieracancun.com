@@ -11,9 +11,12 @@ declare global {
 
 interface GoogleSignInButtonProps {
     onSuccess?: (response: { credential: string }) => void;
+    textContent?: "signin_with" | "signup_with";
 }
 
-const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
+const GoogleSignInButton = (
+    {onSuccess, textContent = "signup_with"}: GoogleSignInButtonProps
+) => {
     const buttonRef = useRef<HTMLDivElement>(null)
 
     const handleCredientials = (response: { credential: string; }) => {
@@ -34,7 +37,7 @@ const GoogleSignInButton = ({onSuccess}: GoogleSignInButtonProps) => {
                 theme: 'outline',
                 shape: 'rectangular',
                 size: 'medium',
-                text: "signin_with",
+                text: textContent,
                 locale: "en"
             });
         }
