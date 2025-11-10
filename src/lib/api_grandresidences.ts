@@ -29,7 +29,7 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
         rejectUnauthorized: false,
     })
 
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 
     type RequestInitWithAgent = RequestInit & { agent?: https.Agent };
@@ -53,6 +53,7 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
     const resp = await fetch(url, options);
 
     if (!resp.ok) {
+        console.log(resp);
         throw new Error(`HTTP error! status: ${resp.status}`);
     }
 
