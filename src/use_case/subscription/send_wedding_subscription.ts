@@ -1,13 +1,12 @@
 'use server'
 import {WeddingSubscription, weddingSubscriptionSchema} from "@/use_case/subscription/weddingSubscription.schema";
+import {GrFetcher, GrFetcherResponse} from "@/lib/api_grandresidences";
 
-export const sendWeddingSubscription = async (req: WeddingSubscription): Promise<{
-    success: boolean,
-    error?: { code: string, message: string }
-}> => {
+export const sendWeddingSubscription = async (req: WeddingSubscription): Promise<GrFetcherResponse<{
+    message: string,
+}>> => {
     const {success, error} = weddingSubscriptionSchema.safeParse(req);
 
-    //Todo: API - Send Email wedding subscription
     if (!success) {
         return {
             success: false,
@@ -18,7 +17,9 @@ export const sendWeddingSubscription = async (req: WeddingSubscription): Promise
         };
     }
 
-    return {
-        success: true,
-    }
+    return await GrFetcher<GrFetcherResponse<{ message: string }>>('wedding/newsletter', {
+        method: 'POST',
+        body: JSON.stringify(req),
+        cache: 'no-store',
+    })
 }

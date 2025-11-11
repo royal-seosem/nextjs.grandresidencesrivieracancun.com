@@ -32,11 +32,13 @@ const WeddingSubscribe = () => {
         console.log(values);
         setIsSubmitted("sending");
         const response = await sendWeddingSubscription(values);
+
         if (response.success) {
             setIsSubmitted("success");
         }
         if (!response.success) {
             alert(response.error?.message);
+            setIsSubmitted("viewed");
         }
     }
 
