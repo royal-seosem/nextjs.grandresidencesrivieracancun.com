@@ -39,7 +39,7 @@ async function fetchRate(rateRequest: RateRequest, key: string): Promise<Map<str
         dateOut: format(endDate, 'yyyy-MM-dd')
     };
 
-    return fetch(`https://dev.v2-royalreservations.com/shop/v1/hotel/basicavail/${key}`, {
+    return fetch(`https://royalreservations.com/shop/v1/hotel/basicavail/${key}`, {
         method: 'POST',
         credentials: 'include',
         headers: {
