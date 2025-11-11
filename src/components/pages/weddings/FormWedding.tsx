@@ -20,7 +20,6 @@ import {Dialog, DialogContent, DialogTitle} from "@/components/commons/ui/dialog
 import {format} from "date-fns";
 
 
-
 const FormWedding = () => {
     const t = useTranslations('weddings');
     const [isSubmitted, setIsSubmitted] = React.useState<string>("viewed");
@@ -29,7 +28,8 @@ const FormWedding = () => {
     const formWedding = useForm<WeddingFormType>({
         resolver: zodResolver(weddingFormSchema),
         defaultValues: {
-            havedate: "true"
+            havedate: "true",
+            budget: 2000
         }
     })
 
@@ -42,8 +42,9 @@ const FormWedding = () => {
         }
         if (!response.success) {
             alert(response.error?.message);
+            setIsSubmitted("viewed");
+
         }
-        console.log(values);
     }
 
 
@@ -339,7 +340,7 @@ const FormWedding = () => {
                         selected={formWedding.watch('celebrate') ? new Date(formWedding.watch('celebrate')) : undefined}
                         onSelect={(date) => {
                             if (date) {
-                                formWedding.setValue('celebrate', format(date,'MM/dd/yyyy'));
+                                formWedding.setValue('celebrate', format(date, 'MM/dd/yyyy'));
                                 setOpenCheckIn(false);
                             }
                         }}
