@@ -3,15 +3,15 @@ import React from 'react';
 import Image from "next/image";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {Link} from "@/i18n/navigation";
-import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
-import EmailForm from "@/components/pages/Gms/Login/EmailForm";
 import IconInfo from "@/components/commons/icons/info.svg";
 import {getMessages, getTranslations} from "next-intl/server";
 import BtnGoogle from "@/components/pages/Gms/signup/BtnGoogle";
 import BtnFacebook from "@/components/pages/Gms/signup/BtnFacebook";
+import FormEmail from "@/components/pages/Gms/signup/FormEmail";
 
 const Page = async () => {
     const t = await getTranslations('page_login');
+    const tgms = await getTranslations('gms');
     const {page_login: {benefits}} = await getMessages();
     return (
         <div className="md:grid md:grid-cols-2">
@@ -26,7 +26,7 @@ const Page = async () => {
                     src={"/img/my-royal/grand-residences.jpg"}
                     alt={"Image Grand Residences"} width={685} height={381}/>
 
-                <section className="my-container max-w-[420px] m-auto pt-5">
+                <section className="my-container max-w-[420px] m-auto pt-5 pb-5">
                     <p className="md:hidden text-base text-center mb-4">{t('description')}</p>
                     <button
                         className="md:hidden flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
@@ -40,13 +40,13 @@ const Page = async () => {
                             {t('log-in')}
                         </Link>
                         <Link href={"/gms/sign-up"}
-                              className="uppercase bg-primary border-2 text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
+                              className="uppercase bg-primary border-2 border-primary text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
                             {t('sign-up')}
                         </Link>
                     </div>
 
-                    <h1 className="text-4xl text-primary text-center mb-6">{t("title")}</h1>
-                    <p className="text-base text-center mb-6">{t('text2')}</p>
+                    <h1 className="text-4xl text-primary text-center mb-6">{tgms("Sign me up")}</h1>
+                    <p className="text-base text-center mb-6">{tgms('register.description')}</p>
 
                     <div className="flex items-center gap-5 mb-6">
                         <BtnGoogle/>
@@ -56,17 +56,11 @@ const Page = async () => {
                     <p className="text-sm text-center flex justify-center items-center gap-3 mb-5
                      before:block before:w-5 before:h-[1px] before:content-[''] before:bg-[#5a5550]
                      after:block after:w-5 after:h-[1px] after:content-[''] after:bg-[#5a5550]">
-                        {t('text3')}
+                        {tgms('register.or_email')}
                     </p>
 
-                    <EmailForm/>
+                    <FormEmail/>
 
-                    <p className="text-base flex gap-1 justify-center mb-6">
-                        {t('Forgot your password?')}
-                        <Link className="text-accent underline" href={"/gms/forgot-password"}>
-                            {t('click here')}
-                        </Link>
-                    </p>
                 </section>
             </div>
             <div className="md:order-1 bg-primary ">

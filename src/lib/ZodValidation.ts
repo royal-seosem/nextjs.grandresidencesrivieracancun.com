@@ -37,3 +37,13 @@ export const onlyDigits = ({
     //     ? schema.transform((s) => (s === "" ? undefined : s))
     //     : schema;
 };
+
+
+export const password = () => {
+    return z
+        .string()
+        .min(8, {message: 'Password must be at least 8 characters long'})
+        .regex(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{6,}/, {
+            message: '"password must contain at least one uppercase letter, one lowercase letter, one number and one special character"'
+        });
+}

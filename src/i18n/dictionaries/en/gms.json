@@ -52,7 +52,7 @@
       "description": "Sign up and get instant discounts.",
       "text2": "You can sign up to \"My Royal\" with your preferred social network",
       "text3": "Or email address.",
-      "terms": "I have read, and I agree with the <a href=\"/privacy-policy\" target=\"_blank\">Privacy Policy</a>.",
+      "terms": "I have read, and I agree with the <PrivacyPolicy></PrivacyPolicy>.",
       "btn": "SIGN ME UP!",
       "I already have an account": "I already have an account.",
       "Log in": "Log in",
