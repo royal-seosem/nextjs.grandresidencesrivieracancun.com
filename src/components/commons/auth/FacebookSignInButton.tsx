@@ -2,8 +2,6 @@
 import React from 'react';
 import Image from "next/image";
 import Script from "next/script";
-import {useWebsite} from "@/context/WebSiteProvider";
-import {useRouter} from "next/navigation";
 import {Facebook, FacebookLoginResponse} from "@/types/window";
 
 declare global {
@@ -21,9 +19,6 @@ interface FacebookSignInButtonProps {
 const FacebookSignInButton = (
     {onSuccess, textContent = "signup_with"}: FacebookSignInButtonProps
 ) => {
-    const {setUser} = useWebsite();
-    const router = useRouter();
-
     const handleCredientials = async (response: FacebookLoginResponse) => {
         onSuccess?.(response.authResponse.accessToken);
 

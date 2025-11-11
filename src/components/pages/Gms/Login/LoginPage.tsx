@@ -4,8 +4,6 @@ import {Link} from "@/i18n/navigation";
 import Image from "next/image";
 import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
-
-import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
 import BtnGoogle from "@/components/pages/Gms/Login/BtnGoogle";
 
 import IconInfo from "@/components/commons/icons/info.svg";
@@ -83,7 +81,8 @@ export const LoginPage = async () => {
                            height={80}/>
                     <p className="text-base text-pretty mb-4">{t('description')}</p>
 
-                    <Link href="/home" className="flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
+                    <Link href="/home"
+                          className="flex items-center justify-center gap-3 underline underline-offset-4 mb-6">
                         <IconInfo className="text-secondary" width={24} height={24}/>
                         <span className="text-secondary">{t('title-gms-program')}</span>
                     </Link>
