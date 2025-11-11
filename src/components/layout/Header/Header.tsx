@@ -1,6 +1,6 @@
 'use client'
 import React, {useEffect, useRef} from "react";
-import {Link} from "@/i18n/navigation";
+import {Link, usePathname} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 import Image from "next/image";
 import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/drawer";
@@ -11,15 +11,21 @@ import ContactOptions from "@/components/layout/Header/ContactOptions";
 import MenuMobile from "@/components/layout/Header/MenuMobile";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 import OwnersArea from "@/components/layout/OwnersArea";
+import {cn} from "@/lib/utils";
 
+const resortPaths = [
+    '/suites',
+    "/restaurants",
+    "/amenities",
+    "/gallery",
+]
 
 export default function Header() {
     const t = useTranslations('header');
     const tGeneral = useTranslations('general');
     const tmenu = useTranslations('menu');
-
+    const pathname = usePathname();
     const [showResortMenu, setShowResortMenu] = React.useState(false);
-
     const menuRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -63,26 +69,42 @@ export default function Header() {
                 ">
 
                 <div className="relative text-white flex items-center justify-between gap-3 text-base w-1/2 md:w-auto">
+
                     <div ref={menuRef} className="relative">
                         <button onClick={() => setShowResortMenu(!showResortMenu)}
-                                className="text-secondary text-base p-1.5">
+                                className={cn(
+                                    "text-base p-1.5",
+                                    resortPaths.includes(pathname) ? "text-secondary" : ""
+                                )}>
                             Resort
                         </button>
                     </div>
 
-                    <Link className={"hidden lg:block"} href="/all-inclusive">
+                    <Link className={cn(
+                        "hidden lg:block text-base p-1.5",
+                        pathname === "/all-inclusive" ? "text-secondary" : ""
+                    )} href="/all-inclusive">
                         {tGeneral('menu.all inclusive')}
                     </Link>
 
-                    <Link href="/offers">
+                    <Link href="/offers" className={cn(
+                        "text-base p-1.5",
+                        pathname === "/offers" ? "text-secondary" : ""
+                    )}>
                         {t('specials')}
                     </Link>
 
-                    <Link href="/weddings" className="hidden lg:block">
+                    <Link href="/weddings" className={cn(
+                        "hidden lg:block text-base p-1.5",
+                        pathname === "/weddings" ? "text-secondary" : ""
+                    )}>
                         {t('wedding')}
                     </Link>
 
-                    <Link href="/destination" className="hidden lg:block">
+                    <Link href="/destination" className={cn(
+                        "hidden lg:block text-base p-1.5",
+                        pathname === "/destination" ? "text-secondary" : ""
+                    )}>
                         {tmenu('destination')}
                     </Link>
                 </div>
@@ -123,22 +145,34 @@ export default function Header() {
                             ${showResortMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'} 
                         `}>
                 <li className="hover:bg-gray-100">
-                    <Link href="/suites" className="block px-4 py-2">
+                    <Link href="/suites" className={cn(
+                        "block px-4 py-2",
+                        pathname === "/suites" ? "text-accent" : ""
+                    )}>
                         {tmenu('suites')}
                     </Link>
                 </li>
                 <li className="hover:bg-gray-100">
-                    <Link href="/restaurants" className="block px-4 py-2">
+                    <Link href="/restaurants" className={cn(
+                        "block px-4 py-2",
+                        pathname === "/restaurants" ? "text-accent" : ""
+                    )}>
                         {tmenu('dining')}
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/amenities"} className="block px-4 py-2">
+                    <Link href={"/amenities"} className={cn(
+                        "block px-4 py-2",
+                        pathname === "/amenities" ? "text-accent" : ""
+                    )}>
                         {tmenu('activities')}
                     </Link>
                 </li>
                 <li>
-                    <Link href={"/gallery"} className="block px-4 py-2">
+                    <Link href={"/gallery"} className={cn(
+                        "block px-4 py-2",
+                        pathname === "/gallery" ? "text-accent" : ""
+                    )}>
                         {tmenu('gallery')}
                     </Link>
                 </li>
