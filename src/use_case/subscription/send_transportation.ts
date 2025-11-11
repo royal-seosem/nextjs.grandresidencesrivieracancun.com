@@ -1,14 +1,11 @@
 'use server'
 import {formTransportationSchema} from "@/use_case/subscription/transportations.schema";
 import {recaptchaValidate} from "@/lib/recaptcha";
+import {GrFetcher, GrFetcherResponse} from "@/lib/api_grandresidences";
 
-export const sendTransportation = async (req: unknown, token: string): Promise<{
-    success: boolean,
-    error?: {
-        code: string,
-        message: string
-    }
-}> => {
+export const sendTransportation = async (req: unknown, token: string): Promise<GrFetcherResponse<{
+    message: string,
+}>> => {
     const {success, error} = formTransportationSchema.safeParse(req);
     const passCaptcha = await recaptchaValidate(token, 'TRANSPORTATION_FORM');
     if (!passCaptcha) {
@@ -30,9 +27,12 @@ export const sendTransportation = async (req: unknown, token: string): Promise<{
         };
     }
 
-    //TODO: API - Send Email transportation SubscriptionController::sendTransportation
 
-    return {
-        success: true
-    }
+    return await GrFetcher<GrFetcherResponse<{ message: string }>>('transportation', {
+        method: 'POST',
+        body: JSON.stringify(req),
+        cache: 'no-store',
+    })
+
+
 };

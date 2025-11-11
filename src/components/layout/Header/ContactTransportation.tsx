@@ -34,8 +34,10 @@ declare global {
 
 
 const ContactTransportation = () => {
-    const [showForm, setShowForm] = useState(true);
-    const [isSend, setIsSend] = useState(false);
+    // const [showForm, setShowForm] = useState(true);
+    // const [isSend, setIsSend] = useState(false);
+
+    const [formState, setFormState] = useState('NOT_SUBMITTED');
 
     const t = useTranslations('general');
     const form = useForm<z.infer<typeof formTransportationSchema>>({
@@ -58,10 +60,13 @@ const ContactTransportation = () => {
     const dataLayer = useGTMEvent();
 
     const onSubmit = async (values: z.infer<typeof formTransportationSchema>) => {
-        setShowForm(false);
+        setFormState('SUBMITTED_PENDING');
+
         const token = await window.grecaptcha.enterprise.execute(siteKey, {action: 'TRANSPORTATION_FORM'});
         const resp = await sendTransportation(values, token);
-        setIsSend(true);
+
+        setFormState('SUBMITTED_SUCCESS');
+
         if (resp.success) {
             dataLayer({
                 event: 'contact_form',
@@ -69,6 +74,7 @@ const ContactTransportation = () => {
                 status: "OK",
                 date: values.dateCheckIn,
             })
+            // alert(resp?.data?.message || "");
         } else {
             dataLayer({
                 event: 'contact_form',
@@ -94,7 +100,7 @@ const ContactTransportation = () => {
                         <h3 className="text-center"> {t('title-transportation')} </h3>
                     </DialogHeader>
                     <ScrollArea className="max-h-[80vh]">
-                        {!isSend && (
+                        {formState === 'SUBMITTED_PENDING' && (
                             <>
                                 <p className="text-xs mb-4">
                                     {t('description-transportation')}
@@ -106,7 +112,7 @@ const ContactTransportation = () => {
 
                         <Form {...form}>
                             <form onSubmit={form.handleSubmit(onSubmit)}
-                                  className={cn("grid grid-cols-2 gap-3", showForm ? '' : 'hidden')}>
+                                  className={cn("grid grid-cols-2 gap-3", formState === 'NOT_SUBMITTED' ? '' : 'hidden')}>
                                 <FormField
                                     control={form.control}
                                     name="rsvNumber"
@@ -226,12 +232,12 @@ const ContactTransportation = () => {
                             </form>
                         </Form>
 
-                        {!showForm && !isSend && (
+                        {formState === 'SUBMITTED_PENDING' && (
                             <Image className="m-auto" src={"/icons/loading-form.gif"} alt={"Loading"} width={50}
                                    height={50}/>
                         )}
 
-                        {isSend && (
+                        {formState === 'SUBMITTED_SUCCESS' && (
                             <p className="text-center">{t("messages-email.transportation")}</p>
                         )}
                     </ScrollArea>
