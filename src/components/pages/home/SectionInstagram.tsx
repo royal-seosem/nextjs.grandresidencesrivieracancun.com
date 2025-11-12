@@ -1,11 +1,10 @@
 'use client'
 import React from 'react';
 import Paragraph from "@/components/commons/ui/paragraph";
-import WebcamIcon from "@/components/commons/icons/web-cam.svg";
 import {useTranslations} from "next-intl";
-import {Button} from "@/components/commons/ui/button";
 import InstagramFeed from "@/components/commons/shared/InstagramFeed";
 import {useInViewport} from "@/components/commons/hooks/useInViewport";
+import WebCam from "@/components/pages/suites/WebCam";
 
 const SectionInstagram = () => {
     const t = useTranslations('home');
@@ -21,10 +20,12 @@ const SectionInstagram = () => {
                 {t('instagram')}
             </Paragraph>
             <div className='flex justify-center mb-10'>
-                <Button variant={"outline"} className={"font-bold"}>
-                    <WebcamIcon className="shrink-0" width={23} height={23}/>
-                    <span>WEB CAM</span>
-                </Button>
+                <WebCam
+                    className={"border border-primary p-2 rounded-sm text-sm font-bold uppercase"}/>
+                {/*<Button variant={"outline"} className={"font-bold"}>*/}
+                {/*    <WebcamIcon className="shrink-0" width={23} height={23}/>*/}
+                {/*    <span>WEB CAM</span>*/}
+                {/*</Button>*/}
             </div>
 
             {inView && <InstagramFeed/>}
