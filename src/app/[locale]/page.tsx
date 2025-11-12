@@ -74,16 +74,19 @@ export default async function Home() {
             <BookingHome/>
             <div className="my-container p-5">
                 <section className="lg:mb-14">
-                    <Title className="lg:text-center lg:text-6xl ">
+                    <Title className="lg:text-center lg:text-6xl lg:mb-8">
                         {t('title_resort')}
                     </Title>
-                    <div className="lg:flex lg:justify-between lg:items-center lg:gap-10">
-                        <CdnImage
-                            className={"m-auto"}
-                            src="/img/logo/trip-advisor-traveler-choice-awards-2025.png"
-                            alt="we are winner of tripadvisor award for our hotels puerto morelos mexico"
-                            width="230"
-                            height="270"/>
+                    <div className="lg:flex lg:justify-between lg:items-center lg:gap-10 lg:mb-20">
+                        <div className={"lg:w-1/2 lg:max-w-[400px] shrink-0"}>
+                            <CdnImage
+                                className={"m-auto"}
+                                src="/img/logo/trip-advisor-traveler-choice-awards-2025.png"
+                                alt="we are winner of tripadvisor award for our hotels puerto morelos mexico"
+                                width="230"
+                                height="270"/>
+                        </div>
+
 
                         <div>
                             <RichText id={"descripcion_inicial"} ns={"home"}/>
