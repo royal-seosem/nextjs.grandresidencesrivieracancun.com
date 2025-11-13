@@ -1,13 +1,10 @@
 'use client'
 import React from 'react';
 import EmailIcon from "@/components/commons/icons/email.svg";
-import PhoneCallIcon from "@/components/commons/icons/phone-call.svg";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {useMessages, useTranslations} from "next-intl";
-import {Button} from "@/components/commons/ui/button";
-import {useWebsite} from "@/context/WebSiteProvider";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import FormButton from "@/components/pages/weddings/FormButton";
 
@@ -15,7 +12,6 @@ const CardGroups = () => {
     const t = useTranslations('weddings');
     const message = useMessages();
     const gallery = message['weddings']['group_event_alt'];
-    const {phones} = useWebsite();
     return (
         <article className={"md:flex gap-2 "}>
             <div className={"md:w-1/2 md:order-1"}>
@@ -39,13 +35,7 @@ const CardGroups = () => {
                     <FormButton
                         btnText={t('grupos.contacto')}
                         btnIcon={<EmailIcon width={24} height={24}/>}
-                        />
-
-                    {/*<a className="flex items-center justify-center gap-2 font-bold uppercase"*/}
-                    {/*   href={phones['wedding_groups']["phone"]}>*/}
-                    {/*    {t('grupos.llamanos')} {phones['wedding_groups']["visible"]}*/}
-                    {/*    <PhoneCallIcon width={24} height={24}/>*/}
-                    {/*</a>*/}
+                    />
                 </div>
             </div>
         </article>

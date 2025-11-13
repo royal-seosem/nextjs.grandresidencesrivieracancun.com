@@ -1,14 +1,11 @@
 'use client'
 import React from 'react';
 import People2Icon from "@/components/commons/icons/people-2.svg";
-import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
 import {Button} from "@/components/commons/ui/button";
 import Modal from "@/components/commons/ui/modal/modal";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
-import RichTextClient from "@/components/commons/shared/RitchTextClient";
-import FormWedding from "@/components/pages/weddings/FormWedding";
 import FormButton from "@/components/pages/weddings/FormButton";
 
 
@@ -29,7 +26,6 @@ const CardPackage = (
     {infoPackage}: CardPackageProps,
 ) => {
     const [open, setOpen] = React.useState(false);
-    const [showForm, setShowForm] = React.useState<boolean>(false)
 
     const t = useTranslations('weddings');
     const tGeneral = useTranslations('general');
