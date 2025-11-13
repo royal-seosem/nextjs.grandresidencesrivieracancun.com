@@ -49,7 +49,7 @@ const deskModal = ({open, setOpen, children, header, classNameModalDesk = ""}: M
             <DialogContent
                 showCloseButton={false}
                 className={cn(
-                    "w-[1024px] max-w-[80%] lg:max-w-[80%]",
+                    "w-[1024px] max-w-[90%] lg:max-w-[90%]",
                     classNameModalDesk
                 )}>
                 <DialogHeader>

@@ -84,29 +84,52 @@ const CardPackage = (
             </article>
             <Modal open={open} setOpen={setOpen} header={infoPackage.title}>
                 <div className="p-5">
-                    <h3 className={"text-2xl font-bold mb-1"}>{infoPackage.title}</h3>
-                    <p className="text-lg font-medium flex items-center gap-3 mb-2">
-                        <People2Icon width={24} height={24}/>
-                        {infoPackage.guests}
-                    </p>
-                    <p className="text-2xl text-accent font-bold mb-4">{t('includes')}</p>
-                    <ul className="list-disc ml-5 space-y-1 mb-4">
-                        {
-                            infoPackage.includes.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))
-                        }
-                    </ul>
-                    <div dangerouslySetInnerHTML={{__html: infoPackage.terms}}></div>
-                    <PaymentMethods/>
+                    <div className="md:max-h-[calc(85dvh-50px)]
+                        overflow-auto
+                        scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent
+                        hover:scrollbar-thumb-gray-400
+                        [&::-webkit-scrollbar]:w-2
+                        [&::-webkit-scrollbar-track]:bg-transparent
+                        [&::-webkit-scrollbar-thumb]:bg-gray-300
+                        [&::-webkit-scrollbar-thumb]:rounded-full
+                        [&::-webkit-scrollbar-thumb]:border-2
+                        [&::-webkit-scrollbar-thumb]:border-transparent
+                        hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
+                        <h3 className={"text-2xl font-bold mb-1"}>{infoPackage.title}</h3>
+                        <p className="text-lg font-medium flex items-center gap-3 mb-2">
+                            <People2Icon width={24} height={24}/>
+                            {infoPackage.guests}
+                        </p>
+                        <p className="text-2xl text-accent font-bold mb-4">{t('includes')}</p>
+                        <ul className="list-disc ml-5 space-y-1 mb-4 lg:columns-2 lg:[column-gap:2rem]">
+                            {
+                                infoPackage.includes.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))
+                            }
+                        </ul>
+                        <div dangerouslySetInnerHTML={{__html: infoPackage.terms}}></div>
+                        <PaymentMethods/>
+                    </div>
                 </div>
             </Modal>
             <Modal open={showForm} setOpen={setShowForm} header={t('formulario.titulo')}>
                 <div className="p-5">
-                    <h3 className={"text-lg font-bold"}>{t('formulario.titulo')}</h3>
-                    <RichTextClient id={'formulario.descripcion'} ns={'weddings'}/>
-
-                    <FormWedding/>
+                    <div className="md:max-h-[calc(85dvh-50px)]
+                        overflow-auto
+                        scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent
+                        hover:scrollbar-thumb-gray-400
+                        [&::-webkit-scrollbar]:w-2
+                        [&::-webkit-scrollbar-track]:bg-transparent
+                        [&::-webkit-scrollbar-thumb]:bg-gray-300
+                        [&::-webkit-scrollbar-thumb]:rounded-full
+                        [&::-webkit-scrollbar-thumb]:border-2
+                        [&::-webkit-scrollbar-thumb]:border-transparent
+                        hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
+                        <h3 className={"text-lg font-bold"}>{t('formulario.titulo')}</h3>
+                        <RichTextClient id={'formulario.descripcion'} ns={'weddings'}/>
+                        <FormWedding/>
+                    </div>
                 </div>
             </Modal>
         </>
