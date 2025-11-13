@@ -40,7 +40,6 @@ const Page = async () => {
                 </div>
 
                 <Title className={"text-center mb-6 font-bold"} size={"sm"} level={"h3"}>{t('paquetes.titulo')}</Title>
-
                 <div className={"mb-10"}>
                     <CarouselPackages packages={packages}/>
                 </div>
