@@ -104,7 +104,8 @@
         }
       ]
     },
-    "members": "<p>Thank you for your interest in the Grand Residences All-Inclusive package. If you are a Grand Residences owner or member, please log in here  to read specific owner information relating to the package.</p>",
+    "owner_login": "log in here",
+    "members": "<p>Thank you for your interest in the Grand Residences All-Inclusive package. If you are a Grand Residences owner or member, please <OwnerLogin></OwnerLogin>  to read specific owner information relating to the package.</p>",
     "package-title": "What is included in the All-Inclusive Experience package? "
   }
 }

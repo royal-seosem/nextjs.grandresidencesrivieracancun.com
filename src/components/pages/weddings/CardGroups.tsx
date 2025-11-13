@@ -41,11 +41,11 @@ const CardGroups = () => {
                         btnIcon={<EmailIcon width={24} height={24}/>}
                         />
 
-                    <a className="flex items-center justify-center gap-2 font-bold uppercase"
-                       href={phones['wedding_groups']["phone"]}>
-                        {t('grupos.llamanos')} {phones['wedding_groups']["visible"]}
-                        <PhoneCallIcon width={24} height={24}/>
-                    </a>
+                    {/*<a className="flex items-center justify-center gap-2 font-bold uppercase"*/}
+                    {/*   href={phones['wedding_groups']["phone"]}>*/}
+                    {/*    {t('grupos.llamanos')} {phones['wedding_groups']["visible"]}*/}
+                    {/*    <PhoneCallIcon width={24} height={24}/>*/}
+                    {/*</a>*/}
                 </div>
             </div>
         </article>
