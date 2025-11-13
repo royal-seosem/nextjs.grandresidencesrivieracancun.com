@@ -11,6 +11,7 @@ import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders"
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
 import ChatWeb from "@/components/layout/ChatWeb";
+import ModalMyRoyal from "@/components/commons/shared/my-royal/ModalMyRoyal";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -100,6 +101,7 @@ export default async function RootLayout({children, params}: {
                     <BookingProvider>
                         <Header/>
                         {children}
+                        <ModalMyRoyal/>
                         <Footer/>
                         <ChatWeb/>
                         <ReactQueryDevtools initialIsOpen={false}/>

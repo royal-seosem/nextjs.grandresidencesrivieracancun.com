@@ -4,12 +4,14 @@ import CloseIcon from "@/components/commons/icons/close.svg";
 import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
 import useIsDesktop from "@/components/commons/ui/modal/useIsDesktop";
 import {ScrollArea} from "@/components/commons/ui/scroll-area";
+import {cn} from "@/lib/utils";
 
 interface ModalProps {
     open: boolean;
     setOpen: (open: boolean) => void;
     header: string;
     children?: React.ReactNode;
+    classNameModalDesk?: string;
 }
 
 const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
@@ -41,12 +43,15 @@ const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
     );
 }
 
-const deskModal = ({open, setOpen, children, header}: ModalProps) => {
+const deskModal = ({open, setOpen, children, header, classNameModalDesk = ""}: ModalProps) => {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogContent
                 showCloseButton={false}
-                className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
+                className={cn(
+                    "w-[1024px] max-w-[80%] lg:max-w-[80%]",
+                    classNameModalDesk
+                )}>
                 <DialogHeader>
                     <DialogTitle className="hidden" aria-readonly>
                         {header}
