@@ -5,6 +5,7 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {Button} from "@/components/commons/ui/button";
 import {useTranslations} from "next-intl";
+import FormButton from "@/components/pages/weddings/FormButton";
 
 export interface CelebrationInfo {
     img: string,
@@ -31,10 +32,7 @@ const CardCelebration = (
                     {descripcion}
                 </Paragraph>
 
-                <Button className="uppercase" variant={"secondary"}>
-                    {t('formulario.titulo')}
-                    <ArrowRightIcon width={16} height={16}/>
-                </Button>
+                <FormButton/>
             </div>
         </article>
     );

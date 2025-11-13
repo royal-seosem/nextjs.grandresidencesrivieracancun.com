@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import EmailIcon from "@/components/commons/icons/email.svg";
 import PhoneCallIcon from "@/components/commons/icons/phone-call.svg";
@@ -5,9 +6,10 @@ import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {useMessages, useTranslations} from "next-intl";
-import Paragraph from "@/components/commons/ui/paragraph";
 import {Button} from "@/components/commons/ui/button";
 import {useWebsite} from "@/context/WebSiteProvider";
+import RichTextClient from "@/components/commons/shared/RitchTextClient";
+import FormButton from "@/components/pages/weddings/FormButton";
 
 const CardGroups = () => {
     const t = useTranslations('weddings');
@@ -21,7 +23,8 @@ const CardGroups = () => {
                     {
                         gallery.map((item: { alt: string, img: string }, index: number) => (
                             <CarouselItem key={index}>
-                                <CdnImage className={"h-full object-cover"} alt={item.alt} src={item.img} width={700} height={412}/>
+                                <CdnImage className={"h-full object-cover"} alt={item.alt} src={item.img} width={700}
+                                          height={412}/>
                             </CarouselItem>
                         ))
                     }
@@ -30,15 +33,16 @@ const CardGroups = () => {
             <div className={"p-5 md:w-1/2"}>
                 <h3 className="text-5xl mb-4">{t('grupos.titulo')}</h3>
 
-                <Paragraph>{t('grupos.descripcion')}</Paragraph>
+                <RichTextClient id={'grupos.descripcion'} ns={'weddings'}/>
 
-                <div className={"flex flex-col gap-2 justify-start items-start"}>
-                    <Button variant={"secondary"} className={"uppercase "}>
-                        {t('grupos.contacto')}
-                        <EmailIcon width={24} height={24}/>
-                    </Button>
+                <div className={"flex flex-col gap-2 justify-start items-start pt-2"}>
+                    <FormButton
+                        btnText={t('grupos.contacto')}
+                        btnIcon={<EmailIcon width={24} height={24}/>}
+                        />
 
-                    <a className="flex items-center justify-center gap-2 font-bold uppercase" href={phones['wedding_groups']["phone"]}>
+                    <a className="flex items-center justify-center gap-2 font-bold uppercase"
+                       href={phones['wedding_groups']["phone"]}>
                         {t('grupos.llamanos')} {phones['wedding_groups']["visible"]}
                         <PhoneCallIcon width={24} height={24}/>
                     </a>

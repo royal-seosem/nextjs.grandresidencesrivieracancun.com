@@ -213,7 +213,7 @@
       "pais": "País de procedencia",
       "comentarios": "Comentarios",
       "boton": "Enviar",
-      "casilla1": "La información personal y/o sensible aquí solicitada es con el propósito de brindar el servicio requerido por el usuario. Su privacidad está asegurada bajo los lineamientos del Aviso de Privacidad de la Empresa y conforme a lo ordenado por la Ley. El uso de este sitio se encuentra sujeto a la aceptación incondicional por parte del usuario de los términos y condiciones precisados en nuestro <a  target=\"_blank\" href=\":policy\">Aviso de Privacidad<a>",
+      "casilla1": "La información personal y/o sensible aquí solicitada es con el propósito de brindar el servicio requerido por el usuario. Su privacidad está asegurada bajo los lineamientos del Aviso de Privacidad de la Empresa y conforme a lo ordenado por la Ley. El uso de este sitio se encuentra sujeto a la aceptación incondicional por parte del usuario de los términos y condiciones precisados en nuestro <PrivacyPolicy></PrivacyPolicy>",
       "titulo-grupos": "Contáctanos para más información en tema de Grupos",
       "descripcion-grupos": "<p>Para más información sobre grupos ¡contáctanos!</p>\n      <p>Nos encantará ofrecerte más información.</p>"
     },

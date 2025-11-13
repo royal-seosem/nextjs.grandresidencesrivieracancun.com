@@ -9,6 +9,7 @@ import Modal from "@/components/commons/ui/modal/modal";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import FormWedding from "@/components/pages/weddings/FormWedding";
+import FormButton from "@/components/pages/weddings/FormButton";
 
 
 export interface PackageInfo {
@@ -72,13 +73,7 @@ const CardPackage = (
                             onClick={() => setOpen(true)}>
                             {tGeneral('read more')}
                         </Button>
-                        <Button
-                            className={"uppercase"}
-                            variant={"secondary"}
-                            onClick={() => setShowForm(true)}>
-                            {t('formulario.titulo')}
-                            <ArrowRightIcon width={16} height={16}/>
-                        </Button>
+                        <FormButton/>
                     </div>
                 </div>
             </article>
@@ -113,25 +108,7 @@ const CardPackage = (
                     </div>
                 </div>
             </Modal>
-            <Modal open={showForm} setOpen={setShowForm} header={t('formulario.titulo')}>
-                <div className="p-5">
-                    <div className="md:max-h-[calc(85dvh-50px)]
-                        overflow-auto
-                        scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent
-                        hover:scrollbar-thumb-gray-400
-                        [&::-webkit-scrollbar]:w-2
-                        [&::-webkit-scrollbar-track]:bg-transparent
-                        [&::-webkit-scrollbar-thumb]:bg-gray-300
-                        [&::-webkit-scrollbar-thumb]:rounded-full
-                        [&::-webkit-scrollbar-thumb]:border-2
-                        [&::-webkit-scrollbar-thumb]:border-transparent
-                        hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
-                        <h3 className={"text-lg font-bold"}>{t('formulario.titulo')}</h3>
-                        <RichTextClient id={'formulario.descripcion'} ns={'weddings'}/>
-                        <FormWedding/>
-                    </div>
-                </div>
-            </Modal>
+
         </>
 
     );
