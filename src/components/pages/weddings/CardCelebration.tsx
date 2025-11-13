@@ -2,7 +2,6 @@
 import React from 'react';
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
-import {useTranslations} from "next-intl";
 import FormButton from "@/components/pages/weddings/FormButton";
 
 export interface CelebrationInfo {
