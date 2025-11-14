@@ -12,6 +12,7 @@ import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {cn} from "@/lib/utils";
+import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
 
 
 interface CardOfferProps {
@@ -26,6 +27,7 @@ const CardOffer = (
     const tOfferTemplate = useTranslations('offers-template2')
     const {user} = useWebsite();
     const [open, setOpen] = React.useState(false);
+    const [showLoginMyRoyal, setShowLoginMyRoyal] = React.useState(false);
 
     return (
         <article className={cn(
@@ -105,13 +107,17 @@ const CardOffer = (
                             }}/>
                         </div>
                     }
-                    <button className="flex items-center gap-2 text-white underline">
+
+                    <button className="flex items-center gap-2 text-white underline"
+                        onClick={() => setShowLoginMyRoyal(true)}>
                         <MyRoyalIcon width={24} height={24}/>
                         {tOfferTemplate('Log in and save even more')}
                     </button>
+
                 </div>
             }
             <ModalOffer offer={offer} open={open} setOpen={setOpen}/>
+            <ModalMyRoyalSignUp show={showLoginMyRoyal} setShow={setShowLoginMyRoyal}/>
         </article>
     );
 };
