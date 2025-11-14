@@ -3,16 +3,21 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {Review} from "@/use_case/reviews/types";
 import {format} from "date-fns";
+import {useTranslations} from "next-intl";
 
 interface CardReviewProps {
     review: Review
 }
+
 const CardReview = (
     {review}: CardReviewProps,
 ) => {
+    const  t = useTranslations('general');
+    const [expanded, setExpanded] = React.useState(false);
+    const toggleExpanded = () => setExpanded((prev) => !prev);
 
     return (
-        <article className="bg-[#fbf1de] py-4 px-5">
+        <article className="bg-[#fbf1de] h-full py-4 px-5">
             <div className="flex items-center gap-5 mb-5">
                 <CdnImage
                     alt={"User icon"}
@@ -30,10 +35,33 @@ const CardReview = (
                         height={8}/>
                 </div>
             </div>
-            <Paragraph>
-                {review.review}
-            </Paragraph>
-            <div className="flex items-center justify-end ">
+
+            <div>
+                <p className={"text-base mb-1"}
+                    style={
+                    expanded
+                        ? {}
+                        : {
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                        }
+                }>
+                    {review.review}
+                </p>
+                <button
+                    type="button"
+                    onClick={toggleExpanded}
+                    className="text-sm font-semibold hover:underline mb-4"
+                >
+                    {expanded ? t('read less') : t('read more')}
+                </button>
+            </div>
+
+
+
+            <div className="flex items-center justify-end gap-2 ">
                 <CdnImage
                     alt={"Tripadvisor Icon"}
                     src={"/img/icons/tripadvisor-grean.svg"}

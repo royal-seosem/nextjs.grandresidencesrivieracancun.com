@@ -65,7 +65,7 @@ export const routing = defineRouting({
             en: "/gms/my-account-management",
             es: "/gms/my-account-management"
         },
-        "/gms/sign-up":{
+        "/gms/sign-up": {
             en: "/gms/sign-up",
             es: "/gms/sign-up"
 
@@ -103,11 +103,15 @@ export const routing = defineRouting({
             en: "/contact",
             es: "/contacto"
         },
+        "/annoucement": {
+            en: "/company-announcement-2023",
+            es: "/anuncio-de-la-compania-2023"
+        },
         //Downloads
         "/menu-spa": {
             en: "/menu-spa",
             es: "/menu-spa",
-        }
+        },
 
     }
 });

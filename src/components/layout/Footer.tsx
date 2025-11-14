@@ -134,7 +134,7 @@ const Footer = () => {
                     <span className="text-white text-xs ">
                         &copy;  Copyright  - Royal Resorts
                     </span>
-                    <Link href="/" className="text-secondary text-xs underline">
+                    <Link href="/annoucement" className="text-secondary text-xs underline">
                         {t("title-company")}
                     </Link>
                 </div>
