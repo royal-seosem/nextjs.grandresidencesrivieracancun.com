@@ -89,7 +89,8 @@ const ModalOffer = (
                         <Paragraph>
                             {
                                 offer.content.terms?.map((item: string, index: number) => (
-                                    <span key={index}>{item}</span>
+                                    <div key={index}
+                                         dangerouslySetInnerHTML={{__html: item}}/>
                                 ))
                             }
                         </Paragraph>
