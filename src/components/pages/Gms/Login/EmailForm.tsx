@@ -8,11 +8,14 @@ import {Form, FormField, FormInput, FormItem, FormLabel, FormMessage} from "@/co
 import {loginByEmail} from "@/use_case/gms/login/login_by_email";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {useRouter} from "next/navigation";
+import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 
 const EmailForm = () => {
     const t = useTranslations('page_login');
     const router = useRouter();
     const {setUser} = useWebsite();
+    const dataLayer = useGTMEvent();
+
 
     const formLogin = useForm<LoginSchemaType>({
         resolver: zodResolver(LoginSchema)
@@ -23,6 +26,21 @@ const EmailForm = () => {
 
         if (!resp.success) {
             alert(resp.error?.message || "");
+            dataLayer({
+                "event": "login",
+                "status": "KO",
+                "user": "My Royal",
+                "type": 'email',
+                "errorType": resp.error?.message,
+                "errorCode": resp.error?.code
+            });
+            dataLayer({
+                "event": "Error login",
+                "user": "My Royal",
+                "type": 'email',
+                "error_type": resp.error?.message,
+                "error_code": resp.error?.code
+            })
         }
         if (resp.success && resp.data?.id && resp.data?.name) {
             setUser({
@@ -31,6 +49,21 @@ const EmailForm = () => {
                 token: resp.data?.token
             })
 
+            dataLayer({
+                "event": "login",
+                "status": "KO",
+                "user": "My Royal",
+                "type": 'email',
+                "errorType": resp.error?.message,
+                "errorCode": resp.error?.code
+            });
+            dataLayer({
+                "event": "Error login",
+                "user": "My Royal",
+                "type": 'email',
+                "error_type": resp.error?.message,
+                "error_code": resp.error?.code
+            })
             router.push('/gms/my-account');
         }
     }

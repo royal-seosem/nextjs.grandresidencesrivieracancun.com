@@ -13,6 +13,7 @@ import {Button} from "@/components/commons/ui/button";
 import {grecaptcha} from "@/types/grecaptcha";
 import Script from "next/script";
 import {signupByEmail} from "@/use_case/gms/signup/signup_by_email";
+import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 
 
 declare global {
@@ -32,13 +33,30 @@ const FormEmail = () => {
     const handleSubmit = async (values: SignupSchemaType) => {
         const token = await window.grecaptcha.enterprise.execute(siteKey, {action: 'TRANSPORTATION_FORM'});
         const resp = await signupByEmail(values, token);
+        const dataLayer = useGTMEvent();
+
 
         if (!resp.success) {
             alert(resp.error?.message || "");
+            dataLayer({
+                "event": "Error Registro",
+                "user": "My Royal",
+                "type": 'email',
+                "error_type": resp.error?.message,
+                "error_code": resp.error?.code
+            })
         }
 
         if (resp.success) {
             alert(resp?.data?.message || "");
+
+            dataLayer({
+                "event": "Registro",
+                "user": "My Royal",
+                "type": 'email',
+                "error_type": resp.error?.message,
+                "error_code": resp.error?.code
+            })
             form.reset();
         }
 
