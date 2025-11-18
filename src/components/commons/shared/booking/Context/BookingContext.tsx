@@ -33,6 +33,8 @@ export  type BookingContext = {
     setSubtitle: (subtitle: string) => void,
     showType: boolean,
     setShowType: (showType: boolean) => void,
+    origin: string,
+    setOrigin: (origin: string) => void,
 }
 
 export const BookingContext = React.createContext<BookingContext | null>(null);
@@ -69,6 +71,7 @@ const BookingProvider = (
     const [title, setTitle] = React.useState<string>("");
     const [subtitle, setSubtitle] = React.useState<string>("");
     const [showType, setShowType] = React.useState<boolean>(true);
+    const [origin, setOrigin] = React.useState<string>("");
 
     return (
         <BookingContext.Provider value={{
@@ -102,6 +105,8 @@ const BookingProvider = (
             setShowType,
             subtitle,
             setSubtitle,
+            origin,
+            setOrigin
         }}>
             {children}
         </BookingContext.Provider>
