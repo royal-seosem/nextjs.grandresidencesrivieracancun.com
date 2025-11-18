@@ -8,6 +8,7 @@ import RichText from "@/components/commons/shared/RitchText";
 import CardDestination from "@/components/pages/destination/CardDestination";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import CardExperience from "@/components/pages/destination/CardExperience";
+import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 
 
 const Page = () => {
@@ -116,7 +117,13 @@ const Page = () => {
             </div>
             <div>
                 <div className={"my-container"}>
-                    <h3 className={"font-secondary lg:font-primary text-4xl lg:text-[52px] mb-10 text-center"}>{t('parrafo5.titulo')}</h3>
+                    <h3 className={"font-secondary lg:font-primary text-4xl lg:text-[52px] mb-10 text-center"}>
+                        {t('parrafo5.titulo')}
+                    </h3>
+
+                    <div className={"flex justify-center p-20"}>
+                        <BookingBtnDrawer className={"font-bold py-2 px-5 uppercase"} btnText={t('boton')}/>
+                    </div>
                 </div>
                 <CdnImage
                     width={425} height={254}

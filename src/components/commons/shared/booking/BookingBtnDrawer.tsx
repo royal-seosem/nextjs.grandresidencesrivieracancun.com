@@ -55,6 +55,7 @@ const BookingBtnDrawer = ({className, offer, btnText}: BookingBtnDrawerProps) =>
         <Button
             className={cn(
                 'h-auto rounded-sm bg-book-bg text-book-text  text-sm font-bold',
+                'hover:bg-accent2 hover:border-accent2',
                 className
             )}
             onClick={() => handleClick()}>
