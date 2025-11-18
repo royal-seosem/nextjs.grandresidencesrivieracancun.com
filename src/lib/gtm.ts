@@ -1,8 +1,8 @@
-declare global {
-    interface Window {
-        dataLayer: unknown[];
-    }
-}
+// declare global {
+//     interface Window {
+//         dataLayer: GTMEvent[];
+//     }
+// }
 
 export interface GTMEvent {
     event: string;

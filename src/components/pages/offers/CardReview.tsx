@@ -1,6 +1,5 @@
 import React from 'react';
 import CdnImage from "@/components/commons/ui/CdnImage";
-import Paragraph from "@/components/commons/ui/paragraph";
 import {Review} from "@/use_case/reviews/types";
 import {format} from "date-fns";
 import {useTranslations} from "next-intl";
@@ -12,7 +11,7 @@ interface CardReviewProps {
 const CardReview = (
     {review}: CardReviewProps,
 ) => {
-    const  t = useTranslations('general');
+    const t = useTranslations('general');
     const [expanded, setExpanded] = React.useState(false);
     const toggleExpanded = () => setExpanded((prev) => !prev);
 
@@ -38,16 +37,16 @@ const CardReview = (
 
             <div>
                 <p className={"text-base mb-1"}
-                    style={
-                    expanded
-                        ? {}
-                        : {
-                            display: "-webkit-box",
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: "vertical",
-                            overflow: "hidden",
-                        }
-                }>
+                   style={
+                       expanded
+                           ? {}
+                           : {
+                               display: "-webkit-box",
+                               WebkitLineClamp: 2,
+                               WebkitBoxOrient: "vertical",
+                               overflow: "hidden",
+                           }
+                   }>
                     {review.review}
                 </p>
                 <button
@@ -58,7 +57,6 @@ const CardReview = (
                     {expanded ? t('read less') : t('read more')}
                 </button>
             </div>
-
 
 
             <div className="flex items-center justify-end gap-2 ">

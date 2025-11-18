@@ -26,6 +26,8 @@ declare global {
 const FormEmail = () => {
     const t = useTranslations('gms');
     const siteKey = process.env.NEXT_PUBLIC_GOOGLE_CAPTCHA_KEY || "";
+    const dataLayer = useGTMEvent();
+
     const form = useForm<SignupSchemaType>({
         resolver: zodResolver(SignupSchema)
     });
@@ -33,7 +35,6 @@ const FormEmail = () => {
     const handleSubmit = async (values: SignupSchemaType) => {
         const token = await window.grecaptcha.enterprise.execute(siteKey, {action: 'TRANSPORTATION_FORM'});
         const resp = await signupByEmail(values, token);
-        const dataLayer = useGTMEvent();
 
 
         if (!resp.success) {

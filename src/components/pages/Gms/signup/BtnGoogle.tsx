@@ -9,15 +9,15 @@ import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 const BtnGoogle = () => {
     const router = useRouter();
     const {setUser} = useWebsite();
+    const pushToDataLayer = useGTMEvent();
 
     const googleSuccess = async (response: { credential: string }) => {
         const resp = await registerByGoogle(response.credential);
-        const dataLayer = useGTMEvent();
 
 
         if (!resp.success) {
             alert(resp.error?.message || "");
-            dataLayer({
+            pushToDataLayer({
                 "event": "Error Registro",
                 "user": "My Royal",
                 "type": 'google',
@@ -32,7 +32,7 @@ const BtnGoogle = () => {
                 name: resp.data?.name,
                 token: resp.data?.token
             })
-            dataLayer({
+            pushToDataLayer({
                 "event": "Registro",
                 "user": "My Royal",
                 "type": 'google',
