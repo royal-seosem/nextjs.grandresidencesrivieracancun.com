@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {zodResolver} from "@hookform/resolvers/zod";
 import {useForm} from "react-hook-form";
@@ -18,12 +19,14 @@ import Image from "next/image";
 import sendWeddingForm from "@/use_case/subscription/send_wedding_form";
 import {Dialog, DialogContent, DialogTitle} from "@/components/commons/ui/dialog";
 import {format} from "date-fns";
+import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 
 
 const FormWedding = () => {
     const t = useTranslations('weddings');
     const [isSubmitted, setIsSubmitted] = React.useState<string>("viewed");
     const [openCheckIn, setOpenCheckIn] = React.useState<boolean>(false);
+    const pushToDataLayer = useGTMEvent();
 
     const formWedding = useForm<WeddingFormType>({
         resolver: zodResolver(weddingFormSchema),
@@ -39,11 +42,28 @@ const FormWedding = () => {
 
         if (response.success) {
             setIsSubmitted("success");
+            pushToDataLayer({
+                "event": "contactUs",
+                "country": values.contactusCountry,
+                "eventType": values.type,
+                "date": values.celebrate,
+                "guests": values.contactusGuest,
+                "time": 'afternoon',
+                "resort": 'grand-residences-riviera-cancun'
+            })
+            pushToDataLayer({
+                "event": "generate_lead",
+                "leadType": "Weddings",
+                "country": values.contactusCountry,
+                "eventType": values.type,
+                "date": values.celebrate,
+                "guests": values.contactusGuest,
+                "resort": 'grand-residences-riviera-cancun'
+            })
         }
         if (!response.success) {
             alert(response.error?.message);
             setIsSubmitted("viewed");
-
         }
     }
 
