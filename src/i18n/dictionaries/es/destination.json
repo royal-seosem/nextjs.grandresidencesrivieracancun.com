@@ -53,6 +53,17 @@
       "titulo": "Deléitate con las maravillas naturales y actividades que la Riviera Maya tiene y convierte tus vacaciones en un viaje inolvidable",
       "descripcion": "<p>Al hospedarte en Grand Residences Riviera Cancun, tendrás al alcance de tu mano una gran variedad de lugares sorprendentes para explorar y actividades divertidas que harán de tu estancia una experiencia aún más entretenida. Visita las zonas arqueológicas o recorre la ruta de los cenotes, donde podrás disfrutar de una gran variedad de ríos subterráneos conectados entre sí, aventúrate a explorar el Gran Arrecife Maya en un tour de buceo, deléitate con la cocina local o disfruta de un día de compras para después terminar disfrutando de la vida nocturna del sitio.</p>"
     },
+    "parrafo6": {
+      "titulo": "Discover the surroundings of Puerto Morelos.",
+      "descripcion": "Let yourself be cultivated by Cancun and Playa del Carmen. Cancun offers a perfect combination of breathtaking beaches, exciting activities, and lively nightlife. Dive into its crystal clear waters and enjoy the sun on its white sandy beaches. The Hotel Zone is full of bars, nightclubs, and restaurants that offer various options. On the other hand, Playa del Carmen will surprise you with its bohemian charm and vibrant Quinta Avenida, full of restaurants, stores, and nightlife.",
+      "gallery": [
+        {"src": "/img/destination/gr-destiny-1.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-2.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-3.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-4.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"},
+        {"src": "/img/destination/gr-destiny-5.jpg", "alt": "Travel through the Mayan route of the cenotes in Puerto Morelos"}
+      ]
+    },
     "boton": "¡Reserva ya!"
   }
 }

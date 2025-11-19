@@ -3,17 +3,19 @@ import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import {cdn} from "@/lib/cdn";
 import Title from "@/components/commons/ui/title";
-import {useMessages, useTranslations} from "next-intl";
 import RichText from "@/components/commons/shared/RitchText";
 import CardDestination from "@/components/pages/destination/CardDestination";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import CardExperience from "@/components/pages/destination/CardExperience";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+import {getLocale, getMessages, getTranslations} from "next-intl/server";
 
 
-const Page = () => {
-    const t = useTranslations('destination');
-    const m = useMessages();
+const Page = async () => {
+    const t = await getTranslations('destination');
+    const m = await getMessages();
+
+    const locale = await getLocale()
     return (
         <main>
             <BookingHeader/>
@@ -75,7 +77,7 @@ const Page = () => {
                             image: m['destination']['parrafo4']['gallery']
                         }}/>
 
-                    <CardDestination
+                    {locale == 'en' && <CardDestination
                         className={"col-span-2"}
                         image={"/img/destination/gr-diving.jpg"}
                         title={t('parrafo6.titulo')}
@@ -83,7 +85,7 @@ const Page = () => {
                             title: t('parrafo6.titulo'),
                             description: {id: 'parrafo6.descripcion', ns: 'destination'},
                             image: m['destination']['parrafo6']['gallery']
-                        }}/>
+                        }}/>}
                 </div>
 
                 <div className={"hidden lg:flex flex-col gap-[100px] mb-10"}>

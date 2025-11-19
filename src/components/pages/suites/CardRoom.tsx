@@ -39,7 +39,7 @@ const CardRoom = (
                     <h4 className="text-base font-bold mb-4">{room.vista}</h4>
                     <ul className="list-disc ml-5 space-y-1 mb-4 lg:columns-2">
                         {
-                            room.amenidades.map((amenidad, index) => (
+                            room.amenidades?.map((amenidad, index) => (
                                 <li className="text-base" key={index}>{amenidad}</li>
                             ))
                         }
