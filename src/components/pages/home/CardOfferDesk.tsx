@@ -11,6 +11,7 @@ import {useWebsite} from "@/context/WebSiteProvider";
 import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
+import ModalOffer from "@/components/pages/offers/ModalOffer";
 
 
 interface CardOfferDeskProps {
@@ -26,6 +27,7 @@ const CardOfferDesk = (
     const tOffer = useTranslations('offers');
     const tOfferTemplate = useTranslations('offers-template2')
     const tGeneral = useTranslations('general');
+    const [open, setOpen] = React.useState(false);
 
     const elementRef = useViewPromotion({
         promotionData: {
@@ -96,8 +98,8 @@ const CardOfferDesk = (
                         </div>
                         <PaymentMethods/>
                         <div>
-                            <div className="flex items-center  gap-2">
-                                <button>
+                            <div className="flex items-center  gap-5">
+                                <button onClick={() => setOpen(true)}>
                                     {tGeneral('more info')}
                                 </button>
                                 <BookingBtnDrawer offer={{
@@ -124,8 +126,9 @@ const CardOfferDesk = (
                         </div>
                     }
                 </div>
-
             </div>
+
+            <ModalOffer offer={offer} open={open} setOpen={setOpen} creative_slot={creative_slot}/>
         </article>
     );
 };

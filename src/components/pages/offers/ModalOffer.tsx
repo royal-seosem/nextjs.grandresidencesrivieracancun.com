@@ -1,5 +1,5 @@
 'use client'
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Modal from "@/components/commons/ui/modal/modal";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {useTranslations} from "next-intl";
@@ -13,20 +13,42 @@ import ValidUntil from "@/components/commons/shared/ValidUntil";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import {useWebsite} from "@/context/WebSiteProvider";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
 
 interface ModalOfferProps {
     offer: Offer;
     open: boolean;
     setOpen: (open: boolean) => void;
+    creative_slot?: string;
 }
 
 const ModalOffer = (
-    {offer, open, setOpen}: ModalOfferProps,
+    {offer, open, setOpen, creative_slot}: ModalOfferProps,
 ) => {
     const {user} = useWebsite();
     const [showTerms, setShowTerms] = useState(false);
     const t = useTranslations('offers')
     const tGeneral = useTranslations('general');
+    const pushToDataLayer = useGTMEvent();
+
+    useEffect(() => {
+        if (open) {
+            pushToDataLayer({
+                event: 'select_promotion',
+                ecommerce:{
+                    promotion_name: offer.content.title || "" ,
+                    creative_slot: creative_slot || "",
+                    currency: "USD",
+                    items: [
+                        {
+                            item_name: "Grand Residences Riviera Cancun",
+                            item_variant: offer.ratePlan,
+                        }
+                    ]
+                }
+            })
+        }
+    }, [open])
 
     return (
         <Modal open={open} setOpen={setOpen} header={offer.content.title || ""}>
