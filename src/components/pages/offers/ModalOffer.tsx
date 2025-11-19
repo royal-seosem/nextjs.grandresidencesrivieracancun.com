@@ -35,8 +35,8 @@ const ModalOffer = (
         if (open) {
             pushToDataLayer({
                 event: 'select_promotion',
-                ecommerce:{
-                    promotion_name: offer.content.title || "" ,
+                ecommerce: {
+                    promotion_name: offer.content.title || "",
                     creative_slot: creative_slot || "",
                     currency: "USD",
                     items: [
@@ -48,7 +48,7 @@ const ModalOffer = (
                 }
             })
         }
-    }, [open])
+    }, [open, offer, creative_slot, pushToDataLayer])
 
     return (
         <Modal open={open} setOpen={setOpen} header={offer.content.title || ""}>
