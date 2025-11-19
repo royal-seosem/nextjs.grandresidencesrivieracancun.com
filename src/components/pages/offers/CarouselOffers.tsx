@@ -21,7 +21,7 @@ const CarouselOffers = (
                     {offers.map((item, index) => (
                         <CarouselItem key={index} className={"md:basis-1/2"}>
                             <div className={"p-2 h-full"}>
-                                <CardOffer offer={item}/>
+                                <CardOffer creative_slot={"offers"} offer={item}/>
                             </div>
                         </CarouselItem>
                     ))}
@@ -30,7 +30,7 @@ const CarouselOffers = (
 
             <div className={`mb-10 flex-col gap-7 ${showAll ? 'flex' : 'hidden'}`}>
                 {offers.map((item, index) => (
-                    <CardOffer key={index} offer={item}/>
+                    <CardOffer creative_slot={"offers"} key={index} offer={item}/>
                 ))}
             </div>
 

@@ -13,15 +13,17 @@ import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {cn} from "@/lib/utils";
 import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
+import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
 
 
 interface CardOfferProps {
     offer: Offer;
     className?: string;
+    creative_slot?: string;
 }
 
 const CardOffer = (
-    {offer, className}: CardOfferProps
+    {offer, className, creative_slot}: CardOfferProps
 ) => {
     const t = useTranslations('new-offers');
     const tOfferTemplate = useTranslations('offers-template2')
@@ -29,8 +31,24 @@ const CardOffer = (
     const [open, setOpen] = React.useState(false);
     const [showLoginMyRoyal, setShowLoginMyRoyal] = React.useState(false);
 
+    const elementRef = useViewPromotion({
+        promotionData: {
+            promotion_id: offer.id,
+            promotion_name: offer?.content?.title || "",
+            creative_slot: creative_slot || "",
+            currency: "USD",
+            items: [{
+                item_name: "Grand Residences Riviera Cancun",
+                item_variant: offer.ratePlan,
+                price: offer.rate?.price || 0,
+            }]
+
+        }
+    });
+
+
     return (
-        <article className={cn(
+        <article ref={elementRef} className={cn(
             "shadow-md h-full flex flex-col",
             className
         )}>
@@ -109,7 +127,7 @@ const CardOffer = (
                     }
 
                     <button className="flex items-center gap-2 text-white underline"
-                        onClick={() => setShowLoginMyRoyal(true)}>
+                            onClick={() => setShowLoginMyRoyal(true)}>
                         <MyRoyalIcon width={24} height={24}/>
                         {tOfferTemplate('Log in and save even more')}
                     </button>
