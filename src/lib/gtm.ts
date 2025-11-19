@@ -12,6 +12,7 @@ export interface GTMEvent {
 export const pushToDataLayer = <E extends GTMEvent>(data: E) => {
     if (typeof window === 'undefined') return;
     window.dataLayer = window.dataLayer || [];
+    console.log('datalayer',data);
     window.dataLayer.push(data);
 }
 

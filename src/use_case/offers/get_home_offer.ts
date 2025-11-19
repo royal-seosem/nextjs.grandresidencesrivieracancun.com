@@ -3,6 +3,7 @@
 import {GrFetcher} from "@/lib/api_grandresidences";
 
 export type Offer = {
+    id: string;
     isLead: boolean;
     applyGms: boolean;
     ratePlan: string;
@@ -43,6 +44,7 @@ export type OfferRate = {
 export const getHomeOffer = async () => {
     return GrFetcher<Offer[]>('offers-by-section', {
         method: 'POST',
+        cache: 'no-store',
         body: JSON.stringify({
             section: 1
         })
