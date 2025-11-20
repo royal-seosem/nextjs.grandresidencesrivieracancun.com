@@ -4,6 +4,8 @@ import {Drawer, DrawerContent, DrawerDescription, DrawerTitle, DrawerTrigger} fr
 import Image from "next/image";
 import {Link} from "@/i18n/navigation";
 import {useTranslations} from "next-intl";
+import OwnersArea from "@/components/layout/OwnersArea";
+import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 
 const MenuMobile = () => {
     const tmenu = useTranslations('menu');
@@ -73,14 +75,10 @@ const MenuMobile = () => {
                         </li>
 
                         <li className="px-5 py-1 bg-menu">
-                            <a href="#" target="_blanck">
-                                {tmenu('owners area')}
-                            </a>
+                            <OwnersArea className={"block text-base text-primary"} showIcon={false} />
                         </li>
                         <li className="px-5 py-1 bg-menu">
-                            <button>
-                                {tmenu('manage reservations')}
-                            </button>
+                            <ManageYourReservation className={"text-primary text-base block"} showIcon={false}/>
                         </li>
                         <li className="px-5 py-1 bg-menu">
                             <a href="https://blog.grandresidencesbyroyalresorts.com" target="_blanck">

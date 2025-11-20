@@ -3,8 +3,16 @@ import React, {useEffect} from 'react';
 import Image from "next/image";
 import {useTranslations} from "next-intl";
 import {useLocale} from "use-intl";
+import {cn} from "@/lib/utils";
 
-const OwnersArea = () => {
+interface OwnersAreaProps {
+    className?: string;
+    showIcon?: boolean;
+}
+
+const OwnersArea = (
+    {className, showIcon = true}: OwnersAreaProps
+) => {
     const t = useTranslations('header');
     const locale = useLocale();
     const logInGr = process.env.NEXT_PUBLIC_MEMBER_LOGIN_POP;
@@ -39,10 +47,10 @@ const OwnersArea = () => {
 
     return (
         <>
-            <button className="hidden sm:flex items-center gap-1 text-sm text-secondary"
+            <button className={cn('hidden sm:flex items-center gap-1 text-sm text-secondary', className)}
                     onClick={() => handleLoginClick()}
                     aria-label={t('owners area')}>
-                <Image src="/icons/key.svg" alt="Icon key" width={12} height={12}/>
+                {showIcon && <Image src="/icons/key.svg" alt="Icon key" width={12} height={12}/>}
                 <span>{t('owners area')}</span>
             </button>
         </>

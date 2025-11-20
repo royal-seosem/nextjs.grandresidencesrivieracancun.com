@@ -8,8 +8,17 @@ import Image from "next/image";
 import {Button} from "@/components/commons/ui/button";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {FormInput, FormItem} from "@/components/commons/ui/form";
+import {cn} from "@/lib/utils";
 
-const ManageYourReservation = () => {
+
+interface ManageYourReservationProps {
+    showIcon?: boolean;
+    className?: string;
+}
+
+const ManageYourReservation = (
+    {showIcon = true, className}: ManageYourReservationProps,
+) => {
     const th = useTranslations("header")
     const t = useTranslations('general');
     const [open, setOpen] = React.useState(false);
@@ -17,9 +26,9 @@ const ManageYourReservation = () => {
 
     return (
         <>
-            <button className="hidden lg:flex items-center gap-1 text-sm text-white"
-                onClick={() => setOpen(true)}>
-                <Image src="/icons/pencil.svg" alt="Icon pencil" width={12} height={12}/>
+            <button className={cn('hidden lg:flex items-center gap-1 text-sm text-white', className)}
+                    onClick={() => setOpen(true)}>
+                {showIcon && <Image src="/icons/pencil.svg" alt="Icon pencil" width={12} height={12}/>}
                 <span>{th('manage reservations')}</span>
             </button>
             <Modal open={open} setOpen={setOpen} header={"Manage your reservation"}>
