@@ -58,8 +58,8 @@ export default function Header() {
             flex flex-col justify-center items-center
             sm:flex-row sm:pb-4 bg-primary
             ">
-            <Link href="/" className="sm:block sm:w-[300px]">
-                <Image className="w-full h-full object-contain"
+            <Link href="/" className="sm:block sm:w-[200px] shrink-0">
+                <Image className="w-full h-full object-contain "
                        src={'/logos/grand-residences.png'}
                        alt="Logo Grand Residences" width={255} height={44}/>
             </Link>
@@ -95,14 +95,14 @@ export default function Header() {
                     </Link>
 
                     <Link href="/weddings" className={cn(
-                        "hidden lg:block text-base p-1.5",
+                        "hidden xl:block text-base p-1.5",
                         pathname === "/weddings" ? "text-secondary" : ""
                     )}>
                         {t('wedding')}
                     </Link>
 
                     <Link href="/destination" className={cn(
-                        "hidden lg:block text-base p-1.5",
+                        "hidden xl:block text-base p-1.5",
                         pathname === "/destination" ? "text-secondary" : ""
                     )}>
                         {tmenu('destination')}
