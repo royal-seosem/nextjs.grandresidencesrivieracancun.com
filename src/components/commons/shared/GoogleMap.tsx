@@ -9,7 +9,7 @@ const GoogleMap = () => {
     return (
         <APIProvider apiKey={apikey}>
             <Map
-                style={{width: '100%', height: '100%'}}
+                style={{width: '100%', height: 'auto'}}
                 defaultCenter={{
                     lat: 20.827114863410653,
                     lng: -86.89710833173757

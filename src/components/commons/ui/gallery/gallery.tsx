@@ -5,7 +5,8 @@ import {
     CarouselApi,
     CarouselContent,
     CarouselGoto,
-    CarouselNext, CarouselOptions,
+    CarouselNext,
+    CarouselOptions,
     CarouselPrevious
 } from "@/components/commons/ui/carousel";
 import {cn} from "@/lib/utils";
@@ -15,6 +16,8 @@ interface GalleryProps {
     variant?: 'secondary' | 'primary',
     position?: 'on' | 'bottom' | 'middle',
     showDots?: boolean,
+    showArrows?: boolean,
+    btnClassName?: string,
     setApi?: (api: CarouselApi) => void
     button?: React.ReactNode,
     options?: CarouselOptions,
@@ -47,7 +50,17 @@ const positionStyles = {
 
 
 const Gallery = (
-    {children, variant = 'secondary', position = 'on', showDots = true, setApi, button, options}: GalleryProps
+    {
+        children,
+        variant = 'secondary',
+        position = 'on',
+        showDots = true,
+        showArrows = true,
+        setApi,
+        button,
+        options,
+        btnClassName
+    }: GalleryProps
 ) => {
     const totalItems = React.Children.count(children);
     const style = galleryStyles[variant];
@@ -72,7 +85,8 @@ const Gallery = (
             <div className={cn(
                 'flex justify-between items-center py-2',
                 button ? 'flex-wrap md:flex-nowrap' : '',
-                className
+                className,
+                btnClassName
             )}>
                 {button && <div className="w-full text-center md:w-auto">{button}</div>}
                 {showDots &&
@@ -85,14 +99,17 @@ const Gallery = (
                     </ul>
                 }
 
-                <div className={cn(
-                    'flex gap-2',
-                    style.text_color,
-                    position == "middle" ? 'w-full justify-between ' : ""
-                )}>
-                    <CarouselPrevious className={cn(style.text_color)}/>
-                    <CarouselNext className={cn(style.text_color)}/>
-                </div>
+                {showArrows &&
+                    <div className={cn(
+                        'flex gap-2',
+                        style.text_color,
+                        position == "middle" ? 'w-full justify-between ' : ""
+                    )}>
+                        <CarouselPrevious className={cn(style.text_color)}/>
+                        <CarouselNext className={cn(style.text_color)}/>
+                    </div>
+                }
+
             </div>
         </Carousel>
     );

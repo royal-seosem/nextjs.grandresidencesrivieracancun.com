@@ -38,9 +38,15 @@ const SectionAmenities = () => {
 
     ]
     return (
-        <section className="my-container">
+        <section className="my-container mb-10">
             <Title level="h2" size="md" className="mb-2">{t('otras secciones')}</Title>
-            <Gallery variant="primary" position="bottom">
+            <Gallery
+                variant="primary" position="bottom"
+                btnClassName={"lg:hidden"}
+                options={{
+                    loop: true,
+                    align: 'start',
+                }}>
                 {
                     amenities.map((item, index) => (
                         <CarouselItem key={index} className="w-[360px] basis-[360px] py-5 lg:grow px-1">

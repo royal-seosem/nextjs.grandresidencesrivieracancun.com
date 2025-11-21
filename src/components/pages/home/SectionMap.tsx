@@ -4,7 +4,6 @@ import Title from "@/components/commons/ui/title";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import {useTranslations} from "next-intl";
 import Paragraph from "@/components/commons/ui/paragraph";
-import LinkButton from "@/components/commons/ui/link";
 import GoogleMap from "@/components/commons/shared/GoogleMap";
 import {useInViewport} from "@/components/commons/hooks/useInViewport";
 import {cn} from "@/lib/utils";
@@ -25,12 +24,19 @@ const SectionMap = (
             <div className="lg:order-2">
                 <Title level={"h2"} size={"md"}> {t('ubicacion titulo')} </Title>
                 <Paragraph>{t('ubicacion descripcion')}</Paragraph>
-                <LinkButton variant={"outline"} href={"/map-resort"} className={"mb-2"}>
+                <a href={"/img/general/site-plan-grand-residences-riviera-cancun.jpg?v=2"}
+                   download={"site-plan-grand-residences-riviera-cancun.jpg"}
+                   className={cn(
+                       "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+                       "border border-primary bg-background shadow-xs hover:bg-secondary hover:border-secondary hover:shadow-secondary-md hover:text-primary",
+                       "h-9 px-4 py-2 has-[>svg]:px-3",
+                       "mb-2 uppercase"
+                   )}>
                     {tg('download-mapa')}
                     <ArrowRightIcon width={16} height={16}/>
-                </LinkButton>
+                </a>
             </div>
-            <div className="lg:order-1 grow min-h-[300px]">
+            <div className="lg:order-1 grow min-h-[300px] flex">
                 {inView && <GoogleMap/>}
             </div>
         </article>
