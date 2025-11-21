@@ -1,5 +1,12 @@
+// ... existing code ...
 'use client'
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
+
+declare module 'react' {
+    interface VideoHTMLAttributes<T> extends HTMLAttributes<T> {
+        fetchPriority?: 'high' | 'low' | 'auto';
+    }
+}
 
 type Props = {
     srcDesktop: string;   // Vídeo para ≥ 768 px
@@ -8,6 +15,8 @@ type Props = {
     posterMobile?: string;
     className?: string;
     loop?: boolean;
+    priority?: boolean;
+    fetchPriority?: "high" | "low" | "auto";
 };
 
 export default function SmartVideo({
@@ -15,20 +24,11 @@ export default function SmartVideo({
                                        srcMobile,
                                        className = "",
                                        loop = true,
+                                       posterDesktop,
+                                       priority = false,
+                                       fetchPriority = "auto"
                                    }: Props) {
     const videoRef = useRef<HTMLVideoElement>(null);
-    const [src, setSrc] = useState<string | undefined>(undefined);
-
-    useEffect(() => {
-        const mql = window.matchMedia("(max-width: 767px)");
-        const chooseSrc = () => {
-            setSrc(mql.matches ? srcMobile : srcDesktop)
-        };
-
-        chooseSrc();
-        mql.addEventListener("change", chooseSrc);
-        return () => mql.removeEventListener("change", chooseSrc);
-    }, [srcDesktop, srcMobile]);
 
     useEffect(() => {
         const vid = videoRef.current;
@@ -37,7 +37,6 @@ export default function SmartVideo({
         const io = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    if (!vid.src) vid.src = src ?? "";
                     vid.play().catch(() => {
                     });
                 } else {
@@ -49,17 +48,21 @@ export default function SmartVideo({
 
         io.observe(vid);
         return () => io.disconnect();
-    }, [src]);
+    }, []);
 
     return (
         <video
             ref={videoRef}
             className={className}
-            poster={""}
-            src={src}
+            poster={posterDesktop}
             muted
             playsInline
+            autoPlay={priority}
             loop={loop}
-        />
+            fetchPriority={fetchPriority}
+        >
+            <source src={srcMobile} media="(max-width: 767px)"/>
+            <source src={srcDesktop} media="(min-width: 768px)"/>
+        </video>
     );
 }

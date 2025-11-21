@@ -76,6 +76,11 @@ const nextConfig: NextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'dev.grandresidencesrivieracancun.com',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
                 hostname: 'www.royalresorts.com',
                 pathname: '/**',
             },

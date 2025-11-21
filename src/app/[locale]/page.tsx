@@ -31,6 +31,7 @@ export default async function Home() {
             <section className="relative lg:-mb-10">
                 <div className="aspect-[5/4] md:aspect-[1921/500]">
                     <SmartVideo
+                        fetchPriority="high"
                         className="w-full h-auto"
                         posterDesktop={cdn('/video/home-banner-new.jpg')}
                         posterMobile={cdn('/video/home-banner-m-new.jpg')}
