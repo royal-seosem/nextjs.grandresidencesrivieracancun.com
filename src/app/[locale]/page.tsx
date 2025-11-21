@@ -88,7 +88,6 @@ export default async function Home() {
                                 height="270"/>
                         </div>
 
-
                         <div>
                             <RichText id={"descripcion_inicial"} ns={"home"}/>
                         </div>

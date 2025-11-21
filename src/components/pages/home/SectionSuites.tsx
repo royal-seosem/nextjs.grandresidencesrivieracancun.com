@@ -323,9 +323,9 @@ const SectionSuites = () => {
                 <div className="flex gap-8 relative mb-16 my-container">
                     <Gallery variant="primary" position="bottom">
                         <CarouselItem>
-                            <div className="flex items-center gap-8 justify-between ">
+                            <div className="flex items-center gap-8 ">
                                 <CdnImage
-                                    className="w-1/2 grow-0"
+                                    className="w-1/2 grow-0 shrink-0"
                                     width={850} height={350}
                                     alt={amenities_alt[0]}
                                     src="/img/rateplans/all-inclusive.jpg"/>
@@ -341,9 +341,9 @@ const SectionSuites = () => {
                             </div>
                         </CarouselItem>
                         <CarouselItem>
-                            <div className="flex items-center gap-8 justify-between ">
+                            <div className="flex items-center gap-8 ">
                                 <CdnImage
-                                    className="w-1/2 grow-0"
+                                    className="w-1/2 grow-0 shrink-0"
                                     width={850} height={350}
                                     alt={amenities_alt[1]}
                                     src="/img/rateplans/transportations.jpg"/>
@@ -355,9 +355,9 @@ const SectionSuites = () => {
                             </div>
                         </CarouselItem>
                         <CarouselItem>
-                            <div className="flex items-center gap-8 justify-between ">
+                            <div className="flex items-center gap-8 ">
                                 <CdnImage
-                                    className="w-1/2 grow-0"
+                                    className="w-1/2 grow-0 shrink-0"
                                     width={850} height={350}
                                     alt={amenities_alt[2]}
                                     src="/img/rateplans/onlyroom.jpg"/>
