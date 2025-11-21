@@ -12,14 +12,33 @@ import {useBooking} from "@/components/commons/shared/booking/Context/BookingCon
 const BookingCalendar = () => {
     const {adults, childrenGuests, childrenAge, rooms, checkIn, setCheckIn, checkOut, setCheckOut} = useBooking();
     const [date, setDate] = React.useState<DateRange | undefined>(undefined)
+    const [isOpen, setIsOpen] = React.useState(false);
 
 
     const selectDate = (date: DateRange | undefined) => {
-        if (date?.from) setCheckIn(date.from);
-        if (date?.to && date?.from !== date?.to) setCheckOut(date.to);
-        setDate(
-            date
-        )
+        if (checkIn && !checkOut) {
+            if (date?.from) setCheckIn(date.from);
+
+            if (date?.to && date?.from !== date?.to) {
+                setCheckOut(date.to);
+                setIsOpen(false);
+            }
+
+            setDate(
+                date
+            )
+        }
+        if (checkIn && checkOut) {
+            const newSelected = date?.from == checkIn ? date?.to : date?.from;
+            setCheckIn(newSelected);
+            setCheckOut(undefined);
+            setDate({
+                from: newSelected,
+                to: undefined,
+            })
+        }
+        if (!checkIn && date?.from) setCheckIn(date.from);
+
     }
     const label = useMemo(() => `${checkIn ? format(checkIn, 'MMM dd, yy') : ''} - ${checkOut ? format(checkOut, 'MMM dd, yy') : ''}`, [checkIn, checkOut])
 
@@ -45,7 +64,9 @@ const BookingCalendar = () => {
     }, [checkIn, checkOut])
 
     return (
-        <DropdownMenu>
+        <DropdownMenu
+            open={isOpen}
+            onOpenChange={setIsOpen}>
             <div className="flex flex-col gap-1 bg-booking-bg px-3 py-2 border-b border-booking-border">
                 <span className="text-xs text-booking-label font-medium">Check In Date / Check Out Date</span>
                 <DropdownMenuTrigger className="text-base text-booking-text font-medium flex items-center gap-1">
