@@ -12,6 +12,7 @@ import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
 import ModalOffer from "@/components/pages/offers/ModalOffer";
+import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
 
 
 interface CardOfferDeskProps {
@@ -28,6 +29,7 @@ const CardOfferDesk = (
     const tOfferTemplate = useTranslations('offers-template2')
     const tGeneral = useTranslations('general');
     const [open, setOpen] = React.useState(false);
+    const [show, setShow] = React.useState(false);
 
     const elementRef = useViewPromotion({
         promotionData: {
@@ -119,7 +121,8 @@ const CardOfferDesk = (
                                                     PRICE: offer.rateLead?.price || ""
                                                 }}/>
                                             </span>
-                            <button className="flex items-center gap-2 text-white">
+                            <button className="flex items-center gap-2 text-white cursor-pointer"
+                                onClick={() => setShow(true)}>
                                 <MyRoyalIcon width={24} height={24}/>
                                 {tOfferTemplate('Log in and save even more')}
                             </button>
@@ -129,6 +132,7 @@ const CardOfferDesk = (
             </div>
 
             <ModalOffer offer={offer} open={open} setOpen={setOpen} creative_slot={creative_slot}/>
+            <ModalMyRoyalSignUp show={show} setShow={setShow}/>
         </article>
     );
 };

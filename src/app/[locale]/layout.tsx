@@ -31,6 +31,10 @@ export const metadata: Metadata = {
         creator: "@G_Residences",
         title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
         description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
+    },
+    icons:{
+        icon: '/favicon.ico',
+        apple: '/img/icons/grand-residences.png'
     }
 };
 const helveticaNue = localFont({
@@ -94,6 +98,8 @@ export default async function RootLayout({children, params}: {
     return (
         <html lang={locale}>
         {process.env.APP_TAG && <GoogleTagManager gtmId="GTM-TTBP86K"/>}
+
+
         <body
             className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable}  ${lato.variable} antialiased bg-[#fefdfb]"`}
         >
