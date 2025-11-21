@@ -26,7 +26,7 @@ const SitePlan = () => {
                         </DialogTitle>
                     </DialogHeader>
                     <CdnImage
-                        src={"/img/general/site-plan-grand-residences-riviera-cancun.jpg"}
+                        src={"/img/general/site-plan-grand-residences-riviera-cancun.jpg?v=2"}
                         alt={"Site plan"}
                         width="974"
                         height="648"
