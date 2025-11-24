@@ -2,18 +2,20 @@ import React from 'react';
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
+import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import RichText from "@/components/commons/shared/RitchText";
-import {useMessages, useTranslations} from "next-intl";
 import SectionKids from "@/components/pages/amenities/SectionKids";
 import SectionActivities from "@/components/pages/amenities/SectionActivities";
-import {Link} from "@/i18n/navigation";
-import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
+import {getLocale, getMessages, getTranslations} from "next-intl/server";
 
-const Page = () => {
-    const t = useTranslations('amenities');
-    const {amenities: {amenidades: {lista}}} = useMessages();
+const Page = async () => {
+    const t = await getTranslations('amenities');
+    const {amenities: {amenidades: {lista}}} = await getMessages();
+
+    const locale =  await getLocale();
+
     return (
         <main>
             <BookingHeader/>
@@ -70,13 +72,26 @@ const Page = () => {
 
 
                         <div className={"flex justify-center lg:justify-start"}>
-                            <Link
-                                className="text-primary border border-primary flex items-center gap-2 text-sm font-bold uppercase px-2 py-1 rounded-sm transition-all
-                            hover:bg-secondary hover:border-secondary"
-                                href="/menu-spa">
-                                {t('spa.explore')}
-                                <ArrowRightIcon className="shrink-0" width={16} height={16}/>
-                            </Link>
+                            {locale == 'es' &&
+                                <a
+                                    href={"/spa/esp-spa-grand-residences_riviera_cancun.pdf"}
+                                    download={"esp-spa-grand-residences_riviera_cancun.pdf"}
+                                    className="text-primary border border-primary flex items-center gap-2 text-sm font-bold uppercase px-2 py-1 rounded-sm transition-all hover:bg-secondary hover:border-secondary">
+                                    {t('spa.explore')}
+                                    <ArrowRightIcon className="shrink-0" width={16} height={16}/>
+                                </a>
+                            }
+
+                            {locale === 'es' &&
+                                <a
+                                    href={"/spa/eng-spa-grand-residences_riviera_cancun.pdf"}
+                                    download={"eng-spa-grand-residences_riviera_cancun.pdf"}
+                                    className="text-primary border border-primary flex items-center gap-2 text-sm font-bold uppercase px-2 py-1 rounded-sm transition-all hover:bg-secondary hover:border-secondary">
+                                    {t('spa.explore')}
+                                    <ArrowRightIcon className="shrink-0" width={16} height={16}/>
+                                </a>
+                            }
+
                         </div>
                     </div>
 

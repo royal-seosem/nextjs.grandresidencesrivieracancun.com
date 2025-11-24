@@ -59,15 +59,18 @@ const SectionActivities = () => {
                         }, index: number) => (
                             <TabsContent key={index} value={index.toString()}>
                                 <div className={"md:flex items-center gap-5"}>
-                                    <CdnImage
-                                        className={"mb-5 w-full object-cover order-2"}
-                                        src={`/img/activities/${item.slug}.jpg`}
-                                        alt={item.titulo}
-                                        width={650}
-                                        label={true}
-                                        height={400}/>
+                                    <div className={"w-1/2"}>
+                                        <CdnImage
+                                            className={"mb-5 w-full object-cover order-2"}
+                                            src={`/img/activities/${item.slug}.jpg`}
+                                            alt={item.titulo}
+                                            width={650}
+                                            label={true}
+                                            height={400}/>
 
-                                    <div>
+                                    </div>
+
+                                    <div className={"w-1/2"}>
                                         <h3 className="text-primary font-bold ">{item.titulo}</h3>
                                         <Paragraph>{item.descripcion}</Paragraph>
                                     </div>
