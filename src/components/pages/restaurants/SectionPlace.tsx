@@ -8,6 +8,7 @@ import {CarouselItem} from "@/components/commons/ui/carousel";
 const SectionPlace = () => {
     const t = useTranslations('restaurants');
     const {restaurants: {experiencias}} = useMessages();
+    const items = [...experiencias, ...experiencias];
     return (
         <div className={"my-container"}>
             <Title level={"h2"} size={"lg"} className={"text-center mb-5"}>
@@ -15,7 +16,7 @@ const SectionPlace = () => {
             </Title>
 
             <Gallery variant={"primary"} position={"bottom"}>
-                {experiencias.map((item: {
+                {items.map((item: {
                     title: string
                     foto: string,
                     alt: string,
@@ -33,7 +34,6 @@ const SectionPlace = () => {
                             </figcaption>
                         </figure>
                     </CarouselItem>
-
                 ))}
             </Gallery>
         </div>
