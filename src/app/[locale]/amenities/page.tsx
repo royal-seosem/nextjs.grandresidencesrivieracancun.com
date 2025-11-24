@@ -82,7 +82,7 @@ const Page = async () => {
                                 </a>
                             }
 
-                            {locale === 'es' &&
+                            {locale == 'en' &&
                                 <a
                                     href={"/spa/eng-spa-grand-residences_riviera_cancun.pdf"}
                                     download={"eng-spa-grand-residences_riviera_cancun.pdf"}
