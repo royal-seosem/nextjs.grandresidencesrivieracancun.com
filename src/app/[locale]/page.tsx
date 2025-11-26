@@ -8,15 +8,15 @@ import Title from "@/components/commons/ui/title";
 import {getHomeOffer} from "@/use_case/offers/get_home_offer";
 import RichText from "@/components/commons/shared/RitchText";
 import {getReviews} from "@/use_case/reviews/get_reviews";
-import BookingHome from "@/components/pages/home/BookingHome";
+
+
+import {BookingHome, SectionInstagram, SectionMap} from "@/components/pages/home/HomeClientComponents";
 
 const SectionSuites = dynamic(() => import("@/components/pages/home/SectionSuites"));
 const SectionOffer = dynamic(() => import("@/components/pages/home/SectionOffer"));
 const SectionOffers = dynamic(() => import("@/components/pages/home/SectionOffers"));
 const SectionAmenities = dynamic(() => import("@/components/pages/home/SectionAmenities"));
-const SectionMap = dynamic(() => import("@/components/pages/home/SectionMap"));
 const SectionTripadvisor = dynamic(() => import("@/components/pages/home/SectionTripadvisor"));
-const SectionInstagram = dynamic(() => import("@/components/pages/home/SectionInstagram"));
 
 
 export default async function Home() {

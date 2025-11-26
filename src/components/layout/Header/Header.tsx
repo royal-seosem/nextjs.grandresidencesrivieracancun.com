@@ -3,15 +3,15 @@ import React, {useEffect, useRef} from "react";
 import {Link, usePathname} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 import Image from "next/image";
-import {Drawer, DrawerContent, DrawerTrigger} from "@/components/commons/ui/drawer";
-import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
-import MyRoyal from "@/components/layout/Header/MyRoyal";
-import LanguageSwitcher from "@/components/layout/Header/LanguageSwitcher";
-import ContactOptions from "@/components/layout/Header/ContactOptions";
-import MenuMobile from "@/components/layout/Header/MenuMobile";
-import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
-import OwnersArea from "@/components/layout/OwnersArea";
 import {cn} from "@/lib/utils";
+import {
+    ContactOptions,
+    LanguageDesk,
+    ManageYourReservation,
+    MenuMobile,
+    MyRoyal,
+    OwnersArea
+} from "@/components/layout/Header/HeaderClientComponent";
 
 const resortPaths = [
     '/suites',
@@ -41,7 +41,8 @@ export default function Header() {
     }, []);
 
 
-    return <header className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
+    return <header
+        className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
         <nav className="flex justify-end items-center gap-5 h-8 px-8" role="navigation">
             <a href="https://wa.me/529981000692" target="_blank"
                className="text-white hidden md:flex items-center gap-1 text-sm"
@@ -117,21 +118,9 @@ export default function Header() {
                     <div className='flex'>
                         <ContactOptions/>
                     </div>
-                    <div className={"hidden lg:block"}>
-                        <Drawer direction="right">
-                            <DrawerTrigger className="flex items-center gap-1" asChild>
-                                <button>
-                                    {t('english')}
-                                    <IconArrowDown/>
-                                </button>
-                            </DrawerTrigger>
-                            <DrawerContent>
-                                <LanguageSwitcher/>
-                            </DrawerContent>
-                        </Drawer>
-                    </div>
+                    <LanguageDesk/>
                     <div className="flex">
-                      <MenuMobile/>
+                        <MenuMobile/>
                     </div>
                 </div>
             </div>

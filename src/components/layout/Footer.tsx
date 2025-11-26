@@ -1,19 +1,19 @@
 'use client'
 import React from 'react';
+
 import LogoGr from '@/components/commons/icons/LogoGrHorizontal.svg';
-import LogoRoyalResorts from '@/components/commons/icons/royalresorts.svg?url';
-import LogoSignatureClub from '@/components/commons/icons/signature-club.svg?url';
-import LogoRoyalReservations from '@/components/commons/icons/royal-reservations.svg?url';
+
 import IconFacebook from '@/components/commons/icons/facebook.svg';
 import IconInstagram from '@/components/commons/icons/instagram.svg';
 import IconTwitter from '@/components/commons/icons/twitter.svg';
-import Autoplay from "embla-carousel-autoplay";
+
 import {Link} from "@/i18n/navigation";
-import {Carousel, CarouselContent, CarouselItem} from "@/components/commons/ui/carousel";
-import Image from "next/image";
 import {useTranslations} from "next-intl";
-import BookingDrawer from "@/components/commons/shared/booking/BookingDrawer";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+import {BrandsCarousel} from "@/components/layout/Header/HeaderClientComponent";
+import {BookingDrawer} from "@/components/commons/shared/booking/BookingClientComponent";
+
+
 
 const Footer = () => {
     const t = useTranslations('menu');
@@ -72,63 +72,7 @@ const Footer = () => {
                     before:absolute before:w-full before:h-[1px] before:bg-secondary before:opacity-[.3] before:left-0 before:top-0
                     after:absolute after:w-full after:h-[1px] after:bg-secondary after:opacity-[.3] after:-bottom-1 after:left-0">
                     <p className="absolute -top-2.5 bg-primary pr-3 text-white text-sm ">{t("we are part of")}</p>
-                    <Carousel
-                        opts={{align: "start", loop: true, containScroll: "trimSnaps"}}
-                        plugins={[Autoplay({delay: 2000})]}
-                    >
-                        <CarouselContent className="items-center">
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoRoyalResorts} alt={"Logo Royal Resorts"} width={87} height={44}/>
-                                    <figcaption>
-                                        <span className="sr-only">Royal Resorts</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoSignatureClub} alt={"Logo Signature Club"} width="105" height="26"/>
-                                    <figcaption>
-                                        <span className="sr-only">Signature Club</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoRoyalReservations} alt={"Logo Royal Reservations"} width="101"
-                                           height="45"/>
-                                    <figcaption>
-                                        <span className="sr-only">Royal Reservations</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoRoyalResorts} alt={"Logo Royal Resorts"} width={87} height={44}/>
-                                    <figcaption>
-                                        <span className="sr-only">Royal Resorts</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoSignatureClub} alt={"Logo Signature Club"} width="105" height="26"/>
-                                    <figcaption>
-                                        <span className="sr-only">Signature Club</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3 flex justify-center">
-                                <figure>
-                                    <Image src={LogoRoyalReservations} alt={"Logo Royal Reservations"} width="101"
-                                           height="45"/>
-                                    <figcaption>
-                                        <span className="sr-only">Royal Reservations</span>
-                                    </figcaption>
-                                </figure>
-                            </CarouselItem>
-                        </CarouselContent>
-                    </Carousel>
+                    <BrandsCarousel/>
                 </div>
                 <div className="flex justify-between items-center py-2">
                     <span className="text-white text-xs ">

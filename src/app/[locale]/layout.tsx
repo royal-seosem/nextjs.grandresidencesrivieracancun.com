@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import type {Metadata} from "next";
 import {GoogleTagManager} from '@next/third-parties/google'
 import "../globals.css";
@@ -11,10 +10,8 @@ import {getCountry} from "@/lib/geo";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-
-const Footer = dynamic(() => import("@/components/layout/Footer"));
-const ChatWeb = dynamic(() => import("@/components/layout/ChatWeb"));
-const ModalMyRoyal = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyal"));
+import {ChatWeb, ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
+import Footer from "@/components/layout/Footer";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
