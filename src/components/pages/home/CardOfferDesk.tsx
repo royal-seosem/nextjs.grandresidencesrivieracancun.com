@@ -1,4 +1,5 @@
 'use client'
+import dynamic from "next/dynamic";
 import React from 'react';
 import MyRoyalIcon from '@/components/commons/icons/my-royal.svg';
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
@@ -11,8 +12,9 @@ import {useWebsite} from "@/context/WebSiteProvider";
 import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
-import ModalOffer from "@/components/pages/offers/ModalOffer";
-import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
+
+const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"));
+const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
 
 
 interface CardOfferDeskProps {
@@ -122,7 +124,7 @@ const CardOfferDesk = (
                                                 }}/>
                                             </span>
                             <button className="flex items-center gap-2 text-white cursor-pointer"
-                                onClick={() => setShow(true)}>
+                                    onClick={() => setShow(true)}>
                                 <MyRoyalIcon width={24} height={24}/>
                                 {tOfferTemplate('Log in and save even more')}
                             </button>
@@ -131,8 +133,8 @@ const CardOfferDesk = (
                 </div>
             </div>
 
-            <ModalOffer offer={offer} open={open} setOpen={setOpen} creative_slot={creative_slot}/>
-            <ModalMyRoyalSignUp show={show} setShow={setShow}/>
+            {open && <ModalOffer offer={offer} open={open} setOpen={setOpen} creative_slot={creative_slot}/>}
+            {show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}
         </article>
     );
 };

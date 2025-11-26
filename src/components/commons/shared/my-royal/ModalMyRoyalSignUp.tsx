@@ -1,5 +1,5 @@
+'use client'
 import React from 'react';
-
 import Modal from "@/components/commons/ui/modal/modal";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import BtnGoogle from "@/components/pages/Gms/signup/BtnGoogle";

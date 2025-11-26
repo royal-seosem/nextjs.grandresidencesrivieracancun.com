@@ -1,4 +1,5 @@
 import React from 'react';
+import {format} from "date-fns";
 import {useMessages, useTranslations} from "next-intl";
 import TrophyIcon from "@/components/commons/icons/trophy.svg";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
@@ -8,7 +9,6 @@ import Paragraph from "@/components/commons/ui/paragraph";
 import {Review} from "@/use_case/reviews/types";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import {format} from "date-fns";
 
 const SectionTripadvisor = (
     {reviews}: { reviews: Review[] }

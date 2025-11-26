@@ -29,6 +29,25 @@ export default function SmartVideo({
                                        fetchPriority = "auto"
                                    }: Props) {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const isVisibleRef = useRef(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        const handleMediaChange = () => {
+            if (videoRef.current) {
+                videoRef.current.load();
+                if (isVisibleRef.current) {
+                    videoRef.current.play().catch(() => {
+                    });
+                }
+            }
+        };
+
+        mediaQuery.addEventListener('change', handleMediaChange);
+
+        return () => mediaQuery.removeEventListener('change', handleMediaChange);
+    }, []);
 
     useEffect(() => {
         const vid = videoRef.current;
@@ -36,6 +55,7 @@ export default function SmartVideo({
 
         const io = new IntersectionObserver(
             ([entry]) => {
+                isVisibleRef.current = entry.isIntersecting;
                 if (entry.isIntersecting) {
                     vid.play().catch(() => {
                     });
@@ -49,6 +69,7 @@ export default function SmartVideo({
         io.observe(vid);
         return () => io.disconnect();
     }, []);
+
 
     return (
         <video

@@ -1,3 +1,4 @@
+'use client'
 import React, {useId} from 'react';
 import {Command, CommandEmpty, CommandInput, CommandItem, CommandList} from "@/components/commons/ui/command";
 import {DropdownMenu, DropdownMenuContent, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
