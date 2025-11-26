@@ -1,20 +1,22 @@
+import dynamic from 'next/dynamic';
+import {getMessages, getTranslations} from "next-intl/server";
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
-import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import Title from "@/components/commons/ui/title";
-import SectionSuites from "@/components/pages/home/SectionSuites";
 import {getHomeOffer} from "@/use_case/offers/get_home_offer";
-import SectionOffer from "@/components/pages/home/SectionOffer";
-import SectionAmenities from "@/components/pages/home/SectionAmenities";
 import RichText from "@/components/commons/shared/RitchText";
-import SectionMap from "@/components/pages/home/SectionMap";
-import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
 import {getReviews} from "@/use_case/reviews/get_reviews";
-import SectionInstagram from "@/components/pages/home/SectionInstagram";
-import SectionOffers from "@/components/pages/home/SectionOffers";
 import BookingHome from "@/components/pages/home/BookingHome";
+
+const SectionSuites = dynamic(() => import("@/components/pages/home/SectionSuites"));
+const SectionOffer = dynamic(() => import("@/components/pages/home/SectionOffer"));
+const SectionOffers = dynamic(() => import("@/components/pages/home/SectionOffers"));
+const SectionAmenities = dynamic(() => import("@/components/pages/home/SectionAmenities"));
+const SectionMap = dynamic(() => import("@/components/pages/home/SectionMap"));
+const SectionTripadvisor = dynamic(() => import("@/components/pages/home/SectionTripadvisor"));
+const SectionInstagram = dynamic(() => import("@/components/pages/home/SectionInstagram"));
 
 
 export default async function Home() {

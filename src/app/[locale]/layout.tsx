@@ -1,18 +1,20 @@
+import dynamic from 'next/dynamic';
 import type {Metadata} from "next";
 import {GoogleTagManager} from '@next/third-parties/google'
 import "../globals.css";
 import {NextIntlClientProvider} from "next-intl";
 import Header from "@/components/layout/Header/Header";
 import localFont from "next/font/local";
-import Footer from "@/components/layout/Footer";
 import WebSiteProvider from "@/context/WebSiteProvider";
 import {getSession} from "@/lib/session";
 import {getCountry} from "@/lib/geo";
-import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
+import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-import ChatWeb from "@/components/layout/ChatWeb";
-import ModalMyRoyal from "@/components/commons/shared/my-royal/ModalMyRoyal";
+
+const Footer = dynamic(() => import("@/components/layout/Footer"));
+const ChatWeb = dynamic(() => import("@/components/layout/ChatWeb"));
+const ModalMyRoyal = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyal"));
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
         title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
         description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
     },
-    icons:{
+    icons: {
         icon: '/favicon.ico',
         apple: '/img/icons/grand-residences.png'
     }

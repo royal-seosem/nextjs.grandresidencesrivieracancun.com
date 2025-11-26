@@ -5,8 +5,6 @@ import Image from "next/image";
 import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import BtnGoogle from "@/components/pages/Gms/Login/BtnGoogle";
-
-import IconInfo from "@/components/commons/icons/info.svg";
 import EmailForm from "@/components/pages/Gms/Login/EmailForm";
 import BtnFacebook from "@/components/pages/Gms/Login/BtnFacebook";
 import ModalProgram from "@/components/pages/Gms/Login/ModalProgram";
@@ -31,7 +29,8 @@ export const LoginPage = async () => {
 
                 <section className="my-container max-w-[420px] m-auto pt-5">
                     <p className="md:hidden text-base text-center mb-4">{t('description')}</p>
-                    <ModalProgram className="md:hidden flex items-center justify-center gap-3 underline underline-offset-4 mb-6"/>
+                    <ModalProgram
+                        className="md:hidden flex items-center justify-center gap-3 underline underline-offset-4 mb-6"/>
                     <div className="flex gap-5 mb-6">
                         <Link href={"/gms/login"}
                               className="uppercase bg-primary border-2 text-secondary px-1.5 py-2 text-sm font-bold grow flex justify-center items-center rounded-xs">
@@ -78,7 +77,8 @@ export const LoginPage = async () => {
                            height={80}/>
                     <p className="text-base text-pretty mb-4">{t('description')}</p>
 
-                    <ModalProgram className="text-secondary flex items-center justify-center gap-3 underline underline-offset-4 mb-6"/>
+                    <ModalProgram
+                        className="text-secondary flex items-center justify-center gap-3 underline underline-offset-4 mb-6"/>
 
                     <p className="trext-base font-bold mb-6">
                         {t("description_subtitle")}
