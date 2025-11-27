@@ -1,4 +1,5 @@
 import {getMessages, getTranslations} from "next-intl/server";
+import dynamic from "next/dynamic";
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
@@ -7,15 +8,14 @@ import Title from "@/components/commons/ui/title";
 import {getHomeOffer} from "@/use_case/offers/get_home_offer";
 import RichText from "@/components/commons/shared/RitchText";
 import {getReviews} from "@/use_case/reviews/get_reviews";
-
-
 import {SectionInstagram, SectionMap} from "@/components/pages/home/HomeClientComponents";
-import BookingHome from "@/components/pages/home/BookingHome";
-import SectionSuites from "@/components/pages/home/SectionSuites";
-import SectionOffer from "@/components/pages/home/SectionOffer";
-import SectionOffers from "@/components/pages/home/SectionOffers";
-import SectionAmenities from "@/components/pages/home/SectionAmenities";
-import SectionTripadvisor from "@/components/pages/home/SectionTripadvisor";
+
+const BookingHome = dynamic(()=> import("@/components/pages/home/BookingHome"));
+const SectionSuites = dynamic(()=> import("@/components/pages/home/SectionSuites"));
+const SectionOffer = dynamic(()=> import("@/components/pages/home/SectionOffer"));
+const SectionOffers = dynamic(()=> import("@/components/pages/home/SectionOffers"));
+const SectionAmenities = dynamic(()=> import("@/components/pages/home/SectionAmenities"));
+const SectionTripadvisor = dynamic(()=> import("@/components/pages/home/SectionTripadvisor"));
 
 
 
