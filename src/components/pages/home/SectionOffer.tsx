@@ -5,7 +5,7 @@ import CardImg from "@/components/pages/home/Cardimg";
 import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 
-const ModalOffer = dynamic(() => import("@/components/pages/home/ModalOffer"));
+const ModalOffer = dynamic(() => import("@/components/pages/home/ModalOffer"),{ssr: false});
 
 
 const SectionOffer = ({offers, className}: { offers: Offer[], className?: string }) => {

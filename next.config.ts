@@ -105,6 +105,10 @@ const nextConfig: NextConfig = {
     },
     experimental: {
         viewTransition: false,
+        optimizePackageImports: [
+            'embla-carousel-react',
+            'embla-carousel-autoplay',
+        ],
     },
 };
 const withNextIntl = createNextIntlPlugin();

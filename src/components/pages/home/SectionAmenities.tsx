@@ -1,11 +1,12 @@
 import React from 'react';
-import Gallery from "@/components/commons/ui/gallery/gallery";
+import dynamic from "next/dynamic";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CardAmenity, {CardAmenityProps} from "@/components/commons/shared/CardAmenity";
 import {useTranslations} from "next-intl";
 import Title from "@/components/commons/ui/title";
 import {Link} from "@/i18n/navigation";
 
+const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 type LinkHref = React.ComponentProps<typeof Link>['href']; // ← derivar tipo
 
 const SectionAmenities = () => {

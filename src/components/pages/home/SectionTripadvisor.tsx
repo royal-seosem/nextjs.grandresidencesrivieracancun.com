@@ -7,8 +7,10 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import RichText from "@/components/commons/shared/RitchText";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {Review} from "@/use_case/reviews/types";
-import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
+import dynamic from "next/dynamic";
+
+const Gallery = dynamic(()=> import("@/components/commons/ui/gallery/gallery"));
 
 const SectionTripadvisor = (
     {reviews}: { reviews: Review[] }

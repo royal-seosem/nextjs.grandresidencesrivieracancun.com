@@ -13,8 +13,8 @@ import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
 
-const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"));
-const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
+const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"),{ ssr: false});
+const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"),{ ssr: false});
 
 
 interface CardOfferDeskProps {
