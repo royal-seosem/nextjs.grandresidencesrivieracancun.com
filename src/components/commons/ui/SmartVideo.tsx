@@ -25,6 +25,7 @@ export default function SmartVideo({
                                        className = "",
                                        loop = true,
                                        posterDesktop,
+                                       posterMobile,
                                        priority = false,
                                        fetchPriority = "auto"
                                    }: Props) {
@@ -72,18 +73,26 @@ export default function SmartVideo({
 
 
     return (
-        <video
-            ref={videoRef}
-            className={className}
-            poster={posterDesktop}
-            muted
-            playsInline
-            autoPlay={priority}
-            loop={loop}
-            fetchPriority={fetchPriority}
-        >
-            <source src={srcMobile} media="(max-width: 767px)"/>
-            <source src={srcDesktop} media="(min-width: 768px)"/>
-        </video>
+        <>
+            <link
+                rel="preload"
+                as="image"
+                href={posterMobile}
+                fetchPriority="high"
+            />
+            <video
+                ref={videoRef}
+                className={className}
+                poster={posterMobile}
+                muted
+                playsInline
+                autoPlay={priority}
+                loop={loop}
+                fetchPriority={fetchPriority}
+            >
+                <source src={srcMobile} media="(max-width: 767px)"/>
+                <source src={srcDesktop} media="(min-width: 768px)"/>
+            </video>
+        </>
     );
 }
