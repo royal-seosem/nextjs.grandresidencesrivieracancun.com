@@ -1,33 +1,11 @@
 import type {NextConfig} from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
-import withBundleAnalyzer from '@next/bundle-analyzer';
-
-const bundleAnalyzer = withBundleAnalyzer({
-    enabled: process.env.ANALYZE === 'true',
-});
 
 const nextConfig: NextConfig = {
     output: 'standalone',
     /* config options here */
-    webpack(config, { isServer, dev }) {
+    webpack(config) {
 
-        if (!dev && !isServer) {
-            config.resolve.alias = {
-                ...config.resolve.alias,
-                'core-js': false,
-                'core-js-pure': false,
-
-                // Bloquea el runtime de generadores (async/await modernos no lo necesitan)
-                'regenerator-runtime': false,
-
-                // Bloquea el polyfill de fetch (Chrome 95+ y Safari 15+ ya tienen fetch nativo)
-                'whatwg-fetch': false,
-                'next/dist/compiled/whatwg-fetch': false,
-
-                // Bloquea otros polyfills internos de Next.js si aparecen
-                'object-assign': false,
-            };
-        }
 
         // Grab the existing rule that handles SVG imports
         const fileLoaderRule = config.module.rules.find((rule: { test: { test: (arg0: string) => unknown; }; }) =>
@@ -127,4 +105,4 @@ const nextConfig: NextConfig = {
 };
 const withNextIntl = createNextIntlPlugin();
 
-export default withNextIntl(bundleAnalyzer(nextConfig));
+export default withNextIntl(nextConfig);
