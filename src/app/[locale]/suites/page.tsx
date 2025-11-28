@@ -1,19 +1,19 @@
 import React from 'react';
+import {getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import RichText from "@/components/commons/shared/RitchText";
+import {getRooms} from "@/use_case/rooms/get_rooms";
 import Title from "@/components/commons/ui/title";
+import SectionRooms from "@/components/pages/suites/SectionRooms";
+import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
+
 import Tour360 from "@/components/pages/suites/tour360";
 import WebCam from "@/components/pages/suites/WebCam";
 import SitePlan from "@/components/pages/suites/SitePlan";
-import {getRooms} from "@/use_case/rooms/get_rooms";
-import {getTranslations} from "next-intl/server";
-import SectionRooms from "@/components/pages/suites/SectionRooms";
-import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 
 //TODO: Page Suites
 const Page = async () => {
     const t = await getTranslations('suites');
-
     const suites = await getRooms();
 
     return (

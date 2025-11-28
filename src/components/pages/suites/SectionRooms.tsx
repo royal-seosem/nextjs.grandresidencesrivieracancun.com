@@ -1,11 +1,11 @@
 'use client'
 import React, {useEffect} from 'react';
+import {cn} from "@/lib/utils";
 import {useTranslations} from "next-intl";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
-import PeopleIconSvg from "@/components/commons/icons/people.svg";
 import CardRoom from "@/components/pages/suites/CardRoom";
+import PeopleIconSvg from "@/components/commons/icons/people.svg";
 import {Room} from "@/use_case/rooms/types";
-import {cn} from "@/lib/utils";
 
 const SectionRooms = (
     {suites}: { suites: Room[] }

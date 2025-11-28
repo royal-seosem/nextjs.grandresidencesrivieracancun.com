@@ -2,12 +2,14 @@
 import React from 'react';
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import {useTranslations} from "next-intl";
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
-import Paragraph from "@/components/commons/ui/paragraph";
+import dynamic from "next/dynamic";
+
+const ModalTour360 = dynamic(() => import("@/components/pages/suites/ModalTour360"), { ssr: false});
 
 const Tour360 = () => {
     const [open, setOpen] = React.useState(false);
     const t = useTranslations('suites');
+
     return (
         <div>
             <button
@@ -17,31 +19,8 @@ const Tour360 = () => {
                 <span className="hidden lg:block">{t('btn_360')}</span>
                 <span className="leading-4 text-center lg:hidden">360° Tour</span>
             </button>
-            <Dialog open={open} onOpenChange={() => setOpen(false)}>
-                <DialogContent
-                    showCloseButton={false}
-                    className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
-                    <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold">
-                            <span>{t('btn_360')}</span>
-                        </DialogTitle>
-                    </DialogHeader>
-                    <div>
-                        <Paragraph>{t('tour_360_description')}</Paragraph>
-                        <iframe
-                            src={"https://tour-gr.royalreservations.com/#39128456p&105.53h&83.74t"}
-                            width="100%"
-                            height="450"
-                            allowFullScreen
-                            allow="autoplay; fullscreen; xr-spatial-tracking"
-                            className="rounded-md"
-                        />
-                    </div>
-                </DialogContent>
-            </Dialog>
+            {open && <ModalTour360 open={open} setOpen={setOpen}/>}
         </div>
-
-
     );
 };
 

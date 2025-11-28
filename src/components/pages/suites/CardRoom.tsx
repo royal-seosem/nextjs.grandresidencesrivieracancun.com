@@ -1,10 +1,10 @@
 'use client'
 import React from 'react';
 import {useTranslations} from "next-intl";
+import {Room} from "@/use_case/rooms/types";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import {Room} from "@/use_case/rooms/types";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import CardFloorPlan from "@/components/pages/suites/CardFloorPlan";
 import Card360Tour from "@/components/commons/shared/Card360Tour";

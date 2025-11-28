@@ -1,9 +1,10 @@
 'use client'
 import React from 'react';
-import AreaIcon from "@/components/commons/icons/area.svg";
+import dynamic from "next/dynamic";
 import {useTranslations} from "next-intl";
-import CdnImage from "@/components/commons/ui/CdnImage";
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
+import AreaIcon from "@/components/commons/icons/area.svg";
+
+const ModalFloorPlan = dynamic(() => import('@/components/pages/suites/ModalFloorPlan'), {ssr: false});
 
 interface CardFloorPlanProps {
     title: string;
@@ -23,24 +24,7 @@ const CardFloorPlan = (
                 {t('floor plan')}
             </button>
 
-            <Dialog open={open} onOpenChange={() => setOpen(false)}>
-                <DialogContent showCloseButton={false}
-                    className="w-[1024px]
-                    max-w-[80%] lg:max-w-[80%]">
-                    <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold">
-                            {title}
-                        </DialogTitle>
-                    </DialogHeader>
-                    <CdnImage
-                        src={src}
-                        alt={title}
-                        width="974"
-                        height="648"
-                        className="w-full h-auto"
-                    />
-                </DialogContent>
-            </Dialog>
+            <ModalFloorPlan open={open} setOpen={setOpen} title={title} src={src}/>
         </div>
     );
 };

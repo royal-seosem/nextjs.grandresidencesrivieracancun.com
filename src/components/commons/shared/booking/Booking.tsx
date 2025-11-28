@@ -1,12 +1,12 @@
 'use client'
 import React from 'react';
+import {cn} from "@/lib/utils";
 import BookingType from "@/components/commons/shared/booking/BookingType";
 import BookingGuest from "@/components/commons/shared/booking/BookingGuest";
 import BookingPromo from "@/components/commons/shared/booking/BookingPromo";
 import BookingBook from "@/components/commons/shared/booking/BookingBook";
-import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 import BookingForm from "@/components/commons/shared/booking/BookingForm";
-import {cn} from "@/lib/utils";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 import {BookingAirport, BookingCalendar} from "@/components/commons/shared/booking/BookingClientComponent";
 
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import {useMessages, useTranslations} from "next-intl";
 import {Collapsible, CollapsibleContent, CollapsibleTrigger} from "@/components/commons/ui/collapsible";
 import {ChevronDown} from "lucide-react";
+import {getMessages, getTranslations} from "next-intl/server";
 
-const Page = () => {
-    const t = useTranslations('faqs');
-    const m = useMessages();
+const Page = async () => {
+    const t = await getTranslations('faqs');
+    const m = await getMessages();
     const faqsSections = m['faqs']['sections'];
     return (
         <main className="bg-[#f0e9e2] py-1">
