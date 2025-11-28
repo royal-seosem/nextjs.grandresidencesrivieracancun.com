@@ -22,9 +22,9 @@ const resortPaths = [
 
 export default function Header() {
     const t = useTranslations('header');
-    const tGeneral = useTranslations('general');
     const tmenu = useTranslations('menu');
     const pathname = usePathname();
+
     const [showResortMenu, setShowResortMenu] = React.useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
 
@@ -85,7 +85,7 @@ export default function Header() {
                         "hidden lg:block text-base p-1.5",
                         pathname === "/all-inclusive" ? "text-secondary" : ""
                     )} href="/all-inclusive">
-                        {tGeneral('menu.all inclusive')}
+                        {tmenu('all inclusive')}
                     </Link>
 
                     <Link href="/offers" className={cn(

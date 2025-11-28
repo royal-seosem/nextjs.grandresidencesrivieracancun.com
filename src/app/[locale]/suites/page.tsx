@@ -1,4 +1,5 @@
 import React from 'react';
+import dynamic from "next/dynamic";
 import {getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import RichText from "@/components/commons/shared/RitchText";
@@ -7,9 +8,9 @@ import Title from "@/components/commons/ui/title";
 import SectionRooms from "@/components/pages/suites/SectionRooms";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 
-import Tour360 from "@/components/pages/suites/tour360";
-import WebCam from "@/components/pages/suites/WebCam";
-import SitePlan from "@/components/pages/suites/SitePlan";
+const Tour360 = dynamic(() => import("@/components/pages/suites/tour360"));
+const WebCam = dynamic(() => import("@/components/pages/suites/WebCam"));
+const SitePlan = dynamic(() => import("@/components/pages/suites/SitePlan"));
 
 //TODO: Page Suites
 const Page = async () => {

@@ -10,18 +10,18 @@ import RichText from "@/components/commons/shared/RitchText";
 import {getReviews} from "@/use_case/reviews/get_reviews";
 import {SectionInstagram, SectionMap} from "@/components/pages/home/HomeClientComponents";
 
-const BookingHome = dynamic(()=> import("@/components/pages/home/BookingHome"));
-const SectionSuites = dynamic(()=> import("@/components/pages/home/SectionSuites"));
-const SectionOffer = dynamic(()=> import("@/components/pages/home/SectionOffer"));
-const SectionOffers = dynamic(()=> import("@/components/pages/home/SectionOffers"));
-const SectionAmenities = dynamic(()=> import("@/components/pages/home/SectionAmenities"));
-const SectionTripadvisor = dynamic(()=> import("@/components/pages/home/SectionTripadvisor"));
-
+const BookingHome = dynamic(() => import("@/components/pages/home/BookingHome"));
+const SectionSuites = dynamic(() => import("@/components/pages/home/SectionSuites"));
+const SectionOffer = dynamic(() => import("@/components/pages/home/SectionOffer"));
+const SectionOffers = dynamic(() => import("@/components/pages/home/SectionOffers"));
+const SectionAmenities = dynamic(() => import("@/components/pages/home/SectionAmenities"));
+const SectionTripadvisor = dynamic(() => import("@/components/pages/home/SectionTripadvisor"));
 
 
 export default async function Home() {
-    const {home: {slider}} = await getMessages();
+    const {home, weddings} = await getMessages();
     const t = await getTranslations('general');
+    const tHome = await getTranslations('home');
 
     const [offers, reviews] = await Promise.all([
         getHomeOffer(),
@@ -48,7 +48,7 @@ export default async function Home() {
                         <div className="bg-[#ffffffe6] p-5 shadow-lg">
                             <CarouselContent className="items-stretch ">
                                 {
-                                    slider.map((item: { title: string, description: string }, index: number) => (
+                                    home.slider.map((item: { title: string, description: string }, index: number) => (
                                         <CarouselItem key={index}>
                                             <article className=" h-full  gap-4 flex flex-col justify-between">
                                             <span
@@ -96,7 +96,25 @@ export default async function Home() {
                     </div>
                 </section>
             </div>
-            <SectionSuites/>
+            <SectionSuites
+                text={{
+                    goToSuites: t('go to suites'),
+                    habitacionesTitulo: tHome('habitaciones titulo'),
+                    habitacionesDescripcion: tHome('habitaciones descripcion'),
+                    planesTituloGeneral: tHome('planes titulo general'),
+                    planesSubtitulo: tHome('planes subtitulo'),
+                    planAi: tHome('plan ai'),
+                    planAiDescripcion: tHome('plan ai descripcion'),
+                    planAiBtn: tHome('plan ai btn'),
+                    planBb: tHome('plan bb'),
+                    planBbDescripcion: tHome('plan bb descripcion'),
+                    planEp: tHome('plan ep'),
+                    planEpDescripcion: home['plan ep descripcion'],
+                }}
+                group_event_alt={weddings['group_event_alt']}
+                habitaciones={home['habitaciones']}
+                amenities_alt={home['amenities_alt']}
+            />
             <SectionOffer offers={offers} className={"mb-10 lg:hidden"}/>
             <SectionOffers offers={offers}/>
             <SectionAmenities/>

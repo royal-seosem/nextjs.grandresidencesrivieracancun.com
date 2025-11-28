@@ -1,6 +1,6 @@
 'use client'
 import dynamic from "next/dynamic";
-import {useState} from "react";
+import React, {useState} from "react";
 import {useMessages, useTranslations} from "next-intl";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CardImg from "@/components/pages/home/Cardimg";
@@ -17,15 +17,30 @@ const ModalWedding = dynamic(() => import("@/components/pages/home/ModalWedding"
 
 const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 
+interface SectionSuitesProps {
+    text: {
+        goToSuites: string;
+        habitacionesTitulo: string;
+        habitacionesDescripcion: string;
+        planesTituloGeneral: string;
+        planesSubtitulo: string;
+        planAi: string;
+        planAiDescripcion: string;
+        planAiBtn: string;
+        planBb: string;
+        planBbDescripcion: string;
+        planEp: string;
+        planEpDescripcion: string;
+    },
+    group_event_alt: string[];
+    habitaciones: string[];
+    amenities_alt: string[];
+}
 
-const SectionSuites = () => {
-    const t = useTranslations('general');
+const SectionSuites = (
+    {text, habitaciones, amenities_alt, group_event_alt}: SectionSuitesProps
+) => {
     const tmenu = useTranslations('menu');
-    const thome = useTranslations('home');
-    const {
-        weddings: {group_event_alt},
-        home: {habitaciones, amenities_alt}
-    } = useMessages();
 
     const [suites, setSuites] = useState(false);
     const [allInclusive, setAllInclusive] = useState(false);
@@ -70,12 +85,12 @@ const SectionSuites = () => {
                             className="text-5xl font-normal font-primary text-primary mb-6"
                             level="h3"
                             size="lg">
-                            {thome('habitaciones titulo')}
+                            {text.habitacionesTitulo}
                         </Title>
-                        <Paragraph>{thome('habitaciones descripcion')}</Paragraph>
+                        <Paragraph>{text.habitacionesDescripcion}</Paragraph>
                         <LinkButton href="/suites"
                                     className="flex items-center justify-center gap-2 border border-primary py-2 px-1.5 text-sm font-bold text-primary rounded-xs uppercase">
-                            {t('go to suites')}
+                            {text.goToSuites}
                             <ArrowRightIcon className="shrink-0" width={16} height={16}/>
                         </LinkButton>
                     </div>
@@ -160,10 +175,10 @@ const SectionSuites = () => {
 
                 <div>
                     <Title level={"h2"} size={"md"} className="text-center">
-                        {thome('planes titulo general')}
+                        {text.planesTituloGeneral}
                     </Title>
                     <Paragraph className="text-center mb-16">
-                        {thome('planes subtitulo')}
+                        {text.planesSubtitulo}
                     </Paragraph>
                 </div>
                 <div className="flex gap-8 relative mb-16 my-container">
@@ -176,11 +191,11 @@ const SectionSuites = () => {
                                     alt={amenities_alt[0]}
                                     src="/img/rateplans/all-inclusive.jpg"/>
                                 <div className="py-7 px-5">
-                                    <Title level="h3" size="md">{thome('plan ai')}</Title>
-                                    <Paragraph>{thome('plan ai descripcion')}</Paragraph>
+                                    <Title level="h3" size="md">{text.planAi}</Title>
+                                    <Paragraph>{text.planAiDescripcion}</Paragraph>
                                     <div>
                                         <LinkButton href="/all-inclusive">
-                                            {thome('plan ai btn')}
+                                            {text.planAiBtn}
                                         </LinkButton>
                                     </div>
                                 </div>
@@ -195,8 +210,8 @@ const SectionSuites = () => {
                                     src="/img/rateplans/transportations.jpg"/>
 
                                 <div className="py-7 px-5">
-                                    <Title level="h3" size="md">{thome('plan bb')}</Title>
-                                    <Paragraph>{thome('plan bb descripcion')}</Paragraph>
+                                    <Title level="h3" size="md">{text.planBb}</Title>
+                                    <Paragraph>{text.planBbDescripcion}</Paragraph>
                                 </div>
                             </div>
                         </CarouselItem>
@@ -209,8 +224,8 @@ const SectionSuites = () => {
                                     src="/img/rateplans/onlyroom.jpg"/>
 
                                 <div className="py-7 px-5">
-                                    <Title level="h3" size="md">{thome('plan ep')}</Title>
-                                    <RitchTextClient id={'plan ep descripcion'} ns={'home'}/>
+                                    <Title level="h3" size="md">{text.planEp}</Title>
+                                    <div dangerouslySetInnerHTML={{__html: text.planEpDescripcion}}></div>
                                 </div>
                             </div>
                         </CarouselItem>
