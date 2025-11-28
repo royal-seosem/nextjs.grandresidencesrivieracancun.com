@@ -1,11 +1,13 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import MyRoyalCircleIcon from "@/components/commons/icons/my-royal-circle.svg?svgo=false";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 
 import {useTranslations} from "next-intl";
 import {Button} from "@/components/commons/ui/button";
-import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
+
+const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
 
 
 const LogInModalOffer = () => {
@@ -35,7 +37,7 @@ const LogInModalOffer = () => {
                 </Button>
             </div>
 
-            <ModalMyRoyalSignUp show={show} setShow={setShow}/>
+            {show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}
         </div>
 
     );

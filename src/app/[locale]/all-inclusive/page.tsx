@@ -4,14 +4,15 @@ import {useTranslations} from "next-intl";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import Title from "@/components/commons/ui/title";
 import RichText from "@/components/commons/shared/RitchText";
-import ModalMixology from "@/components/pages/all-inclusive/ModalMixology";
-import ModalFlavors from "@/components/pages/all-inclusive/ModalFlavors";
-import ModalThemeNights from "@/components/pages/all-inclusive/ModalThemeNights";
-import ModalMoments from "@/components/pages/all-inclusive/ModalMoments";
 import {cdn} from "@/lib/cdn";
+
 import AllInclusiveInformation from "@/components/pages/all-inclusive/AllInclusiveInformation";
 import CardThemeNights from "@/components/pages/all-inclusive/CardThemeNights";
 import CardExperience from "@/components/pages/all-inclusive/CardExperience";
+import ModalFlavors from "@/components/pages/all-inclusive/ModalFlavors";
+import ModalThemeNights from "@/components/pages/all-inclusive/ModalThemeNights";
+import ModalMoments from "@/components/pages/all-inclusive/ModalMoments";
+import ModalMixology from "@/components/pages/all-inclusive/ModalMixology";
 
 const Page = () => {
     const t = useTranslations('all-inclusive');

@@ -1,9 +1,11 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import CardImg from "@/components/pages/home/Cardimg";
 import {useTranslations} from "next-intl";
-import Modal from "@/components/commons/ui/modal/modal";
-import CardExperience from "@/components/pages/all-inclusive/CardExperience";
+
+const Modal = dynamic(() => import("@/components/commons/ui/modal/modal"), {ssr: false});
+const CardExperience = dynamic(() => import("@/components/pages/all-inclusive/CardExperience"), {ssr: false});
 
 const ModalMixology = () => {
     const t = useTranslations('all-inclusive');

@@ -1,4 +1,6 @@
 import React from 'react';
+import {getLocale, getMessages, getTranslations} from "next-intl/server";
+import {CarouselItem} from "@/components/commons/ui/carousel";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
@@ -7,8 +9,6 @@ import RichText from "@/components/commons/shared/RitchText";
 import SectionKids from "@/components/pages/amenities/SectionKids";
 import SectionActivities from "@/components/pages/amenities/SectionActivities";
 import Gallery from "@/components/commons/ui/gallery/gallery";
-import {CarouselItem} from "@/components/commons/ui/carousel";
-import {getLocale, getMessages, getTranslations} from "next-intl/server";
 
 const Page = async () => {
     const t = await getTranslations('amenities');

@@ -3,8 +3,11 @@ import React from 'react';
 import {useRouter} from "next/navigation";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {registerByGoogle} from "@/use_case/gms/login/loging_by_google";
-import GoogleSignInButton from "@/components/commons/auth/GoogleSignInButton";
+
 import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
+import dynamic from "next/dynamic";
+
+const GoogleSignInButton = dynamic(() => import("@/components/commons/auth/GoogleSignInButton"), {ssr: false});
 
 const BtnGoogle = () => {
     const router = useRouter();

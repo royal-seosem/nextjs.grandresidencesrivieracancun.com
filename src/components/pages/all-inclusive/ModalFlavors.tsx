@@ -1,9 +1,11 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import CardImg from "@/components/pages/home/Cardimg";
-import Modal from "@/components/commons/ui/modal/modal";
 import {useTranslations} from "next-intl";
-import CardExperience from "@/components/pages/all-inclusive/CardExperience";
+
+const Modal = dynamic(() => import("@/components/commons/ui/modal/modal"), {ssr: false});
+const CardExperience = dynamic(()=> import("@/components/pages/all-inclusive/CardExperience"), {ssr: false});
 
 const ModalFlavors = () => {
     const t = useTranslations('all-inclusive');
@@ -15,7 +17,7 @@ const ModalFlavors = () => {
                 src={"img/all-inclusive/all-inclusive-flavours-2.jpg"}
                 onClick={() => setOpen(true)}/>
 
-            <Modal open={open} setOpen={setOpen} header={t('alimentos.titulo')}>
+            {open && <Modal open={open} setOpen={setOpen} header={t('alimentos.titulo')}>
                 <CardExperience
                     title={t("alimentos.titulo")}
                     description={{
@@ -36,8 +38,7 @@ const ModalFlavors = () => {
                             alt: t('alimentos.alts.2')
                         }
                     ]}/>
-            </Modal>
-
+            </Modal>}
         </>
     );
 };

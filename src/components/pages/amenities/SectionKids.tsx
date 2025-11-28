@@ -1,9 +1,10 @@
 'use client'
+import dynamic from "next/dynamic";
 import React from 'react';
 import Cardimg from "@/components/pages/home/Cardimg";
 import {useTranslations} from "next-intl";
-import Modal from "@/components/commons/ui/modal/modal";
 import CardKids from "@/components/pages/amenities/CardKids";
+const Modal = dynamic(()=> import("@/components/commons/ui/modal/modal"), {ssr: false});
 
 const SectionKids = () => {
     const t = useTranslations('amenities');

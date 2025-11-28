@@ -1,9 +1,10 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import CardImg from "@/components/pages/home/Cardimg";
 import {useTranslations} from "next-intl";
 import CardExperience, {CardExperienceProps} from "@/components/pages/all-inclusive/CardExperience";
-import Modal from "@/components/commons/ui/modal/modal";
+const Modal = dynamic(()=> import("@/components/commons/ui/modal/modal"), {ssr: false}) ;
 
 interface CardDestinationProps {
     className?: string;

@@ -1,10 +1,11 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import {useRouter} from "next/navigation";
 import {useWebsite} from "@/context/WebSiteProvider";
 import {registerByFacebook} from "@/use_case/gms/login/login_by_facebook";
-import FacebookSignInButton from "@/components/commons/auth/FacebookSignInButton";
 import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
+const FacebookSignInButton = dynamic(()=> import("@/components/commons/auth/FacebookSignInButton"), {ssr: false});
 
 const BtnFacebook = () => {
     const router = useRouter();

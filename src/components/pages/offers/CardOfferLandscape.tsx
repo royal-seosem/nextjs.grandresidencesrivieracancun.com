@@ -1,16 +1,18 @@
 'use client'
 import React from 'react';
-import {Offer} from "@/use_case/offers/get_home_offer";
+import {format} from "date-fns";
 import {useTranslations} from "next-intl";
+import {Offer} from "@/use_case/offers/get_home_offer";
 import {useWebsite} from "@/context/WebSiteProvider";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Price from "@/components/commons/shared/price";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
-import {format} from "date-fns";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
-import ModalOffer from "@/components/pages/offers/ModalOffer";
+import dynamic from "next/dynamic";
+
+const ModalOffer = dynamic(()=> import("@/components/pages/offers/ModalOffer"), {ssr: false});
 
 const CardOfferLandscape = (
     {offer}: { offer: Offer }
@@ -87,7 +89,7 @@ const CardOfferLandscape = (
                 }
             </div>
 
-            <ModalOffer offer={offer} open={open} setOpen={setOpen}/>
+            {open && <ModalOffer offer={offer} open={open} setOpen={setOpen}/>}
         </article>
     );
 };

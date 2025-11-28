@@ -1,14 +1,14 @@
 import React from 'react';
+import {getLocale, getMessages, getTranslations} from "next-intl/server";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import {cdn} from "@/lib/cdn";
 import Title from "@/components/commons/ui/title";
 import RichText from "@/components/commons/shared/RitchText";
-import CardDestination from "@/components/pages/destination/CardDestination";
 import CdnImage from "@/components/commons/ui/CdnImage";
+import CardDestination from "@/components/pages/destination/CardDestination";
 import CardExperience from "@/components/pages/destination/CardExperience";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
-import {getLocale, getMessages, getTranslations} from "next-intl/server";
 
 
 const Page = async () => {

@@ -93,7 +93,7 @@ export default async function RootLayout({children, params}: {
     const {locale} = await params;
     const user = await getSession();
     const country = await getCountry();
-    const messages = await getMessages();
+    // const messages = await getMessages();
 
 
     return (

@@ -1,10 +1,11 @@
 'use client'
 import React, {useEffect} from 'react';
+import dynamic from "next/dynamic";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
-import Gallery from "@/components/commons/ui/gallery/gallery";
-import {CarouselApi, CarouselItem} from "@/components/commons/ui/carousel";
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
+import {CarouselApi} from "@/components/commons/ui/carousel";
+
+const ModalGalleryResort = dynamic(() => import("@/components/pages/gallery/ModalGalleryResort"), {ssr: false});
 
 
 const gallery = [
@@ -191,32 +192,10 @@ const GalleryResort = () => {
                     height={1000}/>
             </div>
 
-            <Dialog open={open} onOpenChange={setOpen}>
-                <DialogContent showCloseButton={false} className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
-                    <DialogHeader>
-                        <DialogTitle className={"hidden"} aria-readonly>Gallery</DialogTitle>
-                    </DialogHeader>
-                    <div className={"flex h-full w-full min-w-0"}>
-                        <Gallery
-                            setApi={setApiCarousel}
-                            variant={"secondary"} position={"middle"} showDots={false}>
-                            {
-                                gallery.map((item, index) => (
-                                    <CarouselItem key={index} className={"w-full h-full"}>
-                                        <CdnImage
-                                            alt={t('actividades')}
-                                            src={item.img}
-                                            width={1400}
-                                            height={1000}/>
-                                    </CarouselItem>
-                                ))
-                            }
-                        </Gallery>
+            <ModalGalleryResort open={open} setOpen={setOpen}
+                                gallery={gallery.filter((_, index) => index === targetGallery)}
+                                setApiCarousel={setApiCarousel}/>
 
-                    </div>
-                </DialogContent>
-
-            </Dialog>
         </>
     );
 };

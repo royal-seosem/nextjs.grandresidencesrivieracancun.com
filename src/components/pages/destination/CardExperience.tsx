@@ -1,9 +1,11 @@
+'use client'
 import React from 'react';
-import Gallery from "@/components/commons/ui/gallery/gallery";
+import dynamic from "next/dynamic";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import {cn} from "@/lib/utils";
+const Gallery = dynamic(()=> import("@/components/commons/ui/gallery/gallery"), {ssr: false});
 
 export interface CardExperienceProps {
     className?: string;

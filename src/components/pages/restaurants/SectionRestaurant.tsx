@@ -1,11 +1,13 @@
 import React from 'react';
-import Gallery from "@/components/commons/ui/gallery/gallery";
-import {CarouselItem} from "@/components/commons/ui/carousel";
-import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
+import {cn} from "@/lib/utils";
+import {CarouselItem} from "@/components/commons/ui/carousel";
 import Paragraph from "@/components/commons/ui/paragraph";
 import Title from "@/components/commons/ui/title";
-import {cn} from "@/lib/utils";
+import CdnImage from "@/components/commons/ui/CdnImage";
+import dynamic from "next/dynamic";
+
+const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 
 const SectionRestaurant = () => {
     const t = useTranslations('restaurants');

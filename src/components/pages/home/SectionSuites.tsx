@@ -1,7 +1,7 @@
 'use client'
 import dynamic from "next/dynamic";
 import React, {useState} from "react";
-import {useMessages, useTranslations} from "next-intl";
+import {useTranslations} from "next-intl";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CardImg from "@/components/pages/home/Cardimg";
 import CdnImage from "@/components/commons/ui/CdnImage";
@@ -9,7 +9,6 @@ import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import LinkButton from "@/components/commons/ui/link";
-import RitchTextClient from "@/components/commons/shared/RitchTextClient";
 
 const ModalAllInclusive = dynamic(() => import("@/components/pages/home/ModalAllInclusive"), {ssr: false});
 const ModalSuites = dynamic(() => import("@/components/pages/home/ModalSuites"), {ssr: false});
