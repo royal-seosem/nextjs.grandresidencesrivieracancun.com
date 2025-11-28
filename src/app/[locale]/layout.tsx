@@ -104,7 +104,7 @@ export default async function RootLayout({children, params}: {
         <body
             className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable}  ${lato.variable} antialiased bg-[#fefdfb]"`}
         >
-        <NextIntlClientProvider formats={null}>
+        <NextIntlClientProvider >
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <ReactQueryProvider>
                     <BookingProvider>
