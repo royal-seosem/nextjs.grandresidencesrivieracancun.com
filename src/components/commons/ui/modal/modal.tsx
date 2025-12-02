@@ -1,7 +1,7 @@
 import React from 'react';
 import {Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle} from "@/components/commons/ui/drawer";
 import CloseIcon from "@/components/commons/icons/close.svg";
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
+import {Dialog, DialogContent} from "@/components/commons/ui/dialog";
 import useIsDesktop from "@/components/commons/ui/modal/useIsDesktop";
 import {ScrollArea} from "@/components/commons/ui/scroll-area";
 import {cn} from "@/lib/utils";
@@ -49,17 +49,20 @@ const deskModal = ({open, setOpen, children, header, classNameModalDesk = ""}: M
             <DialogContent
                 showCloseButton={false}
                 className={cn(
-                    "w-[1024px] max-w-[90%] lg:max-w-[90%]",
+                    "w-[1024px] max-w-[90%] lg:max-w-[90%] md:max-h-[calc(95dvh-50px)]",
+                    "overflow-auto",
+                    "scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent",
+                    "hover:scrollbar-thumb-gray-400",
+                    "[&::-webkit-scrollbar]:w-2",
+                    "[&::-webkit-scrollbar-track]:bg-transparent",
+                    "[&::-webkit-scrollbar-thumb]:bg-gray-300",
+                    "[&::-webkit-scrollbar-thumb]:rounded-full",
+                    "[&::-webkit-scrollbar-thumb]:border-2",
+                    "[&::-webkit-scrollbar-thumb]:border-transparent",
+                    "hover:[&::-webkit-scrollbar-thumb]:bg-gray-400",
                     classNameModalDesk
                 )}>
-                <DialogHeader>
-                    <DialogTitle className="hidden" aria-readonly>
-                        {header}
-                    </DialogTitle>
-                </DialogHeader>
-                {/*<ScrollArea className="h-[90dvh]">*/}
                 {children}
-                {/*</ScrollArea>*/}
             </DialogContent>
         </Dialog>
     );
