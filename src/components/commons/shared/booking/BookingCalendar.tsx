@@ -1,68 +1,19 @@
 'use client'
-import React, {useEffect, useMemo} from 'react';
-import {DateRange} from "react-day-picker";
-import {Calendar} from "@/components/commons/ui/calendar";
+import React, {useMemo} from 'react';
+import dynamic from "next/dynamic";
 import {format} from "date-fns";
 import ArrowDownIcon from "@/components/commons/icons/arrow-down.svg";
 import {DropdownMenu, DropdownMenuTrigger} from "@/components/commons/ui/dropdown-menu";
 import {DropdownMenuContent} from "@radix-ui/react-dropdown-menu";
 import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
+const DropdownCalendar = dynamic(() => import("@/components/commons/shared/booking/DropdownCalendar"), {ssr: false});
+
 
 const BookingCalendar = () => {
-    const {adults, childrenGuests, childrenAge, rooms, checkIn, setCheckIn, checkOut, setCheckOut} = useBooking();
-    const [date, setDate] = React.useState<DateRange | undefined>(undefined)
+    const {checkIn, checkOut} = useBooking();
     const [isOpen, setIsOpen] = React.useState(false);
-
-
-    const selectDate = (date: DateRange | undefined) => {
-        if (checkIn && !checkOut) {
-            if (date?.from) setCheckIn(date.from);
-
-            if (date?.to && date?.from !== date?.to) {
-                setCheckOut(date.to);
-                setIsOpen(false);
-            }
-
-            setDate(
-                date
-            )
-        }
-        if (checkIn && checkOut) {
-            const newSelected = date?.from == checkIn ? date?.to : date?.from;
-            setCheckIn(newSelected);
-            setCheckOut(undefined);
-            setDate({
-                from: newSelected,
-                to: undefined,
-            })
-        }
-        if (!checkIn && date?.from) setCheckIn(date.from);
-
-    }
     const label = useMemo(() => `${checkIn ? format(checkIn, 'MMM dd, yy') : ''} - ${checkOut ? format(checkOut, 'MMM dd, yy') : ''}`, [checkIn, checkOut])
-
-
-    const request = {
-        adults: adults || 0,
-        children: childrenGuests || 0,
-        childAge: childrenAge,
-        currency: 'USD',
-        month: new Date(),
-        discountCode: '',
-        hotelCode: '95939',
-        ratePlanCode: '',
-        roomTypeCode: '',
-        rooms: rooms,
-    }
-
-    useEffect(() => {
-        setDate({
-            from: checkIn,
-            to: checkOut,
-        });
-    }, [checkIn, checkOut])
-
     return (
         <DropdownMenu
             open={isOpen}
@@ -77,13 +28,7 @@ const BookingCalendar = () => {
                 </DropdownMenuTrigger>
             </div>
             <DropdownMenuContent>
-                <Calendar
-                    mode="range"
-                    numberOfMonths={2}
-                    selected={date}
-                    onSelect={selectDate}
-                    rateRequest={request}
-                    className="rounded-lg border shadow-sm"/>
+                {isOpen && <DropdownCalendar isOpen={isOpen} setIsOpen={setIsOpen}/>}
             </DropdownMenuContent>
         </DropdownMenu>
     );

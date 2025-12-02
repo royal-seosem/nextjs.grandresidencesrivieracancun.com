@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import {cn} from "@/lib/utils";
 import BookingType from "@/components/commons/shared/booking/BookingType";
 import BookingGuest from "@/components/commons/shared/booking/BookingGuest";
@@ -7,7 +8,10 @@ import BookingPromo from "@/components/commons/shared/booking/BookingPromo";
 import BookingBook from "@/components/commons/shared/booking/BookingBook";
 import BookingForm from "@/components/commons/shared/booking/BookingForm";
 import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
-import {BookingAirport, BookingCalendar} from "@/components/commons/shared/booking/BookingClientComponent";
+import BookingAirport from "@/components/commons/shared/booking/BookingAirport";
+import BookingCalendar from "@/components/commons/shared/booking/BookingCalendar";
+
+
 
 
 interface BookingProps {

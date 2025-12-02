@@ -4,12 +4,12 @@ import {Link, usePathname} from "@/i18n/navigation";
 import {useTranslations} from 'next-intl';
 import Image from "next/image";
 import {cn} from "@/lib/utils";
-import {LanguageDesk} from "@/components/layout/Header/HeaderClientComponent";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 import OwnersArea from "@/components/layout/OwnersArea";
 import MyRoyal from "@/components/layout/Header/MyRoyal";
 import ContactOptions from "@/components/layout/Header/ContactOptions";
 import MenuMobile from "@/components/layout/Header/MenuMobile";
+import LanguageDesk from "@/components/layout/Header/LanguageDesk";
 
 const resortPaths = [
     '/suites',
