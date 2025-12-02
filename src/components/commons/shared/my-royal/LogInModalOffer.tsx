@@ -3,15 +3,17 @@ import React from 'react';
 import dynamic from "next/dynamic";
 import MyRoyalCircleIcon from "@/components/commons/icons/my-royal-circle.svg?svgo=false";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
-
-import {useTranslations} from "next-intl";
 import {Button} from "@/components/commons/ui/button";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
 
+type LogInModalOfferProps = object
 
-const LogInModalOffer = () => {
-    const t = useTranslations('offers-template2');
+const LogInModalOffer = (
+    {messages}: {} & WithTranslationProps
+) => {
+    // const t = useTranslations('offers-template2');
     const [show, setShow] = React.useState(false);
 
     return (
@@ -21,18 +23,14 @@ const LogInModalOffer = () => {
                 <div className="flex flex-col items-center gap-2
                     @3xl:flex-row @3xl:w-1/2 mb-2">
                     <MyRoyalCircleIcon width={37} height={37}/>
-                    <p className={"text-center"}>
-                        {
-                            t.rich('cintillo_text', {
-                                b: (chunks) => <b>{chunks}</b>
-                            })
-                        }
+                    <p className={"text-center"}
+                       dangerouslySetInnerHTML={{__html: messages['offers-template2.cintillo_text'] as string}}>
                     </p>
                 </div>
 
                 <Button variant={"outline"} className="uppercase bg-transparent"
                         onClick={() => setShow(true)}>
-                    {t('cintillo_btn')}
+                    {messages['offers-template2.cintillo_btn'] as string}
                     <ArrowRightIcon width={16} height={16}/>
                 </Button>
             </div>
@@ -44,4 +42,7 @@ const LogInModalOffer = () => {
 };
 
 
-export default LogInModalOffer;
+export default WithTranslateCliente(LogInModalOffer, [
+    "offers-template2.cintillo_text",
+    "offers-template2.cintillo_btn"
+]) as React.FC<LogInModalOfferProps>;

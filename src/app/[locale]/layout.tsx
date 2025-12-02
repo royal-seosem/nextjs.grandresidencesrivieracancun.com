@@ -12,7 +12,7 @@ import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders"
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
 import {ChatWeb, ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
 import Footer from "@/components/layout/Footer";
-import {getMessages} from "next-intl/server";
+// import {getMessages} from "next-intl/server";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -95,6 +95,7 @@ export default async function RootLayout({children, params}: {
     const country = await getCountry();
     // const messages = await getMessages();
 
+    // const t = await getTranslates("en");
 
     return (
         <html lang={locale}>
@@ -104,6 +105,7 @@ export default async function RootLayout({children, params}: {
         <body
             className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable}  ${lato.variable} antialiased bg-[#fefdfb]"`}
         >
+
         <NextIntlClientProvider >
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <ReactQueryProvider>

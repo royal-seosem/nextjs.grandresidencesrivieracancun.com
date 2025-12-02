@@ -14,6 +14,7 @@ import {Offer} from "@/use_case/offers/get_home_offer";
 import {useWebsite} from "@/context/WebSiteProvider";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalOfferProps {
     offer: Offer;
@@ -23,7 +24,7 @@ interface ModalOfferProps {
 }
 
 const ModalOffer = (
-    {offer, open, setOpen, creative_slot}: ModalOfferProps,
+    {offer, open, setOpen, creative_slot, messages}: ModalOfferProps & WithTranslationProps,
 ) => {
     const {user} = useWebsite();
     const [showTerms, setShowTerms] = useState(false);
@@ -65,7 +66,7 @@ const ModalOffer = (
                                 {offer.content.discount}
                             </p>
                             <Paragraph>{offer.content.description}</Paragraph>
-                            <Paragraph className="font-bold text-base">{t('label')}</Paragraph>
+                            <Paragraph className="font-bold text-base">{messages['label'] as string}</Paragraph>
 
                             <ul className="list-disc pl-10 mb-5 space-y-2
                                 @3xl:pl-5 @3xl:mb-2 @3xl:space-y-1">
@@ -127,4 +128,6 @@ const ModalOffer = (
     );
 };
 
-export default ModalOffer;
+export default WithTranslateCliente(ModalOffer, [
+    "offers.label"
+]) as React.FC<ModalOfferProps>;
