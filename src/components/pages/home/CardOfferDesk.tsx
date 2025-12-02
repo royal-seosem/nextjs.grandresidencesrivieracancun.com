@@ -95,8 +95,7 @@ const CardOfferDesk = (
 
                             {offer.rate === null &&
                                 <div>
-                                    <span>{tOffer('up-to')}</span>
-                                    {offer.content.discount}
+                                    <span>{tOffer('up-to')} </span> {offer.content.discount}
                                 </div>
                             }
                         </div>
