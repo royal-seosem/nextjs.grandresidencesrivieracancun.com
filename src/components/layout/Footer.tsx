@@ -11,7 +11,9 @@ import {Link} from "@/i18n/navigation";
 import {useTranslations} from "next-intl";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import {BrandsCarousel} from "@/components/layout/Header/HeaderClientComponent";
-import {BookingDrawer} from "@/components/commons/shared/booking/BookingClientComponent";
+import dynamic from "next/dynamic";
+const BookingDrawer  = dynamic(()=> import("../commons/shared/booking/BookingDrawer"), {ssr: false});
+
 
 
 
