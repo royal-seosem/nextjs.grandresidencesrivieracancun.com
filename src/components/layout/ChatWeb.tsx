@@ -46,7 +46,7 @@ const ChatWeb = () => {
                             });
                         });
                     });
-                }, 100);
+                }, 1000);
             };
 
             // Agregar el script al head
