@@ -1,12 +1,10 @@
 import React from 'react';
-import dynamic from "next/dynamic";
 import Title from "@/components/commons/ui/title";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {cn} from "@/lib/utils";
 import {getTranslations} from "next-intl/server";
 import {MapClient} from "@/components/pages/home/HomeClientComponents";
-
 
 
 const SectionMap = async (

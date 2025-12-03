@@ -43,7 +43,7 @@ const mobileModal = ({open, setOpen, children, header}: ModalProps) => {
     );
 }
 
-const deskModal = ({open, setOpen, children, header, classNameModalDesk = ""}: ModalProps) => {
+const deskModal = ({open, setOpen, children, classNameModalDesk = ""}: ModalProps) => {
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogContent

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
+import {DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
 import Paragraph from "@/components/commons/ui/paragraph";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
 import {Room} from "@/use_case/rooms/types";
@@ -46,22 +46,6 @@ const ModalAmenity = (
                 </ul>
             </div>
         </Modal>
-
-        // <Dialog open={open} onOpenChange={() => setOpen(false)}>
-        //     <DialogContent
-        //         showCloseButton={false}
-        //         className="w-[1024px]
-        //             max-w-[80%] lg:max-w-[80%]">
-        //
-        //         <DialogHeader>
-        //             <DialogTitle className="text-2xl font-bold">
-        //                 {room.name}
-        //             </DialogTitle>
-        //         </DialogHeader>
-        //
-        //
-        //     </DialogContent>
-        // </Dialog>
     );
 };
 

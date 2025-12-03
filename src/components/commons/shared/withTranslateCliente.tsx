@@ -14,11 +14,7 @@ const WithTranslateCliente = <P extends object>(
 ) => {
 
     const ComponentWithTranslation = (props: P) => {
-
         const locale = useLocale();
-        const [messages, setMessages] = React.useState<Record<string, unknown>>({});
-
-        // Usamos useQuery para manejar el caching y evitar duplicados
         const {data, isLoading} = useQuery({
             queryKey: ['translates', locale, text],
             queryFn: () => getTranslates(locale, text),
