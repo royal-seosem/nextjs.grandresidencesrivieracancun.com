@@ -10,8 +10,10 @@ import {getCountry} from "@/lib/geo";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-import {ChatWeb, ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
+import {ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
 import Footer from "@/components/layout/Footer";
+// import {getMessages} from "next-intl/server";
+import ChatWeb from "@/components/layout/ChatWeb";
 // import {getMessages} from "next-intl/server";
 
 //TODO: Completar los datos de metainformación
@@ -106,7 +108,12 @@ export default async function RootLayout({children, params}: {
             className={`${helveticaNue.className} ${helveticaNue.variable}  ${jost.variable}  ${lato.variable} antialiased bg-[#fefdfb]"`}
         >
 
-        <NextIntlClientProvider >
+        <NextIntlClientProvider
+            // messages={{
+            //     header: messages['header'],
+            //     menu: messages["menu"]
+            // }}
+        >
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <ReactQueryProvider>
                     <BookingProvider>
