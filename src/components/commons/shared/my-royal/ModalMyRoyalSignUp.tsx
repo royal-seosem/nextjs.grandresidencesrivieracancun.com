@@ -8,7 +8,7 @@ import FormEmail from "@/components/pages/Gms/signup/FormEmail";
 import {Link} from "@/i18n/navigation";
 import PorcenageIcon from "@/components/commons/icons/porcentaje.svg";
 import PeopleCheckIcon from "@/components/commons/icons/people-check.svg";
-import {useTranslations} from "next-intl";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalMyRoyalSignUpProps {
     show: boolean;
@@ -16,10 +16,8 @@ interface ModalMyRoyalSignUpProps {
 }
 
 const ModalMyRoyalSignUp = (
-    {show, setShow}: ModalMyRoyalSignUpProps,
+    {show, setShow, messages}: ModalMyRoyalSignUpProps & WithTranslationProps,
 ) => {
-    const tLogin = useTranslations('page_login');
-    const tGms = useTranslations('gms');
 
     return (
         <Modal open={show} setOpen={setShow} header={"My Royal Sign Up"}
@@ -47,25 +45,25 @@ const ModalMyRoyalSignUp = (
                         />
                     </div>
                     <div className={"hidden md:block"}>
-                        <p className={"mb-2"}>{tGms('modal.benefits-desc')}</p>
+                        <p className={"mb-2"}>{messages['page_login.modal.benefits-desc'] as string}</p>
 
                         <ul>
                             <li className={"flex items-center gap-2 mb-4"}>
                                 <PorcenageIcon width={40} height={40} className={"shrink-0 w-[40px]"}/>
-                                {tGms('modal.benefits1')}
+                                {messages['gms.modal.benefits1'] as string}
                             </li>
                             <li className={"flex items-center gap-2 "}>
                                 <PeopleCheckIcon width={40} height={40} className={"shrink-0 w-[40px]"}/>
-                                {tGms('modal.benefits2')}
+                                {messages['gms.modal.benefits2'] as string}
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className={"md:w-[420px]"}>
                     <div className={"text-center mb-4"}>
-                        <p className="text-4xl font-medium mb-2">{tGms('modal.Join My Royal')}</p>
-                        <p className="text-base mb-2">{tGms('modal.description')}</p>
-                        <p className="text-sm mb-2">{tGms('modal.text2')}</p>
+                        <p className="text-4xl font-medium mb-2">{messages['gms.modal.Join My Royal'] as string}</p>
+                        <p className="text-base mb-2">{messages['gms.modal.description'] as string}</p>
+                        <p className="text-sm mb-2">{messages['gms.modal.text2'] as string}</p>
                     </div>
 
                     <div className="flex items-center justify-center gap-5 mb-6">
@@ -77,7 +75,7 @@ const ModalMyRoyalSignUp = (
                     <p className="text-sm text-center flex justify-center items-center gap-3 mb-5
                      before:block before:w-5 before:h-[1px] before:content-[''] before:bg-[#5a5550]
                      after:block after:w-5 after:h-[1px] after:content-[''] after:bg-[#5a5550]">
-                        {tGms('register.or_email')}
+                        {messages['gms.register.or_email'] as string}
                     </p>
 
                     <div className={"p-5"}>
@@ -85,9 +83,9 @@ const ModalMyRoyalSignUp = (
                     </div>
 
                     <p className="text-base flex gap-1 justify-center mb-6">
-                        {tLogin('Forgot your password?')}
+                        {messages['page_login.Forgot your password?'] as string}
                         <Link className="text-accent underline" href={"/gms/forgot-password"}>
-                            {tLogin('click here')}
+                            {messages['page_login.click here'] as string}
                         </Link>
                     </p>
                 </div>
@@ -96,4 +94,14 @@ const ModalMyRoyalSignUp = (
     );
 };
 
-export default ModalMyRoyalSignUp;
+export default WithTranslateCliente(ModalMyRoyalSignUp, [
+    "page_login.modal.benefits-desc",
+    "gms.modal.benefits1",
+    "gms.modal.benefits2",
+    "gms.modal.Join My Royal",
+    "gms.modal.description",
+    "gms.modal.text2",
+    "gms.register.or_email",
+    "page_login.Forgot your password?",
+    "page_login.click here"
+]) as React.FC<ModalMyRoyalSignUpProps>;

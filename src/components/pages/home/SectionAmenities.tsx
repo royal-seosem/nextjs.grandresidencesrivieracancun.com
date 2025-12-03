@@ -2,15 +2,17 @@ import React from 'react';
 import dynamic from "next/dynamic";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CardAmenity, {CardAmenityProps} from "@/components/commons/shared/CardAmenity";
-import {useTranslations} from "next-intl";
 import Title from "@/components/commons/ui/title";
 import {Link} from "@/i18n/navigation";
+import {getTranslations} from "next-intl/server";
 
 const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
+
 type LinkHref = React.ComponentProps<typeof Link>['href']; // ← derivar tipo
 
-const SectionAmenities = () => {
-    const t = useTranslations('home');
+const SectionAmenities = async () => {
+    const t = await getTranslations('home');
+
     const amenities: Array<Omit<CardAmenityProps, 'className'> & { link: LinkHref }> = [
         {
             title: t('secciones.0.title'),

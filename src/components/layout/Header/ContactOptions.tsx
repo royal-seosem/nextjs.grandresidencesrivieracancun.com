@@ -4,11 +4,11 @@ import Image from "next/image";
 import {useTranslations} from "next-intl";
 import IconArrowDown from "@/components/commons/icons/ArrowDown.svg";
 import React from "react";
+
 const DrawerContactOptions = dynamic(() => import("@/components/layout/Header/DrawerContactOptions"), {ssr: false});
 
 const ContactOptions = () => {
     const t = useTranslations('menu');
-    const tg = useTranslations('general');
     const [open, setOpen] = React.useState(false);
 
     return (

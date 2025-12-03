@@ -4,16 +4,15 @@ import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {SignupSchema, SignupSchemaType} from "@/use_case/gms/signup/signup.schema";
 import {Form, FormControl, FormField, FormInput, FormItem, FormLabel, FormMessage} from "@/components/commons/ui/form";
-import {useTranslations} from "next-intl";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
 import countries from "@/use_case/countries.json";
 import {Checkbox} from "@/components/commons/ui/checkbox";
-import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import {Button} from "@/components/commons/ui/button";
 import {grecaptcha} from "@/types/grecaptcha";
 import Script from "next/script";
 import {signupByEmail} from "@/use_case/gms/signup/signup_by_email";
 import {useGTMEvent} from "@/components/commons/hooks/useGTMEvent";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 
 declare global {
@@ -23,8 +22,8 @@ declare global {
 }
 
 
-const FormEmail = () => {
-    const t = useTranslations('gms');
+const FormEmail = ({messages}: WithTranslationProps) => {
+
     const siteKey = process.env.NEXT_PUBLIC_GOOGLE_CAPTCHA_KEY || "";
     const dataLayer = useGTMEvent();
 
@@ -74,7 +73,7 @@ const FormEmail = () => {
                         control={form.control}
                         render={({field}) => (
                             <FormItem>
-                                <FormLabel>{t('name')}</FormLabel>
+                                <FormLabel>{messages['gms.name'] as string}</FormLabel>
                                 <FormInput {...field} value={field.value || ""}/>
                                 <FormMessage/>
                             </FormItem>
@@ -86,7 +85,7 @@ const FormEmail = () => {
                         control={form.control}
                         render={({field}) => (
                             <FormItem>
-                                <FormLabel>{t('Last Name')}</FormLabel>
+                                <FormLabel>{messages['gms.Last Name'] as string}</FormLabel>
                                 <FormInput {...field} value={field.value || ""}/>
                                 <FormMessage/>
                             </FormItem>
@@ -98,7 +97,7 @@ const FormEmail = () => {
                         control={form.control}
                         render={({field}) => (
                             <FormItem>
-                                <FormLabel>{t('Email')}</FormLabel>
+                                <FormLabel>{messages['gms.Email'] as string}</FormLabel>
                                 <FormInput {...field} value={field.value || ""}/>
                                 <FormMessage/>
                             </FormItem>
@@ -110,7 +109,7 @@ const FormEmail = () => {
                         control={form.control}
                         render={({field}) => (
                             <FormItem>
-                                <FormLabel>{t('Password')}</FormLabel>
+                                <FormLabel>{messages['gms.Password'] as string}</FormLabel>
                                 <FormInput {...field} type={"password"} value={field.value || ""}/>
                                 <FormMessage/>
                             </FormItem>
@@ -122,7 +121,7 @@ const FormEmail = () => {
                         control={form.control}
                         render={({field}) => (
                             <FormItem className={"grow w-full"}>
-                                <FormLabel>{t('country')}</FormLabel>
+                                <FormLabel>{messages['gms.country'] as string}</FormLabel>
                                 <FormControl>
                                     <Select
                                         name={field.name}
@@ -160,14 +159,15 @@ const FormEmail = () => {
                                         className={"mt-1"}/>
                                 </FormControl>
                                 <span>
-                                <RichTextClient id={"modal.terms"} ns={"gms"}/>
+                                    <div
+                                        dangerouslySetInnerHTML={{__html: messages['gms.modal.terms'] as string}}></div>
                             </span>
                             </FormItem>
                         )}/>
 
                     <div className={"flex justify-center"}>
                         <Button variant={"primary"} className={"uppercase"}>
-                            {t('Sign me up')}
+                            {messages['gms.Sign me up'] as string}
                         </Button>
                     </div>
 
@@ -179,4 +179,12 @@ const FormEmail = () => {
     );
 };
 
-export default FormEmail;
+export default WithTranslateCliente(FormEmail, [
+    'gms.name',
+    'gms.Last Name',
+    'gms.Email',
+    'gms.Password',
+    'gms.country',
+    'gms.Sign me up',
+    'gms.modal.terms'
+]) as React.FC<object>;

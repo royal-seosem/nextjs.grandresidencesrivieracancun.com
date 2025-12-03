@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import Image from "next/image";
-import {useTranslations} from "next-intl";
 import {Link} from "@/i18n/navigation";
 import ArrowDownIcon from "@/components/commons/icons/ArrowDown.svg";
 import MyRoyalUserIcon from "@/components/commons/icons/my-royal-user.svg";
@@ -11,11 +10,8 @@ import dynamic from "next/dynamic";
 const DrawerMyRoyal = dynamic(() => import("@/components/layout/Header/DrawerMyRoyal"), {ssr: false});
 
 const MyRoyal = () => {
-    const tGms = useTranslations('gms')
-
     const {user} = useWebsite();
     const [open, setOpen] = React.useState(false);
-
 
     return (
         <>

@@ -2,7 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import Modal from "@/components/commons/ui/modal/modal";
 import Paragraph from "@/components/commons/ui/paragraph";
-import {useTranslations} from "next-intl";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
@@ -28,8 +27,6 @@ const ModalOffer = (
 ) => {
     const {user} = useWebsite();
     const [showTerms, setShowTerms] = useState(false);
-    const t = useTranslations('offers')
-    const tGeneral = useTranslations('general');
     const pushToDataLayer = useGTMEvent();
 
     useEffect(() => {
@@ -78,7 +75,7 @@ const ModalOffer = (
                             <Button
                                 onClick={() => setShowTerms(!showTerms)}
                                 className="text-base font-medium underline pl-0 mb-6"
-                                variant="link">{t('label2')}</Button>
+                                variant="link">{messages['offers.label2'] as string}</Button>
                         </div>
                         <div className="@3xl:flex flex-col">
                             <CdnImage
@@ -119,7 +116,7 @@ const ModalOffer = (
                         </Paragraph>
                         <button className="text-sm font-bold uppercase"
                                 onClick={() => setShowTerms(false)}>
-                            {tGeneral('read less')}
+                            {messages['general.read less'] as string}
                         </button>
                     </div>
                 }
@@ -129,5 +126,7 @@ const ModalOffer = (
 };
 
 export default WithTranslateCliente(ModalOffer, [
-    "offers.label"
+    "general.read less",
+    "offers.label",
+    "offers.label2"
 ]) as React.FC<ModalOfferProps>;

@@ -5,14 +5,15 @@ import PorcentajeIcon from "@/components/commons/icons/porcentaje.svg";
 import ClockIcon from "@/components/commons/icons/clock.svg";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Modal from "@/components/commons/ui/modal/modal";
-import {useTranslations} from "next-intl";
 import {Link} from "@/i18n/navigation";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 const COOKIE_NAME = 'myRoyalModalShown';
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
-const ModalMyRoyal = () => {
-    const t = useTranslations('gms');
+const ModalMyRoyal = (
+    {messages}: WithTranslationProps
+) => {
     const [isOpen, setIsOpen] = useState(false);
     const [hasShownToday, setHasShownToday] = useState(true);
 
@@ -66,22 +67,22 @@ const ModalMyRoyal = () => {
                     </div>
                     <div className={"flex flex-col gap-2 items-center"}>
                         <MyRoyalVertical width={191} height={102} className={"mb-9"}/>
-                        <p className={"text-4xl font-medium mb-9"}>{t('Sign me up')}</p>
-                        <p className={"text-lg text-center mb-4"}>{t('login.description')}</p>
+                        <p className={"text-4xl font-medium mb-9"}>{messages['gms.Sign me up'] as string}</p>
+                        <p className={"text-lg text-center mb-4"}>{messages['gms.login.description'] as string}</p>
 
                         <ul className="">
                             <li className={"flex gap-4 items-center py-4"}>
                                 <PorcentajeIcon width={40} height={40} className={"shrink-0"}/>
                                 <p>
-                                    <strong>{t('login.benefits.0.title')}</strong>
-                                    {t('login.benefits.0.description')}
+                                    <strong>{messages['gms.login.benefits.0.title'] as string}</strong>
+                                    {messages['gms.login.benefits.0.description'] as string}
                                 </p>
                             </li>
                             <li className={"flex gap-4 items-center py-4"}>
                                 <ClockIcon width={40} height={40} className={"shrink-0"}/>
                                 <p>
-                                    <strong>{t('login.benefits.1.title')}</strong>
-                                    {t('login.benefits.1.description')}
+                                    <strong>{messages['gms.login.benefits.1.title'] as string}</strong>
+                                    {messages['gms.login.benefits.1.description'] as string}
                                 </p>
                             </li>
                         </ul>
@@ -92,15 +93,15 @@ const ModalMyRoyal = () => {
                         uppercase font-bold text-base
                         px-5 py-2
                         bg-primary text-secondary hover:bg-secondary hover:text-primary" href={"/gms/sign-up"}>
-                                {t('Sign me up')}
+                                {messages['gms.Sign me up'] as string}
                             </Link>
                         </div>
 
                         <div className={"w-full"}>
                             <p className="">
-                                {t('modal.I already have an account')}
+                                {messages['gms.modal.I already have an account'] as string}
                                 <Link className="text-accent" href="/gms/login">
-                                    {t('Log in')}
+                                    {messages['gms.Log in'] as string}
                                 </Link>
                             </p>
                         </div>
@@ -112,4 +113,13 @@ const ModalMyRoyal = () => {
     );
 };
 
-export default ModalMyRoyal;
+export default  WithTranslateCliente(ModalMyRoyal,[
+    'Sign me up',
+    'login.description',
+    'login.benefits.0.title',
+    'login.benefits.0.description',
+    'login.benefits.1.title',
+    'login.benefits.1.description',
+    'modal.I already have an account',
+    'Log in'
+]) as React.FC<object>;

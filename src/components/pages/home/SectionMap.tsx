@@ -1,24 +1,23 @@
-'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import Title from "@/components/commons/ui/title";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
-import {useTranslations} from "next-intl";
 import Paragraph from "@/components/commons/ui/paragraph";
-import GoogleMap from "@/components/commons/shared/GoogleMap";
-import {useInViewport} from "@/components/commons/hooks/useInViewport";
 import {cn} from "@/lib/utils";
+import {getTranslations} from "next-intl/server";
+import {MapClient} from "@/components/pages/home/HomeClientComponents";
 
 
-const SectionMap = (
+
+const SectionMap = async (
     {className}: { className?: string }
 ) => {
-    const t = useTranslations('home');
-    const tg = useTranslations('general');
+    const t = await getTranslations('home');
+    const tg = await getTranslations('general');
 
-    const [ref, inView] = useInViewport<HTMLDivElement>({rootMargin: '150px'});
 
     return (
-        <article ref={ref} className={cn(
+        <article className={cn(
             'my-container lg:flex lg:items-center lg:justify-between lg:gap-5 lg:mb-14',
             className)}>
             <div className="lg:order-2">
@@ -36,9 +35,8 @@ const SectionMap = (
                     <ArrowRightIcon width={16} height={16}/>
                 </a>
             </div>
-            <div className="lg:order-1 grow min-h-[300px] flex">
-                {inView && <GoogleMap/>}
-            </div>
+            <MapClient/>
+
         </article>
     );
 };

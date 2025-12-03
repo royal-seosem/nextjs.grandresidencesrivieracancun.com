@@ -1,24 +1,25 @@
 import React from 'react';
-import {format} from "date-fns"
-import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import Paragraph from "@/components/commons/ui/paragraph";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
+import {format} from "date-fns";
 
 interface ValidUntilProps {
     offer: Offer
 }
 
-const ValidUntil = ({offer}: ValidUntilProps) => {
-    const t = useTranslations('new-offers');
+const ValidUntil = ({offer, messages}: ValidUntilProps & WithTranslationProps) => {
+    const text = messages['new-offers.valid_until'] as string;
+
     return (
         <Paragraph className="text-center text-base">
-            {t('valid_until', {
-                BW_E: format(offer.bookingWindow.start_date, 'MMMM d, yyyy'),
-                TW_S: format(offer.travelWindow.start_date, 'MMMM d, yyyy'),
-                TW_E: format(offer.travelWindow.end_date, 'MMMM d, yyyy')
-            })}
+            {text?.replace('{BW_E}', format(offer.bookingWindow.start_date, 'MMMM d, yyyy'))
+                .replace('{TW_S}', format(offer.travelWindow.start_date, 'MMMM d, yyyy'))
+                .replace('{TW_E}', format(offer.travelWindow.end_date, 'MMMM d, yyyy'))}
         </Paragraph>
     );
 };
 
-export default ValidUntil;
+export default WithTranslateCliente(ValidUntil, [
+    'new-offers.valid_until'
+]) as React.FC<ValidUntilProps>;

@@ -6,30 +6,35 @@ import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Paragraph from "@/components/commons/ui/paragraph";
 import PaymentMethods from "@/components/commons/shared/PaymentMethods";
-import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import {useWebsite} from "@/context/WebSiteProvider";
-import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import useViewPromotion from "@/components/commons/hooks/datalayer/useViewPromotion";
 
-const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"),{ ssr: false});
-const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"),{ ssr: false});
+const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"), {ssr: false});
+const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"), {ssr: false});
 
 
 interface CardOfferDeskProps {
     offer: Offer;
     creative_slot: string;
+    messages: {
+        'per room': string;
+        'starting_at': string;
+        'plus_taxes': string;
+        'up-to': string;
+        'more info': string;
+        'my-royal-price': string;
+        'Log in and save even more': string;
+    }
 }
 
 const CardOfferDesk = (
-    {offer, creative_slot}: CardOfferDeskProps,
+    {offer, creative_slot, messages}: CardOfferDeskProps,
 ) => {
     const {user} = useWebsite();
-    const t = useTranslations('new-offers');
-    const tOffer = useTranslations('offers');
-    const tOfferTemplate = useTranslations('offers-template2')
-    const tGeneral = useTranslations('general');
+
+
     const [open, setOpen] = React.useState(false);
     const [show, setShow] = React.useState(false);
 
@@ -83,19 +88,19 @@ const CardOfferDesk = (
                             {offer.rate !== null &&
                                 <div className="flex flex-col">
                                                     <span
-                                                        className="text-base text-primary font-bold">{t('per room')}</span>
-                                    <span className="text-lg font-secondary">{t('starting_at')}</span>
+                                                        className="text-base text-primary font-bold">{messages['per room']}</span>
+                                    <span className="text-lg font-secondary">{messages['starting_at']}</span>
                                     <span className="text-accent2 font-bold text-2xl">
                                         ${(offer.rate.price - offer.rate.discount).toFixed(0)} USD
                                     </span>
                                     <span
-                                        className="text-accent2 font-bold text-base italic">{tOfferTemplate('plus_taxes')}</span>
+                                        className="text-accent2 font-bold text-base italic">{messages['plus_taxes']}</span>
                                 </div>
                             }
 
                             {offer.rate === null &&
                                 <div>
-                                    <span>{tOffer('up-to')} </span> {offer.content.discount}
+                                    <span>{messages['up-to']} </span> {offer.content.discount}
                                 </div>
                             }
                         </div>
@@ -103,7 +108,7 @@ const CardOfferDesk = (
                         <div>
                             <div className="flex items-center  gap-5">
                                 <button onClick={() => setOpen(true)}>
-                                    {tGeneral('more info')}
+                                    {messages['more info']}
                                 </button>
                                 <BookingBtnDrawer offer={{
                                     title: offer.content.title || "",
@@ -117,15 +122,16 @@ const CardOfferDesk = (
 
                     {!user && offer.rateLead &&
                         <div className="flex items-center justify-center gap-4 bg-primary py-2">
-                                            <span className="text-secondary">
-                                                <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
-                                                    PRICE: offer.rateLead?.price || ""
-                                                }}/>
+                                            <span className="text-secondary"
+                                                  dangerouslySetInnerHTML={{__html: messages['my-royal-price']}}>
+                                                {/*<RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{*/}
+                                                {/*    PRICE: offer.rateLead?.price || ""*/}
+                                                {/*}}/>*/}
                                             </span>
                             <button className="flex items-center gap-2 text-white cursor-pointer"
                                     onClick={() => setShow(true)}>
                                 <MyRoyalIcon width={24} height={24}/>
-                                {tOfferTemplate('Log in and save even more')}
+                                {messages['Log in and save even more']}
                             </button>
                         </div>
                     }

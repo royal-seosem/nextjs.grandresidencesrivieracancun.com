@@ -1,6 +1,6 @@
 import React from 'react';
+import dynamic from "next/dynamic";
 import {format} from "date-fns";
-import {useMessages, useTranslations} from "next-intl";
 import TrophyIcon from "@/components/commons/icons/trophy.svg";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
 import CdnImage from "@/components/commons/ui/CdnImage";
@@ -8,15 +8,16 @@ import RichText from "@/components/commons/shared/RitchText";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {Review} from "@/use_case/reviews/types";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import dynamic from "next/dynamic";
+import {getMessages, getTranslations} from "next-intl/server";
 
-const Gallery = dynamic(()=> import("@/components/commons/ui/gallery/gallery"));
+const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 
-const SectionTripadvisor = (
+const SectionTripadvisor = async (
     {reviews}: { reviews: Review[] }
 ) => {
-    const t = useTranslations('home');
-    const {home} = useMessages();
+    const t = await getTranslations('home');
+    const {home} = await getMessages();
+
     return (
         <section className=" bg-[linear-gradient(to_bottom,transparent,transparent_15%,#FBF1DE_15%)]
             lg:bg-[#fbf1de] lg:py-5 lg:mb-14">

@@ -1,7 +1,8 @@
 'use client'
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useLocale} from "use-intl";
 import {getTranslates} from "@/use_case/get_translates";
+import {useQuery} from "@tanstack/react-query";
 
 export interface WithTranslationProps {
     messages: Record<string, unknown>;
@@ -17,18 +18,20 @@ const WithTranslateCliente = <P extends object>(
         const locale = useLocale();
         const [messages, setMessages] = React.useState<Record<string, unknown>>({});
 
-        useEffect(() => {
-            const getTr = async (text: string[]) => {
-                const tr = await getTranslates(locale, text);
-                setMessages(tr);
-            }
-            getTr(text).then();
+        // Usamos useQuery para manejar el caching y evitar duplicados
+        const {data, isLoading} = useQuery({
+            queryKey: ['translates', locale, text],
+            queryFn: () => getTranslates(locale, text),
+            staleTime: Infinity, // Los textos no suelen cambiar frecuentemente
+            refetchOnWindowFocus: false,
+        });
 
-        }, [locale])
-
+        if (isLoading) {
+            return null;
+        }
 
         return (
-            <WrappedComponent {...props} messages={messages}/>
+            <WrappedComponent {...props} messages={data || {}}/>
         )
     }
 

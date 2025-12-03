@@ -8,7 +8,8 @@ import Title from "@/components/commons/ui/title";
 import {getHomeOffer} from "@/use_case/offers/get_home_offer";
 import RichText from "@/components/commons/shared/RitchText";
 import {getReviews} from "@/use_case/reviews/get_reviews";
-import {SectionInstagram, SectionMap} from "@/components/pages/home/HomeClientComponents";
+import SectionMap from "@/components/pages/home/SectionMap";
+import SectionInstagram from "@/components/pages/home/SectionInstagram";
 
 const BookingHome = dynamic(() => import("@/components/pages/home/BookingHome"));
 const SectionSuites = dynamic(() => import("@/components/pages/home/SectionSuites"));

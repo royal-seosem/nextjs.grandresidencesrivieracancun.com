@@ -1,19 +1,16 @@
 'use client'
 import React from 'react';
-import dynamic from "next/dynamic";
 import MyRoyalCircleIcon from "@/components/commons/icons/my-royal-circle.svg?svgo=false";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import {Button} from "@/components/commons/ui/button";
 import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
-
-const ModalMyRoyalSignUp = dynamic(() => import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
+import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
 
 type LogInModalOfferProps = object
 
 const LogInModalOffer = (
     {messages}: {} & WithTranslationProps
 ) => {
-    // const t = useTranslations('offers-template2');
     const [show, setShow] = React.useState(false);
 
     return (
