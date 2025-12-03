@@ -1,10 +1,8 @@
 import React from 'react';
 import {getLocale} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import dynamic from "next/dynamic";
-
-const PrivacyEn = dynamic(() => import("@/components/pages/about-us/privacy_en"));
-const PrivacyEs = dynamic(() => import("@/components/pages/about-us/PrivacyEs"));
+import PrivacyEn from "@/components/pages/about-us/privacy_en";
+import PrivacyEs from "@/components/pages/about-us/PrivacyEs";
 
 const Page = async () => {
     const locale = await getLocale();

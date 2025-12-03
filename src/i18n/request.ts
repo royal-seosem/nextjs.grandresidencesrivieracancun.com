@@ -30,7 +30,7 @@ export default getRequestConfig(async ({requestLocale}) => {
             ...(await import(`./dictionaries/${locale}/media-room.json`)).default,
             ...(await import(`./dictionaries/${locale}/about.json`)).default,
             ...(await import(`./dictionaries/${locale}/resort-policies.json`)).default,
-            ...(await import(`./dictionaries/${locale}/privacy-policy.json`)).default,
+            // ...(await import(`./dictionaries/${locale}/privacy-policy.json`)).default,
             ...(await import(`./dictionaries/${locale}/gms_forgot_password.json`)).default,
             ...(await import(`./dictionaries/${locale}/gms.json`)).default,
             ...(await import(`./dictionaries/${locale}/gms_home.json`)).default,
