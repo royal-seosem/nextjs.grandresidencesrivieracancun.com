@@ -17,20 +17,26 @@ type Props = {
     loop?: boolean;
     priority?: boolean;
     fetchPriority?: "high" | "low" | "auto";
+    isDesktop?: boolean;
 };
 
-export default function SmartVideo({
-                                       srcDesktop,
-                                       srcMobile,
-                                       className = "",
-                                       loop = true,
-                                       posterDesktop,
-                                       posterMobile,
-                                       priority = false,
-                                       fetchPriority = "auto"
-                                   }: Props) {
+export default function SmartVideo(
+    {
+        srcDesktop,
+        srcMobile,
+        className = "",
+        loop = true,
+        posterDesktop,
+        posterMobile,
+        priority = false,
+        fetchPriority = "auto",
+        isDesktop = false
+    }: Props) {
+
     const videoRef = useRef<HTMLVideoElement>(null);
     const isVisibleRef = useRef(false);
+
+    console.log( "Client Type", isDesktop);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(min-width: 768px)');
@@ -77,13 +83,13 @@ export default function SmartVideo({
             <link
                 rel="preload"
                 as="image"
-                href={posterMobile}
+                href={isDesktop ? posterDesktop : posterMobile}
                 fetchPriority="high"
             />
             <video
                 ref={videoRef}
                 className={className}
-                poster={posterMobile}
+                poster={isDesktop ? posterDesktop : posterMobile}
                 muted
                 playsInline
                 autoPlay={priority}

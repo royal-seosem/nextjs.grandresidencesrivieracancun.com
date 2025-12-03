@@ -123,7 +123,7 @@ const CardOfferDesk = (
                     {!user && offer.rateLead &&
                         <div className="flex items-center justify-center gap-4 bg-primary py-2">
                                             <span className="text-secondary"
-                                                  dangerouslySetInnerHTML={{__html: messages['my-royal-price']}}>
+                                                  dangerouslySetInnerHTML={{__html: messages['my-royal-price'].replace('{PRICE}', (offer.rateLead?.price || '').toString())}}>
                                                 {/*<RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{*/}
                                                 {/*    PRICE: offer.rateLead?.price || ""*/}
                                                 {/*}}/>*/}

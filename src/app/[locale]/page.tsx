@@ -1,5 +1,6 @@
 import {getMessages, getTranslations} from "next-intl/server";
 import dynamic from "next/dynamic";
+import {headers} from "next/headers";
 import {cdn} from "@/lib/cdn";
 import {Carousel, CarouselContent, CarouselItem, CarouselNavigation} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
@@ -20,6 +21,9 @@ const SectionTripadvisor = dynamic(() => import("@/components/pages/home/Section
 
 
 export default async function Home() {
+    const headersList = await headers();
+    const isDesktop =  headersList.get('sec-ch-ua-mobile') === '?0';
+
     const {home, weddings} = await getMessages();
     const t = await getTranslations('general');
     const tHome = await getTranslations('home');
@@ -34,6 +38,7 @@ export default async function Home() {
             <section className="relative lg:-mb-10">
                 <div className="aspect-[5/4] md:aspect-[1921/500]">
                     <SmartVideo
+                        isDesktop={isDesktop}
                         fetchPriority="high"
                         className="w-full h-auto"
                         posterDesktop={cdn('/video/home-banner-new.jpg')}
