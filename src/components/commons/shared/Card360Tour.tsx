@@ -16,9 +16,10 @@ interface Card360TourProps {
 }
 
 const Card360Tour = ({title, btnTitle, src, className}: Card360TourProps) => {
-    const [open, setOpen] = React.useState(false);
     const t = useTranslations('suites');
-    const btnTitleDefault = btnTitle ?? t('360 Tour');
+    const [open, setOpen] = React.useState(false);
+    const btnTitleDefault = btnTitle ?? t('tour360');
+
     return (
         <div>
             <button className={cn("flex items-center gap-2 text-sm", className)}

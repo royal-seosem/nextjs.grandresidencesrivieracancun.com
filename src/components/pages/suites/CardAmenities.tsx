@@ -21,7 +21,7 @@ const CardAmenities = (
                 className="flex items-center gap-2 text-sm"
                 onClick={() => setOpen(true)}>
                 <ListIcon className="shrink-0" width={24} height={24}/>
-                {t('boton amenities')}
+                {t('butonAmenities')}
             </button>
 
             <ModalAmenity room={room} open={open} setOpen={setOpen}/>

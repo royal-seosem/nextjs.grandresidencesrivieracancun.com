@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from "next/dynamic";
-import {getTranslations} from "next-intl/server";
+import {getMessages, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import RichText from "@/components/commons/shared/RitchText";
 import {getRooms} from "@/use_case/rooms/get_rooms";
@@ -15,6 +15,7 @@ const SitePlan = dynamic(() => import("@/components/pages/suites/SitePlan"));
 //TODO: Page Suites
 const Page = async () => {
     const t = await getTranslations('suites');
+    const m = await getMessages();
     const suites = await getRooms();
 
     return (
@@ -61,7 +62,10 @@ const Page = async () => {
                 </Title>
             </div>
 
-            <SectionRooms suites={suites}/>
+            <SectionRooms
+                suites={suites}
+                suitesShort={m['suites']['suites_short']}
+                suitesMobile={m['suites']['suites_mobile']}/>
 
         </main>
     );

@@ -3,6 +3,7 @@ import React from 'react';
 import {Dialog, DialogContent, DialogHeader, DialogTitle} from "@/components/commons/ui/dialog";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {useTranslations} from "next-intl";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalTour360Props {
     open: boolean;
@@ -10,7 +11,7 @@ interface ModalTour360Props {
 }
 
 const ModalTour360 = (
-    {open, setOpen}: ModalTour360Props
+    {open, setOpen, messages}: ModalTour360Props & WithTranslationProps
 ) => {
     const t = useTranslations('suites');
 
@@ -25,7 +26,7 @@ const ModalTour360 = (
                     </DialogTitle>
                 </DialogHeader>
                 <div>
-                    <Paragraph>{t('tour_360_description')}</Paragraph>
+                    <Paragraph>{messages['suites.tour_360_description'] as string}</Paragraph>
                     <iframe
                         src={"https://tour-gr.royalreservations.com/#39128456p&105.53h&83.74t"}
                         width="100%"
@@ -40,4 +41,6 @@ const ModalTour360 = (
     );
 };
 
-export default ModalTour360;
+export default WithTranslateCliente(ModalTour360, [
+    'suites.tour_360_description',
+]) as React.FC<ModalTour360Props>;

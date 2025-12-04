@@ -6,6 +6,7 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
+
 import CardFloorPlan from "@/components/pages/suites/CardFloorPlan";
 import Card360Tour from "@/components/commons/shared/Card360Tour";
 import CardAmenities from "@/components/pages/suites/CardAmenities";

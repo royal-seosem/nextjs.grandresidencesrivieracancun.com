@@ -21,7 +21,7 @@ const CardFloorPlan = (
             <button className="flex items-center gap-2 text-sm"
                     onClick={() => setOpen(true)}>
                 <AreaIcon className="shrink-0" width={24} height={24}/>
-                {t('floor plan')}
+                {t('floorPlan')}
             </button>
 
             <ModalFloorPlan open={open} setOpen={setOpen} title={title} src={src}/>
