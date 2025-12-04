@@ -1,8 +1,8 @@
 import React from 'react';
+import {useTranslations} from "next-intl";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {Review} from "@/use_case/reviews/types";
 import {format} from "date-fns";
-import {useTranslations} from "next-intl";
 
 interface CardReviewProps {
     review: Review
@@ -12,6 +12,7 @@ const CardReview = (
     {review}: CardReviewProps,
 ) => {
     const t = useTranslations('general');
+
     const [expanded, setExpanded] = React.useState(false);
     const toggleExpanded = () => setExpanded((prev) => !prev);
 
