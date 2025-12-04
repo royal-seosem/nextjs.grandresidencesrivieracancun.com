@@ -1,16 +1,16 @@
 import React from 'react';
-import {useTranslations} from "next-intl";
+import dynamic from "next/dynamic";
+import {getTranslations} from "next-intl/server";
 import {cn} from "@/lib/utils";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import Paragraph from "@/components/commons/ui/paragraph";
 import Title from "@/components/commons/ui/title";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import dynamic from "next/dynamic";
 
 const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 
-const SectionRestaurant = () => {
-    const t = useTranslations('restaurants');
+const SectionRestaurant = async () => {
+    const t = await getTranslations('restaurants');
 
     return (
         <div className={cn(

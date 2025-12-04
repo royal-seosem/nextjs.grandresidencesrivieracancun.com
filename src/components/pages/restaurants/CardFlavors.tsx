@@ -1,12 +1,12 @@
 import React from 'react';
+import {getTranslations} from "next-intl/server";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import {useTranslations} from "next-intl";
 import Paragraph from "@/components/commons/ui/paragraph";
 
-const CardFlavors = () => {
-    const t = useTranslations('restaurants');
+const CardFlavors = async () => {
+    const t = await getTranslations('restaurants');
     return (
         <div className="
             pt-[240px] pb-[280px] mb-10 md:pb-[50px] md:pt-[100px]

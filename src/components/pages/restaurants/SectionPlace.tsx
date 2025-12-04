@@ -1,13 +1,13 @@
 import React from 'react';
-import {useMessages, useTranslations} from "next-intl";
 import Title from "@/components/commons/ui/title";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {CarouselItem} from "@/components/commons/ui/carousel";
+import {getMessages, getTranslations} from "next-intl/server";
 
-const SectionPlace = () => {
-    const t = useTranslations('restaurants');
-    const {restaurants: {experiencias}} = useMessages();
+const SectionPlace = async () => {
+    const t = await getTranslations('restaurants');
+    const {restaurants: {experiencias}} = await getMessages();
     const items = [...experiencias, ...experiencias];
     return (
         <div className={"my-container"}>

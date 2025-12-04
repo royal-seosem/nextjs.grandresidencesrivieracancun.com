@@ -1,12 +1,12 @@
 import React from 'react';
 import Paragraph from "@/components/commons/ui/paragraph";
-import {useTranslations} from "next-intl";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
+import {getTranslations} from "next-intl/server";
 
-const SectionDescription = () => {
-    const t = useTranslations('restaurants');
+const SectionDescription = async () => {
+    const t = await getTranslations('restaurants');
     return (
         <div className={"hidden md:block mb-10"}>
             <Paragraph>{t('menu')}</Paragraph>

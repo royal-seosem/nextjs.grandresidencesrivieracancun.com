@@ -1,7 +1,6 @@
 import React from 'react';
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import {cdn} from "@/lib/cdn";
-import {useTranslations} from "next-intl";
 import Title from "@/components/commons/ui/title";
 import RestaurantTour360 from "@/components/pages/restaurants/RestaurantTour360";
 import Restaurants from "@/components/pages/restaurants/Restaurants";
@@ -11,13 +10,20 @@ import CardFlavors from "@/components/pages/restaurants/CardFlavors";
 import SectionRestaurant from "@/components/pages/restaurants/SectionRestaurant";
 import SectionPlace from "@/components/pages/restaurants/SectionPlace";
 import SectionDescription from "@/components/pages/restaurants/SectionDescription";
+import {headers} from "next/headers";
+import {getMessages, getTranslations} from "next-intl/server";
 
-const Page = () => {
-    const t = useTranslations('restaurants');
+const Page = async () => {
+    const t = await getTranslations('restaurants');
+    const m = await getMessages();
+    const headersList = await headers();
+    const isDesktop = headersList.get('sec-ch-ua-mobile') === '?0';
+
     return (
         <main className={"relative"}>
             <div className="aspect-[95/108] md:aspect-[64/24] mb-4">
                 <SmartVideo
+                    isDesktop={isDesktop}
                     className="w-full h-auto"
                     srcDesktop={cdn("/video/dinning-low.mp4")}
                     srcMobile={cdn("/video/dinning-m.mp4")}
@@ -36,14 +42,20 @@ const Page = () => {
                     </Title>
                 </div>
                 <SectionDescription/>
-                <RestaurantTour360/>
-                <Restaurants/>
+                <RestaurantTour360 messages={{
+                    btn_360: t('btn_360'),
+                    tour_360_description: t('tour_360_description')
+                }}/>
+                <Restaurants messages={{
+                    conceptos: m['restaurants']['conceptos'],
+                }}/>
                 <Paragraph className={"md:hidden text-center mb-10"}>{t('menu')}</Paragraph>
 
                 <div className={"md:flex md:justify-between md:items-center lg:gap-10"}>
                     <Title className="text-center md:text-[48px]" level={"h3"} size={"md"}>{t('bebidas izq')}</Title>
                     <CdnImage alt={"drinks"} src={"/img/restaurants/bg-bebidas.jpg"} width={600} height={589}/>
-                    <Title className={"text-center md:text-[48px] hidden md:block"} level={"h3"} size={"md"} >{t('bebidas der')}</Title>
+                    <Title className={"text-center md:text-[48px] hidden md:block"} level={"h3"}
+                           size={"md"}>{t('bebidas der')}</Title>
                 </div>
 
             </div>

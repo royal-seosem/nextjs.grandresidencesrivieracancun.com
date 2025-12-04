@@ -1,27 +1,39 @@
 'use client'
 import React from 'react';
-import {useTranslations} from "next-intl";
 import Ico360 from "@/components/commons/icons/ico-360.svg";
 import Modal from "@/components/commons/ui/modal/modal";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/commons/ui/tabs";
 
+interface RestaurantTour360Props {
+    messages: {
+        btn_360: string;
+        tour_360_description: string;
+    }
+}
 
-const RestaurantTour360 = () => {
-    const t = useTranslations('restaurants');
+const RestaurantTour360 = (
+    {messages: t}: RestaurantTour360Props
+) => {
+
+
     const [open, setOpen] = React.useState(false);
+
     return (
         <div>
             <button
                 className="flex items-center gap-1 text-base font-bold px-2 mb-2.5"
                 onClick={() => setOpen(true)}>
                 <Ico360 width={24} height={24}/>
-                {t('btn_360')}
+                {t['btn_360']}
             </button>
 
-            <Modal open={open} setOpen={setOpen} header={t('btn_360')}>
+            <Modal open={open} setOpen={setOpen} header={t['btn_360']}>
                 <div className="p-5">
-                    <h3 className="text-lg leading-none font-semibold text-center">{t('btn_360')}</h3>
-                    <span className="mb-4 block">{t('tour_360_description')}</span>
+
+                    <h3 className="text-lg leading-none font-semibold text-center"> {t['btn_360']}</h3>
+
+                    <span className="mb-4 block">{t['tour_360_description']}</span>
+
                     <Tabs defaultValue="flor-de-canela" className="w-full">
                         <TabsList className="justify-center items-stretch w-full gap-2 bg-transparent h-auto">
                             <TabsTrigger
