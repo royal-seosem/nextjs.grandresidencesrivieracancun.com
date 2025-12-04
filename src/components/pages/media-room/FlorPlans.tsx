@@ -32,7 +32,6 @@ const FlorPlans = () => {
 
 
     const suites = m['suites']['suites'];
-    console.log(suites);
 
     return (
         <div className={"pb-5 md:flex gap-4 items-center"}>
