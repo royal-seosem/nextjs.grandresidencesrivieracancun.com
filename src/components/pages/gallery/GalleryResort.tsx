@@ -188,13 +188,15 @@ const GalleryResort = () => {
                     src={"/img/gallery/activities-1.jpg"}
                     label={true}
                     width={1400}
-                    onClick={() => openModal(74)}
+                    onClick={() => openModal(73)}
                     height={1000}/>
             </div>
 
-            <ModalGalleryResort open={open} setOpen={setOpen}
-                                gallery={gallery.filter((_, index) => index === targetGallery)}
-                                setApiCarousel={setApiCarousel}/>
+            <ModalGalleryResort
+                open={open}
+                setOpen={setOpen}
+                gallery={gallery}
+                setApiCarousel={setApiCarousel}/>
 
         </>
     );

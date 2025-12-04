@@ -16,7 +16,6 @@ const ModalGalleryResort = (
     {open, setOpen, setApiCarousel, gallery}: ModalGalleryResortProps
 ) => {
     const t = useTranslations('gallery');
-
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogContent showCloseButton={false} className="w-[1024px] max-w-[80%] lg:max-w-[80%]">
@@ -26,7 +25,9 @@ const ModalGalleryResort = (
                 <div className={"flex h-full w-full min-w-0"}>
                     <Gallery
                         setApi={setApiCarousel}
-                        variant={"secondary"} position={"middle"} showDots={false}>
+                        variant={"secondary"}
+                        position={"middle"}
+                        showDots={false}>
                         {
                             gallery.map((item, index) => (
                                 <CarouselItem key={index} className={"w-full h-full"}>
