@@ -58,15 +58,15 @@ const CardRoom = (
                 </div>
                 <div className="flex justify-between items-center
                     lg:flex-col lg:w-[125px] lg:gap-2 lg:grow-0 lg:shrink-0 lg:items-center lg:justify-center">
-                    <div className="text-xs font-medium text-center font-tertiary w-1/2 lg:w-full">
+                    { room.roomPriceOffer > 10 && <div className="text-xs font-medium text-center font-tertiary w-1/2 lg:w-full">
                         <p>
                             {t('starting')} <span className="line-through">${room.roomPrice} USD</span>
                         </p>
                         <p className="text-sm font-bold">
-                            $<span className="text-base ">{room.roomPriceOferta}</span> USD
+                            $<span className="text-base ">{room.roomPriceOffer}</span> USD
                         </p>
                         <p>{room.leyenda}</p>
-                    </div>
+                    </div>}
 
                     <BookingBtnDrawer offer={{
                         title: room.name,

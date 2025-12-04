@@ -29,7 +29,7 @@ export interface Room {
     galleryBig: RoomImage[];
 
     roomPrice: number;
-    roomPriceOferta: number;
+    roomPriceOffer: number;
 
     roomType: string;
     floorPlan: string;

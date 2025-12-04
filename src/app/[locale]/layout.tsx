@@ -12,9 +12,8 @@ import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders"
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
 import {ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
 import Footer from "@/components/layout/Footer";
-// import {getMessages} from "next-intl/server";
+import {getMessages} from "next-intl/server";
 import ChatWeb from "@/components/layout/ChatWeb";
-// import {getMessages} from "next-intl/server";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
@@ -95,7 +94,7 @@ export default async function RootLayout({children, params}: {
     const {locale} = await params;
     const user = await getSession();
     const country = await getCountry();
-    // const messages = await getMessages();
+    const messages = await getMessages();
 
     // const t = await getTranslates("en");
 
@@ -109,10 +108,17 @@ export default async function RootLayout({children, params}: {
         >
 
         <NextIntlClientProvider
-            // messages={{
-            //     header: messages['header'],
-            //     menu: messages["menu"]
-            // }}
+            messages={{
+                header: messages['header'],
+                menu: messages["menu"],
+                suites: {
+                    starting: messages["suites"]["starting"],
+                    floorPlan: messages["suites"]["floor plan"],
+                    tour360: messages["suites"]["360 Tour"],
+                    btn_360: messages["suites"]["btn_360"],
+                    butonAmenities: messages["suites"]["boton amenities"],
+                }
+            }}
         >
             <WebSiteProvider initialUser={user} country={country?.country?.isoCode || ""}>
                 <ReactQueryProvider>

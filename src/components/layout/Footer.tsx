@@ -63,10 +63,10 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-2 grow">
-                    <Link href="/">{t('resort policy')}</Link>
+                    <Link href="/resort-policies">{t('resort policy')}</Link>
                     <Link href="/privacy" target="_blank">{t('privacy policy')}</Link>
                     <Link href="/media-room">{t('media')}</Link>
-                    <Link href="/">{t('contact')}</Link>
+                    <Link href="/contact">{t('contact')}</Link>
                 </div>
             </nav>
             <article className="my-container pb-5">
