@@ -13,7 +13,7 @@ import BookingProvider from "@/components/commons/shared/booking/Context/Booking
 import Footer from "@/components/layout/Footer";
 import {getMessages} from "next-intl/server";
 import ChatWeb from "@/components/layout/ChatWeb";
-import ModalMyRoyal from "@/components/commons/shared/my-royal/ModalMyRoyal";
+import {ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
