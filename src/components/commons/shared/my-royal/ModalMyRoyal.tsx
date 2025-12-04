@@ -99,7 +99,7 @@ const ModalMyRoyal = (
 
                         <div className={"w-full"}>
                             <p className="">
-                                {messages['gms.modal.I already have an account'] as string}
+                                {messages['gms.modal.I already have an account'] as string} &nbsp;
                                 <Link className="text-accent" href="/gms/login">
                                     {messages['gms.Log in'] as string}
                                 </Link>
@@ -114,12 +114,12 @@ const ModalMyRoyal = (
 };
 
 export default  WithTranslateCliente(ModalMyRoyal,[
-    'Sign me up',
-    'login.description',
-    'login.benefits.0.title',
-    'login.benefits.0.description',
-    'login.benefits.1.title',
-    'login.benefits.1.description',
-    'modal.I already have an account',
-    'Log in'
+    'gms.Sign me up',
+    'gms.login.description',
+    'gms.login.benefits.0.title',
+    'gms.login.benefits.0.description',
+    'gms.login.benefits.1.title',
+    'gms.login.benefits.1.description',
+    'gms.modal.I already have an account',
+    'gms.Log in'
 ]) as React.FC<object>;

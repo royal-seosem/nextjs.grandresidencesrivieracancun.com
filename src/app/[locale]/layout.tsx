@@ -10,10 +10,10 @@ import {getCountry} from "@/lib/geo";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 import ReactQueryProvider from "@/components/commons/shared/ReactQueryProviders";
 import BookingProvider from "@/components/commons/shared/booking/Context/BookingContext";
-import {ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
 import Footer from "@/components/layout/Footer";
 import {getMessages} from "next-intl/server";
 import ChatWeb from "@/components/layout/ChatWeb";
+import ModalMyRoyal from "@/components/commons/shared/my-royal/ModalMyRoyal";
 
 //TODO: Completar los datos de metainformación
 export const metadata: Metadata = {
