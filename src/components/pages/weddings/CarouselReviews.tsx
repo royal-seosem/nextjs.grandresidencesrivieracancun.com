@@ -13,6 +13,7 @@ const CarouselReviews = () => {
     const t = useMessages();
     const thome = useTranslations("home")
     const reviews = t['weddings']['comentarios']['lista'];
+
     return (
         <div className={"md:flex gap-5"}>
             <div className={"md:w-[48%] grow-0"}>
@@ -37,7 +38,8 @@ const CarouselReviews = () => {
 
                     <p className="rating-text py-4 pl-6 text-base font-bold flex items-center gap-3">
                         {thome('tripadvisor_rating')}
-                        <span className={"text-[50px] font-bold tracking-[-6px] leading-[20px]"}>&#8226; &#8226; &#8226; &#8226;</span>
+                        <span
+                            className={"text-[50px] font-bold tracking-[-6px] leading-[20px]"}>&#8226; &#8226; &#8226; &#8226;</span>
                     </p>
 
                     <p className="reviews">
@@ -47,7 +49,7 @@ const CarouselReviews = () => {
                     <div className={"flex gap-2"}>
                         <TrophyIcon className={"text-secondary shrink-0"} width={44} height={60}/>
                         <RichTextClient id={"tripadvisor_choice"} ns={"home"} components={{
-                            p: (chunks)=> <p className={"font-bold text-base"}>{chunks}</p>
+                            p: (chunks) => <p className={"font-bold text-base"}>{chunks}</p>
                         }}/>
                     </div>
 
