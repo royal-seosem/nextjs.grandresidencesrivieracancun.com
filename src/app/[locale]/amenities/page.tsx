@@ -12,9 +12,9 @@ import Gallery from "@/components/commons/ui/gallery/gallery";
 
 const Page = async () => {
     const t = await getTranslations('amenities');
-    const {amenities: {amenidades: {lista}}} = await getMessages();
+    const {amenities: {amenidades: {lista }, kids, actividades}} = await getMessages();
 
-    const locale =  await getLocale();
+    const locale = await getLocale();
 
     return (
         <main>
@@ -50,8 +50,15 @@ const Page = async () => {
                     <RichText id={"descripcion"} ns={"amenities"}/>
                 </div>
 
-                <SectionKids/>
-                <SectionActivities/>
+                <SectionKids messages={{
+                    kidsTitle: t('kids.titulo'),
+                    kidsAlts: kids.alts,
+                    kidsDescription: kids.description,
+                }}/>
+                <SectionActivities messages={{
+                    actividades: actividades,
+                    titulo: t('actividades titulo'),
+                }}/>
 
                 <div className={"mb-14 lg:flex lg:bg-[#fcf7ec] gap-5 py-10"}>
                     <CdnImage

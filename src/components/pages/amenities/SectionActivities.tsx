@@ -1,21 +1,31 @@
 'use client'
 import React from 'react';
-import {useMessages, useTranslations} from "next-intl";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/commons/ui/tabs";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
 import Paragraph from "@/components/commons/ui/paragraph";
 
-const SectionActivities = () => {
-    const t = useTranslations('amenities');
-    const {amenities: {actividades}} = useMessages();
-    const [activity, setActivity] = React.useState<string>("0");
+interface ActivitiesProps {
+    messages: {
+        actividades: {
+            titulo: string;
+            descripcion: string;
+            slug: string;
+        }[],
+        titulo: string;
+    }
+}
 
+const SectionActivities = (
+    {messages: t}: ActivitiesProps
+) => {
+    const [activity, setActivity] = React.useState<string>("0");
+    const actividades = t.actividades;
     return (
         <div className={"mb-10"}>
             <h3 className="text-accent text-3xl text-center mb-10 font-medium
                 lg:text-5xl">
-                {t('actividades titulo')}
+                {t.titulo}
             </h3>
 
             <Select

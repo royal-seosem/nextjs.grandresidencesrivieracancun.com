@@ -4,52 +4,62 @@ import {useTranslations} from "next-intl";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import Card360Tour from "@/components/commons/shared/Card360Tour";
 
+interface CardKidsProps {
+    messages: {
+        kids: {
+            titulo: string;
+            descripcion: string;
+            alts: string[];
+        }
+    }
+}
 
-const CardKids = () => {
-    const t = useTranslations('amenities');
+const CardKids = (
+    {messages: t}: CardKidsProps,
+) => {
+    const tSuites = useTranslations('suites')
     const galleryKids = [
         {
             src: '/img/activities/kids-club-in-grand-redidences-1.jpg',
-            label: t('kids.alts.0'),
+            label: t.kids.alts[0],
         },
         {
             src: '/img/activities/kids-club-in-grand-redidences-2.jpg',
-            label: t('kids.alts.1'),
+            label: t.kids.alts[1],
         },
         {
             src: '/img/activities/kids-club-in-grand-redidences-3.jpg',
-            label: t('kids.alts.2'),
+            label: t.kids.alts[2],
         },
         {
             src: '/img/activities/kids-club-in-grand-redidences-4.jpg',
-            label: t('kids.alts.3'),
+            label: t.kids.alts[3],
         },
         {
             src: '/img/activities/kids-club-in-grand-redidences-5.jpg',
-            label: t('kids.alts.4'),
+            label: t.kids.alts[4],
         },
         {
             src: '/img/activities/amenities-for-infants-in-grand-residences-1.jpg',
-            label: t('kids.alts.5'),
+            label: t.kids.alts[5],
         },
         {
             src: '/img/activities/amenities-for-infants-in-grand-residences-2.jpg',
-            label: t('kids.alts.6'),
+            label: t.kids.alts[6],
         },
         {
             src: '/img/activities/amenities-for-infants-in-grand-residences-3.jpg',
-            label: t('kids.alts.7'),
+            label: t.kids.alts[7],
         },
         {
             src: '/img/activities/amenities-for-infants-in-grand-residences-4.jpg',
-            label: t('kids.alts.8'),
+            label: t.kids.alts[8],
         },
         {
             src: '/img/activities/amenities-for-infants-in-grand-residences-5.jpg',
-            label: t('kids.alts.9'),
+            label: t.kids.alts[9],
         },
     ]
 
@@ -75,17 +85,15 @@ const CardKids = () => {
 
             <div className={"p-5 md:p-0"}>
                 <h3 className="text-3xl text-primary mb-5">
-                    {t('kids.titulo')}
+                    {t.kids.titulo}
                 </h3>
 
-                <div>
-                    <RichTextClient id={'kids.descripcion'} ns={'amenities'}/>
-                </div>
+                <div dangerouslySetInnerHTML={{__html: t.kids.descripcion}}></div>
 
                 <Card360Tour
                     className={"uppercase text-base font-bold"}
-                    title={`${t('btn_360')} Kids Club`}
-                    btnTitle={`${t('btn_360')} Kids Club`}
+                    title={`${tSuites('btn_360')} Kids Club`}
+                    btnTitle={`${tSuites('btn_360')} Kids Club`}
                     src={"https://tour-gr.royalreservations.com/#39128504p&313.42h&89.88t"}/>
             </div>
         </div>
