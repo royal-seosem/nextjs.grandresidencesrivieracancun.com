@@ -35,7 +35,7 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
         rejectUnauthorized: false,
     }) : undefined;
 
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+    // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
     if (isDevelopment) {
         process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
