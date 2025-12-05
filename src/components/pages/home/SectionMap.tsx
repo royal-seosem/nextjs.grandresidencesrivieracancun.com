@@ -4,7 +4,7 @@ import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import {cn} from "@/lib/utils";
 import {getTranslations} from "next-intl/server";
-import {MapClient} from "@/components/pages/home/HomeClientComponents";
+import MapClient from "@/components/pages/home/MapClient";
 
 
 const SectionMap = async (

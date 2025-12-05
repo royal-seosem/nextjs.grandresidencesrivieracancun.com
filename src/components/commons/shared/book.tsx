@@ -1,11 +1,9 @@
 import React from 'react';
-import {useTranslations} from "next-intl";
 import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 const Book = (
     {messages}: WithTranslationProps
 ) => {
-    const t = useTranslations('new-offers');
     return (
         <button className="bg-book-bg text-book-text text-sm font-bold px-4 py-2 rounded-xs opacity-80
             hover:opacity-100">
@@ -16,4 +14,4 @@ const Book = (
 
 export default WithTranslateCliente(Book, [
     "new-offers.book now"
-])as React.FC<object>;
+]) as React.FC<object>;
