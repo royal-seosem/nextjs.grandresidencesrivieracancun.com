@@ -1,14 +1,14 @@
 'use client'
 import React from 'react';
+import {useTranslations} from "next-intl";
 import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
 import LinkButton from "@/components/commons/ui/link";
-import RitchTextClient from "@/components/commons/shared/RitchTextClient";
 import Modal from "@/components/commons/ui/modal/modal";
-import {useTranslations} from "next-intl";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalAllInclusiveProps {
     allInclusive: boolean;
@@ -17,10 +17,10 @@ interface ModalAllInclusiveProps {
 }
 
 const ModalAllInclusive = (
-    {allInclusive, setAllInclusive, amenities_alt}: ModalAllInclusiveProps
+    {allInclusive, setAllInclusive, amenities_alt, messages}: ModalAllInclusiveProps & WithTranslationProps
 ) => {
     const tmenu = useTranslations('menu');
-    const thome = useTranslations('home');
+    // const thome = useTranslations('home');
 
     return (
         <Modal open={allInclusive} setOpen={setAllInclusive} header={tmenu('all inclusive')}>
@@ -32,11 +32,11 @@ const ModalAllInclusive = (
                             alt={amenities_alt[0]}
                             src="/img/rateplans/all-inclusive.jpg"/>
                         <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan ai')}</Title>
-                            <Paragraph>{thome('plan ai descripcion')}</Paragraph>
+                            <Title level="h3" size="md">{messages["home.plan ai"] as string}</Title>
+                            <Paragraph>{messages["home.plan ai descripcion"] as string}</Paragraph>
                             <div>
                                 <LinkButton href="/all-inclusive">
-                                    {thome('plan ai btn')}
+                                    {messages["home.plan ai btn"] as string}
                                 </LinkButton>
                             </div>
                         </div>
@@ -50,8 +50,8 @@ const ModalAllInclusive = (
                             src="/img/rateplans/transportations.jpg"/>
 
                         <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan bb')}</Title>
-                            <Paragraph>{thome('plan bb descripcion')}</Paragraph>
+                            <Title level="h3" size="md">{messages["home.plan bb"] as string}</Title>
+                            <Paragraph>{messages['home.plan bb descripcion'] as string}</Paragraph>
                         </div>
                     </div>
                 </CarouselItem>
@@ -63,8 +63,9 @@ const ModalAllInclusive = (
                             src="/img/rateplans/onlyroom.jpg"/>
 
                         <div className="py-7 px-5">
-                            <Title level="h3" size="md">{thome('plan ep')}</Title>
-                            <RitchTextClient id={'plan ep descripcion'} ns={'home'}/>
+                            <Title level="h3" size="md">{messages["home.plan ep"] as string}</Title>
+                            <div
+                                dangerouslySetInnerHTML={{__html: messages['home.plan ep descripcion'] as string}}></div>
                         </div>
                     </div>
                 </CarouselItem>
@@ -74,4 +75,12 @@ const ModalAllInclusive = (
     );
 };
 
-export default ModalAllInclusive;
+export default WithTranslateCliente(ModalAllInclusive, [
+    "home.plan ai",
+    "home.plan ai descripcion",
+    "home.plan ai btn",
+    "home.plan bb",
+    "home.plan bb descripcion",
+    "home.plan ep",
+    "home.plan ep descripcion"
+]) as React.FC<ModalAllInclusiveProps>;

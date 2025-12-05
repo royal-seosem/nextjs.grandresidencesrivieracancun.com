@@ -9,17 +9,17 @@ import LinkButton from "@/components/commons/ui/link";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import Modal from "@/components/commons/ui/modal/modal";
 import {useTranslations} from "next-intl";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalSuitesProps {
     suites: boolean;
     setSuites: (value: boolean) => void;
     habitaciones: string[];
 }
+
 const ModalSuites = (
-    {suites, setSuites, habitaciones}: ModalSuitesProps
+    {suites, setSuites, habitaciones ,messages}: ModalSuitesProps & WithTranslationProps
 ) => {
-    const t = useTranslations('general');
-    const thome = useTranslations('home');
     const tmenu = useTranslations('menu');
 
     return (
@@ -94,13 +94,13 @@ const ModalSuites = (
                 </CarouselItem>
             </Gallery>
             <div className="p-5">
-                <Title level="h3" size="lg">{thome('habitaciones titulo')}</Title>
-                <Paragraph>{thome('habitaciones descripcion')}</Paragraph>
+                <Title level="h3" size="lg">{messages['home.habitaciones titulo'] as string}</Title>
+                <Paragraph>{messages["home.habitaciones descripcion"] as string}</Paragraph>
             </div>
             <div className="flex justify-center">
                 <LinkButton href="/suites"
                             className="flex items-center justify-center gap-2 border border-primary py-2 px-1.5 text-sm font-bold text-primary rounded-xs uppercase">
-                    {t('go to suites')}
+                    {messages["general.go to suites"] as string}
                     <ArrowRightIcon className="shrink-0" width={16} height={16}/>
                 </LinkButton>
             </div>
@@ -108,4 +108,8 @@ const ModalSuites = (
     );
 };
 
-export default ModalSuites;
+export default WithTranslateCliente(ModalSuites,[
+    "home.habitaciones titulo",
+    "home.habitaciones descripcion",
+    "general.go to suites"
+]) as React.FC<ModalSuitesProps>;

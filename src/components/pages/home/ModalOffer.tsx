@@ -11,6 +11,7 @@ import ValidUntil from "@/components/commons/shared/ValidUntil";
 import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
 import {Offer} from "@/use_case/offers/get_home_offer";
 import {useTranslations} from "next-intl";
+import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
 
 interface ModalOfferProps {
     offer: Offer
@@ -19,9 +20,9 @@ interface ModalOfferProps {
 }
 
 const ModalOffer = (
-    {offer, open, setOpen}: ModalOfferProps,
+    {offer, open, setOpen, messages}: ModalOfferProps & WithTranslationProps,
 ) => {
-    const tOffers = useTranslations('offers');
+    // const tOffers = useTranslations('offers');
     const tGeneral = useTranslations('general');
     const [showTerms, setShowTerms] = useState(false);
 
@@ -35,7 +36,7 @@ const ModalOffer = (
 
                 <Paragraph>{offer.content.description}</Paragraph>
 
-                <Paragraph className="font-bold text-base">{tOffers('label')}</Paragraph>
+                <Paragraph className="font-bold text-base">{messages["offers.label"] as string}</Paragraph>
 
                 <ul className="list-disc pl-10 mb-5 space-y-2">
                     {(offer.content.inclusions || []).slice(0, 3).map((item: string, index: number) => (
@@ -46,7 +47,7 @@ const ModalOffer = (
                 <Button
                     onClick={() => setShowTerms(!showTerms)}
                     className="text-base font-medium underline pl-0 mb-6"
-                    variant="link">{tOffers('label2')}</Button>
+                    variant="link">{messages["offers.label2"] as string}</Button>
 
                 <CdnImage
                     className="mb-2"
@@ -83,4 +84,7 @@ const ModalOffer = (
     );
 };
 
-export default ModalOffer;
+export default WithTranslateCliente(ModalOffer, [
+    "offers.label",
+    "offers.label2",
+]) as React.FC<ModalOfferProps>;

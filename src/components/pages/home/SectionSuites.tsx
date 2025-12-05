@@ -1,19 +1,13 @@
-'use client'
 import dynamic from "next/dynamic";
-import React, {useState} from "react";
-import {useTranslations} from "next-intl";
+import React from "react";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import CardImg from "@/components/pages/home/Cardimg";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
 import Paragraph from "@/components/commons/ui/paragraph";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import LinkButton from "@/components/commons/ui/link";
 
-const ModalAllInclusive = dynamic(() => import("@/components/pages/home/ModalAllInclusive"), {ssr: false});
-const ModalSuites = dynamic(() => import("@/components/pages/home/ModalSuites"), {ssr: false});
-const ModalWedding = dynamic(() => import("@/components/pages/home/ModalWedding"), {ssr: false});
-
+const SectionSuitesMobile = dynamic(() => import("@/components/pages/home/SectionSuitesMobile"));
 const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 
 interface SectionSuitesProps {
@@ -39,42 +33,15 @@ interface SectionSuitesProps {
 const SectionSuites = (
     {text, habitaciones, amenities_alt, group_event_alt}: SectionSuitesProps
 ) => {
-    const tmenu = useTranslations('menu');
-
-    const [suites, setSuites] = useState(false);
-    const [allInclusive, setAllInclusive] = useState(false);
-    const [wedding, setWedding] = useState(false);
 
 
     return (
         <>
-            <section className="lg:hidden">
-                <div className="grid grid-cols-2 gap-5 mb-5 my-container">
-                    <CardImg
-                        className="col-span-2 " src="/img/rooms/360x309/junior-suite-0.jpg"
-                        text={tmenu('suites')}
-                        onClick={() => setSuites(true)}/>
 
-                    <CardImg
-                        src="/img/home/360x309/all-inclusive.jpg"
-                        text={tmenu('all inclusive')}
-                        onClick={() => setAllInclusive(true)}/>
-
-                    <CardImg
-                        src="/img/home/360x309/events-wedding.jpg"
-                        text={tmenu('wedding')}
-                        onClick={() => setWedding(true)}
-                    />
-                </div>
-
-                {suites && <ModalSuites suites={suites} setSuites={setSuites} habitaciones={habitaciones}/>}
-                {allInclusive && <ModalAllInclusive allInclusive={allInclusive} setAllInclusive={setAllInclusive}
-                                                    amenities_alt={amenities_alt}/>}
-                {wedding && <ModalWedding wedding={wedding} setWedding={setWedding} group_event_alt={group_event_alt}/>}
-
-
-            </section>
-
+            <SectionSuitesMobile
+                habitaciones={habitaciones}
+                amenities_alt={amenities_alt}
+                group_event_alt={group_event_alt}/>
 
             <section className="hidden lg:block">
                 <div className="flex gap-8 relative mb-16 my-container
