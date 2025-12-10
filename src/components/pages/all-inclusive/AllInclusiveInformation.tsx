@@ -13,7 +13,7 @@ const OwnerLogin = () => {
     const t = useTranslations('all-inclusive');
     const locale = useLocale();
     const logInGr = process.env.NEXT_PUBLIC_MEMBER_LOGIN_POP;
-    const appUrl = process.env.NEXT_POBLIC_APP_URL;
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL;
     const logInGrRedirect = process.env.NEXT_PUBLIC_MEMBER_LOGIN_GR;
 
     const handleLoginClick = () => {
