@@ -15,18 +15,26 @@ const OwnersArea = (
 ) => {
     const t = useTranslations('header');
     const locale = useLocale();
+
     const logInGr = process.env.NEXT_PUBLIC_MEMBER_LOGIN_POP;
     const appUrl = process.env.NEXT_PUBLIC_APP_URL;
     const logInGrRedirect = process.env.NEXT_PUBLIC_MEMBER_LOGIN_GR;
 
+
+    console.log("logInGrRedirect", logInGrRedirect);
+
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {
-            if (event.origin !== appUrl)
-                return;
+            console.log("event owners area", event);
+
+            // if (event.origin !== appUrl)
+            //     return;
+
             if (event.data?.source !== "members")
                 return;
 
             const token = event.data.token;
+
             window.location.href = `${logInGrRedirect}?token=${token}&lang=${locale}`;
         }
 
