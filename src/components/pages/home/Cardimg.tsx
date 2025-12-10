@@ -10,15 +10,17 @@ interface CardImgProps {
     onClick?: () => void;
     width?: number;
     height?: number;
+    sizes?: string;
 }
 
-const CardImg = ({className, text, src, onClick, width = 319, height = 204}: CardImgProps) => {
+const CardImg = ({className, text, src, onClick, width = 319, height = 204, sizes}: CardImgProps) => {
     return (
         <figure className={cn('relative', className)}>
             <CdnImage
                 className="w-full object-cover h-auto"
                 width={width}
                 height={height}
+                sizes={sizes || ""}
                 alt={text}
                 src={src}/>
             <span

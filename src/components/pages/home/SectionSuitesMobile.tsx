@@ -27,17 +27,23 @@ const SectionSuitesMobile = (
         <section className="lg:hidden">
             <div className="grid grid-cols-2 gap-5 mb-5 my-container">
                 <CardImg
-                    className="col-span-2 " src="/img/rooms/360x309/junior-suite-0.jpg"
+                    className="col-span-2 "
+                    src="/img/rooms/360x309/junior-suite-0.jpg"
+                    width={360} height={309}
                     text={tmenu('suites')}
                     onClick={() => setSuites(true)}/>
 
                 <CardImg
                     src="/img/home/360x309/all-inclusive.jpg"
+                    width={176} height={151}
+                    sizes="(max-width: 450px) 40vw, 170px"
                     text={tmenu('all inclusive')}
                     onClick={() => setAllInclusive(true)}/>
 
                 <CardImg
                     src="/img/home/360x309/events-wedding.jpg"
+                    sizes="(max-width: 450px) 40vw, 170px"
+                    width={176} height={151}
                     text={tmenu('wedding')}
                     onClick={() => setWedding(true)}
                 />
