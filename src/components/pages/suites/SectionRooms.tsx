@@ -2,9 +2,11 @@
 import React, {useEffect} from 'react';
 import {cn} from "@/lib/utils";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/commons/ui/select";
-import CardRoom from "@/components/pages/suites/CardRoom";
 import PeopleIconSvg from "@/components/commons/icons/people.svg";
 import {Room} from "@/use_case/rooms/types";
+import dynamic from "next/dynamic";
+
+const CardRoom = dynamic(()=> import("@/components/pages/suites/CardRoom"));
 
 
 interface SectionRoomsProps {

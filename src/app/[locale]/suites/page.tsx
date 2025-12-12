@@ -5,18 +5,21 @@ import CdnImage from "@/components/commons/ui/CdnImage";
 import RichText from "@/components/commons/shared/RitchText";
 import {getRooms} from "@/use_case/rooms/get_rooms";
 import Title from "@/components/commons/ui/title";
-import SectionRooms from "@/components/pages/suites/SectionRooms";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 
+const SectionRooms = dynamic(() => import( "@/components/pages/suites/SectionRooms"));
 const Tour360 = dynamic(() => import("@/components/pages/suites/tour360"));
 const WebCam = dynamic(() => import("@/components/pages/suites/WebCam"));
 const SitePlan = dynamic(() => import("@/components/pages/suites/SitePlan"));
 
 //TODO: Page Suites
 const Page = async () => {
-    const t = await getTranslations('suites');
-    const m = await getMessages();
-    const suites = await getRooms();
+
+    const [t, m, suites] = await Promise.all([
+        getTranslations('suites'),
+        getMessages(),
+        getRooms(),
+    ]);
 
     return (
         <main>

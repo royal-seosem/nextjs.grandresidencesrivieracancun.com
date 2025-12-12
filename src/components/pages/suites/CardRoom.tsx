@@ -1,15 +1,16 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import {useTranslations} from "next-intl";
 import {Room} from "@/use_case/rooms/types";
 import CdnImage from "@/components/commons/ui/CdnImage";
-import Gallery from "@/components/commons/ui/gallery/gallery";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 
-import CardFloorPlan from "@/components/pages/suites/CardFloorPlan";
-import Card360Tour from "@/components/commons/shared/Card360Tour";
-import CardAmenities from "@/components/pages/suites/CardAmenities";
+const BookingBtnDrawer = dynamic(()=> import("@/components/commons/shared/booking/BookingBtnDrawer"));
+const Gallery = dynamic(()=> import("@/components/commons/ui/gallery/gallery"));
+const CardFloorPlan = dynamic(() => import("@/components/pages/suites/CardFloorPlan"));
+const Card360Tour = dynamic(() => import("@/components/commons/shared/Card360Tour"));
+const CardAmenities = dynamic(() => import("@/components/pages/suites/CardAmenities"));
 
 const CardRoom = (
     {room}: { room: Room }
@@ -58,15 +59,16 @@ const CardRoom = (
                 </div>
                 <div className="flex justify-between items-center
                     lg:flex-col lg:w-[125px] lg:gap-2 lg:grow-0 lg:shrink-0 lg:items-center lg:justify-center">
-                    { room.roomPriceOffer > 10 && <div className="text-xs font-medium text-center font-tertiary w-1/2 lg:w-full">
-                        <p>
-                            {t('starting')} <span className="line-through">${room.roomPrice} USD</span>
-                        </p>
-                        <p className="text-sm font-bold">
-                            $<span className="text-base ">{room.roomPriceOffer}</span> USD
-                        </p>
-                        <p>{room.leyenda}</p>
-                    </div>}
+                    {room.roomPriceOffer > 10 &&
+                        <div className="text-xs font-medium text-center font-tertiary w-1/2 lg:w-full">
+                            <p>
+                                {t('starting')} <span className="line-through">${room.roomPrice} USD</span>
+                            </p>
+                            <p className="text-sm font-bold">
+                                $<span className="text-base ">{room.roomPriceOffer}</span> USD
+                            </p>
+                            <p>{room.leyenda}</p>
+                        </div>}
 
                     <BookingBtnDrawer offer={{
                         title: room.name,
