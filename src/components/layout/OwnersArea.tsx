@@ -27,8 +27,6 @@ const OwnersArea = (
         const handleMessage = (event: MessageEvent) => {
             console.log("event owners area", event);
 
-            // if (event.origin !== appUrl)
-            //     return;
 
             if (event.data?.source !== "members")
                 return;
@@ -48,9 +46,8 @@ const OwnersArea = (
 
 
     const handleLoginClick = () => {
-        const language = locale === 'en' ? '' : `?lang=${locale.toUpperCase()}`;
         const strWindow = "menubar=no,location=no,resizable=no,scrollbars=yes,status=no,width=400,innerHeight=600,centerscreen=yes,chrome=yes";
-        window.open(`${logInGr}?Code=GRM&ReturnUrl=${appUrl}/members${language}`, "CNN_WindowName", strWindow);
+        window.open(`${logInGr}?Code=GRM&ReturnUrl=${appUrl}/members`, "CNN_WindowName", strWindow);
     };
 
     return (

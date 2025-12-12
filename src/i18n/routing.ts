@@ -107,6 +107,10 @@ export const routing = defineRouting({
             en: "/company-announcement-2023",
             es: "/anuncio-de-la-compania-2023"
         },
+        "/members":{
+            en:"/members",
+            es:"/members"
+        },
         //Downloads
         "/menu-spa": {
             en: "/menu-spa",
