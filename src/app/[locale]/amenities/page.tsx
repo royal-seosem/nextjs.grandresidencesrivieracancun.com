@@ -1,18 +1,20 @@
 import React from 'react';
+import dynamic from "next/dynamic";
 import {getLocale, getMessages, getTranslations} from "next-intl/server";
+import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
-import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import RichText from "@/components/commons/shared/RitchText";
-import SectionKids from "@/components/pages/amenities/SectionKids";
-import SectionActivities from "@/components/pages/amenities/SectionActivities";
-import Gallery from "@/components/commons/ui/gallery/gallery";
+
+const SectionKids = dynamic(() => import("@/components/pages/amenities/SectionKids"));
+const SectionActivities = dynamic(() => import("@/components/pages/amenities/SectionActivities"));
+const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
+const BookingHeader = dynamic(() => import("@/components/commons/shared/booking/BookingHeader"));
 
 const Page = async () => {
     const t = await getTranslations('amenities');
-    const {amenities: {amenidades: {lista }, kids, actividades}} = await getMessages();
+    const {amenities: {amenidades: {lista}, kids, actividades}} = await getMessages();
 
     const locale = await getLocale();
 

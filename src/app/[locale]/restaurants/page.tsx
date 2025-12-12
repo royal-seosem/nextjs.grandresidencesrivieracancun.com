@@ -1,4 +1,6 @@
 import React from 'react';
+import {headers} from "next/headers";
+import {getMessages, getTranslations} from "next-intl/server";
 import SmartVideo from "@/components/commons/ui/SmartVideo";
 import {cdn} from "@/lib/cdn";
 import Title from "@/components/commons/ui/title";
@@ -10,8 +12,6 @@ import CardFlavors from "@/components/pages/restaurants/CardFlavors";
 import SectionRestaurant from "@/components/pages/restaurants/SectionRestaurant";
 import SectionPlace from "@/components/pages/restaurants/SectionPlace";
 import SectionDescription from "@/components/pages/restaurants/SectionDescription";
-import {headers} from "next/headers";
-import {getMessages, getTranslations} from "next-intl/server";
 
 const Page = async () => {
     const t = await getTranslations('restaurants');
