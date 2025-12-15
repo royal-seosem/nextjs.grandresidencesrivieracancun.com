@@ -37,7 +37,7 @@ const MyRoyal = () => {
                     </Link>
                 </li>
                 <li className={"mb-4 text-base"}>
-                    <Link href={"/"} className={"flex items-center gap-1"}>
+                    <Link href={"/offers"} className={"flex items-center gap-1"}>
                         <SpecialIcon width={24} height={24}/>
                         {t("Special Offers")}
                     </Link>
