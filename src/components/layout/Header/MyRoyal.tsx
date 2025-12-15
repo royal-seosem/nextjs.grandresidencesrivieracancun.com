@@ -16,7 +16,8 @@ const MyRoyal = () => {
     return (
         <>
             {user && <>
-                <button className="flex items-center gap-2 whitespace-nowrap" aria-label={"My Royal"}>
+                <button className="flex items-center gap-2 whitespace-nowrap"
+                        aria-label={"My Royal"} onClick={() => setOpen(true)}>
                     {user.name}
                     <MyRoyalUserIcon width={20} height={20}/>
                     <ArrowDownIcon width={20} height={20}/>
