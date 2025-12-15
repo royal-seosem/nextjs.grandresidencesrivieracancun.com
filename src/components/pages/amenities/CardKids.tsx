@@ -88,7 +88,8 @@ const CardKids = (
                     {t.kids.titulo}
                 </h3>
 
-                <div dangerouslySetInnerHTML={{__html: t.kids.descripcion}}></div>
+
+                <p className={"text-base mt-4 mb-4 text-pretty"} dangerouslySetInnerHTML={{__html: t.kids.descripcion}}></p>
 
                 <Card360Tour
                     className={"uppercase text-base font-bold"}

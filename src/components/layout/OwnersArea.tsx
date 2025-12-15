@@ -25,8 +25,6 @@ const OwnersArea = (
 
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {
-            console.log("event owners area", event);
-
 
             if (event.data?.source !== "members")
                 return;

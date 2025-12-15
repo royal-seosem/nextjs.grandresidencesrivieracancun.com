@@ -8,7 +8,7 @@
     "descripcion": "From a day of total relaxation at the spa to bike rides, at Grand Residences Riviera Cancun there are fun activities for everyone in the family and luxury amenities for special touches of pampering.",
     "kids": {
       "titulo": "Fun for the little ones at the Kids Club",
-      "descripcion": "<p>Children are always unstoppable bundles of energy, and our Kids Club team has a non-stop program of activities to keep them busy. They’ll have fun with treasure hunts, pirate’s face painting, craft classes, hockey, movies and video games, a Lego competition and more.</p>\n        <p>If you are traveling with toddlers, cribs, high chairs, bed rails and more are available. Request them upon arrival. </p>",
+      "descripcion": "<p>Children are always unstoppable bundles of energy, and our Kids Club team has a non-stop program of activities to keep them busy. They’ll have fun with treasure hunts, pirate’s face painting, craft classes, hockey, movies and video games, a Lego competition and more.</p>\n        <p class='text-base mt-4 mb-4 text-pretty'>If you are traveling with toddlers, cribs, high chairs, bed rails and more are available. Request them upon arrival. </p>",
       "alts": [
         "The little ones have fun while you relax",
         "You can keep an eye on them with our closed circuit cameras",
@@ -26,7 +26,7 @@
     "actividades": [
       {
         "titulo": "Cooking class",
-        "descripcion": "Enjoy a cooking class with the chef and learn how to prepare Mexican dishes, perfect pasta, divine desserts and much more.",
+        "descripcion": "Enjoy a cooking class with the chef and learn how to prepare Mexizcan dishes, perfect pasta, divine desserts and much more.",
         "slug": "650x400-cookingclass"
       },
       {

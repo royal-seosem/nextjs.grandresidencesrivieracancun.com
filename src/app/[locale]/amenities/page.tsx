@@ -36,6 +36,7 @@ const Page = async () => {
                     src="/img/activities/1360x400/actividades-header-new-1.jpg"
                 />
             </div>
+
             <div className="my-container">
                 <div className={"flex flex-col"}>
                     <Title level="h1" size={"lg"}
@@ -55,7 +56,7 @@ const Page = async () => {
                 <SectionKids messages={{
                     kidsTitle: t('kids.titulo'),
                     kidsAlts: kids.alts,
-                    kidsDescription: kids.description,
+                    kidsDescription: kids.descripcion,
                 }}/>
                 <SectionActivities messages={{
                     actividades: actividades,
