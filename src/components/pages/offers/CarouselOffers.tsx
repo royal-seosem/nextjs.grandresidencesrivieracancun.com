@@ -1,12 +1,14 @@
 'use client'
 import React from 'react';
 import {Offer} from "@/use_case/offers/get_home_offer";
-import Gallery from "@/components/commons/ui/gallery/gallery";
+import {useTranslations} from "next-intl";
 import {CarouselItem} from "@/components/commons/ui/carousel";
-import CardOffer from "@/components/pages/offers/CardOffer";
 import ArrowLargeDownIcon from "@/components/commons/icons/arrow-large-down.svg";
 import {Button} from "@/components/commons/ui/button";
-import {useTranslations} from "next-intl";
+import dynamic from "next/dynamic";
+
+const CardOffer = dynamic(()=> import("@/components/pages/offers/CardOffer"));
+const Gallery = dynamic(()=> import("@/components/commons/ui/gallery/gallery"));
 
 const CarouselOffers = (
     {offers}: { offers: Offer[] }

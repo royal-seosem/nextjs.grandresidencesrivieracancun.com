@@ -1,17 +1,19 @@
 import React from 'react';
-import Banner from "@/components/pages/offers/banner";
+import dynamic from "next/dynamic";
+import {getReviews} from "@/use_case/reviews/get_reviews";
+import RichText from "@/components/commons/shared/RitchText";
 import CheckGreenIcon from "@/components/commons/icons/check-green.svg";
 import Paragraph from "@/components/commons/ui/paragraph";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {getMessages, getTranslations} from "next-intl/server";
 import {getOffers} from "@/use_case/offers/get_offes";
-import CarouselOffers from "@/components/pages/offers/CarouselOffers";
-import LogInModalOffer from "@/components/commons/shared/my-royal/LogInModalOffer";
-import RichText from "@/components/commons/shared/RitchText";
-import CarouselReviews from "@/components/pages/offers/CarouselReviews";
-import {getReviews} from "@/use_case/reviews/get_reviews";
-import CardOfferLandscape from "@/components/pages/offers/CardOfferLandscape";
 import {NextIntlClientProvider} from "next-intl";
+
+const LogInModalOffer = dynamic(() => import("@/components/commons/shared/my-royal/LogInModalOffer"));
+const CarouselOffers = dynamic(() => import("@/components/pages/offers/CarouselOffers"));
+const CarouselReviews = dynamic(() => import("@/components/pages/offers/CarouselReviews"));
+const Banner = dynamic(() => import("@/components/pages/offers/banner"));
+const CardOfferLandscape = dynamic(() => import("@/components/pages/offers/CardOfferLandscape"));
 
 const Page = async () => {
     const t = await getTranslations('offers-template2');

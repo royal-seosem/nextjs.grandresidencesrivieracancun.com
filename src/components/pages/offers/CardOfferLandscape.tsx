@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import dynamic from "next/dynamic";
 import {format} from "date-fns";
 import {useTranslations} from "next-intl";
 import {Offer} from "@/use_case/offers/get_home_offer";
@@ -7,12 +8,11 @@ import {useWebsite} from "@/context/WebSiteProvider";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Price from "@/components/commons/shared/price";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
-import PaymentMethods from "@/components/commons/shared/PaymentMethods";
 import RichTextClient from "@/components/commons/shared/RitchTextClient";
 import MyRoyalIcon from "@/components/commons/icons/my-royal.svg";
-import dynamic from "next/dynamic";
 
-const ModalOffer = dynamic(()=> import("@/components/pages/offers/ModalOffer"), {ssr: false});
+const PaymentMethods = dynamic(() => import("@/components/commons/shared/PaymentMethods"));
+const ModalOffer = dynamic(() => import("@/components/pages/offers/ModalOffer"), {ssr: false});
 
 const CardOfferLandscape = (
     {offer}: { offer: Offer }

@@ -1,10 +1,11 @@
 'use client'
+import dynamic from "next/dynamic";
 import React from 'react';
 import MyRoyalCircleIcon from "@/components/commons/icons/my-royal-circle.svg?svgo=false";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import {Button} from "@/components/commons/ui/button";
 import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
-import ModalMyRoyalSignUp from "@/components/commons/shared/my-royal/ModalMyRoyalSignUp";
+const ModalMyRoyalSignUp = dynamic(()=> import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
 
 type LogInModalOfferProps = object
 
