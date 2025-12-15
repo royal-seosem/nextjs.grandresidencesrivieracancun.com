@@ -2,15 +2,15 @@ import React from 'react';
 import dynamic from "next/dynamic";
 import {getLocale, getMessages, getTranslations} from "next-intl/server";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
-import {CarouselItem} from "@/components/commons/ui/carousel";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
-import RichText from "@/components/commons/shared/RitchText";
 
+const RichText = dynamic(() => import("@/components/commons/shared/RitchText"));
+const SectionAmenidades = dynamic(() => import("@/components/pages/amenities/SectionAmenidades"));
 const SectionKids = dynamic(() => import("@/components/pages/amenities/SectionKids"));
 const SectionActivities = dynamic(() => import("@/components/pages/amenities/SectionActivities"));
-const Gallery = dynamic(() => import("@/components/commons/ui/gallery/gallery"));
 const BookingHeader = dynamic(() => import("@/components/commons/shared/booking/BookingHeader"));
+
 
 const Page = async () => {
     const t = await getTranslations('amenities');
@@ -117,50 +117,7 @@ const Page = async () => {
 
 
                 <div className={"md:flex items-start gap-5"}>
-                    <div className={"mb-5 order-2 md:w-1/2"}>
-                        <Gallery variant={"secondary"} position={"on"}>
-                            <CarouselItem>
-                                <CdnImage
-                                    className={"w-full object-cover"}
-                                    alt={"bottle-of-Tequila"}
-                                    src={"/img/activities/bottle-of-Tequila.jpg"}
-                                    width={600}
-                                    height={700}/>
-                            </CarouselItem>
-                            <CarouselItem>
-                                <CdnImage
-                                    className={"w-full object-cover"}
-                                    alt={"and-dry-fruit"}
-                                    src={"/img/activities/Fresh-and-dry-fruit.jpg"}
-                                    width={600}
-                                    height={700}/>
-                            </CarouselItem>
-                            <CarouselItem>
-                                <CdnImage
-                                    className={"w-full object-cover"}
-                                    alt={"Gifts-for-kids"}
-                                    src={"/img/activities/Gifts-for-kids.jpg"}
-                                    width={600}
-                                    height={700}/>
-                            </CarouselItem>
-                            <CarouselItem>
-                                <CdnImage
-                                    className={"w-full object-cover"}
-                                    alt={"gr-amenities-buttler"}
-                                    src={"/img/activities/m-gr-amenities-buttler.jpg"}
-                                    width={600}
-                                    height={700}/>
-                            </CarouselItem>
-                            <CarouselItem>
-                                <CdnImage
-                                    className={"w-full object-cover"}
-                                    alt={"gr-amenities-gift"}
-                                    src={"/img/activities/m-gr-amenities-gift.jpg"}
-                                    width={600}
-                                    height={700}/>
-                            </CarouselItem>
-                        </Gallery>
-                    </div>
+                    <SectionAmenidades/>
 
                     <div>
                         <h3 className={"text-2xl text-primary font-bold mb-5"}>{t('amenidades.subtitulo')}</h3>
