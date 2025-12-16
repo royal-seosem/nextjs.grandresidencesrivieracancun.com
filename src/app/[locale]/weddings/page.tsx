@@ -39,13 +39,15 @@ const Page = async () => {
             }
         }}>
             <main>
-                <SmartVideo
-                    isDesktop={isDesktop}
-                    className="w-full h-auto max-h-[500px] object-cover mb-4"
-                    posterDesktop={cdn('/img/weddings/wedding-default.jpg')}
-                    posterMobile={cdn('/img/weddings/wedding-default.jpg')}
-                    srcDesktop={cdn('/video/grand-residences-weddings.mp4')}
-                    srcMobile={cdn('/video/grand-residences-weddings.mp4')}/>
+                <div className="mb-4 aspect-444/173 w-full">
+                    <SmartVideo
+                        isDesktop={isDesktop}
+                        className="w-full h-auto"
+                        posterDesktop={cdn('/img/weddings/wedding-default.jpg')}
+                        posterMobile={cdn('/img/weddings/wedding-default.jpg')}
+                        srcDesktop={cdn('/video/grand-residences-weddings.mp4')}
+                        srcMobile={cdn('/video/grand-residences-weddings.mp4')}/>
+                </div>
 
                 <div className="my-container">
                     <Title level="h1" size="sm" className="text-accent mb-4 font-bold text-center">
