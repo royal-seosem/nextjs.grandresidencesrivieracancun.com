@@ -39,6 +39,7 @@ const Banner = () => {
     return (
         <div className={"relative mb-14"}>
             <CdnImage
+                fetchpriority="high"
                 loading="eager"
                 className={"w-full h-full object-cover md:hidden"}
                 alt={t('title')}
@@ -50,6 +51,7 @@ const Banner = () => {
                 className={"w-full h-full object-cover hidden md:block"}
                 alt={t('title')}
                 loading="eager"
+                fetchpriority="high"
                 src={"/img/banners/1440x400/offers-banner.webp"}
                 width={1440}
                 height={400}/>
