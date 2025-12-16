@@ -35,15 +35,13 @@ const SectionSuitesMobile = (
 
                 <CardImg
                     src="/img/home/360x309/all-inclusive.jpg"
-                    width={176} height={151}
-                    sizes="(max-width: 450px) 40vw, 170px"
+                    width={128} height={110}
                     text={tmenu('all inclusive')}
                     onClick={() => setAllInclusive(true)}/>
 
                 <CardImg
                     src="/img/home/360x309/events-wedding.jpg"
-                    sizes="(max-width: 450px) 40vw, 170px"
-                    width={176} height={151}
+                    width={128} height={110}
                     text={tmenu('wedding')}
                     onClick={() => setWedding(true)}
                 />
