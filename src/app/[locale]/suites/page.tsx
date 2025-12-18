@@ -6,14 +6,28 @@ import RichText from "@/components/commons/shared/RitchText";
 import {getRooms} from "@/use_case/rooms/get_rooms";
 import Title from "@/components/commons/ui/title";
 import BookingHeader from "@/components/commons/shared/booking/BookingHeader";
+import {Metadata} from "next";
+import {headers} from "next/headers";
 
 const SectionRooms = dynamic(() => import( "@/components/pages/suites/SectionRooms"));
 const Tour360 = dynamic(() => import("@/components/pages/suites/tour360"));
 const WebCam = dynamic(() => import("@/components/pages/suites/WebCam"));
 const SitePlan = dynamic(() => import("@/components/pages/suites/SitePlan"));
 
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('suites');
+
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+    };
+}
+
+
 //TODO: Page Suites
 const Page = async () => {
+    const headersList = await headers();
+    const fullUrl = headersList.get('x-url') || "";
 
     const [t, m, suites] = await Promise.all([
         getTranslations('suites'),
@@ -21,8 +35,64 @@ const Page = async () => {
         getRooms(),
     ]);
 
+    const dlRooms = suites.map((room) => {
+        return {
+            "@type": "Offer",
+            "availability": "https:\/\/schema.org\/InStock",
+            "price": room.roomPriceOffer,
+            "priceCurrency": "USD"
+        }
+    })
+
+    const maxPrice = suites.reduce((max, room) => room.roomPriceOffer > max ? room.roomPriceOffer : max, 0)
+    const minPrice = suites.reduce((min, room) => room.roomPriceOffer < min ? room.roomPriceOffer : min, Infinity)
+    const jdlSuites = {
+        "@context": "https:\/\/schema.org",
+        "@type": "Product",
+        "image": "https:\/\/dev.grandresidencesrivieracancun.com\/img\/rooms\/granresidences-suites.jpg",
+        "name": "Grand Residences Riviera Cancun | Riviera Maya Resort",
+        "description": "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
+        "sku": "95939",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "highPrice": maxPrice,
+            "lowPrice": minPrice,
+            "offerCount": dlRooms.length,
+            "offers": dlRooms
+        }
+    }
+
+    const jdlBreadcrumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grandresidences.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name":  t('title'),
+            "item": fullUrl
+        }]
+    }
+
     return (
         <main>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jdlBreadcrumbs).replace(/</g, '\\u003c'),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jdlSuites).replace(/</g, '\\u003c'),
+                }}
+            />
             <BookingHeader/>
             <div className="mb-14">
                 <CdnImage
