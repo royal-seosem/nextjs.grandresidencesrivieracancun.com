@@ -11,7 +11,18 @@ import CardExperience from "@/components/pages/destination/CardExperience";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
 import {NextIntlClientProvider} from "next-intl";
 import {headers} from "next/headers";
+import {Metadata} from "next";
 
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('destination');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
 
 const Page = async () => {
     const t = await getTranslations('destination');

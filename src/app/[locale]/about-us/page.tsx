@@ -3,6 +3,15 @@ import Menu from "@/components/pages/about-us/menu";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import {useTranslations} from "next-intl";
 import RichText from "@/components/commons/shared/RitchText";
+import {Metadata} from "next";
+import {getTranslations} from "next-intl/server";
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('general');
+    return {
+        title: t('media-room.title'),
+    }
+}
 
 const Page = () => {
     const t = useTranslations('about');

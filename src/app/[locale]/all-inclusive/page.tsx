@@ -15,6 +15,19 @@ import ModalMixology from "@/components/pages/all-inclusive/ModalMixology";
 import {getMessages, getTranslations} from "next-intl/server";
 import {headers} from "next/headers";
 import {NextIntlClientProvider} from "next-intl";
+import {Metadata} from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('all-inclusive');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
+
 
 const Page = async () => {
     const t = await getTranslations('all-inclusive');

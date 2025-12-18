@@ -1,8 +1,18 @@
 import React from 'react';
-import {getLocale} from "next-intl/server";
+import {getLocale, getTranslations} from "next-intl/server";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import PrivacyEn from "@/components/pages/about-us/privacy_en";
 import PrivacyEs from "@/components/pages/about-us/PrivacyEs";
+import {Metadata} from "next";
+
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('general');
+    return {
+        title: t('legacy.about-us.title'),
+        description: t('legacy.about-us.description')
+    }
+}
 
 const Page = async () => {
     const locale = await getLocale();

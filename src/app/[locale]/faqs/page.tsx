@@ -2,6 +2,16 @@ import React from 'react';
 import {Collapsible, CollapsibleContent, CollapsibleTrigger} from "@/components/commons/ui/collapsible";
 import {ChevronDown} from "lucide-react";
 import {getMessages, getTranslations} from "next-intl/server";
+import {Metadata} from "next";
+
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('faqs');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+    }
+}
 
 const Page = async () => {
     const t = await getTranslations('faqs');

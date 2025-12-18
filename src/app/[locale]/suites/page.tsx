@@ -20,6 +20,13 @@ export async function generateMetadata(): Promise<Metadata> {
     return {
         title: t('title'),
         description: t('metadescription'),
+        openGraph: {
+            title: t('title'),
+            description: t('metadescription'),
+            images: [
+                t('og_image')
+            ]
+        },
     };
 }
 
@@ -74,7 +81,7 @@ const Page = async () => {
         }, {
             "@type": "ListItem",
             "position": 2,
-            "name":  t('title'),
+            "name": m['menu']['suites'],
             "item": fullUrl
         }]
     }

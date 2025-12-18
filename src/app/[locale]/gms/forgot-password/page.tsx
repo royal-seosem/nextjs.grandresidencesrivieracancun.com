@@ -3,6 +3,8 @@ import {useTranslations} from "next-intl";
 import Paragraph from "@/components/commons/ui/paragraph";
 import ForgotPasswordForm from "@/components/pages/Gms/forgot-password/ForgotPasswordForm";
 
+
+
 const Page = () => {
     const t = useTranslations('gms_forgot_password');
     return (

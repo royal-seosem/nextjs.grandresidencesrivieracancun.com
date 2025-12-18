@@ -4,6 +4,7 @@ import {getLocale, getMessages, getTranslations} from "next-intl/server";
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import CdnImage from "@/components/commons/ui/CdnImage";
 import Title from "@/components/commons/ui/title";
+import {Metadata} from "next";
 
 const RichText = dynamic(() => import("@/components/commons/shared/RitchText"));
 const SectionAmenidades = dynamic(() => import("@/components/pages/amenities/SectionAmenidades"));
@@ -11,6 +12,17 @@ const SectionKids = dynamic(() => import("@/components/pages/amenities/SectionKi
 const SectionActivities = dynamic(() => import("@/components/pages/amenities/SectionActivities"));
 const BookingHeader = dynamic(() => import("@/components/commons/shared/booking/BookingHeader"));
 
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('amenities');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
 
 const Page = async () => {
     const t = await getTranslations('amenities');

@@ -12,15 +12,57 @@ import CardFlavors from "@/components/pages/restaurants/CardFlavors";
 import SectionRestaurant from "@/components/pages/restaurants/SectionRestaurant";
 import SectionPlace from "@/components/pages/restaurants/SectionPlace";
 import SectionDescription from "@/components/pages/restaurants/SectionDescription";
+import {Metadata} from "next";
+
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('restaurants');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
 
 const Page = async () => {
     const t = await getTranslations('restaurants');
     const m = await getMessages();
     const headersList = await headers();
     const isDesktop = headersList.get('sec-ch-ua-mobile') === '?0';
+    const fullUrl = headersList.get('x-url') || "";
+
+    const jdlBreadcrumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://grandresidences.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": m['menu']['dining'],
+            "item": fullUrl
+        }]
+    }
 
     return (
         <main className={"relative"}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jdlBreadcrumbs).replace(/</g, '\\u003c'),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jdlBreadcrumbs).replace(/</g, '\\u003c'),
+                }}
+            />
             <div className="aspect-[95/108] md:aspect-[64/24] mb-4">
                 <SmartVideo
                     isDesktop={isDesktop}

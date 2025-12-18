@@ -8,7 +8,19 @@ import Card360Tour from "@/components/commons/shared/Card360Tour";
 import GalleryResort from "@/components/pages/gallery/GalleryResort";
 import {getMessages, getTranslations} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
+import {Metadata} from "next";
 
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('gallery');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
 
 const Page = async () => {
     const m = await getMessages();

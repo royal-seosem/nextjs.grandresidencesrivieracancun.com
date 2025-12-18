@@ -13,6 +13,19 @@ import SectionInstagram from "@/components/pages/home/SectionInstagram";
 import RichText from "@/components/commons/shared/RitchText";
 import {headers} from "next/headers";
 import {NextIntlClientProvider} from "next-intl";
+import {Metadata} from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+    const t = await getTranslations('weddings');
+    return {
+        title: t('title'),
+        description: t('metadescription'),
+        openGraph: {
+            images: [t('og_image')],
+        },
+    }
+}
+
 
 const Page = async () => {
     const headersList = await headers();
