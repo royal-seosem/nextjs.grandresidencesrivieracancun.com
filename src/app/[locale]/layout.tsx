@@ -13,30 +13,40 @@ import BookingProvider from "@/components/commons/shared/booking/Context/Booking
 import Footer from "@/components/layout/Footer";
 import {getMessages} from "next-intl/server";
 import {ChatWeb, ModalMyRoyal} from "@/components/layout/Header/HeaderClientComponent";
+import {headers} from "next/headers";
 
-//TODO: Completar los datos de metainformación
-export const metadata: Metadata = {
-    title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
-    description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
 
-    openGraph: {
-        title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
-        type: "website",
-        description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
-        siteName: "Grand Residences Riviera Cancun",
-    },
-    twitter: {
-        card: "summary_large_image",
-        site: "@G_Residences",
-        creator: "@G_Residences",
+export async function generateMetadata(): Promise<Metadata> {
+    const headersList = await headers();
+    const fullUrl = headersList.get('x-url') || "";
+
+    return {
         title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
         description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
-    },
-    icons: {
-        icon: '/favicon.ico',
-        apple: '/img/icons/grand-residences.png'
+
+        openGraph: {
+            title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
+            type: "website",
+            description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
+            siteName: "Grand Residences Riviera Cancun",
+        },
+        twitter: {
+            card: "summary_large_image",
+            site: "@G_Residences",
+            creator: "@G_Residences",
+            title: "Grand Residences Riviera Cancun | Riviera Maya Resort",
+            description: "Grand Residences Riviera Cancun is a luxury beachfront resort located in Riviera Maya. Offers you private transportation, gourmet all inclusive restaurants, spa and more!",
+        },
+        icons: {
+            icon: '/favicon.ico',
+            apple: '/img/icons/grand-residences.png'
+        },
+        alternates: {
+            canonical: fullUrl.split('?')[0]
+        }
     }
-};
+}
+
 const helveticaNue = localFont({
     src: [
         {
