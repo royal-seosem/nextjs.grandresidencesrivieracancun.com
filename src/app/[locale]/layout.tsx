@@ -122,6 +122,12 @@ export default async function RootLayout({children, params}: {
             messages={{
                 header: messages['header'],
                 menu: messages["menu"],
+                "new-offers":{
+                    starting_at: messages["new-offers"]["starting at"],
+                },
+                "offers-template2": {
+                    plus_taxes: messages["offers-template2"]["plus taxes"],
+                },
                 suites: {
                     starting: messages["suites"]["starting"],
                     floorPlan: messages["suites"]["floor plan"],
