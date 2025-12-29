@@ -43,6 +43,8 @@ export async function generateMetadata(): Promise<Metadata> {
         },
         alternates: {
             canonical: fullUrl.split('?')[0]
+                .replace('http://localhost:3000', 'https://grandresidencesrivieracancun.com')
+                .replace('https://localhost:3000', 'https://grandresidencesrivieracancun.com')
         }
     }
 }
