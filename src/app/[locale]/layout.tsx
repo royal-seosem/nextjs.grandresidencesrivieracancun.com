@@ -128,6 +128,11 @@ export default async function RootLayout({children, params}: {
                 "offers-template2": {
                     plus_taxes: messages["offers-template2"]["plus taxes"],
                 },
+                general:{
+                    "btn-contact": messages["general"]["btn-contact"],
+                    "title-transportation": messages["general"]["title-transportation"],
+                    "condition-transportation": messages["general"]["condition-transportation"],
+                },
                 suites: {
                     starting: messages["suites"]["starting"],
                     floorPlan: messages["suites"]["floor plan"],
