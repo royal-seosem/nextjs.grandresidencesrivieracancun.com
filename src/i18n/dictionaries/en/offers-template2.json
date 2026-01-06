@@ -10,20 +10,21 @@
         "img": "/img/icons/car.svg"
       },
       {
-        "label": "Complimentary bottle of tequila",
-        "img": "/img/icons/room-service.svg"
-      },
-      {
-        "label": "Daily dry and season fruits",
-        "img": "/img/icons/bottle.svg"
-      },
-      {
         "label": "Room service all day long",
         "img": "/img/icons/drink.svg"
       },
       {
+        "label": "Complimentary Bottle of Liquor",
+        "img": "/img/icons/bottle.svg"
+      },
+
+      {
         "label": "Unlimited premium meals and drinks",
         "img": "/img/icons/restaurant.svg"
+      },
+      {
+        "label": "Daily dry and season fruits",
+        "img": "/img/icons/room-service.svg"
       },
       {
         "label": "Wi-Fi in room and common areas",

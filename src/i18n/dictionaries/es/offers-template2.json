@@ -6,8 +6,8 @@
     "includes-title": "TODAS NUESTRAS PROMOCIONES INCLUYEN:",
     "includes-list": [
       { "label": "Transportación privada de aeropuerto en viaje redondo", "img": "/img/icons/car.svg" },
-      { "label": "Botella de Mezcal de cortesía", "img": "/img/icons/room-service.svg" },
-      { "label": "Frutas diarias, secas y de temporada", "img": "/img/icons/bottle.svg" },
+      { "label": "Botella de licor de cortesía",  "img": "/img/icons/bottle.svg"},
+      { "label": "Frutas diarias, secas y de temporada", "img": "/img/icons/room-service.svg" },
       { "label": "Servicio de habitación todo el día", "img": "/img/icons/drink.svg" },
       { "label": "Alimentos y bebidas premium ilimitados", "img": "/img/icons/restaurant.svg" },
       { "label": "Wi-Fi en habitaciones y áreas comunes", "img": "/img/icons/wifi.svg" }
