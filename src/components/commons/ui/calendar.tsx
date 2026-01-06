@@ -6,6 +6,7 @@ import {DayButton, DayPicker, getDefaultClassNames} from "react-day-picker"
 import {format} from "date-fns"
 import {Button, buttonVariants} from "@/components/commons/ui/button"
 import {RateRequest, useRate} from "@/components/commons/shared/booking/hooks/useRates";
+import {useBooking} from "@/components/commons/shared/booking/Context/BookingContext";
 
 function Calendar({
                       className,
@@ -184,6 +185,7 @@ function CalendarDayButton({
     rateRequest?: RateRequest,
 }) {
     const defaultClassNames = getDefaultClassNames()
+    const {type} = useBooking();
 
     const ref = React.useRef<HTMLButtonElement>(null)
     React.useEffect(() => {
@@ -226,7 +228,10 @@ function CalendarDayButton({
         disable = true;
     }
 
-    const classLowestRate = 'border-[#c3f1c4] before:content-[\'\'] before:absolute before:top-0 before:right-0 before:h-0 before:w-0 before:border-[7px] before:border-solid before:border-[#4CAF50] before:border-b-transparent before:border-l-transparent';
+    let classLowestRate = ""
+    if (type == "hotel") {
+        classLowestRate = 'border-[#c3f1c4] before:content-[\'\'] before:absolute before:top-0 before:right-0 before:h-0 before:w-0 before:border-[7px] before:border-solid before:border-[#4CAF50] before:border-b-transparent before:border-l-transparent';
+    }
 
     return (
         <Button
@@ -260,7 +265,7 @@ function CalendarDayButton({
             {...props}
         >
             <span>{children}</span>
-            {rateRequest && price && !disable && (
+            {rateRequest && price && !disable && type == "hotel" && (
                 <span className="text-[11px]">
                     ${(price.rate.minRate - price.rate.discount).toFixed(0)}
                 </span>

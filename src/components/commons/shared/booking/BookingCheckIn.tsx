@@ -16,7 +16,7 @@ const BookingCheckIn = (
 ) => {
     const [open, setOpen] = React.useState(false);
     const {
-        adults, childrenGuests, childrenAge, rooms, checkIn, setCheckIn
+        adults, childrenGuests, childrenAge, rooms, checkIn, setCheckIn, type
     } = useBooking();
 
     const request = {
@@ -60,7 +60,7 @@ const BookingCheckIn = (
                         className="w-full"
                         selected={checkIn}
                         onSelect={onSelectDate}
-                        rateRequest={request}
+                        rateRequest={type == "hotel" ? request : undefined}
                         showOutsideDays={false}
                     />
                 </DialogContent>
