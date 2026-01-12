@@ -1,8 +1,8 @@
 {
   "gms_home": {
-    "cintillo": "<b>Welcome {NAME} to My Royal;</b> an extra 8% off is available for your first reservation",
+    "cintillo": "<b>Welcome {NAME} to My Royal;</b> an extra 10% off is available for your first reservation",
     "hello": "Hello {NAME}, welcome to My Royal!",
-    "description": "<p>An additional 8% off is available for your first reservation. At Royal Resorts, we believe that our valued customers deserve only the best; now, you're entitled to exciting benefits, from special discounts to early access to new promotions. Keep an eye on your inbox for resort & destination updates, upcoming promotions, exclusive events, and insider information to keep you well informed.</p > ",
+    "description": "<p>An additional 10% off is available for your first reservation. At Royal Resorts, we believe that our valued customers deserve only the best; now, you're entitled to exciting benefits, from special discounts to early access to new promotions. Keep an eye on your inbox for resort & destination updates, upcoming promotions, exclusive events, and insider information to keep you well informed.</p > ",
     "points-title": "With My Royal, you can also:",
     "points-list": [
       "Review and modify your reservation",

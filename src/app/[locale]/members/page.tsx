@@ -16,7 +16,7 @@ const Page = () => {
 
             window.close();
         }
-    }, [token]);
+    }, [token, host]);
 
     return (
         <div></div>

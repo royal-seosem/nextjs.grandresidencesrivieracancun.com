@@ -1,6 +1,6 @@
 import React from 'react';
 import MyRoyal from "@/components/pages/Gms/my-account/MyRoyal";
-import {NextIntlClientProvider, useTranslations} from "next-intl";
+import {NextIntlClientProvider} from "next-intl";
 import RichText from "@/components/commons/shared/RitchText";
 import PasswordUpdateForm from "@/components/pages/Gms/password-update/PasswordUpdateForm";
 import {getMessages, getTranslations} from "next-intl/server";
