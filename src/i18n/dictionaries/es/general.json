@@ -172,6 +172,10 @@
       "transportation": "¡Gracias por enviar tu información! Nos pondremos en contacto contigo en breve.",
       "error": "Ha ocurrido un problema, por favor intenta de nuevo."
     },
-    "message_gms_login": "<p style=\"text-align: center\"><b>Aviso de Mantenimiento:</b></p> <p>El servicio de inicio de sesión y registro al programa My Royal no está disponible hoy, sábado 28 de septiembre, debido a tareas de mantenimiento. Estará nuevamente disponible mañana, domingo 29 de septiembre.</p> <p>Lamentamos los inconvenientes y le invitamos a regresar a partir de esa fecha.</p>"
+    "message_gms_login": "<p style=\"text-align: center\"><b>Aviso de Mantenimiento:</b></p> <p>El servicio de inicio de sesión y registro al programa My Royal no está disponible hoy, sábado 28 de septiembre, debido a tareas de mantenimiento. Estará nuevamente disponible mañana, domingo 29 de septiembre.</p> <p>Lamentamos los inconvenientes y le invitamos a regresar a partir de esa fecha.</p>",
+    "not_found": {
+      "title": "Oops. Algo ha ocurrido.",
+      "subtitle": "Es posible que haya escrito mal la dirección o que la página se haya movido."
+    }
   }
 }

@@ -171,6 +171,10 @@
       "transportation": "Your transportation request has been sent successfully",
       "error": "An error occurred, please try again later"
     },
-    "message_gms_login": "<p style=\"text-align: center\"><b>Maintenance Notice:</b></p><p>The login and registration service for the My Royal program is unavailable today, Saturday, September 28th, due to maintenance work. It will be available again tomorrow, Sunday, September 29th.</p><p>We apologize for the inconvenience and invite you to return from that date onward.</p>"
+    "message_gms_login": "<p style=\"text-align: center\"><b>Maintenance Notice:</b></p><p>The login and registration service for the My Royal program is unavailable today, Saturday, September 28th, due to maintenance work. It will be available again tomorrow, Sunday, September 29th.</p><p>We apologize for the inconvenience and invite you to return from that date onward.</p>",
+    "not_found": {
+      "title": "Oops. Something wrong happen.",
+      "subtitle": "You may have mistyped the address or the page may have moved."
+    }
   }
 }
