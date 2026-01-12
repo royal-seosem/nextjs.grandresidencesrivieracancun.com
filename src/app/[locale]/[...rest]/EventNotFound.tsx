@@ -1,16 +1,17 @@
 'use client'
-import React, { useEffect } from 'react';
+import {useEffect} from 'react';
+import {pushToDataLayer} from "@/lib/gtm";
 
 const EventNotFound = () => {
     useEffect(() => {
+
         const event = {
             'event': 'error_404',
             'requestedURL': window.location.href,
             'referrer': document.referrer
         };
 
-        (window as any).dataLayer = (window as any).dataLayer || [];
-        (window as any).dataLayer.push(event);
+        pushToDataLayer(event);
     }, []);
 
     return null;
