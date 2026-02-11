@@ -1,3 +1,4 @@
+
 import React from 'react';
 import dynamic from "next/dynamic";
 import {getReviews} from "@/use_case/reviews/get_reviews";
@@ -14,6 +15,7 @@ const CarouselOffers = dynamic(() => import("@/components/pages/offers/CarouselO
 const CarouselReviews = dynamic(() => import("@/components/pages/offers/CarouselReviews"));
 const Banner = dynamic(() => import("@/components/pages/offers/banner"));
 const CardOfferLandscape = dynamic(() => import("@/components/pages/offers/CardOfferLandscape"));
+
 
 const Page = async () => {
     const t = await getTranslations('offers-template2');

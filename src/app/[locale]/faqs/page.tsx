@@ -41,8 +41,9 @@ const Page = async () => {
                                                 className="w-5 h-5 transition-transform duration-300 group-data-[state=open]:rotate-180"/>
                                         </CollapsibleTrigger>
                                         <CollapsibleContent className={"py-5"}>
-                                            {faq.answer}
+                                            <div dangerouslySetInnerHTML={{__html: faq.answer}}></div>
                                         </CollapsibleContent>
+
                                     </Collapsible>
                                 ))
                             }

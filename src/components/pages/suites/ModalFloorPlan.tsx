@@ -16,7 +16,7 @@ const ModalFloorPlan = (
         <Dialog open={open} onOpenChange={() => setOpen(false)}>
             <DialogContent showCloseButton={false}
                            className="w-[1024px]
-                    max-w-[80%] lg:max-w-[80%]">
+                    max-w-[80%] lg:max-w-[60%] max-h-[70%]">
                 <DialogHeader>
                     <DialogTitle className="text-2xl font-bold">
                         {title}
@@ -27,7 +27,7 @@ const ModalFloorPlan = (
                     alt={title}
                     width="974"
                     height="648"
-                    className="w-full h-auto"
+                    className="lg:max-w-[60%] h-auto object-contain m-auto"
                 />
             </DialogContent>
         </Dialog>

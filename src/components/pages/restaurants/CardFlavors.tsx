@@ -20,6 +20,7 @@ const CardFlavors = async () => {
                         <CarouselItem>
                             <figure className={"relative"}>
                                 <CdnImage
+                                    className={"object-cover w-full h-full"}
                                     src={"/img/restaurants/barbacue.jpg"}
                                     width={595}
                                     height={510}
@@ -35,6 +36,7 @@ const CardFlavors = async () => {
                         <CarouselItem>
                             <figure className={"relative"}>
                                 <CdnImage
+                                    className={"object-cover w-full h-full"}
                                     src={"/img/restaurants/francesa.jpg"}
                                     width={595}
                                     height={510}
@@ -50,6 +52,7 @@ const CardFlavors = async () => {
                         <CarouselItem>
                             <figure className={"relative"}>
                                 <CdnImage
+                                    className={"object-cover w-full h-full"}
                                     src={"/img/restaurants/italiana.jpg"}
                                     width={595}
                                     height={510}
@@ -65,6 +68,7 @@ const CardFlavors = async () => {
                         <CarouselItem>
                             <figure className={"relative"}>
                                 <CdnImage
+                                    className={"object-cover w-full h-full"}
                                     src={"/img/restaurants/mariscos.jpg"}
                                     width={595}
                                     height={510}

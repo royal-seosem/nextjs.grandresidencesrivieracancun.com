@@ -40,7 +40,7 @@ export default function Header() {
 
 
     return <header
-        className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
+        className="bg-primary sticky top-0 z-60 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
         <nav className="flex justify-end items-center gap-5 h-8 px-8" role="navigation">
             <a href="https://wa.me/529981000692" target="_blank"
                className="text-white hidden md:flex items-center gap-1 text-sm"
@@ -126,7 +126,7 @@ export default function Header() {
         </nav>
         <nav>
             <ul className={`
-                            w-full z-10
+                            w-full z-60
                             absolute flex bg-white text-primary justify-center items-center 
                             transform transition-all duration-300 ease-in-out whitespace-nowrap
                             ${showResortMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'} 

@@ -5,37 +5,41 @@ import MyRoyalCircleIcon from "@/components/commons/icons/my-royal-circle.svg?sv
 import ArrowRightIcon from "@/components/commons/icons/arrow-right.svg";
 import {Button} from "@/components/commons/ui/button";
 import WithTranslateCliente, {WithTranslationProps} from "@/components/commons/shared/withTranslateCliente";
+import {useWebsite} from "@/context/WebSiteProvider";
 const ModalMyRoyalSignUp = dynamic(()=> import("@/components/commons/shared/my-royal/ModalMyRoyalSignUp"));
-
 type LogInModalOfferProps = object
 
 const LogInModalOffer = (
     {messages}: {} & WithTranslationProps
 ) => {
     const [show, setShow] = React.useState(false);
+    const {user} = useWebsite();
 
     return (
-        <div className="@container">
-            <div className="bg-[#fbf1de] flex flex-col items-center justify-center gap-2 py-6 px-5
+        <>
+            { !user && <>
+                <div className="@container">
+                    <div className="bg-[#fbf1de] flex flex-col items-center justify-center gap-2 py-6 px-5
                    @3xl:justify-between @3xl:flex-row @3xl:px-8">
-                <div className="flex flex-col items-center gap-2
+                        <div className="flex flex-col items-center gap-2
                     @3xl:flex-row @3xl:w-1/2 mb-2">
-                    <MyRoyalCircleIcon width={37} height={37}/>
-                    <p className={"text-center"}
-                       dangerouslySetInnerHTML={{__html: messages['offers-template2.cintillo_text'] as string}}>
-                    </p>
+                            <MyRoyalCircleIcon width={37} height={37}/>
+                            <p className={"text-center"}
+                               dangerouslySetInnerHTML={{__html: messages['offers-template2.cintillo_text'] as string}}>
+                            </p>
+                        </div>
+
+                        <Button variant={"outline"} className="uppercase bg-transparent"
+                                onClick={() => setShow(true)}>
+                            {messages['offers-template2.cintillo_btn'] as string}
+                            <ArrowRightIcon width={16} height={16}/>
+                        </Button>
+                    </div>
+
+                    {show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}
                 </div>
-
-                <Button variant={"outline"} className="uppercase bg-transparent"
-                        onClick={() => setShow(true)}>
-                    {messages['offers-template2.cintillo_btn'] as string}
-                    <ArrowRightIcon width={16} height={16}/>
-                </Button>
-            </div>
-
-            {show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}
-        </div>
-
+            </>}
+        </>
     );
 };
 
