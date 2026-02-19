@@ -6,6 +6,7 @@
 :root {
     --header-height-mobile: 112px;
     --header-height-desktop: 90px;
+    --header-top-desktop: 90px;
 
     --font-jost: "";
     --font-helvetica-nue: "";

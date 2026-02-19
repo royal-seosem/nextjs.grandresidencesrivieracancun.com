@@ -7,7 +7,7 @@ const BookingHome = () => {
 
     return (
         <div
-            className="my-container sticky top-[var(--header-height-mobile)] sm:top-[var(--header-height-desktop)] z-50">
+            className="my-container sticky top-[var(--header-height-mobile)] sm:top-[var(--header-top-desktop)] z-50">
             <div className="z-10 hidden lg:block ">
                 <BookingProvider>
                     <Booking/>
