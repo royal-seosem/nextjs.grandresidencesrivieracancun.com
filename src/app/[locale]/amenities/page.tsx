@@ -96,7 +96,7 @@ const Page = async () => {
                         <div className={"flex justify-center lg:justify-start"}>
                             {locale == 'es' &&
                                 <a
-                                    href={"/spa/esp-spa-grand-residences_riviera_cancun.pdf?v=0"}
+                                    href={"/spa/esp-spa-grand-residences_riviera_cancun.pdf?v=1"}
                                     download={"esp-spa-grand-residences_riviera_cancun.pdf"}
                                     className="text-primary border border-primary flex items-center gap-2 text-sm font-bold uppercase px-2 py-1 rounded-sm transition-all hover:bg-secondary hover:border-secondary">
                                     {t('spa.explore')}
@@ -106,7 +106,7 @@ const Page = async () => {
 
                             {locale == 'en' &&
                                 <a
-                                    href={"/spa/eng-spa-grand-residences_riviera_cancun.pdf?v=0"}
+                                    href={"/spa/eng-spa-grand-residences_riviera_cancun.pdf?v=1"}
                                     download={"eng-spa-grand-residences_riviera_cancun.pdf"}
                                     className="text-primary border border-primary flex items-center gap-2 text-sm font-bold uppercase px-2 py-1 rounded-sm transition-all hover:bg-secondary hover:border-secondary">
                                     {t('spa.explore')}
