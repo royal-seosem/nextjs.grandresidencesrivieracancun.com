@@ -72,6 +72,12 @@ const Footer = () => {
             </nav>
             <article className="my-container pb-5 min-h-[50px]">
 
+                <div className="text-secondary text-center">
+                    <p className="mb-2">Holiday Inn Club Vacations Incorporated, the Holiday Inn Club® program, and the Holiday Inn Club Vacations® resorts are independently owned, operated, and marketed and are not owned, operated, or marketed by any InterContinental Hotels Group (“IHG”) companies, or by IHG One Rewards, or by the owner or licensor of the Holiday Inn® brand. IHG is the owner of the Holiday Inn and IHG One Rewards trademarks and both are used herein with permission of IHG. Otherwise, the owner of the IHG One Rewards program is not affiliated with the owner of the Holiday Inn Club program and reserves the right to change, limit, modify, or cancel the IHG One Rewards program terms and conditions.</p>
+                    <p className="mb-2">Copyright © 2026 Holiday Inn Club Vacations Incorporated. All rights reserved.</p>
+                    <p className="mb-2">THIS MATERIAL IS BEING USED FOR THE PURPOSE OF SOLICITING SALES OF TIMESHARE INTERESTS</p>
+                    <p>Holiday Inn Club Vacations Incorporated, 9271 S John Young Parkway, Orlando, FL 3281</p>
+                </div>
                 <div className={"flex justify-center pb-12 pt-5"}>
                     <div className={"md:hidden"}>
                         <BrandVertical className={"w-full"} width="257" height="760"/>
