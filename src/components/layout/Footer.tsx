@@ -6,14 +6,15 @@ import LogoGr from '@/components/commons/icons/LogoGrHorizontal.svg';
 import IconFacebook from '@/components/commons/icons/facebook.svg';
 import IconInstagram from '@/components/commons/icons/instagram.svg';
 import IconTwitter from '@/components/commons/icons/twitter.svg';
+import BrandVertical from  '@/components/commons/icons/ihgor-brand-bar-2026-neg-rgb-vert-en.svg';
+import BrandHorizontal from  '@/components/commons/icons/ihgor-brand-bar-2026-neg-rgb-horz-en.svg';
 
 import {Link} from "@/i18n/navigation";
 import {useTranslations} from "next-intl";
 import BookingBtnDrawer from "@/components/commons/shared/booking/BookingBtnDrawer";
-import {BrandsCarousel} from "@/components/layout/Header/HeaderClientComponent";
+// import {BrandsCarousel} from "@/components/layout/Header/HeaderClientComponent";
 import dynamic from "next/dynamic";
 const BookingDrawer  = dynamic(()=> import("../commons/shared/booking/BookingDrawer"), {ssr: false});
-
 
 
 
@@ -69,21 +70,31 @@ const Footer = () => {
                     <Link href="/contact">{t('contact')}</Link>
                 </div>
             </nav>
-            <article className="my-container pb-5">
-                <div className="py-3 relative
-                    before:absolute before:w-full before:h-[1px] before:bg-secondary before:opacity-[.3] before:left-0 before:top-0
-                    after:absolute after:w-full after:h-[1px] after:bg-secondary after:opacity-[.3] after:-bottom-1 after:left-0">
-                    <p className="absolute -top-2.5 bg-primary pr-3 text-white text-sm ">{t("we are part of")}</p>
-                    <BrandsCarousel/>
+            <article className="my-container pb-5 min-h-[50px]">
+
+                <div className={"flex justify-center pb-12 pt-5"}>
+                    <div className={"md:hidden"}>
+                        <BrandVertical className={"w-full"} width="257" height="760"/>
+                    </div>
+                    <div className={"hidden md:block"}>
+                        <BrandHorizontal className={"w-full"} width="1267" height="248"/>
+                    </div>
                 </div>
-                <div className="flex justify-between items-center py-2">
-                    <span className="text-white text-xs ">
-                        &copy;  Copyright  - Royal Resorts
-                    </span>
-                    <Link href="/annoucement" className="text-secondary text-xs underline">
-                        {t("title-company")}
-                    </Link>
-                </div>
+
+            {/*    <div className="py-3 relative*/}
+            {/*        before:absolute before:w-full before:h-[1px] before:bg-secondary before:opacity-[.3] before:left-0 before:top-0*/}
+            {/*        after:absolute after:w-full after:h-[1px] after:bg-secondary after:opacity-[.3] after:-bottom-1 after:left-0">*/}
+            {/*        <p className="absolute -top-2.5 bg-primary pr-3 text-white text-sm ">{t("we are part of")}</p>*/}
+            {/*        <BrandsCarousel/>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex justify-between items-center py-2">*/}
+            {/*        <span className="text-white text-xs ">*/}
+            {/*            &copy;  Copyright  - Royal Resorts*/}
+            {/*        </span>*/}
+            {/*        <Link href="/annoucement" className="text-secondary text-xs underline">*/}
+            {/*            {t("title-company")}*/}
+            {/*        </Link>*/}
+            {/*    </div>*/}
             </article>
 
             <div className="z-10 lg:hidden
