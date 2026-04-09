@@ -1,9 +1,12 @@
 import React from 'react';
 import {Drawer, DrawerContent, DrawerDescription, DrawerTitle} from "@/components/commons/ui/drawer";
-import {Link} from "@/i18n/navigation";
+import {getPathname, Link, usePathname} from "@/i18n/navigation";
+import { default as NextLink } from "next/link";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 import OwnersArea from "@/components/layout/OwnersArea";
 import {useTranslations} from "next-intl";
+type RouteType = "/" | "/home" | "/offers" | "/suites" | "/restaurants" | "/amenities" | "/gallery" | "/map-resort" | "/all-inclusive" | "/weddings" | "/gms/login" | "/gms/forgot-password" |"/destination" | "/faqs" | "/media-room";
+
 
 interface DrawerMenuProps {
     open: boolean;
@@ -14,6 +17,17 @@ const DrawerMenu = (
     {open, setOpen}: DrawerMenuProps
 ) => {
     const tmenu = useTranslations('menu');
+
+    const pathname = usePathname();
+
+    const pathnameEs = getPathname({
+        locale: 'es',
+        href: pathname
+    });
+    const pathnameEn = getPathname({
+        locale: 'en',
+        href: pathname
+    });
 
     return (
         <Drawer direction="right" open={open} onOpenChange={setOpen}>
@@ -95,9 +109,14 @@ const DrawerMenu = (
                     </li>
 
                     <li className="px-5 py-1 bg-menu">
-                        <Link onClick={() => setOpen(false)} href="/">
+                        <NextLink onClick={() => setOpen(false)} href={pathnameEn}>
                             {tmenu('english')}
-                        </Link>
+                        </NextLink>
+                    </li>
+                    <li className="px-5 py-1 bg-menu">
+                        <NextLink onClick={() => setOpen(false)}  href={pathnameEs}>
+                            {tmenu('spanish')}
+                        </NextLink>
                     </li>
                 </ul>
             </DrawerContent>
