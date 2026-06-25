@@ -6,7 +6,11 @@
     "wedding": "Weddings and Groups",
     "idioma": "Language",
     "english": "English",
-    "spanish": "Spanish"
+    "spanish": "Spanish",
+    "title_hicv": "GrandResidencesRivieraCancun.com will soon redirect to HolidayInnClub.com. Visit HolidayInnClub.com for future reservations and resort information",
+    "title_hicv_mobile": "GrandResidencesRivieraCancun.com will soon redirect to HolidayInnClub.com. <a href=\"https://www.holidayinnclub.com/explore-resorts/grand-residences-resort?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header\" target=\"_blank\">Visit HolidayInnClub.com</a> for future reservations and resort information.",
+    "link_hicv": "https://www.holidayinnclub.com/explore-resorts/grand-residences-resort?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header",
+    "btn_visit": "Visit HolidayInnClub.com"
   },
   "menu": {
     "suites": "Suites",

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "owners area": "Area de dueños",
+    "manage reservations": "Gestionar Reserva",
+  },
+  "menu": {
+    "suites": "Suites",
+    "dining": "Dining",
+    "activities": "Amenities & Activities",
+    "gallery": "Gallery",
+    "all inclusive": "All Inclusive",
+    "specials": "Specials",
+    "wedding": "Weddings and Groups",
+    "destination": "Destination",
+    "owners area": "Owners Area",
+    "manage reservations": "Manage your reservation",
+    "blog": "Blog",
+    "faqs": "FAQ's",
+    "english": "English",
+    "spanish": "Spanish",
+    "media": "Media Room"
+  }
+}

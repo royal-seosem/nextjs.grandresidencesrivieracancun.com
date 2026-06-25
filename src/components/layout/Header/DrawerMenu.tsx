@@ -4,6 +4,7 @@ import {Link} from "@/i18n/navigation";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 import OwnersArea from "@/components/layout/OwnersArea";
 import {useTranslations} from "next-intl";
+import Image from "next/image";
 
 interface DrawerMenuProps {
     open: boolean;
@@ -98,6 +99,15 @@ const DrawerMenu = (
                         <Link onClick={() => setOpen(false)} href="/">
                             {tmenu('english')}
                         </Link>
+                    </li>
+
+                    <li className="px-5 py-1 bg-menu">
+                        <a href="https://wa.me/529981000692" target="_blank"
+                           className="hidden md:flex items-center gap-1 text-sm text-black"
+                           aria-label="Whatsapp Grand Residences">
+                            <Image src="/icons/whatsapp.svg" alt="Whatsapp Grand Residences" width="24" height="25"/>
+                            <span>52 99 81 00 06 92</span>
+                        </a>
                     </li>
                 </ul>
             </DrawerContent>

@@ -5,8 +5,9 @@
 
 :root {
     --header-height-mobile: 112px;
-    --header-height-desktop: 90px;
-    --header-top-desktop: 90px;
+    --header-height-desktop:112px;
+    --header-top-desktop: 112px;
+
 
     --font-jost: "";
     --font-helvetica-nue: "";
@@ -172,4 +173,45 @@
 
 .arrow--disabled {
     fill: rgba(255, 255, 255, 0.5);
+}
+
+.btn-headband{
+    background: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: .5rem;
+    color: #fff;
+    width: 280px;
+    flex-shrink: 0;
+}
+
+@media all and (max-width: 1400px) {
+    .headband{
+        text-align: center;
+    }
+}
+
+.headband .mobile{
+    display: none;
+}
+
+@media all and (max-width: 1099px) {
+    .btn-headband {
+        display: none;
+    }
+
+    .headband .mobile {
+        display: block;
+    }
+
+    .headband .desk{
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 810px) {
+    .headband-main{
+        height: 96px;
+    }
 }
