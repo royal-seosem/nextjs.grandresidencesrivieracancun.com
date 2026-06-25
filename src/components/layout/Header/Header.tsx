@@ -61,16 +61,6 @@ export default function Header() {
         className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
         <nav className="headband-main flex justify-center h-24 sm:h-12 px-8 pt-2 mb-2" role="navigation">
             <HeadBand/>
-            {/*<div className="flex gap-5 justify-self-end">
-                <a href="https://wa.me/529981000692" target="_blank"
-                   className="text-white hidden md:flex items-center gap-1 text-sm"
-                   aria-label="Whatsapp Grand Residences">
-                    <Image src="/icons/whatsapp.svg" alt="Whatsapp Grand Residences" width="24" height="25"/>
-                    <span>52 99 81 00 06 92</span>
-                </a>
-                <ManageYourReservation/>
-                <OwnersArea/>
-            </div>*/}
         </nav>
 
         <nav role="navigation" className=" my-container whitespace-nowrap

@@ -5,12 +5,9 @@ import { default as NextLink } from "next/link";
 import ManageYourReservation from "@/components/pages/home/ManageYourReservation";
 import OwnersArea from "@/components/layout/OwnersArea";
 import {useTranslations} from "next-intl";
-<<<<<<< HEAD
 import Image from "next/image";
-=======
-type RouteType = "/" | "/home" | "/offers" | "/suites" | "/restaurants" | "/amenities" | "/gallery" | "/map-resort" | "/all-inclusive" | "/weddings" | "/gms/login" | "/gms/forgot-password" |"/destination" | "/faqs" | "/media-room";
 
->>>>>>> 50618f0f5d7b0ef541d54270d5a04bcd3eee3d6b
+type RouteType = "/" | "/home" | "/offers" | "/suites" | "/restaurants" | "/amenities" | "/gallery" | "/map-resort" | "/all-inclusive" | "/weddings" | "/gms/login" | "/gms/forgot-password" |"/destination" | "/faqs" | "/media-room";
 
 interface DrawerMenuProps {
     open: boolean;
