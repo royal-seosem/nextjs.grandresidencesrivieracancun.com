@@ -13,7 +13,7 @@ const HeadBand = () => {
                 <div className="content gap-4 flex items-center">
                     <p className="text-white desk">{tHeader('title_hicv')}</p>
                     <p className="text-white mobile" dangerouslySetInnerHTML={{__html:tHeader.raw('title_hicv_mobile')}}></p>
-                    <Link className="text-white btn-headband text-center" target={"_blank"} href="https://www.holidayinnclub.com/explore-resorts/grand-residences-resort?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header">{tHeader('btn_visit')}</Link>
+                    <Link className="text-white btn-headband text-center" target={"_blank"} href="https://www.holidayinnclub.com/stays/grand-residences?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header">{tHeader('btn_visit')}</Link>
                 </div>
             </div>
         </>
