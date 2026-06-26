@@ -63,7 +63,7 @@ export default function Header() {
             <HeadBand/>
         </nav>
 
-        <nav role="navigation" className=" my-container whitespace-nowrap
+        <nav role="navigation" className=" pt-3 my-container whitespace-nowrap
             flex flex-col justify-center items-center
             sm:flex-row sm:pb-4 bg-primary
             ">

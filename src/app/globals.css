@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --header-height-mobile: 130px;
-    --header-height-desktop:130px;
-    --header-top-desktop: 130px;
+    --header-height-mobile: 120px;
+    --header-height-desktop:120px;
+    --header-top-desktop: 120px;
 
 
     --font-jost: "";
