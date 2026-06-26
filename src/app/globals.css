@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --header-height-mobile: 112px;
-    --header-height-desktop:112px;
-    --header-top-desktop: 112px;
+    --header-height-mobile: 130px;
+    --header-height-desktop:130px;
+    --header-top-desktop: 130px;
 
 
     --font-jost: "";
@@ -177,12 +177,16 @@
 
 .btn-headband{
     background: none;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 1rem;
     padding: .5rem;
-    color: #fff;
+    color: #000;
     width: 280px;
     flex-shrink: 0;
+}
+
+.headband, .headband-main{
+    background: #fbf1de;
 }
 
 @media all and (max-width: 1400px) {

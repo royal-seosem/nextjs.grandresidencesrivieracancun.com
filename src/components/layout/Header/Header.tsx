@@ -59,7 +59,7 @@ export default function Header() {
 
     return <header
         className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
-        <nav className="headband-main flex justify-center h-24 sm:h-12 px-8 pt-2 mb-2" role="navigation">
+        <nav className="headband-main flex justify-center h-24 sm:h-14 px-8 pt-2 pb-2" role="navigation">
             <HeadBand/>
         </nav>
 
