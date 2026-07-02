@@ -147,7 +147,7 @@ export default async function RootLayout({children, params}: {
                     <BookingProvider>
                         <Header/>
                         {children}
-                        <ModalMyRoyal/>
+                        {/*<ModalMyRoyal/>*/}
                         <Footer/>
                         <ChatWeb/>
                         <ReactQueryDevtools initialIsOpen={false}/>
