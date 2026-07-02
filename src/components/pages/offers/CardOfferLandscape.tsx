@@ -37,8 +37,8 @@ const CardOfferLandscape = (
                 </span>
             </div>
 
-            <div>
-                <div className={"p-4"}>
+            <div className={"h-auto"}>
+                <div className={"p-4 h-full flex flex-col justify-around"}>
                     <p className="text-2xl font-medium mb-2"> {offer.content.title} </p>
 
                     <ul className="list-disc ml-5 space-y-1 mb-4">
@@ -74,7 +74,7 @@ const CardOfferLandscape = (
                     </p>
 
                 </div>
-                {!user && offer.rateLead &&
+                {/*{!user && offer.rateLead &&
                     <div className="flex flex-col items-center justify-center gap-2 bg-primary py-2">
                         <div className="text-secondary">
                             <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
@@ -86,7 +86,7 @@ const CardOfferLandscape = (
                             {tOfferTemplate('Log in and save even more')}
                         </button>
                     </div>
-                }
+                }*/}
             </div>
 
             {open && <ModalOffer offer={offer} open={open} setOpen={setOpen}/>}

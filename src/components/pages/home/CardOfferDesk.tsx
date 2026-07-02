@@ -120,13 +120,13 @@ const CardOfferDesk = (
                         </div>
                     </div>
 
-                    {!user && offer.rateLead &&
+                    {/*{!user && offer.rateLead &&
                         <div className="flex items-center justify-center gap-4 bg-primary py-2">
                                             <span className="text-secondary"
                                                   dangerouslySetInnerHTML={{__html: messages['my-royal-price'].replace('{PRICE}', (offer.rateLead?.price || '').toString())}}>
-                                                {/*<RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{*/}
-                                                {/*    PRICE: offer.rateLead?.price || ""*/}
-                                                {/*}}/>*/}
+                                                <RichTextClient id={'my-royal-price'} ns={'offers-template2'} values={{
+                                                    PRICE: offer.rateLead?.price || ""
+                                                }}/>
                                             </span>
                             <button className="flex items-center gap-2 text-white cursor-pointer"
                                     onClick={() => setShow(true)}>
@@ -134,12 +134,12 @@ const CardOfferDesk = (
                                 {messages['Log in and save even more']}
                             </button>
                         </div>
-                    }
+                    }*/}
                 </div>
             </div>
 
             {open && <ModalOffer offer={offer} open={open} setOpen={setOpen} creative_slot={creative_slot}/>}
-            {show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}
+            {/*{show && <ModalMyRoyalSignUp show={show} setShow={setShow}/>}*/}
         </article>
     );
 };

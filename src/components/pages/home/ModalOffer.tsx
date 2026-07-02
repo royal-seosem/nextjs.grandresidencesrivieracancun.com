@@ -64,7 +64,7 @@ const ModalOffer = (
 
                 <ValidUntil offer={offer}/>
             </div>
-            <LogInModalOffer/>
+            {/*<LogInModalOffer/>*/}
             {showTerms &&
                 <div className="p-5 bg-[#f0e9e2]">
                     <Paragraph>

@@ -115,7 +115,7 @@ const CardOffer = (
 
             </div>
 
-            {!user &&
+            {/*{!user &&
                 <div className="flex flex-col items-center justify-center gap-2 bg-primary py-2 px-3
                     lg:flex-row lg:justify-between">
                     {offer.rateLead &&
@@ -133,9 +133,9 @@ const CardOffer = (
                     </button>
 
                 </div>
-            }
+            }*/}
             <ModalOffer offer={offer} open={open} setOpen={setOpen}/>
-            <ModalMyRoyalSignUp show={showLoginMyRoyal} setShow={setShowLoginMyRoyal}/>
+            {/*<ModalMyRoyalSignUp show={showLoginMyRoyal} setShow={setShowLoginMyRoyal}/>*/}
         </article>
     );
 };

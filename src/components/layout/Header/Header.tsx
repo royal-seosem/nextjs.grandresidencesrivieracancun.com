@@ -119,9 +119,9 @@ export default function Header() {
                 </div>
 
                 <div className="relative flex  gap-3 justify-center items-center text-white text-base">
-                    <div>
+                    {/*<div>
                         <MyRoyal/>
-                    </div>
+                    </div>*/}
 
                     <div className='flex'>
                         <ContactOptions/>

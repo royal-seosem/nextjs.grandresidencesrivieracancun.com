@@ -67,18 +67,18 @@ const Page = async () => {
                         <CardOfferLandscape offer={offers[0]}/>
                     </div>
 
-                    <div className="mb-10 hidden md:block">
+                    {/*<div className="mb-10 hidden md:block">
                         <LogInModalOffer/>
-                    </div>
+                    </div>*/}
 
                     <div className="mb-10">
                         <CarouselOffers offers={offers}/>
                     </div>
 
 
-                    <div className="mb-10 md:hidden">
+                    {/*<div className="mb-10 md:hidden">
                         <LogInModalOffer/>
-                    </div>
+                    </div>*/}
 
                     <div className={"flex justify-center items-center gap-5 mb-10"}>
                         <span className="block h-[2px] bg-primary w-full"></span>
