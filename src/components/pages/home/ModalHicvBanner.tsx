@@ -23,7 +23,7 @@ const ModalHicvBanner = (
                     {<Image src={'/hicv-banner-'+locale+'.jpg'} width={400} height={633} alt={'Hicv Banner'}/>}
                     <div className={'link-hicv'}>
                         <a href={tHeader('link_hicv')} target="_blank" className="btn btn--visit">{tHeader('btn_visit')}</a>
-                        <a href="" className="link-faqs">{tHeader('title_faqs')}</a>
+                        <a href={tHeader('link_faqs')} className="link-faqs">{tHeader('title_faqs')}</a>
                     </div>
                 </div>
             </div>
