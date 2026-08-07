@@ -22,7 +22,7 @@ const HicvBanner =  (
 
     const th = useTranslations("header");
 
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(validHicvBannerCookie());
 
     return (
         <>
