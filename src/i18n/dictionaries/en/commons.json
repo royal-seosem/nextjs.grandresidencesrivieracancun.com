@@ -9,8 +9,10 @@
     "spanish": "Spanish",
     "title_hicv": "GrandResidencesRivieraCancun.com will soon redirect to HolidayInnClub.com. Visit HolidayInnClub.com for future reservations and resort information",
     "title_hicv_mobile": "GrandResidencesRivieraCancun.com will soon redirect to HolidayInnClub.com. <a href=\"https://www.holidayinnclub.com/stays/grand-residences?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header\" target=\"_blank\">Visit HolidayInnClub.com</a> for future reservations and resort information.",
-    "link_hicv": "https://www.holidayinnclub.com/stays/grand-residences?utm_source=grandresidencesrivieracancun&utm_medium=website_header&utm_campaign=grandresidencesrivieracancun_transition_header",
-    "btn_visit": "Visit HolidayInnClub.com"
+    "link_hicv": "https://www.holidayinnclub.com/stays/grand-residences?utm_source=grandresidencesrivieracancun&utm_medium=website_modal&utm_campaign=grandresidencesrivieracancun_transition_modal",
+    "btn_visit": "Visit HolidayInnClub.com",
+    "title_faqs": "Frequently Asked Questions"
+
   },
   "menu": {
     "suites": "Suites",

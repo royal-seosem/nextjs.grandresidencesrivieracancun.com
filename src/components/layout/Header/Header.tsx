@@ -11,6 +11,7 @@ import MyRoyal from "@/components/layout/Header/MyRoyal";
 import ContactOptions from "@/components/layout/Header/ContactOptions";
 import MenuMobile from "@/components/layout/Header/MenuMobile";
 import LanguageDesk from "@/components/layout/Header/LanguageDesk";
+import HicvBanner from "@/components/pages/home/HicvBanner";
 
 const resortPaths = [
     '/suites',
@@ -59,8 +60,21 @@ export default function Header() {
 
     return <header
         className="bg-primary sticky top-0 z-50 h-[var(--header-height-mobile)] sm:h-[var(--header-height-desktop)]">
-        <nav className="headband-main flex justify-center h-24 sm:h-14 px-8 pt-2 pb-2" role="navigation">
+        {/*<nav className="headband-main flex justify-center h-24 sm:h-14 px-8 pt-2 pb-2" role="navigation">
             <HeadBand/>
+        </nav>*/}
+
+        <nav className="flex justify-end items-center gap-5 h-8 px-8" role="navigation">
+            <a href="https://wa.me/529981000692" target="_blank"
+               className="text-white hidden md:flex items-center gap-1 text-sm"
+               aria-label="Whatsapp Grand Residences">
+                <Image src="/icons/whatsapp.svg" alt="Whatsapp Grand Residences" width="24" height="25"/>
+                <span>52 99 81 00 06 92</span>
+            </a>
+
+            <ManageYourReservation/>
+            <HicvBanner/>
+            <OwnersArea/>
         </nav>
 
         <nav role="navigation" className=" pt-3 my-container whitespace-nowrap

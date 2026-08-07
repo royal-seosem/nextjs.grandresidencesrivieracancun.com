@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --header-height-mobile: 120px;
-    --header-height-desktop:120px;
-    --header-top-desktop: 120px;
+    --header-height-mobile: 112px;
+    --header-height-desktop:97px;
+    --header-top-desktop: 97px;
 
 
     --font-jost: "";
@@ -218,4 +218,60 @@
     .headband-main{
         height: 96px;
     }
+}
+
+.modal-hicv{
+    background: none;
+    border: none;
+    box-shadow: none;
+    overflow: unset;
+}
+
+.modal-hicv:focus-visible{
+    outline: none;
+    box-shadow: none;
+}
+
+.box-banner{
+    position: relative;
+    margin: auto;
+    width: 400px;
+}
+
+.link-hicv{
+    position:absolute;
+    top:61%;
+    width:100%;
+}
+.link-hicv a.btn--visit{
+    text-transform:capitalize;
+    text-align:center;
+    background: #EC6E1A;
+    color:white;
+
+
+
+    &:hover{
+        text-decoration:none;
+    }
+}
+
+.link-hicv a.link-faqs{
+    display:block;
+    margin:auto;
+    font-weight:bold;
+    color:#EC6E1A;
+    text-decoration:underline;
+    text-align:center;
+    width:max-content;
+}
+
+.link-hicv .btn--visit{
+    display:block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-radius:.25rem;
+    width:85%;
+    place-content:center;
+    margin:.5rem auto;
 }
