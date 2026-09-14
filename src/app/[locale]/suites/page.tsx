@@ -131,8 +131,8 @@ const Page = async () => {
 
                 <div className="flex justify-between items-stretch gap-2 py-5 lg:justify-start">
                     <Tour360/>
-                    <span aria-hidden className="block h-auto w-[2px] bg-primary"></span>
-                    <WebCam/>
+                    {/*<span aria-hidden className="block h-auto w-[2px] bg-primary"></span>*/}
+                    {/*<WebCam/>*/}
                     <span aria-hidden className="block h-auto w-[2px] bg-primary"></span>
                     <SitePlan/>
                 </div>
