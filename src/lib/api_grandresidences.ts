@@ -1,8 +1,14 @@
-import * as https from "node:https";
+import {Agent as UndiciAgent} from "undici";
 import {getLocale} from "next-intl/server";
 import {getSession} from "@/lib/session";
 
 const apiUrl = process.env.API_URL;
+
+// Node's native fetch (undici) ignores the `agent` option and
+// NODE_TLS_REJECT_UNAUTHORIZED — it needs an undici dispatcher instead.
+const insecureDispatcher = process.env.NODE_ENV === "development"
+    ? new UndiciAgent({connect: {rejectUnauthorized: false}})
+    : undefined;
 
 export type ErrorResponse = {
     code: string,
@@ -25,27 +31,7 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
     const url = new URL(enpoint, apiUrl);
     const locale = await getLocale();
 
-    // const httpsAgent = new https.Agent({
-    //     rejectUnauthorized: false,
-    // })
-
-    const isDevelopment = process.env.NODE_ENV === 'development';
-
-    const httpsAgent = isDevelopment ? new https.Agent({
-        rejectUnauthorized: false,
-    }) : undefined;
-
-    // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
-    if (isDevelopment) {
-        process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-    }
-
-
-    // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
-
-    type RequestInitWithAgent = RequestInit & { agent?: https.Agent };
+    type RequestInitWithDispatcher = RequestInit & { dispatcher?: UndiciAgent };
 
     const gmsUser = await getSession();
     const token = gmsUser?.token || "";
@@ -57,9 +43,9 @@ export async function GrFetcher<T>(enpoint: string, init?: RequestInit): Promise
         'Authorization-GMS': token
     }
 
-    const options: RequestInitWithAgent = {
+    const options: RequestInitWithDispatcher = {
         headers: headers,
-        agent: httpsAgent,
+        dispatcher: insecureDispatcher,
         ...init
     };
 

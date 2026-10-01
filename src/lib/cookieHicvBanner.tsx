@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const COOKIE_NAME = "hicv_banner";
 
 export const setHicvBannerCookie = (value: boolean) => {
+  if (typeof document === "undefined") return;
   const date = new Date();
   date.setTime(date.getTime() + 24 * 60 * 60 * 1000); // 1 día
   const expires = "; expires=" + date.toUTCString();
