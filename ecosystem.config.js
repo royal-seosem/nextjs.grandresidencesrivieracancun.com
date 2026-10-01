@@ -4,6 +4,7 @@ module.exports = {
             name: "nextjs-app",
             script: "npm",
             args: "start",
+            interpreter: "none",
             instances: "1",
 
             autorestart: true,
