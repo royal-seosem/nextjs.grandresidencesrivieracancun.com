@@ -2,15 +2,9 @@ module.exports = {
     apps: [
         {
             name: "nextjs-app",
-            script: "npm",
+            script: "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
             args: "start",
-            interpreter: "none",
-            instances: "1",
-
-            autorestart: true,
-            restart_delay: 5000,
-            max_restarts: 10,
-
+            exec_mode: "cluster",
             env: {
                 NODE_ENV: "production",
                 PORT: 3000
